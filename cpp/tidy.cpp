@@ -1,7 +1,7 @@
 #define BOOST_FILESYSTEM_VERSION 3
 
-#include <tidy/tidy.h>
-#include <tidy/buffio.h>
+#include <tidy.h>
+#include <tidybuffio.h>
 #include <stdio.h>
 #include <errno.h>
 #include <iostream>
@@ -19,23 +19,11 @@ namespace bfs = boost::filesystem;
 std::map<std::string, int> stack;
 
 
-void Tagcount(pt::ptree &root) {
-
-    for(auto it = root.begin(); it != root.end(); it++) {
-        if(stack.find(it->first) != stack.end()) {
-            stack.find(it->first)->second += 1;
-        }
-        else {
-            stack.insert(std::pair<std::string, int>(it->first, 1));
-        }
-        Tagcount(it->second);
-    }
-}
-
-void maintexExtraction(std::string html_path, std::string gold_path) {
+void maintexExtraction(std::string gold_path, std::string html_path, struct Display *sum ) {
     std::ifstream fs;
     std::ifstream golden_text;
     char *buf, *gold_buf;
+
 
     fs.open(html_path,std::ios::in);
     golden_text.open(gold_path, std::ios::in);
@@ -111,14 +99,14 @@ void maintexExtraction(std::string html_path, std::string gold_path) {
 
     // build tree and calculate score
     tree_node *root;
-    std::cout << "========Create Tree=========" << std::endl;
+    //std::cout << "========Create Tree=========" << std::endl;
     root = create_dom_tree(tree, "root"); // root means on top of tree = first call of function
     DOM_tree droot(root);
-    std::cout << "Tree Built Complete" << std::endl;
-    std::cout << "========Extract Content=========" << std::endl;
+    //std::cout << "Tree Built Complete" << std::endl;
+    //std::cout << "========Extract Content=========" << std::endl;
     droot.contentExtraction();
-    std::cout << "======= Score result =======" << std::endl;
-    droot.calculate_score(gold_buf);
+    //std::cout << "======= Score result =======" << std::endl;
+    *sum = droot.calculate_score(gold_buf, gold_path);
 
     // free memory
     delete [] buf;
@@ -132,15 +120,33 @@ void maintexExtraction(std::string html_path, std::string gold_path) {
 
 int main (int argc, char **argv) {
 
-    std::string root_path = "./CETD/BBC/";
+    std::string root_path = "/home/ianliu/develope/maintex_Extraction/CETD/BBC/";
     bfs::path path_gold(root_path + "gold/");
-    bfs::path path_origin(root_path + "original/");
+    struct Display *sum = new struct Display [101];
+    std::string filenames;
+    std::string path_origin = root_path + "original/";
+    std::string path_origin_file;
+    int i = 0;
 
-    std::cout << path_gold << std::endl;
-    bfs::directory_iterator oit = bfs::directory_iterator(path_origin);
+
     for(bfs::directory_iterator git = bfs::directory_iterator(path_gold); git != bfs::directory_iterator(); ++ git) {
-        maintexExtraction(git->path().filename().string(), oit->path().filename().string());
-        ++ oit;
+        // find file in orginal that is corresponding to file in gold
+        filenames = git->path().filename().string();
+        path_origin_file =  path_origin + filenames.substr(0, filenames.find(".")) + ".htm";
+        std::cout << path_origin_file << std::endl;
+
+        maintexExtraction(path_gold.string() + git->path().filename().string(), 
+        path_origin_file, &sum[i]);
+        ++ i;
+        if(i > 30) break;
+    }
+
+    std::cout << std::setw(7) << std::setw(10) << "precision" << std::setw(10) 
+    << "recall" << std::setw(10) << "F1 score" << std::endl;
+    for(int i = 0; i < 30; i++ ) {
+        std::cout << std::setw(7)  << std::setw(10)
+        << sum[i].precision << std::setw(10) << sum[i].recall << std::setw(10) 
+        << sum[i].F1_score << std::endl;
     }
 
     return 0;

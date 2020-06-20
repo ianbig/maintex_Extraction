@@ -108,22 +108,26 @@ void DOM_tree::traverse(tree_node *node) {
     }
 }
 
-void DOM_tree::calculate_score(char *golden_text) {
+struct  Display DOM_tree::calculate_score(char *golden_text, std::string gold_path) {
     double F1_score = 0.0;
     double precision = 0.0;
     double recall = 0.0;
     std::string golden_string(golden_text);
     double lcs_string_length = (double)lcs(content_buffer, golden_string);
+    struct Display data;
 
-    std::cout << std::setw(7) << golden_text << std::setw(10) << "precision" << std::setw(10) 
-    << "recall" << std::setw(10) << "F1 score" << std::endl;
+    
     precision = lcs_string_length / content_buffer.length();
     recall = lcs_string_length / golden_string.length();
     F1_score = 2 * precision * recall / ( precision + recall );
+
+    data.path = gold_path;
+    data.F1_score = F1_score;
+    data.recall = recall;
+    data.precision = precision;
+
+    return data;
     
-    std::cout << std::setw(7) << "File 1" << std::setw(10) 
-    << precision << std::setw(10) << recall << std::setw(10) 
-    << F1_score << std::endl;
 
 }
 
@@ -225,8 +229,7 @@ int lcs( std::string s1, std::string s2) {
         }
     }  
 
-    lcs_backtrace(lcs_array, s1_length, s2_length, s1);
-    std::cout << std::endl;
+    //lcs_backtrace(lcs_array, s1_length, s2_length, s1);
     answer = lcs_array[s1_length][s2_length].data;
 
     for(int i = 0; i < s1_length + 1; i++) {

@@ -1,0 +1,61 @@
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/16.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/53.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/1.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/20.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/65.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/18.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/97.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/29.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/46.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/25.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/70.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/64.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/66.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/96.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/84.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/24.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/32.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/14.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/88.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/51.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/63.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/73.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/40.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/58.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/36.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/45.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/79.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/56.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/7.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/0.htm
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/original/91.htm
+ precision    recall  F1 score
+  0.954096  0.741276  0.834328
+  0.941455  0.827655  0.880895
+   0.84104  0.844702  0.842867
+  0.856785  0.663178  0.747651
+  0.985313  0.862734  0.919958
+  0.814015  0.781964  0.797668
+  0.924242  0.115094  0.204698
+  0.792259  0.810505  0.801278
+  0.886898  0.731978  0.802025
+  0.872555  0.797201  0.833178
+  0.980596  0.892734  0.934604
+  0.878931  0.866045   0.87244
+  0.932579  0.815576  0.870162
+  0.794843  0.933509  0.858613
+  0.863625  0.924967  0.893244
+  0.880642  0.675208  0.764362
+  0.850898   0.85371  0.852302
+  0.813519  0.831032  0.822182
+  0.915671  0.882654  0.898859
+  0.528358  0.291598  0.375796
+  0.987067  0.846016  0.911115
+  0.899776  0.753752  0.820316
+  0.868107  0.889313  0.878582
+  0.935327  0.711729  0.808351
+  0.958977  0.753122  0.843674
+   0.98729  0.820443  0.896167
+  0.863225  0.673032  0.756355
+  0.933208  0.775485  0.847067
+  0.918554  0.746134  0.823415

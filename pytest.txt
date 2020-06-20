@@ -1,0 +1,61 @@
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/16.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/53.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/1.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/20.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/65.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/18.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/97.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/29.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/46.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/25.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/70.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/64.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/66.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/96.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/84.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/24.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/32.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/14.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/51.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/63.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/73.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/40.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/58.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/36.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/45.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/79.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/56.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/7.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/0.txt
+/home/ianliu/develope/maintex_Extraction/CETD/BBC/gold/91.txt
+ precision    recall  F1 score
+  0.954268 0.0481168 0.0916142
+  0.935976 0.0556361  0.105029
+  0.804878  0.127721  0.220459
+   0.82622  0.105039  0.186382
+         1  0.880347  0.936366
+  0.801829  0.111346  0.195539
+         1  0.957233  0.978149
+  0.835366  0.110707  0.195505
+  0.856707 0.0865681  0.157247
+  0.862805 0.0842764  0.153554
+  0.995538  0.975232  0.985281
+  0.731207  0.985338  0.839461
+  0.954268 0.0462539 0.0882311
+  0.731707  0.157999  0.259881
+  0.973181  0.978638  0.975902
+  0.856707 0.0935108  0.168617
+     0.875 0.0862121  0.156959
+  0.820122  0.109261  0.192832
+  0.860301  0.988052  0.919762
+   0.54878   0.29654  0.385027
+         1  0.982025  0.990931
+   0.89939 0.0691839  0.128484
+  0.841463  0.105344  0.187246
+  0.939024 0.0599105  0.112635
+  0.999544  0.793846  0.884899
+  0.993682  0.937819  0.964943
+  0.865854 0.0834313  0.152197
+  0.960366 0.0492495 0.0936942
+  0.932927 0.0598943  0.112562
+  0.817073  0.108458  0.191497

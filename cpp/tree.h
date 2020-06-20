@@ -16,6 +16,13 @@ namespace pt = boost::property_tree;
 
 class DOM_tree;
 
+struct Display {
+    std::string path;
+    double F1_score;
+    double recall;
+    double precision;
+};
+
 class tree_node {
     private:
         //size_t child_size;
@@ -55,7 +62,7 @@ class DOM_tree {
         void traverse(tree_node *node);
         void get_threshold(tree_node *node); // have memory bug
         void extract_maintex(tree_node *node);
-        void calculate_score(char *golden_text);
+        struct Display calculate_score(char *golden_text, std::string gold_path);
         double threshold;
 };
 
