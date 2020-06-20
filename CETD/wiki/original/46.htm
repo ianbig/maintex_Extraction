@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>Probabilistic automaton - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Probabilistic_automaton&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Probabilistic_automaton&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-12" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-12" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-12" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Probabilistic_automaton",
+wgTitle="Probabilistic automaton",
+wgAction="view",
+wgArticleId=11519719,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=392782323,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["Automata theory", "Probabilistic models"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-12" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-12"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-12" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-12" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-12" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-12" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-12" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-12" type="text/javascript"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Probabilistic_automaton skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Probabilistic automaton</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a> and <a href="/wiki/Computer_science" title="Computer science">computer science</a>, the <b>probabilistic automaton (PA)</b> is a generalization of the <a href="/wiki/Non-deterministic_finite_automaton" title="Non-deterministic finite automaton" class="mw-redirect">non-deterministic finite automaton</a>; it includes the probability of a given transition into the <a href="/wiki/Finite_state_machine" title="Finite state machine" class="mw-redirect">transition function</a>, turning it into a <a href="/wiki/Transition_matrix" title="Transition matrix" class="mw-redirect">transition matrix</a> or <a href="/wiki/Stochastic_matrix" title="Stochastic matrix">stochastic matrix</a>. Thus, the probabilistic automaton generalizes the concept of a <a href="/wiki/Markov_chain" title="Markov chain">Markov chain</a> or <a href="/wiki/Subshift_of_finite_type" title="Subshift of finite type">subshift of finite type</a>. The <a href="/wiki/Formal_language" title="Formal language">languages</a> recognized by probabilistic automata are called <b>stochastic languages</b>; these include the <a href="/wiki/Regular_language" title="Regular language">regular languages</a> as a subset. The number of stochastic languages is <a href="/wiki/Uncountable" title="Uncountable" class="mw-redirect">uncountable</a>.</p>
+<p>The concept was introduced by <a href="/wiki/Michael_O._Rabin" title="Michael O. Rabin">Michael O. Rabin</a> in 1963<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup>; a certain special case is sometimes known as the <b>Rabin automaton</b>. In recent years, a variant has been formulated in terms of quantum probabilities, the <a href="/wiki/Quantum_finite_automaton" title="Quantum finite automaton" class="mw-redirect">quantum finite automaton</a>.</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Stochastic_languages"><span class="tocnumber">2</span> <span class="toctext">Stochastic languages</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Properties"><span class="tocnumber">3</span> <span class="toctext">Properties</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#p-adic_languages"><span class="tocnumber">4</span> <span class="toctext">p-adic languages</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Generalizations"><span class="tocnumber">5</span> <span class="toctext">Generalizations</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=Probabilistic_automaton&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a>]</span> <span class="mw-headline" id="Definition">Definition</span></h2>
+<p>The probabilistic automaton may be defined as an extension of a <a href="/wiki/Non-deterministic_finite_automaton" title="Non-deterministic finite automaton" class="mw-redirect">non-deterministic finite automaton</a> <span class="texhtml">(<i>Q</i>,Σ,δ,<i>q</i><sub>0</sub>,<i>F</i>)</span>, together with two probabilities: the probability <span class="texhtml"><i>P</i></span> of a particular state transition taking place, and with the initial state <span class="texhtml"><i>q</i><sub>0</sub></span> replaced by a <a href="/wiki/Stochastic_vector" title="Stochastic vector" class="mw-redirect">stochastic vector</a> giving the probability of the automaton being in a given initial state.</p>
+<p>For the ordinary non-deterministic finite automaton, one has</p>
+<ul>
+<li>a finite <a href="/wiki/Set_(mathematics)" title="Set (mathematics)">set</a> of states <span class="texhtml"><i>Q</i></span></li>
+<li>a finite set of <a href="/wiki/Input_symbol" title="Input symbol" class="mw-redirect">input symbols</a> <span class="texhtml">Σ</span></li>
+<li>a transition function <img class="tex" alt="\delta:Q\times\Sigma \to P(Q)" src="http://upload.wikimedia.org/math/1/0/a/10ad7abe8389e2f9e77b95a6e26cb12f.png" /></li>
+<li>a set of states <span class="texhtml"><i>F</i></span> distinguished as <i>accepting</i> (or <i>final</i>) <i>states</i> <img class="tex" alt="F\subset Q" src="http://upload.wikimedia.org/math/9/1/6/916f22c64aca3b17244ea6e92f1eeef9.png" />.</li>
+</ul>
+<p>Here, <span class="texhtml"><i>P</i>(<i>Q</i>)</span> denotes the <a href="/wiki/Power_set" title="Power set">power set</a> of <span class="texhtml"><i>Q</i></span>.</p>
+<p>By use of <a href="/wiki/Currying" title="Currying">currying</a>, the transition function <img class="tex" alt="\delta:Q\times\Sigma \to P(Q)" src="http://upload.wikimedia.org/math/1/0/a/10ad7abe8389e2f9e77b95a6e26cb12f.png" /> of a non-deterministic finite automaton can be written as a <a href="/wiki/Membership_function" title="Membership function" class="mw-redirect">membership function</a></p>
+<dl>
+<dd><img class="tex" alt="\delta:Q\times\Sigma \times Q\to \{0,1\}" src="http://upload.wikimedia.org/math/0/3/6/0365ba21a0e92255e0dad84ec7aa0769.png" /></dd>
+</dl>
+<p>so that <img class="tex" alt="\delta(q,a,q^\prime)=1" src="http://upload.wikimedia.org/math/d/2/2/d22cee95729b9f117f927f7ff295289d.png" /> if <img class="tex" alt="q^\prime\in \delta(q,a)" src="http://upload.wikimedia.org/math/1/e/8/1e8a7104ea2cf9707c2bf9efaeab2f62.png" /> and <img class="tex" alt="\delta(q,a,q^\prime)=0" src="http://upload.wikimedia.org/math/0/4/c/04c3672e682fde8c573f11acd79d7512.png" /> if <img class="tex" alt="q^\prime\notin \delta(q,a)" src="http://upload.wikimedia.org/math/c/d/c/cdc9bcfce57861b28b3802f45d2ce814.png" />. The curried transition function can be understood to be a matrix with matrix entries</p>
+<dl>
+<dd><img class="tex" alt="\left[\theta_a\right]_{qq^\prime}=\delta(q,a,q^\prime)" src="http://upload.wikimedia.org/math/d/0/4/d045444687ba4a28f85c9f962f4f27e6.png" /></dd>
+</dl>
+<p>The matrix <span class="texhtml">θ<sub><i>a</i></sub></span> is then a square matrix, whose entries are zero or one, indicating whether a transition <img class="tex" alt="q\stackrel{a}{\rightarrow} q^\prime" src="http://upload.wikimedia.org/math/9/a/3/9a3f987afbfb4d82ed3aee8b1bd212e1.png" /> is allowed by the NFA. Such a transition matrix is always defined for a non-deterministic finite automaton.</p>
+<p>The probabilistic automaton replaces this matrix by a <a href="/wiki/Stochastic_matrix" title="Stochastic matrix">stochastic matrix</a> <span class="texhtml"><i>P</i></span>, so that the probability of a transition is given by</p>
+<dl>
+<dd><img class="tex" alt="\left[P_a\right]_{qq^\prime}" src="http://upload.wikimedia.org/math/3/4/7/347be564fd357cdb7d5dfc9dc5c04108.png" /></dd>
+</dl>
+<p>A state change from some state to any state must occur with probability one, of course, and so one must have</p>
+<dl>
+<dd><img class="tex" alt="\sum_{q^\prime}\left[P_a\right]_{qq^\prime}=1" src="http://upload.wikimedia.org/math/2/9/9/29993e12567a6afab4c03477340ce793.png" /></dd>
+</dl>
+<p>for all input letters <span class="texhtml"><i>a</i></span> and internal states <span class="texhtml"><i>q</i></span>. The initial state of a probabilistic automaton is given by a <a href="/wiki/Row_vector" title="Row vector">row vector</a> <span class="texhtml"><i>v</i></span>, whose components add to unity:</p>
+<dl>
+<dd><img class="tex" alt="\sum_{q}\left[v\right]_{q}=1" src="http://upload.wikimedia.org/math/4/6/8/468a918bc80ff5cbe446228c4cb13a59.png" /></dd>
+</dl>
+<p>The transition matrix acts on the right, so that the state of the probabilistic automaton, after consuming the input string <span class="texhtml"><i>a</i><i>b</i><i>c</i></span>, would be</p>
+<dl>
+<dd><span class="texhtml"><i>v</i><i>P</i><sub><i>a</i></sub><i>P</i><sub><i>b</i></sub><i>P</i><sub><i>c</i></sub></span></dd>
+</dl>
+<p>In particular, the state of a probabilistic automaton is always a stochastic vector, since the product of any two stochastic matrices is a stochastic matrix, and the product of a stochastic vector and a stochastic matrix is again a stochastic vector. This vector is sometimes called the <b>distribution of states</b>, emphasizing that it is a <a href="/wiki/Discrete_probability_distribution" title="Discrete probability distribution">discrete probability distribution</a>.</p>
+<p>Formally, the definition of a probabilistic automaton does not require the mechanics of the non-deterministic automaton, which may be dispensed with. Formally, a probabilistic automaton <i>PA</i> is defined as the tuple <span class="texhtml">(<i>Q</i>,Σ,<i>P</i>,<i>v</i>,<i>F</i>)</span>. A <b>Rabin automaton</b> is one for which the initial distribution <span class="texhtml"><i>v</i></span> is a <a href="/wiki/Coordinate_vector" title="Coordinate vector">coordinate vector</a>; that is, has zero for all but one entries, and the remaining entry being one.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Probabilistic_automaton&amp;action=edit&amp;section=2" title="Edit section: Stochastic languages">edit</a>]</span> <span class="mw-headline" id="Stochastic_languages">Stochastic languages</span></h2>
+<p>The set of <a href="/wiki/Formal_language" title="Formal language">languages</a> recognized by probabilistic automata are called <b>stochastic languages</b>. They include the <a href="/wiki/Regular_language" title="Regular language">regular languages</a> as a subset.</p>
+<p>Let <img class="tex" alt="F=Q_\text{accept}\subset Q" src="http://upload.wikimedia.org/math/4/5/4/454ad7409970596dd1262e56e29769fe.png" /> be the set of "accepting" or "final" states of the automaton. By abuse of notation, <span class="texhtml"><i>Q</i><sub>accept</sub></span> can also be understood to be the column vector that is the <a href="/wiki/Membership_function" title="Membership function" class="mw-redirect">membership function</a> for <span class="texhtml"><i>Q</i><sub>accept</sub></span>; that is, it has a 1 at the places corresponding to elements in <span class="texhtml"><i>Q</i><sub>accept</sub></span>, and a zero otherwise. This vector may be contracted with the internal state probability, to form a <a href="/wiki/Scalar_(mathematics)" title="Scalar (mathematics)">scalar</a>. The language recognized by a specific automaton is then defined as</p>
+<dl>
+<dd><img class="tex" alt="L_\eta = \{s\in\Sigma^* \vert vP_s Q_\text{accept} &gt; \eta\}" src="http://upload.wikimedia.org/math/0/9/2/09234406d966fdfd1c6df127d6c1455a.png" /></dd>
+</dl>
+<p>where <span class="texhtml">Σ <sup>*</sup></span> is the set of all <a href="/wiki/String_(computer_science)" title="String (computer science)">strings</a> in the <a href="/wiki/Alphabet_(computer_science)" title="Alphabet (computer science)">alphabet</a> <span class="texhtml">Σ</span> (so that * is the <a href="/wiki/Kleene_star" title="Kleene star">Kleene star</a>). The language depends on the value of the <b>cut-point</b> <span class="texhtml">η</span>, normally taken to be in the range <img class="tex" alt="0\le \eta&lt;1" src="http://upload.wikimedia.org/math/e/c/7/ec7a151c905187f978a4693a19e6baba.png" />.</p>
+<p>A language is called <b>η-stochastic</b> if and only if there exists some PA that recognizes the language, for fixed <span class="texhtml">η</span>. A language is called <b>stochastic</b> if and only if there is some <img class="tex" alt="0\le \eta&lt;1" src="http://upload.wikimedia.org/math/e/c/7/ec7a151c905187f978a4693a19e6baba.png" /> for which <span class="texhtml"><i>L</i><sub>η</sub></span> is η-stochastic.</p>
+<p>A cut-point is said to be an <b>isolated cut-point</b> if and only if there exists a <span class="texhtml">δ &gt; 0</span> such that</p>
+<dl>
+<dd><img class="tex" alt="\vert vP(s)Q_\text{accept} - \eta \vert \ge \delta" src="http://upload.wikimedia.org/math/7/0/6/7069f417e72ccccdb608a0e17c47f545.png" /></dd>
+</dl>
+<p>for all <img class="tex" alt="s\in\Sigma^*" src="http://upload.wikimedia.org/math/1/6/1/161510d3ed2054086700a699b9242308.png" /></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Probabilistic_automaton&amp;action=edit&amp;section=3" title="Edit section: Properties">edit</a>]</span> <span class="mw-headline" id="Properties">Properties</span></h2>
+<p>Every <a href="/wiki/Regular_language" title="Regular language">regular language</a> is stochastic, and more strongly, every regular language is η-stochastic. A weak converse is that every 0-stochastic language is regular; however, the general converse does not hold: there are stochastic languages that are not regular.</p>
+<p>Every η-stochastic language is stochastic, for some <span class="texhtml">0 &lt; η &lt; 1</span>.</p>
+<p>Every stochastic language is representable by a Rabin automaton.</p>
+<p>If <span class="texhtml">η</span> is an isolated cut-point, then <span class="texhtml"><i>L</i><sub>η</sub></span> is a regular language.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Probabilistic_automaton&amp;action=edit&amp;section=4" title="Edit section: p-adic languages">edit</a>]</span> <span class="mw-headline" id="p-adic_languages"><i>p</i>-adic languages</span></h2>
+<p>The <a href="/wiki/P-adic" title="P-adic" class="mw-redirect"><i>p</i>-adic</a> languages provide an example of a stochastic language that is not regular, and also show that the number of stochastic languages is uncountable. A <i>p</i>-adic language is defined as the set of strings in the letters <img class="tex" alt="0,1,2,\ldots,(p-1)" src="http://upload.wikimedia.org/math/8/5/7/8571462838408abd3efcf1ddb32020fe.png" /> such that</p>
+<dl>
+<dd><img class="tex" alt="L_{\eta}(p)=\{0.n_1n_2n_3 \ldots \vert 0\le n_k&lt;p \text{ and } 
+0.n_1n_2n_3\ldots &gt; \eta \}" src="http://upload.wikimedia.org/math/7/6/e/76ea23ced99ff5b66063b11cea068078.png" /></dd>
+</dl>
+<p>That is, a <i>p</i>-adic language is merely the set of real numbers, written in base-<i>p</i>, such that they are greater than <span class="texhtml">η</span>. It is straightforward to show that all <i>p</i>-adic languages are stochastic. However, a <i>p</i>-adic language is regular if and only if <span class="texhtml">η</span> is rational. In particular, this implies that the number of stochastic languages is uncountable.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Probabilistic_automaton&amp;action=edit&amp;section=5" title="Edit section: Generalizations">edit</a>]</span> <span class="mw-headline" id="Generalizations">Generalizations</span></h2>
+<p>The probabilistic automaton has a geometric interpretation: the state vector can be understood to be a point that lives on the face of the standard <a href="/wiki/Simplex" title="Simplex">simplex</a>, opposite to the orthogonal corner. The transition matrices form a <a href="/wiki/Monoid" title="Monoid">monoid</a>, acting on the point. This may be generalized by having the point be from some general <a href="/wiki/Topological_space" title="Topological space">topological space</a>, while the transition matrices are chosen from a collection of operators acting on the topological space, thus forming a <a href="/wiki/Semiautomaton" title="Semiautomaton">semiautomaton</a>. When the cut-point is suitably generalized, one has a <a href="/wiki/Topological_automaton" title="Topological automaton" class="mw-redirect">topological automaton</a>.</p>
+<p>An example of such a generalization is the <a href="/wiki/Quantum_finite_automaton" title="Quantum finite automaton" class="mw-redirect">quantum finite automaton</a>; here, the automaton state is represented by a point in <a href="/wiki/Complex_projective_space" title="Complex projective space">complex projective space</a>, while the transition matrices are a fixed set chosen from the <a href="/wiki/Unitary_group" title="Unitary group">unitary group</a>. The cut-point is understood as a limit on the maximum value of the <a href="/wiki/Quantum_angle" title="Quantum angle" class="mw-redirect">quantum angle</a>.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Probabilistic_automaton&amp;action=edit&amp;section=6" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<ol class="references">
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> M. O Rabin,"Probabilistic Automata", <i>Information and Control</i> <b>6</b> (1963) pp.&#160;230–245</li>
+</ol>
+<ul>
+<li>Arto Salomaa, <i>Theory of Automata</i> (1969) Pergamon Press, Oxford <i>(See chapter 2)</i>.</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 513/1000000
+Post-expand include size: 0/2048000 bytes
+Template argument size: 0/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:11519719-0!1!0!default!!en!4 and timestamp 20101120125120 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Probabilistic_automaton">http://en.wikipedia.org/wiki/Probabilistic_automaton</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:Automata_theory" title="Category:Automata theory">Automata theory</a></span> | <span dir='ltr'><a href="/wiki/Category:Probabilistic_models" title="Category:Probabilistic models">Probabilistic models</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Probabilistic_automaton" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/Probabilistic_automaton"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:Probabilistic_automaton"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/Probabilistic_automaton" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=Probabilistic_automaton&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=Probabilistic_automaton&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-12" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-variablepage" class="active" ><a href="/w/index.php?title=Special:VariablePage&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=spontaneous_donation">Donate</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Probabilistic_automaton" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Probabilistic_automaton" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=Probabilistic_automaton&amp;oldid=392782323" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Probabilistic_automaton&amp;id=392782323" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Probabilistic+automaton" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Probabilistic+automaton&amp;oldid=392782323&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Probabilistic_automaton&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 25 October 2010 at 13:17.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv282 in 0.039 secs. -->			</body>
+</html>

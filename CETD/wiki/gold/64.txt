@@ -1,0 +1,167 @@
+﻿
+GNU Project
+
+
+The GNU logo, by Etienne Suvasa
+The GNU Project is a free software, mass collaboration project, announced on September 27, 1983, by Richard Stallman at MIT. It initiated GNU operating system development in January, 1984. The founding goal of the project was, in the words of its initial announcement, to develop "a sufficient body of free software [...] to get along without any software that is not free."[1] GNU is meant to be free, not in price, but in being unrestricted by other distributors to modify the program as necessary. Any programmer is therefore given full access to all source code and projects created using GNU, with the requirement of then posting any changes made publicly for other users to benefit from as well.
+To make this happen, the GNU Project began working on an operating system called GNU ("GNU" is a recursive acronym that stands for "GNU's Not Unix"). This goal of making a free software operating system was achieved in 1992 when the last gap in the GNU system, a kernel, was filled by the third-party Linux kernel being released as Free Software, under version 2 of the GNU GPL.
+Current work of the GNU Project includes software development, awareness building, political campaigning and sharing of the new material.
+Contents [hide]
+1 Origins of the project
+2 The GNU Manifesto
+3 Philosophy and activism
+4 Participation
+5 Free software
+6 Copyleft
+7 Operating system development
+8 Strategic projects
+8.1 GNOME
+8.2 Gnash
+9 Recognition
+10 See also
+11 References
+12 External links
+[edit]Origins of the project
+
+When the GNU project first started they "had an Emacs text editor with Lisp for writing editor commands, a source level debugger, a yacc-compatible parser generator, and a linker"[2]. They had an initial kernel that needed more updates. Once the kernel and the compiler were finished GNU was able to be used for program development. The main goal was to create many other applications to be like the Unix system. GNU was able to run Unix programs but was not identical to it. GNU incorporated longer file names, file version numbers, and a crashproof file system. The GNU Manifesto was written to gain support and participation from others for the project. Programmers were encouraged to take part in any aspect of the project that interested them. People could donate funds, computer parts, or even their own time to write code and programs for the project.
+[edit]The GNU Manifesto
+
+Main article: GNU Manifesto
+The GNU Manifesto was written by Richard Stallman to gain support and participation in the GNU Project. He lays out why he is creating GNU and answers the questions that participants and supporters may have about the project. The manifesto starts with why and how GNU will be available along with answers to objections some may have to the outcome of the GNU project.[3]
+In the GNU Manifesto, Stallman specifically addresses the meaning of free software. He lists four freedoms essential to software development: freedom to run a program for any purpose, freedom to study the mechanics of the program and modify it, freedom to redistribute copies, and freedom to improve and change modified versions for public use[4]. To implement these freedoms, users needed full access to code. To ensure code remained free and provide it to the public, Stallman created the General Public License (GPL), which allowed software and the future generations of code derived from it to remain free for public use. Some complications arose, however, when certain software was grandfathered in the law of GPL because of code it derived from[5].
+[edit]Philosophy and activism
+
+Main article: Free software movement
+Although most of the GNU Project's output is technical in nature, it was launched as a social, ethical, and political initiative. As well as producing software and licenses, the GNU Project has published a large number of philosophical writings,[6] the majority of which were authored by Richard Stallman.
+[edit]Participation
+
+The GNU projects let other programmers get involved in creating free software. The GNU website A list of projects are laid out on and each project has specifics for what type of developer is able to perform the task needed for a certain piece of the GNU project. The skill level ranges from project to project but anyone with background knowledge in programming is encouraged to support the project.[7]
+[edit]Free software
+
+The GNU project uses software that is free for users to copy, edit, and distribute. It is not always free in cost, but it is free in the sense that users can change the software to fit individual needs. The way programmers obtain the free software depends on where they get it. The software could be provided to the programmer from friends or over the internet, or the company a programmer works for may purchase the software. Proceeds from purchases support the GNU project. GNU has four kinds of freedom for the software:
+Freedom to run the program
+Freedom to access the code
+Freedom to redistribute the program to anyone
+Freedom to improve the software[8]
+[edit]Copyleft
+
+Copyleft is what helps maintain free use of this software among other programmers. Copyleft gives the legal right to everyone to use, edit, and redistribute programs or program's code as long as the distribution terms do not change. Copyleft preserves the freedom in new code and programs.
+[edit]Operating system development
+
+
+
+Ubuntu is an example of a GNU/Linux-based distribution
+The first goal of the GNU project was to create a whole free-software operating system. By 1992, the GNU project had completed all of the major operating system components except for their kernel, GNU Hurd. The Linux kernel, started independently by Linus Torvalds in 1991 filled the last gap, and Linux version 0.12 was released under the GPL in 1992. Together, Linux and GNU formed the first completely free-software operating system. Though the Linux kernel is not part of the GNU project, it was developed using GCC and other GNU programming tools.[9]
+[edit]Strategic projects
+
+From the mid-1990s onward, with many companies investing in free software development, the Free Software Foundation redirected its funds toward the legal and political support of free software development. Software development from that point on focused on maintaining existing projects, and starting new projects only when there was an acute threat to the free software community; see High Priority Free Software Projects. One of the most notable projects of the GNU Project is the GNU C compiler, which has been adopted as the standard compiler on almost all UNIX and UNIX-like systems, including Apple's iPhone and iPod.
+[edit]GNOME
+One example is the GNOME desktop. This development effort was launched by the GNU Project because another desktop system, KDE, was becoming popular but required users to install certain proprietary software. To prevent people from being tempted to install that proprietary software, the GNU Project simultaneously launched two projects. One was the Harmony toolkit. This was an attempt to make a free software replacement for the proprietary software that KDE depended on. Had this project been successful, the problem with KDE would have been solved. The second project was GNOME, which tackled the same issue from a different angle. It aimed to make a replacement for KDE that had no dependencies on proprietary software. The Harmony project didn't make much progress, but GNOME developed very well. Eventually, the proprietary component that KDE depended on (Qt) was released as free software.[10]
+[edit]Gnash
+Another example is Gnash, software able to play content distributed in the Adobe Flash format. This has been marked as a priority project by GNU because it was seen that many people were installing a free software operating system and using a free software web-browser, but were then also installing the proprietary software plug-in from Adobe.
+[edit]Recognition
+
+2001: USENIX Lifetime Achievement Award[11]
+[edit]See also
+
+	Free software portal
+GNU Free Documentation License
+Free Software Foundation
+List of GNU software
+[edit]References
+
+^ "The GNU Manifesto". Free Software Foundation. 2007-07-21. http://www.gnu.org/gnu/manifesto.html. Retrieved 2007-11-10.
+^ Wardrip-Fruin, Noah, and Nick Montfort. "The GNU Manifesto." The NewMediaReader. Cambridge, Mass.: MIT, 2003. 545-550. Print.
+^ Wardrip-Fruin, Noah, and Nick Montfort. "The GNU Manifesto." The NewMediaReader. Cambridge, Mass.: MIT, 2003. 545-550. Print.
+^ Weber, S. (2004). The Success of Open Source. Cambridge: Harvard University Press.
+^ Weber, S. (2004). The Success of Open Source. Cambridge: Harvard University Press
+^ Philosophy of the GNU Project
+^ http://www.gnu.org/help/help.html
+^ http://www.gnu.org/
+^ What would you like to see most in minix? Linus Benedict Torvalds (Aug 26 1991, 2:12 am) - comp.os.minix | Google Groups
+^ Richard Stallman (2000-09-05). "Stallman on Qt, the GPL, KDE, and GNOME". http://linuxtoday.com/news_story.php3?ltsn=2000-09-05-001-21-OP-LF-KE. Retrieved 2005-09-09.
+^ "USENIX Lifetime Achievement Award ("The Flame")". http://www.usenix.org/directory/flame.html. Retrieved 2007-12-05. "Awarded for the ubiquity, breadth, and quality of its freely available redistributable and modifiable software, which has enabled a generation of research and commercial development."
+[edit]External links
+
+GNU Website
+The initial announcement
+The GNU philosophy pages
+The GNU Manifesto
+A detailed essay about the GNU Project
+The "GNU's bulletins", a discontinued newsletter containing much now-historical information
+v • d • e
+Free Software Foundation
+People	
+Richard M. Stallman
+
+GNU Project	
+GNU General Public License
+Other projects	
+Free Software Directory · FSF Free Software Awards · BadVista · Defective by Design
+Sister organizations	
+Europe · Latin America · India
+See also	
+List of Linux distributions endorsed by the Free Software Foundation
+v • d • e
+GNU Project
+History	
+GNU Manifesto · Free Software Foundation (Europe · India · Latin America) · History of free software
+
+Licenses	
+GNU General Public License · GNU Lesser General Public License · Affero General Public License · GNU Free Documentation License · GPL linking exception
+Software	
+GNU (variants) · Hurd · GNOME · Bash · GCC · GNU Emacs · glibc · Coreutils · Build system · GNUnet · Gnuzilla (IceCat) · Gnash · more...
+Public speakers	
+Alexandre Oliva · Benjamin Mako Hill · Bradley M. Kuhn · Eben Moglen · Federico Heinz · Georg C. F. Greve · Loïc Dachary · Ricardo Galli · Richard Stallman · Robert J. Chassell · John Sullivan
+Other topics	
+GNU/Linux naming controversy · Revolution OS · BadVista · Defective by Design
+v • d • e
+Linux operating system
+Linux	
+Adoption · Comparison with Windows · Criticism · (Criticism of Desktop Linux) · History · Kernel (kernel names · supported architectures) · Linus' Law · Linux Foundation · Linux-libre · Tux
+
+Distribution	
+Distribution (general comparison · netbook-specific comparison · Lightweight Linux distribution) · Live CD · Live USB · Package formats
+GNU	
+Free Software Foundation · GNU · GNU GPL · GNU/Linux naming controversy · GNU packages · GNU Project
+Window manager	
+X Window Manager · AfterStep · Blackbox · CTWM · Enlightenment · FVWM · Hackedbox · IceWM · Metisse · OLVWM · PLWM · PWM · Sawfish · vtwm · wm2 · wmx · Xmonad
+User interface	
+CLI · GUI · GNOME · KDE · Xfce · LXDE
+Applications	
+Desktop · Devices · Embedded · Gaming · LAMP · Thin client
+People	
+Jono Bacon · Alan Cox · Jon 'Mad Dog' Hall · Benjamin Mako Hill · Greg Kroah-Hartman · David S. Miller · Andrew Morton · Ian Murdock · Bruce Perens · Daniel Robbins · Mark Shuttleworth · Richard Stallman · Linus Torvalds · Theodore Ts'o · Patrick Volkerding · Matt Zimmerman
+Media	
+Free Software Magazine · Linux.com · Linux Format · Linux For You · Linux Gazette · Linux Journal · Linux-Magazin · Linux Magazine · Linux Outlaws · LugRadio · LWN.net · O3 Magazine · Phoronix
+Lists	
+Devices · Distributions · Distributions that run from RAM · Live CDs · Proprietary software for Linux
+System arrangement
+and features	
+Startup process · Console · Framebuffer · Kernel modules
+Mobile	
+Access Linux Platform · Android · bada · LiMo Foundation · LiMo Platform · Linux Phone Standards Forum · MeeGo (Maemo · Moblin) · Mobilinux · Open Handset Alliance · Openmoko · OPhone · webOS · SHR · Ubuntu Mobile
+Other topics	
+Linux conference · Linux Documentation Project · Malware · Linux Standard Base · Linux User Group (LUG) · Revolution OS · SCO and Linux · Tanenbaum–Torvalds debate · The Code
+v • d • e
+Free and open source software
+General	
+Copyleft · Events and Awards · Free software · Free Software Definition · Gratis versus Libre · List of free and open source software packages · Open-source software
+Operating system families	
+AROS · BSD · Darwin · eCos · FreeDOS · GNU · Haiku · Inferno · Linux · Mach · MINIX · OpenSolaris · Plan 9 · ReactOS · Symbian
+Development	
+Eclipse · Free Pascal · GCC · Gambas · Java · LLVM · Lua · NetBeans · Open64 · Perl · PHP · Python · ROSE · Ruby · Tcl
+History	
+GNU · Haiku · Linux · Mozilla (Application Suite · Firefox · Thunderbird)
+Organizations	
+Apache Software Foundation · Blender Foundation · Eclipse Foundation · freedesktop.org · Free Software Foundation (Europe · India · Latin America) · FSMI · GNOME Foundation · GNU Project · Google Code · KDE e.V. · Linux Foundation · Mozilla Foundation · Open Source Geospatial Foundation · Open Source Initiative · SourceForge · Symbian Foundation · Xiph.Org Foundation · XMPP Standards Foundation · X.Org Foundation
+Licences	
+Apache · Artistic · BSD · GNU GPL · GNU LGPL · ISC · MIT · MPL · Ms-PL/RL · zlib · FSF approved licenses
+License standards	
+Open Source Definition · The Free Software Definition · Debian Free Software Guidelines
+Challenges	
+Binary blob · Digital rights management · Graphics hardware compatibility · License proliferation · Mozilla software rebranding · Proprietary software · SCO-Linux controversies · Security · Software patents · Hardware restrictions · Trusted Computing · Viral license
+Other topics	
+Alternative terms · Community · Linux distribution · Forking · Movement · Microsoft Open Specification Promise · Revolution OS · Comparison with closed source
+ Book:FOSS  ·   Category:Free software  ·   Portal:Free software
+Categories: GNU Project | Copyleft media | Free Software Foundation

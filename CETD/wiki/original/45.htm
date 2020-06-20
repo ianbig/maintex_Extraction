@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>Neural network - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Neural_network&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Neural_network&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Neural_network",
+wgTitle="Neural network",
+wgAction="view",
+wgArticleId=1729542,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=402290946,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["All articles with unsourced statements", "Articles with unsourced statements from August 2009", "Articles needing additional references from June 2010", "All articles needing additional references", "Articles lacking in-text citations from October 2010", "All articles lacking in-text citations", "Computational neuroscience", "Data mining", "Neural networks", "Network architecture", "Networks", "Econometrics", "Information, knowledge, and uncertainty"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Neural_network skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Neural network</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<div class="dablink">For other uses, see <a href="/wiki/Neural_network_(disambiguation)" title="Neural network (disambiguation)">Neural network (disambiguation)</a>.</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Neural_network_example.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Neural_network_example.svg/220px-Neural_network_example.svg.png" width="220" height="293" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Neural_network_example.svg" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Simplified view of a feedforward artificial neural network</div>
+</div>
+</div>
+<p>The term <b>neural network</b> was traditionally used to refer to a network or circuit of <a href="/wiki/Neuron" title="Neuron">biological neurons</a><sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup>. The modern usage of the term often refers to <a href="/wiki/Artificial_neural_network" title="Artificial neural network">artificial neural networks</a>, which are composed of <a href="/wiki/Artificial_neuron" title="Artificial neuron">artificial neurons</a> or nodes. Thus the term has two distinct usages:</p>
+<ol>
+<li><a href="/wiki/Biological_neural_network" title="Biological neural network">Biological neural networks</a> are made up of real biological neurons that are connected or functionally related in the <a href="/wiki/Peripheral_nervous_system" title="Peripheral nervous system">peripheral nervous system</a> or the <a href="/wiki/Central_nervous_system" title="Central nervous system">central nervous system</a>. In the field of <a href="/wiki/Neuroscience" title="Neuroscience">neuroscience</a>, they are often identified as groups of neurons that perform a specific physiological function in laboratory analysis.</li>
+<li><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural networks</a> are made up of interconnecting artificial neurons (programming constructs that mimic the properties of biological neurons). Artificial neural networks may either be used to gain an understanding of biological neural networks, or for solving artificial intelligence problems without necessarily creating a model of a real biological system. The real, biological nervous system is highly complex and includes some features that may seem superfluous based on an understanding of artificial networks.</li>
+</ol>
+<p>This article focuses on the relationship between the two concepts; for detailed coverage of the two different concepts refer to the separate articles: <a href="/wiki/Biological_neural_network" title="Biological neural network">Biological neural network</a> and <a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a>.</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#History_of_the_neural_network_analogy"><span class="tocnumber">2</span> <span class="toctext">History of the neural network analogy</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#The_brain.2C_neural_networks_and_computers"><span class="tocnumber">3</span> <span class="toctext">The brain, neural networks and computers</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Neural_networks_and_artificial_intelligence"><span class="tocnumber">3.1</span> <span class="toctext">Neural networks and artificial intelligence</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Background"><span class="tocnumber">3.1.1</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Applications_of_natural_and_of_artificial_neural_networks"><span class="tocnumber">3.1.2</span> <span class="toctext">Applications of natural and of artificial neural networks</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Neural_networks_and_neuroscience"><span class="tocnumber">4</span> <span class="toctext">Neural networks and neuroscience</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Types_of_models"><span class="tocnumber">4.1</span> <span class="toctext">Types of models</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Current_research"><span class="tocnumber">4.2</span> <span class="toctext">Current research</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Criticism"><span class="tocnumber">5</span> <span class="toctext">Criticism</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Further_reading"><span class="tocnumber">8</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</span> <span class="mw-headline" id="Overview">Overview</span></h2>
+<p>In general a biological neural network is composed of a group or groups of chemically connected or functionally associated neurons. A single neuron may be connected to many other neurons and the total number of neurons and connections in a network may be extensive. Connections, called <a href="/wiki/Synapses" title="Synapses" class="mw-redirect">synapses</a>, are usually formed from <a href="/wiki/Axons" title="Axons" class="mw-redirect">axons</a> to <a href="/wiki/Dendrites" title="Dendrites" class="mw-redirect">dendrites</a>, though dendrodendritic microcircuits<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>2<span>]</span></a></sup> and other connections are possible. Apart from the electrical signaling, there are other forms of signaling that arise from <a href="/wiki/Neurotransmitter" title="Neurotransmitter">neurotransmitter</a> diffusion, which have an effect on electrical signaling. As such, neural networks are extremely complex.</p>
+<p><a href="/wiki/Artificial_intelligence" title="Artificial intelligence">Artificial intelligence</a> and <a href="/wiki/Cognitive_modeling" title="Cognitive modeling" class="mw-redirect">cognitive modeling</a> try to simulate some properties of neural networks. While similar in their techniques, the former has the aim of solving particular tasks, while the latter aims to build mathematical models of biological neural systems.</p>
+<p>In the <a href="/wiki/Artificial_intelligence" title="Artificial intelligence">artificial intelligence</a> field, artificial neural networks have been applied successfully to <a href="/wiki/Speech_recognition" title="Speech recognition">speech recognition</a>, <a href="/wiki/Image_analysis" title="Image analysis">image analysis</a> and <a href="/wiki/Adaptive_control" title="Adaptive control">adaptive control</a>, in order to construct <a href="/wiki/Software_agents" title="Software agents" class="mw-redirect">software agents</a> (in <a href="/wiki/Video_game" title="Video game">computer and video games</a>) or <a href="/wiki/Autonomous_robot" title="Autonomous robot">autonomous robots</a>. Most of the currently employed artificial neural networks for artificial intelligence are based on <a href="/wiki/Statistical_estimation" title="Statistical estimation" class="mw-redirect">statistical estimation</a>, <a href="/wiki/Optimization_(mathematics)" title="Optimization (mathematics)">optimization</a> and <a href="/wiki/Control_theory" title="Control theory">control theory</a>.</p>
+<p>The <a href="/wiki/Cognitive_modelling" title="Cognitive modelling" class="mw-redirect">cognitive modelling</a> field involves the physical or mathematical modeling of the behaviour of neural systems; ranging from the individual neural level (e.g. modelling the spike response curves of neurons to a stimulus), through the neural cluster level (e.g. modelling the release and effects of dopamine in the basal ganglia) to the complete organism (e.g. behavioural modelling of the organism's response to stimuli). Artificial intelligence, cognitive modelling, and neural networks are information processing paradigms inspired by the way biological neural systems process data.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=2" title="Edit section: History of the neural network analogy">edit</a>]</span> <span class="mw-headline" id="History_of_the_neural_network_analogy">History of the neural network analogy</span></h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/Connectionism" title="Connectionism">Connectionism</a></div>
+<p>The concept of neural networks started in the late 19th century as an effort to describe how the human mind performed.</p>
+<p>The <a href="/wiki/Austrian_School" title="Austrian School">Austrian School</a> of economics theory of <i><a href="/wiki/Spontaneous_order" title="Spontaneous order">spontaneous order</a></i> was explained by <a href="/wiki/Murray_Rothbard" title="Murray Rothbard">Murray Rothbard</a> to have been first realized by <a href="/wiki/Zhuangzi" title="Zhuangzi">Zhuangzi</a> (Chuang Tzu) who said, "Good order results spontaneously when things are let alone."<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>3<span>]</span></a></sup> In the brain spontaneous order arises out of decentralized networks of simple units (neurons). In the late 1940s <a href="/wiki/Donald_Hebb" title="Donald Hebb" class="mw-redirect">Donald Hebb</a> made one of the first hypotheses of learning with a mechanism of neural plasticity called <a href="/wiki/Hebbian_learning" title="Hebbian learning" class="mw-redirect">Hebbian learning</a>. Hebbian learning is considered to be a 'typical' <a href="/wiki/Unsupervised_learning" title="Unsupervised learning">unsupervised learning</a> rule and its later variants were early models for <a href="/wiki/Long_term_potentiation" title="Long term potentiation" class="mw-redirect">long term potentiation</a>. These ideas started being applied to computational models in 1948 with <a href="/wiki/Unorganized_machine" title="Unorganized machine">Turing's B-type machines</a> and the <a href="/wiki/Perceptron" title="Perceptron">perceptron</a>.</p>
+<p>The <a href="/wiki/Perceptron" title="Perceptron">perceptron</a> is essentially a <a href="/wiki/Linear_classifier" title="Linear classifier">linear classifier</a> for classifying data <img class="tex" alt=" x \in \mathbb{R}^n" src="http://upload.wikimedia.org/math/f/b/d/fbde4e1b6c7d4d43e94f24c44a89518b.png" /> specified by parameters <img class="tex" alt="w \in \mathbb{R}^n, b \in \mathbb{R}" src="http://upload.wikimedia.org/math/2/e/3/2e35c06d86ef3e1f95af83b9db28665f.png" /> and an output function <span class="texhtml"><i>f</i> = <i>w</i>'<i>x</i> + <i>b</i></span>. Its parameters are adapted with an ad-hoc rule similar to stochastic steepest gradient descent. Because the <a href="/wiki/Inner_product" title="Inner product" class="mw-redirect">inner product</a> is a <a href="/wiki/Linear_operator" title="Linear operator" class="mw-redirect">linear operator</a> in the input space, the perceptron can only perfectly classify a set of data for which different classes are <a href="/wiki/Linearly_separable" title="Linearly separable" class="mw-redirect">linearly separable</a> in the input space, while it often fails completely for non-separable data. While the development of the algorithm initially generated some enthusiasm, partly because of its apparent relation to biological mechanisms, the later discovery of this inadequacy caused such models to be abandoned until the introduction of non-linear models into the field.</p>
+<p>The cognitron (1975) designed by <a href="/wiki/Kunihiko_Fukushima" title="Kunihiko Fukushima" class="mw-redirect">Kunihiko Fukushima</a><sup id="cite_ref-Kun1_3-0" class="reference"><a href="#cite_note-Kun1-3"><span>[</span>4<span>]</span></a></sup> was an early multilayered neural network with a training algorithm. The actual structure of the network and the methods used to set the interconnection weights change from one neural strategy to another, each with its advantages and disadvantages. Networks can propagate information in one direction only, or they can bounce back and forth until self-activation at a node occurs and the network settles on a final state. The ability for bi-directional flow of inputs between neurons/nodes was produced with the <a href="/wiki/Hopfield_net" title="Hopfield net">Hopfield's network</a> (1982), and specialization of these node layers for specific purposes was introduced through the first <a href="/wiki/Hybrid_neural_network" title="Hybrid neural network">hybrid network</a>.</p>
+<p>The <a href="/wiki/Connectionism" title="Connectionism">parallel distributed processing</a> of the mid-1980s became popular under the name <a href="/wiki/Connectionism" title="Connectionism">connectionism</a>.</p>
+<p>The rediscovery of the <a href="/wiki/Backpropagation" title="Backpropagation">backpropagation</a> algorithm was probably the main reason behind the repopularisation of neural networks after the publication of "Learning Internal Representations by Error Propagation" in 1986 (Though backpropagation itself dates from 1969). The original network utilized multiple layers of weight-sum units of the type <span class="texhtml"><i>f</i> = <i>g</i>(<i>w</i>'<i>x</i> + <i>b</i>)</span>, where <span class="texhtml"><i>g</i></span> was a <a href="/wiki/Sigmoid_function" title="Sigmoid function">sigmoid function</a> or <a href="/wiki/Logistic_function" title="Logistic function">logistic function</a> such as used in <a href="/wiki/Logistic_regression" title="Logistic regression">logistic regression</a>. Training was done by a form of stochastic <a href="/wiki/Gradient_descent" title="Gradient descent">Gradient descent</a>. The employment of the chain rule of differentiation in deriving the appropriate parameter updates results in an algorithm that seems to 'backpropagate errors', hence the nomenclature. However it is essentially a form of gradient descent. Determining the optimal parameters in a model of this type is not trivial, and steepest gradient descent methods cannot be relied upon to give the solution without a good starting point. In recent times, networks with the same architecture as the backpropagation network are referred to as <a href="/wiki/Multilayer_perceptron" title="Multilayer perceptron">Multi-Layer Perceptrons</a>. This name does not impose any limitations on the type of algorithm used for learning.</p>
+<p>The backpropagation network generated much enthusiasm at the time and there was much controversy about whether such learning could be implemented in the brain or not, partly because a mechanism for reverse signaling was not obvious at the time, but most importantly because there was no plausible source for the 'teaching' or 'target' signal.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=3" title="Edit section: The brain, neural networks and computers">edit</a>]</span> <span class="mw-headline" id="The_brain.2C_neural_networks_and_computers">The brain, neural networks and computers</span></h2>
+<p>Neural networks, as used in artificial intelligence, have traditionally been viewed as simplified models of neural processing in the brain, even though the relation between this model and brain biological architecture is debated, as little is known about how the brain actually works.<sup class="Template-Fact" title="This claim needs references to reliable sources from August 2009" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</sup></p>
+<p>A subject of current research in theoretical neuroscience is the question surrounding the degree of complexity and the properties that individual neural elements should have to reproduce something resembling animal intelligence.</p>
+<p>Historically, computers evolved from the <a href="/wiki/Von_Neumann_architecture" title="Von Neumann architecture">von Neumann architecture</a>, which is based on sequential processing and execution of explicit instructions. On the other hand, the origins of neural networks are based on efforts to model information processing in biological systems, which may rely largely on parallel processing as well as implicit instructions based on recognition of patterns of 'sensory' input from external sources. In other words, at its very heart a neural network is a complex statistical processor (as opposed to being tasked to sequentially process and execute).</p>
+<p><a href="/wiki/Neural_coding" title="Neural coding">Neural coding</a> is concerned with how sensory and other information is represented in the brain by neurons. The main goal of studying neural coding is to characterize the relationship between the <a href="/wiki/Stimulus_(physiology)" title="Stimulus (physiology)">stimulus</a> and the individual or ensemble neuronal responses and the relationship among electrical activity of the neurons in the ensemble <sup id="cite_ref-Brown_4-0" class="reference"><a href="#cite_note-Brown-4"><span>[</span>5<span>]</span></a></sup>. It is thought that neurons can encode both <a href="/wiki/Digital" title="Digital">digital</a> and <a href="/wiki/Analog_signal" title="Analog signal">analog</a> information.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>6<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=4" title="Edit section: Neural networks and artificial intelligence">edit</a>]</span> <span class="mw-headline" id="Neural_networks_and_artificial_intelligence">Neural networks and artificial intelligence</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a></div>
+<p>A <i>neural network</i> (NN), in the case of artificial neurons called <i>artificial neural network</i> (ANN) or <i>simulated neural network</i> (SNN), is an interconnected group of natural or <a href="/wiki/Artificial_neuron" title="Artificial neuron">artificial neurons</a> that uses a <a href="/wiki/Mathematical_model" title="Mathematical model">mathematical or computational model</a> for <a href="/wiki/Information_processing" title="Information processing">information processing</a> based on a <a href="/wiki/Connectionism" title="Connectionism">connectionistic</a> approach to <a href="/wiki/Computation" title="Computation">computation</a>. In most cases an ANN is an <a href="/wiki/Adaptive_system" title="Adaptive system">adaptive system</a> that changes its structure based on external or internal information that flows through the network.</p>
+<p>In more practical terms neural networks are <a href="/wiki/Non-linear" title="Non-linear" class="mw-redirect">non-linear</a> <a href="/wiki/Statistical" title="Statistical" class="mw-redirect">statistical</a> <a href="/wiki/Data_modeling" title="Data modeling">data modeling</a> or <a href="/wiki/Decision_making" title="Decision making">decision making</a> tools. They can be used to model complex relationships between inputs and outputs or to <a href="/wiki/Pattern_recognition" title="Pattern recognition">find patterns</a> in data.</p>
+<p>However, the paradigm of neural networks - i.e., <i>implicit</i>, not <i>explicit</i>&#160;, learning is stressed - seems more to correspond to some kind of <i>natural intelligence</i> than to the traditional <i>Artificial Intelligence</i>, which would stress, instead, rule-based learning.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=5" title="Edit section: Background">edit</a>]</span> <span class="mw-headline" id="Background">Background</span></h4>
+<p>An <a href="/wiki/Artificial_neural_network" title="Artificial neural network">artificial neural network</a> involves a network of simple processing elements (<a href="/wiki/Artificial_neurons" title="Artificial neurons" class="mw-redirect">artificial neurons</a>) which can exhibit complex global behavior, determined by the connections between the processing elements and element parameters. Artificial neurons were first proposed in 1943 by Warren McCulloch, a neurophysiologist, and Walter Pitts, an MIT logician.<a href="http://palisade.com/neuraltools/neural_networks.asp" class="external autonumber" rel="nofollow">[2]</a> One classical type of artificial neural network is the recurrent <a href="/wiki/Hopfield_net" title="Hopfield net">Hopfield net</a>.</p>
+<p>In a neural network model simple <a href="/wiki/Node_(neural_networks)" title="Node (neural networks)" class="mw-redirect">nodes</a>, which can be called variously "neurons", "neurodes", "Processing Elements" (PE) or "units", are connected together to form a network of nodes — hence the term "neural network". While a neural network does not have to be adaptive <i>per se</i>, its practical use comes with algorithms designed to alter the strength (weights) of the connections in the network to produce a desired signal flow.</p>
+<p>In modern <a href="/wiki/Neural_network_software" title="Neural network software">software implementations</a> of artificial neural networks the approach inspired by biology has more or less been abandoned for a more practical approach based on statistics and signal processing. In some of these systems, neural networks, or parts of neural networks (such as <a href="/wiki/Artificial_neuron" title="Artificial neuron">artificial neurons</a>), are used as components in larger systems that combine both adaptive and non-adaptive elements.</p>
+<p>The concept of a neural network appears to have first been proposed by <a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a> in his 1948 paper "Intelligent Machinery".</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=6" title="Edit section: Applications of natural and of artificial neural networks">edit</a>]</span> <span class="mw-headline" id="Applications_of_natural_and_of_artificial_neural_networks">Applications of natural and of artificial neural networks</span></h4>
+<p>The utility of artificial neural network models lies in the fact that they can be used to infer a function from observations and also to use it. This is particularly useful in applications where the complexity of the data or task makes the design of such a function by hand impractical.</p>
+<dl>
+<dt>Real life applications</dt>
+</dl>
+<p>The tasks to which artificial neural networks are applied tend to fall within the following broad categories:</p>
+<ul>
+<li><a href="/wiki/Function_approximation" title="Function approximation">Function approximation</a>, or <a href="/wiki/Regression_analysis" title="Regression analysis">regression analysis</a>, including <a href="/wiki/Time_series_prediction" title="Time series prediction" class="mw-redirect">time series prediction</a> and modeling.</li>
+<li><a href="/wiki/Statistical_classification" title="Statistical classification" class="mw-redirect">Classification</a>, including <a href="/wiki/Pattern_recognition" title="Pattern recognition">pattern</a> and sequence recognition, novelty detection and sequential decision making.</li>
+<li><a href="/wiki/Data_processing" title="Data processing" class="mw-redirect">Data processing</a>, including filtering, clustering, <a href="/wiki/Blind_signal_separation" title="Blind signal separation">blind signal separation</a> and compression.</li>
+</ul>
+<p>Application areas of ANNs include system identification and control (vehicle control, process control), game-playing and decision making (backgammon, chess, racing), pattern recognition (radar systems, face identification, object recognition, etc.), sequence recognition (gesture, speech, handwritten text recognition), medical diagnosis, financial applications, <a href="/wiki/Data_mining" title="Data mining">data mining</a> (or knowledge discovery in databases, "KDD"), visualization and <a href="/wiki/E-mail_spam" title="E-mail spam">e-mail spam</a> filtering.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=7" title="Edit section: Neural networks and neuroscience">edit</a>]</span> <span class="mw-headline" id="Neural_networks_and_neuroscience">Neural networks and neuroscience</span></h2>
+<p>Theoretical and <a href="/wiki/Computational_neuroscience" title="Computational neuroscience">computational neuroscience</a> is the field concerned with the theoretical analysis and computational modeling of biological neural systems. Since neural systems are intimately related to cognitive processes and behaviour, the field is closely related to cognitive and behavioural modeling.</p>
+<p>The aim of the field is to create models of biological neural systems in order to understand how biological systems work. To gain this understanding, neuroscientists strive to make a link between observed biological processes (data), biologically plausible mechanisms for neural processing and learning (<a href="/wiki/Biological_neural_network" title="Biological neural network">biological neural network</a> models) and theory (statistical learning theory and <a href="/wiki/Information_theory" title="Information theory">information theory</a>).</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=8" title="Edit section: Types of models">edit</a>]</span> <span class="mw-headline" id="Types_of_models">Types of models</span></h3>
+<p>Many models are used in the field, each defined at a different level of abstraction and trying to model different aspects of neural systems. They range from models of the short-term behaviour of <a href="/wiki/Biological_neuron_models" title="Biological neuron models" class="mw-redirect">individual neurons</a>, through models of how the dynamics of neural circuitry arise from interactions between individual neurons, to models of how behaviour can arise from abstract neural modules that represent complete subsystems. These include models of the long-term and short-term plasticity of neural systems and its relation to learning and memory, from the individual neuron to the system level.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=9" title="Edit section: Current research">edit</a>]</span> <span class="mw-headline" id="Current_research">Current research</span></h3>
+<table class="metadata plainlinks ambox ambox-content" style="">
+<tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" /></div>
+</td>
+<td class="mbox-text" style="">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references or sources</a></b>.<br />
+<small>Please help <a href="http://en.wikipedia.org/w/index.php?title=Neural_network&amp;action=edit" class="external text" rel="nofollow">improve this article</a> by adding citations to <a href="/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>. <i>(June 2010)</i></small></td>
+</tr>
+</table>
+<p>While initially research had been concerned mostly with the electrical characteristics of neurons, a particularly important part of the investigation in recent years has been the exploration of the role of <a href="/wiki/Neuromodulators" title="Neuromodulators" class="mw-redirect">neuromodulators</a> such as <a href="/wiki/Dopamine" title="Dopamine">dopamine</a>, <a href="/wiki/Acetylcholine" title="Acetylcholine">acetylcholine</a>, and <a href="/wiki/Serotonin" title="Serotonin">serotonin</a> on behaviour and learning.</p>
+<p><a href="/wiki/Biophysics" title="Biophysics">Biophysical</a> models, such as <a href="/wiki/BCM_theory" title="BCM theory">BCM theory</a>, have been important in understanding mechanisms for <a href="/wiki/Synaptic_plasticity" title="Synaptic plasticity">synaptic plasticity</a>, and have had applications in both computer science and neuroscience. Research is ongoing in understanding the computational algorithms used in the brain, with some recent biological evidence for <a href="/wiki/Radial_basis_networks" title="Radial basis networks" class="mw-redirect">radial basis networks</a> and <a href="/wiki/Neural_backpropagation" title="Neural backpropagation">neural backpropagation</a> as mechanisms for processing data.</p>
+<p>Computational devices have been created in CMOS for both biophysical simulation and <a href="/w/index.php?title=Neuromorphic_computing&amp;action=edit&amp;redlink=1" class="new" title="Neuromorphic computing (page does not exist)">neuromorphic computing</a>. More recent efforts show promise for creating <a href="/w/index.php?title=Nanodevice&amp;action=edit&amp;redlink=1" class="new" title="Nanodevice (page does not exist)">nanodevices</a> <sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>7<span>]</span></a></sup> for very large scale <a href="/wiki/Principal_component" title="Principal component" class="mw-redirect">principal components</a> analyses and <a href="/wiki/Convolution" title="Convolution">convolution</a>. If successful, these efforts could usher in a new era of <a href="/wiki/Neural_computing" title="Neural computing" class="mw-redirect">neural computing</a><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup> that is a step beyond digital computing, because it depends on <a href="/wiki/Learning" title="Learning">learning</a> rather than <a href="/wiki/Programming" title="Programming" class="mw-redirect">programming</a> and because it is fundamentally <a href="/wiki/Analog_signal" title="Analog signal">analog</a> rather than <a href="/wiki/Digital" title="Digital">digital</a> even though the first instantiations may in fact be with CMOS digital devices.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=10" title="Edit section: Criticism">edit</a>]</span> <span class="mw-headline" id="Criticism">Criticism</span></h2>
+<p>A common criticism of neural networks, particularly in robotics, is that they require a large diversity of training for real-world operation. Dean Pomerleau, in his research presented in the paper "Knowledge-based Training of Artificial Neural Networks for Autonomous Robot Driving," uses a neural network to train a robotic vehicle to drive on multiple types of roads (single lane, multi-lane, dirt, etc.). A large amount of his research is devoted to (1) extrapolating multiple training scenarios from a single training experience, and (2) preserving past training diversity so that the system does not become overtrained (if, for example, it is presented with a series of right turns – it should not learn to always turn right). These issues are common in neural networks that must decide from amongst a wide variety of responses.</p>
+<p><a href="/wiki/A._K._Dewdney" title="A. K. Dewdney" class="mw-redirect">A. K. Dewdney</a>, a former <i><a href="/wiki/Scientific_American" title="Scientific American">Scientific American</a></i> columnist, wrote in 1997, "Although neural nets do solve a few toy problems, their powers of computation are so limited that I am surprised anyone takes them seriously as a general problem-solving tool." (Dewdney, p.&#160;82)</p>
+<p>Arguments for Dewdney's position are that to implement large and effective software neural networks, much processing and storage resources need to be committed. While the brain has hardware tailored to the task of processing signals through a <a href="/wiki/Graph_(mathematics)" title="Graph (mathematics)">graph</a> of neurons, simulating even a most simplified form on <a href="/wiki/Von_Neumann" title="Von Neumann" class="mw-redirect">Von Neumann</a> technology may compel a NN designer to fill many millions of <a href="/wiki/Database" title="Database">database</a> rows for its connections - which can lead to abusive <a href="/wiki/RAM" title="RAM" class="mw-redirect">RAM</a> and <a href="/wiki/Hard_drive" title="Hard drive" class="mw-redirect">HD</a> necessities. Furthermore, the designer of NN systems will often need to simulate the transmission of signals through many of these connections and their associated neurons - which must often be matched with incredible amounts of <a href="/wiki/CPU" title="CPU" class="mw-redirect">CPU</a> processing power and time. While neural networks often yield <i>effective</i> programs, they too often do so at the cost of time and money <i>efficiency</i>.</p>
+<p>Arguments against Dewdney's position are that neural nets have been successfully used to solve many complex and diverse tasks, ranging from autonomously flying aircraft <a href="http://www.nasa.gov/centers/dryden/news/NewsReleases/2003/03-49.html" class="external autonumber" rel="nofollow">[3]</a> to detecting credit card fraud <a href="http://www.visa.ca/en/about/visabenefits/innovation.cfm" class="external autonumber" rel="nofollow">[4]</a>.</p>
+<p>Technology writer <a href="/w/index.php?title=Roger_Bridgman&amp;action=edit&amp;redlink=1" class="new" title="Roger Bridgman (page does not exist)">Roger Bridgman</a> commented on Dewdney's statements about neural nets:</p>
+<blockquote>
+<p>Neural networks, for instance, are in the dock not only because they have been hyped to high heaven, (what hasn't?) but also because you could create a successful net without understanding how it worked: the bunch of numbers that captures its behaviour would in all probability be "an opaque, unreadable table...valueless as a scientific resource". In spite of his emphatic declaration that science is not technology, Dewdney seems here to pillory neural nets as bad science when most of those devising them are just trying to be good engineers. An unreadable table that a useful machine could read would still be well worth having.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup></p>
+</blockquote>
+<p>Some other criticisms came from believers of hybrid models (combining neural networks and symbolic approaches). They advocate the intermix of these two approaches and believe that hybrid models can better capture the mechanisms of the human mind (Sun and Bookman 1990).</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:transparent;table-layout:fixed;">
+<tr valign="top">
+<td>
+<div style="margin-right:20px;">
+<ul>
+<li><a href="/wiki/ADALINE" title="ADALINE">ADALINE</a></li>
+<li><a href="/wiki/20Q" title="20Q">20Q</a> is a neural network implementation of the 20 questions game</li>
+<li><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a></li>
+<li><a href="/wiki/Biological_cybernetics" title="Biological cybernetics" class="mw-redirect">Biological cybernetics</a></li>
+<li><a href="/wiki/Biologically_inspired_computing" title="Biologically inspired computing" class="mw-redirect">Biologically inspired computing</a></li>
+<li><a href="/wiki/Cerebellar_Model_Articulation_Controller" title="Cerebellar Model Articulation Controller">Cerebellar Model Articulation Controller</a></li>
+<li><a href="/wiki/Cognitive_architecture" title="Cognitive architecture">Cognitive architecture</a></li>
+<li><a href="/wiki/Cognitive_science" title="Cognitive science">Cognitive science</a></li>
+<li><a href="/wiki/Cultured_neuronal_networks" title="Cultured neuronal networks" class="mw-redirect">Cultured neuronal networks</a></li>
+<li><a href="/wiki/Digital_morphogenesis" title="Digital morphogenesis">Digital morphogenesis</a></li>
+<li><a href="/wiki/Group_method_of_data_handling" title="Group method of data handling">Group method of data handling</a></li>
+<li><a href="/wiki/In_Situ_Adaptive_Tabulation" title="In Situ Adaptive Tabulation" class="mw-redirect">In Situ Adaptive Tabulation</a></li>
+</ul>
+</div>
+</td>
+<td>
+<div style="margin-right: 20px;">
+<ul>
+<li><a href="/wiki/Memristor" title="Memristor">Memristor</a></li>
+<li><a href="/wiki/Neural_network_software" title="Neural network software">Neural network software</a></li>
+<li><a href="/wiki/Neuroscience" title="Neuroscience">Neuroscience</a></li>
+<li><a href="/wiki/Parallel_distributed_processing" title="Parallel distributed processing" class="mw-redirect">Parallel distributed processing</a></li>
+<li><a href="/wiki/Predictive_analytics" title="Predictive analytics">Predictive analytics</a></li>
+<li><a href="/wiki/Radial_basis_function_network" title="Radial basis function network">Radial basis function network</a></li>
+<li><a href="/wiki/Recurrent_neural_networks" title="Recurrent neural networks" class="mw-redirect">Recurrent neural networks</a></li>
+<li><a href="/wiki/Simulated_reality" title="Simulated reality">Simulated reality</a></li>
+<li><a href="/wiki/Support_vector_machine" title="Support vector machine">Support vector machine</a></li>
+<li><a href="/wiki/Tensor_product_network" title="Tensor product network">Tensor product network</a></li>
+<li><a href="/wiki/Time_delay_neural_network" title="Time delay neural network">Time delay neural network</a></li>
+<li><a href="/wiki/Parallel_Constraint_Satisfaction_Processes" title="Parallel Constraint Satisfaction Processes">Parallel Constraint Satisfaction Processes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=12" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist references-small" style="">
+<div class="references">
+<ol>
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> J. J. HOPFIELD Neural networks and physical systems with emergent collective computational abilities. Proc. NatL Acad. Sci. USA Vol. 79, pp. 2554-2558, April 1982 Biophysics <a href="http://www.pnas.org/content/79/8/2554.full.pdf" class="external autonumber" rel="nofollow">[1]</a></li>
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> Arbib, p.666</li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> Rothbard, Murray. <a href="http://www.mises.org/journals/jls/9_2/9_2_3.pdf" class="external text" rel="nofollow"><i>Concepts of the Role of Intellectuals in Social Change Toward Laissez Faire</i></a>, The Journal of Libertarian Studies, Vol IX No. 2 (Fall 1990)</li>
+<li id="cite_note-Kun1-3"><b><a href="#cite_ref-Kun1_3-0">^</a></b> <span class="citation Journal">Fukushima, Kunihiko (1975). "Cognitron: A self-organizing multilayered neural network". <i>Biological Cybernetics</i> <b>20</b> (3-4): 121–136. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2FBF00342633" class="external text" rel="nofollow">10.1007/BF00342633</a>. <a href="/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&#160;<a href="http://www.ncbi.nlm.nih.gov/pubmed/1203338" class="external text" rel="nofollow">1203338</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Cognitron%3A+A+self-organizing+multilayered+neural+network&amp;rft.jtitle=Biological+Cybernetics&amp;rft.aulast=Fukushima&amp;rft.aufirst=Kunihiko&amp;rft.au=Fukushima%2C%26%2332%3BKunihiko&amp;rft.date=1975&amp;rft.volume=20&amp;rft.issue=3-4&amp;rft.pages=121%E2%80%93136&amp;rft_id=info:doi/10.1007%2FBF00342633&amp;rft_id=info:pmid/1203338&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-Brown-4"><b><a href="#cite_ref-Brown_4-0">^</a></b> <span class="citation Journal">Brown EN, Kass RE, Mitra PP. (2004). "Multiple neural spike train data analysis: state-of-the-art and future challenges". <i>Nature Neuroscience</i> <b>7</b> (5): 456–61. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1038%2Fnn1228" class="external text" rel="nofollow">10.1038/nn1228</a>. <a href="/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&#160;<a href="http://www.ncbi.nlm.nih.gov/pubmed/15114358" class="external text" rel="nofollow">15114358</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Multiple+neural+spike+train+data+analysis%3A+state-of-the-art+and+future+challenges&amp;rft.jtitle=Nature+Neuroscience&amp;rft.aulast=Brown&amp;rft.aufirst=EN&amp;rft.au=Brown%26%2332%3BEN&amp;rft.au=Kass%26%2332%3BRE&amp;rft.au=Mitra%26%2332%3BPP.&amp;rft.date=2004&amp;rft.volume=7&amp;rft.issue=5&amp;rft.pages=456%E2%80%9361&amp;rft_id=info:doi/10.1038%2Fnn1228&amp;rft_id=info:pmid/15114358&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-5"><b><a href="#cite_ref-5">^</a></b> <a href="http://pop.cerco.ups-tlse.fr/fr_vers/documents/thorpe_sj_90_91.pdf" class="external text" rel="nofollow">Spike arrival times: A highly efficient coding scheme for neural networks</a>, SJ Thorpe - Parallel processing in neural systems, 1990</li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> Yang, J. J.; Pickett, M. D.; Li, X. M.; Ohlberg, D. A. A.; Stewart, D. R.; Williams, R. S. Nat. Nanotechnol. 2008, 3, 429–433.</li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> Strukov, D. B.; Snider, G. S.; Stewart, D. R.; Williams, R. S. Nature 2008, 453, 80–83.</li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> <a href="http://members.fortunecity.com/templarseries/popper.html" class="external text" rel="nofollow">Roger Bridgman's defence of neural networks</a></li>
+</ol>
+</div>
+</div>
+<table class="metadata plainlinks ambox ambox-style" style="">
+<tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="/wiki/File:Text_document_with_red_question_mark.svg" class="image"><img alt="Text document with red question mark.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" /></a></div>
+</td>
+<td class="mbox-text" style="">This article includes a <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, related reading or <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a>, but <b>its sources remain unclear because it lacks <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>. <small>Please <a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by introducing more precise citations <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">where appropriate</a>. <i>(October 2010)</i></small></td>
+</tr>
+</table>
+<h2><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=13" title="Edit section: Further reading">edit</a>]</span> <span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<ul>
+<li><span class="citation book">Arbib, Michael A. (Ed.) (1995). <i>The Handbook of Brain Theory and Neural Networks</i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Handbook+of+Brain+Theory+and+Neural+Networks&amp;rft.aulast=Arbib%2C+Michael+A.+%28Ed.%29&amp;rft.au=Arbib%2C+Michael+A.+%28Ed.%29&amp;rft.date=1995&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li>Alspector, <span><a href="http://www.google.com/patents?vid=4874963" class="external text" rel="nofollow">U.S. Patent 4,874,963</a></span> "<i>Neuromorphic learning networks</i>". October 17, 1989.</li>
+<li><span class="citation book">Agre, Philip E. (1997). <i>Computation and Human Experience</i>. Cambridge University Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-38603-9" title="Special:BookSources/0-521-38603-9">0-521-38603-9</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Computation+and+Human+Experience&amp;rft.aulast=Agre%2C+Philip+E.&amp;rft.au=Agre%2C+Philip+E.&amp;rft.date=1997&amp;rft.pub=Cambridge+University+Press&amp;rft.isbn=0-521-38603-9&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span>, p.&#160;80</li>
+<li><span class="citation book"><a href="/wiki/Yaneer_Bar-Yam" title="Yaneer Bar-Yam">Yaneer Bar-Yam</a> (2003). <i><a href="http://necsi.org/publications/dcs/Bar-YamChap2.pdf" class="external text" rel="nofollow">Dynamics of Complex Systems, Chapter 2</a></i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%5Bhttp%3A%2F%2Fnecsi.org%2Fpublications%2Fdcs%2FBar-YamChap2.pdf+Dynamics+of+Complex+Systems%2C+Chapter+2%5D&amp;rft.aulast=%5B%5BYaneer+Bar-Yam%5D%5D&amp;rft.au=%5B%5BYaneer+Bar-Yam%5D%5D&amp;rft.date=2003&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book"><a href="/wiki/Yaneer_Bar-Yam" title="Yaneer Bar-Yam">Yaneer Bar-Yam</a> (2003). <i><a href="http://necsi.org/publications/dcs/Bar-YamChap3.pdf" class="external text" rel="nofollow">Dynamics of Complex Systems, Chapter 3</a></i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%5Bhttp%3A%2F%2Fnecsi.org%2Fpublications%2Fdcs%2FBar-YamChap3.pdf+Dynamics+of+Complex+Systems%2C+Chapter+3%5D&amp;rft.aulast=%5B%5BYaneer+Bar-Yam%5D%5D&amp;rft.au=%5B%5BYaneer+Bar-Yam%5D%5D&amp;rft.date=2003&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book"><a href="/wiki/Yaneer_Bar-Yam" title="Yaneer Bar-Yam">Yaneer Bar-Yam</a> (2005). <i><a href="http://necsi.org/publications/mtw/" class="external text" rel="nofollow">Making Things Work</a></i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%5Bhttp%3A%2F%2Fnecsi.org%2Fpublications%2Fmtw%2F+Making+Things+Work%5D&amp;rft.aulast=%5B%5BYaneer+Bar-Yam%5D%5D&amp;rft.au=%5B%5BYaneer+Bar-Yam%5D%5D&amp;rft.date=2005&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span> See chapter 3.</li>
+<li><span class="citation book">Bertsekas, Dimitri P. (1999). <i>Nonlinear Programming</i>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1886529000" title="Special:BookSources/1886529000">1886529000</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Nonlinear+Programming&amp;rft.aulast=Bertsekas%2C+Dimitri+P.&amp;rft.au=Bertsekas%2C+Dimitri+P.&amp;rft.date=1999&amp;rft.isbn=1886529000&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Bertsekas, Dimitri P. &amp; Tsitsiklis, John N. (1996). <i>Neuro-dynamic Programming</i>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1886529108" title="Special:BookSources/1886529108">1886529108</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Neuro-dynamic+Programming&amp;rft.aulast=Bertsekas%2C+Dimitri+P.+%26+Tsitsiklis%2C+John+N.&amp;rft.au=Bertsekas%2C+Dimitri+P.+%26+Tsitsiklis%2C+John+N.&amp;rft.date=1996&amp;rft.isbn=1886529108&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Bhadeshia H. K. D. H. (1992). "<a href="http://www.msm.cam.ac.uk/phase-trans/abstracts/neural.review.pdf" class="external text" rel="nofollow">Neural Networks in Materials Science</a>". <i>ISIJ International</i> <b>39</b>: 966–979. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.2355%2Fisijinternational.39.966" class="external text" rel="nofollow">10.2355/isijinternational.39.966</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=%5Bhttp%3A%2F%2Fwww.msm.cam.ac.uk%2Fphase-trans%2Fabstracts%2Fneural.review.pdf+Neural+Networks+in+Materials+Science%5D&amp;rft.jtitle=ISIJ+International&amp;rft.aulast=Bhadeshia+H.+K.+D.+H.&amp;rft.au=Bhadeshia+H.+K.+D.+H.&amp;rft.date=1992&amp;rft.volume=39&amp;rft.pages=966%26ndash%3B979&amp;rft_id=info:doi/10.2355%2Fisijinternational.39.966&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Boyd, Stephen &amp; Vandenberghe, Lieven (2004). <i><a href="http://www.stanford.edu/~boyd/cvxbook/" class="external text" rel="nofollow">Convex Optimization</a></i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%5Bhttp%3A%2F%2Fwww.stanford.edu%2F%7Eboyd%2Fcvxbook%2F+Convex+Optimization%5D&amp;rft.aulast=Boyd%2C+Stephen+%26+Vandenberghe%2C+Lieven&amp;rft.au=Boyd%2C+Stephen+%26+Vandenberghe%2C+Lieven&amp;rft.date=2004&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Dewdney, A. K. (1997). <i>Yes, We Have No Neutrons: An Eye-Opening Tour through the Twists and Turns of Bad Science</i>. Wiley, 192 pp. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0471108065" title="Special:BookSources/0471108065">0471108065</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Yes%2C+We+Have+No+Neutrons%3A+An+Eye-Opening+Tour+through+the+Twists+and+Turns+of+Bad+Science&amp;rft.aulast=Dewdney%2C+A.+K.&amp;rft.au=Dewdney%2C+A.+K.&amp;rft.date=1997&amp;rft.pub=Wiley%2C+192+pp&amp;rft.isbn=0471108065&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span> See chapter 5.</li>
+<li><span class="citation Journal">Egmont-Petersen, M., de Ridder, D., Handels, H. (2002). "Image processing with neural networks - a review". <i>Pattern Recognition</i> <b>35</b> (10): 2279–2301. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1016%2FS0031-3203%2801%2900178-9" class="external text" rel="nofollow">10.1016/S0031-3203(01)00178-9</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Image+processing+with+neural+networks+-+a+review&amp;rft.jtitle=Pattern+Recognition&amp;rft.aulast=Egmont-Petersen%2C+M.%2C+de+Ridder%2C+D.%2C+Handels%2C+H.&amp;rft.au=Egmont-Petersen%2C+M.%2C+de+Ridder%2C+D.%2C+Handels%2C+H.&amp;rft.date=2002&amp;rft.volume=35&amp;rft.issue=10&amp;rft.pages=2279%26ndash%3B2301&amp;rft_id=info:doi/10.1016%2FS0031-3203%2801%2900178-9&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Fukushima, K. (1975). "Cognitron: A Self-Organizing Multilayered Neural Network". <i>Biological Cybernetics</i> <b>20</b> (3-4): 121–136. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2FBF00342633" class="external text" rel="nofollow">10.1007/BF00342633</a>. <a href="/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&#160;<a href="http://www.ncbi.nlm.nih.gov/pubmed/1203338" class="external text" rel="nofollow">1203338</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Cognitron%3A+A+Self-Organizing+Multilayered+Neural+Network&amp;rft.jtitle=Biological+Cybernetics&amp;rft.aulast=Fukushima%2C+K.&amp;rft.au=Fukushima%2C+K.&amp;rft.date=1975&amp;rft.volume=20&amp;rft.issue=3-4&amp;rft.pages=121%26ndash%3B136&amp;rft_id=info:doi/10.1007%2FBF00342633&amp;rft_id=info:pmid/1203338&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Frank, Michael J. (2005). "Dynamic Dopamine Modulation in the Basal Ganglia: A Neurocomputational Account of Cognitive Deficits in Medicated and Non-medicated Parkinsonism". <i>Journal of Cognitive Neuroscience</i> <b>17</b> (1): 51–72. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1162%2F0898929052880093" class="external text" rel="nofollow">10.1162/0898929052880093</a>. <a href="/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&#160;<a href="http://www.ncbi.nlm.nih.gov/pubmed/15701239" class="external text" rel="nofollow">15701239</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Dynamic+Dopamine+Modulation+in+the+Basal+Ganglia%3A+A+Neurocomputational+Account+of+Cognitive+Deficits+in+Medicated+and+Non-medicated+Parkinsonism&amp;rft.jtitle=Journal+of+Cognitive+Neuroscience&amp;rft.aulast=Frank%2C+Michael+J.&amp;rft.au=Frank%2C+Michael+J.&amp;rft.date=2005&amp;rft.volume=17&amp;rft.issue=1&amp;rft.pages=51%26ndash%3B72&amp;rft_id=info:doi/10.1162%2F0898929052880093&amp;rft_id=info:pmid/15701239&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Gardner, E.J., &amp; Derrida, B. (1988). "Optimal storage properties of neural network models". <i>Journal of Physics a</i> <b>21</b>: 271–284. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1088%2F0305-4470%2F21%2F1%2F031" class="external text" rel="nofollow">10.1088/0305-4470/21/1/031</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Optimal+storage+properties+of+neural+network+models&amp;rft.jtitle=Journal+of+Physics+a&amp;rft.aulast=Gardner%2C+E.J.%2C+%26+Derrida%2C+B.&amp;rft.au=Gardner%2C+E.J.%2C+%26+Derrida%2C+B.&amp;rft.date=1988&amp;rft.volume=21&amp;rft.pages=271%26ndash%3B284&amp;rft_id=info:doi/10.1088%2F0305-4470%2F21%2F1%2F031&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Hadzibeganovic, Tarik &amp; Cannas, Sergio A. (2009). "A Tsallis' statistics based neural network model for novel word learning". <i>Physica A: Statistical Mechanics and its Applications</i> <b>388</b> (5): 732–746. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1016%2Fj.physa.2008.10.042" class="external text" rel="nofollow">10.1016/j.physa.2008.10.042</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+Tsallis%27+statistics+based+neural+network+model+for+novel+word+learning&amp;rft.jtitle=Physica+A%3A+Statistical+Mechanics+and+its+Applications&amp;rft.aulast=Hadzibeganovic%2C+Tarik+%26+Cannas%2C+Sergio+A.&amp;rft.au=Hadzibeganovic%2C+Tarik+%26+Cannas%2C+Sergio+A.&amp;rft.date=2009&amp;rft.volume=388&amp;rft.issue=5&amp;rft.pages=732%26ndash%3B746&amp;rft_id=info:doi/10.1016%2Fj.physa.2008.10.042&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Krauth, W., &amp; Mezard, M. (1989). "Storage capacity of memory with binary couplings". <i>Journal de Physique</i> <b>50</b>: 3057–3066. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1051%2Fjphys%3A0198900500200305700" class="external text" rel="nofollow">10.1051/jphys:0198900500200305700</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Storage+capacity+of+memory+with+binary+couplings&amp;rft.jtitle=Journal+de+Physique&amp;rft.aulast=Krauth%2C+W.%2C+%26+Mezard%2C+M.&amp;rft.au=Krauth%2C+W.%2C+%26+Mezard%2C+M.&amp;rft.date=1989&amp;rft.volume=50&amp;rft.pages=3057%26ndash%3B3066&amp;rft_id=info:doi/10.1051%2Fjphys%3A0198900500200305700&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Maass, W., &amp; Markram, H. (2002). "<a href="http://www.igi.tugraz.at/maass/publications.html" class="external text" rel="nofollow">On the computational power of recurrent circuits of spiking neurons</a>". <i>Journal of Computer and System Sciences</i> <b>69</b> (4): 593–616.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=%5Bhttp%3A%2F%2Fwww.igi.tugraz.at%2Fmaass%2Fpublications.html+On+the+computational+power+of+recurrent+circuits+of+spiking+neurons%5D&amp;rft.jtitle=Journal+of+Computer+and+System+Sciences&amp;rft.aulast=Maass%2C+W.%2C+%26+Markram%2C+H.&amp;rft.au=Maass%2C+W.%2C+%26+Markram%2C+H.&amp;rft.date=2002&amp;rft.volume=69&amp;rft.issue=4&amp;rft.pages=593%26ndash%3B616&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">MacKay, David (2003). <i><a href="http://www.inference.phy.cam.ac.uk/mackay/itprnn/book.html" class="external text" rel="nofollow">Information Theory, Inference, and Learning Algorithms</a></i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%5Bhttp%3A%2F%2Fwww.inference.phy.cam.ac.uk%2Fmackay%2Fitprnn%2Fbook.html+Information+Theory%2C+Inference%2C+and+Learning+Algorithms%5D&amp;rft.aulast=MacKay%2C+David&amp;rft.au=MacKay%2C+David&amp;rft.date=2003&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Mandic, D. &amp; Chambers, J. (2001). <i>Recurrent Neural Networks for Prediction: Architectures, Learning algorithms and Stability</i>. Wiley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0471495174" title="Special:BookSources/0471495174">0471495174</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Recurrent+Neural+Networks+for+Prediction%3A+Architectures%2C+Learning+algorithms+and+Stability&amp;rft.aulast=Mandic%2C+D.+%26+Chambers%2C+J.&amp;rft.au=Mandic%2C+D.+%26+Chambers%2C+J.&amp;rft.date=2001&amp;rft.pub=Wiley&amp;rft.isbn=0471495174&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Minsky, M. &amp; Papert, S. (1969). <i>An Introduction to Computational Geometry</i>. MIT Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0262630222" title="Special:BookSources/0262630222">0262630222</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=An+Introduction+to+Computational+Geometry&amp;rft.aulast=Minsky%2C+M.+%26+Papert%2C+S.&amp;rft.au=Minsky%2C+M.+%26+Papert%2C+S.&amp;rft.date=1969&amp;rft.pub=MIT+Press&amp;rft.isbn=0262630222&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Muller, P. &amp; Insua, D.R. (1995). "Issues in Bayesian Analysis of Neural Network Models". <i>Neural Computation</i> <b>10</b>: 571–592.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Issues+in+Bayesian+Analysis+of+Neural+Network+Models&amp;rft.jtitle=Neural+Computation&amp;rft.aulast=Muller%2C+P.+%26+Insua%2C+D.R.&amp;rft.au=Muller%2C+P.+%26+Insua%2C+D.R.&amp;rft.date=1995&amp;rft.volume=10&amp;rft.pages=571%26ndash%3B592&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Reilly, D.L., Cooper, L.N. &amp; Elbaum, C. (1982). "A Neural Model for Category Learning". <i>Biological Cybernetics</i> <b>45</b>: 35–41. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2FBF00387211" class="external text" rel="nofollow">10.1007/BF00387211</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+Neural+Model+for+Category+Learning&amp;rft.jtitle=Biological+Cybernetics&amp;rft.aulast=Reilly%2C+D.L.%2C+Cooper%2C+L.N.+%26+Elbaum%2C+C.&amp;rft.au=Reilly%2C+D.L.%2C+Cooper%2C+L.N.+%26+Elbaum%2C+C.&amp;rft.date=1982&amp;rft.volume=45&amp;rft.pages=35%26ndash%3B41&amp;rft_id=info:doi/10.1007%2FBF00387211&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Rosenblatt, F. (1962). <i>Principles of Neurodynamics</i>. Spartan Books.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Principles+of+Neurodynamics&amp;rft.aulast=Rosenblatt%2C+F.&amp;rft.au=Rosenblatt%2C+F.&amp;rft.date=1962&amp;rft.pub=Spartan+Books&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Sun, R. &amp; Bookman,L. (eds.) (1994.). <i>Computational Architectures Integrating Neural and Symbolic Processes.</i>. Kluwer Academic Publishers, Needham, MA..</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Computational+Architectures+Integrating+Neural+and+Symbolic+Processes.&amp;rft.aulast=Sun%2C+R.+%26+Bookman%2CL.+%28eds.%29&amp;rft.au=Sun%2C+R.+%26+Bookman%2CL.+%28eds.%29&amp;rft.date=1994.&amp;rft.pub=Kluwer+Academic+Publishers%2C+Needham%2C+MA.&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Sutton, Richard S. &amp; Barto, Andrew G. (1998). <i><a href="http://www.cs.ualberta.ca/~sutton/book/the-book.html" class="external text" rel="nofollow">Reinforcement Learning&#160;: An introduction</a></i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%5Bhttp%3A%2F%2Fwww.cs.ualberta.ca%2F%7Esutton%2Fbook%2Fthe-book.html+Reinforcement+Learning+%3A+An+introduction%5D&amp;rft.aulast=Sutton%2C+Richard+S.+%26+Barto%2C+Andrew+G.&amp;rft.au=Sutton%2C+Richard+S.+%26+Barto%2C+Andrew+G.&amp;rft.date=1998&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Van den Bergh, F. Engelbrecht, AP. <i>Cooperative Learning in Neural Networks using Particle Swarm Optimizers</i>. CIRG 2000.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Cooperative+Learning+in+Neural+Networks+using+Particle+Swarm+Optimizers&amp;rft.aulast=Van+den+Bergh%2C+F.+Engelbrecht%2C+AP&amp;rft.au=Van+den+Bergh%2C+F.+Engelbrecht%2C+AP&amp;rft.pub=CIRG+2000&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Wilkes, A.L. &amp; Wade, N.J. (1997). "Bain on Neural Networks". <i>Brain and Cognition</i> <b>33</b> (3): 295–305. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1006%2Fbrcg.1997.0869" class="external text" rel="nofollow">10.1006/brcg.1997.0869</a>. <a href="/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&#160;<a href="http://www.ncbi.nlm.nih.gov/pubmed/9126397" class="external text" rel="nofollow">9126397</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Bain+on+Neural+Networks&amp;rft.jtitle=Brain+and+Cognition&amp;rft.aulast=Wilkes%2C+A.L.+%26+Wade%2C+N.J.&amp;rft.au=Wilkes%2C+A.L.+%26+Wade%2C+N.J.&amp;rft.date=1997&amp;rft.volume=33&amp;rft.issue=3&amp;rft.pages=295%26ndash%3B305&amp;rft_id=info:doi/10.1006%2Fbrcg.1997.0869&amp;rft_id=info:pmid/9126397&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Wasserman, P.D. (1989). <i>Neural computing theory and practice</i>. Van Nostrand Reinhold. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0442207433" title="Special:BookSources/0442207433">0442207433</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Neural+computing+theory+and+practice&amp;rft.aulast=Wasserman%2C+P.D.&amp;rft.au=Wasserman%2C+P.D.&amp;rft.date=1989&amp;rft.pub=Van+Nostrand+Reinhold&amp;rft.isbn=0442207433&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li>Jeffrey T. Spooner, Manfredi Maggiore, Raul Ord onez, and Kevin M. Passino, Stable Adaptive Control and Estimation for Nonlinear Systems: Neural and Fuzzy Approximator Techniques, John Wiley and Sons, NY, 2002.</li>
+<li><span class="citation book">Peter Dayan, L.F. Abbott. <i>Theoretical Neuroscience</i>. MIT Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0262041995" title="Special:BookSources/0262041995">0262041995</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Theoretical+Neuroscience&amp;rft.aulast=Peter+Dayan%2C+L.F.+Abbott&amp;rft.au=Peter+Dayan%2C+L.F.+Abbott&amp;rft.pub=MIT+Press&amp;rft.isbn=0262041995&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Wulfram Gerstner, Werner Kistler. <i>Spiking Neuron Models:Single Neurons, Populations, Plasticity</i>. Cambridge University Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0521890799" title="Special:BookSources/0521890799">0521890799</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Spiking+Neuron+Models%3ASingle+Neurons%2C+Populations%2C+Plasticity&amp;rft.aulast=Wulfram+Gerstner%2C+Werner+Kistler&amp;rft.au=Wulfram+Gerstner%2C+Werner+Kistler&amp;rft.pub=Cambridge+University+Press&amp;rft.isbn=0521890799&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Steeb, W-H (2008). <i>The Nonlinear Workbook: Chaos, Fractals, Neural Networks, Genetic Algorithms, Gene Expression Programming, Support Vector Machine, Wavelets, Hidden Markov Models, Fuzzy Logic with C++, Java and SymbolicC++ Programs: 4th edition</i>. World Scientific Publishing. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/981-281-852-9" title="Special:BookSources/981-281-852-9">981-281-852-9</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Nonlinear+Workbook%3A+Chaos%2C+Fractals%2C+Neural+Networks%2C+Genetic+Algorithms%2C+Gene+Expression+Programming%2C+Support+Vector+Machine%2C+Wavelets%2C+Hidden+Markov+Models%2C+Fuzzy+Logic+with+C%2B%2B%2C+Java+and+SymbolicC%2B%2B+Programs%3A+4th+edition&amp;rft.aulast=Steeb%2C+W-H&amp;rft.au=Steeb%2C+W-H&amp;rft.date=2008&amp;rft.pub=World+Scientific+Publishing&amp;rft.isbn=981-281-852-9&amp;rfr_id=info:sid/en.wikipedia.org:Neural_network"><span style="display: none;">&#160;</span></span></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Neural_network&amp;action=edit&amp;section=14" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a href="http://www.learnartificialneuralnetworks.com/robotcontrol.html" class="external text" rel="nofollow">LearnArtificialNeuralNetworks</a> - Robot control and neural networks</li>
+<li><a href="http://www.msm.cam.ac.uk/phase-trans/abstracts/neural.review.html" class="external text" rel="nofollow">Review of Neural Networks in Materials Science</a></li>
+<li><a href="http://www.gc.ssr.upm.es/inves/neural/ann1/anntutorial.html" class="external text" rel="nofollow">Artificial Neural Networks Tutorial in three languages (Univ. Politécnica de Madrid)</a></li>
+<li><a href="http://www.makhfi.com/tutorial/introduction.htm" class="external text" rel="nofollow">Introduction to Neural Networks and Knowledge Modeling</a></li>
+<li><a href="http://www.doc.ic.ac.uk/~nd/surprise_96/journal/vol4/cs11/report.html" class="external text" rel="nofollow">Another introduction to ANN</a></li>
+<li><a href="http://youtube.com/watch?v=AyzOUbkUf3M" class="external text" rel="nofollow">Next Generation of Neural Networks</a> - Google Tech Talks</li>
+<li><a href="http://www.msm.cam.ac.uk/phase-trans/2009/performance.html" class="external text" rel="nofollow">Performance of Neural Networks</a></li>
+<li><a href="http://www.msm.cam.ac.uk/phase-trans/2009/review_Bhadeshia_SADM.pdf" class="external text" rel="nofollow">Neural Networks and Information</a></li>
+<li><a href="http://www.dmg.org/v4-0/NeuralNetwork.html" class="external text" rel="nofollow">PMML Representation</a> - Standard way to represent neural networks</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 19555/1000000
+Post-expand include size: 131678/2048000 bytes
+Template argument size: 37657/2048000 bytes
+Expensive parser function count: 3/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1729542-0!1!0!default!!en!4 and timestamp 20101221232001 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Neural_network">http://en.wikipedia.org/wiki/Neural_network</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:Computational_neuroscience" title="Category:Computational neuroscience">Computational neuroscience</a></span> | <span dir='ltr'><a href="/wiki/Category:Data_mining" title="Category:Data mining">Data mining</a></span> | <span dir='ltr'><a href="/wiki/Category:Neural_networks" title="Category:Neural networks">Neural networks</a></span> | <span dir='ltr'><a href="/wiki/Category:Network_architecture" title="Category:Network architecture">Network architecture</a></span> | <span dir='ltr'><a href="/wiki/Category:Networks" title="Category:Networks">Networks</a></span> | <span dir='ltr'><a href="/wiki/Category:Econometrics" title="Category:Econometrics">Econometrics</a></span> | <span dir='ltr'><a href="/wiki/Category:Information,_knowledge,_and_uncertainty" title="Category:Information, knowledge, and uncertainty">Information, knowledge, and uncertainty</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories: <span dir='ltr'><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_with_unsourced_statements_from_August_2009" title="Category:Articles with unsourced statements from August 2009">Articles with unsourced statements from August 2009</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_needing_additional_references_from_June_2010" title="Category:Articles needing additional references from June 2010">Articles needing additional references from June 2010</a></span> | <span dir='ltr'><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_lacking_in-text_citations_from_October_2010" title="Category:Articles lacking in-text citations from October 2010">Articles lacking in-text citations from October 2010</a></span> | <span dir='ltr'><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Neural_network" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/Neural_network"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:Neural_network"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/Neural_network" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=Neural_network&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=Neural_network&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Neural_network" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Neural_network" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=Neural_network&amp;oldid=402290946" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Neural_network&amp;id=402290946" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Neural+network" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Neural+network&amp;oldid=402290946&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Neural_network&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D8%B4%D8%A8%D9%83%D8%A7%D8%AA_%D8%B9%D8%B5%D8%A8%D9%88%D9%86%D9%8A%D8%A9" title="شبكات عصبونية">العربية</a></li>
+					<li class="interwiki-bn"><a href="http://bn.wikipedia.org/wiki/%E0%A6%A8%E0%A6%BF%E0%A6%89%E0%A6%B0%E0%A6%BE%E0%A6%B2_%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%95" title="নিউরাল নেটওয়ার্ক">বাংলা</a></li>
+					<li class="interwiki-bg"><a href="http://bg.wikipedia.org/wiki/%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D0%BD%D0%BD%D0%B0_%D0%BC%D1%80%D0%B5%D0%B6%D0%B0" title="Невронна мрежа">Български</a></li>
+					<li class="interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Xarxa_neuronal" title="Xarxa neuronal">Català</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Neuronov%C3%A1_s%C3%AD%C5%A5" title="Neuronová síť">Česky</a></li>
+					<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/Neuralt_netv%C3%A6rk" title="Neuralt netværk">Dansk</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Neuronales_Netz" title="Neuronales Netz">Deutsch</a></li>
+					<li class="interwiki-el"><a href="http://el.wikipedia.org/wiki/%CE%9D%CE%B5%CF%85%CF%81%CF%89%CE%BD%CE%B9%CE%BA%CF%8C_%CE%B4%CE%AF%CE%BA%CF%84%CF%85%CE%BF" title="Νευρωνικό δίκτυο">Ελληνικά</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D8%B4%D8%A8%DA%A9%D9%87_%D8%B9%D8%B5%D8%A8%DB%8C" title="شبکه عصبی">فارسی</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiel" title="Réseau de neurones artificiel">Français</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5%EC%8B%A0%EA%B2%BD%EB%A7%9D" title="인공신경망">한국어</a></li>
+					<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/Neuronska_mre%C5%BEa" title="Neuronska mreža">Hrvatski</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Rete_neurale" title="Rete neurale">Italiano</a></li>
+					<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%AA_%D7%A2%D7%A6%D7%91%D7%99%D7%AA" title="רשת עצבית">עברית</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Neur%C3%A1lis_h%C3%A1l%C3%B3zat" title="Neurális hálózat">Magyar</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Neuraal_netwerk" title="Neuraal netwerk">Nederlands</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Sie%C4%87_neuronowa" title="Sieć neuronowa">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Rede_neural" title="Rede neural">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Re%C5%A3ea_neuronal%C4%83" title="Reţea neuronală">Română</a></li>
+					<li class="interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Neural_network" title="Neural network">Simple English</a></li>
+					<li class="interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Neur%C3%B3nov%C3%A1_sie%C5%A5" title="Neurónová sieť">Slovenčina</a></li>
+					<li class="interwiki-sl"><a href="http://sl.wikipedia.org/wiki/Nevronska_mre%C5%BEa" title="Nevronska mreža">Slovenščina</a></li>
+					<li class="interwiki-sr"><a href="http://sr.wikipedia.org/wiki/%D0%9D%D0%B5%D1%83%D1%80%D0%BE%D0%BD%D1%81%D0%BA%D0%B5_%D0%BC%D1%80%D0%B5%D0%B6%D0%B5" title="Неуронске мреже">Српски / Srpski</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Neuroverkot" title="Neuroverkot">Suomi</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Neurala_n%C3%A4tverk" title="Neurala nätverk">Svenska</a></li>
+					<li class="interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Yapay_sinir_a%C4%9Flar%C4%B1" title="Yapay sinir ağları">Türkçe</a></li>
+					<li class="interwiki-vi"><a href="http://vi.wikipedia.org/wiki/M%E1%BA%A1ng_n%C6%A1-ron" title="Mạng nơ-ron">Tiếng Việt</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 14 December 2010 at 06:34.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv240 in 0.048 secs. -->			</body>
+</html>

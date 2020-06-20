@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>Newton's laws of motion - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Newton\'s_laws_of_motion",
+wgTitle="Newton\'s laws of motion",
+wgAction="view",
+wgArticleId=55212,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=400360293,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["Wikipedia indefinitely semi-protected pages", "Classical mechanics", "Mechanics", "Isaac Newton", "Introductory physics", "Latin texts", "History of physics", "Fundamental physics concepts", "Scientific observation", "Experimental physics"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=["autoconfirmed"],
+wgRestrictionMove=["autoconfirmed"],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Newton_s_laws_of_motion skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --><script type="text/javascript" language="JavaScript">
+/* <![CDATA[ */
+document.writeln("\x3cdiv id=\"localNotice\"\x3e\x3cp\x3e\x3c/p\x3e\n\x3c/div\x3e");
+/* ]]> */
+</script></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Newton's laws of motion</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<div class="metadata topicon" id="protected-icon" style="display:none; right:55px;"><a href="/wiki/Wikipedia:Protection_policy#semi" title="This article is semi-protected indefinitely in response to an ongoing high risk of vandalism."><img alt="Page semi-protected" src="http://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Padlock-silver-slash.svg/20px-Padlock-silver-slash.svg.png" width="20" height="20" /></a></div>
+<div class="dablink">For other uses, see <a href="/wiki/Laws_of_motion_(disambiguation)" title="Laws of motion (disambiguation)" class="mw-redirect">Laws of motion (disambiguation)</a>.</div>
+<table class="infobox" style="width: 200px; float: right; clear: right; text-align:center; font-size:90%;">
+<tr style="background:#87cefa">
+<td><b><a href="/wiki/Classical_mechanics" title="Classical mechanics">Classical mechanics</a></b></td>
+</tr>
+<tr>
+<td>
+<div style="padding-top: 7px; padding-bottom: 4px;"><img class="tex" alt="\mathbf{F} = \frac{\mathrm{d}}{\mathrm{d}t}(m \mathbf{v})" src="http://upload.wikimedia.org/math/a/2/8/a28d8d4e4a422c639a1d24d9ce9e3d8e.png" /><br />
+<small><a href="/wiki/Newton%27s_laws_of_motion#Newton.27s_second_law" title="Newton's laws of motion">Newton's Second Law</a></small></div>
+</td>
+</tr>
+<tr style="line-height: 150%;">
+<td><a href="/wiki/History_of_classical_mechanics" title="History of classical mechanics">History of classical mechanics</a>&#160;<b>·</b> <span style="white-space:nowrap"><a href="/wiki/Timeline_of_classical_mechanics" title="Timeline of classical mechanics">Timeline of classical mechanics</a></span>
+<table class="collapsible collapsed" width="100%">
+<tr>
+<th style="text-align: left; background: #87cefa;">Branches</th>
+</tr>
+<tr style="line-height: 150%;">
+<td><a href="/wiki/Statics" title="Statics">Statics</a>&#160;<b>·</b> <span style="white-space:nowrap"><a href="/wiki/Analytical_dynamics" title="Analytical dynamics">Dynamics</a> / <a href="/wiki/Kinetics_(physics)" title="Kinetics (physics)">Kinetics</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Kinematics" title="Kinematics">Kinematics</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Applied_mechanics" title="Applied mechanics">Applied mechanics</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Celestial_mechanics" title="Celestial mechanics">Celestial mechanics</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Continuum_mechanics" title="Continuum mechanics">Continuum mechanics</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Statistical_mechanics" title="Statistical mechanics">Statistical mechanics</a></span></td>
+</tr>
+</table>
+<table class="collapsible" width="100%">
+<tr>
+<th style="text-align: left; background: #87cefa;">Formulations</th>
+</tr>
+<tr style="line-height: 150%;">
+<td>
+<div style="text-align:left;">
+<ul>
+<li><strong class="selflink">Newtonian mechanics</strong> (Vectorial mechanics)</li>
+<li><a href="/wiki/Analytical_mechanics" title="Analytical mechanics">Analytical mechanics</a>:
+<ul>
+<li><a href="/wiki/Lagrangian_mechanics" title="Lagrangian mechanics">Lagrangian mechanics</a></li>
+<li><a href="/wiki/Hamiltonian_mechanics" title="Hamiltonian mechanics">Hamiltonian mechanics</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<table class="collapsible collapsed" width="100%">
+<tr>
+<th style="text-align: left; background: #87cefa;">Fundamental concepts</th>
+</tr>
+<tr style="line-height: 150%;">
+<td><a href="/wiki/Space" title="Space">Space</a>&#160;<b>·</b> <span style="white-space:nowrap"><a href="/wiki/Time" title="Time">Time</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Velocity" title="Velocity">Velocity</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Speed" title="Speed">Speed</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Mass" title="Mass">Mass</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Acceleration" title="Acceleration">Acceleration</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Gravitation" title="Gravitation">Gravity</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Force" title="Force">Force</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Impulse_(physics)" title="Impulse (physics)">Impulse</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Torque" title="Torque">Torque</a> / <a href="/wiki/Moment_(physics)" title="Moment (physics)">Moment</a> / <a href="/wiki/Couple_(mechanics)" title="Couple (mechanics)">Couple</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Momentum" title="Momentum">Momentum</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Angular_momentum" title="Angular momentum">Angular momentum</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Inertia" title="Inertia">Inertia</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Moment_of_inertia" title="Moment of inertia">Moment of inertia</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Frame_of_reference" title="Frame of reference">Reference frame</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Energy" title="Energy">Energy</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Kinetic_energy#Newtonian_kinetic_energy" title="Kinetic energy">Kinetic energy</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Potential_energy" title="Potential energy">Potential energy</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Work_(physics)" title="Work (physics)">Mechanical work</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Virtual_work" title="Virtual work">Virtual work</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/D%27Alembert%27s_principle" title="D'Alembert's principle">D'Alembert's principle</a></span></td>
+</tr>
+</table>
+<table class="collapsible collapsed" width="100%">
+<tr>
+<th style="text-align: left; background: #87cefa;">Core topics</th>
+</tr>
+<tr style="line-height: 150%;">
+<td><a href="/wiki/Rigid_body" title="Rigid body">Rigid body</a>&#160;<b>·</b> <span style="white-space:nowrap"><a href="/wiki/Rigid_body_dynamics" title="Rigid body dynamics">Rigid body dynamics</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Euler%27s_equations_(rigid_body_dynamics)" title="Euler's equations (rigid body dynamics)">Euler's equations (rigid body dynamics)</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Motion_(physics)" title="Motion (physics)">Motion</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><strong class="selflink">Newton's laws of motion</strong>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Newton%27s_law_of_universal_gravitation" title="Newton's law of universal gravitation">Newton's law of universal gravitation</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Equations_of_motion" title="Equations of motion">Equations of motion</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Inertial_frame_of_reference" title="Inertial frame of reference">Inertial frame of reference</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Non-inertial_reference_frame" title="Non-inertial reference frame">Non-inertial reference frame</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Rotating_reference_frame" title="Rotating reference frame">Rotating reference frame</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Fictitious_force" title="Fictitious force">Fictitious force</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Linear_motion" title="Linear motion">Linear motion</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Mechanics_of_planar_particle_motion" title="Mechanics of planar particle motion">Mechanics of planar particle motion</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Displacement_(vector)" title="Displacement (vector)">Displacement (vector)</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Relative_velocity" title="Relative velocity">Relative velocity</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Friction" title="Friction">Friction</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Simple_harmonic_motion" title="Simple harmonic motion">Simple harmonic motion</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Harmonic_oscillator" title="Harmonic oscillator">Harmonic oscillator</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Vibration" title="Vibration">Vibration</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Damping" title="Damping">Damping</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Damping_ratio" title="Damping ratio">Damping ratio</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Rotation_around_a_fixed_axis" title="Rotation around a fixed axis">Rotational motion</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Circular_motion" title="Circular motion">Circular motion</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Uniform_circular_motion" title="Uniform circular motion">Uniform circular motion</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Non-uniform_circular_motion" title="Non-uniform circular motion">Non-uniform circular motion</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Centripetal_force" title="Centripetal force">Centripetal force</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Centrifugal_force" title="Centrifugal force">Centrifugal force</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Centrifugal_force_(rotating_reference_frame)" title="Centrifugal force (rotating reference frame)">Centrifugal force (rotating reference frame)</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Reactive_centrifugal_force" title="Reactive centrifugal force">Reactive centrifugal force</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Coriolis_effect" title="Coriolis effect">Coriolis force</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Pendulum_(mathematics)" title="Pendulum (mathematics)">Pendulum</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Rotational_speed" title="Rotational speed">Rotational speed</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Angular_acceleration" title="Angular acceleration">Angular acceleration</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Angular_velocity" title="Angular velocity">Angular velocity</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Angular_frequency" title="Angular frequency">Angular frequency</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Angular_displacement" title="Angular displacement">Angular displacement</a></span></td>
+</tr>
+</table>
+<table class="collapsible collapsed" width="100%">
+<tr>
+<th style="text-align: left; background: #87cefa;">Scientists</th>
+</tr>
+<tr style="line-height: 150%;">
+<td><a href="/wiki/Isaac_Newton" title="Isaac Newton">Isaac Newton</a>&#160;<b>·</b> <span style="white-space:nowrap"><a href="/wiki/Jeremiah_Horrocks" title="Jeremiah Horrocks">Jeremiah Horrocks</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Leonhard_Euler" title="Leonhard Euler">Leonhard Euler</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Jean_le_Rond_d%27Alembert" title="Jean le Rond d'Alembert">Jean le Rond d'Alembert</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Alexis_Clairaut" title="Alexis Clairaut">Alexis Clairaut</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Joseph_Louis_Lagrange" title="Joseph Louis Lagrange">Joseph Louis Lagrange</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Pierre-Simon_Laplace" title="Pierre-Simon Laplace">Pierre-Simon Laplace</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/William_Rowan_Hamilton" title="William Rowan Hamilton">William Rowan Hamilton</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Sim%C3%A9on-Denis_Poisson" title="Siméon-Denis Poisson" class="mw-redirect">Siméon-Denis Poisson</a></span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<div class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Classical_mechanics" title="Template:Classical mechanics"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/wiki/Template_talk:Classical_mechanics" title="Template talk:Classical mechanics"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="http://en.wikipedia.org/w/index.php?title=Template:Classical_mechanics&amp;action=edit" class="external text" rel="nofollow"><span title="Edit this template" style=";">e</span></a></div>
+</td>
+</tr>
+</table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:Newtons_laws_in_latin.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Newtons_laws_in_latin.jpg/200px-Newtons_laws_in_latin.jpg" width="200" height="311" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Newtons_laws_in_latin.jpg" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Newton's First and Second laws, in Latin, from the original 1687 edition of the <a href="/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica" title="Philosophiæ Naturalis Principia Mathematica">Principia Mathematica</a>.</div>
+</div>
+</div>
+<p><b>Newton's laws of motion</b> consist of three <a href="/wiki/Physical_law" title="Physical law">physical laws</a> that form the basis for <a href="/wiki/Classical_mechanics" title="Classical mechanics">classical mechanics</a>. They describe the relationship between the forces acting on a body and its <a href="/wiki/Motion_(physics)" title="Motion (physics)">motion</a> due to those forces. They have been expressed in several different ways over nearly three centuries,<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup> and can be summarized as follows:</p>
+<ol>
+<li><b>First law</b>: Every body remains in a state of rest or uniform motion (constant <a href="/wiki/Velocity" title="Velocity">velocity</a>) unless it is acted upon by an external unbalanced force. <sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-first-law-shaums_2-0" class="reference"><a href="#cite_note-first-law-shaums-2"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-first-law-dmmy_3-0" class="reference"><a href="#cite_note-first-law-dmmy-3"><span>[</span>4<span>]</span></a></sup> This means that in the absence of a non-zero <a href="/wiki/Net_force" title="Net force">net force</a>, the <a href="/wiki/Center_of_mass" title="Center of mass">center of mass</a> of a <a href="/wiki/Physical_body" title="Physical body">body</a> either remains at rest, or moves at a constant <a href="/wiki/Speed" title="Speed">speed</a> in a straight line.</li>
+<li><b>Second law</b>: A body of <a href="/wiki/Mass" title="Mass">mass</a> <i>m</i> subject to a force <b>F</b> undergoes an <a href="/wiki/Acceleration" title="Acceleration">acceleration</a> <b>a</b> that has the same direction as the force and a magnitude that is directly proportional to the force and inversely proportional to the mass, i.e., <b>F</b>&#160;=&#160;<i>m</i><b>a</b>. Alternatively, the total force applied on a body is equal to the <a href="/wiki/Time_derivative" title="Time derivative">time derivative</a> of linear <a href="/wiki/Momentum" title="Momentum">momentum</a> of the body.</li>
+<li><b>Third law</b>: The mutual forces of action and reaction between two bodies are equal, opposite and collinear. This means that whenever a first body exerts a force <b>F</b> on a second body, the second body exerts a force −<b>F</b> on the first body. <b>F</b> and −<b>F</b> are equal in magnitude and opposite in direction. This law is sometimes referred to as the <i><a href="/wiki/Reaction_(physics)" title="Reaction (physics)">action-reaction law</a></i>, with <b>F</b> called the "action" and −<b>F</b> the "reaction". The action and the reaction are simultaneous.</li>
+</ol>
+<p>The three laws of motion were first compiled by <a href="/wiki/Isaac_Newton" title="Isaac Newton">Sir Isaac Newton</a> in his work <i><a href="/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica" title="Philosophiæ Naturalis Principia Mathematica">Philosophiæ Naturalis Principia Mathematica</a></i>, first published on July 5, 1687.<sup id="cite_ref-Principia_4-0" class="reference"><a href="#cite_note-Principia-4"><span>[</span>5<span>]</span></a></sup> Newton used them to explain and investigate the motion of many physical objects and systems.<sup id="cite_ref-Motte_5-0" class="reference"><a href="#cite_note-Motte-5"><span>[</span>6<span>]</span></a></sup> For example, in the third volume of the text, Newton showed that these laws of motion, combined with his <a href="/wiki/Newton%27s_law_of_universal_gravitation" title="Newton's law of universal gravitation">law of universal gravitation</a>, explained <a href="/wiki/Kepler%27s_laws_of_planetary_motion" title="Kepler's laws of planetary motion">Kepler's laws of planetary motion</a>.</p>
+<p>Newton's laws are applied to bodies (objects) which are considered or idealized as a particle<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>7<span>]</span></a></sup>, in the sense that the extent of the body is neglected in the evaluation of its motion, i.e., the object is small compared to the distances involved in the analysis, or the <a href="/wiki/Deformation_(mechanics)" title="Deformation (mechanics)">deformation</a> and rotation of the body is of no importance in the analysis. Therefore, a planet can be idealized as a particle for analysis of its orbital motion around a star.</p>
+<p>In their original form, Newton's laws of motion are not adequate to characterize the motion of <a href="/wiki/Rigid_bodies" title="Rigid bodies" class="mw-redirect">rigid bodies</a> and <a href="/wiki/Deformable_bodies" title="Deformable bodies" class="mw-redirect">deformable bodies</a>. <a href="/wiki/Leonard_Euler" title="Leonard Euler" class="mw-redirect">Leonard Euler</a> in 1750 introduced a generalization of Newton's laws of motion for rigid bodies called the <a href="/wiki/Euler%27s_laws_of_motion" title="Euler's laws of motion">Euler's laws of motion</a>, later applied as well for deformable bodies assumed as a <a href="/wiki/Continuum_mechanics" title="Continuum mechanics">continuum</a>. If a body is represented as an assemblage of discrete particles, each governed by Newton’s laws of motion, then Euler’s laws can be derived from Newton’s laws. Euler’s laws can, however, be taken as axioms describing the laws of motion for extended bodies, independently of any particle structure.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup></p>
+<p>Newton's Laws hold only with respect to a certain set of <a href="/wiki/Frames_of_reference" title="Frames of reference" class="mw-redirect">frames of reference</a> called <a href="/wiki/Inertial_reference_frame" title="Inertial reference frame" class="mw-redirect">Newtonian or inertial reference frames</a>. Some authors interpret the first law as defining what an inertial reference frame is; from this point of view, the second law only holds when the observation is made from an inertial reference frame, and therefore the first law cannot be proved as a special case of the second. Other authors do treat the first law as a corollary of the second.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>10<span>]</span></a></sup> The explicit concept of an inertial frame of reference was not developed until long after Newton's death.</p>
+<p>In the given interpretation mass, acceleration, momentum, and (most importantly) force are assumed to be externally defined quantities. This is the most common, but not the only interpretation: one can consider the laws to be a definition of these quantities.</p>
+<p>At speeds approaching the <a href="/wiki/Speed_of_light" title="Speed of light">speed of light</a> the effects of <a href="/wiki/Special_relativity" title="Special relativity">special relativity</a> must be taken into account.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>11<span>]</span></a></sup></p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Newton.27s_first_law"><span class="tocnumber">1</span> <span class="toctext">Newton's first law</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Newton.27s_second_law"><span class="tocnumber">2</span> <span class="toctext">Newton's second law</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Impulse"><span class="tocnumber">2.1</span> <span class="toctext">Impulse</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Variable-mass_systems"><span class="tocnumber">2.2</span> <span class="toctext">Variable-mass systems</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#History"><span class="tocnumber">2.3</span> <span class="toctext">History</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Newton.27s_third_law"><span class="tocnumber">3</span> <span class="toctext">Newton's third law</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Importance_and_range_of_validity"><span class="tocnumber">4</span> <span class="toctext">Importance and range of validity</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Relationship_to_the_conservation_laws"><span class="tocnumber">5</span> <span class="toctext">Relationship to the conservation laws</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References_and_notes"><span class="tocnumber">7</span> <span class="toctext">References and notes</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Further_reading_.26_works_referred_to"><span class="tocnumber">8</span> <span class="toctext">Further reading &amp; works referred to</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="mw-headline" id="Newton.27s_first_law">Newton's first law</span></h2>
+<table style="margin:auto; border-collapse:collapse; border-style:none; background-color:transparent; width:auto;" class="cquote">
+<tr>
+<td width="20" valign="top" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:left;padding:10px 10px;">“</td>
+<td valign="top" style="padding:4px 10px;"><i>Lex I: Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus a viribus impressis cogitur statum illum mutare.</i></td>
+<td width="20" valign="bottom" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:right;padding:10px 10px;">”</td>
+</tr>
+</table>
+<table style="margin:auto; border-collapse:collapse; border-style:none; background-color:transparent; width:auto;" class="cquote">
+<tr>
+<td width="20" valign="top" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:left;padding:10px 10px;">“</td>
+<td valign="top" style="padding:4px 10px;"><i>Law I: Every body persists in its state of being at rest or of moving uniformly straight forward, except insofar as it is compelled to change its state by force impressed.</i><sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>12<span>]</span></a></sup></td>
+<td width="20" valign="bottom" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:right;padding:10px 10px;">”</td>
+</tr>
+</table>
+<p>This law states that if the <a href="/wiki/Resultant_force" title="Resultant force" class="mw-redirect">resultant force</a> (the <a href="/wiki/Vector_sum" title="Vector sum" class="mw-redirect">vector sum</a> of all forces acting on an object) is zero, then the <a href="/wiki/Velocity" title="Velocity">velocity</a> of the object is constant. Consequently:</p>
+<ul>
+<li>An object that is at rest will stay at rest unless an unbalanced force acts upon it.</li>
+<li>An object that is in motion will not change its velocity unless an unbalanced force acts upon it.</li>
+</ul>
+<p>Newton placed the first law of motion to establish <a href="/wiki/Frames_of_reference" title="Frames of reference" class="mw-redirect">frames of reference</a> for which the other laws are applicable. The first law of motion postulates the existence of at least one <a href="/wiki/Frame_of_reference" title="Frame of reference">frame of reference</a> called a Newtonian or <a href="/wiki/Inertial_reference_frame" title="Inertial reference frame" class="mw-redirect">inertial reference frame</a>, relative to which the motion of a particle not subject to forces is a straight line at a constant speed.<sup id="cite_ref-Woodhouse_12-0" class="reference"><a href="#cite_note-Woodhouse-12"><span>[</span>13<span>]</span></a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>14<span>]</span></a></sup> Newton's first law is often referred to as the <i><a href="/wiki/Inertia" title="Inertia">law of inertia</a></i>. Thus, a condition necessary for the uniform motion of a particle relative to an inertial reference frame is that the total net <a href="/wiki/Force" title="Force">force</a> acting on it is zero. In this sense, the first law can be restated as:</p>
+<table style="margin:auto; border-collapse:collapse; border-style:none; background-color:transparent; width:auto;" class="cquote">
+<tr>
+<td width="20" valign="top" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:left;padding:10px 10px;">“</td>
+<td valign="top" style="padding:4px 10px;"><i>In every material universe, the motion of a particle in a preferential reference frame Φ is determined by the action of forces whose total vanished for all times when and only when the velocity of the particle is constant in Φ. That is, a particle initially at rest or in uniform motion in the preferential frame Φ continues in that state unless compelled by forces to change it.</i><sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>15<span>]</span></a></sup></td>
+<td width="20" valign="bottom" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:right;padding:10px 10px;">”</td>
+</tr>
+</table>
+<p>Newton's laws are valid only in an <a href="/wiki/Inertial_reference_frame" title="Inertial reference frame" class="mw-redirect">inertial reference frame</a>. Any reference frame that is in uniform motion with respect to an inertial frame is also an inertial frame, i.e. <a href="/wiki/Galilean_invariance" title="Galilean invariance">Galilean invariance</a> or the <a href="/wiki/Principle_of_relativity" title="Principle of relativity">principle of Newtonian relativity</a>.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>16<span>]</span></a></sup></p>
+<p>Newton's first law is a restatement of the law of inertia which <a href="/wiki/Galileo" title="Galileo" class="mw-redirect">Galileo</a> had already described and Newton gave credit to Galileo. <a href="/wiki/Aristotle" title="Aristotle">Aristotle</a> had the view that all objects have a natural place in the universe: that heavy objects like rocks wanted to be at rest on the Earth and that light objects like smoke wanted to be at rest in the sky and the stars wanted to remain in the heavens. He thought that a body was in its natural state when it was at rest, and for the body to move in a straight line at a constant speed an external agent was needed to continually propel it, otherwise it would stop moving. Galileo, however, realized that a force is necessary to change the velocity of a body, i.e., acceleration, but no force is needed to maintain its velocity. This insight leads to Newton's First Law —no force means no acceleration, and hence the body will maintain its velocity.</p>
+<p>The law of inertia apparently occurred to several different natural philosophers and scientists independently.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>17<span>]</span></a></sup> The 17th century philosopher <a href="/wiki/Ren%C3%A9_Descartes" title="René Descartes">René Descartes</a> also formulated the law, although he did not perform any experiments to confirm it.</p>
+<h2><span class="mw-headline" id="Newton.27s_second_law">Newton's second law</span></h2>
+<p>The second law states that the <a href="/wiki/Net_force" title="Net force">net force</a> on a particle is equal to the time rate of change of its <a href="/wiki/Momentum" title="Momentum">linear momentum</a> <b>p</b> in an <a href="/wiki/Inertial_reference_frame" title="Inertial reference frame" class="mw-redirect">inertial reference frame</a>:</p>
+<dl>
+<dd><img class="tex" alt="\mathbf{F} = \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = \frac{\mathrm{d}(m\mathbf v)}{\mathrm{d}t}," src="http://upload.wikimedia.org/math/e/4/b/e4b1fb2840eaca5d56f336f78cdfe81c.png" /></dd>
+</dl>
+<p>where, since the law is valid only for constant-mass systems,<sup id="cite_ref-plastino_17-0" class="reference"><a href="#cite_note-plastino-17"><span>[</span>18<span>]</span></a></sup><sup id="cite_ref-Halliday_18-0" class="reference"><a href="#cite_note-Halliday-18"><span>[</span>19<span>]</span></a></sup><sup id="cite_ref-Kleppner_19-0" class="reference"><a href="#cite_note-Kleppner-19"><span>[</span>20<span>]</span></a></sup> the mass can be taken outside the <a href="/wiki/Differentiation" title="Differentiation">differentiation</a> operator by the <a href="/wiki/Constant_factor_rule_in_differentiation" title="Constant factor rule in differentiation">constant factor rule in differentiation</a>. Thus,</p>
+<dl>
+<dd><img class="tex" alt="\mathbf{F} = m\,\frac{\mathrm{d}\mathbf{v}}{\mathrm{d}t} = m\mathbf{a}," src="http://upload.wikimedia.org/math/8/0/1/80195b20773faefe5002cc5b64382147.png" /></dd>
+</dl>
+<p>where <b>F</b> is the net force applied, <i>m</i> is the mass of the body, and <b>a</b> is the body's acceleration. Thus, the net force applied to a body produces a proportional acceleration.</p>
+<p>Any mass that is gained or lost by the system will cause a change in momentum that is not the result of an external force. A different equation is necessary for variable-mass systems (see <a href="#Variable-mass_systems">below</a>).</p>
+<p>Consistent with the <a href="/wiki/Newton%27s_laws_of_motion#Newton.27s_first_law" title="Newton's laws of motion">first law</a>, the time derivative of the momentum is non-zero when the momentum changes direction, even if there is no change in its magnitude; such is the case with <a href="/wiki/Uniform_circular_motion" title="Uniform circular motion">uniform circular motion</a>. The relationship also implies the <a href="/wiki/Conservation_of_momentum" title="Conservation of momentum" class="mw-redirect">conservation of momentum</a>: when the net force on the body is zero, the momentum of the body is constant. Any net force is equal to the rate of change of the momentum.</p>
+<p>Newton's second law requires modification if the effects of <a href="/wiki/Special_relativity" title="Special relativity">special relativity</a> are to be taken into account, because at high speeds the approximation that momentum is the product of rest mass and velocity is not accurate.</p>
+<h3><span class="mw-headline" id="Impulse">Impulse</span></h3>
+<p>An <a href="/wiki/Impulse_(physics)" title="Impulse (physics)">impulse</a> <b>I</b> occurs when a force <b>F</b> acts over an interval of time Δ<i>t</i>, and it is given by<sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span>[</span>21<span>]</span></a></sup><sup id="cite_ref-Serway_21-0" class="reference"><a href="#cite_note-Serway-21"><span>[</span>22<span>]</span></a></sup></p>
+<dl>
+<dd><img class="tex" alt=" \mathbf{I} = \int_{\Delta t} \mathbf F \,\mathrm{d}t ." src="http://upload.wikimedia.org/math/f/6/b/f6be6fd1cc57d22429a65fc30679a170.png" /></dd>
+</dl>
+<p>Since force is the time derivative of momentum, it follows that</p>
+<dl>
+<dd><img class="tex" alt="\mathbf{I} = \Delta\mathbf{p} = m\Delta\mathbf{v}." src="http://upload.wikimedia.org/math/9/8/e/98ef96ad7b99d93b284a5a5e40ddb8d2.png" /></dd>
+</dl>
+<p>This relation between impulse and momentum is closer to Newton's wording of the second law.<sup id="cite_ref-Harman_22-0" class="reference"><a href="#cite_note-Harman-22"><span>[</span>23<span>]</span></a></sup></p>
+<p>Impulse is a concept frequently used in the analysis of collisions and impacts.<sup id="cite_ref-Stronge_23-0" class="reference"><a href="#cite_note-Stronge-23"><span>[</span>24<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Variable-mass_systems">Variable-mass systems</span></h3>
+<p>Variable-mass systems, like a rocket burning fuel and ejecting spent gases, are not <a href="/wiki/Closed_system" title="Closed system">closed</a> and cannot be directly treated by making mass a function of time in the second law.<sup id="cite_ref-Halliday_18-1" class="reference"><a href="#cite_note-Halliday-18"><span>[</span>19<span>]</span></a></sup> The reasoning, given in <i>An Introduction to Mechanics</i> by Kleppner and Kolenkow and other modern texts, is that Newton's second law applies fundamentally to particles.<sup id="cite_ref-Kleppner_19-1" class="reference"><a href="#cite_note-Kleppner-19"><span>[</span>20<span>]</span></a></sup> In classical mechanics, particles by definition have constant mass. In case of a well-defined system of particles, Newton's law can be extended by summing over all the particles in the system:</p>
+<dl>
+<dd><img class="tex" alt="\mathbf{F}_{\mathrm{net}} = M\mathbf{a}_\mathrm{cm}" src="http://upload.wikimedia.org/math/d/e/7/de7c3cc6509a6a4ff2a7cdc0b1872093.png" /></dd>
+</dl>
+<p>where <b>F</b><sub>net</sub> is the total external force on the system, <i>M</i> is the total mass of the system, and <b>a</b><sub>cm</sub> is the acceleration of the <a href="/wiki/Center_of_mass" title="Center of mass">center of mass</a> of the system.</p>
+<p>Variable-mass systems like a rocket or a leaking bucket cannot usually be treated as a system of particles, and thus Newton's second law cannot be applied directly. Instead, the general equation of motion for a body whose mass <i>m</i> varies with time by either ejecting or accreting mass is obtained by rearranging the second law and adding a term to account for the momentum carried by mass entering or leaving the system:<sup id="cite_ref-plastino_17-1" class="reference"><a href="#cite_note-plastino-17"><span>[</span>18<span>]</span></a></sup></p>
+<dl>
+<dd><img class="tex" alt="\mathbf F + \mathbf{u} \frac{\mathrm{d} m}{\mathrm{d}t} = m {\mathrm{d} \mathbf v \over \mathrm{d}t}" src="http://upload.wikimedia.org/math/6/f/3/6f38af0a8e62565876feb07afb1208b7.png" /></dd>
+</dl>
+<p>where <b>u</b> is the relative velocity of the escaping or incoming mass with respect to the center of mass of the body. Under some conventions, the quantity <b>u</b> d<i>m</i>/d<i>t</i> on the left-hand side, known as the <a href="/wiki/Thrust" title="Thrust">thrust</a>, is defined as a force (the force exerted on the body by the changing mass, such as rocket exhaust) and is included in the quantity <b>F</b>. Then, by substituting the definition of acceleration, the equation becomes</p>
+<dl>
+<dd><img class="tex" alt="\mathbf F = m \mathbf a." src="http://upload.wikimedia.org/math/1/9/9/199b3ff9558f5b5e1286d77f1b3b1c44.png" /></dd>
+</dl>
+<h3><span class="mw-headline" id="History">History</span></h3>
+<p>Newton's original Latin reads:</p>
+<blockquote class="templatequote">
+<div>Lex II: Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.</div>
+</blockquote>
+<p>This was translated quite closely in Motte's 1729 translation as:</p>
+<blockquote class="templatequote">
+<div>Law II: The alteration of motion is ever proportional to the motive force impress'd; and is made in the direction of the right line in which that force is impress'd.</div>
+</blockquote>
+<p>According to modern ideas of how Newton was using his terminology,<sup id="cite_ref-24" class="reference"><a href="#cite_note-24"><span>[</span>25<span>]</span></a></sup> this is understood, in modern terms, as an equivalent of:</p>
+<blockquote class="templatequote">
+<div>The change of momentum of a body is proportional to the impulse impressed on the body, and happens along the straight line on which that impulse is impressed.</div>
+</blockquote>
+<p>Motte's 1729 translation of Newton's Latin continued with Newton's commentary on the second law of motion, reading:</p>
+<blockquote class="templatequote">
+<div>If a force generates a motion, a double force will generate double the motion, a triple force triple the motion, whether that force be impressed altogether and at once, or gradually and successively. And this motion (being always directed the same way with the generating force), if the body moved before, is added to or subtracted from the former motion, according as they directly conspire with or are directly contrary to each other; or obliquely joined, when they are oblique, so as to produce a new motion compounded from the determination of both.</div>
+</blockquote>
+<p>The sense or senses in which Newton used his terminology, and how he understood the second law and intended it to be understood, have been extensively discussed by historians of science, along with the relations between Newton's formulation and modern formulations.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25"><span>[</span>26<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Newton.27s_third_law">Newton's third law</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;"><a href="/wiki/File:Skaters_showing_newtons_third_law.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skaters_showing_newtons_third_law.svg/250px-Skaters_showing_newtons_third_law.svg.png" width="250" height="207" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Skaters_showing_newtons_third_law.svg" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Newton's third law. The skaters' forces on each other are equal in magnitude, but act in opposite directions.</div>
+</div>
+</div>
+<table style="margin:auto; border-collapse:collapse; border-style:none; background-color:transparent; width:auto;" class="cquote">
+<tr>
+<td width="20" valign="top" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:left;padding:10px 10px;">“</td>
+<td valign="top" style="padding:4px 10px;"><i>Lex III: Actioni contrariam semper et æqualem esse reactionem: sive corporum duorum actiones in se mutuo semper esse æquales et in partes contrarias dirigi.</i></td>
+<td width="20" valign="bottom" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:right;padding:10px 10px;">”</td>
+</tr>
+</table>
+<table style="margin:auto; border-collapse:collapse; border-style:none; background-color:transparent; width:auto;" class="cquote">
+<tr>
+<td width="20" valign="top" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:left;padding:10px 10px;">“</td>
+<td valign="top" style="padding:4px 10px;"><i>To every action there is always an equal and opposite reaction: or the forces of two bodies on each other are always equal and are directed in opposite directions.</i></td>
+<td width="20" valign="bottom" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:right;padding:10px 10px;">”</td>
+</tr>
+</table>
+<p>A more direct translation than the one just given above is:</p>
+<table style="margin:auto; border-collapse:collapse; border-style:none; background-color:transparent; width:auto;" class="cquote">
+<tr>
+<td width="20" valign="top" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:left;padding:10px 10px;">“</td>
+<td valign="top" style="padding:4px 10px;"><i>LAW III: To every action there is always opposed an equal reaction: or the mutual actions of two bodies upon each other are always equal, and directed to contrary parts. — Whatever draws or presses another is as much drawn or pressed by that other. If you press a stone with your finger, the finger is also pressed by the stone. If a horse draws a stone tied to a rope, the horse (if I may so say) will be equally drawn back towards the stone: for the distended rope, by the same endeavour to relax or unbend itself, will draw the horse as much towards the stone, as it does the stone towards the horse, and will obstruct the progress of the one as much as it advances that of the other. If a body impinges upon another, and by its force changes the motion of the other, that body also (because of the equality of the mutual pressure) will undergo an equal change, in its own motion, toward the contrary part. The changes made by these actions are equal, not in the velocities but in the motions of the bodies; that is to say, if the bodies are not hindered by any other impediments. For, as the motions are equally changed, the changes of the velocities made toward contrary parts are reciprocally proportional to the bodies. This law takes place also in attractions, as will be proved in the next scholium.</i><sup id="cite_ref-26" class="reference"><a href="#cite_note-26"><span>[</span>27<span>]</span></a></sup></td>
+<td width="20" valign="bottom" style="color:#B2B7F2;font-size:35px;font-family:'Times New Roman',serif;font-weight:bold;text-align:right;padding:10px 10px;">”</td>
+</tr>
+</table>
+<p>In the above, as usual, <i>motion</i> is Newton's name for momentum, hence his careful distinction between motion and velocity.</p>
+<p>The Third Law means that all forces are <i>interactions</i> between different bodies,<sup id="cite_ref-27" class="reference"><a href="#cite_note-27"><span>[</span>28<span>]</span></a></sup> and thus that there is no such thing as a unidirectional force or a force that acts on only one body. If body <i>A</i> exerts a force on body <i>B</i>, body <i>B</i> simultaneously exerts a force of the same magnitude on body <i>A</i>— both forces acting along the same line. As shown in the diagram opposite, the skaters' forces on each other are equal in magnitude, but act in opposite directions. Although the forces are equal, the accelerations are not: the less massive skater will have a greater acceleration due to Newton's second law. The two forces in Newton's third law are of the same type (e.g., if the road exerts a forward frictional force on an accelerating car's tires, then it is also a frictional force that Newton's third law predicts for the tires pushing backward on the road).</p>
+<p>Put very simply: a force acts between a pair of objects, and not on a single object. So each and every force has two ends. Each of the two ends is the same except for being opposite in direction. The ends of a force are mirror images of each other, one might say.</p>
+<p>Newton used the third law to derive the law of <a href="/wiki/Momentum#Conservation_of_linear_momentum" title="Momentum">conservation of momentum</a>;<sup id="cite_ref-28" class="reference"><a href="#cite_note-28"><span>[</span>29<span>]</span></a></sup> however from a deeper perspective, conservation of momentum is the more fundamental idea (derived via <a href="/wiki/Noether%27s_theorem" title="Noether's theorem">Noether's theorem</a> from <a href="/wiki/Galilean_invariance" title="Galilean invariance">Galilean invariance</a>), and holds in cases where Newton's third law appears to fail, for instance when <a href="/wiki/Force_field_(physics)" title="Force field (physics)">force fields</a> as well as particles carry momentum, and in <a href="/wiki/Quantum_mechanics" title="Quantum mechanics">quantum mechanics</a>.</p>
+<h2><span class="mw-headline" id="Importance_and_range_of_validity">Importance and range of validity</span></h2>
+<p>Newton's laws were verified by experiment and observation for over 200 years, and they are excellent approximations at the scales and speeds of everyday life. Newton's laws of motion, together with his law of <a href="/wiki/Universal_gravitation" title="Universal gravitation" class="mw-redirect">universal gravitation</a> and the mathematical techniques of <a href="/wiki/Calculus" title="Calculus">calculus</a>, provided for the first time a unified quantitative explanation for a wide range of physical phenomena.</p>
+<p>These three laws hold to a good approximation for macroscopic objects under everyday conditions. However, Newton's laws (combined with universal gravitation and <a href="/wiki/Classical_electrodynamics" title="Classical electrodynamics" class="mw-redirect">classical electrodynamics</a>) are inappropriate for use in certain circumstances, most notably at very small scales, very high speeds (in <a href="/wiki/Special_relativity" title="Special relativity">special relativity</a>, the <a href="/wiki/Lorentz_factor" title="Lorentz factor">Lorentz factor</a> must be included in the expression for momentum along with <a href="/wiki/Rest_mass" title="Rest mass" class="mw-redirect">rest mass</a> and velocity) or very strong gravitational fields. Therefore, the laws cannot be used to explain phenomena such as conduction of electricity in a <a href="/wiki/Semiconductor" title="Semiconductor">semiconductor</a>, optical properties of substances, errors in non-relativistically corrected <a href="/wiki/GPS" title="GPS" class="mw-redirect">GPS</a> systems and <a href="/wiki/Superconductivity" title="Superconductivity">superconductivity</a>. Explanation of these phenomena requires more sophisticated physical theory, including <a href="/wiki/General_relativity" title="General relativity">general relativity</a> and <a href="/wiki/Quantum_field_theory" title="Quantum field theory">quantum field theory</a>.</p>
+<p>In <a href="/wiki/Quantum_mechanics" title="Quantum mechanics">quantum mechanics</a> concepts such as force, momentum, and position are defined by linear <a href="/wiki/Operator_(physics)" title="Operator (physics)">operators</a> that operate on the <a href="/wiki/Quantum_state" title="Quantum state">quantum state</a>; at speeds that are much lower than the speed of light, Newton's laws are just as exact for these operators as they are for classical objects. At speeds comparable to the speed of light, the second law holds in the original form <b>F</b>&#160;=&#160;d<b>p</b>/d<i>t</i>, which says that the force is the derivative of the momentum of the object with respect to time, but some of the newer versions of the second law (such as the constant mass approximation above) do not hold at relativistic velocities.</p>
+<h2><span class="mw-headline" id="Relationship_to_the_conservation_laws">Relationship to the conservation laws</span></h2>
+<p>In modern physics, the <a href="/wiki/Conservation_law" title="Conservation law">laws of conservation</a> of <a href="/wiki/Momentum" title="Momentum">momentum</a>, <a href="/wiki/Energy" title="Energy">energy</a>, and <a href="/wiki/Angular_momentum" title="Angular momentum">angular momentum</a> are of more general validity than Newton's laws, since they apply to both light and matter, and to both classical and non-classical physics.</p>
+<p>This can be stated simply, "Momentum, energy and angular momentum cannot be created or destroyed."</p>
+<p>Because force is the time derivative of momentum, the concept of force is redundant and subordinate to the conservation of momentum, and is not used in fundamental theories (e.g. <a href="/wiki/Quantum_mechanics" title="Quantum mechanics">quantum mechanics</a>, <a href="/wiki/Quantum_electrodynamics" title="Quantum electrodynamics">quantum electrodynamics</a>, <a href="/wiki/General_relativity" title="General relativity">general relativity</a>, etc.). The <a href="/wiki/Standard_model" title="Standard model" class="mw-redirect">standard model</a> explains in detail how the three fundamental forces known as <a href="/wiki/Gauge_theory" title="Gauge theory">gauge forces</a> originate out of exchange by <a href="/wiki/Virtual_particles" title="Virtual particles" class="mw-redirect">virtual particles</a>. Other forces such as <a href="/wiki/Gravitation" title="Gravitation">gravity</a> and <a href="/wiki/Pauli_exclusion_principle#Consequences" title="Pauli exclusion principle">fermionic degeneracy pressure</a> also arise from the momentum conservation. Indeed, the conservation of <a href="/wiki/4-momentum" title="4-momentum" class="mw-redirect">4-momentum</a> in inertial motion via <a href="/wiki/Curved_space-time" title="Curved space-time" class="mw-redirect">curved space-time</a> results in what we call <a href="/wiki/Gravitational_force" title="Gravitational force" class="mw-redirect">gravitational force</a> in <a href="/wiki/General_relativity" title="General relativity">general relativity</a> theory. Application of space derivative (which is a <a href="/wiki/Momentum_operator" title="Momentum operator">momentum operator</a> in quantum mechanics) to overlapping <a href="/wiki/Wave_functions" title="Wave functions" class="mw-redirect">wave functions</a> of pair of <a href="/wiki/Fermion" title="Fermion">fermions</a> (particles with semi-integer <a href="/wiki/Spin_(physics)" title="Spin (physics)">spin</a>) results in shifts of maxima of compound wavefunction away from each other, which is observable as "repulsion" of fermions.</p>
+<p>Newton stated the third law within a world-view that assumed instantaneous action at a distance between material particles. However, he was prepared for philosophical criticism of this <a href="/wiki/Action_at_a_distance_(physics)" title="Action at a distance (physics)">action at a distance</a>, and it was in this context that he stated the famous phrase "<a href="/wiki/Hypotheses_non_fingo" title="Hypotheses non fingo">I feign no hypotheses</a>". In modern physics, action at a distance has been completely eliminated, except for subtle effects involving <a href="/wiki/Quantum_entanglement" title="Quantum entanglement">quantum entanglement</a>. However in modern engineering in all practical applications involving the motion of vehicles and satellites, the concept of action at a distance is used extensively.</p>
+<p><a href="/wiki/Conservation_of_energy" title="Conservation of energy">Conservation of energy</a> was discovered nearly two centuries after Newton's lifetime, the long delay occurring because of the difficulty in understanding the role of microscopic and invisible forms of energy such as heat and infra-red light.</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<table class="metadata mbox-small" style="border:1px solid #aaa; background-color:#f9f9f9;">
+<tr>
+<td class="mbox-image"><a href="/wiki/Wikipedia:Books" title="Wikipedia:Books"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Office-book.svg/30px-Office-book.svg.png" width="30" height="30" /></a></td>
+<td class="mbox-text" style=""><i><b><a href="/wiki/Book:Isaac_Newton" title="Book:Isaac Newton">Book:Isaac Newton</a></b></i></td>
+</tr>
+<tr>
+<td colspan="2" class="mbox-text" style=""><small><a href="/wiki/Wikipedia:Books" title="Wikipedia:Books">Books</a> are collections of articles that can be downloaded or ordered in print.</small></td>
+</tr>
+</table>
+<ul>
+<li><a href="/wiki/List_of_scientific_laws_named_after_people" title="List of scientific laws named after people">List of scientific laws named after people</a></li>
+<li><a href="/wiki/Mercury_(planet)#Orbit_and_rotation" title="Mercury (planet)">Mercury, orbit of</a></li>
+<li><a href="/wiki/Galilean_invariance" title="Galilean invariance">Galilean invariance</a></li>
+<li><a href="/wiki/Modified_Newtonian_dynamics" title="Modified Newtonian dynamics">Modified Newtonian dynamics</a></li>
+<li><a href="/wiki/Lagrangian_mechanics" title="Lagrangian mechanics">Lagrangian mechanics</a></li>
+<li><a href="/wiki/Hamiltonian_mechanics" title="Hamiltonian mechanics">Hamiltonian mechanics</a></li>
+<li><a href="/wiki/Principle_of_least_action" title="Principle of least action">Principle of least action</a></li>
+<li><a href="/wiki/Euler%27s_laws" title="Euler's laws" class="mw-redirect">Euler's laws</a></li>
+</ul>
+<h2><span class="mw-headline" id="References_and_notes">References and notes</span></h2>
+<div class="reflist references-small references-column-width" style="column-width: 30em; -moz-column-width: 30em; -webkit-column-width: 30em;">
+<div class="references">
+<ol>
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> For explanations of Newton's laws of motion by <a href="/wiki/Isaac_Newton" title="Isaac Newton">Newton</a> in the early 18th century, by the physicist <a href="/wiki/William_Thomson,_1st_Baron_Kelvin" title="William Thomson, 1st Baron Kelvin">William Thomson (Lord Kelvin)</a> in the mid-19th century, and by a modern text of the early 21st century, see:-
+<ul>
+<li>Newton's "Axioms or Laws of Motion" starting on <a href="http://books.google.com/books?id=Tm0FAAAAQAAJ&amp;pg=PA19#v=onepage&amp;q=&amp;f=false" class="external text" rel="nofollow">page 19 of volume 1 of the 1729 translation</a> of the "<a href="/wiki/Mathematical_Principles_of_Natural_Philosophy" title="Mathematical Principles of Natural Philosophy" class="mw-redirect">Principia</a>";</li>
+<li><a href="http://books.google.com/books?id=wwO9X3RPt5kC&amp;pg=PA178" class="external text" rel="nofollow">Section 242, <i>Newton's laws of motion</i></a> in <a href="#tho1867">Thomson, W (Lord Kelvin), and Tait, P G, (1867)</a>, <i>Treatise on natural philosophy</i>, volume 1; and</li>
+<li><a href="#cro2000">Benjamin Crowell (2000), <i>Newtonian Physics</i></a>.</li>
+</ul>
+</li>
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> Halliday</li>
+<li id="cite_note-first-law-shaums-2"><b><a href="#cite_ref-first-law-shaums_2-0">^</a></b> <span class="citation book">Browne, Michael E. (1999-07) (Series: Schaum's Outline Series). <a href="http://books.google.com/?id=5gURYN4vFx4C&amp;pg=PA58&amp;dq=newton's+first+law+of+motion&amp;q=newton's%20first%20law%20of%20motion" class="external text" rel="nofollow"><i>Schaum's outline of theory and problems of physics for engineering and science</i></a>. McGraw-Hill Companies. pp.&#160;58. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780070084988" title="Special:BookSources/9780070084988">9780070084988</a><span class="printonly">. <a href="http://books.google.com/?id=5gURYN4vFx4C&amp;pg=PA58&amp;dq=newton's+first+law+of+motion&amp;q=newton's%20first%20law%20of%20motion" class="external free" rel="nofollow">http://books.google.com/?id=5gURYN4vFx4C&amp;pg=PA58&amp;dq=newton's+first+law+of+motion&amp;q=newton's%20first%20law%20of%20motion</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Schaum%27s+outline+of+theory+and+problems+of+physics+for+engineering+and+science&amp;rft.aulast=Browne&amp;rft.aufirst=Michael+E.&amp;rft.au=Browne%2C%26%2332%3BMichael+E.&amp;rft.date=1999-07&amp;rft.pages=pp.%26nbsp%3B58&amp;rft.pub=McGraw-Hill+Companies&amp;rft.isbn=9780070084988&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3D5gURYN4vFx4C%26pg%3DPA58%26dq%3Dnewton%27s%2Bfirst%2Blaw%2Bof%2Bmotion%26q%3Dnewton%27s%2520first%2520law%2520of%2520motion&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-first-law-dmmy-3"><b><a href="#cite_ref-first-law-dmmy_3-0">^</a></b> <span class="citation book">Holzner, Steven (2005-12). <a href="http://books.google.com/?id=FrRNO6t51DMC&amp;pg=PA64&amp;dq=Newton's+laws+of+motion&amp;cd=8#v=onepage&amp;q=Newton's%20laws%20of%20motion" class="external text" rel="nofollow"><i>Physics for Dummies</i></a>. Wiley, John &amp; Sons, Incorporated. pp.&#160;64. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780764554339" title="Special:BookSources/9780764554339">9780764554339</a><span class="printonly">. <a href="http://books.google.com/?id=FrRNO6t51DMC&amp;pg=PA64&amp;dq=Newton's+laws+of+motion&amp;cd=8#v=onepage&amp;q=Newton's%20laws%20of%20motion" class="external free" rel="nofollow">http://books.google.com/?id=FrRNO6t51DMC&amp;pg=PA64&amp;dq=Newton's+laws+of+motion&amp;cd=8#v=onepage&amp;q=Newton's%20laws%20of%20motion</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Physics+for+Dummies&amp;rft.aulast=Holzner&amp;rft.aufirst=Steven&amp;rft.au=Holzner%2C%26%2332%3BSteven&amp;rft.date=2005-12&amp;rft.pages=pp.%26nbsp%3B64&amp;rft.pub=Wiley%2C+John+%26+Sons%2C+Incorporated&amp;rft.isbn=9780764554339&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3DFrRNO6t51DMC%26pg%3DPA64%26dq%3DNewton%27s%2Blaws%2Bof%2Bmotion%26cd%3D8%23v%3Donepage%26q%3DNewton%27s%2520laws%2520of%2520motion&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-Principia-4"><b><a href="#cite_ref-Principia_4-0">^</a></b> See the <i>Principia</i> on line at <a href="http://ia310114.us.archive.org/2/items/newtonspmathema00newtrich/newtonspmathema00newtrich.pdf" class="external text" rel="nofollow">Andrew Motte Translation</a></li>
+<li id="cite_note-Motte-5"><b><a href="#cite_ref-Motte_5-0">^</a></b> <a href="http://members.tripod.com/~gravitee/axioms.htm" class="external text" rel="nofollow">Andrew Motte translation of Newton's <i>Principia</i> (1687) <i>Axioms or Laws of Motion</i></a></li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> <i>[...]while Newton had used the word 'body' vaguely and in at least three different meanings, Euler realized that the statements of Newton are generally correct only when applied to masses concentrated at isolated points;</i><span class="citation book">Truesdell, Clifford A.; Becchi, Antonio; Benvenuto, Edoardo (2003). <a href="http://books.google.com/?id=6LO_U6T-HvsC&amp;printsec=frontcover&amp;dq=essays+in+the+History&amp;cd=9#v=snippet&amp;q=%22isolated%20points%22" class="external text" rel="nofollow"><i>Essays on the history of mechanics: in memory of Clifford Ambrose Truesdell and Edoardo Benvenuto</i></a>. New York: Birkhäuser. p.&#160;207. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3764314761" title="Special:BookSources/3764314761">3764314761</a><span class="printonly">. <a href="http://books.google.com/?id=6LO_U6T-HvsC&amp;printsec=frontcover&amp;dq=essays+in+the+History&amp;cd=9#v=snippet&amp;q=%22isolated%20points%22" class="external free" rel="nofollow">http://books.google.com/?id=6LO_U6T-HvsC&amp;printsec=frontcover&amp;dq=essays+in+the+History&amp;cd=9#v=snippet&amp;q=%22isolated%20points%22</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Essays+on+the+history+of+mechanics%3A+in+memory+of+Clifford+Ambrose+Truesdell+and+Edoardo+Benvenuto&amp;rft.aulast=Truesdell&amp;rft.aufirst=Clifford+A.&amp;rft.au=Truesdell%2C%26%2332%3BClifford+A.&amp;rft.au=Becchi%2C%26%2332%3BAntonio&amp;rft.au=Benvenuto%2C%26%2332%3BEdoardo&amp;rft.date=2003&amp;rft.pages=p.%26nbsp%3B207&amp;rft.place=New+York&amp;rft.pub=Birkh%C3%A4user&amp;rft.isbn=3764314761&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3D6LO_U6T-HvsC%26printsec%3Dfrontcover%26dq%3Dessays%2Bin%2Bthe%2BHistory%26cd%3D9%23v%3Dsnippet%26q%3D%2522isolated%2520points%2522&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> <span class="citation book">Lubliner, Jacob (2008). <a href="http://www.ce.berkeley.edu/~coby/plas/pdf/book.pdf" class="external text" rel="nofollow"><i>Plasticity Theory (Revised Edition)</i></a>. Dover Publications. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0486462900" title="Special:BookSources/0486462900">0486462900</a><span class="printonly">. <a href="http://www.ce.berkeley.edu/~coby/plas/pdf/book.pdf" class="external free" rel="nofollow">http://www.ce.berkeley.edu/~coby/plas/pdf/book.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Plasticity+Theory+%28Revised+Edition%29&amp;rft.aulast=Lubliner&amp;rft.aufirst=Jacob&amp;rft.au=Lubliner%2C%26%2332%3BJacob&amp;rft.date=2008&amp;rft.pub=Dover+Publications&amp;rft.isbn=0486462900&amp;rft_id=http%3A%2F%2Fwww.ce.berkeley.edu%2F%7Ecoby%2Fplas%2Fpdf%2Fbook.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> <span class="citation Journal">Galili, I.; Tseitlin, M. (2003). <a href="http://www.springerlink.com/content/j42866672t863506/" class="external text" rel="nofollow">"Newton's First Law: Text, Translations, Interpretations and Physics Education"</a>. <i>Science &amp; Education</i> <b>12</b> (1): 45–73. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1023%2FA%3A1022632600805" class="external text" rel="nofollow">10.1023/A:1022632600805</a><span class="printonly">. <a href="http://www.springerlink.com/content/j42866672t863506/" class="external free" rel="nofollow">http://www.springerlink.com/content/j42866672t863506/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Newton%27s+First+Law%3A+Text%2C+Translations%2C+Interpretations+and+Physics+Education&amp;rft.jtitle=Science+%26+Education&amp;rft.aulast=Galili%2C+I.%3B+Tseitlin%2C+M.&amp;rft.au=Galili%2C+I.%3B+Tseitlin%2C+M.&amp;rft.date=2003&amp;rft.volume=12&amp;rft.issue=1&amp;rft.pages=45%E2%80%9373&amp;rft_id=info:doi/10.1023%2FA%3A1022632600805&amp;rft_id=http%3A%2F%2Fwww.springerlink.com%2Fcontent%2Fj42866672t863506%2F&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-9"><b><a href="#cite_ref-9">^</a></b> <span class="citation book">Benjamin Crowell. <a href="http://www.lightandmatter.com/html_books/1np/ch04/ch04.html" class="external text" rel="nofollow">"4. Force and Motion"</a>. <i>Newtonian Physics</i><span class="printonly">. <a href="http://www.lightandmatter.com/html_books/1np/ch04/ch04.html" class="external free" rel="nofollow">http://www.lightandmatter.com/html_books/1np/ch04/ch04.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=4.+Force+and+Motion&amp;rft.atitle=Newtonian+Physics&amp;rft.aulast=Benjamin+Crowell&amp;rft.au=Benjamin+Crowell&amp;rft_id=http%3A%2F%2Fwww.lightandmatter.com%2Fhtml_books%2F1np%2Fch04%2Fch04.html&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-10"><b><a href="#cite_ref-10">^</a></b> In making a modern adjustment of the second law for (some of) the effects of relativity, <i>m</i> would be treated as the <a href="/wiki/Relativistic_mass" title="Relativistic mass" class="mw-redirect">relativistic mass</a>, producing the relativistic expression for momentum, and the third law might be modified if possible to allow for the finite signal propagation speed between distant interacting particles.</li>
+<li id="cite_note-11"><b><a href="#cite_ref-11">^</a></b> Isaac Newton, <i>The Principia</i>, A new translation by I.B. Cohen and A. Whitman, University of California press, Berkeley 1999.</li>
+<li id="cite_note-Woodhouse-12"><b><a href="#cite_ref-Woodhouse_12-0">^</a></b> <span class="citation book">NMJ Woodhouse (2003). <a href="http://books.google.com/?id=ggPXQAeeRLgC&amp;printsec=frontcover&amp;dq=isbn=1852334266#PPA6,M1" class="external text" rel="nofollow"><i>Special relativity</i></a>. London/Berlin: Springer. p.&#160;6. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-85233-426-6" title="Special:BookSources/1-85233-426-6">1-85233-426-6</a><span class="printonly">. <a href="http://books.google.com/?id=ggPXQAeeRLgC&amp;printsec=frontcover&amp;dq=isbn=1852334266#PPA6,M1" class="external free" rel="nofollow">http://books.google.com/?id=ggPXQAeeRLgC&amp;printsec=frontcover&amp;dq=isbn=1852334266#PPA6,M1</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Special+relativity&amp;rft.aulast=NMJ+Woodhouse&amp;rft.au=NMJ+Woodhouse&amp;rft.date=2003&amp;rft.pages=p.%26nbsp%3B6&amp;rft.place=London%2FBerlin&amp;rft.pub=Springer&amp;rft.isbn=1-85233-426-6&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3DggPXQAeeRLgC%26printsec%3Dfrontcover%26dq%3Disbn%3D1852334266%23PPA6%2CM1&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-13"><b><a href="#cite_ref-13">^</a></b> <span class="citation Journal">Galili, I. &amp; Tseitlin, M. (2003). "Newton's first law: text, translations, interpretations, and physics education.". <i>Science and Education</i> <b>12 (1)</b>: 45–73. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1023%2FA%3A1022632600805" class="external text" rel="nofollow">10.1023/A:1022632600805</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Newton%27s+first+law%3A+text%2C+translations%2C+interpretations%2C+and+physics+education.&amp;rft.jtitle=Science+and+Education&amp;rft.aulast=Galili%2C+I.+%26+Tseitlin%2C+M.&amp;rft.au=Galili%2C+I.+%26+Tseitlin%2C+M.&amp;rft.date=2003&amp;rft.volume=12+%281%29&amp;rft.pages=45%E2%80%9373&amp;rft_id=info:doi/10.1023%2FA%3A1022632600805&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-14"><b><a href="#cite_ref-14">^</a></b> <span class="citation book">Beatty, Millard F. (2006). <a href="http://books.google.com/?id=wr2QOBqOBakC&amp;lpg=PP1&amp;pg=PA24#v=onepage&amp;q" class="external text" rel="nofollow"><i>Principles of engineering mechanics Volume 2 of Principles of Engineering Mechanics: Dynamics-The Analysis of Motion,</i></a>. Springer. p.&#160;24. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0387237046" title="Special:BookSources/0387237046">0387237046</a><span class="printonly">. <a href="http://books.google.com/?id=wr2QOBqOBakC&amp;lpg=PP1&amp;pg=PA24#v=onepage&amp;q" class="external free" rel="nofollow">http://books.google.com/?id=wr2QOBqOBakC&amp;lpg=PP1&amp;pg=PA24#v=onepage&amp;q</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Principles+of+engineering+mechanics+Volume+2+of+Principles+of+Engineering+Mechanics%3A+Dynamics-The+Analysis+of+Motion%2C&amp;rft.aulast=Beatty%2C+Millard+F.&amp;rft.au=Beatty%2C+Millard+F.&amp;rft.date=2006&amp;rft.pages=p.%26nbsp%3B24&amp;rft.pub=Springer&amp;rft.isbn=0387237046&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3Dwr2QOBqOBakC%26lpg%3DPP1%26pg%3DPA24%23v%3Donepage%26q&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-15"><b><a href="#cite_ref-15">^</a></b> <span class="citation book">Thornton, Marion (2004). <a href="http://books.google.com/?id=HOqLQgAACAAJ&amp;dq=classical%20dynamics%20of%20particles%20and%20systems" class="external text" rel="nofollow"><i>Classical dynamics of particles and systems</i></a> (5th ed.). Brooks/Cole. p.&#160;53. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0534408966" title="Special:BookSources/0534408966">0534408966</a><span class="printonly">. <a href="http://books.google.com/?id=HOqLQgAACAAJ&amp;dq=classical%20dynamics%20of%20particles%20and%20systems" class="external free" rel="nofollow">http://books.google.com/?id=HOqLQgAACAAJ&amp;dq=classical%20dynamics%20of%20particles%20and%20systems</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Classical+dynamics+of+particles+and+systems&amp;rft.aulast=Thornton%2C+Marion&amp;rft.au=Thornton%2C+Marion&amp;rft.date=2004&amp;rft.pages=p.%26nbsp%3B53&amp;rft.edition=5th&amp;rft.pub=Brooks%2FCole&amp;rft.isbn=0534408966&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3DHOqLQgAACAAJ%26dq%3Dclassical%2520dynamics%2520of%2520particles%2520and%2520systems&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-16"><b><a href="#cite_ref-16">^</a></b> Thomas Hobbes wrote in <i><a href="/wiki/Leviathan_(book)" title="Leviathan (book)">Leviathan</a></i>:
+<blockquote class="templatequote">
+<div>That when a thing lies still, unless somewhat else stir it, it will lie still forever, is a truth that no man doubts. But [the proposition] that when a thing is in motion it will eternally be in motion unless somewhat else stay it, though the reason be the same (namely that nothing can change itself), is not so easily assented to. For men measure not only other men but all other things by themselves. And because they find themselves subject after motion to pain and lassitude, [they] think every thing else grows weary of motion and seeks repose of its own accord, little considering whether it be not some other motion wherein that desire of rest they find in themselves, consists.</div>
+</blockquote>
+</li>
+<li id="cite_note-plastino-17">^ <a href="#cite_ref-plastino_17-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-plastino_17-1"><sup><i><b>b</b></i></sup></a> <span class="citation Journal">Plastino, Angel R.; Muzzio, Juan C. (1992). <a href="http://articles.adsabs.harvard.edu//full/1992CeMDA..53..227P/0000227.000.html" class="external text" rel="nofollow">"On the use and abuse of Newton's second law for variable mass problems"</a>. <i>Celestial Mechanics and Dynamical Astronomy</i> (Netherlands: Kluwer Academic Publishers) <b>53</b> (3): 227–232. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2FBF00052611" class="external text" rel="nofollow">10.1007/BF00052611</a>. <a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a>&#160;<a href="http://www.worldcat.org/issn/0923-2958" class="external text" rel="nofollow">0923-2958</a><span class="printonly">. <a href="http://articles.adsabs.harvard.edu//full/1992CeMDA..53..227P/0000227.000.html" class="external free" rel="nofollow">http://articles.adsabs.harvard.edu//full/1992CeMDA..53..227P/0000227.000.html</a></span><span class="reference-accessdate">. Retrieved 11 June 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=On+the+use+and+abuse+of+Newton%27s+second+law+for+variable+mass+problems&amp;rft.jtitle=Celestial+Mechanics+and+Dynamical+Astronomy&amp;rft.aulast=Plastino&amp;rft.aufirst=Angel+R.&amp;rft.au=Plastino%2C%26%2332%3BAngel+R.&amp;rft.date=1992&amp;rft.volume=53&amp;rft.issue=3&amp;rft.pages=227%E2%80%93232&amp;rft.place=Netherlands&amp;rft.pub=Kluwer+Academic+Publishers&amp;rft_id=info:doi/10.1007%2FBF00052611&amp;rft.issn=0923-2958&amp;rft_id=http%3A%2F%2Farticles.adsabs.harvard.edu%2F%2Ffull%2F1992CeMDA..53..227P%2F0000227.000.html&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span> "We may conclude emphasizing that Newton's second law is valid for constant mass only. When the mass varies due to accretion or ablation, [an alternate equation explicitly accounting for the changing mass] should be used."</li>
+<li id="cite_note-Halliday-18">^ <a href="#cite_ref-Halliday_18-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Halliday_18-1"><sup><i><b>b</b></i></sup></a> <span class="citation book">Halliday; Resnick. <i>Physics</i>. <b>1</b>. pp.&#160;199. "It is important to note that we <i>cannot</i> derive a general expression for Newton's second law for variable mass systems by treating the mass in <b>F</b> = d<b>P</b>/dt = d(M<b>v</b>) as a <i>variable</i>. [...] We <i>can</i> use <b>F</b> = d<b>P</b>/dt to analyze variable mass systems <i>only</i> if we apply it to an <i>entire system of constant mass</i> having parts among which there is an interchange of mass."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Physics&amp;rft.aulast=Halliday&amp;rft.au=Halliday&amp;rft.volume=1&amp;rft.pages=pp.%26nbsp%3B199&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span> [Emphasis as in the original]</li>
+<li id="cite_note-Kleppner-19">^ <a href="#cite_ref-Kleppner_19-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Kleppner_19-1"><sup><i><b>b</b></i></sup></a> <span class="citation book">Kleppner, Daniel; Robert Kolenkow (1973). <i>An Introduction to Mechanics</i>. McGraw-Hill. pp.&#160;133–134. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0070350485" title="Special:BookSources/0070350485">0070350485</a>. "Recall that <b>F</b> = d<b>P</b>/dt was established for a system composed of a certain set of particles[. ... I]t is essential to deal with the same set of particles throughout the time interval[. ...] Consequently, the mass of the system can not change during the time of interest."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=An+Introduction+to+Mechanics&amp;rft.aulast=Kleppner&amp;rft.aufirst=Daniel&amp;rft.au=Kleppner%2C%26%2332%3BDaniel&amp;rft.date=1973&amp;rft.pages=pp.%26nbsp%3B133%E2%80%93134&amp;rft.pub=McGraw-Hill&amp;rft.isbn=0070350485&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-20"><b><a href="#cite_ref-20">^</a></b> Hannah, J, Hillier, M J, <i>Applied Mechanics</i>, p221, Pitman Paperbacks, 1971</li>
+<li id="cite_note-Serway-21"><b><a href="#cite_ref-Serway_21-0">^</a></b> <span class="citation book">Raymond A. Serway, Jerry S. Faughn (2006). <a href="http://books.google.com/?id=wDKD4IggBJ4C&amp;pg=PA247&amp;dq=impulse+momentum+%22rate+of+change%22" class="external text" rel="nofollow"><i>College Physics</i></a>. Pacific Grove CA: Thompson-Brooks/Cole. p.&#160;161. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0534997244" title="Special:BookSources/0534997244">0534997244</a><span class="printonly">. <a href="http://books.google.com/?id=wDKD4IggBJ4C&amp;pg=PA247&amp;dq=impulse+momentum+%22rate+of+change%22" class="external free" rel="nofollow">http://books.google.com/?id=wDKD4IggBJ4C&amp;pg=PA247&amp;dq=impulse+momentum+%22rate+of+change%22</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=College+Physics&amp;rft.aulast=Raymond+A.+Serway%2C+Jerry+S.+Faughn&amp;rft.au=Raymond+A.+Serway%2C+Jerry+S.+Faughn&amp;rft.date=2006&amp;rft.pages=p.%26nbsp%3B161&amp;rft.place=Pacific+Grove+CA&amp;rft.pub=Thompson-Brooks%2FCole&amp;rft.isbn=0534997244&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3DwDKD4IggBJ4C%26pg%3DPA247%26dq%3Dimpulse%2Bmomentum%2B%2522rate%2Bof%2Bchange%2522&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-Harman-22"><b><a href="#cite_ref-Harman_22-0">^</a></b> <span class="citation book">I Bernard Cohen (Peter M. Harman &amp; Alan E. Shapiro, Eds) (2002). <a href="http://books.google.com/?id=oYZ-0PUrjBcC&amp;pg=PA353&amp;dq=impulse+momentum+%22rate+of+change%22+-angular+date:2000-2009" class="external text" rel="nofollow"><i>The investigation of difficult things: essays on Newton and the history of the exact sciences in honour of D.T. Whiteside</i></a>. Cambridge UK: Cambridge University Press. p.&#160;353. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/052189266X" title="Special:BookSources/052189266X">052189266X</a><span class="printonly">. <a href="http://books.google.com/?id=oYZ-0PUrjBcC&amp;pg=PA353&amp;dq=impulse+momentum+%22rate+of+change%22+-angular+date:2000-2009" class="external free" rel="nofollow">http://books.google.com/?id=oYZ-0PUrjBcC&amp;pg=PA353&amp;dq=impulse+momentum+%22rate+of+change%22+-angular+date:2000-2009</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+investigation+of+difficult+things%3A+essays+on+Newton+and+the+history+of+the+exact+sciences+in+honour+of+D.T.+Whiteside&amp;rft.aulast=I+Bernard+Cohen+%28Peter+M.+Harman+%26+Alan+E.+Shapiro%2C+Eds%29&amp;rft.au=I+Bernard+Cohen+%28Peter+M.+Harman+%26+Alan+E.+Shapiro%2C+Eds%29&amp;rft.date=2002&amp;rft.pages=p.%26nbsp%3B353&amp;rft.place=Cambridge+UK&amp;rft.pub=Cambridge+University+Press&amp;rft.isbn=052189266X&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3DoYZ-0PUrjBcC%26pg%3DPA353%26dq%3Dimpulse%2Bmomentum%2B%2522rate%2Bof%2Bchange%2522%2B-angular%2Bdate%3A2000-2009&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-Stronge-23"><b><a href="#cite_ref-Stronge_23-0">^</a></b> <span class="citation book">WJ Stronge (2004). <a href="http://books.google.com/?id=nHgcS0bfZ28C&amp;pg=PA12&amp;dq=impulse+momentum+%22rate+of+change%22+-angular+date:2000-2009" class="external text" rel="nofollow"><i>Impact mechanics</i></a>. Cambridge UK: Cambridge University Press. p.&#160;12 ff. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0521602890" title="Special:BookSources/0521602890">0521602890</a><span class="printonly">. <a href="http://books.google.com/?id=nHgcS0bfZ28C&amp;pg=PA12&amp;dq=impulse+momentum+%22rate+of+change%22+-angular+date:2000-2009" class="external free" rel="nofollow">http://books.google.com/?id=nHgcS0bfZ28C&amp;pg=PA12&amp;dq=impulse+momentum+%22rate+of+change%22+-angular+date:2000-2009</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Impact+mechanics&amp;rft.aulast=WJ+Stronge&amp;rft.au=WJ+Stronge&amp;rft.date=2004&amp;rft.pages=p.%26nbsp%3B12+ff&amp;rft.place=Cambridge+UK&amp;rft.pub=Cambridge+University+Press&amp;rft.isbn=0521602890&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3DnHgcS0bfZ28C%26pg%3DPA12%26dq%3Dimpulse%2Bmomentum%2B%2522rate%2Bof%2Bchange%2522%2B-angular%2Bdate%3A2000-2009&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-24"><b><a href="#cite_ref-24">^</a></b> According to Maxwell in <i>Matter and Motion</i>, Newton meant by <i>motion</i> "the quantity of matter moved as well as the rate at which it travels" and by <i>impressed force</i> he meant "the time during which the force acts as well as the intensity of the force". See Harman and Shapiro, cited below.</li>
+<li id="cite_note-25"><b><a href="#cite_ref-25">^</a></b> See for example (1) I Bernard Cohen, "Newton’s Second Law and the Concept of Force in the Principia", in "The Annus Mirabilis of Sir Isaac Newton 1666–1966" (Cambridge, Massachusetts: The MIT Press, 1967), pages 143–185; (2) Stuart Pierson, "'Corpore cadente. . .': Historians Discuss Newton’s Second Law", Perspectives on Science, 1 (1993), pages 627–658; and (3) Bruce Pourciau, "Newton's Interpretation of Newton's Second Law", Archive for History of Exact Sciences, vol.60 (2006), pages 157-207; also an online discussion by G E Smith, in <a href="http://plato.stanford.edu/entries/newton-principia/index.html#NewLawMot" class="external text" rel="nofollow">5. Newton's Laws of Motion</a>, s.5 of "Newton's Philosophiae Naturalis Principia Mathematica" in (online) Stanford Encyclopedia of Philosophy, 2007.</li>
+<li id="cite_note-26"><b><a href="#cite_ref-26">^</a></b> This translation of the third law and the commentary following it can be found in the "<a href="/wiki/Mathematical_Principles_of_Natural_Philosophy" title="Mathematical Principles of Natural Philosophy" class="mw-redirect">Principia</a>" on <a href="http://books.google.com/books?id=Tm0FAAAAQAAJ&amp;pg=PA20#v=onepage&amp;q=&amp;f=false" class="external text" rel="nofollow">page 20 of volume 1 of the 1729 translation</a>.</li>
+<li id="cite_note-27"><b><a href="#cite_ref-27">^</a></b> <span class="citation Journal">C Hellingman (1992). "Newton’s third law revisited". <i>Phys. Educ.</i> <b>27</b>: 112–115. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1088%2F0031-9120%2F27%2F2%2F011" class="external text" rel="nofollow">10.1088/0031-9120/27/2/011</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Newton%E2%80%99s+third+law+revisited&amp;rft.jtitle=Phys.+Educ.&amp;rft.aulast=C+Hellingman&amp;rft.au=C+Hellingman&amp;rft.date=1992&amp;rft.volume=27&amp;rft.pages=112%E2%80%93115&amp;rft_id=info:doi/10.1088%2F0031-9120%2F27%2F2%2F011&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-28"><b><a href="#cite_ref-28">^</a></b> Newton, <i>Principia</i>, Corollary III to the laws of motion</li>
+</ol>
+</div>
+</div>
+<h2><span class="mw-headline" id="Further_reading_.26_works_referred_to">Further reading &amp; works referred to</span></h2>
+<ul>
+<li><cite id="cro2000">Crowell, Benjamin, (2000), <a href="http://books.google.com/books?id=TT4ssKhDdLUC" class="external text" rel="nofollow"><i>Newtonian Physics</i></a>, (2000, Light and Matter), <a href="/wiki/Special:BookSources/097046701X" class="internal mw-magiclink-isbn">ISBN 0-9704670-1-X</a>, 9780970467010, especially at Section <a href="http://books.google.com/books?id=TT4ssKhDdLUC&amp;pg=PA102" class="external text" rel="nofollow"><b>4.2, Newton's First Law</b></a>, Section <a href="http://books.google.com/books?id=TT4ssKhDdLUC&amp;pg=PA106" class="external text" rel="nofollow"><b>4.3, Newton's Second Law</b></a>, and Section <a href="http://books.google.com/books?id=TT4ssKhDdLUC&amp;pg=PA125" class="external text" rel="nofollow"><b>5.1, Newton's Third Law</b></a>.</cite></li>
+<li><cite id="fey2005"><span class="citation book"><a href="/wiki/Richard_Feynman" title="Richard Feynman">Feynman, R. P.</a>; Leighton, R. B.; Sands, M. (2005). <i>The Feynman Lectures on Physics</i>. <b>Vol. 1</b> (2nd ed.). Pearson/Addison-Wesley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0805390499" title="Special:BookSources/0805390499">0805390499</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Feynman+Lectures+on+Physics&amp;rft.aulast=Feynman&amp;rft.aufirst=R.+P.&amp;rft.au=Feynman%2C%26%2332%3BR.+P.&amp;rft.au=Leighton%2C%26%2332%3BR.+B.&amp;rft.au=Sands%2C%26%2332%3BM.&amp;rft.date=2005&amp;rft.volume=Vol.+1&amp;rft.edition=2nd&amp;rft.pub=Pearson%2FAddison-Wesley&amp;rft.isbn=0805390499&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></cite></li>
+<li><cite id="fow1999"><span class="citation book">Fowles, G. R.; Cassiday, G. L. (1999). <i>Analytical Mechanics</i> (6th ed.). Saunders College Publishing. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0030223172" title="Special:BookSources/0030223172">0030223172</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Analytical+Mechanics&amp;rft.aulast=Fowles&amp;rft.aufirst=G.+R.&amp;rft.au=Fowles%2C%26%2332%3BG.+R.&amp;rft.au=Cassiday%2C%26%2332%3BG.+L.&amp;rft.date=1999&amp;rft.edition=6th&amp;rft.pub=Saunders+College+Publishing&amp;rft.isbn=0030223172&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></cite></li>
+<li><cite id="lik1973"><span class="citation book"><a href="/wiki/Peter_Likins" title="Peter Likins">Likins, Peter W.</a> (1973). <i>Elements of Engineering Mechanics</i>. McGraw-Hill Book Company. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0070378525" title="Special:BookSources/0070378525">0070378525</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Elements+of+Engineering+Mechanics&amp;rft.aulast=Likins&amp;rft.aufirst=Peter+W.&amp;rft.au=Likins%2C%26%2332%3BPeter+W.&amp;rft.date=1973&amp;rft.pub=McGraw-Hill+Book+Company&amp;rft.isbn=0070378525&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></cite></li>
+<li><cite id="mar1995"><span class="citation book">Marion, Jerry; Thornton, Stephen (1995). <i>Classical Dynamics of Particles and Systems</i>. Harcourt College Publishers. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0030973023" title="Special:BookSources/0030973023">0030973023</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Classical+Dynamics+of+Particles+and+Systems&amp;rft.aulast=Marion&amp;rft.aufirst=Jerry&amp;rft.au=Marion%2C%26%2332%3BJerry&amp;rft.au=Thornton%2C%26%2332%3BStephen&amp;rft.date=1995&amp;rft.pub=Harcourt+College+Publishers&amp;rft.isbn=0030973023&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></cite></li>
+<li><cite id="new1729v1">Newton, Isaac, "<a href="/wiki/Mathematical_Principles_of_Natural_Philosophy" title="Mathematical Principles of Natural Philosophy" class="mw-redirect">Mathematical Principles of Natural Philosophy</a>", 1729 English translation based on 3rd Latin edition (1726), <a href="http://books.google.com/books?id=Tm0FAAAAQAAJ" class="external text" rel="nofollow">volume 1, containing Book 1</a>, especially at the section <a href="http://books.google.com/books?id=Tm0FAAAAQAAJ&amp;pg=PA19" class="external text" rel="nofollow"><b>Axioms or Laws of Motion</b> starting page 19</a>.</cite></li>
+<li><cite id="new1729v2">Newton, Isaac, "<a href="/wiki/Mathematical_Principles_of_Natural_Philosophy" title="Mathematical Principles of Natural Philosophy" class="mw-redirect">Mathematical Principles of Natural Philosophy</a>", 1729 English translation based on 3rd Latin edition (1726), <a href="http://books.google.com/books?id=6EqxPav3vIsC" class="external text" rel="nofollow">volume 2, containing Books 2 &amp; 3</a>.</cite></li>
+<li><cite id="tho1867">Thomson, W (Lord Kelvin), and Tait, P G, (1867), <a href="http://books.google.com/books?id=wwO9X3RPt5kC" class="external text" rel="nofollow"><i>Treatise on natural philosophy</i></a>, volume 1, especially at <a href="http://books.google.com/books?id=wwO9X3RPt5kC&amp;pg=PA178" class="external text" rel="nofollow">Section 242, <b>Newton's laws of motion</b></a>.</cite></li>
+<li><cite id="woo2003"><span class="citation book">NMJ Woodhouse (2003). <a href="http://books.google.com/?id=ggPXQAeeRLgC&amp;printsec=frontcover&amp;dq=isbn=1852334266#PPA6,M1" class="external text" rel="nofollow"><i>Special relativity</i></a>. London/Berlin: Springer. p.&#160;6. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-85233-426-6" title="Special:BookSources/1-85233-426-6">1-85233-426-6</a><span class="printonly">. <a href="http://books.google.com/?id=ggPXQAeeRLgC&amp;printsec=frontcover&amp;dq=isbn=1852334266#PPA6,M1" class="external free" rel="nofollow">http://books.google.com/?id=ggPXQAeeRLgC&amp;printsec=frontcover&amp;dq=isbn=1852334266#PPA6,M1</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Special+relativity&amp;rft.aulast=NMJ+Woodhouse&amp;rft.au=NMJ+Woodhouse&amp;rft.date=2003&amp;rft.pages=p.%26nbsp%3B6&amp;rft.place=London%2FBerlin&amp;rft.pub=Springer&amp;rft.isbn=1-85233-426-6&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3DggPXQAeeRLgC%26printsec%3Dfrontcover%26dq%3Disbn%3D1852334266%23PPA6%2CM1&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></cite></li>
+<li><cite id="gal2003"><span class="citation Journal">Galili, I. &amp; Tseitlin, M. (2003). "Newton's first law: text, translations, interpretations, and physics education.". <i>Science and Education</i> <b>12 (1)</b>: 45–73. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1023%2FA%3A1022632600805" class="external text" rel="nofollow">10.1023/A:1022632600805</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Newton%27s+first+law%3A+text%2C+translations%2C+interpretations%2C+and+physics+education.&amp;rft.jtitle=Science+and+Education&amp;rft.aulast=Galili%2C+I.+%26+Tseitlin%2C+M.&amp;rft.au=Galili%2C+I.+%26+Tseitlin%2C+M.&amp;rft.date=2003&amp;rft.volume=12+%281%29&amp;rft.pages=45%E2%80%9373&amp;rft_id=info:doi/10.1023%2FA%3A1022632600805&amp;rfr_id=info:sid/en.wikipedia.org:Newton%27s_laws_of_motion"><span style="display: none;">&#160;</span></span></cite></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a href="http://ocw.mit.edu/OcwWeb/Physics/8-01Physics-IFall1999/VideoLectures/detail/Video-Segment-Index-for-L-6.htm" class="external text" rel="nofollow">MIT Physics video lecture</a> on Newton's three laws</li>
+<li><a href="http://www.lightandmatter.com/html_books/1np/ch04/ch04.html" class="external text" rel="nofollow">Newtonian Physics</a> - an on-line textbook</li>
+<li><a href="http://www.motionmountain.net" class="external text" rel="nofollow">Motion Mountain</a> - an on-line textbook</li>
+<li><a href="http://phy.hk/wiki/englishhtm/firstlaw.htm" class="external text" rel="nofollow">Simulation on Newton's first law of motion</a></li>
+<li>"<a href="http://demonstrations.wolfram.com/NewtonsSecondLaw/" class="external text" rel="nofollow">Newton's Second Law</a>" by Enrique Zeleny, <a href="/wiki/Wolfram_Demonstrations_Project" title="Wolfram Demonstrations Project">Wolfram Demonstrations Project</a>.</li>
+<li><a href="http://www.youtube.com/watch?v=9gFMObYCccU" class="external text" rel="nofollow">Newton's 3rd Law demonstrated in a vacuum</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 15497/1000000
+Post-expand include size: 153026/2048000 bytes
+Template argument size: 49019/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:55212-0!1!0!default!!en!4!edit=0 and timestamp 20101222042540 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Newton%27s_laws_of_motion">http://en.wikipedia.org/wiki/Newton%27s_laws_of_motion</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:Classical_mechanics" title="Category:Classical mechanics">Classical mechanics</a></span> | <span dir='ltr'><a href="/wiki/Category:Mechanics" title="Category:Mechanics">Mechanics</a></span> | <span dir='ltr'><a href="/wiki/Category:Isaac_Newton" title="Category:Isaac Newton">Isaac Newton</a></span> | <span dir='ltr'><a href="/wiki/Category:Introductory_physics" title="Category:Introductory physics">Introductory physics</a></span> | <span dir='ltr'><a href="/wiki/Category:Latin_texts" title="Category:Latin texts">Latin texts</a></span> | <span dir='ltr'><a href="/wiki/Category:History_of_physics" title="Category:History of physics">History of physics</a></span> | <span dir='ltr'><a href="/wiki/Category:Fundamental_physics_concepts" title="Category:Fundamental physics concepts">Fundamental physics concepts</a></span> | <span dir='ltr'><a href="/wiki/Category:Scientific_observation" title="Category:Scientific observation">Scientific observation</a></span> | <span dir='ltr'><a href="/wiki/Category:Experimental_physics" title="Category:Experimental physics">Experimental physics</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories: <span dir='ltr'><a href="/wiki/Category:Wikipedia_indefinitely_semi-protected_pages" title="Category:Wikipedia indefinitely semi-protected pages">Wikipedia indefinitely semi-protected pages</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Newton%27s_laws_of_motion" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/Newton%27s_laws_of_motion"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:Newton%27s_laws_of_motion"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/Newton%27s_laws_of_motion" ><span>Read</span></a></li>
+					<li id="ca-viewsource"><a href="/w/index.php?title=Newton%27s_laws_of_motion&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=Newton%27s_laws_of_motion&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Newton%27s_laws_of_motion" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Newton%27s_laws_of_motion" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=Newton%27s_laws_of_motion&amp;oldid=400360293" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Newton%27s_laws_of_motion&amp;id=400360293" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Newton%27s+laws+of+motion" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Newton%27s+laws+of+motion&amp;oldid=400360293&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Newton%27s_laws_of_motion&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-af"><a href="http://af.wikipedia.org/wiki/Newton_se_bewegingswette" title="Newton se bewegingswette">Afrikaans</a></li>
+					<li class="interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D9%82%D9%88%D8%A7%D9%86%D9%8A%D9%86_%D9%86%D9%8A%D9%88%D8%AA%D9%86_%D9%84%D9%84%D8%AD%D8%B1%D9%83%D8%A9" title="قوانين نيوتن للحركة">العربية</a></li>
+					<li class="interwiki-az"><a href="http://az.wikipedia.org/wiki/Nyuton_qanunlar%C4%B1" title="Nyuton qanunları">Azərbaycanca</a></li>
+					<li class="interwiki-bn"><a href="http://bn.wikipedia.org/wiki/%E0%A6%A8%E0%A6%BF%E0%A6%89%E0%A6%9F%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%97%E0%A6%A4%E0%A6%BF%E0%A6%B8%E0%A7%82%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A6%AE%E0%A7%82%E0%A6%B9" title="নিউটনের গতিসূত্রসমূহ">বাংলা</a></li>
+					<li class="interwiki-be"><a href="http://be.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B_%D0%9D%D1%8C%D1%8E%D1%82%D0%B0%D0%BD%D0%B0" title="Законы Ньютана">Беларуская</a></li>
+					<li class="interwiki-be-x-old"><a href="http://be-x-old.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B_%D0%9D%D1%8C%D1%8E%D1%82%D0%B0%D0%BD%D0%B0" title="Законы Ньютана">Беларуская (тарашкевіца)</a></li>
+					<li class="interwiki-bs"><a href="http://bs.wikipedia.org/wiki/Newtonovi_zakoni_kretanja" title="Newtonovi zakoni kretanja">Bosanski</a></li>
+					<li class="interwiki-bg"><a href="http://bg.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%B8_%D0%BD%D0%B0_%D0%9D%D1%8E%D1%82%D0%BE%D0%BD" title="Закони на Нютон">Български</a></li>
+					<li class="interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Lleis_de_Newton" title="Lleis de Newton">Català</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Newtonovy_pohybov%C3%A9_z%C3%A1kony" title="Newtonovy pohybové zákony">Česky</a></li>
+					<li class="interwiki-cy"><a href="http://cy.wikipedia.org/wiki/Deddfau_mudiant_Newton" title="Deddfau mudiant Newton">Cymraeg</a></li>
+					<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/Newtons_love" title="Newtons love">Dansk</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Newtonsche_Gesetze" title="Newtonsche Gesetze">Deutsch</a></li>
+					<li class="interwiki-et"><a href="http://et.wikipedia.org/wiki/Newtoni_seadused" title="Newtoni seadused">Eesti</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Leyes_de_Newton" title="Leyes de Newton">Español</a></li>
+					<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Le%C4%9Doj_de_Newton_pri_movado" title="Leĝoj de Newton pri movado">Esperanto</a></li>
+					<li class="interwiki-eu"><a href="http://eu.wikipedia.org/wiki/Newtonen_legeak" title="Newtonen legeak">Euskara</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D9%82%D9%88%D8%A7%D9%86%DB%8C%D9%86_%D8%AD%D8%B1%DA%A9%D8%AA_%D9%86%DB%8C%D9%88%D8%AA%D9%86" title="قوانین حرکت نیوتن">فارسی</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Lois_du_mouvement_de_Newton" title="Lois du mouvement de Newton">Français</a></li>
+					<li class="interwiki-gl"><a href="http://gl.wikipedia.org/wiki/Leis_de_Newton" title="Leis de Newton">Galego</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EB%89%B4%ED%84%B4%EC%9D%98_%EC%9A%B4%EB%8F%99_%EB%B2%95%EC%B9%99" title="뉴턴의 운동 법칙">한국어</a></li>
+					<li class="interwiki-hi"><a href="http://hi.wikipedia.org/wiki/%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%9F%E0%A4%A8_%E0%A4%95%E0%A5%87_%E0%A4%97%E0%A4%A4%E0%A4%BF_%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%AE" title="न्यूटन के गति नियम">हिन्दी</a></li>
+					<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/Newtonovi_zakoni_gibanja" title="Newtonovi zakoni gibanja">Hrvatski</a></li>
+					<li class="interwiki-id"><a href="http://id.wikipedia.org/wiki/Hukum_gerak_Newton" title="Hukum gerak Newton">Bahasa Indonesia</a></li>
+					<li class="interwiki-is"><a href="http://is.wikipedia.org/wiki/L%C3%B6gm%C3%A1l_Newtons" title="Lögmál Newtons">Íslenska</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Principi_della_dinamica" title="Principi della dinamica">Italiano</a></li>
+					<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%97%D7%95%D7%A7%D7%99_%D7%94%D7%AA%D7%A0%D7%95%D7%A2%D7%94_%D7%A9%D7%9C_%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F" title="חוקי התנועה של ניוטון">עברית</a></li>
+					<li class="interwiki-ka"><a href="http://ka.wikipedia.org/wiki/%E1%83%9C%E1%83%98%E1%83%A3%E1%83%A2%E1%83%9D%E1%83%9C%E1%83%98%E1%83%A1_%E1%83%99%E1%83%90%E1%83%9C%E1%83%9D%E1%83%9C%E1%83%94%E1%83%91%E1%83%98" title="ნიუტონის კანონები">ქართული</a></li>
+					<li class="interwiki-ht"><a href="http://ht.wikipedia.org/wiki/Twazy%C3%A8m_lwa_Newton" title="Twazyèm lwa Newton">Kreyòl ayisyen</a></li>
+					<li class="interwiki-la"><a href="http://la.wikipedia.org/wiki/Leges_motus_Newtoni" title="Leges motus Newtoni">Latina</a></li>
+					<li class="interwiki-lv"><a href="http://lv.wikipedia.org/wiki/%C5%85%C5%ABtona_likumi" title="Ņūtona likumi">Latviešu</a></li>
+					<li class="interwiki-lt"><a href="http://lt.wikipedia.org/wiki/Niutono_d%C4%97sniai" title="Niutono dėsniai">Lietuvių</a></li>
+					<li class="interwiki-li"><a href="http://li.wikipedia.org/wiki/W%C3%A8tte_van_Newton" title="Wètte van Newton">Limburgs</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Newton_t%C3%B6rv%C3%A9nyei" title="Newton törvényei">Magyar</a></li>
+					<li class="interwiki-mk"><a href="http://mk.wikipedia.org/wiki/%D0%8A%D1%83%D1%82%D0%BD%D0%BE%D0%B2%D0%B8_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%B8" title="Њутнови закони">Македонски</a></li>
+					<li class="interwiki-ml"><a href="http://ml.wikipedia.org/wiki/%E0%B4%A8%E0%B5%8D%E0%B4%AF%E0%B5%82%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%86_%E0%B4%9A%E0%B4%B2%E0%B4%A8_%E0%B4%A8%E0%B4%BF%E0%B4%AF%E0%B4%AE%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B5%BE" title="ന്യൂട്ടന്റെ ചലന നിയമങ്ങൾ">മലയാളം</a></li>
+					<li class="interwiki-mr"><a href="http://mr.wikipedia.org/wiki/%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%9F%E0%A4%A8%E0%A4%9A%E0%A5%87_%E0%A4%97%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A5%87_%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%AE" title="न्यूटनचे गतीचे नियम">मराठी</a></li>
+					<li class="interwiki-ms"><a href="http://ms.wikipedia.org/wiki/Hukum-hukum_gerakan_Newton" title="Hukum-hukum gerakan Newton">Bahasa Melayu</a></li>
+					<li class="interwiki-cdo"><a href="http://cdo.wikipedia.org/wiki/Ngi%C3%B9-d%C3%B3ng_%C3%B4ng-d%C3%B4ng-h%C5%8Fk_d%C3%AAng-l%C5%ADk" title="Ngiù-dóng ông-dông-hŏk dêng-lŭk">Mìng-dĕ̤ng-ngṳ̄</a></li>
+					<li class="interwiki-mn"><a href="http://mn.wikipedia.org/wiki/%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD%D1%8B_%D1%85%D1%83%D1%83%D0%BB%D0%B8%D1%83%D0%B4" title="Ньютоны хуулиуд">Монгол</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Wetten_van_Newton" title="Wetten van Newton">Nederlands</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%B3%E5%8A%9B%E5%AD%A6" title="ニュートン力学">日本語</a></li>
+					<li class="interwiki-no"><a href="http://no.wikipedia.org/wiki/Newtons_bevegelseslover" title="Newtons bevegelseslover">‪Norsk (bokmål)‬</a></li>
+					<li class="interwiki-nn"><a href="http://nn.wikipedia.org/wiki/Newtons_r%C3%B8rslelover" title="Newtons rørslelover">‪Norsk (nynorsk)‬</a></li>
+					<li class="interwiki-pnb"><a href="http://pnb.wikipedia.org/wiki/%D9%86%DB%8C%D9%88%D9%B9%D9%86_%D8%AF%DB%92_%DA%86%D9%84%D9%86_%D8%AF%DB%92_%D9%82%D9%86%D9%88%D9%86" title="نیوٹن دے چلن دے قنون">پنجابی</a></li>
+					<li class="interwiki-km"><a href="http://km.wikipedia.org/wiki/%E1%9E%85%E1%9F%92%E1%9E%94%E1%9E%B6%E1%9E%94%E1%9F%8B%E1%9E%85%E1%9E%9B%E1%9E%93%E1%9E%B6%E1%9E%9A%E1%9E%94%E1%9E%9F%E1%9F%8B%E1%9E%89%E1%9E%BC%E1%9E%8F%E1%9E%BB%E1%9E%93" title="ច្បាប់ចលនារបស់ញូតុន">ភាសាខ្មែរ</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Zasady_dynamiki_Newtona" title="Zasady dynamiki Newtona">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Leis_de_Newton" title="Leis de Newton">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Legile_lui_Newton" title="Legile lui Newton">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B_%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD%D0%B0" title="Законы Ньютона">Русский</a></li>
+					<li class="interwiki-sq"><a href="http://sq.wikipedia.org/wiki/Ligjet_e_Njutonit" title="Ligjet e Njutonit">Shqip</a></li>
+					<li class="interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Newton%27s_laws_of_motion" title="Newton's laws of motion">Simple English</a></li>
+					<li class="interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Newtonove_pohybov%C3%A9_z%C3%A1kony" title="Newtonove pohybové zákony">Slovenčina</a></li>
+					<li class="interwiki-sl"><a href="http://sl.wikipedia.org/wiki/Newtonovi_zakoni_gibanja" title="Newtonovi zakoni gibanja">Slovenščina</a></li>
+					<li class="interwiki-ckb"><a href="http://ckb.wikipedia.org/wiki/%DB%8C%D8%A7%D8%B3%D8%A7%DA%A9%D8%A7%D9%86%DB%8C_%D8%AC%D9%88%D9%88%DA%B5%DB%95%DB%8C_%D9%86%DB%8C%D9%88%D8%AA%D9%86" title="یاساکانی جووڵەی نیوتن">Soranî / کوردی</a></li>
+					<li class="interwiki-sh"><a href="http://sh.wikipedia.org/wiki/Newtonovi_zakoni_gibanja" title="Newtonovi zakoni gibanja">Srpskohrvatski / Српскохрватски</a></li>
+					<li class="interwiki-sr"><a href="http://sr.wikipedia.org/wiki/%D0%8A%D1%83%D1%82%D0%BD%D0%BE%D0%B2%D0%B8_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%B8" title="Њутнови закони">Српски / Srpski</a></li>
+					<li class="interwiki-su"><a href="http://su.wikipedia.org/wiki/Hukum_gerak_Newton" title="Hukum gerak Newton">Basa Sunda</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Mekaniikan_peruslait" title="Mekaniikan peruslait">Suomi</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Newtons_r%C3%B6relselagar" title="Newtons rörelselagar">Svenska</a></li>
+					<li class="interwiki-ta"><a href="http://ta.wikipedia.org/wiki/%E0%AE%A8%E0%AE%BF%E0%AE%AF%E0%AF%82%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%A9%E0%AE%BF%E0%AE%A9%E0%AF%8D_%E0%AE%87%E0%AE%AF%E0%AE%95%E0%AF%8D%E0%AE%95_%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%B3%E0%AF%8D" title="நியூட்டனின் இயக்க விதிகள்">தமிழ்</a></li>
+					<li class="interwiki-th"><a href="http://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%8E%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%B4%E0%B8%A7%E0%B8%95%E0%B8%B1%E0%B8%99" title="กฎการเคลื่อนที่ของนิวตัน">ไทย</a></li>
+					<li class="interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Newton%27%C4%B1n_hareket_yasalar%C4%B1" title="Newton'ın hareket yasaları">Türkçe</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%B8_%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD%D0%B0" title="Закони Ньютона">Українська</a></li>
+					<li class="interwiki-ur"><a href="http://ur.wikipedia.org/wiki/%D9%86%DB%8C%D9%88%D9%B9%D9%86_%DA%A9%DB%92_%D9%82%D9%88%D8%A7%D9%86%DB%8C%D9%86_%D8%AD%D8%B1%DA%A9%D8%AA" title="نیوٹن کے قوانین حرکت">اردو</a></li>
+					<li class="interwiki-vi"><a href="http://vi.wikipedia.org/wiki/C%C3%A1c_%C4%91%E1%BB%8Bnh_lu%E1%BA%ADt_c%E1%BB%A7a_Newton_v%E1%BB%81_chuy%E1%BB%83n_%C4%91%E1%BB%99ng" title="Các định luật của Newton về chuyển động">Tiếng Việt</a></li>
+					<li class="interwiki-yo"><a href="http://yo.wikipedia.org/wiki/%C3%80w%E1%BB%8Dn_%C3%B2fin_%C3%AC%E1%B9%A3%C3%ADp%C3%B2pad%C3%A0_Newton" title="Àwọn òfin ìṣípòpadà Newton">Yorùbá</a></li>
+					<li class="interwiki-zh-yue"><a href="http://zh-yue.wikipedia.org/wiki/%E7%89%9B%E9%A0%93%E9%81%8B%E5%8B%95%E5%AE%9A%E5%BE%8B" title="牛頓運動定律">粵語</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/%E7%89%9B%E9%A1%BF%E8%BF%90%E5%8A%A8%E5%AE%9A%E5%BE%8B" title="牛顿运动定律">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 3 December 2010 at 19:37.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv226 in 0.045 secs. -->			</body>
+</html>

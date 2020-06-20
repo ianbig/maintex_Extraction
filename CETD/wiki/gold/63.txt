@@ -1,0 +1,324 @@
+﻿
+GNU General Public License
+"GPL" redirects here. For other uses, see GPL (disambiguation).
+
+This article has been nominated to be checked for its neutrality. Discussion of this nomination can be found on the talk page. (October 2009)
+GNU General Public License
+
+GNU GPLv3 Logo
+Author	Free Software Foundation
+Version	3
+Publisher	Free Software Foundation, Inc.
+Published	June 29, 2007
+DFSG compatible	Yes[1]
+Free software	Yes[2]
+OSI approved	Yes[3]
+Copyleft	Yes[2][4]
+Linking from code with a different license	No (except for linking GNU AGPLv3 with GNU GPLv3 - see section)
+Website	www.gnu.org/licenses/gpl.html
+The GNU General Public License (GNU GPL or simply GPL) is the most widely used free software license, originally written by Richard Stallman for the GNU project.
+The GPL is the first copyleft license for general use, which means that derived works can only be distributed under the same license terms. Under this philosophy, the GPL grants the recipients of a computer program the rights of the free software definition and uses copyleft to ensure the freedoms are preserved, even when the work is changed or added to. This is in distinction to permissive free software licenses, of which the BSD licenses are the standard examples.
+The text of the GPL is not itself under the GPL. The license's copyright disallows modification of the license. Copying and distributing the license is allowed since the GPL requires recipients get "a copy of this License along with the Program".[5] According to the GPL FAQ, anyone can make a new license using a modified version of the GPL as long as he or she uses a different name for the license, doesn't mention "GNU", and removes the preamble, though the preamble can be used in a modified license if permission to use it is obtained from the Free Software Foundation (FSF).
+Contents [hide]
+1 History
+2 Versions
+2.1 Version 1
+2.2 Version 2
+2.3 Version 3
+3 Terms and conditions
+3.1 Copyleft
+4 Licensing and contractual issues
+5 Copyright holders
+6 Linking and derived works
+6.1 Libraries
+6.1.1 Point of view: any linking violates GPL
+6.1.1.1 Plug-ins
+6.1.2 Point of view: static linking violates GPL but not dynamic linking
+6.1.3 Point of view: linking is irrelevant
+6.2 Communicating and bundling with non-GPL programs
+7 The GPL in court
+8 Compatibility and multi-licensing
+9 Adoption
+10 Use for text and other media
+11 Criticism
+12 See also
+13 References
+14 External links
+[edit]History
+
+The GPL was written by Richard Stallman in 1989 for use with programs released as part of the GNU project. The original GPL was based on a unification of similar licenses used for early versions of GNU Emacs, the GNU Debugger and the GNU C Compiler.[6] These licenses contained similar provisions to the modern GPL, but were specific to each program, rendering them incompatible, despite being the same license.[7] Stallman's goal was to produce one license that could be used for any project, thus making it possible for many projects to share code.
+As of August 2007, the GPL accounted for nearly 65% of the 43,442 free software projects listed on Freshmeat,[8] and as of January 2006, about 68% of the projects listed on SourceForge.net.[9] Similarly, a 2001 survey of Red Hat Linux 7.1 found that 50% of the source code was licensed under the GPL[10] and a 1997 survey of MetaLab, then the largest free software archive, showed that the GPL accounted for about half of the software licensed therein.[11] Prominent free software programs licensed under the GPL include the Linux kernel and the GNU Compiler Collection (GCC). Some other free software programs, (MySQL is a prominent example) are dual-licensed under multiple licenses, often with one of the licenses being the GPL.
+Some observers believe that the strong copyleft provided by the GPL was crucial to the success of GNU/Linux, giving the programmers who contributed to it the confidence that their work would benefit the whole world and remain free, rather than being exploited by software companies that would not have to give anything back to the community.[12]
+The second version of the license, version 2, was released in 1991. Over the following 15 years, some members of the FOSS (Free and Open Source Software) community came to believe that some software and hardware vendors were finding loopholes in the GPL, allowing GPL-licensed software to be exploited in ways that were contrary to the intentions of the programmers. These concerns included tivoization (the inclusion of GPL-licensed software in hardware that will refuse to run modified versions of its software); the use of unpublished, modified versions of GPL software behind web interfaces; and patent deals between Microsoft and GNU/Linux and Unix distributors that may represent an attempt to use patents as a weapon against competition from GNU/Linux.
+Version 3 was developed to attempt to address these concerns. It was officially released on June 29, 2007.[13]
+[edit]Versions
+
+[edit]Version 1
+Version 1 of the GNU GPL, released in January 1989, prevented what were then the two main ways that software distributors restricted the freedoms that define free software. The first problem was that distributors may publish binary files only – executable, but not readable or modifiable by humans. To prevent this, GPLv1 said that any vendor distributing binaries must also make the human readable source code available under the same licensing terms.
+The second problem was the distributors might add additional restrictions, either by adding restrictions to the license, or by combining the software with other software which had other restrictions on its distribution. If this was done, then the union of the two sets of restrictions would apply to the combined work, thus unacceptable restrictions could be added. To prevent this, GPLv1 said that modified versions, as a whole, had to be distributed under the terms in GPLv1. Therefore, software distributed under the terms of GPLv1 could be combined with software under more permissive terms, as this would not change the terms under which the whole could be distributed, but software distributed under GPLv1 could not be combined with software distributed under a more restrictive license, as this would conflict with the requirement that the whole be distributable under the terms of GPLv1.
+[edit]Version 2
+According to Richard Stallman, the major change in GPLv2 was the "Liberty or Death" clause, as he calls it — Section 7.[14] This section says that if somebody has restrictions imposed that prevent him or her from distributing GPL-covered software in a way that respects other users' freedom (for example, if a legal ruling states that he or she can only distribute the software in binary form), he or she cannot distribute it at all. The hope is, that this will make it less tempting for companies to use patent threats to require a fee from the free software developers.
+By 1990, it was becoming apparent that a less restrictive license would be strategically useful for the C library and for software libraries that essentially did the job of existing proprietary ones;[15] when version 2 of the GPL (GPLv2) was released in June 1991, therefore, a second license — the Library General Public License — was introduced at the same time and numbered with version 2 to show that both were complementary. The version numbers diverged in 1999 when version 2.1 of the LGPL was released, which renamed it the GNU Lesser General Public License to reflect its place in the philosophy.
+[edit]Version 3
+
+
+Richard Stallman at the launch of the first draft of the GNU GPLv3. MIT, Cambridge, Massachusetts, USA
+In late 2005, the Free Software Foundation (FSF) announced work on version 3 of the GPL (GPLv3). On January 16, 2006, the first "discussion draft" of GPLv3 was published, and the public consultation began. The public consultation was originally planned for nine to fifteen months but finally stretched to eighteen months with four drafts being published. The official GPLv3 was released by FSF on June 29, 2007. GPLv3 was written by Richard Stallman, with legal counsel from Eben Moglen and Software Freedom Law Center.[16]
+According to Stallman, the most important changes are in relation to software patents, free software license compatibility, the definition of "source code", and hardware restrictions on software modification ("tivoization").[16][17] Other changes relate to internationalization, how license violations are handled, and how additional permissions can be granted by the copyright holder.
+Other notable changes include allowing authors to add certain conditions or requirements to their contributions. One of those new optional requirements, sometimes referred to as the Affero clause, is intended to fulfill a request regarding software as a service; adding this clause produces the GNU Affero General Public License version 3.
+The public consultation process was coordinated by the Free Software Foundation with assistance from Software Freedom Law Center, Free Software Foundation Europe,[18] and other free software groups. Comments were collected from the public via the gplv3.fsf.org web portal.[19] That portal runs purpose-written software called stet. These comments were passed to four committees comprising approximately 130 people, including supporters and detractors of FSF's goals. Those committees researched the comments submitted by the public and passed their summaries to Stallman for a decision on what the license would do.
+During the public consultation process, 962 comments were submitted for the first draft.[20] By the end, a total of 2,636 comments had been submitted.[21][22][23]
+The third draft was released on March 28, 2007.[24] This draft included language intended to prevent patent cross-licenses like the controversial Microsoft-Novell patent agreement and restricts the anti-tivoization clauses to a legal definition of a "User" or "consumer product". It also explicitly removed the section on "Geographical Limitations", whose probable removal had been announced at the launch of the public consultation.
+The fourth discussion draft,[25] which was the last, was released on May 31, 2007. It introduced Apache License compatibility, clarified the role of outside contractors, and made an exception to avoid the perceived problems of a Microsoft–Novell style agreement, saying in section 11 paragraph 6 that
+You may not convey a covered work if you are a party to an arrangement with a third party that is in the business of distributing software, under which you make payment to the third party based on the extent of your activity of conveying the work, and under which the third party grants, to any of the parties who would receive the covered work from you, a discriminatory patent license [...]
+This aims to make future such deals ineffective. The license is also meant to cause Microsoft to extend the patent licenses it grants to Novell customers for the use of GPLv3 software to all users of that GPLv3 software; this is possible only if Microsoft is legally a "conveyor" of the GPLv3 software.[26][27]
+Others, notably some high-profile developers of the Linux kernel, commented to the mass media and made public statements about their objections to parts of discussion drafts 1 and 2.[28]
+[edit]Terms and conditions
+
+The terms and conditions of the GPL must be made available to anybody receiving a copy of the work that has a GPL applied to it ("the licensee"). Any licensee who adheres to the terms and conditions is given permission to modify the work, as well as to copy and redistribute the work or any derivative version. The licensee is allowed to charge a fee for this service, or do this free of charge. This latter point distinguishes the GPL from software licenses that prohibit commercial redistribution. The FSF argues that free software should not place restrictions on commercial use,[29] and the GPL explicitly states that GPL works may be sold at any price.
+The GPL additionally states that a distributor may not impose "further restrictions on the rights granted by the GPL". This forbids activities such as distributing of the software under a non-disclosure agreement or contract. Distributors under the GPL also grant a license for any of their patents practiced by the software, to practice those patents in GPL software.
+The fourth section for version 2 of the license and the seventh section of version 3 require that programs distributed as pre-compiled binaries are accompanied by a copy of the source code, a written offer to distribute the source code via the same mechanism as the pre-compiled binary or the written offer to obtain the source code that you got when you received the pre-compiled binary under the GPL. The second section of version 2 and the fifth section of version 3 also require giving "all recipients a copy of this License along with the Program". Version 3 of the license allows making the source code available in additional ways in fulfillment of the seventh section. These include downloading source code from an adjacent network server or by peer-to-peer transmission, provided that is how the compiled code was available and there are "clear directions" on where to find the source code.
+[edit]Copyleft
+Main article: Copyleft
+The distribution rights granted by the GPL for modified versions of the work are not unconditional. When someone distributes a GPL'd work plus his/her own modifications, the requirements for distributing the whole work cannot be any greater than the requirements that are in the GPL.
+This requirement is known as copyleft. It earns its legal power from the use of copyright on software programs. Because a GPL work is copyrighted, a licensee has no right to redistribute it, not even in modified form (barring fair use), except under the terms of the license. One is only required to adhere to the terms of the GPL if one wishes to exercise rights normally restricted by copyright law, such as redistribution. Conversely, if one distributes copies of the work without abiding by the terms of the GPL (for instance, by keeping the source code secret), he or she can be sued by the original author under copyright law.
+Copyleft thus uses copyright law to accomplish the opposite of its usual purpose: instead of imposing restrictions, it grants rights to other people, in a way that ensures the rights cannot subsequently be taken away. It also ensures that unlimited redistribution rights are not granted, should any legal flaw be found in the copyleft statement.
+Many distributors of GPL'ed programs bundle the source code with the executables. An alternative method of satisfying the copyleft is to provide a written offer to provide the source code on a physical medium (such as a CD) upon request. In practice, many GPL'ed programs are distributed over the Internet, and the source code is made available over FTP or HTTP. For Internet distribution, this complies with the license.
+Copyleft applies only when a person seeks to redistribute the program. One is allowed to make private modified versions, without any obligation to divulge the modifications as long as the modified software is not distributed to anyone else. Note that the copyleft applies only to the software and not to its output (unless that output is itself a derivative work of the program). For example, a public web portal running a modified derivative of a GPL'ed content management system is not required to distribute its changes to the underlying software because its output is not a derivative. A counter example is the GPL'ed GNU Bison: the parsers it outputs do contain parts of itself and are therefore derivatives which would fall under the GPL, if it were not for a special exception granted by GNU Bison.[30]
+[edit]Licensing and contractual issues
+
+The GPL was designed as a license, rather than a contract.[31][32] In some Common Law jurisdictions, the legal distinction between a license and a contract is an important one: contracts are enforceable by contract law, whereas licenses are enforced under copyright law. However, this distinction is not useful in the many jurisdictions where there are no differences between contracts and licenses, such as Civil Law systems.[33]
+Those who do not agree to the GPL's terms and conditions do not have permission, under copyright law, to copy or distribute GPL licensed software or derivative works. However, if they do not redistribute the GPL'd program, they may still use the software within their organization however they like, and works (including programs) constructed by the use of the program are not required to be covered by this license.
+[edit]Copyright holders
+
+The text of the GPL is itself copyrighted, and the copyright is held by the Free Software Foundation. However, the FSF does not hold the copyright for a work released under the GPL, unless an author explicitly assigns copyrights to the FSF (which seldom happens except for programs that are part of the GNU project). Only the individual copyright holders have the authority to sue when a license violation takes place.
+The FSF permits people to create new licenses based on the GPL, as long as the derived licenses do not use the GPL preamble without permission. This is discouraged, however, since such a license is generally incompatible with the GPL.[34] (See the GPL FAQ for more information.) It also causes license proliferation.
+Other licenses created by the GNU project include the GNU Lesser General Public License and the GNU Free Documentation License.
+[edit]Linking and derived works
+
+[edit]Libraries
+Note that according to the FSF, "The GPL does not require you to release your modified version, or any part of it. You are free to make modifications and use them privately, without ever releasing them."[35] However if one releases a GPL-licensed entity to the public, there is an issue regarding linking: namely, if a proprietary program uses a GPL library, is the proprietary program in violation of the GPL?
+This key dispute is whether or not non-GPL software can legally statically link or dynamically link to GPL libraries. Different opinions exist on this issue. The GPL is clear in requiring that all derivative works of code under the GPL must themselves be under the GPL. Ambiguity arises with regards to using GPL libraries, and bundling GPL software into a larger package (perhaps mixed into a binary via static linking). This is ultimately a question not of the GPL per se, but of how copyright law defines derivative works. The following points of view exist:
+[edit]Point of view: any linking violates GPL
+The Free Software Foundation (which is "in charge" of the GPL, holds the copyright of several notable GPL-licensed software products and of the license text itself, and legally enforces the GPL) asserts that an executable which uses a dynamically-linked library is indeed a derivative work. The FSF states this does not apply to separate programs communicating with one another. Certain others agree (e.g. Jerry Epplin[36]). Though this is the stance of the Free Software Foundation, it should[37] only be taken as an indicator of when the FSF might sue one and the intent of the author of the GPL, not the intent of the authors of the GPLed work (though they may coincide) nor the proper interpretation of the law.
+One must also consider the existence of the LGPL, which was created to be nearly the same as the GPL, but additionally allows linking for the purposes of "using the library".
+Richard Stallman and the FSF specifically encourage library-writers to license under the GPL so that proprietary programs cannot use the libraries, in an effort to protect the free-software world by giving it more tools than the proprietary world.[38] This strategy is possibly the reason that the GPL prevents proprietary software from using GPL libraries.
+[edit]Plug-ins
+For details of the FSF's intent with regards to program communication and plugins, see [39] and.[40]
+[edit]Point of view: static linking violates GPL but not dynamic linking
+Some people believe that while static linking produces derivative works, it is not clear whether an executable that dynamically links to a GPL code should be considered a derivative work (see Weak Copyleft). Linux author Linus Torvalds agrees that dynamic linking can create derived works but disagrees over the circumstances.[41] Other experts agree that the question is still open: one Novell lawyer has written that dynamic linking not being derivative "makes sense" but is not "clear-cut",[42] but that evidence for good-intentioned dynamic linking can be seen by the existence of proprietary Linux kernel drivers.
+In Galoob v. Nintendo the Ninth Circuit Court of Appeals defined a derivative work as having "'form' or permanence" and noted that "the infringing work must incorporate a portion of the copyrighted work in some form", but there have been no clear court decisions to resolve this particular conflict.
+[edit]Point of view: linking is irrelevant
+According to an article in the Linux Journal, Lawrence Rosen (IP law specialist, and OSI general counsel) argues that the method of linking is mostly irrelevant to the question about whether a piece of software is a derivative work; more important is the question about whether the software was intended to interface with client software and/or libraries.[43] He states, "The primary indication of whether a new program is a derivative work is whether the source code of the original program was used [in a copy-paste sense], modified, translated or otherwise changed in any way to create the new program. If not, then I would argue that it is not a derivative work,"[43] and lists numerous other points regarding intent, bundling, and linkage mechanism. He further argues on his firm's website[44] that such "market-based" factors are more important than the linking technique.
+There is also the specific issue of whether a plugin or module (such as the NVidia or ATI graphics card kernel modules) must also be GPL, if it could reasonably be considered its own work. This point of view suggests that reasonably-separate plugins, or plugins for software designed to use plugins, could be licensed under an arbitrary license if the work is GPLv2. Of particular interest is the GPLv2 paragraph:
+You may modify your copy or copies of the Program or any portion of it, thus forming a work based on the Program, and copy and distribute such modifications or work under the terms of Section 1 above, provided that you also meet all of these conditions:
+...
+b) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.
+...
+These requirements apply to the modified work as a whole. If identifiable sections of that work are not derived from the Program, and can be reasonably considered independent and separate works in themselves, then this License, and its terms, do not apply to those sections when you distribute them as separate works. But when you distribute the same sections as part of a whole which is a work based on the Program, the distribution of the whole must be on the terms of this License, whose permissions for other licensees extend to the entire whole, and thus to each and every part regardless of who wrote it.
+It should be noted that the GPLv3 has a different clause:
+You may convey a work based on the Program, or the modifications to produce it from the Program, in the form of source code under the terms of section 4, provided that you also meet all of these conditions:
+...
+c) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.
+...
+A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an “aggregate” if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation's users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.
+As a case study, some supposedly-proprietary plugins and themes/skins for GPLv2 CMS software such as Drupal and Wordpress have come under fire, with both sides of the argument taken.[45][46]
+[edit]Communicating and bundling with non-GPL programs
+The mere act of communicating with other programs does not, by itself, require all software to be GPL; nor does distributing GPL software with non-GPL software. However, minor conditions must be followed that ensures the rights of GPL software is not restricted. The following is a quote from the gnu.org GPL FAQ, which describes to what extent software is allowed communicate with and be-bundled-with GPL programs:
+'What is the difference between an “aggregate” and other kinds of “modified versions”?
+An “aggregate” consists of a number of separate programs, distributed together on the same CD-ROM or other media. The GPL permits you to create and distribute an aggregate, even when the licenses of the other software are non-free or GPL-incompatible. The only condition is that you cannot release the aggregate under a license that prohibits users from exercising rights that each program's individual license would grant them.
+Where's the line between two separate programs, and one program with two parts? This is a legal question, which ultimately judges will decide. We believe that a proper criterion depends both on the mechanism of communication (exec, pipes, rpc, function calls within a shared address space, etc.) and the semantics of the communication (what kinds of information are interchanged).
+If the modules are included in the same executable file, they are definitely combined in one program. If modules are designed to run linked together in a shared address space, that almost surely means combining them into one program.
+By contrast, pipes, sockets and command-line arguments are communication mechanisms normally used between two separate programs. So when they are used for communication, the modules normally are separate programs. But if the semantics of the communication are intimate enough, exchanging complex internal data structures, that too could be a basis to consider the two parts as combined into a larger program.
+The FSF thus draws the line between "library" and "other program" via 1) "complexity" and "intimacy" of information exchange, and 2) mechanism (rather than semantics), but resigns that the question is not clear-cut and that in complex situations, case law will need to decide.
+[edit]The GPL in court
+
+In 2002, MySQL AB sued Progress NuSphere for copyright and trademark infringement in United States district court. NuSphere had allegedly violated MySQL's copyright by linking code for the Gemini table type into the MySQL server. After a preliminary hearing before Judge Patti Saris on February 27, 2002, the parties entered settlement talks and eventually settled. At the hearing, Judge Saris "saw no reason" that the GPL would not be enforceable.[47]
+In August 2003, the SCO Group stated that they believed the GPL to have no legal validity, and that they intended to take up lawsuits over sections of code supposedly copied from SCO Unix into the Linux kernel. This was a problematic stand for them, as they had distributed GNU/Linux and other GPL'ed code in their Caldera OpenLinux distribution, and there is little evidence that they had any legal right to do so except under the terms of the GPL. For more information, see SCO-Linux controversies and SCO v. IBM.
+In April 2004 the netfilter/iptables project was granted a preliminary injunction against Sitecom Germany by Munich District Court after Sitecom refused to desist from distributing Netfilter's GPL'ed software in violation of the terms of the GPL. On July 2004, the German court confirmed this injunction as a final ruling against Sitecom.[48] The court's justification was that:
+Defendant has infringed on the copyright of plaintiff by offering the software 'netfilter/iptables' for download and by advertising its distribution, without adhering to the license conditions of the GPL. Said actions would only be permissible if defendant had a license grant... This is independent of the questions whether the licensing conditions of the GPL have been effectively agreed upon between plaintiff and defendant or not. If the GPL were not agreed upon by the parties, defendant would notwithstanding lack the necessary rights to copy, distribute, and make the software 'netfilter/iptables' publicly available.
+Harald Welte was represented by ifrOSS co-founder Till Jaeger. This exactly mirrored the predictions given previously by the FSF's Eben Moglen. This ruling was important because it was the first time that a court had confirmed that violating terms of the GPL could effect copyright violation.
+In May 2005, Daniel Wallace filed suit against the Free Software Foundation in the Southern District of Indiana, contending that the GPL is an illegal attempt to fix prices (at zero). The suit was dismissed in March 2006, on the grounds that Wallace had failed to state a valid anti-trust claim; the court noted that "the GPL encourages, rather than discourages, free competition and the distribution of computer operating systems, the benefits of which directly pass to consumers".[49] Wallace was denied the possibility of further amending his complaint, and was ordered to pay the FSF's legal expenses.
+On September 8, 2005, the Seoul Central District Court ruled that the GPL has was not material to a case dealing with trade secrets derived from GPL-licensed work.[50] Defendants argued that since it is impossible to maintain trade secrets while being compliant with GPL and distributing the work, they aren't in breach of trade secrets. This argument was considered without ground.
+On September 6, 2006, the gpl-violations.org project prevailed in court litigation against D-Link Germany GmbH regarding D-Link's copyright infringing use of parts of the Linux Kernel in storage devices they distributed.[51] The judgment provided legal precedent that the GPL is valid, legally binding, and stands in German court.[52]
+In late 2007, the BusyBox developers and the Software Freedom Law Center embarked upon a program to gain GPL compliance from distributors of BusyBox in embedded systems, suing those who would not comply. These were claimed to be the first US uses of courts for enforcement of GPL obligations. See BusyBox GPL lawsuits.
+On December 11, 2008 the Free Software Foundation sued Cisco Systems, Inc. for copyright violations by its Linksys division, of the FSF's GPL-licensed Coreutils, Readline, Parted, Wget, GNU Compiler Collection, Binutils, and GNU Debugger software packages, which Linksys distributes in the GNU/Linux firmware of its popular WRT54G wireless routers, as well as numerous other devices including DSL and Cable modems, Network Attached Storage devices, Voice-Over-IP gateways, Virtual Private Network devices and a home theater/media player device.
+After six years of repeated complaints to Cisco by the FSF, claims by Cisco that they would correct, or were correcting, their compliance problems (not providing complete copies of all source code and their modifications), of repeated new violations being discovered and reported with more products, and lots of talk but little action by Linksys (a process described on the FSF blog as a "five-years-running game of Whack-a-Mole" [53]) the FSF finally took them to court.
+Cisco settled the case six months later agreeing "to appoint a Free Software Director for Linksys" to ensure compliance, "to notify previous recipients of Linksys products containing FSF programs of their rights under the GPL", to make source code of FSF programs freely available on its website, and to make a monetary contribution to the FSF.
+[edit]Compatibility and multi-licensing
+
+
+
+Quick Guide of license compatibility with GPL
+The GNU General Public License v3 cannot be linked with any other license except for GNU AGPLv3 (per section 13).[2]
+However, code licensed under several other licenses can be combined with a program under the GPL without conflict, as long as the combination has the GPL applied to the whole. Those licenses are:
+GNU GPLv2, but only if the latter contain the statement "version 2 or later".[54]
+GNU LGPLv2.1/LGPLv2.1 with the statement "or later"/LGPLv3, but only if they are either:[55]
+Used as a library (i.e. not copied directly).
+Able to and do get re-licensed as GNU GPLv3.
+A closed list of GPL-compatible free software licenses.[56][57][58] Many of the most common free software licenses, such as the original MIT/X license, the BSD license (in its current 3-clause form), and the LGPL, are "GPL-compatible".
+Nevertheless, some free/open source software licenses are not GPL-compatible. Many GPL proponents have strongly advocated that free/open source software developers use only GPL-compatible licenses, because doing otherwise makes it difficult to reuse software in larger wholes. Note that this issue only arises in concurrent use of licenses which impose conditions on their manner of combination. Some licenses, such as the BSD license, impose no conditions on the manner of their combination.
+Also see the list of FSF approved software licenses for examples of compatible and incompatible licenses.
+A number of businesses use multi-licensing to distribute a GPL version and sell a proprietary license to companies wishing to combine the package with proprietary code, using dynamic linking or not. Examples of such companies include MySQL AB, Nokia (Qt framework), Namesys (ReiserFS), Red Hat (Cygwin) and Riverbank Computing (PyQt).
+[edit]Adoption
+
+The Open Source License Resource Center maintained by Black Duck Software shows that GPL is the license used in about 60% of all software packages released under a free software / open source license.[59]
+[edit]Use for text and other media
+
+It is possible to use the GPL for text documents instead of computer programs, or more generally for all kinds of media, if it is clear what constitutes the source code (defined as "the preferred form of the work for making changes in it").[60] For manuals and textbooks, though, the FSF recommends to use the GNU Free Documentation License (GFDL) instead, which it created for this purpose.[61] Nevertheless, the Debian developers recommended (in a resolution adopted in 2006) to license documentation for their project under the GPL, because of the incompatibility of the GFDL with the GPL (text licensed under the GFDL cannot be incorporated into GPL software).[62] Also, the FLOSS Manuals foundation, an organization devoted to creating manuals for free software, decided to eschew the GFDL in favor of the GPL for its texts in 2007.[63]
+If the GPL is used for fonts, any documents or images made with such fonts might also have to be distributed under the terms of the GPL. This is not the case in countries like the US and Canada where copyright law is inapplicable to the appearance of fonts, though program code inside a font file may still be covered which can complicate font embedding (since the document could be considered 'linked' to the font). FSF provides an exception for cases where this isn't desired.[64][65]
+[edit]Criticism
+
+In 2001, Microsoft CEO Steve Ballmer referred to GNU/Linux as "a cancer that attaches itself in an intellectual property sense to everything it touches".[66] Microsoft has released Microsoft Windows Services for UNIX which contains GPL-licensed code.[67] In response to Microsoft's attacks on the GPL, several prominent Free Software developers and advocates released a joint statement supporting the license.[68] However, in July 2009, Microsoft themselves released a body of around 20,000 lines of GNU/Linux driver code under the GPL.[69] The Hyper-V code that is part of the submitted code used open-source components licensed under the GPL and was originally statically linked to proprietary binary parts, the latter being inadmissible in GPL-licensed software.[70]
+The GPL has been described as being "viral" by Craig Mundie, Microsoft Senior Vice President[71] because the GPL only allows conveyance of whole programs, which means that programmers are not allowed to convey programs that link to libraries having GPL-incompatible licenses. The so-called "viral" effect of this is that under such circumstances disparately licensed software cannot be combined unless one of the licenses is changed. Although theoretically either license could be changed, in the "viral" scenario the GPL cannot be practically changed (because the software may have so many contributors, some of whom will likely refuse), whereas the license of the other software can be practically changed. According to Richard Stallman the picture of a "virus" is not only offending, but also wrong: Software under the GPL never "attacks" and "infects" other software. Rather, software under the GPL is like a spider plant: If one takes a piece of it and puts it somewhere else, it grows there, too.[72][73][74]
+This is part of a philosophical difference between the GPL and permissive free software licenses such as the BSD-style licenses, which do not put such a requirement on modified versions. While proponents of the GPL believe that free software should ensure that its freedoms are preserved all the way from the developer to the user, others believe that intermediaries between the developer and the user should be free to redistribute the software as non-free software. More specifically, the GPL requires that redistribution occur subject to the GPL, whereas more "permissive" licenses allow redistribution to occur under licenses more restrictive than the original license.
+In addition, the FreeBSD project has stated that "a less publicized and unintended use of the GPL is that it is very favorable to large companies that want to undercut software companies. In other words, the GPL is well suited for use as a marketing weapon, potentially reducing overall economic benefit and contributing to monopolistic behavior" and that the GPL can "present a real problem for those wishing to commercialize and profit from software".[75]
+The GPL has no indemnification clause explicitly protecting maintainers and developers from litigation resulting from unscrupulous contribution.
+Some software developers have found the extensive scope of the GPL to be too restrictive. For example, Bjørn Reese and Daniel Stenberg felt that their choice of the GPL for their software created a "quodque pro quo" (Latin, "Everything in return for something") for the developers of other software that linked with theirs. For that reason, in 2001 they abandoned the GPLv2 in favor of less restrictive copyleft licenses.[76]
+As a specific example of license incompatibility, Sun Microsystems' ZFS cannot be included in the GPL-licensed Linux kernel, because it is licensed under the GPL-incompatible CDDL. Furthermore, ZFS is protected by patents, so distributing an independently-developed GPL-ed implementation would still require Oracle's permission.[77]
+Allison Randal argued that the GPL is unnecessarily confusing for lay readers, and could be simplified while retaining the same conditions and legal force.[78]
+[edit]See also
+
+GNU Lesser General Public License (LGPL)
+Affero General Public License (AGPL)
+BSD license
+List of software licenses
+Permissive and copyleft licenses
+Dual-licensing
+European Union Public Licence (EUPL)
+Proprietary software
+	Free software portal
+[edit]References
+
+^ "Debian -- License information". Software in the Public Interest, Inc.. http://www.debian.org/legal/licenses/. Retrieved 2009-12-10.
+^ a b c "Licenses - Free Software Foundation". Free Software Foundation. http://www.fsf.org/licensing/licenses/index_html#GPLCompatibleLicenses. Retrieved 2009-12-10.
+^ "Licenses by Name". Open Source Initiative. http://opensource.org/licenses/alphabetical. Retrieved 2009-12-10.
+^ "Copyleft: Pragmatic Idealism - Free Software Foundation". Free Software Foundation. http://www.fsf.org/licensing/essays/pragmatic.html. Retrieved 2009-12-10.
+^ "The GNU General Public License Version 3". Free Software Foundation. June 29, 2007. http://www.gnu.org/copyleft/gpl.html. Retrieved July 21, 2009.
+^ The History of the GPL
+^ Presentation by Richard Stallman, made on April 21, 2006, at the second international GPLv3 conference, held in Porto Alegre. Direct link to the section about the prehistory of the GPL.
+^ "Freshmeat's statistics page". http://freshmeat.net/stats/.
+^ "SourceForge.net: Software Map". Dwheeler.com. http://www.dwheeler.com/frozen/sourceforge-stats-20031110.html. Retrieved 2008-11-17.
+^ David A. Wheeler. "Estimating GNU/Linux's Size". http://www.dwheeler.com/sloc/redhat62-v1/redhat62sloc.html.
+^ Eric S. Raymond’s "Homesteading the Noosphere", referenced in Make Your Open Source Software GPL-Compatible. Or Else By David A. Wheeler
+^ "why the GPL rocketed GNU/Linux to success". http://www.dwheeler.com/blog/2006/09/01/#gpl-bsd. "So while the BSDs have lost energy every time a company gets involved, the GPL'ed programs gain every time a company gets involved."
+^ http://www.fsf.org/news/gplv3_launched
+^ Presentation by Richard Stallman, made on April 21, 2006, at the second international GPLv3 conference, held in Porto Alegre. Direct link to the section about the "Liberty or Death" clause.
+^ [For the reasoning see http://www.gnu.org/gnu/thegnuproject.html The GNU project]
+^ a b Presentation by Richard Stallman on February 25, 2006 in Brussels, Belgium - the first day of that year's FOSDEM conference.
+^ Interview with Richard Stallman, Free Software Magazine, January 23, 2008.
+^ "GPLv3: Drafting version 3 of the GNU General Public License". Free Software Foundation Europe. http://fsfeurope.org/projects/gplv3/.
+^ "gplv3.fsf.org comments for discussion draft 4". http://gplv3.fsf.org/comments/gplv3-draft-4.html.
+^ "gplv3.fsf.org comments for draft 1". http://gplv3.fsf.org/comments/gplv3-draft-1. "Showing comments in file 'gplv3-draft-1' [...] found 962"
+^ "gplv3.fsf.org comments for draft 2". http://gplv3.fsf.org/comments/gplv3-draft-2.html. "Showing comments in file 'gplv3-draft-1' [...] found 727"
+^ "gplv3.fsf.org comments for draft 3". http://gplv3.fsf.org/comments/gplv3-draft-3. "Showing comments in file 'gplv3-draft-3' [...] found 649"
+^ "gplv3.fsf.org comments for draft 4". http://gplv3.fsf.org/comments/gplv3-draft-4.html. "Showing comments in file 'gplv3-draft-4' [...] found 298"
+^ Guide to the third draft of GPLv3
+^ Final Discussion Draft. Retrieved June 4, 2007.
+^ GPLv3 FAQ, accessed June 4, 2007. This is from the FAQ instead of the license, for readability purposes.
+^ Fourth Discussion Draft Rationale. Retrieved June 4, 2007.
+^ Kernel developers' position on GPLv3 -- http://lwn.net/Articles/200422/. Retrieved June 4, 2007.
+^ "Selling Free Software". Free Software Foundation. http://www.gnu.org/philosophy/selling.html.
+^ "Bison 2.3". http://www.gnu.org/software/bison/manual/html_mono/bison.html. Retrieved 2008-12-11. "Conditions for Using Bison"
+^ "Essay by Stallman explaining why a license is more suitable than a contract". http://www.gnu.org/philosophy/no-ip-ethos.html.
+^ "Eben Moglen explaining why the GPL is a license and why it matters". http://fsfeurope.org/projects/gplv3/barcelona-moglen-transcript.en.html#q7-a-contract.
+^ Guadamuz-Gonzalez, Andres (2004). "Viral contracts or unenforceable documents? Contractual validity of copyleft licenses". European Intellectual Property Review 26 (8): 331–339. http://papers.ssrn.com/sol3/papers.cfm?abstract_id=569101.
+^ "GPL FAQ: Can I modify the GPL and make a modified license?". http://www.fsf.org/licensing/licenses/gpl-faq.html#ModifyGPL.
+^ "GPL FAQ: Does the GPL require that source code of modified versions be posted to the public?". http://www.gnu.org/licenses/gpl-faq.html#GPLRequireSourcePostedPublic.
+^ Using GPL software in embedded applications, LinuxDevices.com (March 4, 2001).
+^ http://www.linuxjournal.com/article/6366
+^ http://www.gnu.org/philosophy/why-not-lgpl.html
+^ http://www.gnu.org/licenses/gpl-faq.html#GPLPluginsInNF
+^ http://www.gnu.org/licenses/gpl-faq.html#NFUseGPLPlugins
+^ Linus Torvalds, GPL only modules, linux-kernel mailing list (December 17, 2006).
+^ Matt Asay, The GPL: Understanding the License that Governs Linux, Novell Cool Solutions Feature (Jan 16. 2004).
+^ a b Lawrence Rosen, [1], Linux Journal (January 1, 2003).
+^ Lawrence Rosen, Derivative Works, rosenlaw.com (May 25, 2004)
+^ http://www.webmaster-source.com/2009/01/29/why-theyre-wrong-wordpress-plugins-shouldnt-have-to-be-gpl/
+^ http://drupal.org/licensing/faq#q7
+^ See Progress Software Corporation v. MySQL AB, 195 F. Supp. 2d 328 (D. Mass. 2002), on defendant's motion for preliminary injunction.
+^ Harald Welte vs. Sitecom, final order, translated from German by Jens Maurer
+^ Dismissal of Wallace v. FSF. From this article on Groklaw.
+^ Seoul Central District Court ruling (?) (in Korean)
+^ http://gpl-violations.org/news/20060922-dlink-judgement_frankfurt.html
+^ D-Link Judgement
+^ http://www.fsf.org/blogs/licensing/2008-12-cisco-complaint
+^ "Frequently Asked Questions about the GNU Licenses - Is GPLv3 compatible with GPLv2?". The official site. http://www.gnu.org/licenses/gpl-faq.html#v2v3Compatibility. Retrieved 2010-04-13.
+^ "Frequently Asked Questions about the GNU Licenses - How are the various GNU licenses compatible with each other?". The official site. http://www.gnu.org/licenses/gpl-faq.html#AllCompatibility. Retrieved 2010-04-13.
+^ "Frequently Asked Questions about the GNU Licenses - What does it mean to say that two licenses are "compatible"?". The official site. http://www.gnu.org/licenses/gpl-faq.html#WhatIsCompatible. Retrieved 2010-04-14.
+^ "Frequently Asked Questions about the GNU Licenses - What does it mean to say a license is "compatible with the GPL?"". The official site. http://www.gnu.org/licenses/gpl-faq.html#WhatDoesCompatMean. Retrieved 2010-04-14.
+^ "Various Licenses and Comments about Them - GPL-Compatible Free Software Licenses". The official site. http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses. Retrieved 2010-04-14.
+^ "Open Source License Resource Center | Black Duck Software". Blackducksoftware.com. http://www.blackducksoftware.com/oss. Retrieved 2008-11-17.
+^ Free Software Foundation: Frequently Asked Questions about the GNU Licenses: Can I use the GPL for something other than software?. Retrieved June 20, 2009.
+^ GNU project: Frequently Asked Questions about the GNU Licenses: Why don't you use the GPL for manuals? . Retrieved June 20, 2009.
+^ Debian Project: Resolution: Why the GNU Free Documentation License is not suitable for Debian. Voted February-March 2006. . Retrieved June 20, 2009.
+^ FLOSS Manuals foundation: License Change June 6, 2007. . Retrieved June 20, 2009.
+^ "Font Licensing". http://www.fsf.org/blogs/licensing/20050425novalis.
+^ "How does the GPL apply to fonts?". http://www.gnu.org/licenses/gpl-faq.html#FontException.
+^ Newbart, Dave (2001-06-01). "Microsoft CEO takes launch break with the Sun-Times". Chicago Sun-Times. Archived from the original on 2001-06-15. http://web.archive.org/web/20010615205548/http://suntimes.com/output/tech/cst-fin-micro01.html.(Internet archive link)
+^ text of GPL v1 with reference to source code download site at microsoft.com
+^ Free Software Leaders Stand Together
+^ Clarke, Gavin (2009-07-20). "Microsoft embraces Linux cancer to sell Windows servers". The Register. http://www.theregister.co.uk/2009/07/20/microsoft_windows_drivers_linux/.
+^ Clarke, Gavin (2009-07-23). "Microsoft opened Linux-driver code after 'violating' GPL". The Register. http://www.theregister.co.uk/2009/07/23/microsoft_hyperv_gpl_violation/.
+^ "Speech Transcript - Craig Mundie, The New York University Stern School of Business", Prepared Text of Remarks by Craig Mundie, Microsoft Senior Vice President, The Commercial Software Model The New York University Stern School of Business May 3, 2001
+^ Poynder, Richard (2006-03-21). "The Basement Interviews: Freeing the Code". http://www.archive.org/stream/The_Basement_Interviews/Richard_Stallman_Interview_djvu.txt. Retrieved 2010-02-05.
+^ Chopra, Samir; Dexter, Scott (2007-08-14). Decoding liberation: the promise of free and open source software. Routledge. p. 56. ISBN 0415978939. http://books.google.com/?id=c7ppFih2mSwC&lpg=PT74&dq=stallman%202005%20spider%20plant&pg=PT74#v=onepage&q=stallman%202005%20spider%20plant.
+^ Williams, Sam (2002-03). Free as in Freedom: Richard Stallman's Crusade for Free Software. O'Reilly Media. http://oreilly.com/openbook/freedom/ch02.html.
+^ GPL Advantages and Disadvantages, FreeBSD: doc/en_US.ISO8859-1/articles/bsdl-gpl/article.sgml,v 1.5 2006/10/16 12:35:23 keramida Exp
+^ Bjørn Reese and Daniel Stenberg, Working Without Copyleft (December 19, 2001)
+^ Linux: ZFS, Licenses and Patents | KernelTrap
+^ Allison Randal. "GPLv3, Clarity and Simplicity". http://radar.oreilly.com/archives/2007/05/gplv3_clarity_a.html.
+[edit]External links
+
+	Wikibooks has a book on the topic of
+FOSS Licensing
+GNU General Public License v1.0 - This version is deprecated by the FSF.
+GNU General Public License v2.0 - This version is deprecated by the FSF but is still used by many software projects, including Linux and GNU packages
+GNU General Public License v3.0
+A Practical Guide to GPL Compliance (Covers GPLv2 and v3) - from the Software Freedom Law Center
+A paper on enforcing the GPL
+Free Software Leaders Stand Together, a joint statement in support of the GPL
+Frequently Asked Questions about the GPL
+GPL, BSD, and NetBSD - why the GPL rocketed Linux to success by David A. Wheeler
+GNU General Public License and Commentaries - Edited by Robert Chassell.
+GNU Lesser General Public License v2.1
+History of the GPL
+List of presentation transcripts about the GPL and free software licenses
+Make Your Open Source Software GPL-Compatible. Or Else. (David A. Wheeler, April 7, 2004) — why a GPL-compatible license is important to the health of a project
+The Emacs General Public License, a February 1988 version, a direct predecessor of the GNU GPL
+The Labyrinth of Software Freedom, (BSD vs GPL and social aspects of free licensing debate), by Dr. Nikolai Bezroukov
+v • d • e
+GNU Project
+History	
+GNU Manifesto · Free Software Foundation (Europe · India · Latin America) · History of free software
+
+Licenses	
+GNU General Public License · GNU Lesser General Public License · Affero General Public License · GNU Free Documentation License · GPL linking exception
+Software	
+GNU (variants) · Hurd · GNOME · Bash · GCC · GNU Emacs · glibc · Coreutils · Build system · GNUnet · Gnuzilla (IceCat) · Gnash · more...
+Public speakers	
+Alexandre Oliva · Benjamin Mako Hill · Bradley M. Kuhn · Eben Moglen · Federico Heinz · Georg C. F. Greve · Loïc Dachary · Ricardo Galli · Richard Stallman · Robert J. Chassell · John Sullivan
+Other topics	
+GNU/Linux naming controversy · Revolution OS · BadVista · Defective by Design
+v • d • e
+Free and open source software
+General	
+Copyleft · Events and Awards · Free software · Free Software Definition · Gratis versus Libre · List of free and open source software packages · Open-source software
+Operating system families	
+AROS · BSD · Darwin · eCos · FreeDOS · GNU · Haiku · Inferno · Linux · Mach · MINIX · OpenSolaris · Plan 9 · ReactOS · Symbian
+Development	
+Eclipse · Free Pascal · GCC · Gambas · Java · LLVM · Lua · NetBeans · Open64 · Perl · PHP · Python · ROSE · Ruby · Tcl
+History	
+GNU · Haiku · Linux · Mozilla (Application Suite · Firefox · Thunderbird)
+Organizations	
+Apache Software Foundation · Blender Foundation · Eclipse Foundation · freedesktop.org · Free Software Foundation (Europe · India · Latin America) · FSMI · GNOME Foundation · GNU Project · Google Code · KDE e.V. · Linux Foundation · Mozilla Foundation · Open Source Geospatial Foundation · Open Source Initiative · SourceForge · Symbian Foundation · Xiph.Org Foundation · XMPP Standards Foundation · X.Org Foundation
+Licences	
+Apache · Artistic · BSD · GNU GPL · GNU LGPL · ISC · MIT · MPL · Ms-PL/RL · zlib · FSF approved licenses
+License standards	
+Open Source Definition · The Free Software Definition · Debian Free Software Guidelines
+Challenges	
+Binary blob · Digital rights management · Graphics hardware compatibility · License proliferation · Mozilla software rebranding · Proprietary software · SCO-Linux controversies · Security · Software patents · Hardware restrictions · Trusted Computing · Viral license
+Other topics	
+Alternative terms · Community · Linux distribution · Forking · Movement · Microsoft Open Specification Promise · Revolution OS · Comparison with closed source
+ Book:FOSS  ·   Category:Free software  ·   Portal:Free software
+Categories: Computer law | Free content licenses | Open content licenses | Free software licenses | GNU Project | Open source licenses | Copyleft licensing

@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.13.2" />
+		<meta name="keywords" content="Dispersion relation,Airy equation,Dispersive estimates,Finite speed of propagation,Free Schrodinger equation,Free wave equation,Infinite speed of propagation,Klein-Gordon equation,Local smoothing estimates,Normal form,Null structure" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/wiki/opensearch_desc.php" title="DispersiveWiki (en)" />
+		<link title="Creative Commons" type="application/rdf+xml" href="/wiki/index.php?title=Dispersion_relation&amp;action=creativecommons" rel="meta" />
+		<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+		<link rel="alternate" type="application/rss+xml" title="DispersiveWiki RSS Feed" href="http://tosio.math.utoronto.ca/wiki/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="DispersiveWiki Atom Feed" href="http://tosio.math.utoronto.ca/wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Dispersion relation - DispersiveWiki</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/wiki/skins/common/shared.css?164";
+			@import "/wiki/skins/monobook/main.css?164";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css?164" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css?164";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css?164";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css?164";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/wiki/skins/monobook/IE70Fixes.css?164";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js?164"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type= "text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/wiki/skins";
+var wgArticlePath = "/wiki/index.php/$1";
+var wgScriptPath = "/wiki";
+var wgScript = "/wiki/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://tosio.math.utoronto.ca";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Dispersion_relation";
+var wgTitle = "Dispersion relation";
+var wgAction = "view";
+var wgArticleId = "1496";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "7034";
+var wgVersion = "1.13.2";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="/wiki/skins/common/wikibits.js?164"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/wiki/skins/common/ajax.js?164"></script>
+		<script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css&maxage=18000&useskin=monobook";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ns-0 ltr page-Dispersion_relation">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Dispersion relation</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From DispersiveWiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>The <b>dispersion relation</b> <img class="tex" alt="\, \omega = \omega(k)\!" src="/wiki/images/math/7/f/9/7f937b63c588e98cacb6c8f60eb66c65.png" /> of a constant coefficient linear evolution equation determines how time oscillations <img class="tex" alt="e^{i\omega t}_{}" src="/wiki/images/math/1/0/7/10702d3119d96c8967b4b03bb92fd467.png" /> are linked to spatial oscillations <img class="tex" alt="e^{ik\cdot x}_{}" src="/wiki/images/math/3/c/f/3cff90c203f42ce617853a86eb732eb6.png" /> of wave number <span class="texhtml"><i>k</i></span>.  In other words, the dispersion relation is the function for which the plane waves <img class="tex" alt="e^{ik \cdot x} e^{i \omega(k) t}" src="/wiki/images/math/d/1/5/d15fc415479baa3690917dcb29a2014d.png" /> solve the equation.  Note that for equations which are second-order in time rather than first-order, the dispersion relation is typically double-valued rather than single-valued.
+</p><p>The dispersion relation for the model constant-coefficient linear dispersive and wave equations are as follows.
+</p>
+<ul><li> For the phase rotation equation <img class="tex" alt="\,iu_t + \omega_0 u = 0\!" src="/wiki/images/math/f/c/d/fcd75d4a557f02b94da52c55c54d1cf5.png" />, the dispersion relation is constant: <img class="tex" alt="\,\omega(k) = \omega_0\!" src="/wiki/images/math/6/f/f/6fff8bd7363f2e5a20438aec82b27d5e.png" />.
+</li><li> For the transport equation <img class="tex" alt="\,u_t + v \cdot u_x = 0\!" src="/wiki/images/math/b/8/1/b81723f4098719b0d18add14658bf3f7.png" />, the dispersion relation is linear: <img class="tex" alt="\,\omega(k) = -v \cdot k\!" src="/wiki/images/math/4/a/f/4af7c8ef0420f0c5f02472f2c5f6f41b.png" />.
+</li><li> For the <a href="/wiki/index.php/Free_Schrodinger_equation" title="Free Schrodinger equation">free Schrodinger equation</a>, the dispersion relation is quadratic: <img class="tex" alt="\, \omega(k) = -|k|^2\!" src="/wiki/images/math/e/9/8/e98df32d2db34a7d4df3e458987a8126.png" />.  
+</li></ul>
+<p>(It is common to adjust the constants in this equation to change the dispersion relation to <img class="tex" alt="\,\omega(k) = +|k|^2\!" src="/wiki/images/math/3/f/1/3f15a208a0e116bdb27c245177673f48.png" /> or <img class="tex" alt="\,\omega(k) = -|k|^2/2\!" src="/wiki/images/math/7/3/8/7381b336ddbd5dc4932819fb966ae114.png" />.)
+</p>
+<ul><li> For the <a href="/wiki/index.php/Airy_equation" title="Airy equation">Airy equation</a>, the dispersion relation is cubic: <img class="tex" alt="\, \omega(k) = k^3\!" src="/wiki/images/math/5/f/5/5f5c0679ac0060083211730cb9cf7f57.png" />.
+</li><li> For the <a href="/wiki/index.php/Free_wave_equation" title="Free wave equation">free wave equation</a>, the dispersion relation is <img class="tex" alt="\,\omega(k) = \pm |k|\!" src="/wiki/images/math/9/c/4/9c4d960fe6f9bb4111f67ddfac47290d.png" />.  
+</li><li> For the <a href="/wiki/index.php/Klein-Gordon_equation" title="Klein-Gordon equation">Klein-Gordon equation</a>, the dispersion relation is <img class="tex" alt="\,\omega(k) = \pm \langle k \rangle\!" src="/wiki/images/math/e/4/9/e499ed29df020f61df3fd15ebb94a23d.png" />.
+</li><li> Non-time-reversible equations such as the heat equation do not have a dispersion relation, unless one permits <img class="tex" alt="\,\omega(k)\!" src="/wiki/images/math/7/b/e/7be9898da57c15dc2d5dfe7271b56afe.png" /> to be complex-valued.
+</li></ul>
+<p>The principle of stationary phase implies that waves of spatial frequency <span class="texhtml"><i>k</i></span> will propagate with group velocity <img class="tex" alt="\,- \nabla_k \omega(k)\!" src="/wiki/images/math/6/d/b/6dbf6efccef9ca6fdaea8696a819f835.png" />.  This should be compared with the phase velocity <img class="tex" alt="\, - k \omega(k) / |k|^2\!" src="/wiki/images/math/3/1/3/313b390f42c75ef7b972a765595376d9.png" />.  The group velocity is the more important of the two velocities, as it controls the motion of frequency envelopes and thus of energy and mass, whereas the phase velocity merely controls the apparent motion of crests and troughs, which are of little physical signifiance.
+</p><p>For semilinear equations, we define the dispersion relation by using the dispersion relation of the linear component of the equation.  The relationship between spatial oscillation, time oscillation, and velocity should now be considered only as being heuristic (which in general only tends to be accurate in the semi-classical (high-frequency) limit).  Note however that the tool of <a href="/wiki/index.php/X%5Es%2Cb_spaces" title="X^s,b spaces"><span class="texhtml"><i>X</i><sup><i>s</i>,<i>b</i></sup></span> spaces</a> can be used to capture this relationship more rigorously.
+</p><p>For variable coefficient or quasilinear equations, the dispersion relation can now depend on the position variable <span class="texhtml"><i>x</i></span> and time variable <span class="texhtml"><i>t</i></span>.  The relationship between position, frequency, and velocity then becomes one of Hamilton's equations of motion (after identifying frequency with momentum).
+</p><p>For systems (such as those arising from elasticity or electromagnetism), different components of the system may have a different dispersion relation; alternatively, one can keep the dispersion relation unified by viewing it as a tensor rather than a scalar quantity.
+</p><p>Nonlinear effects can generate new spatial and temporal frequencies out of existing oscillations in the system.  In some cases these new frequencies will also obey the dispersion relation, in which case we say that the nonlinear interaction is <a href="/wiki/index.php/Resonant" title="Resonant">resonant</a>.  Generally speaking, we expect the resonant terms in the nonlinearity to be dominant, and one can sometimes use <a href="/wiki/index.php/Normal_form" title="Normal form">normal form</a> methods to eliminate the non-resonant portion of the nonlinearity.  However, many equations and systems have a <a href="/wiki/index.php/Null_structure" title="Null structure">null structure</a> which eliminates or significantly weakens such resonant interactions.  This is often decisive in the low-regularity theory of such equations.
+</p>
+<a name="Dispersive_equations"></a><h2> <span class="mw-headline"> Dispersive equations </span></h2>
+<p>An equation is <b>dispersive</b> if different frequencies propagate at different group velocities.  Thus, for instance, the phase rotation and transport equations are not dispersive, the Airy, Schrodinger, and Klein-Gordon equations are dispersive, and the wave equation is partly dispersive (the group velocity depends on the direction of frequency but not on the magnitude).
+</p><p>If the group velocity is bounded we say that we have <a href="/wiki/index.php/Finite_speed_of_propagation" title="Finite speed of propagation">finite speed of propagation</a>, otherwise we have <a href="/wiki/index.php/Infinite_speed_of_propagation" title="Infinite speed of propagation">infinite speed of propagation</a>.  Thus for instance, the phase rotation, transport, Klein-Gordon, and wave equations have finite speed of propagation, while the Schrodinger and Airy equation has infinite speed of propagation.
+</p><p>Intuitively, a dispersive equation should spread out the physical support of a solution over time.  One way to capture this is via <a href="/wiki/index.php/Dispersive_estimates" class="mw-redirect" title="Dispersive estimates">dispersive estimates</a>, which in turn lead to <a href="/wiki/index.php/Strichartz_estimates" title="Strichartz estimates">Strichartz estimates</a>; when there is infinite speed of propagation, dispersion can also be captured inside <a href="/wiki/index.php/Local_smoothing_estimates" class="mw-redirect" title="Local smoothing estimates">local smoothing estimates</a>.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 68/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wiki-dw_:pcache:idhash:1496-0!1!0!!en!2!edit=0 and timestamp 20101230080709 -->
+<div class="printfooter">
+Retrieved from "<a href="http://tosio.math.utoronto.ca/wiki/index.php/Dispersion_relation">http://tosio.math.utoronto.ca/wiki/index.php/Dispersion_relation</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>:&#32;<span dir='ltr'><a href="/wiki/index.php/Category:Concept" title="Category:Concept">Concept</a></span></div></div>			<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/wiki/index.php/Dispersion_relation" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/wiki/index.php?title=Talk:Dispersion_relation&amp;action=edit" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/wiki/index.php?title=Dispersion_relation&amp;action=edit" title="This page is protected.&#10;You can view its source. [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/wiki/index.php?title=Dispersion_relation&amp;action=history" title="Past versions of this page. [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/wiki/index.php?title=Special:UserLogin&amp;returnto=Dispersion_relation" title="You are encouraged to log in, it is not mandatory however. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/wiki/local_math/images/wave.jpg);" href="/wiki/index.php/Main_Page" title="Visit the Main Page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-orientation'>
+		<h5>orientation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage"><a href="/wiki/index.php/Main_Page" title="Visit the Main Page [z]" accesskey="z">Main Page</a></li>
+				<li id="n-portal"><a href="/wiki/index.php/DispersiveWiki:Community_Portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-Current-projects"><a href="/wiki/index.php/DispersiveWiki:Current_events">Current projects</a></li>
+				<li id="n-recentchanges"><a href="/wiki/index.php/Special:RecentChanges" title="The list of recent changes in the wiki. [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/wiki/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="/wiki/index.php/Help:Contents" title="The place to find out.">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-categories'>
+		<h5>Categories</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-categories"><a href="/wiki/index.php/Special:Categories">Categories</a></li>
+				<li id="n-Concepts"><a href="/wiki/index.php/Category:Concept">Concepts</a></li>
+				<li id="n-Equations"><a href="/wiki/index.php/Category:Equations">Equations</a></li>
+				<li id="n-Schrodinger"><a href="/wiki/index.php/Category:Schrodinger">Schrodinger</a></li>
+				<li id="n-Wave"><a href="/wiki/index.php/Category:Wave">Wave</a></li>
+				<li id="n-Airy"><a href="/wiki/index.php/Category:Airy">Airy</a></li>
+				<li id="n-Bibliography"><a href="/wiki/index.php/Category:Bibliography">Bibliography</a></li>
+				<li id="n-Conferences"><a href="/wiki/index.php/Conferences">Conferences</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-development'>
+		<h5>development</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Stubs"><a href="/wiki/index.php/Category:Stubs">Stubs</a></li>
+				<li id="n-Templates"><a href="/wiki/index.php/Category:Template">Templates</a></li>
+				<li id="n-Editing-FAQ"><a href="/wiki/index.php/Help:Editing_FAQ">Editing FAQ</a></li>
+				<li id="n-Things-to-do"><a href="/wiki/index.php/Current_events">Things to do</a></li>
+				<li id="n-Requested-pages"><a href="/wiki/index.php/Special:WantedPages">Requested pages</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/wiki/index.php/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Search DispersiveWiki [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/wiki/index.php/Special:WhatLinksHere/Dispersion_relation" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/wiki/index.php/Special:RecentChangesLinked/Dispersion_relation" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="/wiki/index.php/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="/wiki/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/wiki/index.php?title=Dispersion_relation&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/wiki/index.php?title=Dispersion_relation&amp;oldid=7034" title="Permanent link to this version of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="/wiki/skins/common/images/gnu-fdl.png" alt='GNU Free Documentation License 1.2' /></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> This page was last modified on 24 August 2009, at 14:14.</li>
+				<li id="viewcount">This page has been accessed 19,474 times.</li>
+				<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external " title="http://www.gnu.org/copyleft/fdl.html" rel="nofollow">GNU Free Documentation License 1.2</a>.</li>
+				<li id="privacy"><a href="/wiki/index.php/DispersiveWiki:Privacy_policy" title="DispersiveWiki:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="/wiki/index.php/DispersiveWiki:About" title="DispersiveWiki:About">About DispersiveWiki</a></li>
+				<li id="disclaimer"><a href="/wiki/index.php/DispersiveWiki:General_disclaimer" title="DispersiveWiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.485 secs. --></body></html>

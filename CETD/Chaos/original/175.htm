@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var a=window;function c(b){this.t={};this.tick=function(d,i,e){e=e?e:(new Date).getTime();this.t[d]=[e,i]};this.tick("start",null,b)}var f=new c;a.jstiming={Timer:c,load:f};try{var g=null;if(a.chrome&&a.chrome.csi)g=Math.floor(a.chrome.csi().pageT);if(g==null)if(a.gtbExternal)g=a.gtbExternal.pageT();if(g==null)if(a.external)g=a.external.pageT;if(g)a.jstiming.pt=g}catch(h){};a.tickAboveFold=function(b){b=b;var d=0;if(b.offsetParent){do d+=b.offsetTop;while(b=b.offsetParent)}b=d;b<=750&&a.jstiming.load.tick("aft")};var j=false;function k(){if(!j){j=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",k,false):a.attachEvent("onscroll",k);
+ })();</script>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='blogger' name='generator'/>
+<link href='http://www.blogger.com/favicon.ico' rel='icon' type='image/vnd.microsoft.icon'/>
+<link href='http://chrome.blogspot.com/2010/12/update-on-chrome-web-store-and-chrome.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Google Chrome Blog - Atom" href="http://chrome.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Google Chrome Blog - RSS" href="http://chrome.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Google Chrome Blog - Atom" href="http://www.blogger.com/feeds/2250394496987063687/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=2250394496987063687" />
+<link rel="alternate" type="application/atom+xml" title="Google Chrome Blog - Atom" href="http://chrome.blogspot.com/feeds/7943010397918625889/comments/default" />
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } })(); </script> <![endif]-->
+<title>Google Chrome Blog: An update on Chrome, the Web Store and Chrome OS</title>
+<link href='http://www.google.com/uds/css/gsearch.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/uds/css/gsearch_darkgrey.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/css/gooey.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/googleblogs/css/template_styles.css' rel='stylesheet' type='text/css'/>
+<link type='text/css' rel='stylesheet' href='http://www.blogger.com/static/v1/widgets/1743847221-widget_css_bundle.css' />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=2250394496987063687&zx=d45d2613-3def-469d-a6d4-9726b0d0d31c"/>
+<style type="text/css">#navbar-iframe { display:block }
+</style>
+
+<style type='text/css'>
+#chromeheader { padding:40px 0px 40px 0px; background-position:top right; background-repeat: no-repeat;}
+ </style>
+<style id='page-skin-1' type='text/css'><!--
+/*
+--></style>
+<script src='http://www.google.com/uds/api?file=uds.js&v=1.0&key=ABQIAAAA_YJR13Pfd1DLDQs4kgKbQxTxAb0xtwQQCqJhhTH0tdrRSrWJ4RR2PabXite0o1TcEPO2djBsg9GdFg' type='text/javascript'></script>
+<script language='Javascript' type='text/javascript'>
+var blogURL='http://chrome.blogspot.com/';
+ //<![CDATA[
+     var coreSearch;
+
+
+    function SolutionLoad() {
+     var controlRoot = document.getElementById("searchControl");
+
+    // create the search control
+    coreSearch = new GSearchControl();
+    coreSearch.setLinkTarget(GSearch.LINK_TARGET_SELF);
+    coreSearch.setResultSetSize(GSearch.LARGE_RESULTSET);
+
+    // prep for decoupled search form
+    var searchFormElement = document.getElementById("searchform");
+    var drawOptions = new GdrawOptions();
+    drawOptions.setSearchFormRoot(searchFormElement);
+    drawOptions.setDrawMode(GSearchControl.DRAW_MODE_TABBED);
+ 
+    // populate - web, this blog, all blogs
+    searcher = new GblogSearch();
+    searcher.setSiteRestriction(blogURL);
+    searcher.setUserDefinedLabel('This Blog');
+    coreSearch.addSearcher(searcher);
+ 
+    var searcher = new GwebSearch();
+    searcher.setUserDefinedLabel('Web');
+    coreSearch.addSearcher(searcher);
+
+    searcher = new GblogSearch();
+    searcher.setUserDefinedLabel('All Blogs');
+    coreSearch.addSearcher(searcher);
+
+
+    coreSearch.draw(controlRoot, drawOptions);
+    var submitBtn = (document.getElementById('searchform').getElementsByTagName('input'))[1];
+    submitBtn.onclick = clearPosts;
+    }
+
+
+function clearPosts() {
+ var main = document.getElementById('main-wrapper');
+ var posts = document.getElementById('post-wrapper');
+ posts.style.display='none';
+}
+
+  function registerLoadHandler(handler) {
+      //var node = window;
+      alert(document.getElementById('searchform'));
+      var node = (window.document.getElementById('searchform').getElementsByTagName("input"))[2];
+
+      if (node.addEventListener) {
+        node.addEventListener("onClick", handler, false);
+      } else if (node.attachEvent) {
+        node.attachEvent("onClick", handler);
+      } else {
+        node['onClick'] = handler;
+      }
+      return true;
+    }
+
+    //]]>
+</script>
+<script type='text/javascript'>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1870203-70']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=2250394496987063687&amp;blogName=Google+Chrome+Blog&amp;publishMode=PUBLISH_MODE_BLOGSPOT&amp;navbarType=BLUE&amp;layoutType=LAYOUTS&amp;searchRoot=http%3A%2F%2Fchrome.blogspot.com%2Fsearch&amp;blogLocale=en&amp;homepageUrl=http%3A%2F%2Fchrome.blogspot.com%2F&amp;targetPostID=7943010397918625889" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe>
+<div></div></div></div>
+<div class='template_white' id='template_fixed'>
+<div id='main-wrapper'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div id='chromeheader'><a href='http://chrome.blogspot.com/'>
+<img src='http://www.google.com/googleblogs/images/headers/chrome_header_full_white.jpg'>
+</img></a>
+</div>
+<br style='clear:both;'/>
+<div id='content-wrapper'>
+<div id='sidebar'>
+<div class='sidebar section' id='sidebar'><div class='widget LinkList' id='LinkList1'>
+<h2>All Things Google Chrome!</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://www.youtube.com/googlechrome'>Google Chrome YouTube Channel</a></li>
+<li><a href='http://www.google.com/chrome/index.html?brand=CHNQ&utm_campaign=en&utm_source=en-et-chromeblog&utm_medium=et'>Download Google Chrome</a></li>
+<li><a href='http://blog.chromium.org/'>Chromium Blog</a></li>
+<li><a href='http://www.chromium.org/'>Chromium Homepage</a></li>
+<li><a href='http://www.facebook.com/googlechrome'>Chrome on Facebook</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2250394496987063687&widgetType=LinkList&widgetId=LinkList1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target='configLinkList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML128'>
+<h2 class='small'>Search our Blog</h2>
+<div class='widget-content'>
+<div id='searchform'></div>
+</div>
+</div><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+<a href="http://chrome.blogspot.com/atom.xml"><img alt="Site Feed" src="http://www.google.com/images/feed-icon.gif"/></a> <a href="http://chrome.blogspot.com/atom.xml">Site Feed</a><br/>
+<a href="http://fusion.google.com/add?feedurl=http%3A//chrome.blogspot.com/atom.xml"><img border="0" alt="Add to Google" style="padding-top:5px;" width="104" src="http://buttons.googlesyndication.com/fusion/add.gif" height="17"/></a>
+<p><a href="http://feeds2.feedburner.com/blogspot/Egta"><img width="88" style="border:0" alt="" src="http://feeds2.feedburner.com/~fc/blogspot/Egta?bg=99CCFF&amp;fg=444444&amp;anim=1" height="26"/></a></p>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2250394496987063687&widgetType=HTML&widgetId=HTML1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive101'>
+<h2 class='small'>Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive101_ArchiveList'>
+<select id='BlogArchive101_ArchiveMenu'>
+<option value='http://chrome.blogspot.com/search?updated-min=2010-01-01T00%3A00%3A00-08%3A00&updated-max=2011-01-01T00%3A00%3A00-08%3A00&max-results=46'>2010 (46)</option>
+<option value='http://chrome.blogspot.com/search?updated-min=2009-01-01T00%3A00%3A00-08%3A00&updated-max=2010-01-01T00%3A00%3A00-08%3A00&max-results=42'>2009 (42)</option>
+</select>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2250394496987063687&widgetType=BlogArchive&widgetId=BlogArchive101&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive101"));' target='configBlogArchive101' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML2'>
+<h2 class='title'>More Blogs from Google</h2>
+<div class='widget-content'>
+Visit our <a href="http://www.google.com/press/blogs/directory.html#tab0"> directory</a> for more information about Google blogs.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2250394496987063687&widgetType=HTML&widgetId=HTML2&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+<div class='widget HTML' id='HTML130'>
+<h2 class='title'>We Love Feedback</h2>
+<div class='widget-content'>
+Do you want to comment on a post? <a href="http://www.google.com/support/chrome/bin/request.py?contact_type=feedback">Send us a message</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2250394496987063687&widgetType=HTML&widgetId=HTML130&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML130"));' target='configHTML130' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML123'>
+<div class='widget-content'>
+<a href='http://www.blogger.com'><img alt='Powered By Blogger' src='http://www.blogger.com/buttons/blogger-powerby-blue.gif'/></a>
+</div>
+</div></div>
+</div>
+<div id='main-content'>
+<div class='main section' id='main'><div class='widget HTML' id='HTML124'>
+<div id='searchControl'></div>
+</div><div class='widget Blog' id='Blog101'>
+<div id='post-wrapper'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start -->
+<div class='post'>
+<a name='7943010397918625889'></a>
+<h3>
+<a href='http://chrome.blogspot.com/2010/12/update-on-chrome-web-store-and-chrome.html'>An update on Chrome, the Web Store and Chrome OS</a>
+</h3>
+<p class='post-subhead'>
+Tuesday, December 7, 2010 | 11:07 AM
+</p>
+<p class='post-subhead'>
+Labels:
+<a href='http://chrome.blogspot.com/search/label/chrome%20os' rel='tag'>chrome os</a>
+</p>
+<div class='post-body'>
+<p>On the Chrome team, we&#8217;re constantly amazed by the speed of innovation on the web. We designed Chrome to make the web shine, and we hope our upcoming efforts will help support this vibrant ecosystem even more. By making the web faster, helping people discover great apps, and making computers more fun to use, the next year of computing should be even more exciting than the last one.<br /><br /><b>Chrome</b><br /><br />This year, the number of people using Chrome has tripled from 40 to 120 million. Speed is what people love most about Chrome, and we&#8217;re always working to make the browser even faster. Therefore we&#8217;re bringing Google Instant to the Omnibox, showing search results and loading web pages as you type. We&#8217;ve also overhauled V8, Chrome&#8217;s JavaScript engine. It now runs complex JavaScript programs up to <a href="http://blog.chromium.org/2010/12/new-crankshaft-for-v8.html" class="vt-p">twice as fast</a> as before. These two features are available in our <a href="http://www.chromium.org/getting-involved/dev-channel" class="vt-p">early access channels</a> and will be rolling out to all users soon.<br /><br /><b>Chrome Web Store</b><br /><br />Today the <a href="https://chrome.google.com/webstore" class="vt-p">Chrome Web Store</a> is open for business. Developers have already started uploading apps, and we expect the number to grow over time. Right now the store is only available in the U.S., but will expand to many countries and currencies early next year. The store will be featured prominently in Chrome, helping people discover great apps and developers reach millions of users around the world.<br /><br /><b>Chrome OS</b><br /><br />Last year, we <a href="http://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html" class="vt-p">announced</a> our effort to design an operating system that is built and optimized for the web. Many people already spend all their time in a web browser, and by building an operating system that is essentially a browser, we can make computers faster, much simpler and fundamentally more secure.<br /><br />We&#8217;re not done yet, but Chrome OS is at the stage where we need feedback from real users. Some of the features of Chrome OS require new hardware, but we didn&#8217;t want to sell pre-beta computers. Instead we&#8217;re launching a pilot program where we will give test notebooks to qualified users, developers, schools and businesses. We're starting with the U.S. and will expand to other countries once we get the necessary certifications. To participate in the pilot program, visit the <a href="http://www.google.com/chromeos" class="vt-p">Chrome notebook website</a>.<br /><br />The test notebooks exist only to test the software&#8212;they are black, have no branding, no logos, no stickers, nothing. They do have 12.1 inch screens, full-sized keyboards and touch pads, integrated 3G from Verizon, eight hours of battery life and eight days of standby time. Chrome notebooks are designed to reach the web instantly, are easy to share among friends and family, and simply by logging in, all of your apps, bookmarks and other browser settings are there. Setting up a new machine takes less than a minute. And even at this early stage, we feel there is no consumer or business operating system that is more secure.<br /><br />In the first half of next year Chrome notebooks will be available for sale from Acer and Samsung. More manufacturers will follow. Also, Chrome OS is designed to work across a wide range of screen sizes and form factors, enabling our partners to deliver computing devices beyond notebooks.<br /><br />We&#8217;re excited to get Chrome notebooks into the hands of users. The data from our test pilots is key to building something wonderful. We look forward to working together to make computers better.<br /><br /><span class="post-author">Posted by Linus Upson, VP Engineering and Sundar Pichai, VP Product Management</span>
+</p>
+</div>
+<div class='post-footer'>
+<p>
+<span class='post-footer-link'>
+</span>
+<span class='post-footer-link'>
+</span>
+<span class='post-footer-link'>
+</span>
+</p>
+<p>
+<span style='float:left; padding-right:8px;'>Share: </span>
+<a href='http://www.google.com/buzz/post?url=http://chrome.blogspot.com/2010/12/update-on-chrome-web-store-and-chrome.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+<a href='#' onclick='return TweetAndTrack.open(this, "http://chrome.blogspot.com/2010/12/update-on-chrome-web-store-and-chrome.html");' title='Twitter'>
+<span style='display:none;'>An update on Chrome, the Web Store and Chrome OS</span><span class='share-twitter share'></span></a>
+<a href='http://www.facebook.com/sharer.php?u=http://chrome.blogspot.com/2010/12/update-on-chrome-web-store-and-chrome.html&t=An update on Chrome, the Web Store and Chrome OS' title='Facebook'><span class='share-facebook share'></span></a>
+<div class='share-end'></div>
+</p>
+<br/>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<div id='backlinks-container'>
+<div id='Blog101_backlinks-container'>
+<a name='links'></a><h4>
+</h4>
+<p class='comment-footer'>
+<a class='comment-link' href='' id='Blog101_backlinks-create-link' target='_blank'>
+</a>
+</p>
+</div>
+</div>
+</div>
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'><p>
+<a class='blog-pager-newer-link' href='http://chrome.blogspot.com/2010/12/keep-calm-and-carry-on-chrome-notebook.html' id='Blog101_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+<a class='blog-pager-older-link' href='http://chrome.blogspot.com/2010/11/curious-guide-to-browsers-and-web.html' id='Blog101_blog-pager-older-link' title='Older Post'>Older Post</a>
+<a class='home-link' href='http://chrome.blogspot.com/'>Home</a>
+</p>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<!-- end content-wrapper -->
+</div>
+<!-- end outer-wrapper -->
+<div id='footer-graphic'>
+<div class='footer section' id='footer'><div class='widget HTML' id='HTML125'>
+<p class='widget-content'>
+  &copy;2009 Google - <a href='http://google.com/intl/en/privacy.html'>Privacy Policy</a> - <a href='http://www.google.com/accounts/TOS?hl=en'>Terms of Service</a>
+</p>
+</div></div>
+<script language='Javascript' type='text/javascript'>SolutionLoad();</script>
+</div></div>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="http://www.blogger.com/static/v1/widgets/512629240-widgets.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '2250394496987063687';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=2250394496987063687','http://chrome.blogspot.com/2010/12/update-on-chrome-web-store-and-chrome.html','2250394496987063687');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=2250394496987063687','-_qFS9DaHrv7OgEfLTxmceP6OvQ:1293050810738','AOuZoY7UYscOzyXXprOKRLbR9GiEF3Zo7A:1293050810739');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Google Chrome Blog', 'pageType': 'item', 'url': 'http://chrome.blogspot.com/2010/12/update-on-chrome-web-store-and-chrome.html', 'canonicalUrl': 'http://chrome.blogspot.com/2010/12/update-on-chrome-web-store-and-chrome.html', 'homepageUrl': 'http://chrome.blogspot.com/', 'enabledCommentProfileImages': true, 'searchLabel': '', 'searchQuery': '', 'pageName': 'An update on Chrome, the Web Store and Chrome OS', 'pageTitle': 'Google Chrome Blog: An update on Chrome, the Web Store and Chrome OS', 'encoding': 'UTF-8', 'locale': 'en', 'isPrivate': false, 'isMobile': false, 'mobileClass': '', 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Google Chrome Blog - Atom\42 href\75\42http://chrome.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Google Chrome Blog - RSS\42 href\75\42http://chrome.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Google Chrome Blog - Atom\42 href\75\42http://www.blogger.com/feeds/2250394496987063687/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\0752250394496987063687\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Google Chrome Blog - Atom\42 href\75\42http://chrome.blogspot.com/feeds/7943010397918625889/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function c(b){this.t\75{};this.tick\75function(d,i,e){e\75e?e:(new Date).getTime();this.t[d]\75[e,i]};this.tick(\42start\42,null,b)}var f\75new c;a.jstiming\75{Timer:c,load:f};try{var g\75null;if(a.chrome\46\46a.chrome.csi)g\75Math.floor(a.chrome.csi().pageT);if(g\75\75null)if(a.gtbExternal)g\75a.gtbExternal.pageT();if(g\75\75null)if(a.external)g\75a.external.pageT;if(g)a.jstiming.pt\75g}catch(h){};a.tickAboveFold\75function(b){b\75b;var d\0750;if(b.offsetParent){do d+\75b.offsetTop;while(b\75b.offsetParent)}b\75d;b\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var j\75false;function k(){if(!j){j\75true;a.jstiming.load.tick(\42firstScrollTime\42)}}a.addEventListener?a.addEventListener(\42scroll\42,k,false):a.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': ''}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML125', 'footer', null, document.getElementById('HTML125'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML128', 'sidebar', null, document.getElementById('HTML128'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive101', 'sidebar', null, document.getElementById('BlogArchive101'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML130', 'sidebar', null, document.getElementById('HTML130'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML123', 'sidebar', null, document.getElementById('HTML123'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML124', 'main', null, document.getElementById('HTML124'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog101', 'main', null, document.getElementById('Blog101'), {'cmtInteractionsEnabled': false, 'commentInteractionIframeUrl': 'http://www.blogger.com/comment-interaction-iframe.g?blogId\0752250394496987063687', 'showBacklinks': true, 'postId': '7943010397918625889', 'mobile': false}, 'displayModeFull'));
+</script>
+</body>
+<script charset='utf-8' src='http://bit.ly/javascript-api.js?version=latest&login=tweettrackjs&apiKey=R_7e9987b2fd13d7e4e881f9cbb168f523' type='text/javascript'></script>
+<script charset='utf-8' src='http://s.bit.ly/TweetAndTrack.js?v=1.01' type='text/javascript'></script>
+</html>

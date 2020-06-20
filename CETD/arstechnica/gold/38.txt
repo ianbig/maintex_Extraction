@@ -1,0 +1,40 @@
+﻿Hands-on with iTunes Ping, sans Facebook Connect
+By Jacqui Cheng | Last updated 3 months ago
+
+Because we all need another social network in our lives, Apple introduced "Ping" as part of iTunes 10 during its big media event this week. Described by Steve Jobs as "Twitter and Facebook meet iTunes," Ping aims to let the already-existing (and quite massive) audience of iTunes users friend each other, stay up-to-date on their friends' musical tastes, and like/comment on things found around iTunes.
+
+Getting started with Ping is fairly easy, although it takes some time to figure out how to do all the things you would want to do with the service. Ping requires iTunes 10 and is not turned on by default—it looks as if Apple is trying to head off complaints about privacy by making users turn it on themselves. Once you install iTunes 10, you can click on "Ping" in the everything-is-now-gray left-hand sidebar to get started.
+
+
+The first thing you do (after agreeing to all of Apple's legal terms, that is) is set up your profile. The profile page is pretty basic, with your name, photo, a brief bio, and a list of musical genres that you like most, all of which are optional. You can also choose to have iTunes automatically display all the music you like, rate, review, and purchase, or you can choose to manually display those things (or not display them at all, if your music buying habits embarrass you—who knew Senior Editor Nate Anderson had such a love for hair metal). Finally, the privacy settings: Apple lets you choose to keep your profile completely locked down (you can follow others but no one can follow you), keep it semi-locked down (you have to manually approve each person who wants to follow you), or open to the world.
+
+
+Now that you're all set up on Ping, how do you find your friends? This is where things can get a little confusing, as Apple's page states clearly that you can use Facebook Connect to find which of your Facebook friends are using Ping. However, this is (currently) false—although Apple touted this partnership during the media event, the company has since removed the button that allows users to connect their Facebook and Ping accounts. Why? Steve Jobs apparently told Kara Swisher that the integration was removed due to "onerous terms" between Facebook and Apple.
+
+We asked Facebook what this could possibly mean. "I don’t have much more to tell you above and beyond what Kara covered," Facebook spokesperson Jamie Schopflin told Ars via e-mail. "Facebook believes in connecting people with their interests and we've partnered with innovative developers around the world who share this vision. Facebook and Apple have cooperated successfully in the past to offer people great social experiences and look forward to doing so in the future."
+
+(Translation: Facebook and Apple couldn't get along.)
+
+With that non-answer in mind, you'll have to find friends the old fashioned way: by searching for them. However, if you want to expedite the process, just find one well-connected friend and then look at his or her follow list to see who else is around; it's much easier than trying to search for each individual friend, though you'll still likely have to do that for a few people. To do this, click on "People" in the right-hand box and search for your buddy who knows everyone. When you get to that user's page, click on "See all" at the top of the box that displays the people that person follows. Then follow away.
+
+
+Of course, half the reason to use Ping is to follow your favorite artists as well. Not all iTunes artists are on Ping yet, of course, and it may be a challenge to find the ones you really like this early in the game. Apple recommends a handful to follow from the get-go, including the ones highlighted during the media event: Lady Gaga, Katy Perry, Yo-Yo Ma, and others. Those users not only post Twitter-like updates to their Ping profiles, they also sometimes post videos and other tidbits that are useful to fans, like concert dates and details about new albums.
+
+
+Whether it's Lady Gaga or your friend Bob, you can "Like" or comment on any person's update. Go ahead, ridicule your friends for their questionable taste in music! Just keep in mind that iTunes censors naughty words (this isn't a new feature in iTunes, as it has been in practice for songs and other media for quite some time):
+
+
+If you want to go around and "like" your own albums and songs, find any artist (they don't have to have a Ping profile) on the iTunes Store and click on the little drop-down arrow next to the price of the album or song. There will be a "like" option that you can click so that it gets added to your own Ping feed.
+
+
+It then shows up to your friends like this:
+
+
+It doesn't seem, however, that normal users can post the same Twitter-like updates that artists can post. So far, you can only comment or like other people's posts, which may end up being a point of frustration for some dedicated social network addicts.
+
+Don't forget, too, that users of some iOS devices can also use Ping without having to touch a computer. When you load up iTunes on an iPhone or iPod touch, Ping is already there along the bottom row of icons. (Strangely, it's not part of iTunes on the iPad yet.) When you tap it, you can see all of your friend's updates, including people they follow, music they like, and more. And of course, you can comment on them.
+
+
+The whole point of Ping is really to aid music discovery among a circles of friends (which you could already do on services like Last.fm, of course), but Apple also wants to keep users on iTunes and get them to buy more while there. Once you come to terms with this, the service makes more sense.
+
+It's a little different from most other social networks, though—while those networks often struggle to gain a critical mass of users in their early days, iTunes comes with a built-in audience comprised of millions of iPod, iPhone, and iPad users who are already hostages of the iTunes ecosystem. Because of this, there will undoubtedly be people using Ping despite its limited functionality, and admittedly, it is a little fun to see what music your friends are buying and liking. If you want to know what people are listening to, though, we still like Last.fm better—assuming your friends are actually on it.

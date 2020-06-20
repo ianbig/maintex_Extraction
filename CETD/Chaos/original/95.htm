@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>Wolfram Blog : How to Win at Coin Flipping</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="http://blog.wolfram.com/wp-content/themes/WRI_2_0/style.css" type="text/css" media="all" />
+   <meta name="generator" content="WordPress 2.8.4" /> <!-- leave this for stats please -->
+   <meta name="Description" content="Using Mathematica to handle the tedious and mathematically demanding calculations for figuring the odds for Penny's game. Details shown." />
+      <link rel="shortcut icon" href="http://blog.wolfram.com/favicon.ico" type="image/vnd.microsoft.icon" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.wolfram.com/feed/" />
+   <link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.wolfram.com/feed/rss/" />
+   <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://blog.wolfram.com/feed/atom/" />
+   <link rel="pingback" href="http://blog.wolfram.com/xmlrpc.php" />
+         <link rel="alternate" type="application/rss+xml" title="Wolfram Blog &raquo; How to Win at Coin Flipping Comments Feed" href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/feed/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.wolfram.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.wolfram.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Wolfram Blog' href='http://blog.wolfram.com' />
+<link rel='start' title='Welcome to the Wolfram Blog' href='http://blog.wolfram.com/2007/05/01/welcome-to-the-wolfram-blog/' />
+<link rel='prev' title='Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221;' href='http://blog.wolfram.com/2010/11/23/conrad-wolframs-ted-talk-stop-teaching-calculating-start-teaching-math/' />
+<link rel='next' title='Navigating the Blenheim Maze' href='http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/' />
+<meta name="generator" content="WordPress 2.8.4" />
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5677369-3']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!-- WP-SWFObject 2.3 by unijimpe -->
+<script src="/wp-content/plugins/wp-swfobject/2.0/swfobject.js" type="text/javascript"></script>
+</head>
+<body>
+   <div id="banner"><img src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/bannerandlogo_print.gif" border="0"></div>
+   <a id="logo_left" href="http://blog.wolfram.com" title="Wolfram Blog--News, views, &amp; ideas from the front lines at Wolfram Research"></a>
+   <a id="logo_right" href="http://www.wolfram.com/" title="Wolfram Research"></a>
+
+   <div id="content">
+   
+               <div id="banner_more_posts">
+      <a href="http://blog.wolfram.com/2010/11/23/conrad-wolframs-ted-talk-stop-teaching-calculating-start-teaching-math/">Previous</a> |       November 30, 2010       | <a href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/">Next</a>      </div>
+      <div class="post">
+         <img class="author" src="http://blog.wolfram.com/images/people/edp.jpg" alt="Ed Pegg Jr" title="Ed Pegg Jr" />
+         <div class="post_content">
+            <div class="post_title">
+               <a href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/" title="Permanent Link to How to Win at Coin Flipping">How to Win at Coin Flipping</a>
+            </div>
+            <div class="post_time">
+               November 30, 2010            </div>
+            <div class="author_info">
+               Ed Pegg Jr, Scientific Information Group            </div>
+            <p>Let&#8217;s <a href="http://mathworld.wolfram.com/CoinTossing.html">flip a coin</a>, over and over. Beforehand, the players each pick a sequence of flips. The sequence that occurs first wins. With HH vs. TH, HH will win if the first two flips are HH and will lose if any of those flips are tails. HH vs. TH has a 1/4 vs. 3/4 possibility of winning. </p>
+<p>Phrased a different way: Suppose I offer a bet on a series of coin flips. One of these bets would be bad for you. Which one? The odds of the event occurring are given at the end. (The second bet is the bad bet to take.)</p>
+<p>HTT appears before TTT. If it does, I give you $1. If not, you give me $4. (7/8)<br />
+HHT appears before TTT. If it does, I give you $1. If not, you give me $3. (7/10)<br />
+THH appears before HHT. If it does, I give you $1. If not, you give me $2. (3/4)<br />
+HTH appears before THH. If it does, I give you $1. If not, you give me $1. (1/2)</p>
+<p>This is the strange world of <a href="http://en.wikipedia.org/wiki/Penney%27s_game" target="_blank">Penney&#8217;s game</a>. Here is a table of odds and facts for various 3-flip games. Calculating these odds can be both tedious and mathematically demanding&mdash;a natural job for <a href="http://www.wolfram.com/mathematica"><em>Mathematica</em></a> or <em><a href="http://www.wolfram.com/mathematica-home-edition">Mathematica Home Edition</a></em>.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame1.png" alt="Table of sequence details" title="Table of sequence details" width="435" height="479" class="alignleft size-full wp-image-4303" /><br />
+<span id="more-4294"></span><br />
+As a picture, here are the 6 games that are not obvious losers. For any game your opponent picks, you can pick a game that beats it, making this a nontransitive game.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame2.png" alt="The 6 games that are not obvious losers" title="The 6 games that are not obvious losers" width="297" height="296" class="alignleft size-full wp-image-4304" /></p>
+<p>The first game is HHH vs. HHT. Here are the ways HHH can win after 3, 4, 5, and 6 flips. Notice that each win ends HHH. The corresponding number of wins is the beginning of the Fibonacci sequence.</p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="290">HHH</td>
+<td>1</td>
+</tr>
+<tr>
+<td width="290">THHH</td>
+<td>1</td>
+</tr>
+<tr>
+<td width="290">HTHHH  TTHHH</td>
+<td>2</td>
+</tr>
+<tr>
+<td width="290">HTTHHH  THTHHH  TTTHHH</td>
+<td>3</td>
+</tr>
+</table>
+<p></p>
+<p>The sequences of a game can be calculated with the piece of code in the <a href="http://blog.wolfram.com/data/uploads/2010/11/Penneygame.nb">download notebook</a>. The set of flips that could have a winner is calculated, and then all the winners are removed. A head and a tail are added to all games without a winner, and then the process is iterated.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame3.png" alt="Fibonacci sequence" title="Fibonacci sequence" width="421" height="41" class="alignleft size-full wp-image-4305" /></p>
+<p>With the sequence, <tt><a href="http://reference.wolfram.com/mathematica/ref/FindSequenceFunction.html">FindSequenceFunction</a></tt> or <tt><a href="http://reference.wolfram.com/mathematica/ref/FindGeneratingFunction.html">FindGeneratingFunction</a></tt> can be used to get the underlying function. The previous example might be too easy.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame6.png" alt="FindSequenceFunction" title="FindSequenceFunction" width="423" height="59" class="alignleft size-full wp-image-4306" /></p>
+<p>Here&#8217;s a harder sequence. The sequence from the brute-force code leads to a generating function, which can be used to find many more terms in the sequence.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame7.png" alt="Code to find the harder sequence" title="Code to find the harder sequence" width="441" height="207" class="alignleft size-full wp-image-4307" /></p>
+<p>Again, the start of a sequence was found by brute-force methods, and that sequence led to an elegant function. From that, many more terms were calculated. With results from games of 200 flips or less, the odds can be determined very precisely. The odds of HHT beating TTT are 7/10.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame8.png" alt="RootApproximant code" title="RootApproximant code" width="409" height="59" class="alignleft size-full wp-image-4308" /></p>
+<p>Repeating all of this for the 4-flip games, here are the 14 games with non-obvious strategies. HHHH and TTTT are losers, from an odds standpoint. Notice the clockwise ring of arrows on the outside. Every game tends to beat the game in front of it.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame9.png" alt="14 games with non-obvious strategies" title="14 games with non-obvious strategies" width="399" height="408" class="alignleft size-full wp-image-4309" /></p>
+<p>One 4-flip game with strange odds is HHHH vs. TTTH. The fraction 22/7 is a fairly good approximation for <img src="http://blog.wolfram.com/data/uploads/2010/11/Pi.png" alt="Pi" title="Pi" width="9" height="8" ALIGN="bottom" class="alignleft size-full wp-image-4314" />, so the odds of a win are about 1/<img src="http://blog.wolfram.com/data/uploads/2010/11/Pi.png" alt="Pi" title="Pi" width="9" height="8" />.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame10.png" alt="Finding the odds to win" title="Finding the odds to win" width="368" height="125" class="alignleft size-full wp-image-4310" ALIGN="absbottom" /></p>
+<p>A few years ago, I tried to present this problem quickly, and ended up getting the math wrong. I only looked at games up to a certain short length, and then approximated the odds from there. But that was the wrong way to do it, and the odds were all off. Fortunately, someone pointed out my mistake, and this world of strange games opened up for me as I harnessed the full power of <em>Mathematica</em>.</p>
+<p>If just the odds are wanted instead of the sequences, there is an easier way, developed by John Conway.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame11.png" alt="Just the odds instead of the sequences" title="Just the odds instead of the sequences" width="411" height="125" class="alignleft size-full wp-image-4311" /></p>
+<p>The algorithm quickly calculates a table of values.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame12.png" alt="The table of values" title="The table of values" width="429" height="521" class="alignleft size-full wp-image-4312" /></p>
+<p>Even a grid of all the 8-flip games can be easily calculated.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/PenneyGame13.png" alt="A grid of all the 8-flip games" title="A grid of all the 8-flip games" width="421" height="335" class="alignleft size-full wp-image-4313" /></p>
+<p>So, which do you prefer out of HHHTT and HTTHH? One of them wins 7/13 of the time, and the other 6/13. Figuring out which is which requires some powerful tools.</p>
+<p><a href="http://blog.wolfram.com/data/uploads/2010/11/Penneygame.nb">Download notebook</a></p>
+            <div class="post_footer">
+               <div class="post_footer_left">
+                  <a href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/" title="Permanent Link to How to Win at Coin Flipping">Permalink</a> 
+               </div>
+               <div class="post_footer_right">
+                  <a href="http://www.addthis.com/bookmark.php?pub=L4DJFTEHPAW2JE1G&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F30%2Fhow-to-win-at-coin-flipping%2F&amp;title=How+to+Win+at+Coin+Flipping" title="Bookmark using any bookmark manager">add this</a> 
+                  | <a href="http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F30%2Fhow-to-win-at-coin-flipping%2F&amp;title=How+to+Win+at+Coin+Flipping" title="Submit to del.icio.us">del.icio.us</a>
+                  | <a href="http://digg.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F30%2Fhow-to-win-at-coin-flipping%2F&amp;title=How+to+Win+at+Coin+Flipping" title="Submit to Digg">digg</a> 
+                  | <a href="http://reddit.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F30%2Fhow-to-win-at-coin-flipping%2F&amp;title=How+to+Win+at+Coin+Flipping" title="Submit to Reddit">reddit</a> 
+                  | <a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F30%2Fhow-to-win-at-coin-flipping%2F&amp;title=How+to+Win+at+Coin+Flipping" title="Submit to Slashdot">slashdot</a>
+               </div>
+               <div class="single_post_separator"></div>
+            </div>            
+
+
+<div id="comments">
+
+<h2>Comments</h2>
+<ol class="commentlist">
+        <li class="alt" id="comment-4062"  >
+	<p>Is this a conceptually simpler approach for computing the probabilities for HHHTT vs HTTHH? Make a Markov chain of all sequences of length at most 4, plus two absorbing states for HHHTT and HTTHH. The concept is to keep track of the last 4 results. You should be able to write a linear equality system to determine the probability of (say) HHHTT winning from each state,</p>
+	<cite><span class="comment_auth">Posted by <a href='http://daveagp.wordpress.com' rel='external nofollow' class='url'>Dave Pritchard</a></span><span class="comment_time"><a href="#comment-4062" title="">November 30, 2010 at 5:43 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-4069"  >
+	<p>Though it may be hard to calculate the exact probabilities, it&#8217;s easy to make a guess as to your last question by fitting the words together.  Just as HTTT has an advantage over TTTH because HTTTH is shorter than TTTHTTT we could guess that HHHTT has an advantage over HTTHH because HHHTTHH is shorter than HTTHHHTT.</p>
+<p>(Think about it like this in the HTTT,TTTH case.  Picture the flipping going on forever regardless of whether someone has already won.  Look at the first spot TTTH appears.  If it isn&#8217;t the very first position, then the odds of an H being in the spot before are 1/2.  This means half the time the HTTT player had a winning position in the previous spot.  The same is not true if the situation is reversed, hence the advantage.)</p>
+	<cite><span class="comment_auth">Posted by David Nacin</span><span class="comment_time"><a href="#comment-4069" title="">December 1, 2010 at 7:24 pm</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-4073"  >
+	<p>To: Ed Pegg,jr</p>
+<p>(I have Mathematica7)</p>
+<p>In your program , you used: &#8220;gamesequences&#8221;  (g1 = gamesequences[{"HHT", "TTT"}, 16][[1]])</p>
+<p>QUESTION: where can I find the definition of   ??</p>
+<p>Thanks in advance!</p>
+<p>(Have you this program for Mma7?))</p>
+<p>Dwarshuis</p>
+	<cite><span class="comment_auth">Posted by <a href='http://None' rel='external nofollow' class='url'>Hans Dwarshuis,P.J.C.</a></span><span class="comment_time"><a href="#comment-4073" title="">December 2, 2010 at 9:52 am</a></span></cite>
+	</li>
+
+
+        <li id="comment-4074"  >
+	<p>The code is in the downloadable notebook.  I decided to hide that code from the general blog, but I forgot to modify the verbiage.</p>
+	<cite><span class="comment_auth">Posted by Ed Pegg Jr</span><span class="comment_time"><a href="#comment-4074" title="">December 2, 2010 at 11:03 am</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-4101"  >
+	<p>The table mislabels probabilities as &#8220;odds&#8221;.</p>
+<p>HHH vs THH is written as odds = 1/8, but HHH wins with probability 1/8, i.e. odds = (1/8)/(7/8) = 1/7 or more commonly written 1:7.</p>
+	<cite><span class="comment_auth">Posted by correction</span><span class="comment_time"><a href="#comment-4101" title="">December 5, 2010 at 4:25 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-4286" style="border: none" >
+	<p>At least with two and three coin sequence there is a way to figure out which sequence is better without calculating the odds. To explain the reasoning take the HH vs TH example. TH has a better chance of winning because in the second sequence (TH) if I flip a coin and am wrong (get a T instead of an H) I already have the correct letter to start the sequence again. With HH, if I&#8217;m wrong on the second flip and get a T I have to flip again to try to get the first correct letter to begin the sequence again. This extra flip makes the sequence less likely to occur than not having to have the extra flip to begin the sequence again. </p>
+<p>This leads me to think that odds for HTH vs. THH are not correctly stated. The first two letters in both sequences have an equal chance of happening, but with the third flip, if I&#8217;m wrong with THH, I already have the first letter (T) to begin the sequence again. If I&#8217;m wrong on the third flip with HTH, I have to flip again to try to get the first letter H. Therefore, THH should have a higher probability of occurring first.</p>
+	<cite><span class="comment_auth">Posted by Ben Harnke</span><span class="comment_time"><a href="#comment-4286" title="">December 10, 2010 at 9:26 am</a></span></cite>
+	</li>
+
+
+</ol>
+
+
+<h2 id="respond">Leave a Reply</h2>
+
+	
+<form action="http://blog.wolfram.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author">Name (required)</label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email">Mail (required, but will not be published)</label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url">Website</label></p>
+
+
+<p><textarea name="comment" id="comment" cols="50" rows="5" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit"  />
+<input type="hidden" name="comment_post_ID" value="4294" />
+</p>
+
+</form>
+
+
+</div>
+
+         </div>
+      </div>
+
+      <div id="single_footer_more_posts">
+      <a href="http://blog.wolfram.com/2010/11/23/conrad-wolframs-ted-talk-stop-teaching-calculating-start-teaching-math/">Previous</a> |       November 30, 2010       | <a href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/">Next</a>      </div>      
+      
+                
+      <div id="copyright">&copy; 2010 Wolfram Research, Inc.</div>
+   </div>
+   
+   <ul id="sidebar">
+   <li>
+      <div id="home_link">
+         <a href="http://blog.wolfram.com" title="Home">Home</a> 
+      </div>
+   </li>
+      <li id="search" class="widget wri_widget_search"><h2 class="widgettitle">Search This Blog</h2>
+<form method="get" action="http://blog.wolfram.com/" id="search_form">
+<input type="text" value="" name="s" id="search_text" />
+<input id="search_submit" type="image" src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/form_button.gif" name="submit" />
+</form>
+</li>
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+				<li><a href="http://blog.wolfram.com/2010/12/27/fixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution/" title="Fixing Bad Astrophotography Using &lt;em&gt;Mathematica&lt;/em&gt; 8 and Advanced Image Deconvolution">Fixing Bad Astrophotography Using <em>Mathematica</em> 8 and Advanced Image Deconvolution </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/21/the-battle-of-the-marlborough-maze-at-blenheim-palace-continues/" title="The Battle of the Marlborough Maze at Blenheim Palace Continues">The Battle of the Marlborough Maze at Blenheim Palace Continues </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/17/the-mathematica-one-liner-competition/" title="The &lt;em&gt;Mathematica&lt;/em&gt; One-Liner Competition">The <em>Mathematica</em> One-Liner Competition </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/14/the-legacy-of-tron/" title="The Legacy of &lt;em&gt;TRON&lt;/em&gt;">The Legacy of <em>TRON</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/" title="Automatic Physical Units in &lt;em&gt;Mathematica&lt;/em&gt;">Automatic Physical Units in <em>Mathematica</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/" title="Navigating the Blenheim Maze">Navigating the Blenheim Maze </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/" title="How to Win at Coin Flipping">How to Win at Coin Flipping </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/23/conrad-wolframs-ted-talk-stop-teaching-calculating-start-teaching-math/" title="Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221;">Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221; </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/16/programming-with-natural-language-is-actually-going-to-work/" title="Programming with Natural Language Is Actually Going to Work">Programming with Natural Language Is Actually Going to Work </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/" title="The Free-Form Linguistics Revolution in &lt;em&gt;Mathematica&lt;/em&gt;">The Free-Form Linguistics Revolution in <em>Mathematica</em> </a></li>
+				</ul>
+		</li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<ul>
+			<li><a href='http://blog.wolfram.com/2010/12/' title='December 2010'>December 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/11/' title='November 2010'>November 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/08/' title='August 2010'>August 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/07/' title='July 2010'>July 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/06/' title='June 2010'>June 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/02/' title='February 2010'>February 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/11/' title='November 2009'>November 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/10/' title='October 2009'>October 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/09/' title='September 2009'>September 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/08/' title='August 2009'>August 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/07/' title='July 2009'>July 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/06/' title='June 2009'>June 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/05/' title='May 2009'>May 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/04/' title='April 2009'>April 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/03/' title='March 2009'>March 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/02/' title='February 2009'>February 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/01/' title='January 2009'>January 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2008/12/' title='December 2008'>December 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/11/' title='November 2008'>November 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/10/' title='October 2008'>October 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/09/' title='September 2008'>September 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/08/' title='August 2008'>August 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/07/' title='July 2008'>July 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/06/' title='June 2008'>June 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/05/' title='May 2008'>May 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/04/' title='April 2008'>April 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/03/' title='March 2008'>March 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/02/' title='February 2008'>February 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/01/' title='January 2008'>January 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2007/12/' title='December 2007'>December 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/11/' title='November 2007'>November 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/10/' title='October 2007'>October 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/09/' title='September 2007'>September 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/08/' title='August 2007'>August 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/07/' title='July 2007'>July 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/06/' title='June 2007'>June 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/05/' title='May 2007'>May 2007</a></li>
+		</ul>
+</li>
+<li id="text-1" class="widget widget_text"><h2 class="widgettitle">Related Links</h2>
+			<div class="textwidget"><ul>
+<li><a href="http://www.wolfram.com">Wolfram Research</a></li>
+<li><a href="http://www.wolfram.com/products/mathematica"><i>Mathematica</i></a></li>
+<li><a href="http://demonstrations.wolfram.com">Demonstrations Project</a></li>
+<li><a href="http://mathworld.wolfram.com"><i>MathWorld</i></a></li>
+<li><a href="http://tones.wolfram.com">Wolfram<i>Tones</i></a></li>
+<li><a href="http://www.wolframscience.com">Wolfram Science</a></li>
+<li><a href="http://www.stephenwolfram.com">Stephen Wolfram</a></li>
+<li><a href="http://forums.wolfram.com/mathgroup/"><i>MathGroup</i></a></li>
+<li><a href="http://www.wolfram.com/webresources.html">More Wolfram sites...</a><br /><br /></li>
+<li><a href="/feed">Subscribe to this blog's feed</a></li>
+</ul></div>
+		</li>
+   </ul>
+
+</body>
+</html>

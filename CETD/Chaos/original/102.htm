@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    
+    <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="alexaVerifyID" content="dkPrlrocB3BLvlvyocBIdCgG_ik" /> <!-- this line is temporary. remove it in 73rd or 74th release -->
+    <title>11011110: Hash functions made easy</title>
+    <link rel="home" title="Home" href="http://www.livejournal.com/" />
+    <link rel="contents" title="Site Map" href="http://www.livejournal.com/site/" />
+    <link rel="help" title="Technical Support" href="http://www.livejournal.com/support/" />
+    <link rel="apple-touch-icon" href="http://l-stat.livejournal.com/img/apple-touch-icon.png" />
+    
+    
+        
+
+    <script>
+    
+    </script>
+     
+    
+        <script type="text/javascript">
+            Site = window.Site || {};
+
+            (function(){
+                var p = {"media_embed_enabled":1,"inbox_update_poll":0,"has_remote":0,"statprefix":"http://l-stat.livejournal.com","server_time":1293717415,"ctx_popup":1,"remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1,"remote_can_track_threads":null,"currentJournal":"11011110","siteroot":"http://www.livejournal.com","currentJournalBase":"http://11011110.livejournal.com"}, i;
+                for (i in p) Site[i] = p[i];
+            })();
+       </script>
+    <link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css,lj_base-app.css,ad_base.css,horizon/screen.css,horizon/layout.css,widget.css,statistics/un_stats.css,horizon/un_rblocks.css,horizon/loggedout.css,reskining/december2010/noncyr/december2010.css?v=1292528858" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1292528841" /><![endif]-->
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base-ie.css,horizon/ie.css?v=1277844792" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1263499801" /><![endif]-->
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery.js,jquery_fn.js,basic.js,livejournal.js,esn.js,ippu.js,lj_ippu.js,ljwidget.js,ljwidget_ippu.js,journal.js,hourglass.js,contextualhover.js,livejournal-local.js,thread_expander.js,thread_expander.ex.js,quickreply.js,md5.js?v=1292965427"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??commentmanage.js,horizon.js?v=1291149813"></script>
+
+    <script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=1483b796-4406-4000-98db-019c32f6059e&amp;type=website&amp;embeds=true&amp;post_services=livejournal%2Cfacebook%2Ctwitter%2Cmyspace%2Cdigg%2Cdelicious%2Clinkedin%2Cfriendfeed%2Cwordpress%2Cblogger%2Cgoogle_bmarks%2Ctechnorati&amp;onmouseover=false"></script><link href='http://www.livejournal.com/go.bml?journal=11011110&amp;itemid=209336&amp;dir=prev' rel='Previous' />
+<link href='http://www.livejournal.com/go.bml?journal=11011110&amp;itemid=209336&amp;dir=next' rel='Next' />
+<script type="text/javascript">var LJ_cmtinfo = {"573112":{"u":"11011110","rc":[],"has_link":0,"depth":3,"full":1,"username":"11011110"},"form_auth":"c0:1293714000:3415:86400:qp6ogINOhX-0-d0Q3i0UMSu69ZYI:a4af8f7f77fb358004c582eeb6748433","is_s1":1,"remote":"","571832":{"u":"","rc":[572088],"has_link":0,"depth":0,"full":1},"572856":{"u":"","rc":[573112],"has_link":0,"depth":2,"full":1},"572088":{"u":"11011110","rc":[572856],"has_link":0,"depth":1,"full":1,"username":"11011110"},"journal":"11011110","canAdmin":0};
+function userhook_screen_comment_ARG (dIid) { setStyle('cmtbar'+dIid, 'background', "#cccccc"); }
+function userhook_unscreen_comment_ARG (dIid) { setStyle('cmtbar'+dIid, 'background', "#bbddff"); }
+</script>
+
+    
+
+  </head>
+
+
+    <body class='logged-out' >
+    <div id="big-content-wrapper">
+	
+    <div id="content">
+    
+    <div id="content-inner">
+      
+      
+
+      
+      
+
+      
+
+      
+      <h1 class='logged-out'></h1>
+
+      <div id='content-wrapper' class='' style='margin-right: ; height: 1%'>
+        
+
+        
+
+        <!-- Content -->
+        <p><table><tr valign='middle'><td><img src='http://l-userpic.livejournal.com/32934265/7784841' width='100' height='100' align='absmiddle' hspace='3' title='0xDE' alt=''></td><td>0xDE (<span class='ljuser ljuser-name_' lj:user='11011110' style='white-space:nowrap'><a href='http://11011110.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=1' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://11011110.livejournal.com/'><b>11011110</b></a></span>) wrote,<br /><font size='-1'>@ <a href="http://11011110.livejournal.com/2010/">2010</a>-<a href="http://11011110.livejournal.com/2010/11/">11</a>-<a href="http://11011110.livejournal.com/2010/11/28/">28</a> 21:32:00</font></td></tr></table><div class="standout"><table class="container"><tr><td>
+<table><tr><td valign='middle'><a href="http://www.livejournal.com/go.bml?journal=11011110&amp;itemid=209336&amp;dir=prev"><img src="http://l-stat.livejournal.com/img/btn_prev.gif?v=1" width="24" height="24" alt="Previous Entry" title="Previous Entry" border='0' align="absmiddle" /></a>&nbsp;&nbsp;<a href="http://www.livejournal.com/tools/memadd.bml?journal=11011110&amp;itemid=209336"><img src="http://l-stat.livejournal.com/img/memadd.gif?v=1" width="24" height="24" alt="Add to memories!" title="Add to memories!" border='0' align="absmiddle" /></a>&nbsp;&nbsp;<a href="javascript:void(0)"><img src="http://l-stat.livejournal.com/img/btn_sharethis.gif?v=1" width="24" height="24" alt="Share this!" title="Share this!" border='0' align="absmiddle" /></a><script type="text/javascript">
+            SHARETHIS.addEntry({url:'http://11011110.livejournal.com/209336.html', title: 'Hash functions made easy'}, {button: false})
+                .attachButton(jQuery('a:last')[0]);
+            </script>&nbsp;&nbsp;<a href="http://www.livejournal.com/go.bml?journal=11011110&amp;itemid=209336&amp;dir=next"><img src="http://l-stat.livejournal.com/img/btn_next.gif?v=1" width="24" height="24" alt="Next Entry" title="Next Entry" border='0' align="absmiddle" /></a></td></tr></table>
+</td></tr></table></div>
+<div style='margin-left: 30px'><table border=0>
+<tr><td align=right><b>Entry tags:</b></td><td><a href='http://11011110.livejournal.com/tag/algorithms'>algorithms</a>, <a href='http://11011110.livejournal.com/tag/papers'>papers</a></td></tr>
+</table><p>
+<font face='Arial,Helvetica' size='+1'><i><b>Hash functions made easy</b></i></font><br />
+One of the new papers on arXiv this week looks to me like an example of exactly what theoretical algorithms research should aim for: simple algorithms with nontrivial analysis, providing new and practical solutions to an important problem in which previous solutions were unsatisfactory. Unfortunately, the previous solutions were only unsatisfactory in practice, while from the theoretical point of view they were optimal; when this happens, it tends to make papers like this quite difficult to publish in algorithms conferences.<br /><br />The paper: "The Power of Simple Tabulation Hashing", by Mihai Pătraşcu and Mikkel Thorup, <a href="http://arxiv.org/abs/1011.5200">arXiv:1011.5200</a>.<br /><br />The problem: hashing algorithms are designed to work well with hash functions that are truly random (chosen uniformly from all possible functions that map the keys to be stored in the hash table into indices). But they are actually used with functions that are very nonrandom. How can we design nonrandom or pseudorandom hash functions that can be evaluated efficiently and that cause hashing algorithms to behave as well as they do with random hash functions?<br /><br />The known solution (Wegman and Carter 1981, etc): find a constant C such that the hash algorithm in question requires C-tuples of hash function values to be independent (each C-tuple of keys should map to each C-tuple of indices with equal probability) but does not require (C+1)-tuples to be independent. Then find a hash function that achieves the desired level of independence. One simple construction for C-wise independent functions is to use a uniformly random polynomial of degree C-1 over a finite field as the hash function. This has the desired theoretical properties: it requires only a small number of random bits (the coefficients of the polynomial) to hash a much larger number of keys, it is C-wise independent, and (when C is constant) it takes O(1) time per hash table value to evaluate. However, because evaluating polynomials involves multiplication, it is slow, especially when C is large, and better alternative solutions work well only for very small values of C.<br /><br />The "new" solution: break the key into bytes, and let T[i,b] be a table of random numbers indexed by byte position and byte value. Then simply let the hash value h(x) of a key x whose bytes are x0, x1, x2, ... be h(x) = T[0,x0]+T[1,x1]+T[2,x2]+...<br /><br />Actually, this isn't a new solution at all: it was already described by Wegman and Carter. But it's only 3-independent. The innovation in the new paper is to show that the same hash function can be proven to work well, even for some hash algorithms that require C-independence for C &gt; 3. Specifically:<ul><li>In chaining (that is, resolving collisions by using linked lists of items that all hash to the same index) the longest chain has length O(log n/log log n) with high probability.</li><li>Linear probing (that is, resolving collisions by placing each item into the nearest empty slot, and performing lookups by searching forwards from the hashed index until finding an empty slot) in a table with n items stored and (1+&epsilon;)n slots takes expected time O(1/&epsilon;<sup>2</sup>) per operation.</li><li><a href="http://en.wikipedia.org/wiki/Cuckoo_hashing">Cuckoo hashing</a> (a more complex collision resolution strategy with the advantage that search operations are extremely fast, although updates can be slower) has polynomially small failure probability (but not as good as the linearly small failure probability that one would get with a truly random hash function). This is not good enough to use this function for a dynamic cuckoo hash table, but is good enough for using cuckoo hashing in the static case.</li></ul>The tradeoff for using these newly simplified methods is that their analysis becomes a lot more complicated and ad-hoc. But since the analysis isn't the part that has to be implemented, that's probably the right tradeoff to make.</div><br style='clear: both' /><hr width='100%' size='2' align='center' /><div id='Comments'><a name='comments'></a><form style='display: inline' method='post' action='http://www.livejournal.com/talkmulti.bml' name='multiform' onsubmit='return multiformSubmit(this, {no_action: "You have not selected one of the actions",no_comments: "You have not selected any comments",conf_delete: "Are you sure you wish to delete the selected comments?"})'><p class='lesstop' align='center'><b>(4 comments) - (<a href='http://11011110.livejournal.com/209336.html?mode=reply'>Post a new comment</a>)</b></p><input type='hidden' name="ditemid" value="209336" /><input type='hidden' name="journal" value="11011110" /><div id='ljcmt571832'><a name='t571832'></a><table width='100%' class='talk-comment'><tr><td><img src='http://l-stat.livejournal.com/img/dot.gif' height='1' width='0'></td><td id='ljcmtxt571832' width='100%'><div id='cmtbar571832' class='talk-comment-head' style='background-color:#bbddff'><font size='+1' face='Arial,Helvetica'><b>xor</b></font> <br /><i>(Anonymous)</i>
+<br /><font size='-1'>2010-11-30 01:20 am UTC</font>
+ <font size='-1'>(<a href='http://11011110.livejournal.com/209336.html?thread=571832#t571832'>link</a>)</font> </div><div class='talk-comment-box'><q>h(x) = T[0,x0]+T[1,x1]+T[2,x2]+...</q><br /><br />Where + means xor...<p style='margin: 0.7em 0 0.2em 0'><font size='-2'>(<a href='http://11011110.livejournal.com/209336.html?replyto=571832'>Reply to this</a>) (<a href='http://11011110.livejournal.com/209336.html?thread=571832#t571832'>Thread</a>) </font></p></div></td></tr></table></div>
+<div id='ljcmt572088'><a name='t572088'></a><table width='100%' class='talk-comment'><tr><td><img src='http://l-stat.livejournal.com/img/dot.gif' height='1' width='25'></td><td id='ljcmtxt572088' width='100%'><div id='cmtbar572088' class='talk-comment-head' style='background-color:#aaccee'><img align='left' hspace='3' src='http://l-userpic.livejournal.com/32934265/7784841' width='100' title='0xDE' alt='' height='100' /><font size='+1' face='Arial,Helvetica'><b>Re: xor</b></font> <br /><span class='ljuser with-alias-value ljuser-name_' lj:user='11011110' style='white-space:nowrap'><a href='http://11011110.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=1' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://11011110.livejournal.com/'><b>11011110</b></a></span>
+<br /><font size='-1'>2010-11-30 01:24 am UTC</font>
+ <font size='-1'>(<a href='http://11011110.livejournal.com/209336.html?thread=572088#t572088'>link</a>)</font> </div><div class='talk-comment-box'>You're correct, of course.  When I posted this, I considered adding a clarification about that but I don't consider xor and binary integer addition to be very different from each other. Xor is just addition in a different ring (GF(2^32) rather than Z/2^32) and the carries don't make a lot of difference to how pseudorandom the combination is.<p style='margin: 0.7em 0 0.2em 0'><font size='-2'>(<a href='http://11011110.livejournal.com/209336.html?replyto=572088'>Reply to this</a>) (<a href='http://11011110.livejournal.com/209336.html?thread=571832#t571832'>Parent</a>) (<a href='http://11011110.livejournal.com/209336.html?thread=572088#t572088'>Thread</a>) </font></p></div></td></tr></table></div>
+<div id='ljcmt572856'><a name='t572856'></a><table width='100%' class='talk-comment'><tr><td><img src='http://l-stat.livejournal.com/img/dot.gif' height='1' width='50'></td><td id='ljcmtxt572856' width='100%'><div id='cmtbar572856' class='talk-comment-head' style='background-color:#bbddff'><font size='+1' face='Arial,Helvetica'><b>Re: xor</b></font> <br /><i>(Anonymous)</i>
+<br /><font size='-1'>2010-12-03 08:38 pm UTC</font>
+ <font size='-1'>(<a href='http://11011110.livejournal.com/209336.html?thread=572856#t572856'>link</a>)</font> </div><div class='talk-comment-box'>Actually, for the "plus" version we don't have a proof of minwise independence. It's almost certainly the case that it works, but very messy to think about it formally...<p style='margin: 0.7em 0 0.2em 0'><font size='-2'>(<a href='http://11011110.livejournal.com/209336.html?replyto=572856'>Reply to this</a>) (<a href='http://11011110.livejournal.com/209336.html?thread=572088#t572088'>Parent</a>) (<a href='http://11011110.livejournal.com/209336.html?thread=572856#t572856'>Thread</a>) </font></p></div></td></tr></table></div>
+<div id='ljcmt573112'><a name='t573112'></a><table width='100%' class='talk-comment'><tr><td><img src='http://l-stat.livejournal.com/img/dot.gif' height='1' width='75'></td><td id='ljcmtxt573112' width='100%'><div id='cmtbar573112' class='talk-comment-head' style='background-color:#aaccee'><img align='left' hspace='3' src='http://l-userpic.livejournal.com/32934265/7784841' width='100' title='0xDE' alt='' height='100' /><font size='+1' face='Arial,Helvetica'><b>Re: xor</b></font> <br /><span class='ljuser with-alias-value ljuser-name_' lj:user='11011110' style='white-space:nowrap'><a href='http://11011110.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=1' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://11011110.livejournal.com/'><b>11011110</b></a></span>
+<br /><font size='-1'>2010-12-03 08:51 pm UTC</font>
+ <font size='-1'>(<a href='http://11011110.livejournal.com/209336.html?thread=573112#t573112'>link</a>)</font> </div><div class='talk-comment-box'>That's curious. So it doesn't just work automatically for any group. Fortunately, xors are easy to use.<p style='margin: 0.7em 0 0.2em 0'><font size='-2'>(<a href='http://11011110.livejournal.com/209336.html?replyto=573112'>Reply to this</a>) (<a href='http://11011110.livejournal.com/209336.html?thread=572856#t572856'>Parent</a>) </font></p></div></td></tr></table></div>
+<hr /><p class='lesstop' align='center'><b>(4 comments) - (<a href='http://11011110.livejournal.com/209336.html?mode=reply'>Post a new comment</a>)</b></p></form></div>
+
+        <div class='clear'></div>
+      
+      </div>
+
+      
+
+    </div>
+    </div>
+    <div class="push"></div>
+    </div>
+    <!-- End \#content -->
+
+    
+        <div id="footer">
+            <div id="footer-links">
+                <table><tr>
+                    <td>
+                        <h3>About</h3>
+                        <ul id="footer-links-col1">
+                            <li><a href="http://www.livejournal.com/contact/">Contact</a></li>
+                            <li><a href="http://livejournalinc.com/sales.php">Advertise</a></li>
+                            <li><a href="http://www.livejournalinc.com/jobs/">Jobs</a></li>
+                            <li><a href="http://www.livejournal.com/news.bml">Site News</a></li>
+                            <li><a href="http://www.livejournalinc.com/">More...</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Help</h3>
+                        <ul id="footer-links-col2">
+                            <li><a href="http://www.livejournal.com/support/">Support</a> /
+                            <a href="http://www.livejournal.com/support/faq.bml">FAQs</a></li>
+                            <li><a href="http://www.livejournal.com/site/safetytips.bml">Safety Tips</a></li>
+                        </ul>
+                        <h3>Get Involved</h3>
+                        <ul>
+                            <li><a href="http://www.livejournal.com/support/faqbrowse.bml?faqid=57">Volunteer</a></li>
+                            <li><a href="http://community.livejournal.com/lj_dev/">Developers</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Legal</h3>
+                        <ul id="footer-links-col3">
+                            <li><a href="http://www.livejournal.com/legal/tos.bml">Terms of Service</a></li>
+                            <li><a href="http://www.livejournal.com/legal/privacy.bml">Privacy Policy</a></li>
+                            <li><a href="http://www.livejournal.com/legal/dmca.bml">Copyright</a></li>
+                            <li><a href="http://www.livejournal.com/abuse/policy.bml">Abuse Policy</a></li>
+                        </ul>
+                      	<h3>LJ Labs</h3>
+                        <ul class="footer-links-col" id="footer-links-col5">
+                            <li><a href="http://aqua.livejournal.ru/">LJ Aqua</a></li>
+                            <li><a href="http://www.livejournal.com/labs.bml">More...</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Store</h3>
+                        <ul id="footer-links-col4">
+                            <li><a href="http://www.livejournal.com/manage/account/">Upgrade Account</a></li>
+                            <li><a href="http://www.livejournal.com/shop/vgift.bml">Virtual Gifts</a></li>
+                            <li><a href="https://www.zazzle.com/livejournal*">Merchandise</a></li>
+                            <li><a href="http://www.livejournal.com/shop/">More...</a></li>
+                        </ul>
+                    </td>
+                     <td class="last">
+                        <ul id="footer-links-col6">
+                            <li>Change language:</li>
+                            <li><select name="lang" id="footer_lang_list">
+<option value="en_LJ" selected='selected'>English</option>
+<option value="en_GB">English (UK)</option>
+<option value="de">Deutsch</option>
+<option value="da">Dansk</option>
+<option value="es">español</option>
+<option value="fr">Français</option>
+<option value="it">Italiano</option>
+<option value="ru">Русский</option>
+<option value="uk">Українська</option>
+<option value="be">Беларуская</option>
+<option value="ja">日本語</option>
+<option value="pt">Português</option>
+<option value="eo">Esperanto</option>
+<option value="he">עברית</option>
+<option value="nl">Nederlands</option>
+<option value="hu">Magyar</option>
+<option value="ga">Gaeilge</option>
+<option value="is">íslenska</option>
+<option value="fi">suomi</option>
+<option value="gr">Ελληνικά</option>
+<option value="nb">Norsk bokmål</option>
+<option value="sv">Svenska</option>
+<option value="pl">polski</option>
+<option value="zh">简体中文</option>
+<option value="lv">Latviešu</option>
+<option value="tr">Türkçe</option>
+<option value="ms">Bahasa Melayu</option>
+<option value="hi">हिन्दी</option>
+<option value="pt_BR">Português Brasileiro</option>
+<option value="zh_TR">繁體中文</option>
+<option value="lt">Lietuvių</option>
+<option value="nn">Norsk nynorsk</option>
+</select></li>
+                        </ul>
+						<dl class="current-version"><dt><a href="http://news.livejournal.com/"><a href="http://lj-releases.livejournal.com">Current version</a></a>:</dt><dd>v.74.1</dd></dl>
+                    </td>
+                </tr><tr>
+                    <td colspan="5">
+                        <p class="more_lj"><a href="http://www.livejournal.com/site/">&raquo; View Full Sitemap</a></p>
+                    </td>
+                </tr></table>
+            </div>
+            <div id="footer-copyright">Copyright &copy; 1999-2010 LiveJournal, Inc.  All rights reserved.</div>
+        </div>
+        <!-- end footer -->
+    
+
+
+    <div id="navigation">
+    <div id='Userpic'></div><!-- end #Userpic -->
+      <div id="NavigationWelcomeLogo">
+      
+
+      </div>
+      <!-- End Navigation and Welcome -->
+
+            <div id='NavBar'>
+      <ul id='NavMenu'>
+      <li class='NavMenuItem' id='NavMenuItem1'><a href='http://www.livejournal.com/' id='horizon-menu-home'>Home</a></li>
+<li class='NavMenuItem' id='NavMenuItem2'><a href='http://www.livejournal.com/create.bml' id='horizon-menu-home'>Create an account</a></li>
+<li class='NavMenuItem' id='NavMenuItem3'><a href='http://www.livejournal.com/search/' id='horizon-menu-explore'>Explore</a><ul class='NavMenuSubNav' id='NavMenu3'>
+<li class='NavMenuSubNavBack'><iframe src='about:blank' frameborder='0' class='NavMenuSubNavBack'></iframe></li><li class=''><a href='http://www.livejournal.com/interests.bml'>Search by Interest</a></li>
+<li class=''><a href='http://www.livejournal.com/schools/'>Search by School</a></li>
+<li class=''><a href='http://www.livejournal.com/browse/'>Community Directory</a></li>
+<li class=''><a href='http://www.livejournal.com/syn/'>Feeds</a></li>
+<li class=''><a href='http://www.livejournal.com/misc/qotdarchive.bml'>Question of the Day</a></li>
+<li class=''><a href='http://www.livejournal.com/radio/'>FRNK Radio</a></li>
+</ul>
+</li>
+<li class='NavMenuItem' id='NavMenuItem4'><a href='http://www.livejournal.com/shop/' id='horizon-menu-shop'>Shop</a><ul class='NavMenuSubNav' id='NavMenu4'>
+<li class='NavMenuSubNavBack'><iframe src='about:blank' frameborder='0' class='NavMenuSubNavBack'></iframe></li><li class=''><a href='http://www.livejournal.com/shop/paidaccount.bml?form=3'>Gift Paid Account</a></li>
+<li class=''><a href='http://www.livejournal.com/shop/vgift.bml'>Virtual Gifts</a></li>
+<li class=''><a href='http://www.zazzle.com/livejournal'>Merchandise</a></li>
+</ul>
+</li>
+<li class='NavMenuItem' id='NavMenuItem5'><a href='http://www.livejournal.com/extra/' id='horizon-menu-apps'>LJ Extras</a><ul class='NavMenuSubNav' id='NavMenu5'>
+<li class='NavMenuSubNavBack'><iframe src='about:blank' frameborder='0' class='NavMenuSubNavBack'></iframe></li><li class=''><a href='http://www.livejournal.com/devices'>Mobile</a></li>
+<li class=''><a href='http://www.livejournal.com/chat/'>LJ Talk</a></li>
+<li class=''><a href='http://www.livejournal.com/download/'>Downloads</a></li>
+<li class=''><a href='http://www.livejournal.com/classifieds'>Classifieds</a></li>
+</ul>
+</li>
+
+        <li id="NavMenuSearch">
+          <form action="http://www.livejournal.com/search/" method="get">
+          
+            <input type="text" value="Find" size="12" name="q" id='SearchText' onfocus="if(this.value=='Find')this.value='';" onblur="if(this.value=='')this.value='Find';" />
+          
+                <select name="area">
+                    <option value='default'>All</option>
+                    <option value='posts'>Entries</option>
+                    <option value='comments'>Comments</option>
+                    <option value='journals'>Journals</option>
+                    <option value='faq'>FAQ</option>
+                </select>
+            
+            <input type="submit" value="Search" />
+          </form>
+        </li>
+      </ul>
+      </div>
+      <!-- End navbar -->
+
+
+      
+
+    </div>
+    <!-- End #navigation -->
+    <dl class="b-reskining-about"><dt></dt><dd>Image by <span class='ljuser ljuser-name_perplexedchick' lj:user='perplexedchick' style='white-space:nowrap'><a href='http://perplexedchick.livejournal.com/profile'><img src='http://files.livejournal.com/userhead/146' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://perplexedchick.livejournal.com/'><b>perplexedchick</b></a></span>. Join the contest in <span class='ljuser ljuser-name_remixed' lj:user='remixed' style='white-space:nowrap'><a href='http://community.livejournal.com/remixed/profile'><img src='http://l-stat.livejournal.com/img/community.gif?v=1' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://community.livejournal.com/remixed/'><b>remixed</b></a></span>!</dd></dl>
+
+    <!-- Login -->
+            <div class="lj_loginform" id="Login">
+          <form style='margin: 0; padding: 0;' method="post" action="https://www.livejournal.com/login.bml?ret=1" id="login" class="lj_login_form">
+            
+            <input type='hidden' name='mode' value='login' />
+            
+            <table cellspacing="2" cellpadding="0">
+              <tr>
+                <th class="desc"><label for='login_user'>Username:</label></th>
+                <td><input type="text" name="user" size="24" id='login_user' tabindex="1" /></td>
+                <td rowspan="3" style="padding-left: 10px; vertical-align: top;">
+                  <a href="http://www.livejournal.com/create.bml">Create an Account</a><br />
+                  <a href="http://www.livejournal.com/lostinfo.bml">Forgot your login or password?</a><br/>
+                  <a href="http://www.livejournal.com/identity/login.bml?type=openid" title="Log in with OpenID" class="i-auth"><img src="http://l-stat.livejournal.com/img/icons/openid-16.gif" width="16" height="16" alt="Log in with OpenID" /></a> <a href="http://www.livejournal.com/identity/login.bml?type=facebook" title="Login with Facebook" class="i-auth"><img src="http://l-stat.livejournal.com/img/icons/facebook-16.gif" width="16" height="16" alt="Login with Facebook" /></a> <a href="http://www.livejournal.com/identity/login.bml?type=twitter" title="Login with Twitter" class="i-auth"><img src="http://l-stat.livejournal.com/img/icons/twitter-16.gif" width="16" height="16" alt="Login with Twitter" /></a><br />
+                </td>
+              </tr>
+              <tr>
+                <th class="desc"><label for='login_password'>Password:</label></th>
+                <td style='white-space: nowrap;'><input type="password" name="password" size="15" class="lj_login_password" tabindex="2" />
+                <input type='submit' value="Log in" tabindex='3' />
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><label><input type="checkbox" name="remember_me" value="1" tabindex="4"  /> Remember Me</label></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="2" style='font-size: .8em; white-space: nowrap'>
+                    <a href="http://www.livejournal.com/manage/settings/?cat=display">English &bull; Español &bull; Deutsch &bull; Русский&hellip;</a>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+    <!-- End Login -->
+
+    <!-- Logo -->
+    <div id="Logo">
+    <a href='http://www.livejournal.com' style='border: 0'><img src='http://l-stat.livejournal.com/horizon/logo.png' style='width: 83px; height: 86px' alt='' class='transparentpng' />
+</a><div id='SiteName'><a href='http://www.livejournal.com' style='border: 0'><img src='http://l-stat.livejournal.com/horizon/livejournal.png' style='width: 189px; height: 27px' alt='' class='transparentpng' />
+</a></div>
+    </div>
+    <!-- End Logo -->
+
+
+    <!-- Extra block to read style from and call to initialize Horizon which reads style -->
+    <div id='Alpha' style='display: none !important'>&nbsp;</div>
+    <!--[if lt IE 7]><script>Horizon.scheme_init();</script><![endif]-->
+
+    <div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<script type="text/javascript"> var DR_id = 1111; </script>
+<script src="http://l-stat.livejournal.com/js/pagestats/DR_v4u3.js?v=1" type="text/javascript"></script>
+    <!-- Begin comScore Tag -->
+<script>
+    document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+
+<script>
+  COMSCORE.beacon({
+    c1:2,
+    c2:7602110,
+    c3:"",
+    c4:"",
+    c5:"",
+    c6:"",
+    c15:""
+  });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=7602110&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+</div>
+
+    
+    
+  </body>
+</html>
+

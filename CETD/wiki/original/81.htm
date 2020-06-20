@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>LaTeX - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=LaTeX&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=LaTeX&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="LaTeX",
+wgTitle="LaTeX",
+wgAction="view",
+wgArticleId=18195,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=402732500,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["Articles containing Greek language text", "Articles containing potentially dated statements from 2010", "All articles containing potentially dated statements", "Free TeX software", "Declarative markup languages", "Free typesetting software"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+<style type="text/css">/*<![CDATA[*/
+.source-latex {line-height: normal;}
+.source-latex li, .source-latex pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for latex
+ * CSS class: source-latex, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.latex.source-latex .de1, .latex.source-latex .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.latex.source-latex  {font-family:monospace;}
+.latex.source-latex .imp {font-weight: bold; color: red;}
+.latex.source-latex li, .latex.source-latex .li1 {font-weight: normal; vertical-align:top;}
+.latex.source-latex .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.latex.source-latex .li2 {font-weight: bold; vertical-align:top;}
+.latex.source-latex .kw1 {color: #800000;}
+.latex.source-latex .co1 {color: #2C922C; font-style: italic;}
+.latex.source-latex .es0 {color: #000000; font-weight: bold;}
+.latex.source-latex .sy0 {color: #E02020; }
+.latex.source-latex .st0 {color: #000000;}
+.latex.source-latex .re1 {color: #8020E0; font-weight: normal;}
+.latex.source-latex .re2 {color: #C08020; font-weight: normal;}
+.latex.source-latex .re3 {color: #8020E0; font-weight: normal;}
+.latex.source-latex .re4 {color: #800000; font-weight: normal;}
+.latex.source-latex .re5 {color: #00008B; font-weight: bold;}
+.latex.source-latex .re6 {color: #800000; font-weight: normal;}
+.latex.source-latex .re7 {color: #0000D0; font-weight: normal;}
+.latex.source-latex .re8 {color: #C00000; font-weight: normal;}
+.latex.source-latex .re9 {color: #2020C0; font-weight: normal;}
+.latex.source-latex .re10 {color: #800000; font-weight: normal;}
+.latex.source-latex .re11 {color: #E00000; font-weight: normal;}
+.latex.source-latex .re12 {color: #800000; font-weight: normal;}
+.latex.source-latex .ln-xtra, .latex.source-latex li.ln-xtra, .latex.source-latex div.ln-xtra {background-color: #ffc;}
+.latex.source-latex span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+/*]]>*/
+</style></head>
+<body class="mediawiki ltr ns-0 ns-subject page-LaTeX skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --><script type="text/javascript" language="JavaScript">
+/* <![CDATA[ */
+document.writeln("\x3cdiv id=\"localNotice\"\x3e\x3cp\x3e\x3c/p\x3e\n\x3c/div\x3e");
+/* ]]> */
+</script></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">LaTeX</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<div class="dablink">"LATEX" redirects here. For other uses, see <a href="/wiki/Latex_(disambiguation)" title="Latex (disambiguation)">Latex (disambiguation)</a>.</div>
+<div class="dablink"><span class="plainlinks selfreference">For help editing formulas on Wikipedia, see <a href="/wiki/Help:Displaying_a_formula" title="Help:Displaying a formula">Help:Displaying a formula</a>.</span></div>
+<table class="infobox vevent" cellspacing="5" style="width:22em; text-align:left; font-size:88%; line-height:1.5em;">
+<caption class="summary" style="font-size:125%; font-weight:bold;">LaTeX</caption>
+<tr>
+<th colspan="2" class="" style="text-align:center; text-align:center; font-size:125%; font-weight:bold;"><a href="/wiki/File:LaTeX_logo.svg" class="image" title="The LaTeX logo, typeset with LaTeX"><img alt="The LaTeX logo, typeset with LaTeX" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/100px-LaTeX_logo.svg.png" width="100" height="42" /></a></th>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Software_design" title="Software design">Original author(s)</a></th>
+<td class="" style=""><a href="/wiki/Leslie_Lamport" title="Leslie Lamport">Leslie Lamport</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td class="" style=""><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="/wiki/Typesetting" title="Typesetting">Typesetting</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="/wiki/LaTeX_Project_Public_License" title="LaTeX Project Public License">LaTeX Project Public License</a> (LPPL)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Website" title="Website">Website</a></th>
+<td class="" style=""><a href="http://www.latex-project.org" class="external text" rel="nofollow">www.latex-project.org</a></td>
+</tr>
+</table>
+<p><b>LaTeX</b> (pronounced <span title="Pronunciation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="/wiki/Wikipedia:IPA_for_English" title="Wikipedia:IPA for English">/ˈleɪtɛk/</a></span>, <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA">/ˈleɪtɛx/</span>, <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA">/ˈlɑːtɛx/</span>, or <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA">/ˈlɑːtɛk/</span>) is a <a href="/wiki/Document_markup_language" title="Document markup language" class="mw-redirect">document markup language</a> and <a href="/wiki/Word_processor" title="Word processor">document preparation system</a> for the <a href="/wiki/TeX" title="TeX">TeX</a> <a href="/wiki/Typesetting" title="Typesetting">typesetting</a> program. Within the typesetting system, its name is styled as <a href="/wiki/File:LaTeX_logo.svg" class="image" title="\LaTeX"><img alt="\LaTeX" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/48px-LaTeX_logo.svg.png" width="48" height="20" style="vertical-align: middle" /></a>. The term LaTeX refers only to the language in which documents are written, not to the editor used to write those documents. In order to create a document in LaTeX, a .tex file must be created using some form of <a href="/wiki/Text_editor" title="Text editor">text editor</a>. While most text editors can be used to create a LaTeX document, a number of editors have been created <a href="/wiki/TeX#Editors" title="TeX">specifically for working with LaTeX</a>.</p>
+<p>LaTeX is most widely used by mathematicians, scientists, engineers, philosophers, lawyers, linguists, economists, researchers, and other scholars in <a href="/wiki/Academia" title="Academia">academia</a>.<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>2<span>]</span></a></sup> As a primary or intermediate format, <i>e.g.</i>, translating <a href="/wiki/DocBook" title="DocBook">DocBook</a> and other <a href="/wiki/XML" title="XML">XML</a>-based formats to <a href="/wiki/PDF" title="PDF" class="mw-redirect">PDF</a>, LaTeX is used because of the high quality of <a href="/wiki/Typesetting" title="Typesetting">typesetting</a> achievable by <a href="/wiki/TeX" title="TeX">TeX</a>. The typesetting system offers programmable <a href="/wiki/Desktop_publishing" title="Desktop publishing">desktop publishing</a> features and extensive facilities for automating most aspects of typesetting and desktop publishing, including numbering and cross-referencing, tables and figures, page layout and <a href="/wiki/Bibliography" title="Bibliography">bibliographies</a>.</p>
+<p>LaTeX is intended to provide a high-level language that accesses the power of TeX. LaTeX essentially comprises a collection of TeX <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macros</a> and a program to process LaTeX documents. Because the TeX formatting commands are very low-level, it is usually much simpler for end-users to use LaTeX.</p>
+<p>LaTeX was originally written in the early 1980s by <a href="/wiki/Leslie_Lamport" title="Leslie Lamport">Leslie Lamport</a> at <a href="/wiki/SRI_International" title="SRI International">SRI International</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>3<span>]</span></a></sup> It has become the dominant method for using TeX—relatively few people write in plain TeX anymore. The current version is LaTeX2e (styled <a href="/wiki/File:LaTeX2e_logo.svg" class="image" title="\LaTeXe"><img alt="\LaTeXe" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/LaTeX2e_logo.svg/68px-LaTeX2e_logo.svg.png" width="68" height="20" style="vertical-align: middle" /></a>).</p>
+<p>As it is distributed under the terms of the <a href="/wiki/LaTeX_Project_Public_License" title="LaTeX Project Public License">LaTeX Project Public License</a> (LPPL), LaTeX is <a href="/wiki/Free_software" title="Free software">free software</a>.</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Typesetting_system"><span class="tocnumber">1</span> <span class="toctext">Typesetting system</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Pronouncing_and_writing_.22LaTeX.22"><span class="tocnumber">3</span> <span class="toctext">Pronouncing and writing "LaTeX"</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Licensing"><span class="tocnumber">4</span> <span class="toctext">Licensing</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Related_software"><span class="tocnumber">5</span> <span class="toctext">Related software</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Versions"><span class="tocnumber">6</span> <span class="toctext">Versions</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Compatibility"><span class="tocnumber">7</span> <span class="toctext">Compatibility</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Further_reading"><span class="tocnumber">10</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=1" title="Edit section: Typesetting system">edit</a>]</span> <span class="mw-headline" id="Typesetting_system">Typesetting system</span></h2>
+<p>LaTeX is based on the idea that authors should be able to focus on the content of what they are writing without being distracted by its visual presentation. In preparing a LaTeX document, the author specifies the logical structure using familiar concepts such as <i>chapter</i>, <i>section</i>, <i>table</i>, <i>figure</i>, etc., and lets the LaTeX system worry about the presentation of these structures. It therefore encourages the separation of layout from content while still allowing manual typesetting adjustments where needed. This is similar to the mechanism by which many <a href="/wiki/Word_processor" title="Word processor">word processors</a> allow styles to be defined globally for an entire document or the use of <a href="/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">Cascading Style Sheets</a> to style <a href="/wiki/HTML" title="HTML">HTML</a>.</p>
+<p>LaTeX can be arbitrarily extended by using the underlying <a href="/wiki/Macro_language" title="Macro language" class="mw-redirect">macro language</a> to develop custom formats. Such macros are often collected into <i>packages,</i> which are available to address special formatting issues such as complicated mathematical content or graphics. Indeed, in the example below, the <code>align</code> environment is provided by the <code>amsmath</code> package.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=2" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h2>
+<p>The example below shows the LaTeX input and corresponding output:</p>
+<table border="0" cellpadding="0" cellspacing="1em">
+<tr>
+<td>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="latex source-latex" style="font-family:monospace;">
+<pre class="de1">
+<span class="sy0">\</span><span class="kw1">documentclass</span><span class="sy0">[</span><span class="re2">12pt</span><span class="sy0">]{</span><span class="re9">article</span><span class="sy0">}</span>
+<span class="sy0">\</span><span class="kw1">usepackage</span><span class="sy0">{</span><span class="re9">amsmath</span><span class="sy0">}</span>
+<span class="sy0">\</span><span class="kw1">title</span><span class="sy0">{</span><span class="re9">\<span class="kw1">LaTeX</span></span><span class="sy0">}</span>
+<span class="sy0">\</span><span class="kw1">date</span><span class="sy0">{</span><span class="re9"><span class="sy0">}</span>
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re7">document</span></span><span class="sy0">}</span>
+  <span class="sy0">\</span><span class="kw1">maketitle</span> 
+  <span class="sy0">\</span><span class="kw1">LaTeX</span><span class="sy0">{</span><span class="re9">} is a document preparation system for the <span class="re12">\TeX</span><span class="sy0">{</span></span><span class="re9"><span class="sy0">}</span> 
+  typesetting program. It offers programmable desktop publishing 
+  features and extensive facilities for automating most aspects of 
+  typesetting and desktop publishing, including numbering and 
+  cross-referencing, tables and figures, page layout, bibliographies, 
+  and much more. <span class="sy0">\</span><span class="kw1">LaTeX</span><span class="sy0">{</span></span><span class="re9"><span class="sy0">}</span> was originally written in 1984 by Leslie 
+  Lamport and has become the dominant method for using <span class="re12">\TeX</span>; few 
+  people write in plain <span class="re12">\TeX</span><span class="sy0">{</span></span><span class="sy0">}</span> anymore. The current version is 
+  <span class="re12">\LaTeXe</span>.
+ 
+  <span class="co1">% This is a comment; it is not shown in the final output.</span>
+  <span class="co1">% The following shows a little of the typesetting power of LaTeX:</span>
+  <span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">align</span></span><span class="sy0">}</span><span class="re1">
+    E <span class="sy0">&amp;</span>= mc^2                              <span class="sy0">\\</span>
+    m <span class="sy0">&amp;</span>= <span class="sy0">\</span><span class="kw1">frac</span><span class="sy0">{</span><span class="re9">m_0</span><span class="sy0">}{</span><span class="re9"><span class="re12">\sqrt</span><span class="sy0">{</span>1-<span class="sy0">\</span><span class="kw1">frac</span><span class="sy0">{</span>v^2</span><span class="sy0">}{</span><span class="re9">c^2</span><span class="sy0">}}}</span>
+  </span><span class="re8">\end</span><span class="sy0">{</span><span class="re9"><span class="re7">align</span></span><span class="sy0">}</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re9"><span class="re7">document</span></span><span class="sy0">}</span>
+</pre></div>
+</div>
+</td>
+<td><a href="/wiki/File:LaTeX_Output.svg" class="image" title="LaTeX output"><img alt="LaTeX output" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/LaTeX_Output.svg/425px-LaTeX_Output.svg.png" width="425" height="296" /></a></td>
+</tr>
+</table>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=3" title="Edit section: Pronouncing and writing &quot;LaTeX&quot;">edit</a>]</span> <span class="mw-headline" id="Pronouncing_and_writing_.22LaTeX.22">Pronouncing and writing "LaTeX"</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:RootyHelix.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/0/0f/RootyHelix.png/220px-RootyHelix.png" width="220" height="202" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:RootyHelix.png" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+LaTeX can also be used to produce <a href="/wiki/Vector_graphics" title="Vector graphics">vector graphics</a>.</div>
+</div>
+</div>
+<p>LaTeX is usually pronounced <span title="Pronunciation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="/wiki/Wikipedia:IPA_for_English" title="Wikipedia:IPA for English">/ˈlɑːtɛk/</a></span> or <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA">/ˈleɪtɛk/</span> in English (that is, not with the <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA">/ks/</span> pronunciation English speakers normally associate with <i><a href="/wiki/X" title="X">X</a></i>, but with a <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA">/k/</span>). The characters T, E, X in the name come from <a href="/wiki/Capital_letter" title="Capital letter">capital</a> <a href="/wiki/Greek_alphabet" title="Greek alphabet">Greek</a> letters <a href="/wiki/Tau" title="Tau">tau</a>, <a href="/wiki/Epsilon" title="Epsilon">epsilon</a>, and <a href="/wiki/Chi_(letter)" title="Chi (letter)">chi</a>, as the name of <a href="/wiki/TeX" title="TeX">TeX</a> derives from the <a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">τέχνη</span> (skill, art, technique); for this reason, TeX's creator <a href="/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a> promotes a pronunciation of <span title="Pronunciation in IPA" class="IPA"><a href="/wiki/Wikipedia:IPA_for_English" title="Wikipedia:IPA for English">/ˈtɛx/</a></span> (<span title="English pronunciation respelling" class="IPA"><a href="/wiki/Wikipedia:Pronunciation_respelling_key" title="Wikipedia:Pronunciation respelling key"><i>tekh</i></a></span>)<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>4<span>]</span></a></sup> (that is, with a <a href="/wiki/Voiceless_velar_fricative" title="Voiceless velar fricative">voiceless velar fricative</a> as in Modern Greek, similar to the last sound of the German word "Bach", the Spanish "j" sound, or as ch in <a href="/wiki/Loch" title="Loch">loch</a>). Lamport, on the other hand, has said he does not favor or discourage any pronunciation for LaTeX.</p>
+<p>The name is traditionally printed with the special typographical <a href="/wiki/Logo" title="Logo">logo</a> shown at the top of this page. In media where the logo cannot be precisely reproduced in running text, the word is typically given the unique capitalization <i>LaTeX</i>. The TeX, LaTeX <sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup> and <a href="/wiki/XeTeX" title="XeTeX">XeTeX</a> <sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>6<span>]</span></a></sup> logos can be rendered via pure <a href="/wiki/CSS" title="CSS" class="mw-redirect">CSS</a> and <a href="/wiki/XHTML" title="XHTML">XHTML</a> for use in graphical <a href="/wiki/Web_browser" title="Web browser">web browsers</a> following the specifications of the internal <tt>\LaTeX</tt> macro.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>7<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=4" title="Edit section: Licensing">edit</a>]</span> <span class="mw-headline" id="Licensing">Licensing</span></h2>
+<p>LaTeX is typically distributed along with plain <a href="/wiki/TeX" title="TeX">TeX</a>. It is distributed under a <a href="/wiki/Free_software_license" title="Free software license" class="mw-redirect">free software license</a>, the <a href="/wiki/LaTeX_Project_Public_License" title="LaTeX Project Public License">LaTeX Project Public License</a> (LPPL). The LPPL is not compatible with the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>, as it requires that modified files must be clearly differentiable from their originals (usually by changing the filename); this was done to ensure that files that depend on other files will produce the expected behavior and avoid <a href="/wiki/Dependency_hell" title="Dependency hell">dependency hell</a>. The LPPL is <a href="/wiki/Debian_Free_Software_Guidelines" title="Debian Free Software Guidelines">DFSG</a> compliant as of version 1.3. As <a href="/wiki/Free_software" title="Free software">free software</a>, LaTeX is available on most operating systems including <a href="/wiki/UNIX" title="UNIX" class="mw-redirect">UNIX</a>® (<a href="/wiki/Mac_OS_X" title="Mac OS X">Mac OS X</a>, <a href="/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a>), <a href="/wiki/UNIX" title="UNIX" class="mw-redirect">UNIX</a> system-like OS (<a href="/wiki/Linux" title="Linux">Linux OS</a>, <a href="/wiki/BSD" title="BSD" class="mw-redirect">BSDs</a>, <a href="/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a>), <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, <a href="/wiki/RISC_OS" title="RISC OS">RISC OS</a> and <a href="/wiki/AmigaOS" title="AmigaOS">AmigaOS</a>.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=5" title="Edit section: Related software">edit</a>]</span> <span class="mw-headline" id="Related_software">Related software</span></h2>
+<p>As a macro package, LaTeX provides a set of macros for TeX to interpret. There are many other macro packages for TeX, including Plain TeX, <a href="/wiki/GNU_Texinfo" title="GNU Texinfo" class="mw-redirect">GNU Texinfo</a>, <a href="/wiki/AMSTeX" title="AMSTeX" class="mw-redirect">AMSTeX</a>, and <a href="/wiki/ConTeXt" title="ConTeXt">ConTeXt</a>.</p>
+<p>When TeX "compiles" a document, the processing sequence (from the user's point of view) goes like this: Macros &gt; TeX &gt; Driver &gt; Output. Different implementations of each of these steps are typically available in TeX distributions. Traditional TeX will output a <a href="/wiki/DVI_(file_format)" title="DVI (file format)" class="mw-redirect">DVI</a> file, which is usually converted to a <a href="/wiki/PostScript" title="PostScript">PostScript</a> file. More recently, <a href="/wiki/H%C3%A0n_Th%E1%BA%BF_Th%C3%A0nh" title="Hàn Thế Thành" class="mw-redirect">Hàn Thế Thành</a> and others have written a new implementation of TeX called <a href="/wiki/PdfTeX" title="PdfTeX">pdfTeX</a>, which also outputs to <a href="/wiki/PDF" title="PDF" class="mw-redirect">PDF</a> and takes advantage of features available in that format. The <a href="/wiki/XeTeX" title="XeTeX">XeTeX</a> engine developed by Jonathan Kew merges modern font technologies and Unicode with TeX.</p>
+<p>The default font for LaTeX is Knuth's <a href="/wiki/Computer_Modern" title="Computer Modern">Computer Modern</a>, which gives default documents created with LaTeX the same distinctive look as those created with plain TeX. XeTeX allows the use of OpenType and TrueType (that is, outlined) fonts for output files.</p>
+<p>There are also many <a href="/wiki/Comparison_of_TeX_editors" title="Comparison of TeX editors">editors for LaTeX</a>.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=6" title="Edit section: Versions">edit</a>]</span> <span class="mw-headline" id="Versions">Versions</span></h2>
+<p>LaTeX2e is the current version of LaTeX. As of 2010<sup class="plainlinks noprint asof-tag update" style="display:none;"><a href="http://en.wikipedia.org/w/index.php?title=LaTeX&amp;action=edit" class="external text" rel="nofollow">[update]</a></sup>, a future version called LaTeX3, started in the early 1990s, is still in development.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup> Planned features include improved syntax, <a href="/wiki/Hyperlink" title="Hyperlink">hyperlink</a> support, a new user interface, access to arbitrary fonts, and new documentation.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup></p>
+<p>There are numerous commercial implementations of the entire TeX system. System vendors may add extra features like additional <a href="/wiki/Typeface" title="Typeface">typefaces</a> and telephone support. <a href="/wiki/LyX" title="LyX">LyX</a> is a <a href="/wiki/Free_software" title="Free software">free</a>, <a href="/wiki/WYSIWYM" title="WYSIWYM">WYSIWYM</a> visual document processor that uses LaTeX for a back-end. <a href="/wiki/TeXmacs" title="TeXmacs" class="mw-redirect">TeXmacs</a> is a <a href="/wiki/Free_software" title="Free software">free</a>, <a href="/wiki/WYSIWYG" title="WYSIWYG">WYSIWYG</a> editor with similar functionalities as LaTeX but a different typesetting engine. Other WYSIWYG editors that produce LaTeX include <a href="/wiki/Scientific_Word" title="Scientific Word" class="mw-redirect">Scientific Word</a> on <a href="/wiki/MS_Windows" title="MS Windows" class="mw-redirect">MS Windows</a>.</p>
+<p>A number of TeX distributions are available, including <a href="/wiki/TeX_Live" title="TeX Live">TeX Live</a> (multiplatform), <a href="/wiki/TeTeX" title="TeTeX">teTeX</a> (deprecated in favour of <a href="/wiki/TeX_Live" title="TeX Live">TeX Live</a>, UNIX®), <a href="/w/index.php?title=FpTeX&amp;action=edit&amp;redlink=1" class="new" title="FpTeX (page does not exist)">fpTeX</a> (deprecated), <a href="/wiki/MiKTeX" title="MiKTeX">MiKTeX</a> (Windows), <a href="/wiki/MacTeX" title="MacTeX">MacTeX</a> (TeX Live with the addition of Mac specific programs), <a href="/w/index.php?title=GwTeX&amp;action=edit&amp;redlink=1" class="new" title="GwTeX (page does not exist)">gwTeX</a> (Mac OS X), <a href="/w/index.php?title=OzTeX&amp;action=edit&amp;redlink=1" class="new" title="OzTeX (page does not exist)">OzTeX</a> (Mac OS Classic), AmigaTeX (no longer available) and <a href="/w/index.php?title=PasTeX&amp;action=edit&amp;redlink=1" class="new" title="PasTeX (page does not exist)">PasTeX</a> (AmigaOS, available on the <a href="/wiki/Aminet" title="Aminet">Aminet</a> repository).</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=7" title="Edit section: Compatibility">edit</a>]</span> <span class="mw-headline" id="Compatibility">Compatibility</span></h2>
+<p>LaTeX documents can be shared with people who only use <a href="/wiki/Microsoft_Word" title="Microsoft Word">Microsoft Word</a> or <a href="/wiki/OpenOffice.org_Writer" title="OpenOffice.org Writer">OpenOffice.org Writer</a> by converting the LaTeX file (.tex) to <a href="/wiki/Rich_Text_Format" title="Rich Text Format">Rich Text Format</a> (.rtf) or <a href="/wiki/XML" title="XML">XML</a>. This can be done using the free software programs <a href="/wiki/LaTeX2RTF" title="LaTeX2RTF">LaTeX2RTF</a> or <a href="/wiki/TeX4ht" title="TeX4ht">TeX4ht</a>.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 0.5em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;">
+<tr>
+<td><a href="/wiki/File:Portal-puzzle.svg" class="image"><img alt="Portal-puzzle.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png" width="32" height="28" /></a></td>
+<td style="padding:0 0.2em;"><i><b><a href="/wiki/Portal:Free_software" title="Portal:Free software">Free software portal</a></b></i></td>
+</tr>
+</table>
+</div>
+<ul>
+<li><a href="/wiki/Comparison_of_TeX_editors" title="Comparison of TeX editors">Comparison of TeX editors</a></li>
+<li><a href="/wiki/AMS-LaTeX" title="AMS-LaTeX">AMS-LaTeX</a> - American Mathematical Society extension for LaTeX</li>
+<li><a href="/wiki/BibTeX" title="BibTeX">BibTeX</a> reference management software typically used with LaTeX</li>
+<li><a href="/wiki/List_of_document_markup_languages" title="List of document markup languages">List of document markup languages</a></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=9" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist references-small" style="">
+<div class="references">
+<ol>
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> <span class="citation web"><a href="http://www.ctan.org/what_is_tex.html" class="external text" rel="nofollow">"What are TeX, LaTeX and friends?"</a><span class="printonly">. <a href="http://www.ctan.org/what_is_tex.html" class="external free" rel="nofollow">http://www.ctan.org/what_is_tex.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=What+are+TeX%2C+LaTeX+and+friends%3F&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.ctan.org%2Fwhat_is_tex.html&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> <span class="citation web">Alexia Gaudeul (March 27, 2006). <a href="http://ssrn.com/abstract=908946" class="external text" rel="nofollow">"Do Open Source Developers Respond to Competition?: The (La)TeX Case Study"</a><span class="printonly">. <a href="http://ssrn.com/abstract=908946" class="external free" rel="nofollow">http://ssrn.com/abstract=908946</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Do+Open+Source+Developers+Respond+to+Competition%3F%3A+The+%28La%29TeX+Case+Study&amp;rft.atitle=&amp;rft.aulast=Alexia+Gaudeul&amp;rft.au=Alexia+Gaudeul&amp;rft.date=March+27%2C+2006&amp;rft_id=http%3A%2F%2Fssrn.com%2Fabstract%3D908946&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> <span class="citation web">Leslie Lamport (April 23, 2007). <a href="http://research.microsoft.com/users/lamport/pubs/pubs.html#latex" class="external text" rel="nofollow">"The Writings of Leslie Lamport: LaTeX: A Document Preparation System"</a>. <i>Leslie Lamport's Home Page</i><span class="printonly">. <a href="http://research.microsoft.com/users/lamport/pubs/pubs.html#latex" class="external free" rel="nofollow">http://research.microsoft.com/users/lamport/pubs/pubs.html#latex</a></span><span class="reference-accessdate">. Retrieved 2007-04-27</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Writings+of+Leslie+Lamport%3A+LaTeX%3A+A+Document+Preparation+System&amp;rft.atitle=Leslie+Lamport%27s+Home+Page&amp;rft.aulast=Leslie+Lamport&amp;rft.au=Leslie+Lamport&amp;rft.date=April+23%2C+2007&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fusers%2Flamport%2Fpubs%2Fpubs.html%23latex&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-3"><b><a href="#cite_ref-3">^</a></b> Donald E. Knuth, <i>The TeXbook</i>, Addison–Wesley, Boston, 1986, p. 1.</li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <span class="citation web">O'Connor, Edward. <a href="http://edward.oconnor.cx/2007/08/tex-poshlet" class="external text" rel="nofollow">"TeX and LaTeX logo POSHlets"</a><span class="printonly">. <a href="http://edward.oconnor.cx/2007/08/tex-poshlet" class="external free" rel="nofollow">http://edward.oconnor.cx/2007/08/tex-poshlet</a></span><span class="reference-accessdate">. Retrieved 2008-04-21</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=TeX+and+LaTeX+logo+POSHlets&amp;rft.atitle=&amp;rft.aulast=O%27Connor&amp;rft.aufirst=Edward&amp;rft.au=O%27Connor%2C%26%2332%3BEdward&amp;rft_id=http%3A%2F%2Fedward.oconnor.cx%2F2007%2F08%2Ftex-poshlet&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-5"><b><a href="#cite_ref-5">^</a></b> <span class="citation web">Taraborelli, Dario. <a href="http://nitens.org/taraborelli/texlogo" class="external text" rel="nofollow">"CSS-driven TeX logos"</a><span class="printonly">. <a href="http://nitens.org/taraborelli/texlogo" class="external free" rel="nofollow">http://nitens.org/taraborelli/texlogo</a></span><span class="reference-accessdate">. Retrieved 2008-04-21</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=CSS-driven+TeX+logos&amp;rft.atitle=&amp;rft.aulast=Taraborelli&amp;rft.aufirst=Dario&amp;rft.au=Taraborelli%2C%26%2332%3BDario&amp;rft_id=http%3A%2F%2Fnitens.org%2Ftaraborelli%2Ftexlogo&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> <span class="citation Journal">Walden, David (2005-07-15). <a href="http://www.tug.org/pracjourn/2005-3/walden-travels/" class="external text" rel="nofollow">"Travels in TeX Land: A Macro, Three Software Packages, and the Trouble with TeX"</a>. <i>The PracTeX journal</i> (3)<span class="printonly">. <a href="http://www.tug.org/pracjourn/2005-3/walden-travels/" class="external free" rel="nofollow">http://www.tug.org/pracjourn/2005-3/walden-travels/</a></span><span class="reference-accessdate">. Retrieved 2008-04-21</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Travels+in+TeX+Land%3A+A+Macro%2C+Three+Software+Packages%2C+and+the+Trouble+with+TeX&amp;rft.jtitle=The+PracTeX+journal&amp;rft.aulast=Walden&amp;rft.aufirst=David&amp;rft.au=Walden%2C%26%2332%3BDavid&amp;rft.date=2005-07-15&amp;rft.issue=3&amp;rft_id=http%3A%2F%2Fwww.tug.org%2Fpracjourn%2F2005-3%2Fwalden-travels%2F&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> See e.g. <a href="http://bubl.ac.uk/archive/journals/texdig/v93n1193.htm" class="external autonumber" rel="nofollow">[1]</a>. Furthermore, all LaTeX3 components actually carry the copyright notice "(C) 1990-2006 LaTeX3 project", e.g. <a href="http://www.ctan.org/tex-archive/macros/latex/exptl/project/expl3/l3basics.dtx" class="external autonumber" rel="nofollow">[2]</a>.</li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> <span class="citation web">Frank Mittelbach, Chris Rowley (January 12, 1999). <a href="http://www.latex-project.org/guides/ltx3info.pdf" class="external text" rel="nofollow">"The LaTeX3 Project"</a> (PDF)<span class="printonly">. <a href="http://www.latex-project.org/guides/ltx3info.pdf" class="external free" rel="nofollow">http://www.latex-project.org/guides/ltx3info.pdf</a></span><span class="reference-accessdate">. Retrieved 2007-07-30</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+LaTeX3+Project&amp;rft.atitle=&amp;rft.aulast=Frank+Mittelbach%2C+Chris+Rowley&amp;rft.au=Frank+Mittelbach%2C+Chris+Rowley&amp;rft.date=January+12%2C+1999&amp;rft_id=http%3A%2F%2Fwww.latex-project.org%2Fguides%2Fltx3info.pdf&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+</ol>
+</div>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=10" title="Edit section: Further reading">edit</a>]</span> <span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<div class="refbegin references" style="">
+<ul>
+<li><span class="citation book">Griffiths, David F.; Highman, David S. (1997). <i>Learning LaTeX</i>. Philadelphia: Society for Industrial and Applied Mathematics. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-898-71383-8" title="Special:BookSources/0-898-71383-8">0-898-71383-8</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Learning+LaTeX&amp;rft.aulast=Griffiths&amp;rft.aufirst=David+F.&amp;rft.au=Griffiths%2C%26%2332%3BDavid+F.&amp;rft.date=1997&amp;rft.place=Philadelphia&amp;rft.pub=Society+for+Industrial+and+Applied+Mathematics&amp;rft.isbn=0-898-71383-8&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Kopka, Helmut; Daly, Patrick W. (2003). <i>Guide to LaTeX</i> (4th ed.). Addison-Wesley Professional. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-321-17385-6" title="Special:BookSources/0-321-17385-6">0-321-17385-6</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Guide+to+LaTeX&amp;rft.aulast=Kopka&amp;rft.aufirst=Helmut&amp;rft.au=Kopka%2C%26%2332%3BHelmut&amp;rft.date=2003&amp;rft.edition=4th&amp;rft.pub=Addison-Wesley+Professional&amp;rft.isbn=0-321-17385-6&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book"><a href="/wiki/Leslie_Lamport" title="Leslie Lamport">Lamport, Leslie</a> (1994). <i>LaTeX: A document preparation system: User's guide and reference</i>. illustrations by Duane Bibby (2nd ed.). Reading, Mass: Addison-Wesley Professional. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-52983-1" title="Special:BookSources/0-201-52983-1">0-201-52983-1</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=LaTeX%3A+A+document+preparation+system%3A+User%27s+guide+and+reference&amp;rft.aulast=Lamport&amp;rft.aufirst=Leslie&amp;rft.au=Lamport%2C%26%2332%3BLeslie&amp;rft.date=1994&amp;rft.edition=2nd&amp;rft.place=Reading%2C+Mass&amp;rft.pub=Addison-Wesley+Professional&amp;rft.isbn=0-201-52983-1&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Mittelbach, Frank; Goosens, Michel (2004). <i>The LaTeX Companion</i> (2nd ed.). Addison-Wesley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-36299-6" title="Special:BookSources/0-201-36299-6">0-201-36299-6</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+LaTeX+Companion&amp;rft.aulast=Mittelbach&amp;rft.aufirst=Frank&amp;rft.au=Mittelbach%2C%26%2332%3BFrank&amp;rft.date=2004&amp;rft.edition=2nd&amp;rft.pub=Addison-Wesley&amp;rft.isbn=0-201-36299-6&amp;rfr_id=info:sid/en.wikipedia.org:LaTeX"><span style="display: none;">&#160;</span></span></li>
+</ul>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=LaTeX&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<table class="metadata plainlinks mbox-small" style="border:1px solid #aaa; background-color:#f9f9f9;">
+<tr>
+<td colspan="2" style="margin: auto; text-align: center">Find more about <b>LaTeX</b> on Wikipedia's <a href="/wiki/Wikipedia:Wikimedia_sister_projects" title="Wikipedia:Wikimedia sister projects">sister projects</a>:</td>
+</tr>
+<tr>
+<td><a href="http://en.wiktionary.org/wiki/Special:Search/LaTeX" title="Search Wiktionary"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/23px-Wiktionary-logo-en.svg.png" width="23" height="25" /></a></td>
+<td><a href="http://en.wiktionary.org/wiki/Special:Search/LaTeX" class="extiw" title="wikt:Special:Search/LaTeX">Definitions</a> from Wiktionary<br /></td>
+</tr>
+<tr>
+<td><a href="http://commons.wikimedia.org/wiki/Special:Search/LaTeX" title="Search Commons"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png" width="18" height="24" /></a></td>
+<td><a href="http://commons.wikimedia.org/wiki/Special:Search/LaTeX" class="extiw" title="commons:Special:Search/LaTeX">Images and media</a> from Commons<br /></td>
+</tr>
+<tr>
+<td><a href="http://en.wikiversity.org/wiki/Special:Search/LaTeX" title="Search Wikiversity"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wikiversity-logo-en.svg/25px-Wikiversity-logo-en.svg.png" width="25" height="23" /></a></td>
+<td><a href="http://en.wikiversity.org/wiki/Special:Search/LaTeX" class="extiw" title="v:Special:Search/LaTeX">Learning resources</a> from Wikiversity<br /></td>
+</tr>
+<tr>
+<td><a href="http://en.wikinews.org/wiki/Special:Search/LaTeX" title="Search Wikinews"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/25px-Wikinews-logo.svg.png" width="25" height="14" /></a></td>
+<td><a href="http://en.wikinews.org/wiki/Special:Search/LaTeX" class="extiw" title="n:Special:Search/LaTeX">News stories</a> from Wikinews<br /></td>
+</tr>
+<tr>
+<td><a href="http://en.wikiquote.org/wiki/Special:Search/LaTeX" title="Search Wikiquote"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/21px-Wikiquote-logo.svg.png" width="21" height="25" /></a></td>
+<td><a href="http://en.wikiquote.org/wiki/Special:Search/LaTeX" class="extiw" title="q:Special:Search/LaTeX">Quotations</a> from Wikiquote<br /></td>
+</tr>
+<tr>
+<td><a href="http://en.wikisource.org/wiki/Special:Search/LaTeX" title="Search Wikisource"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/24px-Wikisource-logo.svg.png" width="24" height="25" /></a></td>
+<td><a href="http://en.wikisource.org/wiki/Special:Search/LaTeX" class="extiw" title="s:Special:Search/LaTeX">Source texts</a> from Wikisource<br /></td>
+</tr>
+<tr>
+<td><a href="http://en.wikibooks.org/wiki/Special:Search/LaTeX" title="Search Wikibooks"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/25px-Wikibooks-logo.svg.png" width="25" height="25" /></a></td>
+<td><a href="http://en.wikibooks.org/wiki/Special:Search/LaTeX" class="extiw" title="b:Special:Search/LaTeX">Textbooks</a> from Wikibooks<br /></td>
+</tr>
+</table>
+<ul>
+<li><a href="http://www.latex-project.org/" class="external text" rel="nofollow">LaTeX home page</a></li>
+<li><a href="http://www.ctan.org" class="external text" rel="nofollow">CTAN — the Comprehensive TeX Archive Network</a>
+<ul>
+<li><a href="http://mirror.ctan.org/help/Catalogue/entries/latex.html" class="external text" rel="nofollow">The TeX Catalogue OnLine, Entry for LaTeX, Ctan Edition</a></li>
+</ul>
+</li>
+<li><a href="http://tug.org/" class="external text" rel="nofollow">The TeX Users Group</a></li>
+<li><a href="http://en.wikibooks.org/wiki/LaTeX" class="external text" rel="nofollow">LaTeX Wikibook</a></li>
+<li><a href="http://www.latex-project.org/l3news/" class="external text" rel="nofollow">LaTeX3 newsletter</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 8876/1000000
+Post-expand include size: 52506/2048000 bytes
+Template argument size: 14535/2048000 bytes
+Expensive parser function count: 2/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:18195-0!1!0!default!!en!4 and timestamp 20101221232548 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/LaTeX">http://en.wikipedia.org/wiki/LaTeX</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:Free_TeX_software" title="Category:Free TeX software">Free TeX software</a></span> | <span dir='ltr'><a href="/wiki/Category:Declarative_markup_languages" title="Category:Declarative markup languages">Declarative markup languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Free_typesetting_software" title="Category:Free typesetting software">Free typesetting software</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories: <span dir='ltr'><a href="/wiki/Category:Articles_containing_Greek_language_text" title="Category:Articles containing Greek language text">Articles containing Greek language text</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_2010" title="Category:Articles containing potentially dated statements from 2010">Articles containing potentially dated statements from 2010</a></span> | <span dir='ltr'><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=LaTeX" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/LaTeX"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:LaTeX"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/LaTeX" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=LaTeX&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=LaTeX&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/LaTeX" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/LaTeX" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=LaTeX&amp;oldid=402732500" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=LaTeX&amp;id=402732500" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=LaTeX" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=LaTeX&amp;oldid=402732500&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=LaTeX&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D9%84%D8%A7%D8%AA%D8%AE" title="لاتخ">العربية</a></li>
+					<li class="interwiki-bn"><a href="http://bn.wikipedia.org/wiki/%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A7%87%E0%A6%95" title="ল্যাটেক">বাংলা</a></li>
+					<li class="interwiki-bar"><a href="http://bar.wikipedia.org/wiki/LaTeX" title="LaTeX">Boarisch</a></li>
+					<li class="interwiki-bs"><a href="http://bs.wikipedia.org/wiki/LaTeX" title="LaTeX">Bosanski</a></li>
+					<li class="interwiki-bg"><a href="http://bg.wikipedia.org/wiki/LaTeX" title="LaTeX">Български</a></li>
+					<li class="interwiki-ca"><a href="http://ca.wikipedia.org/wiki/LaTeX" title="LaTeX">Català</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/LaTeX" title="LaTeX">Česky</a></li>
+					<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/LaTeX" title="LaTeX">Dansk</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/LaTeX" title="LaTeX">Deutsch</a></li>
+					<li class="interwiki-et"><a href="http://et.wikipedia.org/wiki/LaTeX" title="LaTeX">Eesti</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/LaTeX" title="LaTeX">Español</a></li>
+					<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/LaTeX" title="LaTeX">Esperanto</a></li>
+					<li class="interwiki-eu"><a href="http://eu.wikipedia.org/wiki/LaTeX" title="LaTeX">Euskara</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D9%84%D8%A7%D8%AA%DA%A9" title="لاتک">فارسی</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/LaTeX" title="LaTeX">Français</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/LaTeX" title="LaTeX">한국어</a></li>
+					<li class="interwiki-hy"><a href="http://hy.wikipedia.org/wiki/LaTeX" title="LaTeX">Հայերեն</a></li>
+					<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/LaTeX" title="LaTeX">Hrvatski</a></li>
+					<li class="interwiki-id"><a href="http://id.wikipedia.org/wiki/LaTeX" title="LaTeX">Bahasa Indonesia</a></li>
+					<li class="interwiki-is"><a href="http://is.wikipedia.org/wiki/LaTeX" title="LaTeX">Íslenska</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/LaTeX" title="LaTeX">Italiano</a></li>
+					<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/LaTeX" title="LaTeX">עברית</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/LaTeX" title="LaTeX">Magyar</a></li>
+					<li class="interwiki-ms"><a href="http://ms.wikipedia.org/wiki/LaTeX" title="LaTeX">Bahasa Melayu</a></li>
+					<li class="interwiki-mn"><a href="http://mn.wikipedia.org/wiki/LaTeX" title="LaTeX">Монгол</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/LaTeX" title="LaTeX">Nederlands</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/LaTeX" title="LaTeX">日本語</a></li>
+					<li class="interwiki-no"><a href="http://no.wikipedia.org/wiki/LaTeX" title="LaTeX">‪Norsk (bokmål)‬</a></li>
+					<li class="interwiki-oc"><a href="http://oc.wikipedia.org/wiki/LaTeX" title="LaTeX">Occitan</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/LaTeX" title="LaTeX">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/LaTeX" title="LaTeX">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/LaTeX" title="LaTeX">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/LaTeX" title="LaTeX">Русский</a></li>
+					<li class="interwiki-sq"><a href="http://sq.wikipedia.org/wiki/LaTeX" title="LaTeX">Shqip</a></li>
+					<li class="interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Latex_(text_processing_system)" title="Latex (text processing system)">Simple English</a></li>
+					<li class="interwiki-sh"><a href="http://sh.wikipedia.org/wiki/LaTeX" title="LaTeX">Srpskohrvatski / Српскохрватски</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Latex" title="Latex">Suomi</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Latex_(typs%C3%A4ttningssystem)" title="Latex (typsättningssystem)">Svenska</a></li>
+					<li class="interwiki-tg"><a href="http://tg.wikipedia.org/wiki/%D0%9B%D0%B0%D0%A2%D0%B5%D0%9A" title="ЛаТеК">Тоҷикӣ</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/LaTeX" title="LaTeX">Українська</a></li>
+					<li class="interwiki-ug"><a href="http://ug.wikipedia.org/wiki/Latex" title="Latex">ئۇيغۇرچە / Uyghurche‎</a></li>
+					<li class="interwiki-wa"><a href="http://wa.wikipedia.org/wiki/Latex" title="Latex">Walon</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/L%E1%B4%80T%E1%B4%87X" title="LᴀTᴇX">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 16 December 2010 at 19:03.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv156 in 0.071 secs. -->			</body>
+</html>

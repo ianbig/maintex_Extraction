@@ -1,0 +1,1122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>Fortran - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Fortran&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Fortran&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Fortran",
+wgTitle="Fortran",
+wgAction="view",
+wgArticleId=11168,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=403362963,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["All articles with unsourced statements", "Articles with unsourced statements from August 2010", "Wikipedia further reading cleanup", "Wikipedia spam cleanup from August 2010", "Fortran", "Array programming languages", "Procedural programming languages", "Numerical programming languages", "Object-oriented programming languages", "Parallel computing", "Fortran programming language family", "Computer and telecommunication standards", "Unix programming tools", "Statically typed programming languages", "Programming languages created in the 1950s"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+<style type="text/css">/*<![CDATA[*/
+.source-fortran {line-height: normal;}
+.source-fortran li, .source-fortran pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for fortran
+ * CSS class: source-fortran, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.fortran.source-fortran .de1, .fortran.source-fortran .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.fortran.source-fortran  {font-family:monospace;}
+.fortran.source-fortran .imp {font-weight: bold; color: red;}
+.fortran.source-fortran li, .fortran.source-fortran .li1 {font-weight: normal; vertical-align:top;}
+.fortran.source-fortran .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.fortran.source-fortran .li2 {font-weight: bold; vertical-align:top;}
+.fortran.source-fortran .kw1 {color: #b1b100;}
+.fortran.source-fortran .kw2 {color: #000000; font-weight: bold;}
+.fortran.source-fortran .kw3 {color: #000066;}
+.fortran.source-fortran .kw4 {color: #993333;}
+.fortran.source-fortran .co1 {color: #666666; font-style: italic;}
+.fortran.source-fortran .co2 {color: #339933;}
+.fortran.source-fortran .coMULTI {color: #808080; font-style: italic;}
+.fortran.source-fortran .es0 {color: #000099; font-weight: bold;}
+.fortran.source-fortran .br0 {color: #009900;}
+.fortran.source-fortran .sy0 {color: #339933;}
+.fortran.source-fortran .st0 {color: #ff0000;}
+.fortran.source-fortran .nu0 {color: #cc66cc;}
+.fortran.source-fortran .me1 {color: #202020;}
+.fortran.source-fortran .me2 {color: #202020;}
+.fortran.source-fortran .ln-xtra, .fortran.source-fortran li.ln-xtra, .fortran.source-fortran div.ln-xtra {background-color: #ffc;}
+.fortran.source-fortran span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+/*]]>*/
+</style></head>
+<body class="mediawiki ltr ns-0 ns-subject page-Fortran skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Fortran</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<table class="infobox vevent" cellspacing="5" style="width:22em; text-align:left; font-size:88%; line-height:1.5em;">
+<caption class="summary" style="font-size:125%; font-weight:bold;">Fortran</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="/wiki/File:Fortran_acs_cover.jpeg" class="image"><img alt="Fortran acs cover.jpeg" src="http://upload.wikimedia.org/wikipedia/en/thumb/0/07/Fortran_acs_cover.jpeg/150px-Fortran_acs_cover.jpeg" width="150" height="192" /></a><br />
+<span style=""><i>The Fortran Automatic Coding System for the <a href="/wiki/IBM_704" title="IBM 704">IBM 704</a></i> (October 15, 1956), the first Programmer's Reference Manual for Fortran</span></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td class="" style=""><a href="/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">multi-paradigm</a>: <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a> (<a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>), <a href="/wiki/Structured_programming" title="Structured programming">structured</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="/wiki/Generic_programming" title="Generic programming">generic</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">1957</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style=""><a href="/wiki/John_Backus" title="John Backus">John Backus</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="" style=""><a href="/wiki/John_Backus" title="John Backus">John Backus</a> &amp; <a href="/wiki/IBM" title="IBM">IBM</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">Fortran 2008 (ISO/IEC 1539-1:2010) (2010)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style=""><a href="/wiki/Strongly_typed_programming_language" title="Strongly typed programming language" class="mw-redirect">strong</a>, <a href="/wiki/Type_system" title="Type system">static</a>, <a href="/wiki/Manifest_typing" title="Manifest typing">manifest</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Programming_language_implementation" title="Programming language implementation">Major implementations</a></th>
+<td class="" style="">Absoft, Cray, <a href="/wiki/Gfortran" title="Gfortran">GFortran</a>, <a href="/wiki/G95" title="G95">G95</a>, <a href="/wiki/IBM" title="IBM">IBM</a>, <a href="/wiki/Intel_Fortran_Compiler" title="Intel Fortran Compiler">Intel</a>, Lahey/Fujitsu, <a href="/wiki/Watcom_C_compiler" title="Watcom C compiler" class="mw-redirect">Open Watcom</a>, Pathscale, <a href="/wiki/PGI_compiler" title="PGI compiler">PGI</a>, <a href="/wiki/Silverfrost_FTN95" title="Silverfrost FTN95">Silverfrost</a>, Oracle, <a href="/w/index.php?title=XL_Fortran&amp;action=edit&amp;redlink=1" class="new" title="XL Fortran (page does not exist)">XL Fortran</a>, Visual Fortran, others</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style=""><a href="/wiki/Speedcoding" title="Speedcoding">Speedcoding</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced</th>
+<td class="" style=""><a href="/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a>, <a href="/wiki/BASIC" title="BASIC">BASIC</a>, <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/PL/I" title="PL/I">PL/I</a>, <a href="/wiki/PACT_I" title="PACT I" class="mw-redirect">PACT I</a>, <a href="/wiki/MUMPS" title="MUMPS">MUMPS</a>, <a href="/wiki/Ratfor" title="Ratfor">Ratfor</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Usual <a href="/wiki/Filename_extension" title="Filename extension">file extensions</a></th>
+<td class="" style=""><code>.f</code>, <code>.for</code>, <code>.f90</code>, <code>.f95</code></td>
+</tr>
+</table>
+<p><b>Fortran</b> (previously <b>FORTRAN</b>;<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>note 1<span>]</span></a></sup> both <a href="/wiki/Blend" title="Blend">blends</a> derived from <b>IBM Mathematical Formula Translating System</b>) is a <a href="/wiki/Domain-specific_language" title="Domain-specific language">general-purpose</a>,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>note 2<span>]</span></a></sup> <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>note 3<span>]</span></a></sup> <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a> that is especially suited to <a href="/wiki/Numerical_analysis" title="Numerical analysis">numeric computation</a> and <a href="/wiki/Computational_science" title="Computational science">scientific computing</a>. Originally developed by <a href="/wiki/IBM" title="IBM">IBM</a> at their campus in south <a href="/wiki/San_Jose,_California" title="San Jose, California">San Jose, California</a><sup id="cite_ref-Where_3-0" class="reference"><a href="#cite_note-Where-3"><span>[</span>1<span>]</span></a></sup> in the 1950s for scientific and engineering applications, Fortran came to dominate this area of programming early on and has been in continual use for over half a century in computationally intensive areas such as <a href="/wiki/Numerical_weather_prediction" title="Numerical weather prediction">numerical weather prediction</a>, <a href="/wiki/Finite_element_method" title="Finite element method">finite element analysis</a>, <a href="/wiki/Computational_fluid_dynamics" title="Computational fluid dynamics">computational fluid dynamics</a>, <a href="/wiki/Computational_physics" title="Computational physics">computational physics</a> and <a href="/wiki/Computational_chemistry" title="Computational chemistry">computational chemistry</a>. It was one of the most popular languages in the area of <a href="/wiki/High-performance_computing" title="High-performance computing">high-performance computing</a><sup class="Template-Fact" title="This claim needs references to reliable sources from August 2010" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</sup> and is the language used for programs that benchmark and rank the world's <a href="/wiki/TOP500" title="TOP500">fastest supercomputers</a>.</p>
+<p>Fortran encompasses a lineage of versions, each of which evolved to add extensions to the language while usually retaining compatibility with previous versions. Successive versions have added support for processing of character-based data (<a href="/wiki/Fortran#FORTRAN_77" title="Fortran">FORTRAN 77</a>), <a href="/wiki/Array_programming" title="Array programming">array programming</a>, <a href="/wiki/Modular_programming" title="Modular programming">modular programming</a> and <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-based programming</a> (Fortran <a href="/wiki/Fortran#Fortran_90" title="Fortran">90</a> / <a href="/wiki/Fortran#Fortran_95" title="Fortran">95</a>), and <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> and <a href="/wiki/Generic_programming" title="Generic programming">generic programming</a> (Fortran 2003).</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#FORTRAN"><span class="tocnumber">1.1</span> <span class="toctext">FORTRAN</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#IBM_1401_FORTRAN"><span class="tocnumber">1.2</span> <span class="toctext">IBM 1401 FORTRAN</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#FORTRAN_II"><span class="tocnumber">1.3</span> <span class="toctext">FORTRAN II</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Simple_FORTRAN_II_program"><span class="tocnumber">1.3.1</span> <span class="toctext">Simple FORTRAN II program</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#FORTRAN_III"><span class="tocnumber">1.4</span> <span class="toctext">FORTRAN III</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#FORTRAN_IV"><span class="tocnumber">1.5</span> <span class="toctext">FORTRAN IV</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#FORTRAN_66"><span class="tocnumber">1.6</span> <span class="toctext">FORTRAN 66</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#FORTRAN_77"><span class="tocnumber">1.7</span> <span class="toctext">FORTRAN 77</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Variants:_Minnesota_FORTRAN"><span class="tocnumber">1.7.1</span> <span class="toctext">Variants: Minnesota FORTRAN</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Transition_to_ANSI_Standard_Fortran"><span class="tocnumber">2</span> <span class="toctext">Transition to ANSI Standard Fortran</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Fortran_90"><span class="tocnumber">2.1</span> <span class="toctext">Fortran 90</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Obsolescence_and_deletions"><span class="tocnumber">2.1.1</span> <span class="toctext">Obsolescence and deletions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#Fortran_95"><span class="tocnumber">2.2</span> <span class="toctext">Fortran 95</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#Conditional_compilation_and_varying_length_strings"><span class="tocnumber">2.2.1</span> <span class="toctext">Conditional compilation and varying length strings</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Fortran_2003"><span class="tocnumber">2.3</span> <span class="toctext">Fortran 2003</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Fortran_2008"><span class="tocnumber">2.4</span> <span class="toctext">Fortran 2008</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Legacy"><span class="tocnumber">2.5</span> <span class="toctext">Legacy</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#Language_features"><span class="tocnumber">3</span> <span class="toctext">Language features</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#Portability"><span class="tocnumber">4</span> <span class="toctext">Portability</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#Variants"><span class="tocnumber">5</span> <span class="toctext">Variants</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#Fortran_5"><span class="tocnumber">5.1</span> <span class="toctext">Fortran 5</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Fortran_VI"><span class="tocnumber">5.2</span> <span class="toctext">Fortran VI</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Specific_variants"><span class="tocnumber">5.3</span> <span class="toctext">Specific variants</span></a>
+<ul>
+<li class="toclevel-3 tocsection-25"><a href="#FOR_TRANSIT_for_the_IBM_650"><span class="tocnumber">5.3.1</span> <span class="toctext">FOR TRANSIT for the IBM 650</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-26"><a href="#Fortran-based_languages"><span class="tocnumber">5.4</span> <span class="toctext">Fortran-based languages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="#Code_examples"><span class="tocnumber">6</span> <span class="toctext">Code examples</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#Humor"><span class="tocnumber">7</span> <span class="toctext">Humor</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#Notes"><span class="tocnumber">9</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#Further_reading"><span class="tocnumber">11</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=1" title="Edit section: History">edit</a>]</span> <span class="mw-headline" id="History">History</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:322px;"><a href="/wiki/File:Ibm704.gif" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Ibm704.gif/320px-Ibm704.gif" width="320" height="209" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Ibm704.gif" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+An <a href="/wiki/IBM_704" title="IBM 704">IBM 704</a> <a href="/wiki/Mainframe_computer" title="Mainframe computer">mainframe</a></div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:FortranCardPROJ039.agr.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/58/FortranCardPROJ039.agr.jpg/220px-FortranCardPROJ039.agr.jpg" width="220" height="106" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:FortranCardPROJ039.agr.jpg" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+FORTRAN code on a <a href="/wiki/Punched_card" title="Punched card">punched card</a>, showing the specialized uses of columns 1-5, 6 and 73-80.</div>
+</div>
+</div>
+<p>In late 1953, <a href="/wiki/John_Backus" title="John Backus">John W. Backus</a> submitted a proposal to his superiors at <a href="/wiki/IBM" title="IBM">IBM</a> to develop a more practical alternative to <a href="/wiki/Assembly_language" title="Assembly language">assembly language</a> for programming their <a href="/wiki/IBM_704" title="IBM 704">IBM 704</a> mainframe computer. Backus' historic FORTRAN team consisted of programmers Richard Goldberg, Sheldon F. Best, Harlan Herrick, Peter Sheridan, <a href="/wiki/Roy_Nutt" title="Roy Nutt">Roy Nutt</a>, Robert Nelson, Irving Ziller, <a href="/wiki/Lois_Haibt" title="Lois Haibt">Lois Haibt</a>, and David Sayre.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>2<span>]</span></a></sup></p>
+<p>A draft specification for <i>The IBM Mathematical Formula Translating System</i> was completed by mid-1954. The first manual for FORTRAN appeared in October 1956, with the first FORTRAN <a href="/wiki/Compiler" title="Compiler">compiler</a> delivered in April 1957. This was an <a href="/wiki/Compiler_optimization" title="Compiler optimization">optimizing compiler</a>, because customers were reluctant to use a <a href="/wiki/High-level_programming_language" title="High-level programming language">high-level programming language</a> unless its compiler could generate code whose performance was comparable to that of hand-coded <a href="/wiki/Assembly_language" title="Assembly language">assembly language</a>.</p>
+<p>While the community was skeptical that this new method could possibly out-perform hand-coding, it reduced the number of programming <a href="/wiki/Statement_(programming)" title="Statement (programming)">statements</a> necessary to operate a machine by a factor of 20, and quickly gained acceptance. Said creator John Backus during a 1979 interview with Think, the IBM employee magazine, "Much of my work has come from being lazy. I didn't like writing programs, and so, when I was working on the <a href="/wiki/IBM_701" title="IBM 701">IBM 701</a>, writing programs for computing missile trajectories, I started work on a programming system to make it easier to write programs."<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>3<span>]</span></a></sup></p>
+<p>The language was widely adopted by scientists for writing numerically intensive programs, which encouraged compiler writers to produce compilers that could generate faster and more efficient code. The inclusion of a <a href="/wiki/Complex_number" title="Complex number">complex number</a> <a href="/wiki/Data_type" title="Data type">data type</a> in the language made Fortran especially suited to technical applications such as electrical engineering.</p>
+<p>By 1960, versions of FORTRAN were available for the <a href="/wiki/IBM_709" title="IBM 709">IBM 709</a>, <a href="/wiki/IBM_650" title="IBM 650">650</a>, <a href="/wiki/IBM_1620" title="IBM 1620">1620</a>, and <a href="/wiki/IBM_7090" title="IBM 7090">7090</a> computers. Significantly, the increasing popularity of FORTRAN spurred competing computer manufacturers to provide FORTRAN compilers for their machines, so that by 1963 over 40 FORTRAN compilers existed. For these reasons, FORTRAN is considered to be the first widely used programming language supported across a variety of computer architectures.</p>
+<p>The development of FORTRAN paralleled the <a href="/wiki/History_of_compiler_writing" title="History of compiler writing">early evolution of compiler technology</a>; indeed many advances in the theory and design of <a href="/wiki/Compiler" title="Compiler">compilers</a> were specifically motivated by the need to generate efficient code for FORTRAN programs.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=2" title="Edit section: FORTRAN">edit</a>]</span> <span class="mw-headline" id="FORTRAN">FORTRAN</span></h3>
+<p>The initial release of FORTRAN for the IBM 704 contained 32 <a href="/wiki/Statement_(programming)" title="Statement (programming)">statements</a>, including:</p>
+<ul>
+<li><code>DIMENSION</code> and <code>EQUIVALENCE</code> statements</li>
+<li>Assignment statements</li>
+<li>Three-way <a href="/wiki/Arithmetic_IF" title="Arithmetic IF"><i>arithmetic</i> <code>IF</code></a> statement.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>note 4<span>]</span></a></sup></li>
+<li><code>IF</code> statements for checking exceptions (<code>ACCUMULATOR OVERFLOW</code>, <code>QUOTIENT OVERFLOW</code>, and <code>DIVIDE CHECK</code>); and <code>IF</code> statements for manipulating <a href="/wiki/Front_panel" title="Front panel">sense switches and sense lights</a></li>
+<li><code>GOTO</code>, computed <code>GOTO</code>, <code>ASSIGN</code>, and assigned <code>GOTO</code></li>
+<li><code>DO</code> loops</li>
+<li>Formatted I/O: <code>FORMAT</code>, <code>READ</code>, <code>READ INPUT TAPE</code>, <code>WRITE</code>, <code>WRITE OUTPUT TAPE</code>, <code>PRINT</code>, and <code>PUNCH</code></li>
+<li>Unformatted I/O: <code>READ TAPE</code>, <code>READ DRUM</code>, <code>WRITE TAPE</code>, and <code>WRITE DRUM</code></li>
+<li>Other I/O: <code>END FILE</code>, <code>REWIND</code>, and <code>BACKSPACE</code></li>
+<li><code>PAUSE</code>, <code>STOP</code>, and <code>CONTINUE</code></li>
+<li><code>FREQUENCY</code> statement (for providing <a href="/wiki/Optimization_(computer_science)" title="Optimization (computer science)" class="mw-redirect">optimization</a> hints to the compiler).<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>note 5<span>]</span></a></sup></li>
+</ul>
+<p>Before the development of disk files, text editors and terminals, programs were most often entered on a <a href="/wiki/Keypunch" title="Keypunch">keypunch</a> keyboard onto 80 column punched cards, one line to a card, which would be fed into a card reader in a batch. Originally programs were written in a "fixed" column format. Column 1 was the comment field, a letter C caused the entire card to be ignored by the compiler. Columns 2 to 5 were the label field: a sequence of digits here was taken as a label for the purpose of a GOTO or a FORMAT reference in a WRITE or READ statement. Column 6 was a continuation field: a non-blank character here caused the card to be taken as a continuation of the statement on the previous card. Columns 73 to 80 were ignored, so they were reserved for punching a sequence number which in theory could be used to re-order cards if a stack of cards was dropped, though in practice these were rarely so punched as re-assembling a stack would have to be done manually. Columns 7 to 72 served as the statement field. Later compilers relaxed these restrictions.</p>
+<p>Early FORTRAN compilers did not support <a href="/wiki/Recursion" title="Recursion">recursion</a> in subroutines. Early computer architectures did not support the concept of a stack, and when they did directly support subroutine calls, the return location was often stored in a fixed location adjacent to the subroutine code which does not support more than one level of calling. Although not specified in Fortran 77, many F77 compilers supported recursion as an option, while it became a standard in Fortran 90.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>4<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=3" title="Edit section: IBM 1401 FORTRAN">edit</a>]</span> <span class="mw-headline" id="IBM_1401_FORTRAN">IBM 1401 FORTRAN</span></h3>
+<p>FORTRAN was provided for the IBM 1401 by an innovative 63-pass compiler that ran in only 8k of <a href="/wiki/Magnetic_core_memory" title="Magnetic core memory">core</a>. It kept the program in memory and loaded <a href="/wiki/Overlays" title="Overlays" class="mw-redirect">overlays</a> that gradually transformed it, in place, into executable form, as described by Haines et al.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>5<span>]</span></a></sup> The executable form was not <a href="/wiki/Machine_language" title="Machine language" class="mw-redirect">machine language</a>; rather it was interpreted, anticipating <a href="/wiki/UCSD_Pascal" title="UCSD Pascal">UCSD Pascal</a> <a href="/wiki/P-code_machine#UCSD_p-Machine" title="P-code machine">P-code</a> by two decades.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=4" title="Edit section: FORTRAN II">edit</a>]</span> <span class="mw-headline" id="FORTRAN_II">FORTRAN II</span></h3>
+<p>IBM's <i>FORTRAN II</i> appeared in 1958. The main enhancement was to support <a href="/wiki/Procedural_programming" title="Procedural programming">procedural programming</a> by allowing user-written subroutines and functions which returned values, with parameters passed by <a href="/wiki/Call_by_reference#Call_by_reference" title="Call by reference" class="mw-redirect">reference</a>. The COMMON statement provided a way for subroutines to access common (or <a href="/wiki/Global_variable" title="Global variable">global</a>) variables. Six new statements were introduced:</p>
+<ul>
+<li><code>SUBROUTINE</code>, <code>FUNCTION</code>, and <code>END</code></li>
+<li><code>CALL</code> and <code>RETURN</code></li>
+<li><code>COMMON</code></li>
+</ul>
+<p>Over the next few years, FORTRAN II would also add support for the <code>DOUBLE PRECISION</code> and <code>COMPLEX</code> data types.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=5" title="Edit section: Simple FORTRAN II program">edit</a>]</span> <span class="mw-headline" id="Simple_FORTRAN_II_program">Simple FORTRAN II program</span></h4>
+<p>This program, for <a href="/wiki/Heron%27s_formula" title="Heron's formula">Heron's formula</a>, reads one data card containing three 5-digit integers A, B, and C as input. If A, B, and C cannot represent the sides of a triangle in plane geometry, then the program's execution will end with an error code of "STOP 1". Otherwise, an output line will be printed showing the input values for A, B, and C, followed by the computed AREA of the triangle as a floating-point number with 2 digits after the decimal point.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="fortran source-fortran" style="font-family:monospace;">
+<pre class="de1">
+<span class="co1">C AREA OF A TRIANGLE WITH A STANDARD SQUARE ROOT FUNCTION </span>
+<span class="co1">C INPUT - CARD READER UNIT 5, INTEGER INPUT</span>
+<span class="co1">C OUTPUT - LINE PRINTER UNIT 6, REAL OUTPUT</span>
+<span class="co1">C INPUT ERROR DISPLAY ERROR OUTPUT CODE 1 IN JOB CONTROL LISTING</span>
+      READ INPUT TAPE <span class="nu0">5</span>, <span class="nu0">501</span>, IA, IB, IC
+  <span class="nu0">501</span> FORMAT <span class="br0">(</span>3I5<span class="br0">)</span>
+<span class="co1">C IA, IB, AND IC MAY NOT BE NEGATIVE</span>
+<span class="co1">C FURTHERMORE, THE SUM OF TWO SIDES OF A TRIANGLE</span>
+<span class="co1">C IS GREATER THAN THE THIRD SIDE, SO WE CHECK FOR THAT, TOO</span>
+      <span class="kw1">IF</span> <span class="br0">(</span>IA<span class="br0">)</span> 777, 777, 701
+  701 <span class="kw1">IF</span> <span class="br0">(</span>IB<span class="br0">)</span> 777, 777, 702
+  702 <span class="kw1">IF</span> <span class="br0">(</span>IC<span class="br0">)</span> 777, 777, 703
+  703 <span class="kw1">IF</span> <span class="br0">(</span>IA<span class="sy0">+</span>IB<span class="sy0">-</span>IC<span class="br0">)</span> 777,777,704
+  704 <span class="kw1">IF</span> <span class="br0">(</span>IA<span class="sy0">+</span>IC<span class="sy0">-</span>IB<span class="br0">)</span> 777,777,705
+  705 <span class="kw1">IF</span> <span class="br0">(</span>IB<span class="sy0">+</span>IC<span class="sy0">-</span>IA<span class="br0">)</span> 777,777,799
+  777 <span class="kw1">STOP</span> <span class="nu0">1</span>
+<span class="co1">C USING HERON'S FORMULA WE CALCULATE THE</span>
+<span class="co1">C AREA OF THE TRIANGLE</span>
+  799 S <span class="sy0">=</span> FLOATF <span class="br0">(</span>IA <span class="sy0">+</span> IB <span class="sy0">+</span> IC<span class="br0">)</span> <span class="sy0">/</span> 2.0
+      AREA <span class="sy0">=</span> <span class="kw4">SQRT</span><span class="br0">(</span> S <span class="sy0">*</span> <span class="br0">(</span>S <span class="sy0">-</span> FLOATF<span class="br0">(</span>IA<span class="br0">)</span><span class="br0">)</span> <span class="sy0">*</span> <span class="br0">(</span>S <span class="sy0">-</span> FLOATF<span class="br0">(</span>IB<span class="br0">)</span><span class="br0">)</span> <span class="sy0">*</span>
+     <span class="sy0">+</span>     <span class="br0">(</span>S <span class="sy0">-</span> FLOATF<span class="br0">(</span>IC<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+      WRITE OUTPUT TAPE 6, 601, IA, IB, IC, AREA
+  601 FORMAT <span class="br0">(</span>4H A<span class="sy0">=</span> ,I5,5H  B<span class="sy0">=</span> ,I5,5H  C<span class="sy0">=</span> ,I5,8H  AREA<span class="sy0">=</span> ,F10.2, 
+     <span class="sy0">+</span>        13H SQUARE UNITS<span class="br0">)</span>
+      <span class="kw1">STOP</span>
+      <span class="kw1">END</span>
+</pre></div>
+</div>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=6" title="Edit section: FORTRAN III">edit</a>]</span> <span class="mw-headline" id="FORTRAN_III">FORTRAN III</span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:FortranCodingForm.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/18/FortranCodingForm.png/300px-FortranCodingForm.png" width="300" height="190" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:FortranCodingForm.png" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+A FORTRAN coding form, formerly printed on paper and intended to be used by programmers to prepare programs for punching onto cards by <a href="/wiki/Keypunch" title="Keypunch">keypunch</a> operators. Now obsolete.</div>
+</div>
+</div>
+<p>IBM also developed a <i>FORTRAN III</i> in 1958 that allowed for inline assembler code among other features; however, this version was never released as a product. Like the 704 FORTRAN and FORTRAN II, FORTRAN III included machine-dependent features that made code written in it unportable from machine to machine. Early versions of FORTRAN provided by other vendors suffered from the same disadvantage.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=7" title="Edit section: FORTRAN IV">edit</a>]</span> <span class="mw-headline" id="FORTRAN_IV">FORTRAN IV</span></h3>
+<p>Starting in 1961, as a result of customer demands, IBM began development of a <i>FORTRAN IV</i> that removed the machine-dependent features of FORTRAN II (such as <code>READ INPUT TAPE</code>), while adding new features such as a <code>LOGICAL</code> data type, logical <a href="/wiki/Boolean_expression" title="Boolean expression">Boolean expressions</a> and the <i>logical IF statement</i> as an alternative to the <i>arithmetic IF statement.</i> FORTRAN IV was eventually released in 1962, first for the <a href="/wiki/IBM_7030_Stretch" title="IBM 7030 Stretch">IBM 7030</a> ("Stretch") computer, followed by versions for the <a href="/wiki/IBM_7090" title="IBM 7090">IBM 7090</a> and <a href="/wiki/IBM_7090" title="IBM 7090">IBM 7094</a>.</p>
+<p>By 1965, Fortran IV was supposed to be the "standard" and in compliance with <a href="/wiki/American_National_Standards_Institute" title="American National Standards Institute">American Standards Association</a> X3.4.3 FORTRAN Working Group.<sup id="cite_ref-McCracken_10-0" class="reference"><a href="#cite_note-McCracken-10"><span>[</span>6<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=8" title="Edit section: FORTRAN 66">edit</a>]</span> <span class="mw-headline" id="FORTRAN_66">FORTRAN 66</span></h3>
+<p>Perhaps the most significant development in the early history of FORTRAN was the decision by the <i>American Standards Association</i> (now <a href="/wiki/American_National_Standards_Institute" title="American National Standards Institute">ANSI</a>) to form a committee to develop an "American Standard Fortran." The resulting two standards, approved in March 1966, defined two languages, <i>FORTRAN</i> (based on FORTRAN IV, which had served as a <i>de facto</i> standard), and <i>Basic FORTRAN</i> (based on FORTRAN II, but stripped of its machine-dependent features). The FORTRAN defined by the first standard became known as <i>FORTRAN 66</i> (although many continued to refer to it as FORTRAN IV, the language upon which the standard was largely based). FORTRAN 66 effectively became the first "industry-standard" version of FORTRAN. FORTRAN 66 included:</p>
+<ul>
+<li>Main program, <code>SUBROUTINE</code>, <code>FUNCTION</code>, and <code>BLOCK DATA</code> program units</li>
+<li><code>INTEGER</code>, <code>REAL</code>, <code>DOUBLE PRECISION</code>, <code>COMPLEX</code>, and <code>LOGICAL</code> <a href="/wiki/Data_type" title="Data type">data types</a></li>
+<li><code>COMMON</code>, <code>DIMENSION</code>, and <code>EQUIVALENCE</code> statements</li>
+<li><code>DATA</code> statement for specifying initial values</li>
+<li><a href="/wiki/Intrinsic_function" title="Intrinsic function">Intrinsic</a> and <code>EXTERNAL</code> (<i>e.g.,</i> library) functions</li>
+<li>Assignment statement</li>
+<li><code>GOTO</code>, assigned <code>GOTO</code>, and computed <code>GOTO</code> statements</li>
+<li>Logical <code>IF</code> and arithmetic (three-way) <code>IF</code> statements</li>
+<li><code>DO</code> loops</li>
+<li><code>READ</code>, <code>WRITE</code>, <code>BACKSPACE</code>, <code>REWIND</code>, and <code>ENDFILE</code> statements for sequential I/O</li>
+<li><code>FORMAT</code> statement</li>
+<li><code>CALL</code>, <code>RETURN</code>, <code>PAUSE</code>, and <code>STOP</code> statements</li>
+<li><a href="/wiki/Hollerith_constant" title="Hollerith constant">Hollerith constants</a> in <code>DATA</code> and <code>FORMAT</code> statements, and as actual arguments to procedures</li>
+<li>Identifiers of up to six characters in length</li>
+<li>Comment lines</li>
+</ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=9" title="Edit section: FORTRAN 77">edit</a>]</span> <span class="mw-headline" id="FORTRAN_77">FORTRAN 77</span></h3>
+<p>After the release of the FORTRAN 66 standard, compiler vendors introduced a number of extensions to "Standard Fortran", prompting ANSI in 1969 to begin work on revising the 1966 standard. Final drafts of this revised standard circulated in 1977, leading to formal approval of the new FORTRAN standard in April 1978. The new standard, known as <i>FORTRAN 77</i>, added a number of significant features to address many of the shortcomings of FORTRAN 66:</p>
+<ul>
+<li>Block <code>IF</code> and <code>END IF</code> statements, with optional <code>ELSE</code> and <code>ELSE IF</code> clauses, to provide improved language support for <a href="/wiki/Structured_programming" title="Structured programming">structured programming</a></li>
+<li>DO loop extensions, including parameter expressions, negative increments, and zero trip counts</li>
+<li><code>OPEN</code>, <code>CLOSE</code>, and <code>INQUIRE</code> statements for improved I/O capability</li>
+<li>Direct-access file I/O</li>
+<li><code>IMPLICIT</code> statement</li>
+<li><code>CHARACTER</code> data type, with vastly expanded facilities for character input and output and processing of character-based data</li>
+<li><code>PARAMETER</code> statement for specifying constants</li>
+<li><code>SAVE</code> statement for persistent local variables</li>
+<li>Generic names for intrinsic functions</li>
+<li>A set of intrinsics (<code>LGE, LGT, LLE, LLT</code>) for <u>lexical</u> comparison of strings, based upon the <a href="/wiki/ASCII" title="ASCII">ASCII</a> collating sequence.</li>
+</ul>
+<dl>
+<dd><i>(ASCII functions were demanded by the <a href="/wiki/United_States_Department_of_Defense" title="United States Department of Defense">U.S. Department of Defense</a>, in their conditional approval vote.)</i></dd>
+</dl>
+<p>In this revision of the standard, a number of features were removed or altered in a manner that might invalidate previously standard-conforming programs. <i>(Removal was the only allowable alternative to X3J3 at that time, since the concept of "deprecation" was not yet available for ANSI standards.)</i> While most of the 24 items in the conflict list (see Appendix A2 of X3.9-1978) addressed loopholes or pathological cases permitted by the previous standard but rarely used, a small number of specific capabilities were deliberately removed, such as:</p>
+<ul>
+<li><a href="/wiki/Hollerith_constant" title="Hollerith constant">Hollerith constants</a> and <a href="/wiki/Herman_Hollerith" title="Herman Hollerith">Hollerith</a> data, such as:</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><tt>GREET = 12HHELLO THERE!</tt></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>Reading into a H edit (Hollerith field) descriptor in a FORMAT specification.</li>
+<li>Overindexing of array bounds by subscripts.</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><code>DIMENSION A(10,5)</code></dd>
+<dd><code>Y= A(11,1)</code></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>Transfer of control into the range of a DO loop (also known as "Extended Range").</li>
+</ul>
+<h4><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=10" title="Edit section: Variants: Minnesota FORTRAN">edit</a>]</span> <span class="mw-headline" id="Variants:_Minnesota_FORTRAN">Variants: Minnesota FORTRAN</span></h4>
+<p><a href="/wiki/Control_Data_Corporation" title="Control Data Corporation">Control Data Corporation</a> computers had another version of FORTRAN 77, called Minnesota FORTRAN (MNF), designed especially for student use, with variations in output constructs, special uses of COMMONs and DATA statements, optimizations code levels for compiling, and detailed error listings, extensive warning messages, and debugs.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>7<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=11" title="Edit section: Transition to ANSI Standard Fortran">edit</a>]</span> <span class="mw-headline" id="Transition_to_ANSI_Standard_Fortran">Transition to ANSI Standard Fortran</span></h2>
+<p>The development of a revised standard to succeed FORTRAN 77 would be repeatedly delayed as the standardization process struggled to keep up with rapid changes in computing and programming practice. In the meantime, as the "Standard FORTRAN" for nearly fifteen years, FORTRAN 77 would become the historically most important dialect.</p>
+<p><br />
+An important practical extension to FORTRAN 77 was the release of MIL-STD-1753 in 1978.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>8<span>]</span></a></sup> This specification, developed by the <a href="/wiki/United_States_Department_of_Defense" title="United States Department of Defense">U.S. Department of Defense</a>, standardized a number of features implemented by most FORTRAN 77 compilers but not included in the ANSI FORTRAN 77 standard. These features would eventually be incorporated into the Fortran 90 standard.</p>
+<ul>
+<li><code>DO WHILE</code> and <code>END DO</code> statements</li>
+<li><code>INCLUDE</code> statement</li>
+<li><code>IMPLICIT NONE</code> variant of the <code>IMPLICIT</code> statement</li>
+<li><a href="/wiki/Bit_manipulation" title="Bit manipulation">Bit manipulation</a> intrinsic functions, based on similar functions included in <a href="/wiki/Industrial_Real-Time_Fortran" title="Industrial Real-Time Fortran">Industrial Real-Time Fortran (ANSI/ISA S61.1 (1976))</a></li>
+</ul>
+<p>The <a href="/wiki/Institute_of_Electrical_and_Electronics_Engineers" title="Institute of Electrical and Electronics Engineers">IEEE</a> 1003.9 <a href="/wiki/POSIX" title="POSIX">POSIX</a> Standard, released in 1991, provided a simple means for FORTRAN 77 programmers to issue POSIX system calls.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>9<span>]</span></a></sup> Over 100 calls were defined in the document — allowing access to POSIX-compatible process control, signal handling, file system control, device control, procedure pointing, and stream I/O in a portable manner.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=12" title="Edit section: Fortran 90">edit</a>]</span> <span class="mw-headline" id="Fortran_90">Fortran 90</span></h3>
+<p>The much delayed successor to FORTRAN 77, informally known as <i>Fortran 90</i> (and prior to that, <i>Fortran 8X</i>), was finally released as an ISO standard in 1991 and an ANSI Standard in 1992. This major revision added many new features to reflect the significant changes in programming practice that had evolved since the 1978 standard:</p>
+<ul>
+<li><a href="/wiki/Free-form_language" title="Free-form language">Free-form source input</a>, also with lowercase Fortran keywords</li>
+<li>Identifiers up to 31 characters in length</li>
+<li>Inline comments</li>
+<li>Ability to operate on arrays (or array sections) as a whole, thus greatly simplifying math and engineering computations.
+<ul>
+<li>whole, partial and masked array assignment statements and array expressions, such as &#160; <code>X(1:N)=R(1:N)*COS(A(1:N))</code></li>
+<li><code>WHERE</code> statement for selective array assignment</li>
+<li>array-valued constants and expressions,</li>
+<li>user-defined array-valued functions and array constructors.</li>
+</ul>
+</li>
+<li><a href="/wiki/Recursion_(computer_science)" title="Recursion (computer science)"><code>RECURSIVE</code></a> procedures</li>
+<li><a href="/wiki/Modular_programming" title="Modular programming">Modules</a>, to group related <a href="/wiki/Subroutine" title="Subroutine">procedures</a> and data together, and make them available to other program units, including the capability to limit the accessibility to only specific parts of the module.</li>
+<li>A vastly improved argument-passing mechanism, allowing <a href="/wiki/Type_signature" title="Type signature">interfaces</a> to be checked at compile time</li>
+<li>User-written interfaces for generic procedures</li>
+<li><a href="/wiki/Operator_overloading" title="Operator overloading">Operator overloading</a></li>
+<li>Derived/<a href="/wiki/Abstract_data_type" title="Abstract data type">abstract</a> data types</li>
+<li>New data type declaration syntax, to specify the data type and other attributes of variables</li>
+<li><a href="/wiki/Dynamic_memory_allocation" title="Dynamic memory allocation">Dynamic memory allocation</a> by means of the <code>ALLOCATABLE</code> attribute and the <code>ALLOCATE</code> and <code>DEALLOCATE</code> statements</li>
+<li><a href="/wiki/Pointer_(computing)" title="Pointer (computing)"><code>POINTER</code></a> attribute, pointer assignment, and <code>NULLIFY</code> statement to facilitate the creation and manipulation of dynamic <a href="/wiki/Data_structure" title="Data structure">data structures</a></li>
+<li>Structured looping constructs, with an <code>END DO</code> statement for loop termination, and <code>EXIT</code> and <code>CYCLE</code> statements for "breaking out" of normal <code>DO</code> loop iterations in an orderly way</li>
+<li><code>SELECT</code> . . . <code>CASE</code> construct for multi-way selection</li>
+<li>Portable specification of numerical precision under the user's control</li>
+<li>New and enhanced intrinsic procedures.</li>
+</ul>
+<h5><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=13" title="Edit section: Obsolescence and deletions">edit</a>]</span> <span class="mw-headline" id="Obsolescence_and_deletions">Obsolescence and deletions</span></h5>
+<p>Unlike the previous revision, Fortran 90 did not delete any features. <i>(Appendix B.1 says, "The list of deleted features in this standard is empty.")</i> Any standard-conforming FORTRAN 77 program is also standard-conforming under Fortran 90, and either standard should be usable to define its behavior.</p>
+<p>A small set of features were identified as "obsolescent" and expected to be removed in a future standard.</p>
+<table class="wikitable">
+<tr>
+<th>Obsolescent feature</th>
+<th>Example</th>
+<th>Status / Fate in Fortran 95</th>
+</tr>
+<tr>
+<td>Arithmetic IF-statement</td>
+<td><code>&#160; &#160; IF (X) 10, 20, 30</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Non-integer DO parameters or control variables</td>
+<td><code>&#160; &#160; DO 9 X= 1.7, 1.6, -0.1</code></td>
+<td>Deleted</td>
+</tr>
+<tr>
+<td>Shared DO-loop termination or<br />
+termination with a statement<br />
+other than END DO or CONTINUE &#160;</td>
+<td><code>&#160; &#160; DO 9 J= 1, 10<br /></code>
+<p><code>&#160; &#160; &#160; &#160; DO 9 K= 1, 10<br />
+9 &#160; L= J + K</code></p>
+</td>
+</tr>
+<tr>
+<td>Branching to END IF<br />
+<p>from outside a block</p>
+</td>
+<td><code>66&#160; GO TO 77&#160;; . . .<br /></code>
+<p><code>&#160; &#160; IF (E) THEN&#160;; &#160; &#160; . . .<br />
+77&#160; END IF</code></p>
+</td>
+<td>Deleted</td>
+</tr>
+<tr>
+<td>Alternate return</td>
+<td><code>&#160; &#160; CALL SUBR( X, Y *100, *200 )</code></td>
+<td></td>
+</tr>
+<tr>
+<td>PAUSE statement</td>
+<td><code>&#160; &#160; PAUSE 600</code></td>
+<td>Deleted</td>
+</tr>
+<tr>
+<td>ASSIGN statement<br />
+&#160; and assigned GO TO statement</td>
+<td><code>100&#160; . . .</code>
+<p><code>&#160; &#160; ASSIGN 100 TO H<br />
+&#160; &#160; . . .<br />
+&#160; &#160; GO TO H . . .</code></p>
+</td>
+<td>Deleted</td>
+</tr>
+<tr>
+<td>Assigned FORMAT specifiers</td>
+<td><code>&#160; &#160; ASSIGN F TO 606</code></td>
+<td>Deleted</td>
+</tr>
+<tr>
+<td>H edit descriptors</td>
+<td><code>606&#160;FORMAT ( 9H1GOODBYE. )</code></td>
+<td>Deleted</td>
+</tr>
+<tr>
+<td>Computed GO TO statement</td>
+<td><code>&#160; &#160; GO TO (10, 20, 30, 40), index</code></td>
+<td>(Obso.)</td>
+</tr>
+<tr>
+<td>Statement functions</td>
+<td><code>&#160; &#160; FOIL( X, Y )= X**2 + 2*X*Y + Y**2</code></td>
+<td>(Obso.)</td>
+</tr>
+<tr>
+<td>DATA statements<br />
+&#160; among executable statements</td>
+<td><code>&#160; &#160; X= 27.3<br /></code>
+<p><code>&#160; &#160; DATA A, B, C / 5.0, 12.0. 13.0 / &#160; &#160; . . .</code></p>
+</td>
+<td>(Obso.)</td>
+</tr>
+<tr>
+<td>CHARACTER* form of CHARACTER declaration</td>
+<td><code>&#160; &#160; CHARACTER*8 STRING &#160;&#160;! Use CHARACTER(8)</code></td>
+<td>(Obso.)</td>
+</tr>
+<tr>
+<td>Assumed character length functions</td>
+<td></td>
+</tr>
+<tr>
+<td>Fixed form source code</td>
+<td>* Column 1 contains * or&#160;! or C for comments.<br />
+C &#160; &#160; &#160; Column 6 for continuation.</td>
+<td></td>
+</tr>
+</table>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=14" title="Edit section: Fortran 95">edit</a>]</span> <span class="mw-headline" id="Fortran_95">Fortran 95</span></h3>
+<p><i>Fortran 95</i> was a minor revision, mostly to resolve some outstanding issues from the Fortran 90 standard. Nevertheless, Fortran 95 also added a number of extensions, notably from the <a href="/wiki/High_Performance_Fortran" title="High Performance Fortran">High Performance Fortran</a> specification:</p>
+<ul>
+<li><code>FORALL</code> and nested <code>WHERE</code> constructs to aid vectorization</li>
+<li>User-defined <code>PURE</code> and <code>ELEMENTAL</code> procedures</li>
+<li>Default initialization of derived type components, including pointer initialization</li>
+<li>Expanded the ability to use initialization expressions for data objects</li>
+<li>Clearly defined that <code>ALLOCATABLE</code> arrays are automatically deallocated when they go out of scope.</li>
+</ul>
+<p>A number of intrinsic functions were extended (for example a <code>dim</code> argument was added to the <code>maxloc</code> intrinsic).</p>
+<p>Several features noted in Fortran 90 to be deprecated were removed from Fortran 95:</p>
+<ul>
+<li><code>DO</code> statements using <code>REAL</code> and <code>DOUBLE PRECISION</code> variables</li>
+<li>Branching to an <code>END IF</code> statement from outside its block</li>
+<li><code>PAUSE</code> statement</li>
+<li><code>ASSIGN</code> and assigned <code>GOTO</code> statement, and assigned format specifiers</li>
+<li><code>H</code> edit descriptor.</li>
+</ul>
+<p>An important supplement to Fortran 95 was the <a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">ISO technical report</a> <i>TR-15581: Enhanced Data Type Facilities</i>, informally known as the <i>Allocatable TR.</i> This specification defined enhanced use of <code>ALLOCATABLE</code> arrays, prior to the availability of fully Fortran 2003-compliant Fortran compilers. Such uses include <code>ALLOCATABLE</code> arrays as derived type components, in procedure dummy argument lists, and as function return values. (<code>ALLOCATABLE</code> arrays are preferable to <code>POINTER</code>-based arrays because <code>ALLOCATABLE</code> arrays are guaranteed by Fortran 95 to be deallocated automatically when they go out of scope, eliminating the possibility of <a href="/wiki/Memory_leak" title="Memory leak">memory leakage</a>. In addition, <a href="/wiki/Aliasing_(computing)" title="Aliasing (computing)">aliasing</a> is not an issue for optimization of array references, allowing compilers to generate faster code than in the case of pointers.)</p>
+<p>Another important supplement to Fortran 95 was the <a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a> technical report <i>TR-15580: Floating-point exception handling</i>, informally known as the <i>IEEE TR.</i> This specification defined support for <a href="/wiki/IEEE_754-2008" title="IEEE 754-2008">IEEE floating-point arithmetic</a> and <a href="/wiki/Floating_point" title="Floating point">floating point</a> <a href="/wiki/Exception_handling" title="Exception handling">exception handling</a>.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=15" title="Edit section: Conditional compilation and varying length strings">edit</a>]</span> <span class="mw-headline" id="Conditional_compilation_and_varying_length_strings">Conditional compilation and varying length strings</span></h4>
+<p>In addition to the mandatory "Base language" (defined in ISO/IEC 1539-1&#160;: 1997), the Fortran 95 language also includes two optional modules:</p>
+<ul>
+<li>Varying character strings (ISO/IEC 1539-2&#160;: 2000)</li>
+<li>Conditional compilation (ISO/IEC 1539-3&#160;: 1998)</li>
+</ul>
+<p>which, together, comprise the multi-part International Standard (ISO/IEC 1539).</p>
+<p>According to the standards developers, "the optional parts describe self-contained features which have been requested by a substantial body of users and/or implementors, but which are not deemed to be of sufficient generality for them to be required in all standard-conforming Fortran compilers." Nevertheless, if a standard-conforming Fortran does provide such options, then they "must be provided in accordance with the description of those facilities in the appropriate Part of the Standard."</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=16" title="Edit section: Fortran 2003">edit</a>]</span> <span class="mw-headline" id="Fortran_2003">Fortran 2003</span></h3>
+<p><i>Fortran 2003</i> is a major revision introducing many new features. A comprehensive summary of the new features of Fortran 2003 is available at the Fortran Working Group (WG5) official Web site.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>10<span>]</span></a></sup></p>
+<p>From that article, the major enhancements for this revision include:</p>
+<ul>
+<li>Derived type enhancements: parameterized derived types, improved control of accessibility, improved structure constructors, and finalizers.</li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented programming</a> support: <a href="/wiki/Inheritance_(computer_science)" title="Inheritance (computer science)" class="mw-redirect">type extension and inheritance</a>, <a href="/wiki/Type_polymorphism" title="Type polymorphism">polymorphism</a>, dynamic type allocation, and type-bound procedures.</li>
+<li>Data manipulation enhancements: allocatable components (incorporating TR 15581), deferred type parameters, <a href="/wiki/Volatile_variable" title="Volatile variable"><code>VOLATILE</code> attribute</a>, explicit type specification in array constructors and allocate statements, pointer enhancements, extended initialization expressions, and enhanced intrinsic procedures.</li>
+<li>Input/output enhancements: <a href="/wiki/Asynchrony" title="Asynchrony">asynchronous</a> transfer, stream access, user specified transfer operations for derived types, user specified control of rounding during format conversions, named constants for preconnected units, the <code>FLUSH</code> statement, regularization of keywords, and access to error messages.</li>
+<li><a href="/wiki/Function_pointer" title="Function pointer">Procedure pointers</a>.</li>
+<li>Support for <a href="/wiki/IEEE_754-2008" title="IEEE 754-2008">IEEE floating-point arithmetic</a> and <a href="/wiki/Floating_point" title="Floating point">floating point</a> <a href="/wiki/Exception_handling" title="Exception handling">exception handling</a> (incorporating TR 15580).</li>
+<li>Interoperability with the <a href="/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>.</li>
+<li>Support for international usage: access to <a href="/wiki/Universal_Character_Set" title="Universal Character Set">ISO 10646</a> 4-byte characters and choice of decimal or comma in numeric formatted input/output.</li>
+<li>Enhanced integration with the host operating system: access to <a href="/wiki/Command-line_interface" title="Command-line interface">command line</a> arguments, <a href="/wiki/Environment_variable" title="Environment variable">environment variables</a>, and processor error messages.</li>
+</ul>
+<p>An important supplement to Fortran 2003 was the <a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">ISO technical report</a> <i>TR-19767: Enhanced module facilities in Fortran.</i> This report provided <i>submodules,</i> which make Fortran modules more similar to <a href="/wiki/Modula-2" title="Modula-2">Modula-2</a> modules. They are similar to <a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> private child subunits. This allows the specification and implementation of a module to be expressed in separate program units, which improves packaging of large libraries, allows preservation of trade secrets while publishing definitive interfaces, and prevents compilation cascades.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=17" title="Edit section: Fortran 2008">edit</a>]</span> <span class="mw-headline" id="Fortran_2008">Fortran 2008</span></h3>
+<p>The most recent standard, ISO/IEC 1539-1:2010, informally known as Fortran 2008, was approved in September 2010 <sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>11<span>]</span></a></sup>. As with Fortran 95, this is a minor upgrade, incorporating clarifications and corrections to Fortran 2003, as well as introducing a select few new capabilities. The new capabilities include:</p>
+<ul>
+<li>Submodules – Additional structuring facilities for modules; supersedes ISO/IEC TR 19767:2005</li>
+<li><a href="/wiki/Co-array_Fortran" title="Co-array Fortran">Co-array Fortran</a> – a parallel execution model</li>
+<li>The <a href="/wiki/Scalable_parallelism" title="Scalable parallelism">DO CONCURRENT</a> construct – for loop iterations with no interdependencies</li>
+<li>The CONTIGUOUS attribute – to specify storage layout restrictions</li>
+<li>The <a href="/wiki/Dynamic_scoping" title="Dynamic scoping" class="mw-redirect">BLOCK construct</a> – can contain declarations of objects with construct scope</li>
+<li><a href="/wiki/Recursive_data_type" title="Recursive data type">Recursive allocatable components</a> – as an alternative to recursive pointers in derived types</li>
+</ul>
+<p>The Final Draft international Standard (FDIS) is available as document N1830<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>12<span>]</span></a></sup>.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=18" title="Edit section: Legacy">edit</a>]</span> <span class="mw-headline" id="Legacy">Legacy</span></h3>
+<p>Since Fortran has been in use for more than fifty years, there is a vast body of Fortran in daily use throughout the scientific and engineering communities. It is the primary language for some of the most intensive supercomputing tasks, such as <a href="/wiki/Numerical_weather_prediction" title="Numerical weather prediction">weather</a> and <a href="/wiki/Climate_model" title="Climate model">climate modeling</a>, <a href="/wiki/Computational_fluid_dynamics" title="Computational fluid dynamics">computational fluid dynamics</a>, <a href="/wiki/Computational_chemistry" title="Computational chemistry">computational chemistry</a>, computational economics, <a href="/wiki/Animal_breeding" title="Animal breeding">animal breeding</a>, <a href="/wiki/Plant_breeding" title="Plant breeding">plant breeding</a> and <a href="/wiki/Computational_physics" title="Computational physics">computational physics</a>. Even today, half a century later, many of the floating-point benchmarks to gauge the performance of new computer processors are still written in Fortran (<i>e.g.,</i> <a href="http://www.spec.org/cpu2006/CFP2006/" class="external text" rel="nofollow">CFP2006</a>, the floating-point component of the <a href="/wiki/Standard_Performance_Evaluation_Corporation" title="Standard Performance Evaluation Corporation">SPEC</a> <a href="http://www.spec.org/cpu2006/" class="external text" rel="nofollow">CPU2006</a> benchmarks).</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=19" title="Edit section: Language features">edit</a>]</span> <span class="mw-headline" id="Language_features">Language features</span></h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/Fortran_language_features" title="Fortran language features" class="mw-redirect">Fortran language features</a></div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=20" title="Edit section: Portability">edit</a>]</span> <span class="mw-headline" id="Portability">Portability</span></h2>
+<p>Portability was a problem in the early days because there was no agreed standard—not even IBM's reference manual—and computer companies vied to differentiate their offerings from others by providing incompatible features. Standards have improved portability. The 1966 standard provided a reference syntax and semantics, but vendors continued to provide incompatible extensions. Although careful programmers were coming to realize that use of incompatible extensions caused expensive portability problems, and were therefore using programs such as <i>The PFORT Verifier,</i> it was not until after the 1977 standard, when the National Bureau of Standards (now <a href="/wiki/National_Institute_of_Standards_and_Technology" title="National Institute of Standards and Technology">NIST</a>) published <i>FIPS PUB 69</i>, that processors purchased by the U.S. Government were required to diagnose extensions of the standard. Rather than offer two processors, essentially every compiler eventually had at least an option to diagnose extensions.</p>
+<p>Incompatible extensions were not the only portability problem. For numerical calculations, it is important to take account of the characteristics of the arithmetic. This was addressed by Fox et al. in the context of the 1966 standard by the <i>PORT</i> library. The ideas therein became widely used, and were eventually incorporated into the 1990 standard by way of intrinsic inquiry functions. The widespread (now almost universal) adoption of the <a href="/wiki/IEEE_754-2008" title="IEEE 754-2008">IEEE 754</a> standard for binary floating-point arithmetic has essentially removed this problem.</p>
+<p>Access to the computing environment (e.g. the program's command line, environment variables, textual explanation of error conditions) remained a problem until it was addressed by the 2003 standard.</p>
+<p>Large collections of "library" software that could be described as being loosely related to engineering and scientific calculations, such as graphics libraries, have been written in C, and therefore access to them presented a portability problem. This has been addressed by incorporation of C interoperability into the 2003 standard.</p>
+<p>It is now possible (and relatively easy) to write an entirely portable program in Fortran, even without recourse to a preprocessor.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=21" title="Edit section: Variants">edit</a>]</span> <span class="mw-headline" id="Variants">Variants</span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=22" title="Edit section: Fortran 5">edit</a>]</span> <span class="mw-headline" id="Fortran_5">Fortran 5</span></h3>
+<p>Fortran 5 was a programming language marketed by <a href="/wiki/Data_General" title="Data General">Data General</a> Corp in the late <a href="/wiki/1970" title="1970">1970s</a> and early 80s, for the <a href="/wiki/Data_General_Nova" title="Data General Nova">Nova</a>, <a href="/wiki/Data_General_Eclipse" title="Data General Eclipse">Eclipse</a>, and <a href="/wiki/Data_General_Eclipse_MV/8000" title="Data General Eclipse MV/8000">MV</a> line of computers. It had an optimizing compiler that was quite good for minicomputers of its time. The language most closely resembles Fortran 66. The name is a <a href="/wiki/Pun" title="Pun">pun</a> on the earlier Fortran IV.</p>
+<p>Univac also offered a compiler for the 1100 series known as Fortran V. A spinoff of Univac Fortran V was Athena Fortran.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=23" title="Edit section: Fortran VI">edit</a>]</span> <span class="mw-headline" id="Fortran_VI">Fortran VI</span></h3>
+<p>Fortran VI was a programming language distributed by <a href="/wiki/Control_Data_Corporation" title="Control Data Corporation">Control Data Corporation</a> in 1968 for the <a href="/wiki/CDC_6600" title="CDC 6600">CDC 6600</a> series. The language was based upon Fortran IV.<sup id="cite_ref-FIV_17-0" class="reference"><a href="#cite_note-FIV-17"><span>[</span>13<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=24" title="Edit section: Specific variants">edit</a>]</span> <span class="mw-headline" id="Specific_variants">Specific variants</span></h3>
+<p>Vendors of high-performance scientific computers (<i>e.g.,</i> <a href="/wiki/Burroughs_Corporation" title="Burroughs Corporation">Burroughs</a>, <a href="/wiki/Control_Data_Corporation" title="Control Data Corporation">CDC</a>, <a href="/wiki/Cray" title="Cray">Cray</a>, <a href="/wiki/Honeywell" title="Honeywell">Honeywell</a>, <a href="/wiki/IBM" title="IBM">IBM</a>, <a href="/wiki/Texas_Instruments" title="Texas Instruments">Texas Instruments</a>, and <a href="/wiki/UNIVAC" title="UNIVAC">UNIVAC</a>) added extensions to Fortran to take advantage of special hardware features such as <a href="/wiki/Cache" title="Cache">instruction cache</a>, CPU <a href="/wiki/Pipeline_(computing)" title="Pipeline (computing)">pipelines</a>, and vector arrays. For example, one of IBM's FORTRAN compilers (<i>H Extended IUP</i>) had a level of optimization which reordered the <a href="/wiki/Machine_code" title="Machine code">machine code</a> <a href="/wiki/Instruction_(computer_science)" title="Instruction (computer science)">instructions</a> to keep multiple internal arithmetic units busy simultaneously. Another example is <i>CFD</i>, a special variant of Fortran designed specifically for the <a href="/wiki/ILLIAC_IV" title="ILLIAC IV">ILLIAC IV</a> supercomputer, running at <a href="/wiki/NASA" title="NASA">NASA</a>'s <a href="/wiki/NASA_Ames_Research_Center" title="NASA Ames Research Center" class="mw-redirect">Ames Research Center</a>. IBM Research Labs also developed an extended FORTRAN-based language called "VECTRAN" for processing of vectors and matrices.</p>
+<p><a href="/wiki/Object-Oriented_Fortran" title="Object-Oriented Fortran">Object-Oriented Fortran</a> was an object-oriented extension of Fortran, in which data items can be grouped into objects, which can be instantiated and executed in parallel. It was available for Sun, Iris, <a href="/wiki/Intel_iPSC" title="Intel iPSC">iPSC</a>, and nCUBE, but is no longer supported.</p>
+<p>Such machine-specific extensions have either disappeared over time or have had elements incorporated into the main standards; the major remaining extension is <a href="/wiki/OpenMP" title="OpenMP">OpenMP</a>, which is a cross-platform extension for shared memory programming. One new extension, <a href="/wiki/Co-array_Fortran" title="Co-array Fortran">Co-array Fortran</a>, is intended to support parallel programming.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=25" title="Edit section: FOR TRANSIT for the IBM 650">edit</a>]</span> <span class="mw-headline" id="FOR_TRANSIT_for_the_IBM_650">FOR TRANSIT for the IBM 650</span></h4>
+<p>"FOR TRANSIT" was the name of a reduced version of the IBM 704 FORTRAN language, which was implemented for the IBM 650, using a translator program developed at Carnegie <sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span>[</span>14<span>]</span></a></sup> in the late 1950s. The following comment appears in the IBM Reference Manual ("FOR TRANSIT Automatic Coding System" C28-4038, Copyright 1957, 1959 by IBM):</p>
+<blockquote>
+<p><i>The FORTRAN system was designed for a more complex machine than the 650, and consequently some of the 32 statements found in the FORTRAN Programmer's Reference Manual are not acceptable to the FOR TRANSIT system. In addition, certain restrictions to the FORTRAN language have been added. However, none of these restrictions make a source program written for FOR TRANSIT incompatible with the FORTRAN system for the 704.</i></p>
+</blockquote>
+<p>The permissible statements were:</p>
+<dl>
+<dd>Arithmetic assignment statements, e.g. a = b</dd>
+<dd>GO to n</dd>
+<dd>GO TO (n<sub>1</sub>, n<sub>2</sub>, ..., n<sub>m</sub>), i</dd>
+<dd>IF (a) n<sub>1</sub>, n<sub>2</sub>, n<sub>3</sub></dd>
+<dd>PAUSE</dd>
+<dd>STOP</dd>
+<dd>DO n i = m1, m2</dd>
+<dd>CONTINUE</dd>
+<dd>END</dd>
+<dd>READ n, list</dd>
+<dd>PUNCH n, list</dd>
+<dd>DIMENSION V, V, V, ...</dd>
+<dd>EQUIVALENCE (a,b,c), (d,c), ...</dd>
+</dl>
+<p>Up to ten subroutines could be used in one program.</p>
+<p>FOR TRANSIT statements were limited to columns 7 thru 56, only. Punched cards were used for input and output on the IBM 650. Three passes were required to translate source code to the "IT" language, then to compile the IT statements into SOAP assembly language, and finally to produce the object program, which could then be loaded into the machine to run the program (using punched cards for data input, and outputting results onto punched cards.)</p>
+<p>Two versions existed for the 650s with a 2000 word memory drum: FOR TRANSIT I (S) and FOR TRANSIT II, the latter for machines equipped with indexing registers and automatic floating point decimal (bi-quinary) arithmetic. Appendix A of the manual included wiring diagrams for the IBM 533 control panel.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=26" title="Edit section: Fortran-based languages">edit</a>]</span> <span class="mw-headline" id="Fortran-based_languages">Fortran-based languages</span></h3>
+<p>Prior to FORTRAN 77, a number of <a href="/wiki/Preprocessor" title="Preprocessor">preprocessors</a> were commonly used to provide a friendlier language, with the advantage that the preprocessed code could be compiled on any machine with a standard FORTRAN compiler. Popular preprocessors included <a href="/w/index.php?title=FLECS&amp;action=edit&amp;redlink=1" class="new" title="FLECS (page does not exist)">FLECS</a>, <a href="/wiki/Mortran" title="Mortran">MORTRAN</a>, <a href="/w/index.php?title=SFtran&amp;action=edit&amp;redlink=1" class="new" title="SFtran (page does not exist)">SFtran</a>, <a href="/w/index.php?title=S-Fortran&amp;action=edit&amp;redlink=1" class="new" title="S-Fortran (page does not exist)">S-Fortran</a>, <a href="/wiki/Ratfor" title="Ratfor">Ratfor</a>, and <a href="/wiki/Ratfiv" title="Ratfiv">Ratfiv</a>. (Ratfor and Ratfiv, for example, implemented a remarkably <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>-like language, outputting preprocessed code in standard FORTRAN 66.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span>[</span>note 6<span>]</span></a></sup>)</p>
+<p><a href="/w/index.php?title=LRLTRAN&amp;action=edit&amp;redlink=1" class="new" title="LRLTRAN (page does not exist)">LRLTRAN</a> was developed at the <a href="/wiki/Lawrence_Radiation_Laboratory" title="Lawrence Radiation Laboratory" class="mw-redirect">Lawrence Radiation Laboratory</a> to provide support for vector arithmetic and dynamic storage, among other extensions to support systems programming. The distribution included the <a href="/w/index.php?title=LTSS_operating_system&amp;action=edit&amp;redlink=1" class="new" title="LTSS operating system (page does not exist)">LTSS operating system</a>.</p>
+<p>The Fortran-95 Standard includes an optional <i>Part 3</i> which defines an optional <a href="/wiki/Conditional_compilation" title="Conditional compilation">conditional compilation</a> capability. This capability is often referred to as "CoCo".</p>
+<p>Many Fortran compilers have integrated subsets of the <a href="/wiki/C_preprocessor" title="C preprocessor">C preprocessor</a> into their systems.</p>
+<p><a href="/wiki/SIMSCRIPT" title="SIMSCRIPT">SIMSCRIPT</a> is an application specific Fortran preprocessor for modeling and simulating large discrete systems.</p>
+<p>The <a href="/wiki/F_(programming_language)" title="F (programming language)">F programming language</a> was designed to be a clean subset of Fortran 95 that attempted to remove the redundant, unstructured, and deprecated features of Fortran, such as the <code>EQUIVALENCE</code> statement. F retains the array features added in Fortran 90, and removes control statements that were obsoleted by structured programming constructs added to both Fortran 77 and Fortran 90. F is described by its creators as "a compiled, structured, array programming language especially well suited to education and scientific computing."<sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span>[</span>15<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=27" title="Edit section: Code examples">edit</a>]</span> <span class="mw-headline" id="Code_examples">Code examples</span></h2>
+<div class="rellink boilerplate seealso">For more details on this topic, see <a href="http://en.wikibooks.org/wiki/Fortran/Fortran_examples" class="extiw" title="wikibooks:Fortran/Fortran examples">Wikibooks:Fortran/Fortran examples</a>.</div>
+<p>The following program illustrates dynamic memory allocation and array-based operations, two features introduced with Fortran 90. Particularly noteworthy is the absence of <code>DO</code> loops and <code>IF</code>/<code>THEN</code> statements in manipulating the array; mathematical operations are applied to the array as a whole. Also apparent is the use of descriptive variable names and general code formatting that conform with contemporary programming style. This example computes an average over data entered interactively.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="fortran source-fortran" style="font-family:monospace;">
+<pre class="de1">
+<span class="kw1">program</span> average
+ 
+  <span class="co1">! Read in some numbers and take the average</span>
+  <span class="co1">! As written, if there are no data points, an average of zero is returned</span>
+  <span class="co1">! While this may not be desired behavior, it keeps this example simple</span>
+ 
+  <span class="kw3">implicit</span> <span class="kw3">none</span>
+ 
+  <span class="kw3">real</span>, <span class="kw3">dimension</span><span class="br0">(</span><span class="sy0">:</span><span class="br0">)</span>, <span class="kw3">allocatable</span> <span class="sy0">::</span> <span class="me2">points</span>
+  <span class="kw3">integer</span>                         <span class="sy0">::</span> <span class="me2">number_of_points</span>
+  <span class="kw3">real</span>                            <span class="sy0">::</span> <span class="me2">average_points</span><span class="sy0">=</span>0., positive_average<span class="sy0">=</span>0., negative_average<span class="sy0">=</span><span class="nu0">0</span>.
+ 
+  <span class="me1">write</span> <span class="br0">(</span><span class="sy0">*</span>,<span class="sy0">*</span><span class="br0">)</span> <span class="st0">"Input number of points to average:"</span>
+  read  <span class="br0">(</span><span class="sy0">*</span>,<span class="sy0">*</span><span class="br0">)</span> number_of_points
+ 
+  <span class="kw1">allocate</span> <span class="br0">(</span>points<span class="br0">(</span>number_of_points<span class="br0">)</span><span class="br0">)</span>
+ 
+  write <span class="br0">(</span><span class="sy0">*</span>,<span class="sy0">*</span><span class="br0">)</span> <span class="st0">"Enter the points to average:"</span>
+  read  <span class="br0">(</span><span class="sy0">*</span>,<span class="sy0">*</span><span class="br0">)</span> points
+ 
+  <span class="co1">! Take the average by summing points and dividing by number_of_points</span>
+  <span class="kw1">if</span> <span class="br0">(</span>number_of_points &gt; <span class="nu0">0</span><span class="br0">)</span> average_points <span class="sy0">=</span> sum<span class="br0">(</span>points<span class="br0">)</span> <span class="sy0">/</span> number_of_points
+ 
+  <span class="co1">! Now form average over positive and negative points only</span>
+  <span class="kw1">if</span> <span class="br0">(</span><span class="kw4">count</span><span class="br0">(</span>points &gt; 0.<span class="br0">)</span> &gt; 0<span class="br0">)</span> <span class="kw1">then</span>
+     positive_average <span class="sy0">=</span> sum<span class="br0">(</span>points, points &gt; 0.<span class="br0">)</span> <span class="sy0">/</span> <span class="kw4">count</span><span class="br0">(</span>points &gt; 0.<span class="br0">)</span>
+  <span class="kw1">end</span> <span class="kw1">if</span>
+ 
+  <span class="kw1">if</span> <span class="br0">(</span><span class="kw4">count</span><span class="br0">(</span>points &lt; 0.<span class="br0">)</span> &gt; 0<span class="br0">)</span> <span class="kw1">then</span>
+     negative_average <span class="sy0">=</span> sum<span class="br0">(</span>points, points &lt; 0.<span class="br0">)</span> <span class="sy0">/</span> <span class="kw4">count</span><span class="br0">(</span>points &lt; 0.<span class="br0">)</span>
+  <span class="kw1">end</span> <span class="kw1">if</span>
+ 
+  <span class="kw1">deallocate</span> <span class="br0">(</span>points<span class="br0">)</span>
+ 
+  <span class="co1">! Print result to terminal</span>
+  write <span class="br0">(</span><span class="sy0">*</span>,<span class="st0">'(a,g12.4)'</span><span class="br0">)</span> <span class="st0">'Average = '</span>, average_points
+  write <span class="br0">(</span><span class="sy0">*</span>,<span class="st0">'(a,g12.4)'</span><span class="br0">)</span> <span class="st0">'Average of positive points = '</span>, positive_average
+  write <span class="br0">(</span><span class="sy0">*</span>,<span class="st0">'(a,g12.4)'</span><span class="br0">)</span> <span class="st0">'Average of negative points = '</span>, negative_average
+ 
+<span class="kw1">end</span> <span class="kw1">program</span> average
+</pre></div>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=28" title="Edit section: Humor">edit</a>]</span> <span class="mw-headline" id="Humor">Humor</span></h2>
+<p>During the same Fortran Standards Committee meeting at which the name "FORTRAN 77" was chosen, a technical proposal was incorporated into the official distribution, bearing the title, "Letter O <a href="/wiki/Considered_harmful" title="Considered harmful">considered harmful</a>". This proposal purported to address the confusion that sometimes arises between the letter "O" and the numeral zero, by eliminating the letter from allowable variable names. However, the method proposed was to eliminate the letter from the character set entirely (thereby retaining 48 as the number of lexical characters, which the colon had increased to 49). This was considered beneficial in that it would promote structured programming, by making it impossible to use the notorious <code><b>GO TO</b></code> statement as before (Troublesome <code><b>FORMAT</b></code> statements would also be eliminated). It was noted that this "might invalidate some existing programs" but that most of these "probably were non-conforming, anyway".<sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span>[</span>16<span>]</span></a></sup><sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span>[</span>17<span>]</span></a></sup></p>
+<p>During the standards committee battle over whether the "minimum trip count" for the FORTRAN 77 "DO" statement should be zero (allowing no execution of the block) or one (the "plunge-ahead" DO), another facetious alternative was proposed (by Loren Meissner) to have the minimum trip be two -- since there is no need for a loop if it is only executed once.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=29" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul>
+<li><a href="/wiki/History_of_compiler_writing" title="History of compiler writing">History of compiler writing</a></li>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">List of programming languages</a></li>
+<li><a href="/wiki/List_of_numerical_libraries#Fortran" title="List of numerical libraries">List of Fortran numerical libraries</a></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=30" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h2>
+<div class="references-small" style="">
+<ol class="references">
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> The names of earlier versions of the language through FORTRAN 77 were conventionally spelled in all-caps (FORTRAN 77 was the version in which the use of lowercase letters in keywords was strictly nonstandard). The capitalization has been dropped in referring to newer versions beginning with Fortran 90. The official language <a href="/wiki/International_standard" title="International standard">standards</a> now refer to the language as "Fortran." Because the capitalization (or lack thereof) of the word <i>FORTRAN</i> was never 100% consistent in actual usage, and because many hold impassioned beliefs on the issue, this article, rather than attempt to be normative, adopts the convention of using the all-caps <i>FORTRAN</i> in referring to versions of FORTRAN through FORTRAN 77 and the title-caps <i>Fortran</i> in referring to versions of Fortran from Fortran 90 onward. This convention is reflected in the capitalization of <i>FORTRAN</i> in the <a href="/wiki/American_National_Standards_Institute" title="American National Standards Institute">ANSI</a> X3.9-1966 (FORTRAN 66) and ANSI X3.9-1978 (FORTRAN 77) standards and the title caps <i>Fortran</i> in the ANSI X3.198-1992 (Fortran 90), ISO/IEC 1539-1:1997 (Fortran 95) and ISO/IEC 1539-1:2004 (Fortran 2003) standards.</li>
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> Since FORTRAN 77, which introduced the <code>CHARACTER</code> data type.</li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> Since FORTRAN II (1958).</li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> Note: It is commonly believed that this statement corresponded to a three-way branch instruction on the IBM 704. This is not true, the 704 branch instructions all contained only one destination address (e.g., TZE — Transfer AC Zero, TNZ — Transfer AC Not Zero, TPL — Transfer AC Plus, TMI — Transfer AC Minus). The machine (and its successors in the <a href="/wiki/IBM_700/7000_series#Scientific_Architecture_.28704.2F709.2F7090.2F7094.29" title="IBM 700/7000 series">700/7000 series</a>) did have a three-way <i>skip</i> instruction (CAS — Compare AC with Storage), which was probably the origin of this belief, but using this instruction to implement the <code>IF</code> would consume 4 instruction words, require the constant Zero in a word of storage, and take 3 machine cycles to execute; using the Transfer instructions to implement the <code>IF</code> could be done in 1 to 3 instruction words, required no constants in storage, and take 1 to 3 machine cycles to execute. An optimizing compiler like FORTRAN would most likely select the more compact and usually faster Transfers instead of the Compare (use of Transfers also allowed the <code>FREQUENCY</code> statement to optimize <code>IF</code>s, which could not be done using the Compare). Also the Compare considered −0 and +0 to be different values while the Transfer Zero and Transfer Not Zero considered them to be the same.</li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> The FREQUENCY statement in FORTRAN was used originally and optionally to give branch probabilities for the three branch cases of the Arithmetic IF statement to bias the way code was generated and order of the basic blocks of code generated, in the global optimisation sense, were arranged in memory for optimality. The first FORTRAN compiler used this weighting to do a <a href="/wiki/Monte_Carlo_method" title="Monte Carlo method">Monte Carlo simulation</a> of the run-time generated code at compile time. It was very sophisticated for its time. This technique is documented in the original article in 1957 on the first FORTRAN compiler implementation by J. Backus, et al. Many years later, the FREQUENCY statement had no effect on the code, and was treated as a comment statement, since the compilers no longer did this kind of compile-time simulation. Below is a part of the 1957 paper, "The FORTRAN Automatic Coding System" by Backus, et al., with this snippet on the FREQUENCY statement and its use in a compile-time <a href="/wiki/Monte_Carlo_method" title="Monte Carlo method">Monte Carlo simulation</a> of the run-time to optimise the code generated. Quoting …
+<blockquote>
+<p>The fundamental unit of program is the <a href="/wiki/Basic_block" title="Basic block">basic block</a>; a basic block is a stretch of program which has a single entry point and a single exit point. The purpose of section 4 is to prepare for section 5 a table of predecessors (PRED table) which enumerates the basic blocks and lists for every basic block each of the basic blocks which can be its immediate predecessor in flow, together with the absolute frequency of each such basic block link. This table is obtained by an actual "execution" of the program in Monte-Carlo fashion, in which the outcome of conditional transfers arising out of IF-type statements and computed GO TO'S is determined by a random number generator suitably weighted according to whatever FREQUENCY statements have been provided.</p>
+</blockquote>
+</li>
+<li id="cite_note-19"><b><a href="#cite_ref-19">^</a></b> This is not altogether surprising, as <a href="/wiki/Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a>, one of the co-creators of Ratfor, is also co-author of <a href="/wiki/The_C_Programming_Language_(book)" title="The C Programming Language (book)"><i>The C Programming Language</i>.</a></li>
+</ol>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=31" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="references-small references-column-count references-column-count-2" style="column-count: 2; -moz-column-count: 2; -webkit-column-count: 2;">
+<ol class="references">
+<li id="cite_note-Where-3"><b><a href="#cite_ref-Where_3-0">^</a></b> <span class="citation web"><a href="http://math.scu.edu/~dsmolars/ma169/notesfortran.html" class="external text" rel="nofollow">"Math 169 Notes - Santa Clara University"</a><span class="printonly">. <a href="http://math.scu.edu/~dsmolars/ma169/notesfortran.html" class="external free" rel="nofollow">http://math.scu.edu/~dsmolars/ma169/notesfortran.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Math+169+Notes+-+Santa+Clara+University&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fmath.scu.edu%2F%7Edsmolars%2Fma169%2Fnotesfortran.html&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <a href="http://www.softwarepreservation.org/projects/FORTRAN/index.html#By_FORTRAN_project_members" class="external text" rel="nofollow">Softwarepreservation.org</a></li>
+<li id="cite_note-5"><b><a href="#cite_ref-5">^</a></b> <a href="http://www.msnbc.msn.com/id/17704662/" class="external text" rel="nofollow">Fortran creator John Backus dies - Gadgets - MSNBC.com</a>, MSN.com</li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> <a href="http://www.ibiblio.org/pub/languages/fortran/ch1-12.html" class="external free" rel="nofollow">http://www.ibiblio.org/pub/languages/fortran/ch1-12.html</a></li>
+<li id="cite_note-9"><b><a href="#cite_ref-9">^</a></b> <span class="citation Journal">Haines, L. H. (1965). <a href="http://domino.research.IBM.com/tchjr/journalindex.nsf/495f80c9d0f539778525681e00724804/cde711e5ad6786e485256bfa00685a03?OpenDocument" class="external text" rel="nofollow">"Serial compilation and the 1401 FORTRAN compiler"</a>. <i>IBM Systems Journal</i> <b>4</b> (1): 73–80. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1147%2Fsj.41.0073" class="external text" rel="nofollow">10.1147/sj.41.0073</a><span class="printonly">. <a href="http://domino.research.IBM.com/tchjr/journalindex.nsf/495f80c9d0f539778525681e00724804/cde711e5ad6786e485256bfa00685a03?OpenDocument" class="external free" rel="nofollow">http://domino.research.IBM.com/tchjr/journalindex.nsf/495f80c9d0f539778525681e00724804/cde711e5ad6786e485256bfa00685a03?OpenDocument</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Serial+compilation+and+the+1401+FORTRAN+compiler&amp;rft.jtitle=IBM+Systems+Journal&amp;rft.aulast=Haines&amp;rft.aufirst=L.+H.&amp;rft.au=Haines%2C%26%2332%3BL.+H.&amp;rft.date=1965&amp;rft.volume=4&amp;rft.issue=1&amp;rft.pages=73%E2%80%9380&amp;rft_id=info:doi/10.1147%2Fsj.41.0073&amp;rft_id=http%3A%2F%2Fdomino.research.IBM.com%2Ftchjr%2Fjournalindex.nsf%2F495f80c9d0f539778525681e00724804%2Fcde711e5ad6786e485256bfa00685a03%3FOpenDocument&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span> This article was reprinted, edited, in both editions of <span class="citation book">Lee, John A. N. (1967(1st), 1974(2nd)). <i>Anatomy of a Compiler</i>. Van Nostrand Reinhold.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Anatomy+of+a+Compiler&amp;rft.aulast=Lee&amp;rft.aufirst=John+A.+N.&amp;rft.au=Lee%2C%26%2332%3BJohn+A.+N.&amp;rft.date=1967%281st%29%2C+1974%282nd%29&amp;rft.pub=Van+Nostrand+Reinhold&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-McCracken-10"><b><a href="#cite_ref-McCracken_10-0">^</a></b> <span class="citation book">McCracken, Daniel D. (1965). "Preface". <i>A Guide to FORTRAN IV Programming</i>. New York: Wiley. p.&#160;v. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-58281-6" title="Special:BookSources/0-471-58281-6">0-471-58281-6</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Preface&amp;rft.atitle=A+Guide+to+FORTRAN+IV+Programming&amp;rft.aulast=McCracken&amp;rft.aufirst=Daniel+D.&amp;rft.au=McCracken%2C%26%2332%3BDaniel+D.&amp;rft.date=1965&amp;rft.pages=p.%26nbsp%3Bv&amp;rft.place=New+York&amp;rft.pub=Wiley&amp;rft.isbn=0-471-58281-6&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-11"><b><a href="#cite_ref-11">^</a></b> <a href="http://www.chilton-computing.org.uk/acd/literature/reports/p008.htm" class="external text" rel="nofollow">Chilton Computing with FORTRAN</a>, Chilton-computing.org.uk</li>
+<li id="cite_note-12"><b><a href="#cite_ref-12">^</a></b> <span class="citation book">MIL-STD-1753. <a href="http://www.fortran.com/fortran/mil_std_1753.html" class="external text" rel="nofollow"><i>DoD Supplement to X3.9-1978</i></a>. <a href="/wiki/United_States_Government_Printing_Office" title="United States Government Printing Office">United States Government Printing Office</a><span class="printonly">. <a href="http://www.fortran.com/fortran/mil_std_1753.html" class="external free" rel="nofollow">http://www.fortran.com/fortran/mil_std_1753.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=DoD+Supplement+to+X3.9-1978&amp;rft.aulast=MIL-STD-1753&amp;rft.au=MIL-STD-1753&amp;rft.pub=%5B%5BUnited+States+Government+Printing+Office%5D%5D&amp;rft_id=http%3A%2F%2Fwww.fortran.com%2Ffortran%2Fmil_std_1753.html&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-13"><b><a href="#cite_ref-13">^</a></b> <span class="citation book">POSIX 1003.9-1992. <a href="http://standards.ieee.org/reading/ieee/std_public/description/posix/1003.9-1992_desc.html" class="external text" rel="nofollow"><i>POSIX FORTRAN 77 Language Interface – Part 1: Binding for System Application Program Interface <b>API</b></i></a>. <a href="/wiki/IEEE" title="IEEE" class="mw-redirect">IEEE</a><span class="printonly">. <a href="http://standards.ieee.org/reading/ieee/std_public/description/posix/1003.9-1992_desc.html" class="external free" rel="nofollow">http://standards.ieee.org/reading/ieee/std_public/description/posix/1003.9-1992_desc.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=POSIX+FORTRAN+77+Language+Interface+%E2%80%93+Part+1%3A+Binding+for+System+Application+Program+Interface+%27%27%27API%27%27%27&amp;rft.aulast=POSIX+1003.9-1992&amp;rft.au=POSIX+1003.9-1992&amp;rft.pub=%5B%5BIEEE%5D%5D&amp;rft_id=http%3A%2F%2Fstandards.ieee.org%2Freading%2Fieee%2Fstd_public%2Fdescription%2Fposix%2F1003.9-1992_desc.html&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-14"><b><a href="#cite_ref-14">^</a></b> <a href="http://www.nag.co.uk/sc22wg5/" class="external text" rel="nofollow">Fortran Working Group (WG5)</a>. It may also be downloaded as a <a href="ftp://ftp.nag.co.uk/sc22wg5/N1551-N1600/N1579.pdf" class="external text" rel="nofollow">PDF file</a> or <a href="ftp://ftp.nag.co.uk/sc22wg5/N1551-N1600/N1579.ps.gz" class="external text" rel="nofollow"><code>gzip</code>ped PostScript file</a>, FTP.nag.co.uk</li>
+<li id="cite_note-15"><b><a href="#cite_ref-15">^</a></b> N1836, Summary of Voting/Table of Replies on ISO/IEC FDIS 1539-1, Information technology - Programming languages - Fortran - Part 1: Base language <span class="PDFlink"><a href="ftp://ftp.nag.co.uk/sc22wg5/N1801-N1850/N1836.pdf" class="external free" rel="nofollow">ftp://ftp.nag.co.uk/sc22wg5/N1801-N1850/N1836.pdf</a></span><span style="font-size:smaller;">PDF&#160;( 101&#160;KiB)</span></li>
+<li id="cite_note-16"><b><a href="#cite_ref-16">^</a></b> N1830, Information technology — Programming languages — Fortran — Part 1: Base language <span class="PDFlink"><a href="ftp://ftp.nag.co.uk/sc22wg5/N1801-N1850/N1830.pdf" class="external free" rel="nofollow">ftp://ftp.nag.co.uk/sc22wg5/N1801-N1850/N1830.pdf</a></span><span style="font-size:smaller;">PDF&#160;( 7.9&#160;MiB)</span></li>
+<li id="cite_note-FIV-17"><b><a href="#cite_ref-FIV_17-0">^</a></b> <span class="citation web">Healy, MJR (1968). <a href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=1092&amp;language=CDC%20Fortran" class="external text" rel="nofollow">"Towards FORTRAN VI"</a>. <i>Advanced scientific Fortran by CDC</i>. CDC. pp. 169–172<span class="printonly">. <a href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=1092&amp;language=CDC%20Fortran" class="external free" rel="nofollow">http://hopl.murdoch.edu.au/showlanguage.prx?exp=1092&amp;language=CDC%20Fortran</a></span><span class="reference-accessdate">. Retrieved 2009-04-10</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Towards+FORTRAN+VI&amp;rft.atitle=Advanced+scientific+Fortran+by+CDC&amp;rft.aulast=Healy&amp;rft.aufirst=MJR&amp;rft.au=Healy%2C%26%2332%3BMJR&amp;rft.date=1968&amp;rft.pages=pp.+169%E2%80%93172&amp;rft.pub=CDC&amp;rft_id=http%3A%2F%2Fhopl.murdoch.edu.au%2Fshowlanguage.prx%3Fexp%3D1092%26language%3DCDC%2520Fortran&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-18"><b><a href="#cite_ref-18">^</a></b> "Internal Translator (IT) A Compiler for the IBM 650", by A. J. Perlis, J. W. Smith, and H. R. Van Zoeren, Computation Center, Carnegie Institute of Technology</li>
+<li id="cite_note-20"><b><a href="#cite_ref-20">^</a></b> <span class="citation web"><a href="http://www.fortran.com/F/index.html" class="external text" rel="nofollow">"F Programming Language Homepage"</a><span class="printonly">. <a href="http://www.fortran.com/F/index.html" class="external free" rel="nofollow">http://www.fortran.com/F/index.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=F+Programming+Language+Homepage&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.fortran.com%2FF%2Findex.html&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-21"><b><a href="#cite_ref-21">^</a></b> X3J3 post-meeting distribution for meeting held at Brookhaven National Laboratory in November 1976.</li>
+<li id="cite_note-22"><b><a href="#cite_ref-22">^</a></b> "The obliteration of O", Computer Weekly, March 3, 1977</li>
+</ol>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=32" title="Edit section: Further reading">edit</a>]</span> <span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<dl>
+<dt>Articles</dt>
+</dl>
+<ul>
+<li><span class="citation Journal">Backus, J. W.; H. Stern, I. Ziller, R. A. Hughes, R. Nutt, R. J. Beeber, S. Best, R. Goldberg, L. M. Haibt, H. L. Herrick, R. A. Nelson, D. Sayre, P. B. Sheridan (1957). "The FORTRAN Automatic Coding System". <i>Western joint computer conference: Techniques for reliability</i> (Los Angeles, California: <a href="/wiki/Institute_of_Radio_Engineers" title="Institute of Radio Engineers">Institute of Radio Engineers</a>, <a href="/wiki/American_Institute_of_Electrical_Engineers" title="American Institute of Electrical Engineers">American Institute of Electrical Engineers</a>, <a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a>): 188–198. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1145%2F1455567.1455599" class="external text" rel="nofollow">10.1145/1455567.1455599</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+FORTRAN+Automatic+Coding+System&amp;rft.jtitle=Western+joint+computer+conference%3A+Techniques+for+reliability&amp;rft.aulast=Backus&amp;rft.aufirst=J.+W.&amp;rft.au=Backus%2C%26%2332%3BJ.+W.&amp;rft.date=1957&amp;rft.pages=188%E2%80%93198&amp;rft.place=Los+Angeles%2C+California&amp;rft.pub=%5B%5BInstitute+of+Radio+Engineers%5D%5D%2C+%5B%5BAmerican+Institute+of+Electrical+Engineers%5D%5D%2C+%5B%5BAssociation+for+Computing+Machinery%7CACM%5D%5D&amp;rft_id=info:doi/10.1145%2F1455567.1455599&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Allen, F.E. (September 1981). <a href="http://www.research.ibm.com/journal/rd/255/ibmrd2505Q.pdf" class="external text" rel="nofollow">"A History of Language Processor Technology in IBM"</a>. <i>IBM Journal of Research and Development</i> (<a href="/wiki/IBM" title="IBM">IBM</a>) <b>25</b> (5)<span class="printonly">. <a href="http://www.research.ibm.com/journal/rd/255/ibmrd2505Q.pdf" class="external free" rel="nofollow">http://www.research.ibm.com/journal/rd/255/ibmrd2505Q.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+History+of+Language+Processor+Technology+in+IBM&amp;rft.jtitle=IBM+Journal+of+Research+and+Development&amp;rft.aulast=Allen&amp;rft.aufirst=F.E.&amp;rft.au=Allen%2C%26%2332%3BF.E.&amp;rft.date=September+1981&amp;rft.volume=25&amp;rft.issue=5&amp;rft.pub=%5B%5BIBM%5D%5D&amp;rft_id=http%3A%2F%2Fwww.research.ibm.com%2Fjournal%2Frd%2F255%2Fibmrd2505Q.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Roberts, Mark L.; Griffiths, Peter D. (1985). <a href="http://www.research.ibm.com/journal/sj/241/ibmsj2401G.pdf" class="external text" rel="nofollow">"Design Considerations for IBM Personal Computer Professional FORTRAN, an Optimizing Compiler"</a>. <i>IBM Systems Journal</i> (<a href="/wiki/IBM" title="IBM">IBM</a>) <b>24</b> (1): 49–60. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1147%2Fsj.241.0049" class="external text" rel="nofollow">10.1147/sj.241.0049</a><span class="printonly">. <a href="http://www.research.ibm.com/journal/sj/241/ibmsj2401G.pdf" class="external free" rel="nofollow">http://www.research.ibm.com/journal/sj/241/ibmsj2401G.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Design+Considerations+for+IBM+Personal+Computer+Professional+FORTRAN%2C+an+Optimizing+Compiler&amp;rft.jtitle=IBM+Systems+Journal&amp;rft.aulast=Roberts&amp;rft.aufirst=Mark+L.&amp;rft.au=Roberts%2C%26%2332%3BMark+L.&amp;rft.au=Griffiths%2C%26%2332%3BPeter+D.&amp;rft.date=1985&amp;rft.volume=24&amp;rft.issue=1&amp;rft.pages=49%E2%80%9360&amp;rft.pub=%5B%5BIBM%5D%5D&amp;rft_id=info:doi/10.1147%2Fsj.241.0049&amp;rft_id=http%3A%2F%2Fwww.research.ibm.com%2Fjournal%2Fsj%2F241%2Fibmsj2401G.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation web">Pigott, Diarmuid (2006). <a href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=8&amp;language=FORTRAN" class="external text" rel="nofollow">"FORTRAN - Backus et al high-level compiler (Computer Language)"</a>. <i>The Encyclopedia of Computer Languages</i>. <a href="/wiki/Murdoch_University" title="Murdoch University">Murdoch University</a><span class="printonly">. <a href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=8&amp;language=FORTRAN" class="external free" rel="nofollow">http://hopl.murdoch.edu.au/showlanguage.prx?exp=8&amp;language=FORTRAN</a></span><span class="reference-accessdate">. Retrieved 2010-05-05</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=FORTRAN+-+Backus+et+al+high-level+compiler+%28Computer+Language%29&amp;rft.atitle=The+Encyclopedia+of+Computer+Languages&amp;rft.aulast=Pigott&amp;rft.aufirst=Diarmuid&amp;rft.au=Pigott%2C%26%2332%3BDiarmuid&amp;rft.date=2006&amp;rft.pub=%5B%5BMurdoch+University%5D%5D&amp;rft_id=http%3A%2F%2Fhopl.murdoch.edu.au%2Fshowlanguage.prx%3Fexp%3D8%26language%3DFORTRAN&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Chivers, Ian D.; Sleightholme, Jane (2009). <a href="http://www.fortranplus.co.uk/resources/fortran_2003_2008_compiler_support.pdf" class="external text" rel="nofollow">"Compiler support for the Fortran 2003 standard"</a>. <i><a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a> <a href="/wiki/SIGPLAN" title="SIGPLAN">SIGPLAN</a> Fortran Forum</i> (<a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a>) <b>28</b> (1): 26–28. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1145%2F1520752.1520755" class="external text" rel="nofollow">10.1145/1520752.1520755</a>. <a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a>&#160;<a href="http://www.worldcat.org/issn/10617264" class="external text" rel="nofollow">10617264</a><span class="printonly">. <a href="http://www.fortranplus.co.uk/resources/fortran_2003_2008_compiler_support.pdf" class="external free" rel="nofollow">http://www.fortranplus.co.uk/resources/fortran_2003_2008_compiler_support.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Compiler+support+for+the+Fortran+2003+standard&amp;rft.jtitle=%5B%5BAssociation+for+Computing+Machinery%7CACM%5D%5D+%5B%5BSIGPLAN%5D%5D+Fortran+Forum&amp;rft.aulast=Chivers&amp;rft.aufirst=Ian+D.&amp;rft.au=Chivers%2C%26%2332%3BIan+D.&amp;rft.au=Sleightholme%2C%26%2332%3BJane&amp;rft.date=2009&amp;rft.volume=28&amp;rft.issue=1&amp;rft.pages=26%E2%80%9328&amp;rft.pub=%5B%5BAssociation+for+Computing+Machinery%7CACM%5D%5D&amp;rft_id=info:doi/10.1145%2F1520752.1520755&amp;rft.issn=10617264&amp;rft_id=http%3A%2F%2Fwww.fortranplus.co.uk%2Fresources%2Ffortran_2003_2008_compiler_support.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+</ul>
+<dl>
+<dt>"Core" language standards</dt>
+</dl>
+<ul>
+<li><span class="citation book">ANSI X3.9-1966. <a href="http://www.fh-jena.de/~kleine/history/languages/ansi-x3dot9-1966-Fortran66.pdf" class="external text" rel="nofollow"><i>USA Standard FORTRAN</i></a>. American National Standards Institute<span class="printonly">. <a href="http://www.fh-jena.de/~kleine/history/languages/ansi-x3dot9-1966-Fortran66.pdf" class="external free" rel="nofollow">http://www.fh-jena.de/~kleine/history/languages/ansi-x3dot9-1966-Fortran66.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=USA+Standard+FORTRAN&amp;rft.aulast=ANSI+X3.9-1966&amp;rft.au=ANSI+X3.9-1966&amp;rft.pub=American+National+Standards+Institute&amp;rft_id=http%3A%2F%2Fwww.fh-jena.de%2F%7Ekleine%2Fhistory%2Flanguages%2Fansi-x3dot9-1966-Fortran66.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span> Informally known as FORTRAN 66.</li>
+<li><span class="citation book">ANSI X3.9-1978. <a href="http://www.fortran.com/fortran/F77_std/rjcnf.html" class="external text" rel="nofollow"><i>American National Standard – Programming Language FORTRAN</i></a>. American National Standards Institute<span class="printonly">. <a href="http://www.fortran.com/fortran/F77_std/rjcnf.html" class="external free" rel="nofollow">http://www.fortran.com/fortran/F77_std/rjcnf.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=American+National+Standard+%E2%80%93+Programming+Language+FORTRAN&amp;rft.aulast=ANSI+X3.9-1978&amp;rft.au=ANSI+X3.9-1978&amp;rft.pub=American+National+Standards+Institute&amp;rft_id=http%3A%2F%2Fwww.fortran.com%2Ffortran%2FF77_std%2Frjcnf.html&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span> Also known as <a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a> 1539-1980, informally known as FORTRAN 77.</li>
+<li><span class="citation book">ANSI X3.198-1992 (R1997) / ISO/IEC 1539:1991. <a href="http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17366" class="external text" rel="nofollow"><i>American National Standard – Programming Language Fortran Extended</i></a>. American National Standards Institute / ISO/IEC<span class="printonly">. <a href="http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17366" class="external free" rel="nofollow">http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17366</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=American+National+Standard+%E2%80%93+Programming+Language+Fortran+Extended&amp;rft.aulast=ANSI+X3.198-1992+%28R1997%29+%2F+ISO%2FIEC+1539%3A1991&amp;rft.au=ANSI+X3.198-1992+%28R1997%29+%2F+ISO%2FIEC+1539%3A1991&amp;rft.pub=American+National+Standards+Institute+%2F+ISO%2FIEC&amp;rft_id=http%3A%2F%2Fwww.iso.org%2Fiso%2Fen%2FCatalogueDetailPage.CatalogueDetail%3FCSNUMBER%3D17366&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span> Informally known as Fortran 90.</li>
+<li><span class="citation book">ISO/IEC 1539-1:1997. <a href="http://j3-fortran.org/doc/standing/archive/007/97-007r2/pdf/97-007r2.pdf" class="external text" rel="nofollow"><i>Information technology – Programming languages – Fortran – Part 1: Base language</i></a><span class="printonly">. <a href="http://j3-fortran.org/doc/standing/archive/007/97-007r2/pdf/97-007r2.pdf" class="external free" rel="nofollow">http://j3-fortran.org/doc/standing/archive/007/97-007r2/pdf/97-007r2.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Information+technology+%E2%80%93+Programming+languages+%E2%80%93+Fortran+%E2%80%93+Part+1%3A+Base+language&amp;rft.aulast=ISO%2FIEC+1539-1%3A1997&amp;rft.au=ISO%2FIEC+1539-1%3A1997&amp;rft_id=http%3A%2F%2Fj3-fortran.org%2Fdoc%2Fstanding%2Farchive%2F007%2F97-007r2%2Fpdf%2F97-007r2.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span> Informally known as Fortran 95. There are a further two parts to this standard. Part 1 has been formally adopted by ANSI.</li>
+<li><span class="citation book">ISO/IEC 1539-1:2004. <a href="http://www.dkuug.dk/jtc1/sc22/open/n3661.pdf" class="external text" rel="nofollow"><i>Information technology – Programming languages – Fortran – Part 1: Base language</i></a><span class="printonly">. <a href="http://www.dkuug.dk/jtc1/sc22/open/n3661.pdf" class="external free" rel="nofollow">http://www.dkuug.dk/jtc1/sc22/open/n3661.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Information+technology+%E2%80%93+Programming+languages+%E2%80%93+Fortran+%E2%80%93+Part+1%3A+Base+language&amp;rft.aulast=ISO%2FIEC+1539-1%3A2004&amp;rft.au=ISO%2FIEC+1539-1%3A2004&amp;rft_id=http%3A%2F%2Fwww.dkuug.dk%2Fjtc1%2Fsc22%2Fopen%2Fn3661.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span> Informally known as Fortran 2003.</li>
+<li><span class="citation book">ISO/IEC 1539-1:2010 (Final Draft International Standard). <a href="ftp://ftp.nag.co.uk/sc22wg5/N1801-N1850/N1830.pdf" class="external text" rel="nofollow"><i>Information technology – Programming languages – Fortran – Part 1: Base language</i></a><span class="printonly">. <a href="ftp://ftp.nag.co.uk/sc22wg5/N1801-N1850/N1830.pdf" class="external free" rel="nofollow">ftp://ftp.nag.co.uk/sc22wg5/N1801-N1850/N1830.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Information+technology+%E2%80%93+Programming+languages+%E2%80%93+Fortran+%E2%80%93+Part+1%3A+Base+language&amp;rft.aulast=ISO%2FIEC+1539-1%3A2010+%28Final+Draft+International+Standard%29&amp;rft.au=ISO%2FIEC+1539-1%3A2010+%28Final+Draft+International+Standard%29&amp;rft_id=ftp%3A%2F%2Fftp.nag.co.uk%2Fsc22wg5%2FN1801-N1850%2FN1830.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span> Informally known as Fortran 2008.</li>
+</ul>
+<dl>
+<dt>Related standards</dt>
+</dl>
+<ul>
+<li><span class="citation Journal">Kneis, Wilfried (October 1981). "Draft standard <a href="/wiki/Industrial_Real-Time_Fortran" title="Industrial Real-Time Fortran">Industrial Real-Time FORTRAN</a>". <i><a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a> <a href="/wiki/SIGPLAN" title="SIGPLAN">SIGPLAN</a> Notices</i> (ACM Press) <b>16</b> (7): 45–60. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1145%2F947864.947868" class="external text" rel="nofollow">10.1145/947864.947868</a>. <a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a>&#160;<a href="http://www.worldcat.org/issn/0362-1340" class="external text" rel="nofollow">0362-1340</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Draft+standard+%5B%5BIndustrial+Real-Time+Fortran%7CIndustrial+Real-Time+FORTRAN%5D%5D&amp;rft.jtitle=%5B%5BAssociation+for+Computing+Machinery%7CACM%5D%5D+%5B%5BSIGPLAN%5D%5D+Notices&amp;rft.aulast=Kneis&amp;rft.aufirst=Wilfried&amp;rft.au=Kneis%2C%26%2332%3BWilfried&amp;rft.date=October+1981&amp;rft.volume=16&amp;rft.issue=7&amp;rft.pages=45%E2%80%9360&amp;rft.pub=ACM+Press&amp;rft_id=info:doi/10.1145%2F947864.947868&amp;rft.issn=0362-1340&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book"><a href="http://www.iso.org/iso/catalogue_detail?csnumber=16024" class="external text" rel="nofollow"><i>ISO 8651-1:1988 Information processing systems—Computer graphics—Graphical Kernel System (GKS) language bindings—Part 1: FORTRAN</i></a>. Geneva, Switzerland: <a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a>. 1988<span class="printonly">. <a href="http://www.iso.org/iso/catalogue_detail?csnumber=16024" class="external free" rel="nofollow">http://www.iso.org/iso/catalogue_detail?csnumber=16024</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=ISO+8651-1%3A1988+Information+processing+systems%E2%80%94Computer+graphics%E2%80%94Graphical+Kernel+System+%28GKS%29+language+bindings%E2%80%94Part+1%3A+FORTRAN&amp;rft.date=1988&amp;rft.place=Geneva%2C+Switzerland&amp;rft.pub=%5B%5BInternational+Organization+for+Standardization%7CISO%5D%5D&amp;rft_id=http%3A%2F%2Fwww.iso.org%2Fiso%2Fcatalogue_detail%3Fcsnumber%3D16024&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+</ul>
+<dl>
+<dt>Textbooks</dt>
+</dl>
+<table class="metadata plainlinks ambox ambox-style" style="">
+<tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" /></div>
+</td>
+<td class="mbox-text" style="">This article's <a href="/wiki/Wikipedia:Further_reading" title="Wikipedia:Further reading">further reading</a> <b>may not follow Wikipedia's <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_mirror_or_a_repository_of_links.2C_images.2C_or_media_files" title="Wikipedia:What Wikipedia is not">content policies</a> or <a href="/wiki/Wikipedia:Further_reading" title="Wikipedia:Further reading">guidelines</a></b>. Please <a href="http://en.wikipedia.org/w/index.php?title=Fortran&amp;action=edit" class="external text" rel="nofollow">improve this article</a> by removing excessive, less relevant or many publications with the <a href="/wiki/Wikipedia:WEIGHT" title="Wikipedia:WEIGHT" class="mw-redirect">same point of view</a>; or by incorporating the relevant publications into the body of the article through appropriate <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a>. <small><i>(August 2010)</i></small></td>
+</tr>
+</table>
+<ul>
+<li><span class="citation book">McCracken, Daniel D. (1961). <i>A Guide to FORTRAN Programming</i>. New York: Wiley. <a href="/wiki/Library_of_Congress_Control_Number" title="Library of Congress Control Number">LCCN</a>&#160;<a href="http://lccn.loc.gov/61016618" class="external text" rel="nofollow">61-016618</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+Guide+to+FORTRAN+Programming&amp;rft.aulast=McCracken&amp;rft.aufirst=Daniel+D.&amp;rft.au=McCracken%2C%26%2332%3BDaniel+D.&amp;rft.date=1961&amp;rft.place=New+York&amp;rft.pub=Wiley&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Page, Clive G. (1988). <a href="http://www.star.le.ac.uk/~cgp/prof77.html" class="external text" rel="nofollow"><i>Professional Programmer's Guide to Fortran77</i></a> (7th June 2005 ed.). London: Pitman. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-273-02856-1" title="Special:BookSources/0-273-02856-1">0-273-02856-1</a><span class="printonly">. <a href="http://www.star.le.ac.uk/~cgp/prof77.html" class="external free" rel="nofollow">http://www.star.le.ac.uk/~cgp/prof77.html</a></span><span class="reference-accessdate">. Retrieved 2010-05-04</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Professional+Programmer%27s+Guide+to+Fortran77&amp;rft.aulast=Page&amp;rft.aufirst=Clive+G.&amp;rft.au=Page%2C%26%2332%3BClive+G.&amp;rft.date=1988&amp;rft.edition=7th+June+2005&amp;rft.place=London&amp;rft.pub=Pitman&amp;rft.isbn=0-273-02856-1&amp;rft_id=http%3A%2F%2Fwww.star.le.ac.uk%2F%7Ecgp%2Fprof77.html&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Etter, D. M. (1990). <i>Structured FORTRAN 77 for Engineers and Scientists</i> (3rd ed.). The Benjamin/Cummings Publishing Company, Inc.. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-8053-0051-1" title="Special:BookSources/0-8053-0051-1">0-8053-0051-1</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Structured+FORTRAN+77+for+Engineers+and+Scientists&amp;rft.aulast=Etter&amp;rft.aufirst=D.+M.&amp;rft.au=Etter%2C%26%2332%3BD.+M.&amp;rft.date=1990&amp;rft.edition=3rd&amp;rft.pub=The+Benjamin%2FCummings+Publishing+Company%2C+Inc.&amp;rft.isbn=0-8053-0051-1&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Sleighthome, Jane; Chivers, Ian David (1990). <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.95.9503" class="external text" rel="nofollow"><i>Interactive Fortran 77: A Hands-On Approach</i></a>. Computers and their applications (2nd ed.). Chichester: E. Horwood. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-466764-6" title="Special:BookSources/0-13-466764-6">0-13-466764-6</a><span class="printonly">. <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.95.9503" class="external free" rel="nofollow">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.95.9503</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Interactive+Fortran+77%3A+A+Hands-On+Approach&amp;rft.aulast=Sleighthome&amp;rft.aufirst=Jane&amp;rft.au=Sleighthome%2C%26%2332%3BJane&amp;rft.au=Chivers%2C%26%2332%3BIan+David&amp;rft.date=1990&amp;rft.series=Computers+and+their+applications&amp;rft.edition=2nd&amp;rft.place=Chichester&amp;rft.pub=E.+Horwood&amp;rft.isbn=0-13-466764-6&amp;rft_id=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.95.9503&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Ellis, T. M. R.; Phillips, Ivor R.; Lahey, Thomas M. (1994). <i>Fortran 90 Programming</i> (1st ed.). Addison Wesley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-54446-6" title="Special:BookSources/0-201-54446-6">0-201-54446-6</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fortran+90+Programming&amp;rft.aulast=Ellis&amp;rft.aufirst=T.+M.+R.&amp;rft.au=Ellis%2C%26%2332%3BT.+M.+R.&amp;rft.au=Phillips%2C%26%2332%3BIvor+R.&amp;rft.au=Lahey%2C%26%2332%3BThomas+M.&amp;rft.date=1994&amp;rft.edition=1st&amp;rft.pub=Addison+Wesley&amp;rft.isbn=0-201-54446-6&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Nyhoff, Larry; Sanford Leestma (1995). <i>FORTRAN 77 for Engineers and Scientists with an Introduction to Fortran 90</i> (4th ed.). <a href="/wiki/Prentice_Hall" title="Prentice Hall">Prentice Hall</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-363003-X" title="Special:BookSources/0-13-363003-X">0-13-363003-X</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=FORTRAN+77+for+Engineers+and+Scientists+with+an+Introduction+to+Fortran+90&amp;rft.aulast=Nyhoff&amp;rft.aufirst=Larry&amp;rft.au=Nyhoff%2C%26%2332%3BLarry&amp;rft.date=1995&amp;rft.edition=4th&amp;rft.pub=%5B%5BPrentice+Hall%5D%5D&amp;rft.isbn=0-13-363003-X&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Press, William H. (1996). <a href="http://www.nrbook.com/a/bookf90pdf.php" class="external text" rel="nofollow"><i>Numerical Recipes in Fortran 90: The Art of Parallel Scientific Computing</i></a>. Cambridge, UK: Cambridge University Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-57439-0" title="Special:BookSources/0-521-57439-0">0-521-57439-0</a><span class="printonly">. <a href="http://www.nrbook.com/a/bookf90pdf.php" class="external free" rel="nofollow">http://www.nrbook.com/a/bookf90pdf.php</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Numerical+Recipes+in+Fortran+90%3A+The+Art+of+Parallel+Scientific+Computing&amp;rft.aulast=Press&amp;rft.aufirst=William+H.&amp;rft.au=Press%2C%26%2332%3BWilliam+H.&amp;rft.date=1996&amp;rft.place=Cambridge%2C+UK&amp;rft.pub=Cambridge+University+Press&amp;rft.isbn=0-521-57439-0&amp;rft_id=http%3A%2F%2Fwww.nrbook.com%2Fa%2Fbookf90pdf.php&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Kupferschmid, Michael (2002). <i>Classical Fortran: Programming for Engineering and Scientific Applications</i>. Marcel Dekker (CRC Press). <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-8247-0802-4" title="Special:BookSources/0-8247-0802-4">0-8247-0802-4</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Classical+Fortran%3A+Programming+for+Engineering+and+Scientific+Applications&amp;rft.aulast=Kupferschmid&amp;rft.aufirst=Michael&amp;rft.au=Kupferschmid%2C%26%2332%3BMichael&amp;rft.date=2002&amp;rft.pub=Marcel+Dekker+%28CRC+Press%29&amp;rft.isbn=0-8247-0802-4&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Akin, Ed (2003). <i>Object Oriented Programming via Fortran 90/95</i> (1st ed.). <a href="/wiki/Cambridge_University_Press" title="Cambridge University Press">Cambridge University Press</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-52408-3" title="Special:BookSources/0-521-52408-3">0-521-52408-3</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Object+Oriented+Programming+via+Fortran+90%2F95&amp;rft.aulast=Akin&amp;rft.aufirst=Ed&amp;rft.au=Akin%2C%26%2332%3BEd&amp;rft.date=2003&amp;rft.edition=1st&amp;rft.pub=%5B%5BCambridge+University+Press%5D%5D&amp;rft.isbn=0-521-52408-3&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Chapman, Stephen J. (2003). <i>Fortran 90/95 for Scientists and Engineers</i> (2nd ed.). McGraw-Hill. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-282575-8" title="Special:BookSources/0-07-282575-8">0-07-282575-8</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fortran+90%2F95+for+Scientists+and+Engineers&amp;rft.aulast=Chapman&amp;rft.aufirst=Stephen+J.&amp;rft.au=Chapman%2C%26%2332%3BStephen+J.&amp;rft.date=2003&amp;rft.edition=2nd&amp;rft.pub=McGraw-Hill&amp;rft.isbn=0-07-282575-8&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Metcalf, Michael; John Reid, Malcolm Cohen (2004). <i>Fortran 95/2003 Explained</i>. <a href="/wiki/Oxford_University_Press" title="Oxford University Press">Oxford University Press</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-19-852693-8" title="Special:BookSources/0-19-852693-8">0-19-852693-8</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fortran+95%2F2003+Explained&amp;rft.aulast=Metcalf&amp;rft.aufirst=Michael&amp;rft.au=Metcalf%2C%26%2332%3BMichael&amp;rft.date=2004&amp;rft.pub=%5B%5BOxford+University+Press%5D%5D&amp;rft.isbn=0-19-852693-8&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Chivers, Ian; Sleightholme, Jane (2006). <i>Introduction to Programming with Fortran</i> (1st ed.). Springer. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-84628-053-2" title="Special:BookSources/1-84628-053-2">1-84628-053-2</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Programming+with+Fortran&amp;rft.aulast=Chivers&amp;rft.aufirst=Ian&amp;rft.au=Chivers%2C%26%2332%3BIan&amp;rft.au=Sleightholme%2C%26%2332%3BJane&amp;rft.date=2006&amp;rft.edition=1st&amp;rft.pub=Springer&amp;rft.isbn=1-84628-053-2&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Chapman, Stephen J. (2007). <i>Fortran 95/2003 for Scientists and Engineers</i> (3rd ed.). McGraw-Hill. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-07-319157-7" title="Special:BookSources/978-0-07-319157-7">978-0-07-319157-7</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fortran+95%2F2003+for+Scientists+and+Engineers&amp;rft.aulast=Chapman&amp;rft.aufirst=Stephen+J.&amp;rft.au=Chapman%2C%26%2332%3BStephen+J.&amp;rft.date=2007&amp;rft.edition=3rd&amp;rft.pub=McGraw-Hill&amp;rft.isbn=978-0-07-319157-7&amp;rfr_id=info:sid/en.wikipedia.org:Fortran"><span style="display: none;">&#160;</span></span></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Fortran&amp;action=edit&amp;section=33" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;">
+<tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" /></td>
+<td class="mbox-text" style="">Wikibooks has a book on the topic of
+<div style="margin-left:10px;"><i><b><a href="http://en.wikibooks.org/wiki/Fortran" class="extiw" title="wikibooks:Fortran">Fortran</a></b></i></div>
+</td>
+</tr>
+</table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;">
+<tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Wikiquote-logo-en.svg/40px-Wikiquote-logo-en.svg.png" width="40" height="40" /></td>
+<td class="mbox-text" style=""><a href="/wiki/Wikiquote" title="Wikiquote">Wikiquote</a> has a collection of quotations related to: <i><b><a href="http://en.wikiquote.org/wiki/Fortran" class="extiw" title="q:Fortran">Fortran</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a href="http://www.nag.co.uk/sc22wg5/" class="external text" rel="nofollow">JTC1/SC22/WG5</a> — The ISO/IEC Fortran Working Group</li>
+<li><a href="http://www.softwarepreservation.org/projects/FORTRAN/" class="external text" rel="nofollow">History of FORTRAN</a> at the <a href="/wiki/Computer_History_Museum" title="Computer History Museum">Computer History Museum</a>'s Software Preservation Group</li>
+<li><a href="/wiki/Bob_Bemer" title="Bob Bemer">Bemer, Bob</a>, <a href="http://www.trailing-edge.com/~bobbemer/PRORES.HTM" class="external text" rel="nofollow">"Who Was Who in IBM's Programming Research? -- Early FORTRAN Days"</a>, January 1957, Computer History Vignettes</li>
+<li><a href="http://gcc.gnu.org/wiki/GFortranStandards" class="external text" rel="nofollow">Comprehensive Fortran Standards Documents</a> from the <a href="/wiki/Gfortran" title="Gfortran">gfortran</a> project</li>
+<li><a href="http://www.fh-jena.de/~kleine/history/languages/GC28-6515-10-FORTRAN-IV-Language.pdf" class="external text" rel="nofollow">Fortran IV - IBM System/360 and System/370 Fortran IV Language - GC28-6515-10</a></li>
+<li><a href="http://www.fortranplus.co.uk/fortran_info.html" class="external text" rel="nofollow">Fortran 77, 90, 95, 2003 Information &amp; Resources</a></li>
+<li><a href="http://www.physics.ucdavis.edu/~vem/F77_Ref.pdf" class="external text" rel="nofollow">Fortran 77 4.0 Reference Manual</a></li>
+<li><a href="http://users.physik.fu-berlin.de/~goerz/blog/2008/12/fortran-90-reference-card/" class="external text" rel="nofollow">Fortran 90 Reference Card</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 22583/1000000
+Post-expand include size: 167637/2048000 bytes
+Template argument size: 54256/2048000 bytes
+Expensive parser function count: 3/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:11168-0!1!0!default!!en!4 and timestamp 20101220154843 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Fortran">http://en.wikipedia.org/wiki/Fortran</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:Fortran" title="Category:Fortran">Fortran</a></span> | <span dir='ltr'><a href="/wiki/Category:Array_programming_languages" title="Category:Array programming languages">Array programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Procedural programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Numerical_programming_languages" title="Category:Numerical programming languages">Numerical programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Parallel_computing" title="Category:Parallel computing">Parallel computing</a></span> | <span dir='ltr'><a href="/wiki/Category:Fortran_programming_language_family" title="Category:Fortran programming language family">Fortran programming language family</a></span> | <span dir='ltr'><a href="/wiki/Category:Computer_and_telecommunication_standards" title="Category:Computer and telecommunication standards">Computer and telecommunication standards</a></span> | <span dir='ltr'><a href="/wiki/Category:Unix_programming_tools" title="Category:Unix programming tools">Unix programming tools</a></span> | <span dir='ltr'><a href="/wiki/Category:Statically_typed_programming_languages" title="Category:Statically typed programming languages">Statically typed programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Programming_languages_created_in_the_1950s" title="Category:Programming languages created in the 1950s">Programming languages created in the 1950s</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories: <span dir='ltr'><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_with_unsourced_statements_from_August_2010" title="Category:Articles with unsourced statements from August 2010">Articles with unsourced statements from August 2010</a></span> | <span dir='ltr'><a href="/wiki/Category:Wikipedia_further_reading_cleanup" title="Category:Wikipedia further reading cleanup">Wikipedia further reading cleanup</a></span> | <span dir='ltr'><a href="/wiki/Category:Wikipedia_spam_cleanup_from_August_2010" title="Category:Wikipedia spam cleanup from August 2010">Wikipedia spam cleanup from August 2010</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Fortran" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/Fortran"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:Fortran"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/Fortran" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=Fortran&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=Fortran&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Fortran" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Fortran" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=Fortran&amp;oldid=403362963" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Fortran&amp;id=403362963" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Fortran" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Fortran&amp;oldid=403362963&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Fortran&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D9%81%D9%88%D8%B1%D8%AA%D8%B1%D8%A7%D9%86" title="فورتران">العربية</a></li>
+					<li class="interwiki-bn"><a href="http://bn.wikipedia.org/wiki/%E0%A6%AB%E0%A7%8B%E0%A6%B0%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8" title="ফোরট্রান">বাংলা</a></li>
+					<li class="interwiki-be"><a href="http://be.wikipedia.org/wiki/FORTRAN" title="FORTRAN">Беларуская</a></li>
+					<li class="interwiki-bs"><a href="http://bs.wikipedia.org/wiki/FORTRAN" title="FORTRAN">Bosanski</a></li>
+					<li class="interwiki-bg"><a href="http://bg.wikipedia.org/wiki/FORTRAN" title="FORTRAN">Български</a></li>
+					<li class="interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Fortran" title="Fortran">Català</a></li>
+					<li class="interwiki-cv"><a href="http://cv.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%82%D1%80%D0%B0%D0%BD" title="Фортран">Чӑвашла</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Fortran" title="Fortran">Česky</a></li>
+					<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/Fortran" title="Fortran">Dansk</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Fortran" title="Fortran">Deutsch</a></li>
+					<li class="interwiki-et"><a href="http://et.wikipedia.org/wiki/Fortran" title="Fortran">Eesti</a></li>
+					<li class="interwiki-el"><a href="http://el.wikipedia.org/wiki/Fortran" title="Fortran">Ελληνικά</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Fortran" title="Fortran">Español</a></li>
+					<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Fortran_(programlingvo)" title="Fortran (programlingvo)">Esperanto</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D9%81%D9%88%D8%B1%D8%AA%D8%B1%D9%86" title="فورترن">فارسی</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Fortran" title="Fortran">Français</a></li>
+					<li class="interwiki-ga"><a href="http://ga.wikipedia.org/wiki/FORTRAN" title="FORTRAN">Gaeilge</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%ED%8F%AC%ED%8A%B8%EB%9E%80" title="포트란">한국어</a></li>
+					<li class="interwiki-hi"><a href="http://hi.wikipedia.org/wiki/%E0%A4%AB%E0%A4%BC%E0%A5%8B%E0%A4%B0%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%A8" title="फ़ोरट्रान">हिन्दी</a></li>
+					<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/Fortran" title="Fortran">Hrvatski</a></li>
+					<li class="interwiki-id"><a href="http://id.wikipedia.org/wiki/Fortran" title="Fortran">Bahasa Indonesia</a></li>
+					<li class="interwiki-ia"><a href="http://ia.wikipedia.org/wiki/FORTRAN" title="FORTRAN">Interlingua</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Fortran" title="Fortran">Italiano</a></li>
+					<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/FORTRAN" title="FORTRAN">עברית</a></li>
+					<li class="interwiki-ku"><a href="http://ku.wikipedia.org/wiki/Fortran" title="Fortran">Kurdî</a></li>
+					<li class="interwiki-lv"><a href="http://lv.wikipedia.org/wiki/Fortran" title="Fortran">Latviešu</a></li>
+					<li class="interwiki-lt"><a href="http://lt.wikipedia.org/wiki/Fortran" title="Fortran">Lietuvių</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Fortran" title="Fortran">Magyar</a></li>
+					<li class="interwiki-mr"><a href="http://mr.wikipedia.org/wiki/%E0%A4%AB%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%A8" title="फोर्ट्रान">मराठी</a></li>
+					<li class="interwiki-ms"><a href="http://ms.wikipedia.org/wiki/FORTRAN" title="FORTRAN">Bahasa Melayu</a></li>
+					<li class="interwiki-my"><a href="http://my.wikipedia.org/wiki/Fortran" title="Fortran">မြန်မာဘာသာ</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Fortran" title="Fortran">Nederlands</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/FORTRAN" title="FORTRAN">日本語</a></li>
+					<li class="interwiki-no"><a href="http://no.wikipedia.org/wiki/Fortran" title="Fortran">‪Norsk (bokmål)‬</a></li>
+					<li class="interwiki-nn"><a href="http://nn.wikipedia.org/wiki/Fortran" title="Fortran">‪Norsk (nynorsk)‬</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Fortran" title="Fortran">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Fortran" title="Fortran">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Fortran" title="Fortran">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%82%D1%80%D0%B0%D0%BD" title="Фортран">Русский</a></li>
+					<li class="interwiki-sah"><a href="http://sah.wikipedia.org/wiki/Fortran" title="Fortran">Саха тыла</a></li>
+					<li class="interwiki-sq"><a href="http://sq.wikipedia.org/wiki/Fortran" title="Fortran">Shqip</a></li>
+					<li class="interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Fortran" title="Fortran">Simple English</a></li>
+					<li class="interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Fortran" title="Fortran">Slovenčina</a></li>
+					<li class="interwiki-sl"><a href="http://sl.wikipedia.org/wiki/Fortran" title="Fortran">Slovenščina</a></li>
+					<li class="interwiki-ckb"><a href="http://ckb.wikipedia.org/wiki/%D9%81%DB%86%DA%95%D8%AA%D8%B1%D8%A7%D9%86" title="فۆڕتران">Soranî / کوردی</a></li>
+					<li class="interwiki-sr"><a href="http://sr.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%82%D1%80%D0%B0%D0%BD" title="Фортран">Српски / Srpski</a></li>
+					<li class="interwiki-sh"><a href="http://sh.wikipedia.org/wiki/Fortran" title="Fortran">Srpskohrvatski / Српскохрватски</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Fortran" title="Fortran">Suomi</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Fortran" title="Fortran">Svenska</a></li>
+					<li class="interwiki-ta"><a href="http://ta.wikipedia.org/wiki/%E0%AE%AA%E0%AF%8B%E0%AE%B0%E0%AF%8D%E0%AE%9F%E0%AF%8D%E0%AE%B0%E0%AE%BE%E0%AE%A9%E0%AF%8D" title="போர்ட்ரான்">தமிழ்</a></li>
+					<li class="interwiki-kab"><a href="http://kab.wikipedia.org/wiki/Fortran" title="Fortran">Taqbaylit</a></li>
+					<li class="interwiki-te"><a href="http://te.wikipedia.org/wiki/%E0%B0%AB%E0%B1%8B%E0%B0%B0%E0%B1%8D%E0%B0%9F%E0%B1%8D%E0%B0%B0%E0%B0%BE%E0%B0%A8%E0%B1%8D" title="ఫోర్ట్రాన్">తెలుగు</a></li>
+					<li class="interwiki-th"><a href="http://th.wikipedia.org/wiki/%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%81%E0%B8%97%E0%B8%A3%E0%B8%99" title="ภาษาฟอร์แทรน">ไทย</a></li>
+					<li class="interwiki-tg"><a href="http://tg.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%82%D1%80%D0%B0%D0%BD" title="Фортран">Тоҷикӣ</a></li>
+					<li class="interwiki-tr"><a href="http://tr.wikipedia.org/wiki/FORTRAN" title="FORTRAN">Türkçe</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/Fortran" title="Fortran">Українська</a></li>
+					<li class="interwiki-vi"><a href="http://vi.wikipedia.org/wiki/Fortran" title="Fortran">Tiếng Việt</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/Fortran" title="Fortran">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 20 December 2010 at 15:48.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv248 in 0.051 secs. -->			</body>
+</html>

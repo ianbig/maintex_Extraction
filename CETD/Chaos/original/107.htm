@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>SPGL1 and TV minimization ? &laquo; Le Petit Chercheur Illustré</title>
+
+<link rel="stylesheet" href="http://s0.wp.com/wp-content/themes/default/style.css?m=1293559685g&amp;3" type="text/css" media="screen" />
+<!--[if lte IE 8]><link rel="stylesheet" href="http://s0.wp.com/wp-content/themes/default/ie.css?m=1273203575g" type="text/css" media="screen" /><![endif]-->
+<link rel="pingback" href="http://yetaspblog.wordpress.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Le Petit Chercheur Illustré &raquo; Feed" href="http://yetaspblog.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Le Petit Chercheur Illustré &raquo; Comments Feed" href="http://yetaspblog.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Le Petit Chercheur Illustré &raquo; SPGL1 and TV minimization&nbsp;? Comments Feed" href="http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" href="http://s0.wp.com/wp-content/themes/h4/global.css?m=1291749258g" type="text/css" />
+<script type='text/javascript' src='http://s2.wp.com/wp-includes/js/l10n.js?m=1290133841g&amp;ver=20101110'></script>
+<script type='text/javascript' src='http://s1.wp.com/wp-includes/js/jquery/jquery.js?m=1290133841g&amp;ver=1.4.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-includes/js/comment-reply.js?m=1231878779g&amp;ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://yetaspblog.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://yetaspblog.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Le Petit Chercheur Illustré' href='http://yetaspblog.wordpress.com/' />
+<link rel='prev' title='Matching Pursuit Before Computer&nbsp;Science' href='http://yetaspblog.wordpress.com/2008/06/12/matching-pursuit-before-computer-science/' />
+<link rel='next' title='SPGL1 and TV: Answers from SPGL1&nbsp;Authors' href='http://yetaspblog.wordpress.com/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/' />
+<link rel='shortlink' href='http://wp.me/pfv70-a' />
+<link rel="shortcut icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon" href="http://s0.wp.com/wp-content/themes/h4/i/webclip.png?m=1250548519g" />
+	<style type="text/css">
+	/* <![CDATA[ */
+				div#likes { margin-top: 15px; }
+		.like-button { border: 1px solid #eee; padding: 2px 6px; font-size: 13px; font-family: arial, tahoma, sans-serif; }
+		#wpl-likebox { clear: left; font-size: 11px; font-family: arial, tahoma, verdana, sans-serif !important; min-height: 30px; margin: 10px 0 !important; padding: 5px 0 10px 0 !important; }
+		#wpl-button { float: left; background: url( /i/buttonbg.png ) top left repeat-x; margin-right: 7px; border: 1px solid #d4d4d4; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-button a { color: #666 !important; line-height: 130% !important; text-decoration: none !important; outline: none; float: left; padding: 3px 6px 2px 24px !important; font-size: 11px !important; background: url( /i/likestar.png ) 6px 49.8% no-repeat; }
+		#wpl-button.liked { background: #feffce; border: 1px solid #f3e389; }
+		#wpl-button.liked a { color: #ba871b !important; }
+		#wpl-likebox #wpl-count { min-height: 25px; line-height: 130% !important; float: left; padding-top: 4px; }
+		#wpl-likebox #wpl-avatars { clear: left; max-height: 98px; overflow: hidden; margin-top: 15px; line-height: 130% !important; }
+		#wpl-likebox #wpl-avatars img { border: none !important; }
+		#wpl-likebox #wpl-mustlogin { line-height: 14px !important; font-size: 11px; clear: left; margin-top: 5px; background: #f0f0f0; padding: 10px; width: 65%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-likebox #wpl-mustlogin a { color: #888; text-decoration: underline; }
+		#wpl-likebox #wpl-mustlogin p { margin: 5px 0; padding: 0 }
+		#wpl-likebox #wpl-mustlogin input.input { padding: 2px; background: #fff; font-size: 11px; font-family: inherit; border: 1px solid #ccc; -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin input#wp-submit { border: 1px solid #ccc; font-size: 11px; background: #fafafa; repeat-x; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 2px 4px !important; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin label { position: relative; cursor: text; }
+		#wpl-likebox #wpl-mustlogin label span { position: absolute; top: 0px; left: 5px; padding: 0 !important; }
+		#wpl-likebox #wpl-mustlogin label span { top /*\**/: -10px\9; }
+	/* ]]> */
+	</style>
+	<link rel='openid.server' href='http://yetaspblog.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://yetaspblog.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://yetaspblog.wordpress.com/osd.xml" title="Le Petit Chercheur Illustré" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+<style type="text/css">
+#header     { margin: 0 !important; margin: 0 0 0 1px; padding: 1px; height: 198px; width: 758px; }
+#headerimg  { margin: 7px 9px 0; height: 192px; width: 740px; }
+#headerimg { background: url(http://yetaspblog.files.wordpress.com/2008/05/cropped-00017-2.jpg) no-repeat top;}
+#header h1 a, #header h1 a:hover, #header .description {
+	color: #ffffff;
+}
+</style>
+<style type='text/css'><!--
+body { background: url("http://s0.wp.com/wp-content/themes/default/images/kubrickbgcolor.gif?m=1273203575g"); }
+#page { background: url("http://s0.wp.com/wp-content/themes/default/images/kubrickbgwide.gif?m=1273203575g") repeat-y top !important; border: none; }
+#header { background: url("http://s0.wp.com/wp-content/themes/default/images/kubrickheader.gif?m=1273203575g") no-repeat bottom center; }
+#footer { background: url("http://s0.wp.com/wp-content/themes/default/images/kubrickfooter.gif?m=1273203575g") no-repeat bottom; border: none;}
+#header { margin: 0 !important; margin: 0 0 0 1px; padding: 1px; height: 198px; width: 758px; }
+#headerimg { margin: 7px 9px 0; height: 192px; width: 740px; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: #DDDDFF; }
+#headerimg h1 a, #headerimg .description { display:  }
+
+	--></style><meta name="application-name" content="Le Petit Chercheur Illustré" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Yet Another Signal Processing (and Applied Math) blog" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://yetaspblog.wordpress.com/feed/;icon-uri=http://s1.wp.com/i/favicon-stacked.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><script type="text/javascript"> 
+	window.google_analytics_uacct = "UA-52447-2"; 
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+</head>
+<body>
+<div id="page">
+
+
+<div id="header">
+	<div id="headerimg" onclick=" location.href='http://yetaspblog.wordpress.com';" style="cursor: pointer;">
+		<h1><a href="http://yetaspblog.wordpress.com/">Le Petit Chercheur Illustré</a></h1>
+		<div class="description">Yet Another Signal Processing (and Applied Math) blog</div>
+	</div>
+</div>
+<hr />
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://yetaspblog.wordpress.com/2008/06/12/matching-pursuit-before-computer-science/" rel="prev">Matching Pursuit Before Computer&nbsp;Science</a></div>
+			<div class="alignright"><a href="http://yetaspblog.wordpress.com/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/" rel="next">SPGL1 and TV: Answers from SPGL1&nbsp;Authors</a> &raquo;</div>
+		</div>
+
+		<div class="post-10 post type-post status-publish format-standard hentry category-compressed-sensing clear" id="post-10">
+						<h2>SPGL1 and TV minimization&nbsp;?</h2>
+			<small>By jackdurden</small>
+
+			<div class="entry">
+				<script type="text/javascript" src="http://s0.wp.com/wp-content/plugins/adverts/adsense.js?m=1253160243g&amp;1"></script><p>Recently, I was using the <a href="http://www.cs.ubc.ca/labs/scl/spgl1/">SPGL1</a> toolbox to recover some &#8220;compressed sensed&#8221; images. As a reminder, <a href="http://www.cs.ubc.ca/labs/scl/spgl1/">SPGL1</a> implements the method described in &#8220;<a class="urllink" href="http://www.cs.ubc.ca/%7Empf/downloads/BergFriedlander08.pdf">Probing the Pareto Frontier for basis pursuit solutions</a>&#8221; of <a class="urllink" href="http://www.cs.ubc.ca/%7Empf">Michael P. Friedlander</a> and <a class="urllink" href="http://www.cs.ubc.ca/%7Eewout78">Ewout van den Berg</a>. It solves the <em>Basis Pursuit DeNoise</em> (or <img src='http://l.wordpress.com/latex.php?latex=BP_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='BP_\sigma' title='BP_\sigma' class='latex' />) problem with a error power <img src='http://l.wordpress.com/latex.php?latex=%5Csigma+%3E0&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\sigma &gt;0' title='\sigma &gt;0' class='latex' /></p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cmin_%7Bu%5Cin%5Cmathbb%7BR%7D%5EN%7D+%5C%7Cu%5C%7C_1%5C+%5Ctextrm%7Bsuch+that%7D%5C+%5C%7CAu+-+b%5C%7C_2+%5Cleq+%5Csigma%2C&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\min_{u\in\mathbb{R}^N} \|u\|_1\ \textrm{such that}\ \|Au - b\|_2 \leq \sigma,' title='\min_{u\in\mathbb{R}^N} \|u\|_1\ \textrm{such that}\ \|Au - b\|_2 \leq \sigma,' class='latex' /></p>
+<p>where <img src='http://l.wordpress.com/latex.php?latex=A%5C%2C%5Cin%5C%2C%5Cmathbb%7BR%7D%5E%7Bm%5Ctimes+N%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='A\,\in\,\mathbb{R}^{m\times N}' title='A\,\in\,\mathbb{R}^{m\times N}' class='latex' /> is the usual measurement matrix for a measurement vector <img src='http://l.wordpress.com/latex.php?latex=b%5Cin+%5Cmathbb%7BR%7D%5Em&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='b\in \mathbb{R}^m' title='b\in \mathbb{R}^m' class='latex' />, and <img src='http://l.wordpress.com/latex.php?latex=%5C%7Cu%5C%7C_%7B1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|u\|_{1}' title='\|u\|_{1}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%5C%7Cu%5C%7C_%7B1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|u\|_{1}' title='\|u\|_{1}' class='latex' /> are the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> and the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_2' title='\ell_2' class='latex' /> norm of the vector <img src='http://l.wordpress.com/latex.php?latex=u%5Cin%5Cmathbb%7BR%7D%5EN&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u\in\mathbb{R}^N' title='u\in\mathbb{R}^N' class='latex' /> respectively. In short, as shown by <a href="http://www.acm.caltech.edu/%7Eemmanuel/">E. Candès</a>, <a href="http://users.ece.gatech.edu/%7Ejustin/">J. Romberg</a> and <a href="http://terrytao.wordpress.com/">T. Tao</a>, if <img src='http://l.wordpress.com/latex.php?latex=A&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='A' title='A' class='latex' /> is well behaved, i.e. if it satisfies the so-called <a href="www.acm.caltech.edu/~emmanuel/papers/StableRecovery.pdf "><em>Restricted Isometry Property</em></a> for any <img src='http://l.wordpress.com/latex.php?latex=2K&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='2K' title='2K' class='latex' /> sparse signals, then the solution of <img src='http://l.wordpress.com/latex.php?latex=BP_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='BP_\sigma' title='BP_\sigma' class='latex' /> approximates (with a controlled error) a <img src='http://l.wordpress.com/latex.php?latex=K&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='K' title='K' class='latex' /> sparse (or compressible) signal <img src='http://l.wordpress.com/latex.php?latex=v&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='v' title='v' class='latex' /> such that <img src='http://l.wordpress.com/latex.php?latex=b+%3D+Av+%2B+n&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='b = Av + n' title='b = Av + n' class='latex' />, where <img src='http://l.wordpress.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='n' title='n' class='latex' /> is an additive noise vector with power <img src='http://l.wordpress.com/latex.php?latex=%5C%7Cn%5C%7C_2+%5Cleq+%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|n\|_2 \leq \sigma' title='\|n\|_2 \leq \sigma' class='latex' />.</p>
+<p>The reason of this post is the following : <strong>I&#8217;m wondering if SPGL1 could be &#8220;easily&#8221; transformed into a solver of the Basis Pursuit with the <em>Total Variation</em> (TV) norm.</strong> That is, the minimization problem <img src='http://l.wordpress.com/latex.php?latex=TV_%7B%5Csigma%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='TV_{\sigma}' title='TV_{\sigma}' class='latex' /></p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cmin_%7Bu%5Cin%5Cmathbb%7BR%7D%5EN%7D+%5C%7Cu%5C%7C_%7BTV%7D%5C+%5Ctextrm%7Bsuch+that%7D%5C+%5C%7CAu+-+b%5C%7C_2+%5Cleq+%5Csigma%2C&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\min_{u\in\mathbb{R}^N} \|u\|_{TV}\ \textrm{such that}\ \|Au - b\|_2 \leq \sigma,' title='\min_{u\in\mathbb{R}^N} \|u\|_{TV}\ \textrm{such that}\ \|Au - b\|_2 \leq \sigma,' class='latex' /></p>
+<p>where <img src='http://l.wordpress.com/latex.php?latex=%5C%7Cu%5C%7C_%7BTV%7D+%3D+%5C%7CD+u%5C%7C_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|u\|_{TV} = \|D u\|_1' title='\|u\|_{TV} = \|D u\|_1' class='latex' /> with <img src='http://l.wordpress.com/latex.php?latex=%28D+u%29_j+%3D+%28D_1+u%29_j+%2B+i%5C%2C%28D_2+u%29_j&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='(D u)_j = (D_1 u)_j + i\,(D_2 u)_j' title='(D u)_j = (D_1 u)_j + i\,(D_2 u)_j' class='latex' /> is the <img src='http://l.wordpress.com/latex.php?latex=j&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='j' title='j' class='latex' />th component of the complex finite difference operator applied on the vectorized image <img src='http://l.wordpress.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u' title='u' class='latex' /> of <img src='http://l.wordpress.com/latex.php?latex=N&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='N' title='N' class='latex' /> pixels (in a set of coordinates <img src='http://l.wordpress.com/latex.php?latex=x_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='x_1' title='x_1' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=x_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='x_2' title='x_2' class='latex' />).  I have used here a &#8220;complexification&#8221; trick putting the finite differences <img src='http://l.wordpress.com/latex.php?latex=D_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='D_1' title='D_1' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=D_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='D_2' title='D_2' class='latex' /> according to the directions <img src='http://l.wordpress.com/latex.php?latex=x_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='x_1' title='x_1' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=x_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='x_2' title='x_2' class='latex' /> in the real part and the imaginary part respectively of the complex operator <img src='http://l.wordpress.com/latex.php?latex=D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='D' title='D' class='latex' />. The TV norm of <img src='http://l.wordpress.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u' title='u' class='latex' /> is then really the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> norm of <img src='http://l.wordpress.com/latex.php?latex=Du&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='Du' title='Du' class='latex' />.</p>
+<p>This problem is particularly well designed for the reconstruction of compressed sensed images since most of them are very sparse in the &#8220;gradient basis&#8221; (see for instance some references about <a href="http://www.dsp.ece.rice.edu/cs/#app">Compressed Sensing for MRI</a>). Minimizing the TV norm, since performed in the spatial domain, is also sometimes more efficient than minimizing the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> norm is a particular sparsity basis (e.g. 2-D wavelets, curvelets, &#8230;).</p>
+<p>Therefore, I would say that, as for the initial SPGL1 theoretical framework, it could be interesting to study the <em>Pareto frontier</em> related to <img src='http://l.wordpress.com/latex.php?latex=TV_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='TV_\sigma' title='TV_\sigma' class='latex' />, even if the TV norm is now a <a href="http://en.wikipedia.org/wiki/Norm_(mathematics)">quasi-norm</a>, i.e.  <img src='http://l.wordpress.com/latex.php?latex=%5C%7Cu%5C%7C_%7BTV%7D+%3D0&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|u\|_{TV} =0' title='\|u\|_{TV} =0' class='latex' /> does not imply <img src='http://l.wordpress.com/latex.php?latex=u+%3D0&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u =0' title='u =0' class='latex' /> but <img src='http://l.wordpress.com/latex.php?latex=u_j+%3D+c&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u_j = c' title='u_j = c' class='latex' /> for a certain constant <img src='http://l.wordpress.com/latex.php?latex=c+%5Cin+%5Cmathbb%7BR%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='c \in \mathbb{R}' title='c \in \mathbb{R}' class='latex' />.</p>
+<p>To explain better that point, let me first summarize the paper of <a class="urllink" href="http://www.cs.ubc.ca/%7Empf">Friedlander</a> and <a class="urllink" href="http://www.cs.ubc.ca/%7Eewout78">van den Berg</a> quoted above. They proposed to solve <img src='http://l.wordpress.com/latex.php?latex=BP_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='BP_\sigma' title='BP_\sigma' class='latex' /> by solving a <em>LASSO</em> problem (or <img src='http://l.wordpress.com/latex.php?latex=LS_%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='LS_\tau' title='LS_\tau' class='latex' />) regulated by a parameter <img src='http://l.wordpress.com/latex.php?latex=%5Ctau%3E0&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau&gt;0' title='\tau&gt;0' class='latex' />,</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cmin_%7Bu%5Cin%5Cmathbb%7BR%7D%5EN%7D+%5C%7CAu+-+b%5C%7C_2%5C+%5Ctextrm%7Bsuch+that%7D%5C+%5C%7Cu%5C%7C_1+%5Cleq+%5Ctau.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\min_{u\in\mathbb{R}^N} \|Au - b\|_2\ \textrm{such that}\ \|u\|_1 \leq \tau.' title='\min_{u\in\mathbb{R}^N} \|Au - b\|_2\ \textrm{such that}\ \|u\|_1 \leq \tau.' class='latex' /></p>
+<p>If I&#8217;m right, the key idea is that there exists a <img src='http://l.wordpress.com/latex.php?latex=%5Ctau_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau_\sigma' title='\tau_\sigma' class='latex' /> such that <img src='http://l.wordpress.com/latex.php?latex=LS_%7B%5Ctau_%5Csigma%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='LS_{\tau_\sigma}' title='LS_{\tau_\sigma}' class='latex' /> is equivalent to <img src='http://l.wordpress.com/latex.php?latex=BP_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='BP_\sigma' title='BP_\sigma' class='latex' />. The problem is thus to assess this point. SPGL1 finds <img src='http://l.wordpress.com/latex.php?latex=%5Ctau_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau_\sigma' title='\tau_\sigma' class='latex' /> iteratively using the fact that all the <img src='http://l.wordpress.com/latex.php?latex=LS_%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='LS_\tau' title='LS_\tau' class='latex' /> problems define a smooth and decreasing curve of <img src='http://l.wordpress.com/latex.php?latex=%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau' title='\tau' class='latex' /> (the <em>Pareto curve</em>) from the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_2' title='\ell_2' class='latex' /> norm of the residual <img src='http://l.wordpress.com/latex.php?latex=r_%5Ctau+%3D+b+-+Au_%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='r_\tau = b - Au_\tau' title='r_\tau = b - Au_\tau' class='latex' />, where <img src='http://l.wordpress.com/latex.php?latex=u_%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u_\tau' title='u_\tau' class='latex' /> is the solution of <img src='http://l.wordpress.com/latex.php?latex=LS_%7B%5Ctau%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='LS_{\tau}' title='LS_{\tau}' class='latex' />. More precisely, the function</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cphi%28%5Ctau%29+%5Ctriangleq+%5C%7Cr_%5Ctau%5C%7C_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi(\tau) \triangleq \|r_\tau\|_2' title='\phi(\tau) \triangleq \|r_\tau\|_2' class='latex' /></p>
+<p>is decreasing from <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%280%29+%3D+%5C%7Cb%5C%7C_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi(0) = \|b\|_2' title='\phi(0) = \|b\|_2' class='latex' /> to a value <img src='http://l.wordpress.com/latex.php?latex=%5Ctau_%7B%5Csigma%7D%3E0&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau_{\sigma}&gt;0' title='\tau_{\sigma}&gt;0' class='latex' /> such that</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cphi%28%5Ctau_%5Csigma%29+%3D+%5Csigma.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi(\tau_\sigma) = \sigma.' title='\phi(\tau_\sigma) = \sigma.' class='latex' /></p>
+<p>Interestingly, the derivative <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%27%28%5Ctau%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi&#039;(\tau)' title='\phi&#039;(\tau)' class='latex' /> exists on <img src='http://l.wordpress.com/latex.php?latex=%7B%5B%7D0%2C+%5Ctau%7B%5D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{[}0, \tau{]}' title='{[}0, \tau{]}' class='latex' /> and it is simply equal to <img src='http://l.wordpress.com/latex.php?latex=-%5C%7CA%5ETy_%5Ctau%5C%7C_%7B%5Cinfty%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='-\|A^Ty_\tau\|_{\infty}' title='-\|A^Ty_\tau\|_{\infty}' class='latex' /> with <img src='http://l.wordpress.com/latex.php?latex=y_%5Ctau+%3D+r_%5Ctau+%2F+%5C%7Cr_%5Ctau%5C%7C_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='y_\tau = r_\tau / \|r_\tau\|_2' title='y_\tau = r_\tau / \|r_\tau\|_2' class='latex' />.</p>
+<p>As explained, on the point <img src='http://l.wordpress.com/latex.php?latex=%5Ctau%3D%5Ctau_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau=\tau_\sigma' title='\tau=\tau_\sigma' class='latex' />, the problem <img src='http://l.wordpress.com/latex.php?latex=LS_%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='LS_\tau' title='LS_\tau' class='latex' /> provides the solution to <img src='http://l.wordpress.com/latex.php?latex=BP_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='BP_\sigma' title='BP_\sigma' class='latex' />. But since both <img src='http://l.wordpress.com/latex.php?latex=%5Cphi&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi' title='\phi' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%27&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi&#039;' title='\phi&#039;' class='latex' /> are known, a Newton method on this Pareto curve can then iteratively estimate <img src='http://l.wordpress.com/latex.php?latex=%5Ctau_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau_\sigma' title='\tau_\sigma' class='latex' /> from the implicit equation <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%28%5Ctau_%5Csigma%29+%3D+%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi(\tau_\sigma) = \sigma' title='\phi(\tau_\sigma) = \sigma' class='latex' />. Practically, this is done by solving of an approximate <img src='http://l.wordpress.com/latex.php?latex=LS_%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='LS_\tau' title='LS_\tau' class='latex' /> at each <img src='http://l.wordpress.com/latex.php?latex=%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau' title='\tau' class='latex' /> (and the convergence of the Newton method is still linear).</p>
+<p>At the end, the whole approach is very efficient for solving high dimensional BPDN problems (such that BPDN for images) and the final computation cost is mainly due to the cost of the forward and transposed multiplication of the matrix/operator <img src='http://l.wordpress.com/latex.php?latex=A&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='A' title='A' class='latex' /> with vectors.</p>
+<p><strong>So what happens now if the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> norm is replaced by the TV norm in this process ? If we switch from <img src='http://l.wordpress.com/latex.php?latex=BP_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='BP_\sigma' title='BP_\sigma' class='latex' /> to <img src='http://l.wordpress.com/latex.php?latex=TV_%5Csigma&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='TV_\sigma' title='TV_\sigma' class='latex' /> ? Is there a &#8220;SPGL1 way&#8221; to solve that ?</strong></p>
+<p>The function <img src='http://l.wordpress.com/latex.php?latex=%5Cphi&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi' title='\phi' class='latex' /> resulting from such a context would have now the initial point <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%5E2%280%29+%3D+%5C%7Cb%5C%7C%5E2_2+-+%28b%5ETA%5Cbf+1%29%5E2%2F%5C%7CA%5Cbf+1%5C%7C%5E2_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi^2(0) = \|b\|^2_2 - (b^TA\bf 1)^2/\|A\bf 1\|^2_2' title='\phi^2(0) = \|b\|^2_2 - (b^TA\bf 1)^2/\|A\bf 1\|^2_2' class='latex' /> (with <img src='http://l.wordpress.com/latex.php?latex=%5Cbf+1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\bf 1' title='\bf 1' class='latex' /> the constant vector) since a zero TV norm means a constant <img src='http://l.wordpress.com/latex.php?latex=u+%3D+c+%5Cbf+1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u = c \bf 1' title='u = c \bf 1' class='latex' /> (the value of <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%280%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi(0)' title='\phi(0)' class='latex' /> arises just from the minimization on <img src='http://l.wordpress.com/latex.php?latex=c&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='c' title='c' class='latex' />). Notice that if <img src='http://l.wordpress.com/latex.php?latex=A&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='A' title='A' class='latex' /> is for instance a Gaussian measurement matrix, <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%280%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi(0)' title='\phi(0)' class='latex' /> will be very close to <img src='http://l.wordpress.com/latex.php?latex=%5C%7Cb%5C%7C_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|b\|_2' title='\|b\|_2' class='latex' /> since the expectation value of the average of any row is zero.</p>
+<p>For the rest, I&#8217;m unfortunately not sufficiently familiar with convex optimization theory to deduce what is <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%27&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi&#039;' title='\phi&#039;' class='latex' /> for the TV framework (hum. I should definitely study that).</p>
+<p>However, for the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> case, <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%28%5Ctau%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi(\tau)' title='\phi(\tau)' class='latex' /> (i.e. <img src='http://l.wordpress.com/latex.php?latex=LS_%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='LS_\tau' title='LS_\tau' class='latex' />) is computed approximately for each <img src='http://l.wordpress.com/latex.php?latex=%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau' title='\tau' class='latex' />. This approximation, which is also iterative, uses a special projection operator to guarantee that the current candidate solution in the iteration remains feasible, i.e. remains in the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> ball <img src='http://l.wordpress.com/latex.php?latex=%5C%7Bu+%3A+%5C%7Cu%5C%7C_1+%5Cleq+%5Ctau%5C%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\{u : \|u\|_1 \leq \tau\}' title='\{u : \|u\|_1 \leq \tau\}' class='latex' />. As usual, this projection is accomplished through a <em>Soft Thresholding</em> procedure, i.e. as a solution of the problem</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cmin_%7Bu%7D+%5C%7Cw+-u%5C%7C%5E2_2+%2B+%5Clambda+%5C%7Cu%5C%7C_%7B1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\min_{u} \|w -u\|^2_2 + \lambda \|u\|_{1}' title='\min_{u} \|w -u\|^2_2 + \lambda \|u\|_{1}' class='latex' />,</p>
+<p>where <img src='http://l.wordpress.com/latex.php?latex=w&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='w' title='w' class='latex' /> is the point to project, and where <img src='http://l.wordpress.com/latex.php?latex=%5Clambda%3E0&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\lambda&gt;0' title='\lambda&gt;0' class='latex' /> is set so that the projection is inside the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> ball above.</p>
+<p>For the TV minimization case, the TV ball <img src='http://l.wordpress.com/latex.php?latex=%5C%7Bu+%3A+%5C%7Cu%5C%7C_%7BTV%7D+%5Cleq+%5Ctau%5C%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\{u : \|u\|_{TV} \leq \tau\}' title='\{u : \|u\|_{TV} \leq \tau\}' class='latex' /> defining the feasible set of the approximate LASSO procedure would possibly generate a projection operator equivalent to the one solving the problem</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cmin_%7Bu%7D+%5C%7Cw+-u%5C%7C%5E2_2+%2B+%5Clambda+%5C%7Cu%5C%7C_%7BTV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\min_{u} \|w -u\|^2_2 + \lambda \|u\|_{TV}' title='\min_{u} \|w -u\|^2_2 + \lambda \|u\|_{TV}' class='latex' />.</p>
+<p>This is somehow related to one of the lessons provided in the <a href="www.lx.it.pt/~mtf/dias_figueiredo_submitted2007_2column.pdf">TwIST</a> paper (<em>&#8220;A new twIst: two-step iterative shrinkage/thresholding algorithms for image restoration&#8221;</em>) of<a href="http://www.lx.it.pt/~bioucas/"> J. Bioucas-Dias</a> and <a href="http://www.lx.it.pt/~mtf/">M. Figueiredo</a> about the so-called <em>Moreau</em> function : <strong>There is a deep link between some iterative resolutions of a regularized BP problem using a given sparsity metric, e.g. the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> or the TV norm, and the canonic denoising method of this metric, i.e. when the measurement is the identity operator, giving Soft Thresholding or TV denoising respectively.</strong></p>
+<p>Thanks to the implementation of <a href="http://www.cmap.polytechnique.fr/~antonin/">Antonin Chambolle </a> (used also by TwIST), this last canonic TV minimization can be computed very quickly. Therefore, if needed, the required projection on the TV ball above can be also inserted in a potential &#8220;SPGL1 for TV sparsity problem&#8221;.</p>
+<p>OK&#8230; I agree that all that is just a very rough intuition. There is a lot of points to clarify and to develop. However, if you know something about all that (or if you detect that I&#8217;m totally wrong), or if you just want to comment this idea, feel free to use the comment box below &#8230;</p>
+
+<!--adcode-->
+<div align="center" style="padding-top: 5px; text-align: left;" class="adcode">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3443918307802676";
+google_ad_output = "js";
+google_feedback = "on";
+google_max_num_ads = "4";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_image_size = "336x280";
+google_ad_type = "text,flash,html";
+google_ad_channel ="7770228814+3633280292+7401333398+7453468586+2794543176+2141574685+7250744022";
+var color_bg = 'ffffff';
+var color_text = '000000';
+var color_link = '0000ff';
+var color_border = 'ffffff';
+var color_url = '0000ff';
+
+google_analytics_domain_name = "wordpress.com";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+<div style="clear: both"><br /></div>
+<!--/adcode-->
+
+								
+				<p class="postmetadata alt">
+					<small>
+												This entry was posted  on August 17, 2008 at 11:48 pm and is filed under <a href="http://en.wordpress.com/tag/compressed-sensing/" title="View all posts in Compressed Sensing" rel="category tag">Compressed Sensing</a>.						You can follow any responses to this entry through the <a href='http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/feed/'>RSS 2.0</a> feed.
+													You can <a href="#respond">leave a response</a>, or <a href="http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/trackback/" rel="trackback">trackback</a> from your own site.
+						
+					</small>
+				</p>
+
+			</div>
+					</div>
+
+	<div id="wpl-likebox"><div id="wpl-button"><a href='http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/?like=1&amp;_wpnonce=251343adf9' title='I like this post' class='like needs-login'><span>Like</span></a></div><div id="wpl-count">Be the first to like this post.</div></div>
+<!-- You can start editing here. -->
+	<h3 id="comments">23 Responses to &#8220;SPGL1 and TV minimization&nbsp;?&#8221;</h3>
+
+	<ol class="commentlist">
+					<li class="comment even thread-even depth-1" id="comment-19">
+			<img alt='' src='http://0.gravatar.com/avatar/e34ded36efe4b7abb12510d4e525fee8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.ceremade.dauphine.fr/~peyre/' rel='external nofollow' class='url'>Gabriel Peyré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-19" title="">August 18, 2008 at 11:42 am</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=19#respond' onclick='return addComment.moveForm("comment-19", "19", "respond", "10")'>Reply</a> </small>
+
+			<p>Dear Laurent,</p>
+<p>As far as the Lagrangian formulation is concerned, you can replace the iterative thresholding algorithm proposed by so many researcher (including Figueiredo Nowak and Daubechies et al) by proximal iterations, where the soft thresholding is replaced by some inner iterations of Chambolle ROF algorithm (published in JMIV). For more information about proximal iterations (and convergence theorem), you should have a look at recent preprints of Patrick Combettes at Paris 6. </p>
+<p>Intuitively, you just follow the surrogate functional derivation made by Daubechies in her CPAM paper with Defrise and Demol, but replace L1 norm of coefficient in orthobasis by TV norm, which leads to the resolution of the lagrangian ROF.</p>
+<p>Another options is to make the change of variagle v=grad(u) so that the TV-L2 problem becomes a L1-L2 (with complex coefficients as you noticed), and solve with iterative thresholding for v. The issue is that during iterations, you need to impose the constraint rot(v)=0, which requires to solve the poisson equation at each iteration. Works great in practice (its 2 FFTs if you use periodic boundary conditions) !</p>
+<p>Also, in the paper of Chambolle, there is a nice trick to solve for deblurring when the operator is a projection, so it will also work for CS if the matrix is a random projector !<br />
+It is a 1 line of code modification of Chambolle algorithm, very nice. At it&#8217;s like the fastest algorithm on earth to solve CS-TV <img src='http://s1.wp.com/wp-includes/images/smilies/icon_wink.gif?m=1221114606g' alt=';)' class='wp-smiley' /> </p>
+</li>
+			<li class="comment byuser comment-author-jackdurden bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-20">
+			<img alt='' src='http://1.gravatar.com/avatar/bca0a7cda97b9faabef157054852de42?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite>jackdurden</cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-20" title="">August 18, 2008 at 11:58 am</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=20#respond' onclick='return addComment.moveForm("comment-20", "20", "respond", "10")'>Reply</a> </small>
+
+			<p>Thanks a lot Gabriel for these important comments. </p>
+<p>I see more clearly now the links with other works.<br />
+I&#8217;ll have a look to the references you propose.</p>
+</li>
+			<li class="comment even thread-even depth-1" id="comment-22">
+			<img alt='' src='http://0.gravatar.com/avatar/e34ded36efe4b7abb12510d4e525fee8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.ceremade.dauphine.fr/~peyre/' rel='external nofollow' class='url'>Gabriel Peyré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-22" title="">August 18, 2008 at 12:17 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=22#respond' onclick='return addComment.moveForm("comment-22", "22", "respond", "10")'>Reply</a> </small>
+
+			<p>BTW, I think Chambolle&#8217;s paper is difficult to find online, but you can get a preprint here<br />
+<a href="http://www.ceremade.dauphine.fr/preprints/CMD/2002-40.ps.gz" rel="nofollow">http://www.ceremade.dauphine.fr/preprints/CMD/2002-40.ps.gz</a></p>
+<p>It is a must read for any one interested by TV minimization. There are two very cool tricks at the end, one to solve the L2 constraint optimization (the lambda of the lagrangian penalization is updated by a simple rule at each iteration) and the other to solve inverse problems with projectors. </p>
+<p>The paper takes the example of deblurring, but it also works great for TV-inpainting or TV-CS with projection on random fourier subset ! Its is like a 5 lines of matlab code algorithm (once you have grad and div operator implemented somewhere), its converges very fast (its is a fixed point iteration with a speed of convergence).</p>
+</li>
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-23">
+			<img alt='' src='http://0.gravatar.com/avatar/c69fc54e8890fa8a1f3c06ba2f2e5ef9?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://nuit-blanche.blogspot.com' rel='external nofollow' class='url'>Igor Carron</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-23" title="">August 18, 2008 at 12:32 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=23#respond' onclick='return addComment.moveForm("comment-23", "23", "respond", "10")'>Reply</a> </small>
+
+			<p>Gabriel,</p>
+<p>Has this CS-TV algorithm been implemented and released somewhere ?</p>
+<p>Igor.</p>
+</li>
+			<li class="comment even thread-even depth-1" id="comment-24">
+			<img alt='' src='http://0.gravatar.com/avatar/e34ded36efe4b7abb12510d4e525fee8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.ceremade.dauphine.fr/~peyre/' rel='external nofollow' class='url'>Gabriel Peyré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-24" title="">August 18, 2008 at 12:39 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=24#respond' onclick='return addComment.moveForm("comment-24", "24", "respond", "10")'>Reply</a> </small>
+
+			<p>I will update my sparsity toolbox asap. I will send you an email when the code is released.</p>
+</li>
+			<li class="comment byuser comment-author-jackdurden bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-25">
+			<img alt='' src='http://1.gravatar.com/avatar/bca0a7cda97b9faabef157054852de42?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite>jackdurden</cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-25" title="">August 18, 2008 at 12:44 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=25#respond' onclick='return addComment.moveForm("comment-25", "25", "respond", "10")'>Reply</a> </small>
+
+			<p>Gabriel, </p>
+<p>by CS-TV, you mean the regularized problem or the constrained <img src='http://l.wordpress.com/latex.php?latex=TV_%7B%5Csigma%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='TV_{\sigma}' title='TV_{\sigma}' class='latex' /> above ? </p>
+<p>Since initial Chambolle&#8217;s code is related to the regularized TV reconstruction. No ?</p>
+</li>
+			<li class="comment even thread-even depth-1" id="comment-26">
+			<img alt='' src='http://0.gravatar.com/avatar/c69fc54e8890fa8a1f3c06ba2f2e5ef9?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://nuit-blanche.blogspot.com' rel='external nofollow' class='url'>Igor Carron</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-26" title="">August 18, 2008 at 1:46 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=26#respond' onclick='return addComment.moveForm("comment-26", "26", "respond", "10")'>Reply</a> </small>
+
+			<p>Gabriel,</p>
+<p>Thanks.</p>
+<p>Igor.</p>
+</li>
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-28">
+			<img alt='' src='http://0.gravatar.com/avatar/e34ded36efe4b7abb12510d4e525fee8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.ceremade.dauphine.fr/~peyre/' rel='external nofollow' class='url'>Gabriel Peyré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-28" title="">August 18, 2008 at 3:43 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=28#respond' onclick='return addComment.moveForm("comment-28", "28", "respond", "10")'>Reply</a> </small>
+
+			<p>Dear Jackdurden,</p>
+<p>Chambolle&#8217;s algorithm solves the regularized TV, but at the end of the paper (section 4), he explains how to update at each step the regularization parameter so that the solution converges to the solution of TV_sigma. You just multiply lambda by sigma/error where error is the L2 error at current step.</p>
+<p>Chambolle&#8217;s algorithm solve TV denoising (ROF), meaning A=Identity, but at the end of the paper (section 5), he explains how to extend it when A is an orthogonal projector, meaning A A*=Identity (the sensing vectors are orthogonal), which is the case for partial Fourier matrices or orthogonalised gaussian matrices or sub-sampled noiselets or &#8230;</p>
+<p>The idea is to use Chambolle algorithm to denoise an initial image u (you can start by u=0), and at each step of the algorithm, project this image to be denoised on the measurement constraint A* u=y:<br />
+   u  &lt;-  u + A* ( y &#8211; A u )      (*)<br />
+and then you continue using sereral iteration of Chambolle&#8217;s algorithm, equation (9) of the paper. </p>
+<p>So you&#8217;ve got two embbeded for loops (one for the update step (*) and then several iteration of Chambolle&#8217;s algorithm) but if you solve with sigma=0, you can just do 1 iteration of Chambolle&#8217;s algorithm at each step.</p>
+</li>
+			<li class="comment byuser comment-author-jackdurden bypostauthor even thread-even depth-1" id="comment-31">
+			<img alt='' src='http://1.gravatar.com/avatar/bca0a7cda97b9faabef157054852de42?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite>jackdurden</cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-31" title="">August 18, 2008 at 4:18 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=31#respond' onclick='return addComment.moveForm("comment-31", "31", "respond", "10")'>Reply</a> </small>
+
+			<p>Thank you again for the nice explanations,</p>
+<p>Best,<br />
+Laurent</p>
+</li>
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-32">
+			<img alt='' src='http://0.gravatar.com/avatar/e34ded36efe4b7abb12510d4e525fee8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.ceremade.dauphine.fr/~peyre/' rel='external nofollow' class='url'>Gabriel Peyré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-32" title="">August 18, 2008 at 8:08 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=32#respond' onclick='return addComment.moveForm("comment-32", "32", "respond", "10")'>Reply</a> </small>
+
+			<p>I have put here some details about my own implementation of Chambolle&#8217;s algorithm<br />
+<a href="http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/html/content.html" rel="nofollow">http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/html/content.html</a></p>
+</li>
+			<li class="comment byuser comment-author-jackdurden bypostauthor even thread-even depth-1" id="comment-34">
+			<img alt='' src='http://1.gravatar.com/avatar/bca0a7cda97b9faabef157054852de42?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite>jackdurden</cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-34" title="">August 19, 2008 at 9:34 am</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=34#respond' onclick='return addComment.moveForm("comment-34", "34", "respond", "10")'>Reply</a> </small>
+
+			<p>Sorry, some of your comments were referenced as spam by WordPress. I have untagged them and they appear in the list now. Thank you very much for this code. I&#8217;ll play with ASAP. </p>
+<p>&#8230; and your page<br />
+<a href="http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/html/content.html" rel="nofollow">http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/html/content.html</a><br />
+is very interesting ! </p>
+<p>Best<br />
+Laurent</p>
+</li>
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-35">
+			<img alt='' src='http://1.gravatar.com/avatar/d86b9f48c617606f0dd0036fab1f7252?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://lts2www.epfl.ch' rel='external nofollow' class='url'>Pierre Vandergheynst</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-35" title="">August 19, 2008 at 10:35 am</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=35#respond' onclick='return addComment.moveForm("comment-35", "35", "respond", "10")'>Reply</a> </small>
+
+			<p>Chambolle&#8217;s algo for CS is a neat idea. I have used it with an ortho projector as proposed by Chambolle to solve an inpainting problem and it&#8217;s indeed a single-line of code to modify and worked like a treat ! So it should work very well for CS too provided your measurement matrix is a subsampling of an ortho system. What if it is not exactly an ortho system but &#8220;close to&#8221; ?</p>
+<p>Pierre</p>
+</li>
+			<li class="comment byuser comment-author-jackdurden bypostauthor even thread-even depth-1" id="comment-36">
+			<img alt='' src='http://1.gravatar.com/avatar/bca0a7cda97b9faabef157054852de42?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite>jackdurden</cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-36" title="">August 19, 2008 at 12:15 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=36#respond' onclick='return addComment.moveForm("comment-36", "36", "respond", "10")'>Reply</a> </small>
+
+			<p>Pierre, </p>
+<p>answer to your question &#8220;may&#8221; then come from a TV-SPGL1 using Chambolle&#8217;s ROF code as a part of the LASSO solver involved, as the soft-thresholding (i.e. the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> denoising technique) is currently used for the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_1' title='\ell_1' class='latex' /> sparsity metric.</p>
+<p>//Mais bon&#8230;. avec des &#8220;may&#8221; (ou des &#8220;si&#8221; ) on met Paris en bouteille <img src='http://s1.wp.com/wp-includes/images/smilies/icon_wink.gif?m=1221114606g' alt=';-)' class='wp-smiley' /> //</p>
+</li>
+			<li class="comment byuser comment-author-jackdurden bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-37">
+			<img alt='' src='http://1.gravatar.com/avatar/bca0a7cda97b9faabef157054852de42?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite>jackdurden</cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-37" title="">August 20, 2008 at 10:03 am</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=37#respond' onclick='return addComment.moveForm("comment-37", "37", "respond", "10")'>Reply</a> </small>
+
+			<p>Or another one is to generalize the update of the regularization parameter of A. Chambolle (that allows the convergence to the constraint problem), to the Iterative Soft Thresholding procedure of TwIST, where the measurement matrix can be a RIP matrix (not necessarily an orthoprojector). </p>
+<p>Laurent</p>
+</li>
+			<li class="comment even thread-even depth-1" id="comment-38">
+			<img alt='' src='http://0.gravatar.com/avatar/e34ded36efe4b7abb12510d4e525fee8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/html/content.html' rel='external nofollow' class='url'>Gabriel Peyré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-38" title="">August 20, 2008 at 11:48 am</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=38#respond' onclick='return addComment.moveForm("comment-38", "38", "respond", "10")'>Reply</a> </small>
+
+			<p>Dear Pierre and Laurent,</p>
+<p>Actually yes (if I am not wrong), the algorithm generalizes to the case where A is not an orthogonal projector. You need to replace the orthogonal projection on the constraints Au=b</p>
+<p>   u &lt;- u + A^+ ( b &#8211; A u )</p>
+<p>(where A^+=A*  is the pseudo inverse, equal to A* because we are dealing with an orthogonal projector), by a gradient descent step</p>
+<p>   u  than the operator norm of A (same as in the paper of Daubechies et al, and Combettes proved that it can be extended to twice the operator norm).</p>
+<p>Then you apply Chambolle&#8217;s algorithm with a regularization parameter lambda/tau instead of lambda. </p>
+<p>This corresponds to proximal iterations, since Chambolle algorithm is actually computing the proximal operator associated to the TV norm. </p>
+<p>Intuitively, as emphasized by Laurent, this corresponds to replacing the soft thresholding by the ROF resolution, which are prox operator of respectively the L1 norm in an ortho-basis and the TV norm.</p>
+<p>I am not sure wether the update of lambda to match the L2 constraint is still garantied to work in this case.</p>
+</li>
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-39">
+			<img alt='' src='http://0.gravatar.com/avatar/e34ded36efe4b7abb12510d4e525fee8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/html/content.html' rel='external nofollow' class='url'>Gabriel Peyré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-39" title="">August 20, 2008 at 12:21 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=39#respond' onclick='return addComment.moveForm("comment-39", "39", "respond", "10")'>Reply</a> </small>
+
+			<p>Apparently I have some problems with my old school ASCII equations &#8230; let&#8217;s try in LaTeX &#8230;</p>
+<p>The initial iteration reads</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=u+%5Cleftarrow+A%5E%2B+%28+b-Au+%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u \leftarrow A^+ ( b-Au )' title='u \leftarrow A^+ ( b-Au )' class='latex' /></p>
+<p>and the modified one</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=u+%5Cleftarrow+%5Cfrac%7B1%7D%7B%5Ctau%7D+A%5E%2A+%28+b-Au+%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u \leftarrow \frac{1}{\tau} A^* ( b-Au )' title='u \leftarrow \frac{1}{\tau} A^* ( b-Au )' class='latex' /></p>
+<p>where <img src='http://l.wordpress.com/latex.php?latex=%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\tau' title='\tau' class='latex' /> should be larger than the operator norm of A for the iterations to converge.</p>
+</li>
+			<li class="comment even thread-even depth-1" id="comment-40">
+			<img alt='' src='http://0.gravatar.com/avatar/e34ded36efe4b7abb12510d4e525fee8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/html/content.html' rel='external nofollow' class='url'>Gabriel Peyré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-40" title="">August 20, 2008 at 12:23 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=40#respond' onclick='return addComment.moveForm("comment-40", "40", "respond", "10")'>Reply</a> </small>
+
+			<p>Ouch sorry, the iterations should be in fact</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=u+%5Cleftarrow+u+%2B+%5Cfrac%7B1%7D%7B%5Ctau%7D+A%5E%2A+%28+b-Au+%29.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='u \leftarrow u + \frac{1}{\tau} A^* ( b-Au ).' title='u \leftarrow u + \frac{1}{\tau} A^* ( b-Au ).' class='latex' /></p>
+</li>
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-41">
+			<img alt='' src='http://1.gravatar.com/avatar/d86b9f48c617606f0dd0036fab1f7252?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://lts2www.epfl.ch' rel='external nofollow' class='url'>Pierre Vandergheynst</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-41" title="">August 20, 2008 at 12:37 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=41#respond' onclick='return addComment.moveForm("comment-41", "41", "respond", "10")'>Reply</a> </small>
+
+			<p>I see, that&#8217;s interesting since it generalizes the class of measurement matrices for which you can now apply the algo. Some testing is needed <img src='http://s2.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1221114606g' alt=':)' class='wp-smiley' /> </p>
+</li>
+			<li class="comment even thread-even depth-1" id="comment-42">
+			<img alt='' src='http://0.gravatar.com/avatar/c69fc54e8890fa8a1f3c06ba2f2e5ef9?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://nuit-blanche.blogspot.com' rel='external nofollow' class='url'>Igor Carron</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-42" title="">August 22, 2008 at 6:33 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=42#respond' onclick='return addComment.moveForm("comment-42", "42", "respond", "10")'>Reply</a> </small>
+
+			<p>Laurent,</p>
+<p>Surely you have noted that there is new version of SPGL1 (v. 1.6). It&#8217;ll be featured on Nuit Blanche on Monday.</p>
+<p>Cheers,</p>
+<p>Igor.</p>
+</li>
+			<li class="comment byuser comment-author-jackdurden bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-43">
+			<img alt='' src='http://1.gravatar.com/avatar/bca0a7cda97b9faabef157054852de42?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite>jackdurden</cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-43" title="">August 24, 2008 at 12:05 am</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=43#respond' onclick='return addComment.moveForm("comment-43", "43", "respond", "10")'>Reply</a> </small>
+
+			<p>No. I didn&#8217;t notice that new version. Thank you. BTW, I sent a mail to the authors of spgl1 about our recent TV discussion above. </p>
+<p>Laurent</p>
+</li>
+			<li class="comment even thread-even depth-1" id="comment-44">
+			<img alt='' src='http://0.gravatar.com/avatar/e34ded36efe4b7abb12510d4e525fee8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/html/content.html' rel='external nofollow' class='url'>Gabriel Peyré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-44" title="">August 25, 2008 at 8:04 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=44#respond' onclick='return addComment.moveForm("comment-44", "44", "respond", "10")'>Reply</a> </small>
+
+			<p>I have put here<br />
+<a href="http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/OptimReview.pdf" rel="nofollow">http://www.ceremade.dauphine.fr/~peyre/upload/cs-tv/OptimReview.pdf</a><br />
+more details about iterative thresholding and Chambolle&#8217;s algorithm !</p>
+</li>
+			<li class="comment byuser comment-author-jackdurden bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-45">
+			<img alt='' src='http://1.gravatar.com/avatar/bca0a7cda97b9faabef157054852de42?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32' class='avatar avatar-32' height='32' width='32' />			<cite>jackdurden</cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-45" title="">August 26, 2008 at 2:43 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=45#respond' onclick='return addComment.moveForm("comment-45", "45", "respond", "10")'>Reply</a> </small>
+
+			<p>Thank you Gabriel. Very good review. I noticed however that the correct link is :</p>
+<p><a href="http://www.ceremade.dauphine.fr/~peyre/cs-tv/OptimReview.pdf" rel="nofollow">http://www.ceremade.dauphine.fr/~peyre/cs-tv/OptimReview.pdf</a></p>
+<p>Best,<br />
+Laurent</p>
+</li>
+			<li class="pingback even thread-even depth-1" id="comment-46">
+						<cite><a href='http://yetaspblog.wordpress.com/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/' rel='external nofollow' class='url'>SPGL1 and TV: Answers from SPGL1 Authors &laquo; Le Petit Chercheur Illustré</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-46" title="">September 2, 2008 at 11:48 pm</a> | <a class='comment-reply-link' href='/2008/08/17/spgl1-and-tv-minimization/?replytocom=46#respond' onclick='return addComment.moveForm("comment-46", "46", "respond", "10")'>Reply</a> </small>
+
+			<p>[...] SPGL1&nbsp;Authors  Following the writing of my previous post, which obtained various interesting comments (many thanks to Gabriel Peyré, Igor Caron and Pierre Vandergheynst), I sent a mail to Michael P. [...]</p>
+</li>
+	
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+ 
+
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2008/08/17/spgl1-and-tv-minimization/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://yetaspblog.wordpress.com/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published.</p>							<p class="comment-form-author"><label for="author">Name</label> <input id="author" name="author" type="text" value="" size="30" /></p>
+<p class="comment-form-email"><label for="email">Email</label> <input id="email" name="email" type="text" value="" size="30" /></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;pre&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='10' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1293722771" />
+<p><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe">Notify me of follow-up comments via email.</label></p><p><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;" tabindex="7"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts via email.</label></p><input type="hidden" name="sub-type" value="comment-form-text0" /><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5b50c8a688" /></p>					</form>
+							</div><!-- #respond -->
+						
+
+	
+	</div>
+
+
+<hr />
+<div id="footer">
+	<p>
+		Theme: <a href="http://theme.wordpress.com/themes/default/">Kubrick</a>. <a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>.
+		<br /><a href="http://yetaspblog.wordpress.com/feed/">Entries (RSS)</a> and <a href="http://yetaspblog.wordpress.com/comments/feed/">Comments (RSS)</a>.	</p>
+</div>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	/* <![CDATA[ */
+		jQuery( function() {
+			
+			jQuery('#wpl-button > a.like').click( function(e) {
+				e.preventDefault();
+				
+				jQuery('#wpl-mustlogin').remove();
+
+				jQuery.post( 'http://yetaspblog.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_like_click'
+				} );
+
+				var tenMins = new Date();
+				tenMins.setTime( tenMins.getTime() + 600000 );
+				document.cookie = 'wpl_rand=1feb3e2c95; expires=' + tenMins.toGMTString() + '; domain=wordpress.com; path=/;';
+				
+				jQuery('#wpl-count').after( '\
+					<div id="wpl-mustlogin"> \
+						<form action="http://yetaspblog.wordpress.com/wp-login.php" method="post"> \
+							<p>Just one more step to like this post:</p> \
+							<label><span>Username</span> <input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="80" /></label> \
+							<label><span>Password</span> <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="81" /></label> \
+							<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="82" /> \
+							<input type="hidden" name="redirect_to" value="http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/?like=1" /> \
+							<input type="hidden" name="wpl_rand" value="1feb3e2c95" /> \
+							<p>Not a member yet? <a href="http://wordpress.com/signup/?ref=likebox" id="wpl-signup-link">Sign up with WordPress.com</a></p> \
+						</form> \
+					</div> \
+				');
+				
+				jQuery('#wpl-mustlogin').hide().slideDown('fast');
+			} );
+			
+			jQuery('#wpl-mustlogin input.input').live( 'focus', function() {
+				jQuery(this).prev().hide();
+			}).live( 'blur', function() {
+				if ( jQuery(this).val() == '' )
+					jQuery(this).prev().show();
+			});
+			
+			jQuery('#wpl-mustlogin input#wp-submit').live( 'click', function(e) {
+				e.preventDefault();
+				
+				jQuery.post( 'http://yetaspblog.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_login_submit'
+				}, function() {
+					jQuery('#wpl-mustlogin form').submit();
+				} );
+			});			
+			
+			jQuery('#wpl-mustlogin a#wpl-signup-link').live( 'click', function(e) {
+				e.preventDefault();
+				
+				var link = jQuery(this).attr('href');
+				
+				jQuery.post( 'http://yetaspblog.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_signup_click'
+				}, function() {
+					location.href = link;
+				} );
+			});					
+			
+		});
+	/* ]]> */
+	</script>
+<script type="text/javascript">_qoptions={qacct:'p-18-mFEk4J448M',labels:'language.en,type.wpcom,as'};</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript><p><img class="robots-nocontent" src="http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=language.en%2Ctype.wpcom%2Cas" style="display:none" height="1" width="1" alt="" /></p></noscript>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?o&#038;ver=MU'></script>
+	<script type="text/javascript">	
+	// <![CDATA[
+	WPGroHo = {
+		data: {},
+		renderers: {},
+		syncProfileData: function( hash, id ) {
+			if ( !WPGroHo.data[hash] ) {
+				WPGroHo.data[hash] = {};
+				a = jQuery( 'div.grofile-hash-map-' + hash + ' span' ).each( function() {
+					WPGroHo.data[hash][this.className] = jQuery( this ).text();
+				} );
+			}
+
+			WPGroHo.appendProfileData( WPGroHo.data[hash], hash, id );
+		},
+		appendProfileData: function( data, hash, id ) {
+			for ( var key in data ) {
+				if ( jQuery.isFunction( WPGroHo.renderers[key] ) ) {
+					return WPGroHo.renderers[key]( data[key], hash, id, key );
+				}
+
+				jQuery( '#' + id ).find( 'h4' ).after( jQuery( '<p class="grav-extra ' + key + '" />' ).html( data[key] ) );
+			}
+		}
+	};
+	jQuery(document).ready(function($){
+		Gravatar.profile_cb = function( h, d ) {
+			WPGroHo.syncProfileData( h, d );
+		};
+		Gravatar.attach_profiles();
+	});
+	// ]]>
+	</script>
+	<div style="display:none">
+	<div class="grofile-hash-map-e34ded36efe4b7abb12510d4e525fee8">
+	</div>
+	<div class="grofile-hash-map-bca0a7cda97b9faabef157054852de42">
+	</div>
+	<div class="grofile-hash-map-c69fc54e8890fa8a1f3c06ba2f2e5ef9">
+	</div>
+	<div class="grofile-hash-map-d86b9f48c617606f0dd0036fab1f7252">
+	</div>
+	</div>
+<script type='text/javascript'>_acseed='Nm01fCNhbSRsMCNKdVQoVWl5eSY2WWZMLmNbZ21lUm13RjFFeHFGLHt2TC0kYSUpa2h1WnU6V04hd2I5K3JpM3leQnJlKzwzJDI0QFEoYHpaMCZqZX1De0tFXzs2QVpBaSMzbWVuOGQyPVUqeVpfViA0VmpBeFRiIUw=';</script>
+<script type="text/javascript" src="http://b.scorecardresearch.com/beacon.js"></script><script type="text/javascript">try{COMSCORE.beacon({c1:2,c2:7518284});}catch(e){}</script><noscript><p class="robots-nocontent"><img src="http://b.scorecardresearch.com/p?cj=1c1=2&#038;c2=7518284" alt="" style="display:none" width="1" height="1" /></p></noscript><script src="http://s.stats.wordpress.com/w.js?19" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'3694518','v':'wpcom','user_id':'0','post':'10','subd':'yetaspblog'});
+ex_go({'crypt':'RDZ8LFkxbXF5fD9hdXZVS01aKy1yNWFmX2xwan4sYzd+YWMvOWlMWnVtaiY1RHBDeENuX3hUWy0sZm8zdndvRVJNPTA0LXc4ckRLZltFV08/OHM2S1RIPXFHaXMuUUpbU01RbERQaCxtTG5DQW5IS0Y1JkY0b0pKcURKfF1DQzE0OCVzSl9KNDduPVVNemZjMUVqRnRSRHVUVlFWWWgseUpNckotMmFkWXxLbmovU0ZYbkNEPWhWNE8lb1pvJlg1NnFIRllMMXgwY2czejU1Li9mdUZKWW8xQmJGWHgxUz9BZllkZHFFVmF4fk5Eb3w5VHE5SVgzeE9McU8ma3lodD1NUE1KWXBNSjlpOWYwPzk5UG94U0t+bDFYMkFbR0p4MkRIS1JfeSw/elJBLDlCV1Q4T2RDaGI0MmIxenRbT3RkXy55Z01idytbRUVQTW89VQ=='});
+addLoadEvent(function(){linktracker_init('3694518',10);});
+	</script>
+</body>
+</html>

@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+  <head>
+        <title>An intro to 3D on the Mac, Part II: Animation and Rendering</title>
+
+
+  <!-- Begin CSS -->
+  <link rel="stylesheet" type="text/css" href="http://static.arstechnica.net//public/v6/styles/light/light.c.css?1293037588" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://static.arstechnica.net//public/v6/styles/print/print.css?1293037588" media="print" />
+  <!-- End CSS -->
+
+  <link rel="apple-touch-icon" href="http://static.arstechnica.net/apple-touch-icon.png" />
+  <link rel="canonical" href="http://arstechnica.com/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars" /> 
+    <link rel="shorturl" href="http://arst.ch/mgp" />
+  <link rel="shortlink" href="http://arst.ch/mgp" />
+  <link rev="canonical" href="http://arst.ch/mgp" />
+
+    <link rel="shortcut icon" href="http://static.arstechnica.net/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="http://static.arstechnica.net/favicon.ico" />
+
+  <!-- Begin Feeds -->
+    
+    <link rel="alternate" type="application/rss+xml" title="All Articles " href="http://feeds.arstechnica.com/arstechnica/everything" />
+    <!-- End Feeds -->
+
+  <!-- C-razy IE9 stuff -->
+  <meta name="application-name" content="Ars Technica"/>
+  <meta name="msapplication-starturl" content="http://arstechnica.com/"/>
+  <meta name="msapplication-tooltip" content="Ars Technica: Serving the technologist for 1.2 decades"/>
+  <meta name="msapplication-task" content="name=News;action-uri=http://arstechnica.com/;icon-uri=http://arstechnica.com/favicon.ico"/>
+  <meta name="msapplication-task" content="name=Features;action-uri=http://arstechnica.com/features/;icon-uri=http://static.arstechnica.net/ie-jump-menu/jump-features.ico"/>
+  <meta name="msapplication-task" content="name=OpenForum;action-uri=http://arstechnica.com/civis/;icon-uri=http://static.arstechnica.net/ie-jump-menu/jump-forum.ico"/>
+  <meta name="msapplication-task" content="name=One Microsoft Way;action-uri=http://arstechnica.com/microsoft/;icon-uri=http://static.arstechnica.net/ie-jump-menu/jump-omw.ico"/>
+  <meta name="msapplication-task" content="name=Subscribe;action-uri=http://arstechnica.com/subscriptions/;icon-uri=http://static.arstechnica.net/ie-jump-menu/jump-subscribe.ico"/>
+
+  
+  <!-- Begin Metadata -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=1000" />
+    <meta name="description" content="In Part II of our epic introduction to 3D on the Mac, you'll learn the basics of character animation and rendering, and you'll get an overview of the major 3D software packages on the platform." />
+      <meta name="keywords" content="" />
+      <meta name="title" content="An intro to 3D on the Mac, Part II: Animation and Rendering" />
+  <link rel="image_src" href="http://static.arstechnica.net/assets/2010/09/newthumb3d-thumb-300x169-16355-f.png" />
+  <meta name="medium" content="news" />
+  
+  <meta property="og:title" content="An intro to 3D on the Mac, Part II: Animation and Rendering"/>
+  <meta property="og:site_name" content="Ars Technica"/>
+  <meta property="og:image" content="http://static.arstechnica.net/assets/2010/09/newthumb3d-thumb-300x169-16355-f.png"/>
+  
+    <meta name="advertising" content="ask" />
+  <!-- End Metadata -->
+
+      <script type="text/javascript" src="/public/shared/scripts/da-1.5.js"></script>
+    <script type="text/javascript">
+    try {
+			      cnp.ad.dart.setSite("ars.dart");
+			      cnp.ad.dart.setZone('culture_entertainment');
+      //cnp.ad.dart.addParameterString('kw=an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering;kw=09;kw=2010;kw=guides;kw=apple;');
+      cnp.ad.dart.addParameterString('mtfIFPath=/mt-static/plugins/ArsTheme/ad-campaigns/doubleclick/');
+      cnp.ad.emptyFrameSrc="/public/shared/scripts/empty.html";
+      cnp.ad.loaderFrameSrc="/public/shared/scripts/ad-loader-frame.html";
+    } catch(e) {}
+    </script>
+     
+  <!-- Entry - culture_entertainment -->
+<style type="text/css" id="resource-styles">  </style>
+ 
+  </head>
+  <body class="individual">
+    <div id="page" class="">
+      
+<div id="masthead" class="">
+      <div id="logo"><a href="/"><img src="http://static.arstechnica.net//public/v6/styles/light/images/masthead/logo.png?1293037588" alt="Ars Technica: The Art of Technology" width="110" height="81" /></a></div>      
+    <div id="ebc51ce07629d0e14d2fbc4236e44067" >
+<script type="text/javascript">
+  var pbanner_start = new Date();
+  try {
+    var pbanner = cnp.ad.create(cnp.ad.refreshable, false);
+    pbanner.addParameter({'dcopt':'ist'});
+    pbanner.addParameterString('kw=an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering;kw=09;kw=2010;kw=guides;kw=apple;');
+    pbanner.addParameter({'sz': '728x90' });
+  } catch(e) {}
+</script>
+</div>
+  </div>
+      
+<div id="search-navigation">
+  <div id="search">
+    <form action="http://www.google.com/cse" id="search-form">
+      <div>
+        <input type="hidden" value="011835048811694782689:7zpko-isndo" name="cx"/>
+        <input type="hidden" value="UTF-8" name="ie"/>
+        <input type="text" id="search-form-text" value="Search Ars" name="q"/>
+        <input type="image" id="search-form-button" value="Search" src="http://static.arstechnica.net//public/v6/styles/light/images/search/button-bg.png?1293037588" name="sa"/>
+      </div>
+    </form>
+  </div>
+  <div id="navigation">
+    <ul id="primary-navigation">
+          <li class=""><a href="/">All</a></li>
+          <li class="apple selected"><a href="/apple/">Apple</a></li>
+          <li class="business"><a href="/business/">Business</a></li>
+          <li class="gadgets"><a href="/gadgets/">Gadgets</a></li>
+          <li class="gaming"><a href="/gaming/">Gaming</a></li>
+          <li class="microsoft"><a href="/microsoft/">Microsoft</a></li>
+          <li class="open-source"><a href="/open-source/">Open Source</a></li>
+          <li class="science"><a href="/science/">Science</a></li>
+          <li class="tech-policy"><a href="/tech-policy/">Tech Policy</a></li>
+          <li id="primary-navigation-more" style="display:none;">
+        More
+        <ul >
+                  <li><a href="/hardware/">Hardware</a></li>
+                  <li><a href="/media/">Media</a></li>
+                  <li><a href="/security/">Security</a></li>
+                  <li><a href="/software/">Software</a></li>
+                  <li><a href="/staff/">Staff</a></li>
+                  <li><a href="/telecom/">Telecom</a></li>
+                  <li><a href="/web/">Web</a></li>
+                  <li style="padding:0;"><span style="display:inline;background-color: #920404; padding: 3px; color:white; -webkit-border-radius: 4px;">New</span> <a style="display:inline;" href="/site/tv.ars" title="Ars Technica TV">Ars.TV</a></li>
+        </ul>
+      </li>
+    </ul>
+   
+    <ul id="secondary-navigation" class="apple">
+                            <li class="news"><a href="/apple/news/">News</a></li>
+                                          <li class="guides selected"><a href="/apple/guides/">Guides</a></li>
+                                          <li class="reviews"><a href="/apple/reviews/">Reviews</a></li>
+                                          <li class="apps"><a href="/apple/apps/">Apps</a></li>
+                      </ul>
+    <ul id="auxiliary-navigation">
+        <li class="subscribe"><a href="/subscriptions/">Upgrade to a Premier Subscription</a>
+         
+    </li>
+    <li class="customize" style="display:none;">
+      <a href="#">Customize ▾</a>
+      <ul>
+        <li>
+          <p>Site Theme:</p>
+          <label><input type="radio" checked="checked" value="light.css" class="site-style" name="site-style" /> White</label>
+          <label><input type="radio" value="dark.css" class="site-style" name="site-style" /> Black</label>
+        </li>
+        <li>
+          <p>Choose body font:</p>
+          <label><input type="radio" checked="checked" value="arial" class="body_font" name="body_font" /> Arial</label>
+          <label><input type="radio" value="helvetica" class="body_font" name="body_font" /> Helvetica</label>
+        </li>
+        <li>
+          <p>Layout (beta):</p>
+          <label><input type="radio" checked="checked" value="normal" class="fp_layout" name="fp_layout" /> Normal</label>
+          <label><input type="radio" value="compact" class="fp_layout" name="fp_layout" /> Compact</label>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="openforum"><a href="http://arstechnica.com/civis/">OpenForum</a></li>
+    
+    <li class="login-join"><a href="/civis/ucp.php?mode=login&amp;return_to=http%3A%2F%2Farstechnica.com%2Fapple%2Fguides%2F2010%2F09%2Fan-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars">Login/Join</a></li>
+      </ul>
+  </div>
+</div>
+      
+                  <div id="main">
+        
+<div id="silo-header" class="">
+  <h1 class="apple"><a href="/apple/" title="Go to Infinite Loop">Infinite Loop</a></h1>
+</div>
+        
+        <div id="content" class="normal">   <div id="content-inner">
+             <div id="story">
+                <h2 class="title">An intro to 3D on the Mac, Part II: Animation and Rendering</h2>
+        <div class="byline"><span class="author">By <a href="/author/dave-girard/">Dave Girard</a></span> | <span class="posted">Last updated <abbr class="timeago datetime" title="2010-09-20T4:33:30Z">September 19, 2010 11:33 PM</abbr></span></div>
+        
+      <div class="story-image CenteredImage" style="width:600px;">  
+  <img width="600" src="http://static.arstechnica.net/hardware/deer_preview_scene_VRAY.jpg" alt="An intro to 3D on the Mac, Part II: Animation and Rendering" /> 
+  
+  </div>
+
+
+
+              <div id="" class="body" style="">          
+        <!--body--> 
+<p>I'd like to apologize for the long wait for this final portion of our 3D on the Mac series. It's been a while since <a href="http://arstechnica.com/apple/guides/2009/12/intro-to-3d-part-1.ars">the first article</a>  in this two-part series came out and it's shocking how much can change in the span of a few months. The long-rumoured 64-bit Qt port of Maya for OS X is out, Pixologic released the fantastic ZBrush 4, Cinema 4D R12 and Houdini 11 added some sweet additions, and SIGGRAPH 2010 was enlightening with some <a href="http://arstechnica.com/software/news/2010/07/ptex-3d-texturing-becomes-a-reality-at-siggraph.ars">ground-breaking changes</a> to the world of 3D. </p><!--page 1-->
+<p>The things we'll be covering in this section are, like the previous article, fundamentals that span software and workflows for film, game development, etc. I'll try, as best I can, to cover how certain programs excel or fail at each and mention which programs are better-suited to which type of 3D artist. There is a lot to cover, so let's jump right in. We'll continue from where we left off, with a textured model that's ready to animate (see above).</p>
+
+
+<p>From there, we'll move on to rigging.</p>
+
+
+<h1>Character Animation and Rigging</h1>
+<p>When people think of 3D animation, probably the first thing that comes to mind is either a well-dressed mouse flying out of an explosion, a talking fish, or a very punchable Star Wars character with a terrible accent and equally terrible catchphrases (how wude of me). Character animation packages vary in depth, but the workflow is the same for all:</p>
+<ul>
+    <li>Tweaking the character mesh for rigging</li>
+    <li>Creation of bones and skinning</li>
+    <li>Painting of vertex weight influence of joints on the skinned mesh</li>
+    <li>Addition of wire controls and additional deformers</li>
+    <li>Facial rigging</li>
+</ul>
+<p>That's a simplified version of the rigging process. Building a complete character rig for film is very complicated and beyond the scope of this tutorial, so we'll cover the basic steps to give you a starting point for further research. If you were hoping that you'd be ready to animate a crowd of orcs after reading this article, I'm sorry to have to disappoint you. In film, rigging is a job of its own, often separate from the animator's job in larger studios. But we can cover the basics for those unfamiliar with the process and help keep some best practices in mind for building your own rigs.</p>
+<h3>Character planning and checking your topology</h3>
+  <p>Preparing a mesh for animation mostly has to do with making sure your model's topology is clean and it's not loaded with a bunch of cruft that will cause you headaches when rigging. In Maya, that means freezing transformations and deleting construction history. Sometimes, if I have a scene that has a lot of hairy model construction nodes in it, I'll just export my mesh as an OBJ or FBX mesh and import it in so it will be guaranteed to be clear of the cruft. It's the nuclear option but it works. </p>
+<p>Check that your model topology is good for the kind of things your character will be doing. Since our deer will need to be bending her joints, some tweaks were done to the mesh around the knees. To get nice clean bending, I added edge loops for smoother articulation. The before and after is below:</p>
+
+<div style="width: 500px;" class="news-item-figure CenteredImage"><div class="news-item-figure-image"><img src="http://static.arstechnica.com/hardware/prenewknees.png" /></div></div>
+
+<div style="width: 500px;" class="news-item-figure CenteredImage"><div class="news-item-figure-image"><img src="http://static.arstechnica.com/hardware/newknees.png" /></div></div>
+
+
+<p>Notice that the edge flow converges towards the back of the knee. That's the only major difference between our cage model that was sculpted and our animated base model. The cage model favors uniformity for clean subdivisions but the base animation topology is adjusted for the intended deformations, so it's not necessarily uniform in articulated areas. </p>
+<p>I'm animating with a low-ish resolution mesh, which is normal. It's easier to deal with paint weights and avoid bends this way. It's impractical to work with high-res meshes in animation. If you use a render-time subdivision, you get the benefits of speedy interactions with a low-polycount model, and the displacement map will add needed detail at render time. This is the standard workflow for animating detailed characters.</p>
+<p>When you get to the rigging, it is done with the model in its neutral position&#8212;the middle-ground between your model's planned animated states. Typically human models are done in a "T-pose," named because the arms are out so the character looks like a T. This is fine if your character is going to be doing all manner of dynamic poses, but if your character is a 3D rendition of Brad Pitt in True Romance, you'd probably rig him lying on the couch.</p>
+<p>My deer model's legs are in the perfect position as-is because her legs will go back and forth from this rest position. With a character in their neutral position, the character mesh then gets their bones. The bones and joint are drawn over the mesh with the joint pivots in spots that will make for accurate deformations: </p>
+
+<div style="width: 640px;" class="news-item-figure"><div class="news-item-figure-video"><iframe src="http://player.vimeo.com/video/14562317?color=ff9933" width="640" height="448" frameborder="0"></iframe></div><div class="news-item-figure-caption"><div class="news-item-figure-caption-text">He's givin' the deer a bone. I said he's givin' the deer a bo~one.</div></div></div>
+
+<p>Your 3D animation app should have an option to mirror joints so that you only have to rig one half of the model and, in a single step, you create a mirrored bone structure.</p>
+<h3>Bones Brigade: Forward and Inverse Kinematics</h3>
+<p>At the base of all character animation are these two forms of kinematics. Think of forward kinematics (FK) like a toy robot arm: to get the finger tip to a desired position, you move down the bone chain, rotating and translating joints until the tip of the finger is in the right spot. You can imagine this would get very tedious if you had to do this for all character animation, so inverse kinematics (IK) is the typically used for most character animation. With the relationship between joints set with an IK handle and solver, you can set the position of the finger and the solver computes the position and orientation of the bones that lead to the finger:</p>
+
+<div style="width: 640px;" class="news-item-figure"><div class="news-item-figure-video"><iframe src="http://player.vimeo.com/video/14564700?color=ff9933" width="640" height="480" frameborder="0"></iframe></div><div class="news-item-figure-caption"><div class="news-item-figure-caption-text">FK/IK in action.</div></div></div>
+
+<p>All 3D character animation programs made in the past 15 years will do FK/IK, so don't freak out and check the box of the expensive software you just bought&#8212;it's in there. </p>
+<h3>Skin Vertex Weights</h3>
+  <p>Dealing with the nitty-gritty of joint constraints and orientation is beyond the scope of this piece, so I'm going to jump ahead to skinning. When the finalized joints and IK handles are in place, the mesh is then bound to the bones (rigged). In a smooth-bound skin (as opposed to rigid), this creates the deformer relationship between the bones and the mesh that acts as the skin. An automatic skin weight map is made when this binding is done but, unless you're the luckiest person ever to touch a computer, this skin and bone relationship will need a lot of tweaking. All 3D packages deal with this relationship by letting you paint the weight of influence of joints on the mesh:</p>
+
+<div class="news-item-figure"><div class="news-item-figure-image"><img src="http://static.arstechnica.com/hardware/paintweights.jpg" /></div><div class="news-item-figure-caption"><div class="news-item-figure-caption-text">
+The Paint weights tool in Maya works much like other animation programs. The white area is the area affected by the selected joint. Painting black removes the influence of the joint on the skinned mesh. The fade makes the influence falloff smoother.</div></div></div>
+
+<p>One of the most confusing and aggravating things I ran into when I first tried 3D rigging was with the painting of vertex weights. I would paint out a part, move on and then watch the part I just zeroed move around after painting out another seemingly unrelated weight: 
+</p>
+
+<div style="width: 640px;" class="news-item-figure"><div class="news-item-figure-video"><iframe src="http://player.vimeo.com/video/14564751?color=ff9933" width="640" height="480" frameborder="0"></iframe></div><div class="news-item-figure-caption"><div class="news-item-figure-caption-text"> That's a typical skin weight painting problem. The first joint influence was painted out but then reappears automatically later. </div></div></div>
+ 
+  <p>This must have been the infamous joint influence the Huxtables were so worried about:</p>
+
+<div style="width: 616px;" class="news-item-figure CenteredImage"><div class="news-item-figure-image"><img src="http://static.arstechnica.com/hardware/theoandthejoint.png" /></div></div>
+
+<p>The problem here isn't really a problem&#8212;that's the way that joints and vertex weights work. The influence of joint points on a skin are normalized. The total influence of your joints on any point of skin has to add up to 100 percent. Otherwise, if you were allowed to have less than 100 percent influence, a set of bones could move and leave a point of your model behind. So, painting a zero-influence point on your skin will automatically increase the weight of another influence and this can seem arbitrary, making for nasty problems like the turn of a finger grabbing a point that's not close to your skin point. It's passed through the joint chain like an air bubble until some lucky joint gets to have it's way with your skin.</p>
+<p>The gradient you see while painting a skin weight is the graduated release of influence from your joint to another joint(s). So, a good character-rigging program will let you lock your finished paint weight and then move on.</p>
+
+<h3>Wire handles</h3>
+<p>Once your bones are done and you've done the skin weighting, it's common to make wire controllers for controlling your rig. These are usually just NURBS curves that parented to a joint. They are shaped and positioned to clearly indicate their function on the model:</p>
+
+<div style="width: 640px;" class="news-item-figure"><div class="news-item-figure-video"><iframe src="http://player.vimeo.com/video/14564826?color=ff9933" width="640" height="480" frameborder="0"></iframe></div><div class="news-item-figure-caption"><div class="news-item-figure-caption-text"> Place witty remark about wire controls here. </div></div></div>
+
+<p>Some readers may recognize that my rig controllers are from the autorigging plug-in for Maya called <a href="http://www.anzovin.com/products/tsm2maya.html">The Setup Machine</a>. My rigs are generally very basic and are only meant for my use so this saves me time having to paint weights and set up finicky constraints.</p>
+ 
+<p>Techniques and preferences vary for the type of rig controllers to use, but the idea is the same: give the animator intuitive controls for model and for facing features and use things like arrows to indicate what the neutral pose is, when relevant. </p>
+
+<h3>Facial rigging</h3>
+<p>Rigging faces is different from rigging character bodies. Facial animation doesn't use joints/bones, and rely on a mix of facial poses and deformers. This is a simpler scheme that won't get you Avatar results but, unless you are using a motion tracking-based system like <a href="http://www.youtube.com/watch?v=hEAVzDzOsDE">Softimage's Face Robot</a>, you'll likely do facial animation with a sculpting program to generate "blend shapes." Blend shapes are pose targets for the vertices of a mesh that can be blended to create a variety of expressions. A blend shape workflow involves creating a set of facial poses in a program like Mudbox or ZBrush and importing that as a state for your facial rig. As long as the topology (vertex order, count, etc.) remains the same, the animation program will have no problem mixing these blend shapes: </p>
+
+<div style="width: 640px;" class="news-item-figure"><div class="news-item-figure-video"><iframe src="http://player.vimeo.com/video/14729523?color=ff9933" width="640" height="400" frameborder="0"></iframe></div><div class="news-item-figure-caption"><div class="news-item-figure-caption-text">The model pose in ZBrush exported to Maya and set as a blend shape. There's nothing magically facial about this process&#8212;the program is just mixing and blending vertex positions&#8212;and a similar workflow could be used to make a heartbeat animation loop.</div></div></div>
+
+<p>Since a character for film needs to be able to emote more than just a blended variety of presets, film-grade facial rigs have added controls and deformers for added expression control. You can see a great set of these types of deformers and wire controllers in <a href="http://www.youtube.com/watch?v=I2fpDXfbIIw">Nathan Vegdahl's personal reel</a> from <a href="http://www.bigbuckbunny.org">Big Buck Bunny</a>.</p>
+<p>If you're not really up to the task of creating all this from scratch and just want to play around a professional-quality body and face rig, grab <a href="http://www.sidefx.com/index.php?option=com_download&amp;task=apprentice&amp;Itemid=208">Houdini Apprentice</a> and load the cartoon rig preset:</p>
+
+<div style="width: 640px;" class="news-item-figure"><div class="news-item-figure-video"><iframe src="http://player.vimeo.com/video/14584245?color=ff9933" width="640" height="480" frameborder="0"></iframe></div><div class="news-item-figure-caption"><div class="news-item-figure-caption-text">Houdini demo rig with a good set of controls.</div></div></div>
+        
+        
+                
+        </div>
+        
+        
+       
+                            <div class="pager">
+            <div class="label">Page:</div>
+            <ul>
+                                              <li class="selected">1</li>
+                                                              <li><a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars/2">2</a></li>
+                                                              <li><a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars/3">3</a></li>
+                                                              <li><a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars/4">4</a></li>
+                                                              <li><a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars/5">5</a></li>
+                                                              <li><a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars/6">6</a></li>
+                                                              <li><a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars/7">7</a></li>
+                                                              <li><a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars/8">8</a></li>
+                                                              <li><a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars/9">9</a></li>
+                                          </ul>
+            <div class="next-page">
+                            <a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars/2">Next &gt;</a>
+                          </div>
+        </div>
+        
+    
+
+    </div>
+
+
+
+    <noscript>
+    <img style="position: absolute; bottom: 0px; right: 0px; width: 1px; height: 1px;" src="http://arstechnica.com/dragons/breath.gif?id=46467&1656491871" alt="" />
+    </noscript>
+    <script type="text/javascript">
+    document.write('<img style="position: absolute; bottom: 0px; right: 0px; width: 1px; height: 1px;" src="http://arstechnica.com/dragons/breath.gif?id=46467&' + (parseInt(Math.random()*99999999)).toString() + '" alt="" />');
+    </script>
+          
+<!--googleoff: index-->
+
+<div id="comments-bar" class="with-bubble">
+    <h2>User comments</h2>
+     
+    <div class="comments-link">
+    <a rel="nofollow" href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars?comments=1#comments-bar">Click here to view the 27 comments on this story</a>
+    </div>
+      </div>
+
+  <div id="hiddencomment"></div>
+<!--<div id="alert"><p><img src="http://arstechnica.com/civis/images/smilies/flail.gif" /> We're making some updates to the commenting system.  We should have the kinks worked out soon.</p></div>-->
+<!--googleon: index-->
+              <div id="links-bar">
+  <ul>
+    
+    
+        <li class="facebook">
+      <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Farstechnica.com%2Fapple%2Fguides%2F2010%2F09%2Fan-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true"></iframe>
+    </li>
+        
+    
+    		<li><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://arst.ch/mgp" data-counturl="http://arstechnica.com/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars" data-count="horizontal" data-via="arstechnica" data-related="cgbeige:Dave Girard">Tweet</a></li>
+        
+    <li class="reddit">
+        <iframe src="http://www.reddit.com/static/button/button1.html?width=120&url=http%3A%2F%2Farstechnica.com%2Fapple%2Fguides%2F2010%2F09%2Fan-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars&amp;title=An%20intro%20to%203D%20on%20the%20Mac%2C%20Part%20II%3A%20Animation%20and%20Rendering&amp;bgcolor=fff&amp;bordercolor=eee" width="120" height="20" scrolling="no" frameborder="0"></iframe>
+        </li>
+    
+    <li class="share">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save?linkname=An%20intro%20to%203D%20on%20the%20Mac%2C%20Part%20II%3A%20Animation%20and%20Rendering&amp;linkurl=http%3A%2F%2Farstechnica.com%2Fapple%2Fguides%2F2010%2F09%2Fan-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars"><img src="http://static.addtoany.com/buttons/favicon.png" width="16" height="16" border="0" alt="Share/Bookmark" style="display:inline;vertical-align:middle;"/> Share/Email</a>
+      <script type="text/javascript">
+        var a2a_linkname="An intro to 3D on the Mac, Part II: Animation and Rendering",
+        a2a_linkurl="http://arstechnica.com/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars",
+        a2a_onclick=1,
+        a2a_show_title=1,
+        a2a_hide_embeds=0,
+        a2a_num_services=8,
+        a2a_color_main="989EA3",
+        a2a_color_border="989EA3",
+        a2a_color_link_text="FF5B00",
+        a2a_color_link_text_hover="ffffff",
+        a2a_track_links='ga',
+        a2a_prioritize= [
+          "yahoo_buzz",
+          "stumbleupon",
+          "instapaper",
+          "slashdot",
+          "linkedin",
+          "delicious",
+          "google_reader",
+          "tumblr",
+          "posterous"
+          ];
+        var a2a_config = a2a_config || {};
+        a2a_config.no_3p = 1;
+      </script>
+      <style type="text/css">#a2apage_BROWSER { display:none !important; }</style>
+    </li>
+
+  </ul>
+</div>
+              <div id="read-more-stories">
+<h2>Read more stories</h2>
+  <div class="story-navigation">
+      <a href="/apple/news/2010/09/the-iphone-4-will-be.ars" title="Read the previously published article">&lt; Older Story</a> 
+    
+   |   
+      <a href="/business/news/2010/09/google-apps-get-extra-layer-of-security-with-two-step-verification.ars" title="Read the next newest article">Newer Story &gt;</a>
+    </div>
+  <ul>
+  <!--googleoff: index-->
+  
+  <li>
+    <div class="image">
+      <a href="/apple/news/2010/12/apple-facing-class-action-suit-over-ios-data-collection.ars"><img width="140" height="78" src="http://static.arstechnica.net/assets/2010/03/cloud_privacy_ars-thumb-140x78-13038-f.jpg" alt="Apple facing class action suit over iOS data collection" /></a>
+    </div>
+    <div class="title"><h3><a href="/apple/news/2010/12/apple-facing-class-action-suit-over-ios-data-collection.ars">Apple facing class action suit over iOS data collection</a> </h3></div>
+  </li>
+  <li>
+    <div class="image">
+      <a href="/apple/news/2010/12/ars-staff-picks-our-favorite-10-ios-apps-of-2010.ars"><img width="140" height="78" src="http://static.arstechnica.net/assets/2010/12/iphone-godzilla-attacks-ars-thumb-140x78-18439-f.jpg" alt="Ars Staff picks: our 10 favorite iOS apps of 2010" /></a>
+    </div>
+    <div class="title"><h3><a href="/apple/news/2010/12/ars-staff-picks-our-favorite-10-ios-apps-of-2010.ars">Ars Staff picks: our 10 favorite iOS apps of 2010</a> </h3></div>
+  </li>
+  <li>
+    <div class="image">
+      <a href="/apple/news/2010/12/apple-well-sell-21-million-iphones-in-first-quarter-of-2011.ars"><img width="140" height="78" src="http://static.arstechnica.net/assets/2010/06/iphone4_camera_2-thumb-140x78-15001-f.jpg" alt="Apple rumor: we'll sell 21 million iPhones in first quarter of 2011" /></a>
+    </div>
+    <div class="title"><h3><a href="/apple/news/2010/12/apple-well-sell-21-million-iphones-in-first-quarter-of-2011.ars">Apple rumor: we'll sell 21 million iPhones in first quarter of 2011</a> </h3></div>
+  </li>
+  <li>
+    <div class="image">
+      <a href="/apple/news/2010/12/ipad-2-may-arrive-with-flatter-shape-better-speakers.ars"><img width="140" height="78" src="http://static.arstechnica.net/brief_icons/apple-brief.png" alt="iPad 2 may arrive with flatter shape, better speakers" /></a>
+    </div>
+    <div class="title"><h3><a href="/apple/news/2010/12/ipad-2-may-arrive-with-flatter-shape-better-speakers.ars">iPad 2 may arrive with flatter shape, better speakers</a> </h3></div>
+  </li>
+  <!--googleon: index-->
+  </ul>
+</div>
+      
+  </div>   
+</div>
+        <!--googleoff: index-->
+<div id="sidebar">
+      
+<div id="article-links" class="with-divider" style="display:none;">
+  
+  <ul>
+    <li class="enlarge-text"><a href="#">Increase text size</a></li>
+    <li class="shrink-text"><a href="#">Reduce text size</a></li>
+        <li class="print"><a href="#">Print this story</a></li>
+        
+    <li class="comment"><a href="/apple/guides/2010/09/an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering.ars?comments=1#comments-bar#comments-bar">Leave a comment (27)</a></li>
+  </ul>
+
+    <div class="premier">Premier features ( <a href="/subscriptions/">learn more</a> ) :</div>
+  <ul>
+                  <li class="single-page"><a href="/subscriptions/" class="nonsub">View on single page</a></li>
+                  <li class="configure"><a href="/subscriptions/">Configure these features</a></li>
+      </ul>
+  </div>
+
+ 
+            <ars></ars>
+      <div></div>
+      <blah></blah>
+      <kjaskjas></kjaskjas>
+      <ars></ars>
+      <kjaskjas></kjaskjas>
+      <clint></clint>
+      <span></span>
+      <kjaskjas></kjaskjas>
+  <div id="b61a2a39f917b27cfdde56ac7b10c41b">
+
+<noscript>
+<div id="help-by-subscribing">
+<a href="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars/2"><img src="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars/4" alt="Please subscribe" /></a></div>
+</noscript>
+
+<script type="text/javascript">
+try {
+  var ppanel = cnp.ad.create(cnp.ad.refreshable, false);
+  ppanel.addParameter({'sz':'300x250'});
+  ppanel.addParameterString('kw=top;kw=an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering;kw=09;kw=2010;kw=guides;kw=apple;');
+  ppanel.load();
+} catch(e) {}
+</script>
+</div>
+  <div id="journals-box" class="with-divider">
+  <h2 class="title">Latest Top Stories</h2>
+  <ul class="category">
+        <li class="all selected">
+      <span class="tab-inner">
+        <a href="/" title="All">All</a>
+      </span>
+    </li>
+        <li class="apple">
+      <span class="tab-inner">
+        <a href="/apple/" title="Apple">Apple</a>
+      </span>
+    </li>
+        <li class="gaming">
+      <span class="tab-inner">
+        <a href="/gaming/" title="Gaming">Gaming</a>
+      </span>
+    </li>
+        <li class="microsoft">
+      <span class="tab-inner">
+        <a href="/microsoft/" title="Microsoft">Microsoft</a>
+      </span>
+    </li>
+        <li class="gadgets">
+      <span class="tab-inner">
+        <a href="/gadgets/" title="Gadgets">Gadgets</a>
+      </span>
+    </li>
+        <li class="open-source">
+      <span class="tab-inner">
+        <a href="/open-source/" title="Open Source">Open Source</a>
+      </span>
+    </li>
+        <li class="business">
+      <span class="tab-inner">
+        <a href="/business/" title="Business">Business</a>
+      </span>
+    </li>
+        <li class="science">
+      <span class="tab-inner">
+        <a href="/science/" title="Science">Science</a>
+      </span>
+    </li>
+        <li class="tech-policy">
+      <span class="tab-inner">
+        <a href="/tech-policy/" title="Tech Policy">Tech Policy</a>
+      </span>
+    </li>
+        <li class="staff">
+      <span class="tab-inner">
+        <a href="/staff/" title="Staff">Staff</a>
+      </span>
+    </li>
+      </ul>
+  <ul class="stories">
+    <li id="journal-box-0" class="web">
+    <a href="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars">65 percent of internet users have bought content online</a>
+      </li>
+    <li id="journal-box-1" class="tech-policy">
+    <a href="/tech-policy/news/2010/12/new-poll-21-of-americans-want-net-regulated-like-tv.ars">New poll: 1 in 5 of Americans want 'Net regulated like TV</a>
+      </li>
+    <li id="journal-box-2" class="software">
+    <a href="/software/news/2010/12/skype-brought-down-by-double-whammy-of-overloaded-servers-client-bugs.ars">Skype brought down by double whammy of overloaded servers, client bugs</a>
+      </li>
+    <li id="journal-box-3" class="open-source">
+    <a href="/open-source/news/2010/12/a-year-in-open-ended-2010s-most-popular-stories.ars">A year in Open Ended: 2010's most popular stories</a>
+      </li>
+    <li id="journal-box-4" class="tech-policy">
+    <a href="/tech-policy/news/2010/12/white-spaces-could-expand-beyond-unused-tv-spectrum.ars">White spaces could expand beyond unused TV spectrum</a>
+      </li>
+    <li id="journal-box-5" class="tech-policy">
+    <a href="/tech-policy/news/2010/12/microsoft-cofounder-paul-allen-tries-again-with-patent-megasuit.ars">Microsoft cofounder Paul Allen tries again with patent megasuit</a>
+      </li>
+    <li id="journal-box-6" class="science">
+    <a href="/science/news/2010/12/is-there-a-limit-on-the-number-of-proteins-a-cell-can-use.ars">Is there a limit on the number of proteins a cell can use?</a>
+      </li>
+    <li id="journal-box-7" class="gadgets">
+    <a href="/gadgets/news/2010/12/htc-brings-new-smartphone-to-verizons-lte-4g-network.ars">Verizon's 4G LTE network gets first 4G smartphone</a>
+      </li>
+    <li id="journal-box-8" class="gadgets">
+    <a href="/gadgets/news/2010/12/15-phone-3-minutes-all-thats-needed-to-eavesdrop-on-gsm-call.ars">$15 phone, 3 minutes all that's needed to eavesdrop on GSM call</a>
+      </li>
+    <li id="journal-box-9" class="microsoft">
+    <a href="/microsoft/news/2010/12/a-year-in-one-microsoft-way-2010s-most-popular-stories.ars">A year in One Microsoft Way: 2010's most popular stories</a>
+      </li>
+    <li id="journal-box-10" class="business">
+    <a href="/business/news/2010/12/a-year-in-uptime-2010s-most-popular-stories.ars">A year in Uptime: 2010's most popular stories</a>
+      </li>
+    <li id="journal-box-11" class="apple">
+    <a href="/apple/news/2010/12/apple-facing-class-action-suit-over-ios-data-collection.ars">Apple facing class action suit over iOS data collection</a>
+      </li>
+    <li id="journal-box-12" class="gadgets">
+    <a href="/gadgets/news/2010/12/analyst-rim-playbook-tablet-performance-comes-at-a-cost.ars">Analyst: RIM PlayBook tablet's performance comes at a cost</a>
+      </li>
+    <li id="journal-box-13" class="science">
+    <a href="/science/news/2010/12/swimming-across-the-sahara-following-fishes.ars">Swimming across the Sahara in pursuit of fish</a>
+      </li>
+    <li id="journal-box-14" class="web">
+    <a href="/web/news/2010/12/watch-out-big-content-rapidshare-has-hired-a-lobbying-firm.ars">Watch out Big Content&#8212;RapidShare has hired a lobbying firm</a>
+      </li>
+    </ul>
+</div>
+    <div class="with-divider" id="fb">
+    <iframe scrolling="no" frameborder="0" src="http://www.facebook.com/connect/connect.php?id=19374573752&amp;connections=10&amp;stream=0&amp;css&amp;locale=en_US&amp;logobar=0" allowtransparency="true" style="border: none; width: 300px; height: 250px;"></iframe>  
+
+      <p><a href="#" class="anonymous">Do not show me this box</a></p>
+      </div>
+            <span></span>
+      <ars></ars>
+      <span></span>
+      <kjaskjas></kjaskjas>
+  <div id="eb80a9535d856b09b5e3040b3b5d4204">
+
+<noscript>
+<div id="help-by-subscribing">
+<a href="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars/2"><img src="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars/4" alt="Please subscribe" /></a></div>
+</noscript>
+
+<script type="text/javascript">
+try {
+  var ppanel = cnp.ad.create(cnp.ad.refreshable, false);
+  ppanel.addParameter({'sz':'300x250'});
+  ppanel.addParameterString('kw=bottom;kw=an-intro-to-3d-on-the-mac-part-ii-animation-and-rendering;kw=09;kw=2010;kw=guides;kw=apple;');
+  ppanel.load();
+} catch(e) {}
+</script>
+</div>
+  <div class="dont-miss with-divider">
+    <h2 class="title">
+      <span class="title">Don't Miss</span>:
+      <span class="sub-title">Promos &amp; Insight</span>
+    </h2>
+    <div class="body">
+      <a href="http://arstechnica.com/gadgets/future-of-tv/"><img src="http://static.arstechnica.com/public/shared/images/future-tv-xrail.jpg" width="300" height="100" alt="Promo image!" /></a>
+      <div class="bubble">
+        <div class="bubble-inner">
+                    <span class="promo">Promo</span>:
+                    <a href="http://arstechnica.com/gadgets/future-of-tv/">Ars explores the future of TV, minus the DeLorean</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="jobs-ars" class="with-divider">
+    <h2 class="title">
+      <span class="title">Job.Ars</span>:
+      <span class="subtitle">looking for a new job?</span>
+    </h2>
+    <div class="body">
+      <ul>
+      <div id="jobs-ars-content">
+  <ul>
+    
+    <li>
+      <div class="job-title"><a href="http://jobs.arstechnica.com/list/797/">Back End Developer</a> at GigaPan Systems</div>
+      <div class="job-location">Portland, Oregon</div>
+    </li>
+    
+    <li>
+      <div class="job-title"><a href="http://jobs.arstechnica.com/list/796/">Web Developer</a> at New York Institute of Technology </div>
+      <div class="job-location">Old Westbury, New York </div>
+    </li>
+    
+    <li>
+      <div class="job-title"><a href="http://jobs.arstechnica.com/list/795/">Early/Lead Web App &amp; Browser Add-on Developer</a> at scrible</div>
+      <div class="job-location">San Francisco Bay Area</div>
+    </li>
+    
+    <li>
+      <div class="job-title"><a href="http://jobs.arstechnica.com/list/794/">Sr. Operations Engineer</a> at Box.net</div>
+      <div class="job-location">Palo Alto, CA</div>
+    </li>
+    
+  </ul>
+  <div id="more-jobs"><a href="http://jobs.arstechnica.com">More Job Listings</a></div>
+</div>      </ul>
+    </div>
+  </div>
+
+</div>
+<!--googleon: index-->
+      </div>
+      <div id="footer">
+        <div id="slogan">Serving the technologist for <span id="decades">1</span> &#x00d7; 10<sup>-1</sup> centuries</div>
+        <iframe src="http://static.arstechnica.net//public/v6/footer.html?1293037588" frameborder="0" scrolling="no" width="1000" height="350"></iframe>
+      </div>
+    </div> 
+    <script type="text/javascript">
+
+  var page_class = 'individual',
+    site_root = "",
+    site_root_rel = '/',
+        discussion_url = "",
+        entry_author = {
+          "dave girard":true,
+      "dave girard":true,
+      "beige":true
+        },
+    entry_id = 46467,
+        fp_layout = 'normal',
+    syntaxhighlighter = "http://arstechnica.com/public/full/scripts/syntaxhighlighter.js",
+    gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."),
+    new_comments = true,
+    disable_fb = 'false';
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+   
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-31997-1");
+    pageTracker._trackPageview();
+  } catch(err)  {}
+</script>
+
+  <script src="http://static.arstechnica.net//public/v6/scripts/site.min.js?1293037588" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    if(window.run_later){
+      for(var i = 0; i < window.run_later.length; i++){
+        $(window.run_later[i]);
+      }
+    }
+  </script>
+<!-- lotame -->
+<script type="text/javascript">
+$(function(){
+  $.getScript('http://tags.crwdcntrl.net/c/313/cc.js');
+  $.getScript('http://ad.crwdcntrl.net/4/to=y|p=1686|out=json|var=ccauds', function(){
+    var i=0,
+        len,
+        aud,
+        tags = (typeof ccauds!=='undefined' ? ccauds : false);
+
+    if(!tags) {
+      return false;
+    }
+
+    if(tags.Profile){
+      aud=tags.Profile.Audiences.Audience,
+      len=aud.length;
+      for(; i< len;i++){
+        try{
+          cnp.ad.dart.addParameterString('kw='+aud[i].abbr+';');
+        }catch(e){}
+      }
+    }
+  });
+});
+</script>
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+$(document).ready(function(){
+  var cs_url = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js?c1=2&c2=6035094&c3=&c4=&c5=&c6=&c15=";
+  $.getScript(cs_url, function(){ return });
+  if(typeof(___testing) != "undefined"){
+    if(___testing === true) {
+      ars.event('Interactions', 'Presented Next Page Leader', window.location.href);
+    }
+  }  
+});
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/b?c1=2&c2=6035094&c3=&c4=&c5=&c6=&c15=&cv=1.3&cj=1" style="position:absolute; bottom: 0px; right:0px;"
+width="1" height="1" alt="" />
+</noscript>
+<!-- End comScore Tag -->
+<span style="display: none" id="ArsTechnicaNews" class="hslice">
+  <span style="display: none" class="entry-title">Ars Technica News</span>
+  <a style="display: none" href="http://www.ieaddons.com/en/ie8slice/Content.ashx?id=330" rel="entry-content"></a>
+</span>
+          </body>
+</html>

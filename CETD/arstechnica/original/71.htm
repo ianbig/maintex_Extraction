@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+  <head>
+        <title>Windows 7's XP Mode: what it is, how it works, who it's for</title>
+
+
+  <!-- Begin CSS -->
+  <link rel="stylesheet" type="text/css" href="http://static.arstechnica.net//public/v6/styles/light/light.c.css?1293037588" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://static.arstechnica.net//public/v6/styles/print/print.css?1293037588" media="print" />
+  <!-- End CSS -->
+
+  <link rel="apple-touch-icon" href="http://static.arstechnica.net/apple-touch-icon.png" />
+  <link rel="canonical" href="http://arstechnica.com/microsoft/reviews/2010/01/windows-xp-mode.ars" /> 
+    <link rel="shorturl" href="http://arst.ch/dau" />
+  <link rel="shortlink" href="http://arst.ch/dau" />
+  <link rev="canonical" href="http://arst.ch/dau" />
+
+    <link rel="shortcut icon" href="http://static.arstechnica.net/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="http://static.arstechnica.net/favicon.ico" />
+
+  <!-- Begin Feeds -->
+    
+    <link rel="alternate" type="application/rss+xml" title="All Articles " href="http://feeds.arstechnica.com/arstechnica/everything" />
+    <!-- End Feeds -->
+
+  <!-- C-razy IE9 stuff -->
+  <meta name="application-name" content="Ars Technica"/>
+  <meta name="msapplication-starturl" content="http://arstechnica.com/"/>
+  <meta name="msapplication-tooltip" content="Ars Technica: Serving the technologist for 1.2 decades"/>
+  <meta name="msapplication-task" content="name=News;action-uri=http://arstechnica.com/;icon-uri=http://arstechnica.com/favicon.ico"/>
+  <meta name="msapplication-task" content="name=Features;action-uri=http://arstechnica.com/features/;icon-uri=http://static.arstechnica.net/ie-jump-menu/jump-features.ico"/>
+  <meta name="msapplication-task" content="name=OpenForum;action-uri=http://arstechnica.com/civis/;icon-uri=http://static.arstechnica.net/ie-jump-menu/jump-forum.ico"/>
+  <meta name="msapplication-task" content="name=One Microsoft Way;action-uri=http://arstechnica.com/microsoft/;icon-uri=http://static.arstechnica.net/ie-jump-menu/jump-omw.ico"/>
+  <meta name="msapplication-task" content="name=Subscribe;action-uri=http://arstechnica.com/subscriptions/;icon-uri=http://static.arstechnica.net/ie-jump-menu/jump-subscribe.ico"/>
+
+  
+  <!-- Begin Metadata -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=1000" />
+    <meta name="description" content="Ars takes you inside one of Windows 7's most talked-about and misunderstood features: Windows XP Mode. Learn what it is, how it works, and who Microsoft intended this feature for." />
+      <meta name="keywords" content="@bieb" />
+      <meta name="title" content="Windows 7's XP Mode: what it is, how it works, who it's for" />
+  <link rel="image_src" href="http://static.arstechnica.net/assets/2010/01/win7_xp_list-thumb-300x169-11619-f.jpg" />
+  <meta name="medium" content="news" />
+  
+  <meta property="og:title" content="Windows 7's XP Mode: what it is, how it works, who it's for"/>
+  <meta property="og:site_name" content="Ars Technica"/>
+  <meta property="og:image" content="http://static.arstechnica.net/assets/2010/01/win7_xp_list-thumb-300x169-11619-f.jpg"/>
+  
+    <meta name="advertising" content="ask" />
+  <!-- End Metadata -->
+
+      <script type="text/javascript" src="/public/shared/scripts/da-1.5.js"></script>
+    <script type="text/javascript">
+    try {
+			      cnp.ad.dart.setSite("ars.dart");
+			      cnp.ad.dart.setZone('itbiz_enterprise');
+      //cnp.ad.dart.addParameterString('kw=windows-xp-mode;kw=01;kw=2010;kw=reviews;kw=microsoft;');
+      cnp.ad.dart.addParameterString('mtfIFPath=/mt-static/plugins/ArsTheme/ad-campaigns/doubleclick/');
+      cnp.ad.emptyFrameSrc="/public/shared/scripts/empty.html";
+      cnp.ad.loaderFrameSrc="/public/shared/scripts/ad-loader-frame.html";
+    } catch(e) {}
+    </script>
+     
+  <!-- Entry - itbiz_enterprise -->
+<style type="text/css" id="resource-styles">  </style>
+ 
+  </head>
+  <body class="individual">
+    <div id="page" class="">
+      
+<div id="masthead" class="">
+      <div id="logo"><a href="/"><img src="http://static.arstechnica.net//public/v6/styles/light/images/masthead/logo.png?1293037588" alt="Ars Technica: The Art of Technology" width="110" height="81" /></a></div>      
+    <div id="ebc51ce07629d0e14d2fbc4236e44067" >
+<script type="text/javascript">
+  var pbanner_start = new Date();
+  try {
+    var pbanner = cnp.ad.create(cnp.ad.refreshable, false);
+    pbanner.addParameter({'dcopt':'ist'});
+    pbanner.addParameterString('kw=windows-xp-mode;kw=01;kw=2010;kw=reviews;kw=microsoft;');
+    pbanner.addParameter({'sz': '728x90' });
+  } catch(e) {}
+</script>
+</div>
+  </div>
+      
+<div id="search-navigation">
+  <div id="search">
+    <form action="http://www.google.com/cse" id="search-form">
+      <div>
+        <input type="hidden" value="011835048811694782689:7zpko-isndo" name="cx"/>
+        <input type="hidden" value="UTF-8" name="ie"/>
+        <input type="text" id="search-form-text" value="Search Ars" name="q"/>
+        <input type="image" id="search-form-button" value="Search" src="http://static.arstechnica.net//public/v6/styles/light/images/search/button-bg.png?1293037588" name="sa"/>
+      </div>
+    </form>
+  </div>
+  <div id="navigation">
+    <ul id="primary-navigation">
+          <li class=""><a href="/">All</a></li>
+          <li class="apple"><a href="/apple/">Apple</a></li>
+          <li class="business"><a href="/business/">Business</a></li>
+          <li class="gadgets"><a href="/gadgets/">Gadgets</a></li>
+          <li class="gaming"><a href="/gaming/">Gaming</a></li>
+          <li class="microsoft selected"><a href="/microsoft/">Microsoft</a></li>
+          <li class="open-source"><a href="/open-source/">Open Source</a></li>
+          <li class="science"><a href="/science/">Science</a></li>
+          <li class="tech-policy"><a href="/tech-policy/">Tech Policy</a></li>
+          <li id="primary-navigation-more" style="display:none;">
+        More
+        <ul >
+                  <li><a href="/hardware/">Hardware</a></li>
+                  <li><a href="/media/">Media</a></li>
+                  <li><a href="/security/">Security</a></li>
+                  <li><a href="/software/">Software</a></li>
+                  <li><a href="/staff/">Staff</a></li>
+                  <li><a href="/telecom/">Telecom</a></li>
+                  <li><a href="/web/">Web</a></li>
+                  <li style="padding:0;"><span style="display:inline;background-color: #920404; padding: 3px; color:white; -webkit-border-radius: 4px;">New</span> <a style="display:inline;" href="/site/tv.ars" title="Ars Technica TV">Ars.TV</a></li>
+        </ul>
+      </li>
+    </ul>
+   
+    <ul id="secondary-navigation" class="microsoft">
+                            <li class="news"><a href="/microsoft/news/">News</a></li>
+                                          <li class="guides"><a href="/microsoft/guides/">Guides</a></li>
+                                          <li class="reviews selected"><a href="/microsoft/reviews/">Reviews</a></li>
+                      </ul>
+    <ul id="auxiliary-navigation">
+        <li class="subscribe"><a href="/subscriptions/">Upgrade to a Premier Subscription</a>
+         
+    </li>
+    <li class="customize" style="display:none;">
+      <a href="#">Customize ▾</a>
+      <ul>
+        <li>
+          <p>Site Theme:</p>
+          <label><input type="radio" checked="checked" value="light.css" class="site-style" name="site-style" /> White</label>
+          <label><input type="radio" value="dark.css" class="site-style" name="site-style" /> Black</label>
+        </li>
+        <li>
+          <p>Choose body font:</p>
+          <label><input type="radio" checked="checked" value="arial" class="body_font" name="body_font" /> Arial</label>
+          <label><input type="radio" value="helvetica" class="body_font" name="body_font" /> Helvetica</label>
+        </li>
+        <li>
+          <p>Layout (beta):</p>
+          <label><input type="radio" checked="checked" value="normal" class="fp_layout" name="fp_layout" /> Normal</label>
+          <label><input type="radio" value="compact" class="fp_layout" name="fp_layout" /> Compact</label>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="openforum"><a href="http://arstechnica.com/civis/">OpenForum</a></li>
+    
+    <li class="login-join"><a href="/civis/ucp.php?mode=login&amp;return_to=http%3A%2F%2Farstechnica.com%2Fmicrosoft%2Freviews%2F2010%2F01%2Fwindows-xp-mode.ars">Login/Join</a></li>
+      </ul>
+  </div>
+</div>
+      
+                  <div id="main">
+        
+<div id="silo-header" class="">
+  <h1 class="microsoft"><a href="/microsoft/" title="Go to One Microsoft Way">One Microsoft Way</a></h1>
+</div>
+        
+        <div id="content" class="normal">   <div id="content-inner">
+             <div id="story">
+                <h2 class="title">Windows 7's XP Mode: what it is, how it works, who it's for</h2>
+        <div class="byline"><span class="author">By <a href="/author/peter-bright/">Peter Bright</a></span> | <span class="posted">Last updated <abbr class="timeago datetime" title="2010-01-27T5:30:55Z">January 26, 2010 11:30 PM</abbr></span></div>
+        
+      <div class="story-image CenteredImage" style="width:640px;">  
+  <img width="640" src="http://static.arstechnica.net/assets/2010/01/win7_xp_intro-thumb-640xauto-11659.png" alt="Windows 7's XP Mode: what it is, how it works, who it's for" /> 
+  
+  </div>
+
+
+
+              <div id="" class="body" style="">          
+        <!--body-->
+<p>The bespoke line-of-business application is a common feature of the corporate world, and a thing that has been instrumental in cementing Windows as the corporate desktop OS standard. These applications&#8212;I've worked on a few myself&#8212;are typically crummy affairs. The foundation of such applications is typically some combination of Visual Basic 6 and obsolete versions of Access and Excel. On top of this mound of [redacted], these apps usually contain one or more third-party components to draw graphs or something, from vendors that have long since gone out of business.</p><!--page 1--><p>These applications often grow organically (though you should be thinking "mold" or "bacterial infection" rather than "rose" or "kitten") over a period of years, acting as a time-capsule of sorts&#8212;if you want to know how software was written in 1993, there is no better place to look than the bespoke line-of-business application&#8212;and they have a tendency to outlast their creators. The result is that many of these programs are unmaintained, with no one entirely sure how they work or how it is that they do whatever it is that they do. But one thing is common to all: they're all essential to the continued operation of the business. If the app won't run, the business won't run either.</p>
+
+<p>It is this kind of application, more than any other, that causes Microsoft's slavish adherence to backwards compatibility. Sure, it's important to have some amount of compatibility for regular commercial software, but major applications are supported and actively maintained, so they can be upgraded, or replacements sought. No such joy with the line-of-business application. If it gets broken by an operating system upgrade&#8212;or even a Service Pack or security patch&#8212;then there's little option but to refrain from upgrading.</p>
+
+<p>One strategy companies have used to free themselves from the problems of such applications has itself caused even more compatibility headaches. Many businesses have redeveloped their essential applications to be delivered through a Web browser, in principle relieving the operating system dependence. Unfortunately, these Web apps have all too often suffered the same fate as their desktop counterparts, leaving them locked in to a particular version of a particular browser. Worse luck for Web developers; it's normally version six of Internet Explorer. The result ends up being the same; companies have to stick with software that's well past its use-by date, because if they upgrade, important things stop working.</p>
+
+<p>This problem has been a thorn in Redmond's side for many years. It's great for Microsoft to have this entrenched, committed user-base, of course&#8212;it's a great money-maker&#8212;but it serves as a huge restriction on what the company can do. Change Windows (or IE) too much, and these essential-but-awful applications stop working. That becomes an even bigger problem when the changes are essential, such as fixing security flaws or improving general security robustness.</p>
+
+<p>The issue really came to a head with the release of Windows Vista. Vista's compatibility with XP was very good, but it wasn't <em>perfect</em>. Microsoft did a lot of work on Vista to harden it against attacks (UAC, of course, but also other things, like prohibiting services from having user interaction), and together these modifications and improvements, along with more mundane stuff like <a href="http://arstechnica.com/microsoft/news/2008/10/final-release-of-windows-7-to-have-kernel-version-6-1.ars">updating the version number that Windows has</a>, have conspired to break some old software.</p>
+
+<p>How much old software is broken is hard to say; programs that play by the rules by honoring the system's security and not making unwarranted assumptions shouldn't break, and most software falls into this category (or close enough). But the fact remains, there are programs that break on Vista, and many of these are critical to corporate users. And because the latest and greatest Windows 7 is based on Windows Vista, it, too, has the same problem.</p>
+<h3>Virtualizing the problem</h3>
+<p>With Windows 7, however, Redmond has provided a solution to the problem: Windows XP Mode. Windows XP Mode uses virtualization technology to let applications running on a virtualized copy of Windows XP show up in the Windows 7 Start menu and on the Windows 7 desktop.</p>
+
+<p>Windows XP Mode is a <a href="http://www.microsoft.com/windows/virtual-pc/download.aspx">downloadable add-on</a> for Windows 7 Professional, Ultimate, and Enterprise. It has two parts: the virtualization software itself, and a disk image containing a pre-installed, activated, licensed copy of Windows XP Professional with Service Pack 3 preinstalled, complete with the glorious Internet Explorer 6.</p>
+
+<p>The virtualization software is the latest iteration of Virtual PC. Although you wouldn't know it from the download page, <a href="http://www.microsoft.com/windows/virtual-pc/support/requirements.aspx">this is available for any version of Windows 7</a> aside from Starter. You wouldn't know it, because selecting a version of Windows other than those previously listed removes the option to download Virtual PC. It shouldn't, though; it should only remove the option to download the Windows XP Mode image.</p>
+
+<p>In a break from the past, the new version requires hardware virtualization support&#8212;Intel's VT or AMD's AMD-V. Microsoft's current server virtualization platform, Hyper-V, has the same requirement, but for Virtual PC this is a new demand, and one that's perhaps a little surprising. For virtualizing 32-bit guest OSes, far and away the most common usage scenario, <a href="http://episteme.arstechnica.com/eve/forums/a/tpc/f/901006821931/m/255003761931?r=682006481931">the benefits of hardware virtualization are something between small and non-existent</a>; though hardware virtualization is potentially a little faster, the difference in practice isn't perceptible.</p>
+
+<p>What the requirement does do, however, is rule out using Windows XP Mode on a range of Intel's low- and mid-range processors. Although most AMD processors include AMD-V (and with a clear division between those which do (Athlon, Opteron, and Phenom models released after mid-2006, Sempron models released after mid-2008) and those which don't (everything else), <a href="http://arstechnica.com/microsoft/news/2009/05/r2e-microsoft-intel-goof-up-windows-7s-xp-mode.ars">there's no such convenient division on the Intel side of the fence</a>. Some Core 2 Duos include VT; others don't. For example, consider the Core 2 Duo E8200 and E8190 launched in January 2008. These were both premium parts (branded Core 2 Duo rather than Celeron or Pentium). The E8200 is clearly 10 better than E8190, but what does 10 get you here? In this case, it gets you VT. (Even more curious is that the E8190 cost is the same as the E8200; it was designed for OEMs who apparently wanted a part like the E8200 but without the features. Crazy). There's no consistency or easy rule of thumb to use; my original generation Core 2 Duo E6700 has VT, but the newer, higher-numbered E7500 doesn't.</p>
+
+<p>To make matters worse, as a reaction to Microsoft's decision, some models of processor that previously didn't have VT had it added <em>without even changing the model name</em>. If you have a Core 2 Quad Q8300, for example, it might have VT or it might not, depending on when exactly it was manufactured. The mess is all a result of Intel's over-the-top approach to market segmentation. Every processor the company makes includes the VT hardware, but it's just disabled for some models. Problem is, VT has (until now) never been a feature that the company can meaningfully upsell, because  average consumers have no idea what on earth it is or what it's for. Until now, it never really mattered. In an ideal world, Intel would learn from this and stick to vaguely comprehensible divisions for its market segmentation: clock speed, core count, and at a pinch, cache size, and the naming scheme would be rationalized to establish some kind of "higher = better" consistency.</p>
+        
+        
+                
+        </div>
+        
+        
+       
+                            <div class="pager">
+            <div class="label">Page:</div>
+            <ul>
+                                              <li class="selected">1</li>
+                                                              <li><a href="/microsoft/reviews/2010/01/windows-xp-mode.ars/2">2</a></li>
+                                                              <li><a href="/microsoft/reviews/2010/01/windows-xp-mode.ars/3">3</a></li>
+                                                              <li><a href="/microsoft/reviews/2010/01/windows-xp-mode.ars/4">4</a></li>
+                                                              <li><a href="/microsoft/reviews/2010/01/windows-xp-mode.ars/5">5</a></li>
+                                          </ul>
+            <div class="next-page">
+                            <a href="/microsoft/reviews/2010/01/windows-xp-mode.ars/2">Next &gt;</a>
+                          </div>
+        </div>
+        
+    
+
+    </div>
+
+
+
+    <noscript>
+    <img style="position: absolute; bottom: 0px; right: 0px; width: 1px; height: 1px;" src="http://arstechnica.com/dragons/breath.gif?id=41821&2132944023" alt="" />
+    </noscript>
+    <script type="text/javascript">
+    document.write('<img style="position: absolute; bottom: 0px; right: 0px; width: 1px; height: 1px;" src="http://arstechnica.com/dragons/breath.gif?id=41821&' + (parseInt(Math.random()*99999999)).toString() + '" alt="" />');
+    </script>
+          
+<!--googleoff: index-->
+
+<div id="comments-bar" class="with-bubble">
+    <h2>User comments</h2>
+     
+    <div class="comments-link">
+    <a rel="nofollow" href="/microsoft/reviews/2010/01/windows-xp-mode.ars?comments=1#comments-bar">Click here to view the 56 comments on this story</a>
+    </div>
+      </div>
+
+  <div id="hiddencomment"></div>
+<!--<div id="alert"><p><img src="http://arstechnica.com/civis/images/smilies/flail.gif" /> We're making some updates to the commenting system.  We should have the kinks worked out soon.</p></div>-->
+<!--googleon: index-->
+              <div id="links-bar">
+  <ul>
+    
+    
+        <li class="facebook">
+      <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Farstechnica.com%2Fmicrosoft%2Freviews%2F2010%2F01%2Fwindows-xp-mode.ars&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true"></iframe>
+    </li>
+        
+    
+    		<li><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://arst.ch/dau" data-counturl="http://arstechnica.com/microsoft/reviews/2010/01/windows-xp-mode.ars" data-count="horizontal" data-via="arstechnica" data-related="drpizza:Peter Bright">Tweet</a></li>
+        
+    <li class="reddit">
+        <iframe src="http://www.reddit.com/static/button/button1.html?width=120&url=http%3A%2F%2Farstechnica.com%2Fmicrosoft%2Freviews%2F2010%2F01%2Fwindows-xp-mode.ars&amp;title=Windows%207%27s%20XP%20Mode%3A%20what%20it%20is%2C%20how%20it%20works%2C%20who%20it%27s%20for&amp;bgcolor=fff&amp;bordercolor=eee" width="120" height="20" scrolling="no" frameborder="0"></iframe>
+        </li>
+    
+    <li class="share">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save?linkname=Windows%207%27s%20XP%20Mode%3A%20what%20it%20is%2C%20how%20it%20works%2C%20who%20it%27s%20for&amp;linkurl=http%3A%2F%2Farstechnica.com%2Fmicrosoft%2Freviews%2F2010%2F01%2Fwindows-xp-mode.ars"><img src="http://static.addtoany.com/buttons/favicon.png" width="16" height="16" border="0" alt="Share/Bookmark" style="display:inline;vertical-align:middle;"/> Share/Email</a>
+      <script type="text/javascript">
+        var a2a_linkname="Windows 7\'s XP Mode: what it is, how it works, who it\'s for",
+        a2a_linkurl="http://arstechnica.com/microsoft/reviews/2010/01/windows-xp-mode.ars",
+        a2a_onclick=1,
+        a2a_show_title=1,
+        a2a_hide_embeds=0,
+        a2a_num_services=8,
+        a2a_color_main="989EA3",
+        a2a_color_border="989EA3",
+        a2a_color_link_text="FF5B00",
+        a2a_color_link_text_hover="ffffff",
+        a2a_track_links='ga',
+        a2a_prioritize= [
+          "yahoo_buzz",
+          "stumbleupon",
+          "instapaper",
+          "slashdot",
+          "linkedin",
+          "delicious",
+          "google_reader",
+          "tumblr",
+          "posterous"
+          ];
+        var a2a_config = a2a_config || {};
+        a2a_config.no_3p = 1;
+      </script>
+      <style type="text/css">#a2apage_BROWSER { display:none !important; }</style>
+    </li>
+
+  </ul>
+</div>
+              <div id="read-more-stories">
+<h2>Read more stories</h2>
+  <div class="story-navigation">
+      <a href="/open-source/news/2010/01/ubuntus-default-search-engine-to-change-in-deal-with-yahoo.ars" title="Read the previously published article">&lt; Older Story</a> 
+    
+   |   
+      <a href="/telecom/news/2010/01/fcc-probes-top-telcos-and-google-on-early-termination-fees.ars" title="Read the next newest article">Newer Story &gt;</a>
+    </div>
+  <ul>
+  <!--googleoff: index-->
+  
+  <li>
+    <div class="image">
+      <a href="/microsoft/news/2010/12/a-year-in-one-microsoft-way-2010s-most-popular-stories.ars"><img width="140" height="78" src="http://static.arstechnica.net/assets/2010/04/ie9_xp_list-thumb-140x78-13078-f.jpg" alt="A year in One Microsoft Way: 2010's most popular stories" /></a>
+    </div>
+    <div class="title"><h3><a href="/microsoft/news/2010/12/a-year-in-one-microsoft-way-2010s-most-popular-stories.ars">A year in One Microsoft Way: 2010's most popular stories</a> </h3></div>
+  </li>
+  <li>
+    <div class="image">
+      <a href="/microsoft/news/2010/12/microsoft-bpos-configuration-cock-up-causes-data-disclosure.ars"><img width="140" height="78" src="http://static.arstechnica.net/brief_icons/microsoft-brief.png" alt="Microsoft BPOS configuration screw up causes data disclosure " /></a>
+    </div>
+    <div class="title"><h3><a href="/microsoft/news/2010/12/microsoft-bpos-configuration-cock-up-causes-data-disclosure.ars">Microsoft BPOS configuration screw up causes data disclosure </a> </h3></div>
+  </li>
+  <li>
+    <div class="image">
+      <a href="/microsoft/news/2010/12/microsoft-may-be-porting-windows-to-arm-but-it-makes-no-sense.ars"><img width="140" height="78" src="http://static.arstechnica.net/assets/2010/12/pee-wee-microsoft-arm-thumb-140x78-18553-f.jpg" alt="Microsoft may be porting Windows to ARM, but it makes no sense" /></a>
+    </div>
+    <div class="title"><h3><a href="/microsoft/news/2010/12/microsoft-may-be-porting-windows-to-arm-but-it-makes-no-sense.ars">Microsoft may be porting Windows to ARM, but it makes no sense</a> </h3></div>
+  </li>
+  <li>
+    <div class="image">
+      <a href="/microsoft/news/2010/12/15-million-windows-phone-7-handsets-shipped-a-good-start.ars"><img width="140" height="78" src="http://static.arstechnica.net/brief_icons/microsoft-brief.png" alt="1.5 million Windows Phone 7 handsets shipped: a good start" /></a>
+    </div>
+    <div class="title"><h3><a href="/microsoft/news/2010/12/15-million-windows-phone-7-handsets-shipped-a-good-start.ars">1.5 million Windows Phone 7 handsets shipped: a good start</a> </h3></div>
+  </li>
+  <!--googleon: index-->
+  </ul>
+</div>
+      
+  </div>   
+</div>
+        <!--googleoff: index-->
+<div id="sidebar">
+      
+<div id="article-links" class="with-divider" style="display:none;">
+  
+  <ul>
+    <li class="enlarge-text"><a href="#">Increase text size</a></li>
+    <li class="shrink-text"><a href="#">Reduce text size</a></li>
+        
+    <li class="comment"><a href="/microsoft/reviews/2010/01/windows-xp-mode.ars?comments=1#comments-bar#comments-bar">Leave a comment (56)</a></li>
+  </ul>
+
+    <div class="premier">Premier features ( <a href="/subscriptions/">learn more</a> ) :</div>
+  <ul>
+                  <li class="single-page"><a href="/subscriptions/" class="nonsub">View on single page</a></li>
+                  <li class="pdf"><a href="/subscriptions/" class="nonsub">Download PDF</a></li>
+            <li class="configure"><a href="/subscriptions/">Configure these features</a></li>
+      </ul>
+  </div>
+
+ 
+            <abbr></abbr>
+      <clint></clint>
+      <abbr></abbr>
+  <div id="b61a2a39f917b27cfdde56ac7b10c41b">
+
+<noscript>
+<div id="help-by-subscribing">
+<a href="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars/2"><img src="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars/4" alt="Please subscribe" /></a></div>
+</noscript>
+
+<script type="text/javascript">
+try {
+  var ppanel = cnp.ad.create(cnp.ad.refreshable, false);
+  ppanel.addParameter({'sz':'300x250'});
+  ppanel.addParameterString('kw=top;kw=windows-xp-mode;kw=01;kw=2010;kw=reviews;kw=microsoft;');
+  ppanel.load();
+} catch(e) {}
+</script>
+</div>
+  <div id="journals-box" class="with-divider">
+  <h2 class="title">Latest Top Stories</h2>
+  <ul class="category">
+        <li class="all selected">
+      <span class="tab-inner">
+        <a href="/" title="All">All</a>
+      </span>
+    </li>
+        <li class="apple">
+      <span class="tab-inner">
+        <a href="/apple/" title="Apple">Apple</a>
+      </span>
+    </li>
+        <li class="gaming">
+      <span class="tab-inner">
+        <a href="/gaming/" title="Gaming">Gaming</a>
+      </span>
+    </li>
+        <li class="microsoft">
+      <span class="tab-inner">
+        <a href="/microsoft/" title="Microsoft">Microsoft</a>
+      </span>
+    </li>
+        <li class="gadgets">
+      <span class="tab-inner">
+        <a href="/gadgets/" title="Gadgets">Gadgets</a>
+      </span>
+    </li>
+        <li class="open-source">
+      <span class="tab-inner">
+        <a href="/open-source/" title="Open Source">Open Source</a>
+      </span>
+    </li>
+        <li class="business">
+      <span class="tab-inner">
+        <a href="/business/" title="Business">Business</a>
+      </span>
+    </li>
+        <li class="science">
+      <span class="tab-inner">
+        <a href="/science/" title="Science">Science</a>
+      </span>
+    </li>
+        <li class="tech-policy">
+      <span class="tab-inner">
+        <a href="/tech-policy/" title="Tech Policy">Tech Policy</a>
+      </span>
+    </li>
+        <li class="staff">
+      <span class="tab-inner">
+        <a href="/staff/" title="Staff">Staff</a>
+      </span>
+    </li>
+      </ul>
+  <ul class="stories">
+    <li id="journal-box-0" class="web">
+    <a href="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars">65 percent of internet users have bought content online</a>
+      </li>
+    <li id="journal-box-1" class="tech-policy">
+    <a href="/tech-policy/news/2010/12/new-poll-21-of-americans-want-net-regulated-like-tv.ars">New poll: 1 in 5 of Americans want 'Net regulated like TV</a>
+      </li>
+    <li id="journal-box-2" class="software">
+    <a href="/software/news/2010/12/skype-brought-down-by-double-whammy-of-overloaded-servers-client-bugs.ars">Skype brought down by double whammy of overloaded servers, client bugs</a>
+      </li>
+    <li id="journal-box-3" class="open-source">
+    <a href="/open-source/news/2010/12/a-year-in-open-ended-2010s-most-popular-stories.ars">A year in Open Ended: 2010's most popular stories</a>
+      </li>
+    <li id="journal-box-4" class="tech-policy">
+    <a href="/tech-policy/news/2010/12/white-spaces-could-expand-beyond-unused-tv-spectrum.ars">White spaces could expand beyond unused TV spectrum</a>
+      </li>
+    <li id="journal-box-5" class="tech-policy">
+    <a href="/tech-policy/news/2010/12/microsoft-cofounder-paul-allen-tries-again-with-patent-megasuit.ars">Microsoft cofounder Paul Allen tries again with patent megasuit</a>
+      </li>
+    <li id="journal-box-6" class="science">
+    <a href="/science/news/2010/12/is-there-a-limit-on-the-number-of-proteins-a-cell-can-use.ars">Is there a limit on the number of proteins a cell can use?</a>
+      </li>
+    <li id="journal-box-7" class="gadgets">
+    <a href="/gadgets/news/2010/12/htc-brings-new-smartphone-to-verizons-lte-4g-network.ars">Verizon's 4G LTE network gets first 4G smartphone</a>
+      </li>
+    <li id="journal-box-8" class="gadgets">
+    <a href="/gadgets/news/2010/12/15-phone-3-minutes-all-thats-needed-to-eavesdrop-on-gsm-call.ars">$15 phone, 3 minutes all that's needed to eavesdrop on GSM call</a>
+      </li>
+    <li id="journal-box-9" class="microsoft">
+    <a href="/microsoft/news/2010/12/a-year-in-one-microsoft-way-2010s-most-popular-stories.ars">A year in One Microsoft Way: 2010's most popular stories</a>
+      </li>
+    <li id="journal-box-10" class="business">
+    <a href="/business/news/2010/12/a-year-in-uptime-2010s-most-popular-stories.ars">A year in Uptime: 2010's most popular stories</a>
+      </li>
+    <li id="journal-box-11" class="apple">
+    <a href="/apple/news/2010/12/apple-facing-class-action-suit-over-ios-data-collection.ars">Apple facing class action suit over iOS data collection</a>
+      </li>
+    <li id="journal-box-12" class="gadgets">
+    <a href="/gadgets/news/2010/12/analyst-rim-playbook-tablet-performance-comes-at-a-cost.ars">Analyst: RIM PlayBook tablet's performance comes at a cost</a>
+      </li>
+    <li id="journal-box-13" class="science">
+    <a href="/science/news/2010/12/swimming-across-the-sahara-following-fishes.ars">Swimming across the Sahara in pursuit of fish</a>
+      </li>
+    <li id="journal-box-14" class="web">
+    <a href="/web/news/2010/12/watch-out-big-content-rapidshare-has-hired-a-lobbying-firm.ars">Watch out Big Content&#8212;RapidShare has hired a lobbying firm</a>
+      </li>
+    </ul>
+</div>
+    <div class="with-divider" id="fb">
+    <iframe scrolling="no" frameborder="0" src="http://www.facebook.com/connect/connect.php?id=19374573752&amp;connections=10&amp;stream=0&amp;css&amp;locale=en_US&amp;logobar=0" allowtransparency="true" style="border: none; width: 300px; height: 250px;"></iframe>  
+
+      <p><a href="#" class="anonymous">Do not show me this box</a></p>
+      </div>
+            <abbr></abbr>
+      <span></span>
+      <sakjasd></sakjasd>
+  <div id="eb80a9535d856b09b5e3040b3b5d4204">
+
+<noscript>
+<div id="help-by-subscribing">
+<a href="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars/2"><img src="/web/news/2010/12/65-percent-of-internet-users-have-bought-content-online.ars/4" alt="Please subscribe" /></a></div>
+</noscript>
+
+<script type="text/javascript">
+try {
+  var ppanel = cnp.ad.create(cnp.ad.refreshable, false);
+  ppanel.addParameter({'sz':'300x250'});
+  ppanel.addParameterString('kw=bottom;kw=windows-xp-mode;kw=01;kw=2010;kw=reviews;kw=microsoft;');
+  ppanel.load();
+} catch(e) {}
+</script>
+</div>
+  <div class="dont-miss with-divider">
+    <h2 class="title">
+      <span class="title">Don't Miss</span>:
+      <span class="sub-title">Promos &amp; Insight</span>
+    </h2>
+    <div class="body">
+      <a href="http://arstechnica.com/gadgets/future-of-tv/"><img src="http://static.arstechnica.com/public/shared/images/future-tv-xrail.jpg" width="300" height="100" alt="Promo image!" /></a>
+      <div class="bubble">
+        <div class="bubble-inner">
+                    <span class="promo">Promo</span>:
+                    <a href="http://arstechnica.com/gadgets/future-of-tv/">Ars explores the future of TV, minus the DeLorean</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="jobs-ars" class="with-divider">
+    <h2 class="title">
+      <span class="title">Job.Ars</span>:
+      <span class="subtitle">looking for a new job?</span>
+    </h2>
+    <div class="body">
+      <ul>
+      <div id="jobs-ars-content">
+  <ul>
+    
+    <li>
+      <div class="job-title"><a href="http://jobs.arstechnica.com/list/797/">Back End Developer</a> at GigaPan Systems</div>
+      <div class="job-location">Portland, Oregon</div>
+    </li>
+    
+    <li>
+      <div class="job-title"><a href="http://jobs.arstechnica.com/list/796/">Web Developer</a> at New York Institute of Technology </div>
+      <div class="job-location">Old Westbury, New York </div>
+    </li>
+    
+    <li>
+      <div class="job-title"><a href="http://jobs.arstechnica.com/list/795/">Early/Lead Web App &amp; Browser Add-on Developer</a> at scrible</div>
+      <div class="job-location">San Francisco Bay Area</div>
+    </li>
+    
+    <li>
+      <div class="job-title"><a href="http://jobs.arstechnica.com/list/794/">Sr. Operations Engineer</a> at Box.net</div>
+      <div class="job-location">Palo Alto, CA</div>
+    </li>
+    
+  </ul>
+  <div id="more-jobs"><a href="http://jobs.arstechnica.com">More Job Listings</a></div>
+</div>      </ul>
+    </div>
+  </div>
+
+</div>
+<!--googleon: index-->
+      </div>
+      <div id="footer">
+        <div id="slogan">Serving the technologist for <span id="decades">1</span> &#x00d7; 10<sup>-1</sup> centuries</div>
+        <iframe src="http://static.arstechnica.net//public/v6/footer.html?1293037588" frameborder="0" scrolling="no" width="1000" height="350"></iframe>
+      </div>
+    </div> 
+    <script type="text/javascript">
+
+  var page_class = 'individual',
+    site_root = "",
+    site_root_rel = '/',
+        discussion_url = "",
+        entry_author = {
+          "peter bright":true,
+      "peter bright":true,
+      "drpizza":true
+        },
+    entry_id = 41821,
+        fp_layout = 'normal',
+    syntaxhighlighter = "http://arstechnica.com/public/full/scripts/syntaxhighlighter.js",
+    gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."),
+    new_comments = true,
+    disable_fb = 'false';
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+   
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-31997-1");
+    pageTracker._trackPageview();
+  } catch(err)  {}
+</script>
+
+  <script src="http://static.arstechnica.net//public/v6/scripts/site.min.js?1293037588" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    if(window.run_later){
+      for(var i = 0; i < window.run_later.length; i++){
+        $(window.run_later[i]);
+      }
+    }
+  </script>
+<!-- lotame -->
+<script type="text/javascript">
+$(function(){
+  $.getScript('http://tags.crwdcntrl.net/c/313/cc.js');
+  $.getScript('http://ad.crwdcntrl.net/4/to=y|p=1686|out=json|var=ccauds', function(){
+    var i=0,
+        len,
+        aud,
+        tags = (typeof ccauds!=='undefined' ? ccauds : false);
+
+    if(!tags) {
+      return false;
+    }
+
+    if(tags.Profile){
+      aud=tags.Profile.Audiences.Audience,
+      len=aud.length;
+      for(; i< len;i++){
+        try{
+          cnp.ad.dart.addParameterString('kw='+aud[i].abbr+';');
+        }catch(e){}
+      }
+    }
+  });
+});
+</script>
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+$(document).ready(function(){
+  var cs_url = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js?c1=2&c2=6035094&c3=&c4=&c5=&c6=&c15=";
+  $.getScript(cs_url, function(){ return });
+  if(typeof(___testing) != "undefined"){
+    if(___testing === true) {
+      ars.event('Interactions', 'Presented Next Page Leader', window.location.href);
+    }
+  }  
+});
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/b?c1=2&c2=6035094&c3=&c4=&c5=&c6=&c15=&cv=1.3&cj=1" style="position:absolute; bottom: 0px; right:0px;"
+width="1" height="1" alt="" />
+</noscript>
+<!-- End comScore Tag -->
+<span style="display: none" id="ArsTechnicaNews" class="hslice">
+  <span style="display: none" class="entry-title">Ars Technica News</span>
+  <a style="display: none" href="http://www.ieaddons.com/en/ie8slice/Content.ashx?id=330" rel="entry-content"></a>
+</span>
+          </body>
+</html>

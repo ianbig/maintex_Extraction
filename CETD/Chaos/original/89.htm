@@ -1,0 +1,1265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Quasilinear well-posedness &laquo; What&#8217;s new</title>
+	<meta name="robots" content="all" />
+	<meta name="description" content="Updates on my research and expository papers, discussion of open problems, and other maths-related topics.  By Terence Tao" />
+	
+	<link rel="pingback" href="http://terrytao.wordpress.com/xmlrpc.php" />
+	<link rel="stylesheet" href="http://s2.wp.com/wp-content/themes/pub/tarski/style.css?m=1292638056g" type="text/css" media="screen,projection" />
+	<link rel="stylesheet" href="http://s2.wp.com/wp-content/themes/pub/tarski/print.css?m=1285358728g" type="text/css" media="print" />
+	
+<meta name="google-site-verification" content="YnmTzeF3F_x_iP1LlMorwk_-PaRMR7FRkMea24K_cnY" />
+<link rel="alternate" type="application/rss+xml" title="What&#039;s new &raquo; Feed" href="http://terrytao.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="What&#039;s new &raquo; Comments Feed" href="http://terrytao.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="What&#039;s new &raquo; Quasilinear&nbsp;well-posedness Comments Feed" href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" href="http://s0.wp.com/wp-content/themes/h4/global.css?m=1291749258g" type="text/css" />
+<link rel='stylesheet' id='sharedaddy-css'  href='http://s1.wp.com/wp-content/mu-plugins/sharing/sharing.css?m=1287601727g&#038;ver=MU' type='text/css' media='all' />
+<script type='text/javascript' src='http://s2.wp.com/wp-includes/js/l10n.js?m=1290133841g&amp;ver=20101110'></script>
+<script type='text/javascript' src='http://s1.wp.com/wp-includes/js/jquery/jquery.js?m=1290133841g&amp;ver=1.4.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-includes/js/comment-reply.js?m=1285358663g&amp;ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://terrytao.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://terrytao.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='What&#8217;s new' href='http://terrytao.wordpress.com/' />
+<link rel='prev' title='A proof of Gromov&#8217;s&nbsp;theorem' href='http://terrytao.wordpress.com/2010/02/18/a-proof-of-gromovs-theorem/' />
+<link rel='next' title='254A, Notes 6: Gaussian&nbsp;ensembles' href='http://terrytao.wordpress.com/2010/02/23/254a-notes-6-gaussian-ensembles/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/' />
+<link rel='shortlink' href='http://wp.me/p3qzP-Ug' />
+<link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/85c3b42f063afd73a5347679b67e4688?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/85c3b42f063afd73a5347679b67e4688?s=16" sizes="16x16" />
+<link rel="apple-touch-icon" href="http://1.gravatar.com/blavatar/9ecc6262507441727044ba5428d2d2b7?s=158" />
+	<style type="text/css">
+	/* <![CDATA[ */
+				div#likes { margin-top: 15px; }
+		.like-button { border: 1px solid #eee; padding: 2px 6px; font-size: 13px; font-family: arial, tahoma, sans-serif; }
+		#wpl-likebox { clear: left; font-size: 11px; font-family: arial, tahoma, verdana, sans-serif !important; min-height: 30px; margin: 10px 0 !important; padding: 5px 0 10px 0 !important; }
+		#wpl-button { float: left; background: url( /i/buttonbg.png ) top left repeat-x; margin-right: 7px; border: 1px solid #d4d4d4; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-button a { color: #666 !important; line-height: 130% !important; text-decoration: none !important; outline: none; float: left; padding: 3px 6px 2px 24px !important; font-size: 11px !important; background: url( /i/likestar.png ) 6px 49.8% no-repeat; }
+		#wpl-button.liked { background: #feffce; border: 1px solid #f3e389; }
+		#wpl-button.liked a { color: #ba871b !important; }
+		#wpl-likebox #wpl-count { min-height: 25px; line-height: 130% !important; float: left; padding-top: 4px; }
+		#wpl-likebox #wpl-avatars { clear: left; max-height: 98px; overflow: hidden; margin-top: 15px; line-height: 130% !important; }
+		#wpl-likebox #wpl-avatars img { border: none !important; }
+		#wpl-likebox #wpl-mustlogin { line-height: 14px !important; font-size: 11px; clear: left; margin-top: 5px; background: #f0f0f0; padding: 10px; width: 65%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-likebox #wpl-mustlogin a { color: #888; text-decoration: underline; }
+		#wpl-likebox #wpl-mustlogin p { margin: 5px 0; padding: 0 }
+		#wpl-likebox #wpl-mustlogin input.input { padding: 2px; background: #fff; font-size: 11px; font-family: inherit; border: 1px solid #ccc; -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin input#wp-submit { border: 1px solid #ccc; font-size: 11px; background: #fafafa; repeat-x; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 2px 4px !important; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin label { position: relative; cursor: text; }
+		#wpl-likebox #wpl-mustlogin label span { position: absolute; top: 0px; left: 5px; padding: 0 !important; }
+		#wpl-likebox #wpl-mustlogin label span { top /*\**/: -10px\9; }
+	/* ]]> */
+	</style>
+	<link rel='openid.server' href='http://terrytao.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://terrytao.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://terrytao.wordpress.com/osd.xml" title="What&#039;s new" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+<style type="text/css">.recentcomments a{display:inline !important;padding: 0 !important;margin: 0 !important;}</style>
+<meta name="application-name" content="What&#039;s new" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Updates on my research and expository papers, discussion of open problems, and other maths-related topics.  By Terence Tao" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://terrytao.wordpress.com/feed/;icon-uri=http://0.gravatar.com/blavatar/85c3b42f063afd73a5347679b67e4688?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" />
+<style type='text/css'>
+table.recentcommentsavatar img.avatar {border: 0px; margin:0;}
+table.recentcommentsavatar a {border: 0px !important;background-color: transparent !important}
+td.recentcommentsavatartop {padding:0px 0px 1px 0px;margin:0px; }
+td.recentcommentsavatarend {padding:0px 0px 1px 0px;margin:0px; }
+td.recentcommentstexttop { border: none !important;padding:0px 0px 0px 10px;}
+td.recentcommentstextend { border: none !important;padding:0px 0px 2px 10px;}
+</style>
+	<link rel="stylesheet" type="text/css" href="http://terrytao.wordpress.com?custom-css=1&#038;csblog=3qzP&#038;cscache=5&#038;csrev=1" />
+<script type="text/javascript"> 
+	window.google_analytics_uacct = "UA-52447-2"; 
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+</head>
+
+<body class="center  single"><div id="wrapper">
+
+<div id="header">
+
+	<div id="header-image">
+		<a title="Return to front page" href="http://terrytao.wordpress.com/"><img alt="Header image" src="http://terrytao.files.wordpress.com/2009/06/greentree.jpg" /></a>	</div>
+
+	<div id="title">
+		<a title="Return to front page" href="http://terrytao.wordpress.com/"><span id="blog-title">What&#8217;s new</span></a>		<p id="tagline">Updates on my research and expository papers, discussion of open problems, and other maths-related topics.  By Terence Tao</p>	</div>
+	
+	<div id="navigation">
+		<ul id="nav-1">
+	<li><a title="Return to front page" href="http://terrytao.wordpress.com/">Home</a></li>
+	<li class="page_item page-item-2"><a href="http://terrytao.wordpress.com/about/" title="About">About</a></li>
+<li class="page_item page-item-51"><a href="http://terrytao.wordpress.com/career-advice/" title="Career&nbsp;advice">Career&nbsp;advice</a></li>
+<li class="page_item page-item-78"><a href="http://terrytao.wordpress.com/advice-on-writing-papers/" title="On&nbsp;writing">On&nbsp;writing</a></li>
+<li class="page_item page-item-134"><a href="http://terrytao.wordpress.com/books/" title="Books">Books</a></li>
+<li class="page_item page-item-306"><a href="http://terrytao.wordpress.com/support-usq-maths/" title="Support USQ&nbsp;maths">Support USQ&nbsp;maths</a></li>
+</ul>
+
+		<ul id="nav-2">
+			<li><a class="feed" title="Subscribe to the What's new feed" href="http://terrytao.wordpress.com/feed/">Subscribe to feed</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<div id="content">
+
+<div id="primary">
+
+
+	<div class="entry">
+		<div class="post-meta">
+			<h1 class="post-title" id="post-3488">Quasilinear&nbsp;well-posedness</h1>
+			<p class="post-metadata">21 February, 2010 in <a href="http://en.wordpress.com/tag/expository/" title="View all posts in expository" rel="category tag">expository</a>, <a href="http://en.wordpress.com/tag/mathap/" title="View all posts in math.AP" rel="category tag">math.AP</a> | Tags: <a href="http://en.wordpress.com/tag/burgers-equation/" rel="tag">Burgers' equation</a>, <a href="http://en.wordpress.com/tag/quasilinear-equations/" rel="tag">quasilinear equations</a>, <a href="http://en.wordpress.com/tag/transport-equation/" rel="tag">transport equation</a>, <a href="http://en.wordpress.com/tag/well-posedness/" rel="tag">well-posedness</a> | by <a href="http://terrytao.wordpress.com/author/teorth/" title="Posts by Terence Tao">Terence Tao</a>			</p>
+		</div>
+		<div class="post-content">
+			<script type="text/javascript" src="http://s0.wp.com/wp-content/plugins/adverts/adsense.js?m=1285358683g&amp;1"></script><p>When solving the initial value problem to an <a href="http://en.wikipedia.org/wiki/Ordinary_differential_equation">ordinary differential equation</a>, such as <a name="initial"></a></p>
+<p><a name="initial"></a></p>
+<p>where <img src='http://l.wordpress.com/latex.php?latex=%7Bu%3A+%7B%5Cmathbb+R%7D+%5Crightarrow+V%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u: {\mathbb R} \rightarrow V}' title='{u: {\mathbb R} \rightarrow V}' class='latex' /> is the unknown solution (taking values in some finite-dimensional vector space <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />), <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0+%5Cin+V%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0 \in V}' title='{u_0 \in V}' class='latex' /> is the initial datum, and <img src='http://l.wordpress.com/latex.php?latex=%7BF%3A+V+%5Crightarrow+V%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F: V \rightarrow V}' title='{F: V \rightarrow V}' class='latex' /> is some nonlinear function (which we will take to be smooth for sake of argument), then one can construct a solution locally in time via the <a href="http://en.wikipedia.org/wiki/Fixed_point_iteration">Picard iteration method</a>. There are two basic ideas. The first is to use the <a href="http://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus">fundamental theorem of calculus</a> to rewrite the initial value problem <a href="#initial">(1)</a> as the problem of solving an <a href="http://en.wikipedia.org/wiki/Integral_equation">integral equation</a>, <a name="integral"></a></p>
+<p><a name="integral"></a></p>
+<p>The second idea is to solve this integral equation by the <a href="http://en.wikipedia.org/wiki/Contraction_mapping_theorem">contraction mapping theorem</a>, showing that the integral operator <img src='http://l.wordpress.com/latex.php?latex=%7B%7B%5Cmathcal+N%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{{\mathcal N}}' title='{{\mathcal N}}' class='latex' /> defined by</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%7B%5Cmathcal+N%7D%28u%29+%28t%29+%3A%3D+u_0+%2B+%5Cint_0%5Et+F%28u%28s%29%29%5C+ds+&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  {\mathcal N}(u) (t) := u_0 + \int_0^t F(u(s))\ ds ' title='\displaystyle  {\mathcal N}(u) (t) := u_0 + \int_0^t F(u(s))\ ds ' class='latex' /></p>
+<p>is a contraction on a suitable complete metric space (e.g. a closed ball in the function space <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%28%5B0%2CT%5D%3B+V%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0([0,T]; V)}' title='{C^0([0,T]; V)}' class='latex' />), and thus has a unique fixed point in this space. This method works as long as one only seeks to construct <em>local</em> solutions (for time <img src='http://l.wordpress.com/latex.php?latex=%7Bt%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t}' title='{t}' class='latex' /> in <img src='http://l.wordpress.com/latex.php?latex=%7B%5B0%2CT%5D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{[0,T]}' title='{[0,T]}' class='latex' /> for sufficiently small <img src='http://l.wordpress.com/latex.php?latex=%7BT%3E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{T&gt;0}' title='{T&gt;0}' class='latex' />), but the solutions constructed have a number of very good properties, including</p>
+<ul>
+<li> <strong>Existence</strong>: A solution <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> exists in the space <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%28%5B0%2CT%5D%3BV%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0([0,T];V)}' title='{C^0([0,T];V)}' class='latex' /> (and even in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E%5Cinfty%28%5B0%2CT%5D%3BV%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^\infty([0,T];V)}' title='{C^\infty([0,T];V)}' class='latex' />) for <img src='http://l.wordpress.com/latex.php?latex=%7BT%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{T}' title='{T}' class='latex' /> sufficiently small.</li>
+<li> <strong>Uniqueness</strong>: There is at most one solution <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> to the initial value problem in the space <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%28%5B0%2CT%5D%3BV%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0([0,T];V)}' title='{C^0([0,T];V)}' class='latex' /> (or in smoother spaces, such as <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E%5Cinfty%28%5B0%2CT%5D%3BV%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^\infty([0,T];V)}' title='{C^\infty([0,T];V)}' class='latex' />). (For solutions in the weaker space <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%28%5B0%2CT%5D%3BV%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0([0,T];V)}' title='{C^0([0,T];V)}' class='latex' /> we use the integral formulation <a href="#integral">(2)</a> to define the solution concept.)</li>
+<li> <strong>Lipschitz continuous dependence on the data</strong>: If <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0^{(n)}}' title='{u_0^{(n)}}' class='latex' /> is a sequence of initial data converging to <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' />, then the associated solutions <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' /> converge uniformly to <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> on <img src='http://l.wordpress.com/latex.php?latex=%7B%5B0%2CT%5D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{[0,T]}' title='{[0,T]}' class='latex' /> (possibly after shrinking <img src='http://l.wordpress.com/latex.php?latex=%7BT%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{T}' title='{T}' class='latex' /> slightly). In fact we have the Lipschitz bound <img src='http://l.wordpress.com/latex.php?latex=%7B%5C%7C+u%5E%7B%28n%29%7D%28t%29+-+u%28t%29+%5C%7C_V+%5Cleq+C+%5C%7C+u%5E%7B%28n%29%7D_0+-+u_0+%5C%7C_V%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\| u^{(n)}(t) - u(t) \|_V \leq C \| u^{(n)}_0 - u_0 \|_V}' title='{\| u^{(n)}(t) - u(t) \|_V \leq C \| u^{(n)}_0 - u_0 \|_V}' class='latex' /> for <img src='http://l.wordpress.com/latex.php?latex=%7Bn%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{n}' title='{n}' class='latex' /> large enough and <img src='http://l.wordpress.com/latex.php?latex=%7Bt+%5Cin+%5B0%2CT%5D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t \in [0,T]}' title='{t \in [0,T]}' class='latex' />, where <img src='http://l.wordpress.com/latex.php?latex=%7BC%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C}' title='{C}' class='latex' /> is an absolute constant.</li>
+</ul>
+<p>This package of properties is referred to as <em>(Lipschitz) wellposedness</em>.</p>
+<p>This method extends to certain <a href="http://en.wikipedia.org/wiki/Partial_differential_equation">partial differential equations</a>, particularly those of a <em>semilinear</em> nature (linear except for lower order nonlinear terms). For instance, if trying to solve an initial value problem of the form</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5Cpartial_t+u+%2B+Lu+%3D+F%28u%29%3B+%5Cquad+u%280%2Cx%29+%3D+u_0%28x%29%2C+&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \partial_t u + Lu = F(u); \quad u(0,x) = u_0(x), ' title='\displaystyle  \partial_t u + Lu = F(u); \quad u(0,x) = u_0(x), ' class='latex' /></p>
+<p>where now <img src='http://l.wordpress.com/latex.php?latex=%7Bu%3A+%7B%5Cmathbb+R%7D+%5Crightarrow+V%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u: {\mathbb R} \rightarrow V}' title='{u: {\mathbb R} \rightarrow V}' class='latex' /> takes values in a function space <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> (e.g. a Sobolev space <img src='http://l.wordpress.com/latex.php?latex=%7BH%5Ek%28%7B%5Cmathbb+R%7D%5Ed%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{H^k({\mathbb R}^d)}' title='{H^k({\mathbb R}^d)}' class='latex' />), <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0+%5Cin+V%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0 \in V}' title='{u_0 \in V}' class='latex' /> is an initial datum, <img src='http://l.wordpress.com/latex.php?latex=%7BL%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L}' title='{L}' class='latex' /> is some (differential) operator (<em>independent</em> of <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' />) that is (densely) defined on <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />, and <img src='http://l.wordpress.com/latex.php?latex=%7BF%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F}' title='{F}' class='latex' /> is a nonlinearity which is also (densely) defined on <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />, then (formally, at least) one can solve this problem by using <a href="http://en.wikipedia.org/wiki/Duhamel's_integral">Duhamel&#8217;s formula</a> to convert the problem to that of solving an integral equation</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++u%28t%29+%3D+e%5E%7B-tL%7D+u_0+%2B+%5Cint_0%5Et+e%5E%7B-%28t-s%29L%7D+F%28u%28s%29%29%5C+ds&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  u(t) = e^{-tL} u_0 + \int_0^t e^{-(t-s)L} F(u(s))\ ds' title='\displaystyle  u(t) = e^{-tL} u_0 + \int_0^t e^{-(t-s)L} F(u(s))\ ds' class='latex' /></p>
+<p>and one can then hope to show that the associated nonlinear integral operator</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++u+%5Cmapsto+e%5E%7B-tL%7D+u_0+%2B+%5Cint_0%5Et+e%5E%7B-%28t-s%29L%7D+F%28u%28s%29%29%5C+ds&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  u \mapsto e^{-tL} u_0 + \int_0^t e^{-(t-s)L} F(u(s))\ ds' title='\displaystyle  u \mapsto e^{-tL} u_0 + \int_0^t e^{-(t-s)L} F(u(s))\ ds' class='latex' /></p>
+<p>is a contraction in a subset of a suitably chosen function space.</p>
+<p>This method turns out to work surprisingly well for many semilinear partial differential equations, and in particular for semilinear parabolic, semilinear dispersive, and semilinear wave equations. As in the ODE case, when the method works, it usually gives the entire package of Lipschitz well-posedness: existence, uniqueness, and Lipschitz continuous dependence on the initial data, for short times at least.</p>
+<p>However, when one moves from semilinear initial value problems to <em>quasilinear</em> initial value problems such as</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5Cpartial_t+u+%2B+L_u+u+%3D+F%28u%29%3B+%5Cquad+u%280%2Cx%29+%3D+u_0%28x%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \partial_t u + L_u u = F(u); \quad u(0,x) = u_0(x)' title='\displaystyle  \partial_t u + L_u u = F(u); \quad u(0,x) = u_0(x)' class='latex' /></p>
+<p>in which the top order operator <img src='http://l.wordpress.com/latex.php?latex=%7BL_u%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L_u}' title='{L_u}' class='latex' /> now depends on the solution <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> itself, then the nature of well-posedness changes; one can still hope to obtain (local) existence and uniqueness, and even continuous dependence on the data, but one usually is forced to give up Lipschitz continuous dependence at the highest available regularity (though one can often recover it at lower regularities). As a consequence, the Picard iteration method is not directly suitable for constructing solutions to such equations.</p>
+<p>One can already see this phenomenon with a very simple equation, namely the one-dimensional constant-velocity <em>transport equation</em> <a name="transport"></a></p>
+<p><a name="transport"></a></p>
+<p>where we consider <img src='http://l.wordpress.com/latex.php?latex=%7Bc+%3D+c_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c = c_0}' title='{c = c_0}' class='latex' /> as part of the initial data. (If one wishes, one could view this equation as a rather trivial example of a system.</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5Cpartial_t+u+%2B+c+%5Cpartial_x+u+%3D+0%3B+%5Cquad+%5Cpartial_t+c+%3D+0&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \partial_t u + c \partial_x u = 0; \quad \partial_t c = 0' title='\displaystyle  \partial_t u + c \partial_x u = 0; \quad \partial_t c = 0' class='latex' /></p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++u%280%2Cx%29+%3D+u_0%28x%29%3B+%5Cquad+c%280%29+%3D+c_0%2C&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  u(0,x) = u_0(x); \quad c(0) = c_0,' title='\displaystyle  u(0,x) = u_0(x); \quad c(0) = c_0,' class='latex' /></p>
+<p>to emphasis this viewpoint, but this would be somewhat idiosyncratic.) One can solve this equation explicitly of course to get the solution</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++u%28t%2Cx%29+%3D+u_0%28x-ct%29.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  u(t,x) = u_0(x-ct).' title='\displaystyle  u(t,x) = u_0(x-ct).' class='latex' /></p>
+<p>In particular, if we look at the solution just at time <img src='http://l.wordpress.com/latex.php?latex=%7Bt%3D1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t=1}' title='{t=1}' class='latex' /> for simplicity, we have</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++u%281%2Cx%29+%3D+u_0%28x-c%29.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  u(1,x) = u_0(x-c).' title='\displaystyle  u(1,x) = u_0(x-c).' class='latex' /></p>
+<p>Now let us see how this solution <img src='http://l.wordpress.com/latex.php?latex=%7Bu%281%2Cx%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u(1,x)}' title='{u(1,x)}' class='latex' /> depends on the parameter <img src='http://l.wordpress.com/latex.php?latex=%7Bc%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c}' title='{c}' class='latex' />. One can ask whether this dependence is Lipschitz in <img src='http://l.wordpress.com/latex.php?latex=%7Bc%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c}' title='{c}' class='latex' />, in some function space <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />:</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+u_0%28%5Ccdot+-+c%29+-+u_0%28%5Ccdot+-+c%27%29+%5C%7C_V+%5Cleq+A+%7Cc-c%27%7C&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| u_0(\cdot - c) - u_0(\cdot - c&#039;) \|_V \leq A |c-c&#039;|' title='\displaystyle  \| u_0(\cdot - c) - u_0(\cdot - c&#039;) \|_V \leq A |c-c&#039;|' class='latex' /></p>
+<p>for some finite <img src='http://l.wordpress.com/latex.php?latex=%7BA%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{A}' title='{A}' class='latex' />. But using the Newton approximation</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++u_0%28%5Ccdot+-+c%29+-+u_0%28%5Ccdot+-+c%27%29+%5Capprox+%28c-c%27%29+%5Cpartial_x+u_0%28%5Ccdot+-+c%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  u_0(\cdot - c) - u_0(\cdot - c&#039;) \approx (c-c&#039;) \partial_x u_0(\cdot - c)' title='\displaystyle  u_0(\cdot - c) - u_0(\cdot - c&#039;) \approx (c-c&#039;) \partial_x u_0(\cdot - c)' class='latex' /></p>
+<p>we see that we should only expect such a bound when <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cpartial_x+u_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\partial_x u_0}' title='{\partial_x u_0}' class='latex' /> (and its translates) lie in <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />. Thus, we see a <em>loss of derivatives</em> phenomenon with regard to Lipschitz well-posedness; if the initial data <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> is in some regularity space, say <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^3}' title='{C^3}' class='latex' />, then one only obtains Lipschitz dependence on <img src='http://l.wordpress.com/latex.php?latex=%7Bc%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c}' title='{c}' class='latex' /> in a lower regularity space such as <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' />.</p>
+<p>We have just seen that if all one knows about the initial data <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> is that it is bounded in a function space <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />, then one usually cannot hope to make the dependence of <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> on the velocity parameter <img src='http://l.wordpress.com/latex.php?latex=%7Bc%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c}' title='{c}' class='latex' /> Lipschitz continuous. Indeed, one cannot even make it continuous uniformly in <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />. Given two values of <img src='http://l.wordpress.com/latex.php?latex=%7Bc%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c}' title='{c}' class='latex' /> that are close together, e.g. <img src='http://l.wordpress.com/latex.php?latex=%7Bc+%3D+0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c = 0}' title='{c = 0}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bc%3D%5Cepsilon%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c=\epsilon}' title='{c=\epsilon}' class='latex' />, and a reasonable function space <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> (e.g. a Sobolev space <img src='http://l.wordpress.com/latex.php?latex=%7BH%5Ek%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{H^k}' title='{H^k}' class='latex' />, or a classical regularity space <img src='http://l.wordpress.com/latex.php?latex=%7BC%5Ek%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^k}' title='{C^k}' class='latex' />) one can easily cook up a function <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> that is bounded in <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> but whose two solutions <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%28%5Ccdot%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0(\cdot)}' title='{u_0(\cdot)}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%28%5Ccdot-%5Cepsilon%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0(\cdot-\epsilon)}' title='{u_0(\cdot-\epsilon)}' class='latex' /> separate in the <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> norm at time <img src='http://l.wordpress.com/latex.php?latex=%7B1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{1}' title='{1}' class='latex' />, simply by choosing <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> to be supported on an interval of width <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cepsilon%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\epsilon}' title='{\epsilon}' class='latex' />.</p>
+<p>(Part of the problem here is that using a subtractive method <img src='http://l.wordpress.com/latex.php?latex=%7B%5C%7Cu-v%5C%7C_V%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\|u-v\|_V}' title='{\|u-v\|_V}' class='latex' /> to determine the distance between two solutions <img src='http://l.wordpress.com/latex.php?latex=%7Bu%2C+v%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u, v}' title='{u, v}' class='latex' /> is not a physically natural operation when transport mechanisms are present that could cause the key features of <img src='http://l.wordpress.com/latex.php?latex=%7Bu%2C+v%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u, v}' title='{u, v}' class='latex' /> (such as singularities) to be situated in slightly different locations. In such cases, the correct notion of distance may need to take transport into account, e.g. by using metrics of <a href="http://en.wikipedia.org/wiki/Wasserstein_metric">Wasserstein</a> type.)</p>
+<p>On the other hand, one still has <em>non-uniform</em> continuous dependence on the initial parameters: if <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> lies in some reasonable function space <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />, then the map <img src='http://l.wordpress.com/latex.php?latex=%7Bc+%5Cmapsto+u_0%28%5Ccdot-c%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c \mapsto u_0(\cdot-c)}' title='{c \mapsto u_0(\cdot-c)}' class='latex' /> is continuous in the <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> topology, even if it is not uniformly continuous with respect to <img src='http://l.wordpress.com/latex.php?latex=%7Bv_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v_0}' title='{v_0}' class='latex' />. (More succinctly: translation is a continuous but not uniformly continuous operation in most function spaces.) The reason for this is that we already have established this continuity in the case when <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> is so smooth that an additional derivative of <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> lies in <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />; and such smooth functions tend to be dense in the original space <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />, so the general case can then be established by a limiting argument, approximating a general function in <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> by a smoother function. We then see that the non-uniformity ultimately comes from the fact that a given function in <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> may be arbitrarily rough (or concentrated at an arbitrarily fine scale), and so the ability to approximate such a function by a smooth one can be arbitrarily poor.</p>
+<p>In many quasilinear PDE, one often encounters qualitatively similar phenomena. Namely, one often has local well-posedness in sufficiently smooth function spaces <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> (so that if the initial data lies in <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />, then for short times one has existence, uniqueness, and continuous dependence on the data in the <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> topology), but Lipschitz or uniform continuity in the <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' /> topology is usually false. However, if the data (and solution) is known to be in a high-regularity function space <img src='http://l.wordpress.com/latex.php?latex=%7BV%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{V}' title='{V}' class='latex' />, one can often recover Lipschitz or uniform continuity in a lower-regularity topology.</p>
+<p>Because the continuous dependence on the data in quasilinear equations is necessarily non-uniform, the arguments needed to establish this dependence can be remarkably delicate. As with the simple example of the transport equation, the key is to approximate a rough solution by a smooth solution first, by smoothing out the data (this is the non-uniform step, as it depends on the physical scale (or wavelength) that the data features are located). But for quasilinear equations, keeping the rough and smooth solution together can require a little juggling of function space norms, in particular playing the low-frequency nature of the smooth solution against the high-frequency nature of the residual between the rough and smooth solutions.</p>
+<p>Below the fold I will illustrate this phenomenon with one of the simplest quasilinear equations, namely the initial value problem for the <a href="http://en.wikipedia.org/wiki/Burgers%27_equation">inviscid Burgers&#8217; equation</a> <a name="burgers"></a></p>
+<p><a name="burgers"></a></p>
+<p>which is a modification of the transport equation <a href="#transport">(3)</a> in which the velocity <img src='http://l.wordpress.com/latex.php?latex=%7Bc%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c}' title='{c}' class='latex' /> is no longer a parameter, but now depends (and is, in this case, actually <em>equal</em> to) the solution. To avoid technicalities we will work only with the classical function spaces <img src='http://l.wordpress.com/latex.php?latex=%7BC%5Ek%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^k}' title='{C^k}' class='latex' /> of <img src='http://l.wordpress.com/latex.php?latex=%7Bk%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{k}' title='{k}' class='latex' /> times continuously differentiable functions, though one can certainly work with other spaces (such as Sobolev spaces) by exploiting the <a href="http://en.wikipedia.org/wiki/Sobolev_inequality">Sobolev embedding theorem</a>. To avoid having to distinguish continuity from uniform continuity, we shall work in a compact domain by assuming periodicity in space, thus for instance restricting <img src='http://l.wordpress.com/latex.php?latex=%7Bx%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{x}' title='{x}' class='latex' /> to the unit circle <img src='http://l.wordpress.com/latex.php?latex=%7B%7B%5Cmathbb+R%7D%2F%7B%5Cmathbb+Z%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{{\mathbb R}/{\mathbb Z}}' title='{{\mathbb R}/{\mathbb Z}}' class='latex' />.</p>
+<p>This discussion is inspired by <a href="http://front.math.ucdavis.edu/math.AP/0411455">this survey article of Nikolay Tzvetkov</a>, which further explores the distinction between well-posedness and ill-posedness in both semilinear and quasilinear settings.</p>
+<p><span id="more-3488"></span></p>
+<p><strong> —  1. A priori estimates  — </strong></p>
+<p>To avoid technicalities let us make the <em>a priori</em> assumption that all solutions of interest are smooth.</p>
+<p>The Burgers equation is a pure transport equation: it moves the solution <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> around, but does not increase or decrease its values. As a consequence we obtain an <em>a priori</em> estimate for the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0}' title='{C^0}' class='latex' /> norm:</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+u%28t%29+%5C%7C_%7BC%5E0%7D+%5Cleq+%5C%7Cu%280%29%5C%7C_%7BC%5E0%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| u(t) \|_{C^0} \leq \|u(0)\|_{C^0}.' title='\displaystyle  \| u(t) \|_{C^0} \leq \|u(0)\|_{C^0}.' class='latex' /></p>
+<p>To deal with the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> norm, we perform the standard trick of <em>differentiating the equation</em>, obtaining</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5Cpartial_t+u_x+%2B+u+u_%7Bxx%7D+%2B+u_x%5E2+%3D+0&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \partial_t u_x + u u_{xx} + u_x^2 = 0' title='\displaystyle  \partial_t u_x + u u_{xx} + u_x^2 = 0' class='latex' /></p>
+<p>which we rewrite as a forced transport equation</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%28%5Cpartial_t+%2B+u+%5Cpartial_x%29+u_x+%3D+-+u_x%5E2.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  (\partial_t + u \partial_x) u_x = - u_x^2.' title='\displaystyle  (\partial_t + u \partial_x) u_x = - u_x^2.' class='latex' /></p>
+<p>Inspecting what this equation does at local maxima in space, one is led (formally, at least) to the differential inequality</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5Cpartial_t+%5C%7C+u_x+%5C%7C_%7BC%5E0%7D+%5Cleq+%5C%7Cu_x%5C%7C_%7BC%5E0%7D%5E2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \partial_t \| u_x \|_{C^0} \leq \|u_x\|_{C^0}^2' title='\displaystyle  \partial_t \| u_x \|_{C^0} \leq \|u_x\|_{C^0}^2' class='latex' /></p>
+<p>which leads to an <em>a priori</em> estimate of the form <a name="uc1"></a></p>
+<p><a name="uc1"></a></p>
+<p>for some absolute constant <img src='http://l.wordpress.com/latex.php?latex=%7BC%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C}' title='{C}' class='latex' />, if <img src='http://l.wordpress.com/latex.php?latex=%7Bt%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t}' title='{t}' class='latex' /> is sufficiently small depending on <img src='http://l.wordpress.com/latex.php?latex=%7B%5C%7Cu%280%29%5C%7C_%7BC%5E1%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\|u(0)\|_{C^1}}' title='{\|u(0)\|_{C^1}}' class='latex' />. More generally, the same arguments give</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cu%28t%29%5C%7C_%7BC%5Ek%7D+%5Cleq+C_k+%5C%7Cu%280%29%5C%7C_%7BC%5Ek%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|u(t)\|_{C^k} \leq C_k \|u(0)\|_{C^k}' title='\displaystyle  \|u(t)\|_{C^k} \leq C_k \|u(0)\|_{C^k}' class='latex' /></p>
+<p>for <img src='http://l.wordpress.com/latex.php?latex=%7Bk%3D1%2C2%2C3%2C%5Cldots%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{k=1,2,3,\ldots}' title='{k=1,2,3,\ldots}' class='latex' />, where <img src='http://l.wordpress.com/latex.php?latex=%7BC_k%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C_k}' title='{C_k}' class='latex' /> depends only on <img src='http://l.wordpress.com/latex.php?latex=%7Bk%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{k}' title='{k}' class='latex' />, and <img src='http://l.wordpress.com/latex.php?latex=%7Bt%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t}' title='{t}' class='latex' /> is sufficiently small depending on <img src='http://l.wordpress.com/latex.php?latex=%7B%5C%7Cu%280%29%5C%7C_%7BC%5Ek%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\|u(0)\|_{C^k}}' title='{\|u(0)\|_{C^k}}' class='latex' />. (Actually, if one works a little more carefully, one only needs <img src='http://l.wordpress.com/latex.php?latex=%7Bt%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t}' title='{t}' class='latex' /> sufficiently small depending on <img src='http://l.wordpress.com/latex.php?latex=%7B%5C%7Cu%280%29%5C%7C_%7BC%5E1%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\|u(0)\|_{C^1}}' title='{\|u(0)\|_{C^1}}' class='latex' />.)</p>
+<p>The <em>a priori</em> estimates are not quite enough by themselves to establish local existence of solutions in the indicated function spaces, but in practice, once one has <em>a priori</em> estimates, one can usually work a little bit harder to then establish existence, for instance by using a compactness, viscosity, or penalty method. We will not discuss this topic here.</p>
+<p><strong> —  2. Lipschitz continuity at low regularity  — </strong></p>
+<p>Now let us consider two solutions <img src='http://l.wordpress.com/latex.php?latex=%7Bu%2C+v%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u, v}' title='{u, v}' class='latex' /> to Burgers&#8217; equation from two different initial data, thus <a name="u1"></a></p>
+<p><a name="u1"></a></p>
+<p>and <a name="u2"></a></p>
+<p><a name="u2"></a></p>
+<p>We want to say that if <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bv_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v_0}' title='{v_0}' class='latex' /> are close in some sense, then <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bv%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v}' title='{v}' class='latex' /> will stay close at later times. For this, the standard trick is to look at the difference <img src='http://l.wordpress.com/latex.php?latex=%7Bw+%3A%3D+v-u%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{w := v-u}' title='{w := v-u}' class='latex' /> of the two solutions. Subtracting <a href="#u1">(6)</a> from <a href="#u2">(7)</a> we obtain the <em>difference</em> equation for <img src='http://l.wordpress.com/latex.php?latex=%7Bw%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{w}' title='{w}' class='latex' />: <a name="u-diff"></a></p>
+<p><a name="u-diff"></a></p>
+<p>We can view the evolution equation in <a href="#u-diff">(8)</a> as a forced transport equation:</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%28%5Cpartial_t+%2B+v+%5Cpartial_x%29+w+%3D+-+w+u_x.+&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  (\partial_t + v \partial_x) w = - w u_x. ' title='\displaystyle  (\partial_t + v \partial_x) w = - w u_x. ' class='latex' /></p>
+<p>This leads to a bound for how the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0}' title='{C^0}' class='latex' /> norm of <img src='http://l.wordpress.com/latex.php?latex=%7Bw%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{w}' title='{w}' class='latex' /> grows:</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5Cpartial_t+%5C%7Cw%5C%7C_%7BC%5E0%7D+%5Cleq+%5C%7C+w+u_x+%5C%7C_%7BC%5E0%7D+%5Cleq+%5C%7Cw%5C%7C_%7BC%5E0%7D+%5C%7Cu%5C%7C_%7BC%5E1%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \partial_t \|w\|_{C^0} \leq \| w u_x \|_{C^0} \leq \|w\|_{C^0} \|u\|_{C^1}.' title='\displaystyle  \partial_t \|w\|_{C^0} \leq \| w u_x \|_{C^0} \leq \|w\|_{C^0} \|u\|_{C^1}.' class='latex' /></p>
+<p>Applying <a href="http://en.wikipedia.org/wiki/Gronwall%27s_inequality">Gronwall&#8217;s inequality</a>, one obtains the <em>a priori</em> inequality</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cw%28t%29%5C%7C_%7BC%5E0%7D+%5Cleq+%5C%7Cw_0%5C%7C_%7BC%5E0%7D+%5Cexp%28+%5Cint_0%5Et+%5C%7Cu%28s%29%5C%7C_%7BC%5E1%7D%5C+ds+%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|w(t)\|_{C^0} \leq \|w_0\|_{C^0} \exp( \int_0^t \|u(s)\|_{C^1}\ ds )' title='\displaystyle  \|w(t)\|_{C^0} \leq \|w_0\|_{C^0} \exp( \int_0^t \|u(s)\|_{C^1}\ ds )' class='latex' /></p>
+<p>and hence by <a href="#uc1">(5)</a> we have <a name="uvc"></a></p>
+<p><a name="uvc"></a></p>
+<p>if <img src='http://l.wordpress.com/latex.php?latex=%7Bt%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t}' title='{t}' class='latex' /> is sufficiently small (depending on the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> norm of <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' />). Thus we see that we have Lipschitz dependence in the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0}' title='{C^0}' class='latex' /> topology&#8230; but only if at least one of the two solutions <img src='http://l.wordpress.com/latex.php?latex=%7Bu%2C+v%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u, v}' title='{u, v}' class='latex' /> already had one higher derivative of regularity, so that it was in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> instead.</p>
+<p>More generally, by using the trick of differentiating the equation, one can obtain an <em>a priori</em> inequality of the form</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+u%28t%29+-+v%28t%29+%5C%7C_%7BC%5Ek%7D+%5Cleq+%5C%7Cu_0+-+v_0+%5C%7C_%7BC%5Ek%7D+%5Cexp%28+C_k+%5C%7Cu_0%5C%7C_%7BC%5E%7Bk%2B1%7D%7D+%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| u(t) - v(t) \|_{C^k} \leq \|u_0 - v_0 \|_{C^k} \exp( C_k \|u_0\|_{C^{k+1}} )' title='\displaystyle  \| u(t) - v(t) \|_{C^k} \leq \|u_0 - v_0 \|_{C^k} \exp( C_k \|u_0\|_{C^{k+1}} )' class='latex' /></p>
+<p>for some <img src='http://l.wordpress.com/latex.php?latex=%7BC_k%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C_k}' title='{C_k}' class='latex' /> depending only on <img src='http://l.wordpress.com/latex.php?latex=%7Bk%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{k}' title='{k}' class='latex' />, for <img src='http://l.wordpress.com/latex.php?latex=%7Bt%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t}' title='{t}' class='latex' /> sufficiently small depending on <img src='http://l.wordpress.com/latex.php?latex=%7B%5C%7Cu_0%5C%7C_%7BC%5E%7Bk%2B1%7D%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\|u_0\|_{C^{k+1}}}' title='{\|u_0\|_{C^{k+1}}}' class='latex' />. Once again, to get Lipschitz continuity at some regularity <img src='http://l.wordpress.com/latex.php?latex=%7BC%5Ek%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^k}' title='{C^k}' class='latex' />, one must first assume one higher degree <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E%7Bk%2B1%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^{k+1}}' title='{C^{k+1}}' class='latex' /> of regularity on one of the solutions.</p>
+<p>This loss of derivatives is unfortunate, but this is at least good enough to recover uniqueness: setting <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%3Dv_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0=v_0}' title='{u_0=v_0}' class='latex' /> in, say, <a href="#uvc">(9)</a> we obtain uniqueness of <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> solutions (locally in time, at least), thanks to the trivial fact that two <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> functions that agree in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0}' title='{C^0}' class='latex' /> norm automatically agree in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> norm also. (One can then boost local uniqueness to global uniqueness by a continuity argument.)</p>
+<p><strong> —  3. Non-uniform continuity at high regularity  — </strong></p>
+<p>Let <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}_0}' title='{u^{(n)}_0}' class='latex' /> be a sequence of <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> data converging in the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> topology to a limit <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0+%5Cin+C%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0 \in C^1}' title='{u_0 \in C^1}' class='latex' />. As <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}_0}' title='{u^{(n)}_0}' class='latex' /> are then uniformly bounded in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' />, existence theory then gives us <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> solutions <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' />, <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> to the associated initial value problems <a name="u1a"></a></p>
+<p><a name="u1a"></a></p>
+<p>and <a name="u2a"></a></p>
+<p><a name="u2a"></a></p>
+<p>for all <img src='http://l.wordpress.com/latex.php?latex=%7Bt%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t}' title='{t}' class='latex' /> in some uniform time interval <img src='http://l.wordpress.com/latex.php?latex=%7B%5B0%2CT%5D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{[0,T]}' title='{[0,T]}' class='latex' />.</p>
+<p>From <a href="#uc1">(5)</a> we know that the <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> are uniformly bounded in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> norm (for <img src='http://l.wordpress.com/latex.php?latex=%7BT%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{T}' title='{T}' class='latex' /> small enough). From the Lipschitz continuity <a href="#uvc">(9)</a> we know that <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' /> converges to <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0}' title='{C^0}' class='latex' /> norm. But does <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' /> converge to <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> in the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> norm?</p>
+<p>The answer is yes, but the proof is remarkably delicate. A direct attempt to control the difference between <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' />, following the lines of the previous argument, requires something to be bounded in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' />. But we only have <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> bounded in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' />.</p>
+<p>However, note that in the arguments of the previous section, we don&#8217;t need <em>both</em> solutions to be in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' />; it&#8217;s enough for just <em>one</em> solution to be in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' />. Now, while neither <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' /> nor <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> are bounded in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' /> yet, what we can do is to introduce a <em>third</em> solution <img src='http://l.wordpress.com/latex.php?latex=%7Bv%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v}' title='{v}' class='latex' />, which is <em>regularised</em> to lie in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' /> and not just in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' />, while still being initially close to <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> and hence to <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}_0}' title='{u^{(n)}_0}' class='latex' /> in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> norm. The hope is then to show that <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' /> are both close to <img src='http://l.wordpress.com/latex.php?latex=%7Bv%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v}' title='{v}' class='latex' /> in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' />, which by the triangle inequality will make <img src='http://l.wordpress.com/latex.php?latex=%7Bu%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u}' title='{u}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bu%5E%7B%28n%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u^{(n)}}' title='{u^{(n)}}' class='latex' /> close to each other.</p>
+<p>Unfortunately, in order to get the regularised solution <img src='http://l.wordpress.com/latex.php?latex=%7Bv%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v}' title='{v}' class='latex' /> close to <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> initially, the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' /> norm of <img src='http://l.wordpress.com/latex.php?latex=%7Bv%280%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v(0)}' title='{v(0)}' class='latex' /> (and hence of <img src='http://l.wordpress.com/latex.php?latex=%7Bv%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v}' title='{v}' class='latex' />) may have to be quite large. But we can compensate for this by making the <em><img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0}' title='{C^0}' class='latex' /></em> distance between <img src='http://l.wordpress.com/latex.php?latex=%7Bv%280%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v(0)}' title='{v(0)}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> quite small. The two effects turn out to basically cancel each other and allow one to proceed.</p>
+<p>Let&#8217;s see how this is done. (The argument here originates from <a href="http://www.ams.org/mathscinet-getitem?mr=385355">this paper of Bona and Smith</a>.) Consider a solution <img src='http://l.wordpress.com/latex.php?latex=%7Bv%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v}' title='{v}' class='latex' /> which is initially close to <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> norm (and <em>very</em> close in <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0}' title='{C^0}' class='latex' /> norm), and also has finite (but potentially large) <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' /> norm; we will quantify these statements more precisely later.</p>
+<p>Once again, we set <img src='http://l.wordpress.com/latex.php?latex=%7Bw+%3D+v-u%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{w = v-u}' title='{w = v-u}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bw_0+%3D+v_0-u_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{w_0 = v_0-u_0}' title='{w_0 = v_0-u_0}' class='latex' />, giving a difference equation which we now write as <a name="weq"></a></p>
+<p><a name="weq"></a></p>
+<p>in order to take advantage of the higher regularity of <img src='http://l.wordpress.com/latex.php?latex=%7Bv%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v}' title='{v}' class='latex' />. For the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0}' title='{C^0}' class='latex' /> norm, we have <a name="w0"></a></p>
+<p><a name="w0"></a></p>
+<p>for <img src='http://l.wordpress.com/latex.php?latex=%7Bt%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t}' title='{t}' class='latex' /> sufficiently small, thanks <a href="#uvc">(9)</a> and the uniform <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> bounds. For the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> norm, we first differentiate <a href="#weq">(12)</a> to obtain</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%28%5Cpartial_t+%2B+u+%5Cpartial_x%29+w_x+%3D+-+u_x+w_x+-+w_x+v_x+-+w+v_%7Bxx%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  (\partial_t + u \partial_x) w_x = - u_x w_x - w_x v_x - w v_{xx}' title='\displaystyle  (\partial_t + u \partial_x) w_x = - u_x w_x - w_x v_x - w v_{xx}' class='latex' /></p>
+<p>and thus</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5Cpartial_t+%5C%7C+w_x+%5C%7C_%7BC%5E0%7D+%5Cleq+%5C%7C+u_x+w_x+%5C%7C_%7BC%5E0%7D+%2B+%5C%7C+w_x+v_x%5C%7C_%7BC%5E0%7D+%2B+%5C%7C+w+v_%7Bxx%7D+%5C%7C_%7BC%5E0%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \partial_t \| w_x \|_{C^0} \leq \| u_x w_x \|_{C^0} + \| w_x v_x\|_{C^0} + \| w v_{xx} \|_{C^0}.' title='\displaystyle  \partial_t \| w_x \|_{C^0} \leq \| u_x w_x \|_{C^0} + \| w_x v_x\|_{C^0} + \| w v_{xx} \|_{C^0}.' class='latex' /></p>
+<p>The first two terms on the RHS are <img src='http://l.wordpress.com/latex.php?latex=%7BO%28+%5C%7Cw_x%5C%7C_%7BC%5E0%7D+%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O( \|w_x\|_{C^0} )}' title='{O( \|w_x\|_{C^0} )}' class='latex' /> thanks to the uniform <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> bounds. The third term is <img src='http://l.wordpress.com/latex.php?latex=%7BO%28+%5C%7Cw_0%5C%7C_%7BC%5E0%7D+%5C%7Cv_0%5C%7C_%7BC%5E2%7D+%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O( \|w_0\|_{C^0} \|v_0\|_{C^2} )}' title='{O( \|w_0\|_{C^0} \|v_0\|_{C^2} )}' class='latex' /> by <a href="#w0">(13)</a> and <em>a priori</em> <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' /> estimates (here we use the fact that the time of existence for <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' /> bounds can be controlled by the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> norm). Using Gronwall&#8217;s inequality, we conclude that</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+w_x%28t%29+%5C%7C_%7BC%5E0%7D+%5Cll+%5C%7C%5Cpartial_x+w_0%5C%7C_%7BC%5E0%7D+%2B+%5C%7Cw_0%5C%7C_%7BC%5E0%7D+%5C%7Cv_0+%5C%7C_%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| w_x(t) \|_{C^0} \ll \|\partial_x w_0\|_{C^0} + \|w_0\|_{C^0} \|v_0 \|_{C^2}' title='\displaystyle  \| w_x(t) \|_{C^0} \ll \|\partial_x w_0\|_{C^0} + \|w_0\|_{C^0} \|v_0 \|_{C^2}' class='latex' /></p>
+<p>and thus</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cv%28t%29-u%28t%29%5C%7C_%7BC%5E1%7D+%5Cll+%5C%7C+v_0+-+u_0+%5C%7C_%7BC%5E1%7D+%2B+%5C%7C+v_0-u_0%5C%7C_%7BC%5E0%7D+%5C%7C+v_0+%5C%7C_%7BC%5E2%7D.+&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|v(t)-u(t)\|_{C^1} \ll \| v_0 - u_0 \|_{C^1} + \| v_0-u_0\|_{C^0} \| v_0 \|_{C^2}. ' title='\displaystyle  \|v(t)-u(t)\|_{C^1} \ll \| v_0 - u_0 \|_{C^1} + \| v_0-u_0\|_{C^0} \| v_0 \|_{C^2}. ' class='latex' /></p>
+<p>Similarly one has</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cv%28t%29-u%5E%7B%28n%29%7D%28t%29%5C%7C_%7BC%5E1%7D+%5Cll+%5C%7C+v_0+-+u%5E%7B%28n%29%7D_0+%5C%7C_%7BC%5E1%7D+%2B+%5C%7C+v_0-u%5E%7B%28n%29%7D_0%5C%7C_%7BC%5E0%7D+%5C%7C+v_0+%5C%7C_%7BC%5E2%7D%2C+&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|v(t)-u^{(n)}(t)\|_{C^1} \ll \| v_0 - u^{(n)}_0 \|_{C^1} + \| v_0-u^{(n)}_0\|_{C^0} \| v_0 \|_{C^2}, ' title='\displaystyle  \|v(t)-u^{(n)}(t)\|_{C^1} \ll \| v_0 - u^{(n)}_0 \|_{C^1} + \| v_0-u^{(n)}_0\|_{C^0} \| v_0 \|_{C^2}, ' class='latex' /></p>
+<p>and so by the triangle inequality we have <a name="valu"></a></p>
+<p><a name="valu"></a></p>
+<p>for <img src='http://l.wordpress.com/latex.php?latex=%7Bn%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{n}' title='{n}' class='latex' /> sufficiently large.</p>
+<p>Note how the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^2}' title='{C^2}' class='latex' /> norm in the second term is balanced by the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^0}' title='{C^0}' class='latex' /> norm. We can exploit this balance as follows. Let <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cepsilon+%3E+0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\epsilon &gt; 0}' title='{\epsilon &gt; 0}' class='latex' /> be a small quantity, and let <img src='http://l.wordpress.com/latex.php?latex=%7Bv_0+%3A%3D+u_0+%2A+P_%5Cepsilon%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{v_0 := u_0 * P_\epsilon}' title='{v_0 := u_0 * P_\epsilon}' class='latex' />, where <img src='http://l.wordpress.com/latex.php?latex=%7BP_%5Cepsilon+%3D+%5Cfrac%7B1%7D%7B%5Cepsilon%7D+P%28+%5Cfrac%7Bx%7D%7B%5Cepsilon%7D%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{P_\epsilon = \frac{1}{\epsilon} P( \frac{x}{\epsilon})}' title='{P_\epsilon = \frac{1}{\epsilon} P( \frac{x}{\epsilon})}' class='latex' /> is a suitable approximation to the identity. A little bit of integration by parts using the <img src='http://l.wordpress.com/latex.php?latex=%7BC%5E1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C^1}' title='{C^1}' class='latex' /> bound on <img src='http://l.wordpress.com/latex.php?latex=%7Bu_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{u_0}' title='{u_0}' class='latex' /> then gives the bounds</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cv_0-u_0+%5C%7C_%7BC%5E0%7D+%5Cll+%5Cepsilon&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|v_0-u_0 \|_{C^0} \ll \epsilon' title='\displaystyle  \|v_0-u_0 \|_{C^0} \ll \epsilon' class='latex' /></p>
+<p>and</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cv_0-u_0+%5C%7C_%7BC%5E1%7D+%5Cll+1&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|v_0-u_0 \|_{C^1} \ll 1' title='\displaystyle  \|v_0-u_0 \|_{C^1} \ll 1' class='latex' /></p>
+<p>and</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cv_0%5C%7C_%7BC%5E2%7D+%5Cll+%5Cfrac%7B1%7D%7B%5Cepsilon%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|v_0\|_{C^2} \ll \frac{1}{\epsilon}.' title='\displaystyle  \|v_0\|_{C^2} \ll \frac{1}{\epsilon}.' class='latex' /></p>
+<p>This is not quite enough to get anything useful out of <a href="#valu">(14)</a>. But to do better, we can use the fact that <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cpartial_x+u_0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\partial_x u_0}' title='{\partial_x u_0}' class='latex' />, being uniformly continuous, has some <a href="http://en.wikipedia.org/wiki/Modulus_of_continuity">modulus of continuity</a>, thus one has</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+%5Cpartial_x+u_0%28%5Ccdot%2Bt%29+-+%5Cpartial_x+u_0%28%5Ccdot%29+%5C%7C_%7BC%5E0%7D+%3D+o%281%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| \partial_x u_0(\cdot+t) - \partial_x u_0(\cdot) \|_{C^0} = o(1)' title='\displaystyle  \| \partial_x u_0(\cdot+t) - \partial_x u_0(\cdot) \|_{C^0} = o(1)' class='latex' /></p>
+<p>as <img src='http://l.wordpress.com/latex.php?latex=%7Bt+%5Crightarrow+0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{t \rightarrow 0}' title='{t \rightarrow 0}' class='latex' />. Using this, one can soon get the improved estimates</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cv_0-u_0+%5C%7C_%7BC%5E0%7D+%3D+o%28%5Cepsilon%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|v_0-u_0 \|_{C^0} = o(\epsilon)' title='\displaystyle  \|v_0-u_0 \|_{C^0} = o(\epsilon)' class='latex' /></p>
+<p>and</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cv_0-u_0+%5C%7C_%7BC%5E1%7D+%3D+o%281%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|v_0-u_0 \|_{C^1} = o(1)' title='\displaystyle  \|v_0-u_0 \|_{C^1} = o(1)' class='latex' /></p>
+<p>as <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cepsilon+%5Crightarrow+0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\epsilon \rightarrow 0}' title='{\epsilon \rightarrow 0}' class='latex' />. Applying <a href="#valu">(14)</a>, we thus see that</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7Cu%5E%7B%28n%29%7D%28t%29-u%28t%29%5C%7C_%7BC%5E1%7D+%5Cll+o%281%29+&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|u^{(n)}(t)-u(t)\|_{C^1} \ll o(1) ' title='\displaystyle  \|u^{(n)}(t)-u(t)\|_{C^1} \ll o(1) ' class='latex' /></p>
+<p>for <img src='http://l.wordpress.com/latex.php?latex=%7Bn%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{n}' title='{n}' class='latex' /> sufficiently large, and the continuity claim follows.
+<div class="snap_nopreview sharing robots-nocontent">
+<ul>
+<li class="sharing_label">Share this:</li>
+<li class="share-print share-regular"><a rel="nofollow" class="share-print share-icon" href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#print" title="Click to print">Print</a></li>
+<li class="share-email share-regular"><a rel="nofollow" class="share-email share-icon" href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/?share=email" title="Click to email this to a friend">Email</a></li>
+<li class="share-end"></li>
+</ul>
+<div class="sharing-clear"></div>
+</div>
+
+<!--adcode-->
+<div align="center" style="padding-top: 5px; text-align: left;" class="adcode">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3443918307802676";
+google_ad_output = "js";
+google_feedback = "on";
+google_max_num_ads = "4";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_image_size = "336x280";
+google_ad_type = "text,flash,html";
+google_ad_channel ="7770228814+6875057225+7401333398+7453468586+7250744022";
+var color_bg = 'ffffff';
+var color_text = '545454';
+var color_link = '005a80';
+var color_border = 'ffffff';
+var color_url = '005a80';
+
+google_analytics_domain_name = "wordpress.com";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+<div style="clear: both"><br /></div>
+<!--/adcode-->
+		</div>
+					</div>
+</div>
+<div id="secondary">
+
+<div class="widgets">
+
+	<div id="recent-comments" class="widget widget_recent_comments">		<h3>Recent Comments</h3>		<table class='recentcommentsavatar' cellspacing='0' cellpadding='0' border='0'><tr><td title="Anon" class="recentcommentsavatartop" style="height:32px; width:32px"><img alt='' src='http://1.gravatar.com/avatar/d26ffa8dde6cc82ccb805e2a20a4978c?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstexttop">Anon on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49295">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="Anon" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://1.gravatar.com/avatar/d26ffa8dde6cc82ccb805e2a20a4978c?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anon on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49294">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49289">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/2010/09/19/245a-notes-2-the-lebesgue-integral/#comment-49248">245A, Notes 2: The Lebesgue&hellip;</a></td></tr><tr><td title="KVV" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://1.gravatar.com/avatar/34e0ff98a2134ddb8321f528880e68aa?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">KVV on <a href="http://terrytao.wordpress.com/books/analysis-ii/#comment-49246">Analysis&nbsp;II</a></td></tr><tr><td title="Terence Tao" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://www.math.ucla.edu/~tao' rel='nofollow'><img alt='' src='http://1.gravatar.com/avatar/3c795880f3b73784a9b75fbff3772701?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://www.math.ucla.edu/~tao' rel='nofollow'>Terence Tao</a> on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49245">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="Terence Tao" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://www.math.ucla.edu/~tao' rel='nofollow'><img alt='' src='http://1.gravatar.com/avatar/3c795880f3b73784a9b75fbff3772701?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://www.math.ucla.edu/~tao' rel='nofollow'>Terence Tao</a> on <a href="http://terrytao.wordpress.com/2010/12/22/outliers-in-the-spectrum-of-iid-matrices-with-bounded-rank-permutations/#comment-49244">Outliers in the spectrum of ii&hellip;</a></td></tr><tr><td title="Pedro Lauridsen Ribeiro" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://www.desy.de/~pribeiro' rel='nofollow'><img alt='' src='http://0.gravatar.com/avatar/03935dda8f945df44d35c300f42e131e?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://www.desy.de/~pribeiro' rel='nofollow'>Pedro Lauridsen Ribe&hellip;</a> on <a href="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/#comment-49238">The Bourgain-Guth argument for&hellip;</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49237">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="Benaych-Georges" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://www.cmapx.polytechnique.fr/~benaych/' rel='nofollow'><img alt='' src='http://0.gravatar.com/avatar/0011985460c0eca3dfd231047cf277f7?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://www.cmapx.polytechnique.fr/~benaych/' rel='nofollow'>Benaych-Georges</a> on <a href="http://terrytao.wordpress.com/2010/12/22/outliers-in-the-spectrum-of-iid-matrices-with-bounded-rank-permutations/#comment-49234">Outliers in the spectrum of ii&hellip;</a></td></tr><tr><td title="J.P. McCarthy" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://irishjip.wordpress.com' rel='nofollow'><img alt='' src='http://1.gravatar.com/avatar/339b183e12491a824f86a1cfde24f420?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://irishjip.wordpress.com' rel='nofollow'>J.P. McCarthy</a> on <a href="http://terrytao.wordpress.com/books/analysis-i/#comment-49233">Analysis&nbsp;I</a></td></tr><tr><td title="The Euler-Arnold Equation &laquo; Sergeysk&#039;s Blog" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://sergeysk.wordpress.com/2010/12/29/the-euler-arnold-equation/' rel='nofollow'></a></td><td class="recentcommentstextend"><a href='http://sergeysk.wordpress.com/2010/12/29/the-euler-arnold-equation/' rel='nofollow'>The Euler-Arnold Equ&hellip;</a> on <a href="http://terrytao.wordpress.com/2010/06/07/the-euler-arnold-equation/#comment-49224">The Euler-Arnold&nbsp;equation</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/books/analysis-i/#comment-49223">Analysis&nbsp;I</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/books/analysis-i/#comment-49222">Analysis&nbsp;I</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/books/analysis-i/#comment-49221">Analysis&nbsp;I</a></td></tr></table>
+	</div><div id="search-2" class="widget widget_search"><div class="searchbox">
+	<form method="get" id="searchform" action="/"><fieldset>
+		<input type="text" value="" name="s" id="s" tabindex="21" />
+		<input type="submit" id="searchsubmit" value="Search" tabindex="22" />
+	</fieldset></form>
+</div></div><div id="linkcat-198071" class="widget widget_links"><h3>Articles by others</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.washingtonpost.com/wp-dyn/content/article/2007/04/04/AR2007040401721.html">Gene Weingarten &#8211; Pearls before breakfast</a></li>
+<li><a href="http://chem.tufts.edu/AnswersInScience/RelativityofWrong.htm">Isaac Asimov &#8211; The relativity of wrong</a></li>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2007/02/25/the-cult-of-genius/">Julianne Dalcanton &#8211; The cult of genius</a></li>
+<li><a href="http://www.edge.org/3rd_culture/taleb08/taleb08_index.html">Nassim Taleb &#8211; The fourth quadrant: a map of the limits of statistics</a></li>
+<li><a href="http://nymag.com/news/features/27840/">Po Bronson &#8211; How not to talk to your kids</a></li>
+<li><a href="http://scottaaronson.com/blog/?p=304">Scott Aaronson &#8211; Ten signs a claimed mathematical proof is wrong</a></li>
+<li><a href="http://arxiv.org/abs/math.HO/9404236">William Thurston &#8211; On proof and progress in mathematics</a></li>
+
+	</ul>
+</div>
+<div id="linkcat-5580" class="widget widget_links"><h3>Diversions</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://abstrusegoose.com/">Abstruse Goose</a></li>
+<li><a href="http://www.gamereclaim.com/2008/10/128/" title="A game with real-world physics">Assembler</a></li>
+<li><a href="http://www.factcheck.org/">Factcheck.org</a></li>
+<li><a href="http://www.fivethirtyeight.com/" title="Politics done right">FiveThirtyEight</a></li>
+<li><a href="http://www.gapminder.org/" title="A good example of the power of graphical presentation software">Gapminder</a></li>
+<li><a href="http://www.planarity.net/" title="A simple game based on planar graphs">Planarity</a></li>
+<li><a href="http://politifact.com/truth-o-meter/" title="Sorting out the truth in politics">PolitiFact</a></li>
+<li><a href="http://www.qi.com/" title="An eclectic quiz show, hosted by Stephen Fry.">Quite Interesting</a></li>
+<li><a href="http://www.snopes.com/" title="Urban legends reference pages">snopes</a></li>
+<li><a href="http://strangemaps.wordpress.com/">Strange maps</a></li>
+<li><a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/Tropes" title="A wiki for standardised tropes in storytelling, especially in television">Television tropes and idioms</a></li>
+<li><a href="http://www.thedailyshow.com/" title="Current Events &amp; Pop Culture, Comedy &amp; Fake News">The Daily Show with Jon Stewart</a></li>
+<li><a href="http://www.economist.com/" title="Analysis of world business and current affairs">The Economist</a></li>
+<li><a href="http://www.theonion.com/content/index" title="America&#8217;s finest news source">The Onion</a></li>
+<li><a href="http://www.straightdope.com/" title="Fighting ignorance since 1973">The Straight Dope</a></li>
+<li><a href="http://www.thislife.org/Radio_Episode.aspx?episode=355" title="An hour in length, but well worth it">This American Life on the financial crisis I</a></li>
+<li><a href="http://www.thislife.org/Radio_Episode.aspx?sched=1263" title="Another hour in length, but also well worth it">This American Life on the financial crisis II</a></li>
+<li><a href="http://www.xkcd.com/" title="A webcomic of romance, sarcasm, math, and language">xkcd</a></li>
+
+	</ul>
+</div>
+<div id="linkcat-3582" class="widget widget_links"><h3>Mathematics</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://11011110.livejournal.com/" title="David Eppstein&#8217;s blog">0xDE</a></li>
+<li><a href="http://themathingpot.wordpress.com/" title="A group blog about mathematics">A mathematical melting pot</a></li>
+<li><a href="http://hilbertthm90.wordpress.com/" title="Musings on art, philosophy, mathematics, and physics">A Mind for Madness</a></li>
+<li><a href="http://mzargar.wordpress.com/" title="Olympiad level mathematical problems">A Portion of the Book</a></li>
+<li><a href="http://sunejakobsen.wordpress.com/">Absolutely useless</a></li>
+<li><a href="http://mathgradblog.williams.edu/" title="by and for math grad students">AMS Graduate Student Blog</a></li>
+<li><a href="http://pjm.math.berkeley.edu/apde/about/journal/about.html" title="A new journal in analysis &amp; PDE (I am one of the editors), run by and for mathematicians">Analysis &amp; PDE</a></li>
+<li><a href="http://tosio.math.utoronto.ca/wiki/index.php/Conferences" title="A list of upcoming conferences in analysis &amp; PDE">Analysis &amp; PDE Conferences</a></li>
+<li><a href="http://qchu.wordpress.com/" title="Mathematicians are annoyingly precise.">Annoying Precision</a></li>
+<li><a href="http://www.arsmathematica.net/" title="Dedicated to the mathematical arts.">Ars Mathematica</a></li>
+<li><a href="http://avzel.blogspot.com/" title="Andrei Zelevinsky&#8217;s blog (in Russian)">Avzel&#039;s journal</a></li>
+<li><a href="http://williewong.wordpress.com/">Bubbles Bad; Ripples Good</a></li>
+<li><a href="http://amathew.wordpress.com/" title="Thoughts on mathematics">Climbing Mount Bourbaki</a></li>
+<li><a href="http://coloquiooleis.wordpress.com/" title="los seguidores de Manolo (Spanish)">Coloquio Oleis</a></li>
+<li><a href="http://gilkalai.wordpress.com/" rel="friend colleague" title="Gil Kalai&#8217;s blog">Combinatorics and more</a></li>
+<li><a href="http://www.compressedsensing.com/" title="Maintained by Rice university">Compressed sensing resources</a></li>
+<li><a href="http://weblog.fortnow.com/" title="by Lance Fortnow and Bill Gasarch">Computational Complexity</a></li>
+<li><a href="http://concretenonsense.wordpress.com/" title="A group blog about mathematics">Concrete nonsense</a></li>
+<li><a href="http://deltaepsilons.wordpress.com/" title="Mathematical research and problem solving">Delta epsilons</a></li>
+<li><a href="http://detexify.kirelabs.org/classify.html" title="Latex symbol classifier">Detexify</a></li>
+<li><a href="http://tosio.math.toronto.edu/wiki/index.php/Main_Page" title="A wiki for nonlinear dispersive and wave equations">DispersiveWiki</a></li>
+<li><a href="http://matheuscmss.wordpress.com/" title="Carlos Matheus&#8217; blog">Disquisitiones Mathematicae</a></li>
+<li><a href="http://embuchestissues.wordpress.com/">Embûches tissues</a></li>
+<li><a href="http://blogs.ethz.ch/kowalski/" title="Emmanuel Kowalski&#8217;s blog">Emmanuel Kowalski&#8217;s blog</a></li>
+<li><a href="http://equatorialmaths.wordpress.com/" title="Mathematics, teaching, brain meltdown">Equatorial Mathematics</a></li>
+<li><a href="http://blogs.williams.edu/Morgan/" title="Math, Teaching, and Other Items of Interest">Frank Morgan&#8217;s blog</a></li>
+<li><a href="http://gerardbesson.wordpress.com/">Gérard Besson&#039;s Blog</a></li>
+<li><a href="http://rjlipton.wordpress.com/" title="http://rjlipton.wordpress.com/">Gödel’s Lost Letter and P=NP</a></li>
+<li><a href="http://392c.wordpress.com/" title="Residual finiteness and word-hyperbolic groups">Geometric Group Theory</a></li>
+<li><a href="http://lamington.wordpress.com/" title="Geometry, explored in examples; and commentary on recent developments (by Danny Calegari)">Geometry and the imagination</a></li>
+<li><a href="http://godplaysdice.blogspot.com/" title="A random walk through mathematics &#8212; mostly through the random part.">God Plays Dice</a></li>
+<li><a href="http://scienceblogs.com/goodmath/" title="Finding the fun in good math; squashing bad math and the fools who promote it">Good Math, Bad Math</a></li>
+<li><a href="http://alanrendall.wordpress.com/" title="Alan Rendall&#8217;s blog">Hydrobates</a></li>
+<li><a href="http://yannisparissis.wordpress.com/" title="A day in the life of a mathematician. From an analysis point of view.">I Woke Up In A Strange Place</a></li>
+<li><a href="http://images.math.cnrs.fr/" title="La recherches mathématiques en mots et en images (in French)">Images des mathématiques</a></li>
+<li><a href="http://lucatrevisan.wordpress.com/" title="Luca Trevisan&#8217;s blog">In theory</a></li>
+<li><a href="http://oldweb.cecm.sfu.ca/projects/ISC/ISCmain.html" title="Converts a floating point decimal into a symbolic expression">Inverse Symbolic Calculator</a></li>
+<li><a href="http://www.ams.org/jams/" title="A premier journal in mathematics;I am one of the editors">Journal of the American Mathematical Society</a></li>
+<li><a href="http://lucatrevisan.wordpress.com/latex-to-wordpress/" title="Luca Trevisan&#8217;s python script for converting LaTeX to wordpress posts">LaTeX to Wordpress</a></li>
+<li><a href="http://yetaspblog.wordpress.com/" title="Yet Another Signal Processing (and Applied Math) blog">Le Petit Chercheur Illustré</a></li>
+<li><a href="http://lewko.wordpress.com/">Lewko&#039;s blog</a></li>
+<li><a href="http://blog.djalil.chafai.net/" title="WordPress weblog of Djalil Chafaï">Libres pensées d’un mathématicien ordinaire</a></li>
+<li><a href="http://londonnumbertheory.wordpress.com/" title="Things for number theorists to do in London">London number theory</a></li>
+<li><a href="http://ldtopology.wordpress.com/" title="Recent Progress and Open Problems">Low Dimensional Topology</a></li>
+<li><a href="http://maaminutemath.blogspot.com/" title="Daily problems from the AMC">MAA MinuteMath</a></li>
+<li><a href="http://mathoverflow.net/">Math Overflow</a></li>
+<li><a href="http://matthewkahle.wordpress.com/" title="Mathematical musings, a place for informal mathematical writings: expository, puzzles, art, and open problems. By Matthew Kahle.">Mathematical musings</a></li>
+<li><a href="http://wiki.henryfarrell.net/wiki/index.php/Mathematics/Statistics" title="A very partial list &#8211; needs contributions">Mathematics blogs wiki</a></li>
+<li><a href="http://www.learner.org/courses/mathilluminated/" title="A thirteen-part series for adult learners and high school teachers">Mathematics Illuminated</a></li>
+<li><a href="http://austmaths.wordpress.com/" title="Current issues, news, and events in Australian mathematical research and education">Mathematics in Australia</a></li>
+<li><a href="http://notable.math.ucdavis.edu/wiki/Mathematics_Jobs_Wiki" title="Rumours and authoritative information about the mathematics jobs market">Mathematics Jobs Wiki</a></li>
+<li><a href="http://math.stackexchange.com/">Mathematics Stack Exchange</a></li>
+<li><a href="http://micromath.wordpress.com/" title="Atomic objects, structures and concepts of mathematics">Mathematics under the Microscope</a></li>
+<li><a href="http://www.scienceblogs.de/mathlog/" title="Thilo Kuessner&#8217;s blog (in German)">Mathlog</a></li>
+<li><a href="http://mathonline.andreaferretti.it/">MathOnline</a></li>
+<li><a href="http://homotopical.wordpress.com/" title="Cohomology in algebraic geometry">Motivic stuff</a></li>
+<li><a href="http://muchado.blogli.co.il/" title="On mathematics and other animals (in Hebrew)">Much ado about nothing</a></li>
+<li><a href="http://scherk.pbwiki.com/" title="A wiki for online multiple choice quizzes">Multiple Choice Quiz Wiki</a></li>
+<li><a href="http://www.neverendingbooks.org/" title="lieven le bruyn’s blog">neverendingbooks</a></li>
+<li><a href="http://ncatlab.org/nlab/show/HomePage" title="Collaborative work on Mathematics, Physics and Philosophy">nLab</a></li>
+<li><a href="http://noncommutativegeometry.blogspot.com/" title="A group blog by several mathematicians, including Alain Connes">Noncommutative geometry blog</a></li>
+<li><a href="http://nuit-blanche.blogspot.com/" title="Focused on technical issues in compressed sensing and related topics">Nuit-blanche</a></li>
+<li><a href="http://www.numbertheory.org/" title="Resources for number theorists">Number theory web</a></li>
+<li><a href="http://outofprintmath.blogspot.com/" title="Bringing out-of-print math books into print – Vote for which book you would like to see come back into print">outofprintmath</a></li>
+<li><a href="http://cameroncounts.wordpress.com/" title="Counting the things that need to be counted">Peter Cameron&#039;s Blog</a></li>
+<li><a href="http://philippelefloch.wordpress.com/">Phillipe LeFloch&#039;s blog</a></li>
+<li><a href="http://quomodocumque.wordpress.com/" title="Jordan Ellenberg&#8217;s blog">Quomodocumque</a></li>
+<li><a href="http://stochastix.wordpress.com/" title="scientia potentia est">Reasonable Deviations</a></li>
+<li><a href="http://borcherds.wordpress.com/" title="Richard Borcherds&#8217; blog">Richard Borcherds&#8217; blog</a></li>
+<li><a href="http://rigtriv.wordpress.com/" title="A group blog in mathematics">Rigorous Trivialities</a></li>
+<li><a href="http://sagemath.blogspot.com/" title="A blog by William Stein">Sage: Open Source Mathematical Software</a></li>
+<li><a href="http://sbseminar.wordpress.com" title="A group maths blog at Berkeley">Secret Blogging Seminar</a></li>
+<li><a href="http://www.scottaaronson.com/blog/" title="Scott Aaronson&#8217;s blog">Shtetl-Optimized</a></li>
+<li><a href="http://ifwisdomwereteachable.wordpress.com/" title="… we simply try to teach mathematics.">Since it is not&#8230;</a></li>
+<li><a href="http://sketchesoftopology.wordpress.com/" title="Visualizations of low dimensional topology">Sketches of topology</a></li>
+<li><a href="http://math.columbia.edu/~dejong/wordpress/">Stacks Project Blog</a></li>
+<li><a href="http://symomega.wordpress.com/">SymOmega</a></li>
+<li><a href="http://tcsmath.wordpress.com" title="Some mathematics of theoretical computer science">tcs math</a></li>
+<li><a href="http://tex.stackexchange.com/" title="A MathOverflow-like site for TeX">TeX, LaTeX, and friends</a></li>
+<li><a href="http://ilaba.wordpress.com/" title="Izabella Laba&#8217;s blog">The accidental mathematician</a></li>
+<li><a href="http://cornellmath.wordpress.com/" title="A group maths blog at Cornell">The Everything Seminar</a></li>
+<li><a href="http://geomblog.blogspot.com/" title="Ruminations on computational geometry, algorithms, theoretical computer science and life">The Geomblog</a></li>
+<li><a href="http://golem.ph.utexas.edu/category/" title="A group blog on math, physics and philosophy">The n-Category Café</a></li>
+<li><a href="http://www.noncommutative.org/" title="A noncommutative geometry group blog">The n-geometry cafe</a></li>
+<li><a href="http://polylogblog.wordpress.com/" title="streams, sketches, samples, sensing etc.">The polylogblog</a></li>
+<li><a href="http://polymathprojects.wordpress.com/" title="A central location for proposing, planning, and running polymath projects">The polymath blog</a></li>
+<li><a href="http://michaelnielsen.org/polymath1/index.php?title=Main_Page" title="The wiki for polymath projects.">The polymath wiki</a></li>
+<li><a href="http://www.tricki.org/" title="A repository of mathematical know-how">The Tricki</a></li>
+<li><a href="http://twofoldgaze.wordpress.com/">The twofold gaze</a></li>
+<li><a href="http://unapologetic.wordpress.com/" title="Mathematics for the interested.">The Unapologetic Mathematician</a></li>
+<li><a href="http://cstheory.stackexchange.com/" title="A MathOverflow-like site for TCS">Theoretical Computer Science &#8211; StackExchange</a></li>
+<li><a href="http://gowers.wordpress.com" title="Mathematics related discussions (and the Princeton Companion to Mathematics)">Tim Gowers&#8217; blog</a></li>
+<li><a href="http://www.dpmms.cam.ac.uk/~wtg10/mathsindex.html" title="Informal discussions of elementary (and sometimes deep) mathematics">Tim Gowers&#8217; mathematical discussions</a></li>
+<li><a href="http://topologicalmusings.wordpress.com/" title="Just another mathematical blog">Todd and Vishal’s blog</a></li>
+<li><a href="http://vuhavan.wordpress.com/" title="In vietnamese">Van Vu&#039;s blog</a></li>
+<li><a href="http://vieuxgirondin.wordpress.com/" title="A lazy mathematician&#8217;s blog">Vieux Girondin</a></li>
+<li><a href="http://vivatsgasse7.wordpress.com/" title="A group maths blog at Bonn">Vivatsgasse 7</a></li>
+<li><a href="http://blogs.williams.edu/math/" title="Mathematics and Statistics at Williams College">Williams College Math/Stat Blog</a></li>
+<li><a href="http://www.wiskundemeisjes.nl/" title="A group maths blog from U. Leiden (in Dutch)">Wiskundemeisjes</a></li>
+<li><a href="http://xorshammer.wordpress.com/">XOR&#8217;s hammer</a></li>
+
+	</ul>
+</div>
+<div id="linkcat-203526" class="widget widget_links"><h3>Selected articles</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://terrytao.wordpress.com/2009/09/17/a-speech-for-the-american-academy-of-arts-and-sciences/">American Academy of Arts and Sciences speech</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/09/05/amplification-arbitrage-and-the-tensor-power-trick/" title="A discussion of one of my favourite types of trick in analysis">Amplification, arbitrage, and the tensor power trick</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/12/09/an-airport-inspired-puzzle/">An airport-inspired puzzle</a></li>
+<li><a href="http://terrytao.wordpress.com/2009/07/03/benfords-law-zipfs-law-and-the-pareto-distribution/">Benford&#039;s law, Zipf&#039;s law, and the Pareto distribution</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/04/13/compressed-sensing-and-single-pixel-cameras/" title="A non-technical introduction to compressed sensing">Compressed sensing and single-pixel cameras</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/12/28/einsteins-derivation-of-emc2/">Einstein&#8217;s derivation of E=mc^2</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/12/14/on-multiple-choice-questions-in-mathematics/">On multiple choice questions in mathematics</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/02/26/quantum-mechanics-and-tomb-raider/" title="Uses Tomb Raider to construct a world with quantum-like effects.">Quantum mechanics and Tomb Raider</a></li>
+<li><a href="http://terrytao.wordpress.com/2009/03/23/sailing-into-the-wind-or-faster-than-the-wind/" title="An idealised mathematical model of sailing">Sailing into the wind, or faster than the wind</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/04/05/simons-lecture-i-structure-and-randomness-in-fourier-analysis-and-number-theory/" title="A set of three lectures on structure and randomness in mathematics">Simons lectures on structure and randomness</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/10/10/small-samples-and-the-margin-of-error/">Small samples, and the margin of error</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/05/23/soft-analysis-hard-analysis-and-the-finite-convergence-principle/" title="A discussion of soft and hard analysis">Soft analysis, hard analysis, and the finite convergence principle</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/02/05/the-blue-eyed-islanders-puzzle/" title="A remarkably subtle and unintuitive logic puzzle">The blue-eyed islanders puzzle</a></li>
+<li><a href="http://terrytao.wordpress.com/2009/09/03/the-cosmic-distance-ladder-2/" title="Some slides on the cosmic distance ladder in astronomy">The cosmic distance ladder</a></li>
+<li><a href="http://terrytao.wordpress.com/2009/05/04/the-federal-budget-rescaled/">The federal budget, rescaled</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/06/25/ultrafilters-nonstandard-analysis-and-epsilon-management/" title="Nonstandard analysis, from a hard analysis perspective.">Ultrafilters, non-standard analysis, and epsilon management</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/09/27/what-is-a-gauge/">What is a gauge?</a></li>
+<li><a href="http://arxiv.org/abs/math.HO/0702396" title="An essay on what good mathematics is, and whether we should define it at all">What is good mathematics?</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/03/18/why-global-regularity-for-navier-stokes-is-hard/" title="A detailed discussion of the global regularity problem for Navier-Stokes">Why global regularity for Navier-Stokes is hard</a></li>
+
+	</ul>
+</div>
+<div id="linkcat-702846" class="widget widget_links"><h3>The sciences</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://wiki.henryfarrell.net/wiki/index.php/Main_Page" title="A wiki for academic blogs">Academic blogs</a></li>
+<li><a href="http://www.amacad.org/">American Academy of Arts and Sciences</a></li>
+<li><a href="http://www.science.org.au/">Australian Academy of Science</a></li>
+<li><a href="http://blogs.discovermagazine.com/badastronomy/" title="Phil Plait&#8217;s blog">Bad Astronomy</a></li>
+<li><a href="http://www.nasonline.org/site/PageServer">National Academy of Science</a></li>
+<li><a href="http://www.realclimate.org/" title="Climate science, minus (most of the) politics">RealClimate</a></li>
+<li><a href="http://www.schneier.com/blog/" title="Bruce Schneier on security issues">Schneier on security</a></li>
+<li><a href="http://www.sciencebasedmedicine.org/" title="Exploring issues and controversies in the relationship between science and medicine">Science-Based Medicine</a></li>
+<li><a href="http://chronicle.com/free/v49/i21/21b02001.htm" title="A Chronicle article from 2003; still timely">Seven warning signs of bogus science</a></li>
+<li><a href="http://royalsociety.org/">The Royal Society</a></li>
+<li><a href="http://blog.lib.umn.edu/denis036/thisweekinevolution/" title="Recent papers in evolutionary biology">This week in evolution</a></li>
+<li><a href="http://www.tolweb.org/tree/" title="Explore the tree of life">Tree of Life Web Project</a></li>
+
+	</ul>
+</div>
+		<div id="top-posts" class="widget widget_stats_topposts">			<h3>Top Posts</h3>			<ul><li><a href='http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/'>The Bourgain-Guth argument for proving restriction theorems</a></li><li><a href='http://terrytao.wordpress.com/career-advice/'>Career advice</a></li><li><a href='http://terrytao.wordpress.com/books/'>Books</a></li><li><a href='http://terrytao.wordpress.com/career-advice/does-one-have-to-be-a-genius-to-do-maths/'>Does one have to be a genius to do maths?</a></li><li><a href='http://terrytao.wordpress.com/2010/12/22/outliers-in-the-spectrum-of-iid-matrices-with-bounded-rank-permutations/'>Outliers in the spectrum of iid matrices with bounded rank perturbations</a></li><li><a href='http://terrytao.wordpress.com/advice-on-writing-papers/'>On writing</a></li><li><a href='http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/'>245A, Notes 1: Lebesgue measure</a></li><li><a href='http://terrytao.wordpress.com/books/an-epsilon-of-room-pages-from-year-three-of-a-mathematical-blog/'>An epsilon of room: pages from year three of a mathematical blog</a></li><li><a href='http://terrytao.wordpress.com/2010/11/20/the-guth-katz-bound-on-the-erdos-distance-problem/'>The Guth-Katz bound on the Erdős distance problem</a></li><li><a href='http://terrytao.wordpress.com/books/analysis-i/'>Analysis I</a></li></ul>		</div><div id="archives-2" class="widget widget_archive"><h3>Archives</h3>		<ul>
+			<li><a href='http://terrytao.wordpress.com/2010/12/' title='December 2010'>December 2010</a>&nbsp;(5)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/11/' title='November 2010'>November 2010</a>&nbsp;(6)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/10/' title='October 2010'>October 2010</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/09/' title='September 2010'>September 2010</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/08/' title='August 2010'>August 2010</a>&nbsp;(3)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/07/' title='July 2010'>July 2010</a>&nbsp;(4)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/06/' title='June 2010'>June 2010</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/05/' title='May 2010'>May 2010</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/04/' title='April 2010'>April 2010</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/03/' title='March 2010'>March 2010</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/02/' title='February 2010'>February 2010</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/01/' title='January 2010'>January 2010</a>&nbsp;(12)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/12/' title='December 2009'>December 2009</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/11/' title='November 2009'>November 2009</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/10/' title='October 2009'>October 2009</a>&nbsp;(15)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/09/' title='September 2009'>September 2009</a>&nbsp;(6)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/08/' title='August 2009'>August 2009</a>&nbsp;(13)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/07/' title='July 2009'>July 2009</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/06/' title='June 2009'>June 2009</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/05/' title='May 2009'>May 2009</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/04/' title='April 2009'>April 2009</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/03/' title='March 2009'>March 2009</a>&nbsp;(14)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/02/' title='February 2009'>February 2009</a>&nbsp;(13)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/01/' title='January 2009'>January 2009</a>&nbsp;(18)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/12/' title='December 2008'>December 2008</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/11/' title='November 2008'>November 2008</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/10/' title='October 2008'>October 2008</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/09/' title='September 2008'>September 2008</a>&nbsp;(5)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/08/' title='August 2008'>August 2008</a>&nbsp;(6)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/07/' title='July 2008'>July 2008</a>&nbsp;(7)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/06/' title='June 2008'>June 2008</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/05/' title='May 2008'>May 2008</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/04/' title='April 2008'>April 2008</a>&nbsp;(12)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/03/' title='March 2008'>March 2008</a>&nbsp;(12)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/02/' title='February 2008'>February 2008</a>&nbsp;(13)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/01/' title='January 2008'>January 2008</a>&nbsp;(17)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/12/' title='December 2007'>December 2007</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/11/' title='November 2007'>November 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/10/' title='October 2007'>October 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/09/' title='September 2007'>September 2007</a>&nbsp;(7)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/08/' title='August 2007'>August 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/07/' title='July 2007'>July 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/06/' title='June 2007'>June 2007</a>&nbsp;(6)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/05/' title='May 2007'>May 2007</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/04/' title='April 2007'>April 2007</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/03/' title='March 2007'>March 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/02/' title='February 2007'>February 2007</a>&nbsp;(4)</li>
+		</ul>
+</div><div id="categories-1" class="widget widget_categories"><h3>Categories</h3>		<ul>
+			<li class="cat-item cat-item-162892"><a href="http://terrytao.wordpress.com/category/expository/" title="Expository papers, notes, discussions, etc.">expository</a> (100)
+<ul class='children'>
+	<li class="cat-item cat-item-4841"><a href="http://terrytao.wordpress.com/category/expository/tricks/" title="Articles for the Tricks Wiki">tricks</a> (7)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-279350"><a href="http://terrytao.wordpress.com/category/guest-blog/" title="Posts by a guest speaker">guest blog</a> (7)
+</li>
+	<li class="cat-item cat-item-3582"><a href="http://terrytao.wordpress.com/category/mathematics/" title="All posts and links of a mathematical nature">Mathematics</a> (387)
+<ul class='children'>
+	<li class="cat-item cat-item-1702720"><a href="http://terrytao.wordpress.com/category/mathematics/mathac/" title="Commutative rings, modules, ideals, homological algebra, computational aspects, invariant theory, connections to algebraic geometry and combinatorics">math.AC</a> (3)
+</li>
+	<li class="cat-item cat-item-1440174"><a href="http://terrytao.wordpress.com/category/mathematics/mathag/" title="Algebraic varieties, stacks, sheaves, schemes, moduli spaces, complex geometry, quantum cohomology
+">math.AG</a> (14)
+</li>
+	<li class="cat-item cat-item-1440182"><a href="http://terrytao.wordpress.com/category/mathematics/mathap/" title="Existence and uniquness, boundary conditions, linear and non-linear operators, stability, soliton theory, integrable PDE&#039;s, conservation laws, qualitative dynamics
+">math.AP</a> (65)
+</li>
+	<li class="cat-item cat-item-1702715"><a href="http://terrytao.wordpress.com/category/mathematics/mathat/" title="Homotopy theory, homological algebra, algebraic treatments of manifolds">math.AT</a> (12)
+</li>
+	<li class="cat-item cat-item-1440094"><a href="http://terrytao.wordpress.com/category/mathematics/mathca/" title="Special functions, orthogonal polynomials, harmonic analysis, ODE&#039;s, differential relations, calculus of variations, approximations, expansions, asymptotics
+">math.CA</a> (77)
+</li>
+	<li class="cat-item cat-item-1440100"><a href="http://terrytao.wordpress.com/category/mathematics/mathco/" title="Discrete mathematics, graph theory, enumeration, combinatorial optimization, Ramsey theory, combinatorial game theory">math.CO</a> (97)
+</li>
+	<li class="cat-item cat-item-1606003"><a href="http://terrytao.wordpress.com/category/mathematics/mathct/" title="Enriched categories, topoi, abelian categories, monoidal categories, homological algebra">math.CT</a> (3)
+</li>
+	<li class="cat-item cat-item-1440190"><a href="http://terrytao.wordpress.com/category/mathematics/mathcv/" title="Holomorphic functions, automorphic group actions and forms, pseudoconvexity, complex geometry, analytic spaces, analytic sheaves">math.CV</a> (7)
+</li>
+	<li class="cat-item cat-item-1440342"><a href="http://terrytao.wordpress.com/category/mathematics/mathdg/" title="Complex, contact, Riemannian, pseudo-Riemannian and Finsler geometry, relativity, gauge theory, global analysis
+">math.DG</a> (27)
+</li>
+	<li class="cat-item cat-item-1440109"><a href="http://terrytao.wordpress.com/category/mathematics/mathds/" title="Dynamics of differential equations and flows, mechanics, classical few-body problems, iterations, complex dynamics, delayed differential equations">math.DS</a> (49)
+</li>
+	<li class="cat-item cat-item-1702685"><a href="http://terrytao.wordpress.com/category/mathematics/mathfa/" title="Banach spaces, function spaces, real functions, integral transforms, theory of distributions, measure theory">math.FA</a> (19)
+</li>
+	<li class="cat-item cat-item-1440160"><a href="http://terrytao.wordpress.com/category/mathematics/mathgm/" title="Mathematical material of general interest, topics not covered elsewhere">math.GM</a> (7)
+</li>
+	<li class="cat-item cat-item-1702723"><a href="http://terrytao.wordpress.com/category/mathematics/mathgn/" title="Continuum theory, point-set topology, spaces with algebraic structure, foundations, dimension theory, local and global properties
+">math.GN</a> (11)
+</li>
+	<li class="cat-item cat-item-1440379"><a href="http://terrytao.wordpress.com/category/mathematics/mathgr/" title="Finite groups, topological groups, representation theory, cohomology, classification and structure
+">math.GR</a> (26)
+</li>
+	<li class="cat-item cat-item-1440175"><a href="http://terrytao.wordpress.com/category/mathematics/mathgt/" title="Manifolds, orbifolds, polyhedra, cell complexes, foliations, geometric structures
+">math.GT</a> (9)
+</li>
+	<li class="cat-item cat-item-1440153"><a href="http://terrytao.wordpress.com/category/mathematics/mathho/" title="Biographies, philosophy of mathematics, mathematics education, recreational mathematics, communication of mathematics
+">math.HO</a> (8)
+</li>
+	<li class="cat-item cat-item-1702724"><a href="http://terrytao.wordpress.com/category/mathematics/mathit/" title="Covers theoretical and experimental aspects of information theory and coding.">math.IT</a> (8)
+</li>
+	<li class="cat-item cat-item-1440125"><a href="http://terrytao.wordpress.com/category/mathematics/mathlo/" title="Logic, set theory, point-set topology, formal mathematics
+">math.LO</a> (30)
+</li>
+	<li class="cat-item cat-item-1440121"><a href="http://terrytao.wordpress.com/category/mathematics/mathmg/" title="Euclidean, hyperbolic, discrete, convex, coarse geometry, comparisons in Riemannian geometry, symmetric spaces
+">math.MG</a> (20)
+</li>
+	<li class="cat-item cat-item-1440193"><a href="http://terrytao.wordpress.com/category/mathematics/mathmp/" title="Mathematical methods in quantum field theory, quantum mechanics, statistical mechanics, condensed matter, nuclear and atomic physics
+">math.MP</a> (15)
+</li>
+	<li class="cat-item cat-item-1440120"><a href="http://terrytao.wordpress.com/category/mathematics/mathna/" title="Numerical algorithms for problems in analysis and algebra, scientific computation
+">math.NA</a> (9)
+</li>
+	<li class="cat-item cat-item-1440053"><a href="http://terrytao.wordpress.com/category/mathematics/mathnt/" title="Prime numbers, diophantine equations, analytic number theory, algebraic number theory, arithmetic geometry, Galois theory
+">math.NT</a> (43)
+</li>
+	<li class="cat-item cat-item-1702729"><a href="http://terrytao.wordpress.com/category/mathematics/mathoa/" title="Algebras of operators on Hilbert space, C^*-algebras, von Neumann algebras, non-commutative geometry">math.OA</a> (11)
+</li>
+	<li class="cat-item cat-item-1440146"><a href="http://terrytao.wordpress.com/category/mathematics/mathpr/" title="Theory and applications of probability and stochastic processes: e.g. central limit theorems, large deviations, stochastic differential equations, models from statistical mechanics, queuing theory">math.PR</a> (53)
+</li>
+	<li class="cat-item cat-item-1440376"><a href="http://terrytao.wordpress.com/category/mathematics/mathqa/" title="Quantum groups, skein theories, operadic and diagrammatic algebra, quantum field theory">math.QA</a> (3)
+</li>
+	<li class="cat-item cat-item-1440395"><a href="http://terrytao.wordpress.com/category/mathematics/mathra/" title="Non-commutative rings and algebras, non-associative algebras, universal algebra and lattice theory, linear algebra, semigroups
+">math.RA</a> (11)
+</li>
+	<li class="cat-item cat-item-1702678"><a href="http://terrytao.wordpress.com/category/mathematics/mathrt/" title="Linear representations of algebras and groups, Lie theory, associative algebras, multilinear algebra">math.RT</a> (5)
+</li>
+	<li class="cat-item cat-item-1702696"><a href="http://terrytao.wordpress.com/category/mathematics/mathsg/" title="Hamiltonian systems, symplectic flows, classical integrable systems">math.SG</a> (3)
+</li>
+	<li class="cat-item cat-item-1440331"><a href="http://terrytao.wordpress.com/category/mathematics/mathsp/" title="Schrodinger operators, operators on manifolds, general differential operators, numerical studies, integral operators, discrete models, resonances, non-self-adjoint operators, random operators/matrices">math.SP</a> (23)
+</li>
+	<li class="cat-item cat-item-1702731"><a href="http://terrytao.wordpress.com/category/mathematics/mathst/" title="Applied, computational and theoretical statistics: e.g. statistical inference, regression, time series, multivariate analysis, data analysis, Markov chain Monte Carlo, design of experiments, case studies">math.ST</a> (3)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-47932"><a href="http://terrytao.wordpress.com/category/non-technical/" title="Articles intended for a lay audience">non-technical</a> (85)
+<ul class='children'>
+	<li class="cat-item cat-item-102"><a href="http://terrytao.wordpress.com/category/non-technical/admin/" title="Posts relating to the structure of the blog itself">admin</a> (23)
+</li>
+	<li class="cat-item cat-item-521"><a href="http://terrytao.wordpress.com/category/non-technical/advertising/" title="View all posts filed under advertising">advertising</a> (11)
+</li>
+	<li class="cat-item cat-item-26904563"><a href="http://terrytao.wordpress.com/category/non-technical/diversions-non-technical/" title="View all posts filed under diversions">diversions</a> (4)
+</li>
+	<li class="cat-item cat-item-292"><a href="http://terrytao.wordpress.com/category/non-technical/media/" title="Posts relating to non-technical media, such as print journalism">media</a> (9)
+	<ul class='children'>
+	<li class="cat-item cat-item-5465"><a href="http://terrytao.wordpress.com/category/non-technical/media/journals/" title="Academic journals and publishing">journals</a> (1)
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-21091"><a href="http://terrytao.wordpress.com/category/non-technical/obituary/" title="Notable deaths">obituary</a> (4)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-352"><a href="http://terrytao.wordpress.com/category/opinion/" title="Personal and subjective thoughts on various topics">opinion</a> (25)
+</li>
+	<li class="cat-item cat-item-19368"><a href="http://terrytao.wordpress.com/category/paper/" title="My research and survey papers">paper</a> (102)
+<ul class='children'>
+	<li class="cat-item cat-item-2364"><a href="http://terrytao.wordpress.com/category/paper/book/" title="Posts concerning my books">book</a> (8)
+</li>
+	<li class="cat-item cat-item-349586"><a href="http://terrytao.wordpress.com/category/paper/companion/" title="Articles relating to the Princeton Companion to Mathematics">Companion</a> (13)
+</li>
+	<li class="cat-item cat-item-3251"><a href="http://terrytao.wordpress.com/category/paper/update/" title="Updates and errata for previously announced, uploaded, or published papers or other results">update</a> (9)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-395"><a href="http://terrytao.wordpress.com/category/question/" title="Open problems and questions">question</a> (50)
+<ul class='children'>
+	<li class="cat-item cat-item-123554"><a href="http://terrytao.wordpress.com/category/question/polymath/" title="Massively collaborative mathematical projects">polymath</a> (28)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-739"><a href="http://terrytao.wordpress.com/category/talk/" title="Reports on talks given by myself or other speakers">talk</a> (58)
+<ul class='children'>
+	<li class="cat-item cat-item-1922770"><a href="http://terrytao.wordpress.com/category/talk/dls/" title="Distinguished Lecture Series at UCLA">DLS</a> (19)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1591"><a href="http://terrytao.wordpress.com/category/teaching/" title="Classes and other topics related to teaching">teaching</a> (102)
+<ul class='children'>
+	<li class="cat-item cat-item-41596685"><a href="http://terrytao.wordpress.com/category/teaching/245a-real-analysis/" title="View all posts filed under 245A &#8211; Real analysis">245A &#8211; Real analysis</a> (10)
+</li>
+	<li class="cat-item cat-item-14547275"><a href="http://terrytao.wordpress.com/category/teaching/245b-real-analysis/" title="View all posts filed under 245B &#8211; Real analysis">245B &#8211; Real analysis</a> (19)
+</li>
+	<li class="cat-item cat-item-17974405"><a href="http://terrytao.wordpress.com/category/teaching/245c-real-analysis/" title="View all posts filed under 245C &#8211; Real analysis">245C &#8211; Real analysis</a> (6)
+</li>
+	<li class="cat-item cat-item-3213081"><a href="http://terrytao.wordpress.com/category/teaching/254a-ergodic-theory/" title="My winter 2008 class on topics in ergodic theory">254A &#8211; ergodic theory</a> (18)
+</li>
+	<li class="cat-item cat-item-28369345"><a href="http://terrytao.wordpress.com/category/teaching/254a-random-matrices/" title="View all posts filed under 254A &#8211; random matrices">254A &#8211; random matrices</a> (13)
+</li>
+	<li class="cat-item cat-item-32495288"><a href="http://terrytao.wordpress.com/category/teaching/254b-higher-order-fourier-analysis/" title="View all posts filed under 254B &#8211; Higher order Fourier analysis">254B &#8211; Higher order Fourier analysis</a> (8)
+</li>
+	<li class="cat-item cat-item-5649515"><a href="http://terrytao.wordpress.com/category/teaching/285g-poincare-conjecture/" title="My Spring 2008 class on Perelman&#039;s proof of the Poincare conjecture">285G &#8211; poincare conjecture</a> (20)
+</li>
+	<li class="cat-item cat-item-26480429"><a href="http://terrytao.wordpress.com/category/teaching/logic-reading-seminar/" title="View all posts filed under Logic reading seminar">Logic reading seminar</a> (8)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-200"><a href="http://terrytao.wordpress.com/category/travel/" title="Posts relating to places that I am visiting">travel</a> (25)
+</li>
+		</ul>
+</div><div id="rss-4" class="widget widget_rss"><h3><a class='rsswidget' href='http://buzz.googleapis.com/feeds/114134834346472219368/public/posted' title='Syndicate this content'><img style='background:orange;color:white;border:none;' width='14' height='14' src='http://s.wordpress.com/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='' title=''>Buzz feed</a></h3><ul><li><a class='rsswidget' href='http://www.google.com/buzz/114134834346472219368/Cr5MUB8GAaM/A-dramatic-contrast-between-worst-case-scenario' title=''>Buzz by Terence Tao from Buzz</a> <span class="rss-date">1 October, 2010</span><div class='rssSummary'>A dramatic contrast between worst-case scenario costs and actual costs: the infamous Troubled Assets Relief Program (TARP) from 2008-2010, popularly viewed as a $700 billion bailout to banks, begins winding down this week (with no further outlays permitted), and is now projected to actually have a net cost about $50 billion; when compared against the stabili [&hellip;]</div></li><li><a class='rsswidget' href='http://www.google.com/buzz/114134834346472219368/ECyHjjGbQEo/The-Bourgain-Guth-argument-for-proving-restriction' title=''>Buzz by Terence Tao from What&#039;s new</a> <span class="rss-date">28 December, 2010</span><div class='rssSummary'>The Bourgain-Guth argument for proving restriction theorems</div></li><li><a class='rsswidget' href='http://www.google.com/buzz/114134834346472219368/4pDxqWdcdwk/I-happened-across-this-nice-example-of-a' title=''>Buzz by Terence Tao from Buzz</a> <span class="rss-date">27 December, 2010</span><div class='rssSummary'>I happened across this nice example of a deceptively simple problem in control theory, known as Witsenhausen&#039;s counterexample, that has no known exact optimum (or even an efficient algorithm to come close to an exact optimum).The situation is as follows. One starts with a random input x_0 (of mean zero, with a known variance [; \sigma^2 ;]; \sigma = 5 i [&hellip;]</div></li><li><a class='rsswidget' href='http://www.google.com/buzz/114134834346472219368/4yMCfy2fVQA/I-was-quite-surprised-to-see-a-graph-theory-result' title=''>Buzz by Terence Tao from Buzz</a> <span class="rss-date">26 December, 2010</span><div class='rssSummary'>I was quite surprised to see a graph theory result from 2003 come up in a quiz show (about six minutes in, after a lot of silliness involving tissues).</div></li></ul></div><div id="wp_tag_cloud" class="widget wp_widget_tag_cloud"><h3>Tags</h3><div style="overflow:hidden"><a href='http://terrytao.wordpress.com/tag/additive-combinatorics/' class='tag-link-1830943' title='17 topics' style='font-size: 19.878787878788pt;'>additive combinatorics</a>
+<a href='http://terrytao.wordpress.com/tag/advice/' class='tag-link-157' title='4 topics' style='font-size: 8pt;'>advice</a>
+<a href='http://terrytao.wordpress.com/tag/ben-green/' class='tag-link-1831468' title='13 topics' style='font-size: 17.545454545455pt;'>Ben Green</a>
+<a href='http://terrytao.wordpress.com/tag/circular-law/' class='tag-link-5525501' title='5 topics' style='font-size: 9.6969696969697pt;'>circular law</a>
+<a href='http://terrytao.wordpress.com/tag/compactness/' class='tag-link-2081313' title='5 topics' style='font-size: 9.6969696969697pt;'>compactness</a>
+<a href='http://terrytao.wordpress.com/tag/compressed-sensing/' class='tag-link-1831153' title='8 topics' style='font-size: 13.30303030303pt;'>compressed sensing</a>
+<a href='http://terrytao.wordpress.com/tag/correspondence-principle/' class='tag-link-1831139' title='7 topics' style='font-size: 12.242424242424pt;'>correspondence principle</a>
+<a href='http://terrytao.wordpress.com/tag/eigenvalues/' class='tag-link-1830977' title='6 topics' style='font-size: 11.181818181818pt;'>eigenvalues</a>
+<a href='http://terrytao.wordpress.com/tag/entropy/' class='tag-link-45250' title='6 topics' style='font-size: 11.181818181818pt;'>entropy</a>
+<a href='http://terrytao.wordpress.com/tag/equidistribution/' class='tag-link-1835017' title='8 topics' style='font-size: 13.30303030303pt;'>equidistribution</a>
+<a href='http://terrytao.wordpress.com/tag/ergodic-theory/' class='tag-link-1831136' title='7 topics' style='font-size: 12.242424242424pt;'>ergodic theory</a>
+<a href='http://terrytao.wordpress.com/tag/finite-fields/' class='tag-link-966672' title='8 topics' style='font-size: 13.30303030303pt;'>finite fields</a>
+<a href='http://terrytao.wordpress.com/tag/fourier-transform/' class='tag-link-1831011' title='9 topics' style='font-size: 14.363636363636pt;'>Fourier transform</a>
+<a href='http://terrytao.wordpress.com/tag/freimans-theorem/' class='tag-link-1831469' title='7 topics' style='font-size: 12.242424242424pt;'>Freiman's theorem</a>
+<a href='http://terrytao.wordpress.com/tag/gowers-uniformity-norms/' class='tag-link-31375369' title='6 topics' style='font-size: 11.181818181818pt;'>Gowers uniformity norms</a>
+<a href='http://terrytao.wordpress.com/tag/gradient-shrinking-solitons/' class='tag-link-6999624' title='5 topics' style='font-size: 9.6969696969697pt;'>gradient shrinking solitons</a>
+<a href='http://terrytao.wordpress.com/tag/graph-theory/' class='tag-link-751916' title='7 topics' style='font-size: 12.242424242424pt;'>graph theory</a>
+<a href='http://terrytao.wordpress.com/tag/gue/' class='tag-link-45419' title='6 topics' style='font-size: 11.181818181818pt;'>GUE</a>
+<a href='http://terrytao.wordpress.com/tag/harmonic-analysis/' class='tag-link-817033' title='4 topics' style='font-size: 8pt;'>harmonic analysis</a>
+<a href='http://terrytao.wordpress.com/tag/hypergraphs/' class='tag-link-1831138' title='5 topics' style='font-size: 9.6969696969697pt;'>hypergraphs</a>
+<a href='http://terrytao.wordpress.com/tag/inverse-conjecture/' class='tag-link-2549157' title='5 topics' style='font-size: 9.6969696969697pt;'>inverse conjecture</a>
+<a href='http://terrytao.wordpress.com/tag/kakeya-conjecture/' class='tag-link-5620918' title='6 topics' style='font-size: 11.181818181818pt;'>Kakeya conjecture</a>
+<a href='http://terrytao.wordpress.com/tag/littlewood-offord-theorems/' class='tag-link-1830976' title='5 topics' style='font-size: 9.6969696969697pt;'>Littlewood-Offord theorems</a>
+<a href='http://terrytao.wordpress.com/tag/multiple-recurrence/' class='tag-link-3919295' title='5 topics' style='font-size: 9.6969696969697pt;'>multiple recurrence</a>
+<a href='http://terrytao.wordpress.com/tag/nilpotent-groups/' class='tag-link-5314333' title='5 topics' style='font-size: 9.6969696969697pt;'>nilpotent groups</a>
+<a href='http://terrytao.wordpress.com/tag/nls/' class='tag-link-636232' title='5 topics' style='font-size: 9.6969696969697pt;'>NLS</a>
+<a href='http://terrytao.wordpress.com/tag/nonstandard-analysis/' class='tag-link-1831165' title='7 topics' style='font-size: 12.242424242424pt;'>nonstandard analysis</a>
+<a href='http://terrytao.wordpress.com/tag/politics/' class='tag-link-398' title='7 topics' style='font-size: 12.242424242424pt;'>politics</a>
+<a href='http://terrytao.wordpress.com/tag/polymath1/' class='tag-link-16273585' title='15 topics' style='font-size: 18.606060606061pt;'>polymath1</a>
+<a href='http://terrytao.wordpress.com/tag/polynomial-method/' class='tag-link-5620919' title='5 topics' style='font-size: 9.6969696969697pt;'>polynomial method</a>
+<a href='http://terrytao.wordpress.com/tag/polynomials/' class='tag-link-718088' title='7 topics' style='font-size: 12.242424242424pt;'>polynomials</a>
+<a href='http://terrytao.wordpress.com/tag/prime-numbers/' class='tag-link-864113' title='6 topics' style='font-size: 11.181818181818pt;'>prime numbers</a>
+<a href='http://terrytao.wordpress.com/tag/project-heatwave/' class='tag-link-8071582' title='6 topics' style='font-size: 11.181818181818pt;'>project heatwave</a>
+<a href='http://terrytao.wordpress.com/tag/random-matrices/' class='tag-link-1830975' title='22 topics' style='font-size: 22pt;'>random matrices</a>
+<a href='http://terrytao.wordpress.com/tag/randomness/' class='tag-link-1568' title='21 topics' style='font-size: 21.575757575758pt;'>randomness</a>
+<a href='http://terrytao.wordpress.com/tag/ratners-theorem/' class='tag-link-1834777' title='10 topics' style='font-size: 15.212121212121pt;'>Ratner's theorem</a>
+<a href='http://terrytao.wordpress.com/tag/regularity-lemma/' class='tag-link-1831196' title='6 topics' style='font-size: 11.181818181818pt;'>regularity lemma</a>
+<a href='http://terrytao.wordpress.com/tag/ricci-flow/' class='tag-link-1831237' title='11 topics' style='font-size: 16.060606060606pt;'>Ricci flow</a>
+<a href='http://terrytao.wordpress.com/tag/schrodinger-equation/' class='tag-link-1454573' title='6 topics' style='font-size: 11.181818181818pt;'>Schrodinger equation</a>
+<a href='http://terrytao.wordpress.com/tag/structure/' class='tag-link-25716' title='18 topics' style='font-size: 20.30303030303pt;'>structure</a>
+<a href='http://terrytao.wordpress.com/tag/szemeredis-theorem/' class='tag-link-1831146' title='7 topics' style='font-size: 12.242424242424pt;'>Szemeredi's theorem</a>
+<a href='http://terrytao.wordpress.com/tag/tamar-ziegler/' class='tag-link-7591055' title='6 topics' style='font-size: 11.181818181818pt;'>Tamar Ziegler</a>
+<a href='http://terrytao.wordpress.com/tag/universality/' class='tag-link-553131' title='11 topics' style='font-size: 16.060606060606pt;'>universality</a>
+<a href='http://terrytao.wordpress.com/tag/van-vu/' class='tag-link-9482008' title='9 topics' style='font-size: 14.363636363636pt;'>Van Vu</a>
+<a href='http://terrytao.wordpress.com/tag/wave-maps/' class='tag-link-1830969' title='6 topics' style='font-size: 11.181818181818pt;'>wave maps</a></div></div><div id="rss-2" class="widget widget_rss"><h3><a class='rsswidget' href='http://polymathprojects.org/feed/rss/' title='Syndicate this content'><img style='background:orange;color:white;border:none;' width='14' height='14' src='http://s.wordpress.com/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://polymathprojects.org' title='Massively collaborative mathematical projects'>The Polymath Blog</a></h3><ul><li><a class='rsswidget' href='http://polymathprojects.org/2010/09/30/polymath3-polynomial-hirsch-conjecture-now-officially-open/' title='After some discussion and a lengthy hiatus, the Polymath3 project (on attacking the polynomial Hirsch conjecture via combinatorial means) has officially started with a new research thread on Gil Kalai&#8217;s blog (which, for now, can also double as the discussion thread, given that the activity level is still quite low), and a Polymath wiki page. [...]'>Polymath3 (polynomial Hirsch conjecture) now officially open</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2010/07/08/minipolymath2-project-imo-2010-q5/' title='This post marks the official opening of the mini-polymath2 project to solve a problem from the 2010 IMO.  I have selected the fifth question (which appears to be slightly more challenging than the sixth, for a change) as the problem to focus on: Problem. In each of six boxes there is initially one coin. There [...]'>Minipolymath2 project: IMO 2010 Q5</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2010/06/29/draft-version-of-polymath4-paper/' title='I&#8217;ve written up a draft version of a short paper giving the results we already have in the finding primes project.  The source files for the paper can be found here. The paper is focused on what I think is our best partial result, namely that the prime counting polynomial has a circuit complexity of [...]'>Draft version of polymath4 paper</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2010/06/12/mini-polymath-proposal-imo-2010-q6/' title='I am proposing the sixth question for the 2010 International Mathematical Olympiad (traditionally, the trickiest of the six problems) as a mini-polymath project for next month.  Details and discussions are in this post on my other blog. [Update, June 27: the project is scheduled to start on Thursday, July 8 16:00 UTC.] Filed under: news, [...]'>Mini-polymath proposal: IMO 2010 Q6</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2010/01/09/polymath5-erdos%e2%80%99s-discrepancy-problem/' title='Is taking place on Gowers&#8217;s blog! Posted in polymath proposals'>Polymath5: Erdős’s discrepancy problem</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/12/31/proposal-tim-gowers-erdos-discrepancy-problem/' title='For a description of Erdos&#8217; discrepancy problem and a large discussion see this blog on Gowers&#8217;s blog. The decision for the next polymath project over Gowers&#8217;s blog will be between three projects: The polynomial DHJ problem, Littlewood problem, and the Erdos discrepency problem. To help making the decision four polls are in place! Posted in [&hellip;]'>Proposal (Tim Gowers): Erdos’ Discrepancy Problem</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/11/20/proposals-tim-gowers-polynomial-dhj-and-littlewoods-problem/' title='Tim Gowers described two additional proposed polymath projects. One about the first unknown cases of the polynomial Density Hales Jewett problem. Another about the Littelwood&#8217;s conjecture. I will state one problem from each of these posts: 1) (Related to polynomial DHJ) Suppose you have a family of graphs on n labelled vertices, so that we [...]'>Proposals (Tim Gowers): Polynomial DHJ, and Littlewood’s problem</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/11/08/proposal-tim-gowers-the-origin-of-life/' title=''>Proposal (Tim Gowers) The Origin of Life</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/10/27/research-thread-v-determinstic-way-to-find-primes/' title='It&#8217;s probably time to refresh the previous thread for the &#8220;finding primes&#8221; project, and to summarise the current state of affairs. The current goal is to find a deterministic way to locate a prime in an interval in time that breaks the &#8220;square root barrier&#8221; of (or more precisely, ).  Currently, we have two ways [...]'>(Research thread V) Determinstic way to find primes</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/10/16/nature-article-on-polymath/' title='Timothy Gowers and Michael Nielsen have written an article &#8220;Massively collaborative mathematics&#8220;, focusing primarily on the first Polymath project, for the October issue of Nature. Posted in news'>Nature article on Polymath</a></li></ul></div><div id="rss-3" class="widget widget_rss"><h3><a class='rsswidget' href='http://austmaths.wordpress.com/feed/' title='Syndicate this content'><img style='background:orange;color:white;border:none;' width='14' height='14' src='http://s.wordpress.com/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://austmaths.wordpress.com' title='Discussions of issues facing mathematics research and education in Australia today'>Mathematics in Australia</a></h3><ul><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/11/09/junior-positions-at-anu/' title='The math department at the ANU (Australian National University) is advertising five junior jobs, two of them permanent and three postdocs. More information can be found at http://wwwmaths.anu.edu.au/~borger/2010_job_ad_webpage (Via Amnon Neeman)'>Junior positions at ANU</a> <span class="rss-date">8 November, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/10/11/austms-now-on-twitter/' title='The AustMS now has a twitter feed, which has now also been added to the sidebar of this blog. (Via Nalini Joshi)'>AustMS now on twitter</a> <span class="rss-date">10 October, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/05/09/research-not-bad-but-not-stellar/' title='As reported by the Australian, the Australian Innovation System Report 2010 ranks physics, geosciences, space sciences, environment and mathematics among Australia&#8217;s strongest research fields (as measured by impact factor of publications), with the country as a whole ranked 16th among OECD countries.   (via Birgit Loch)'>Research not bad, but not stellar</a> <span class="rss-date">9 May, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/04/11/l%e2%80%99oreal-australia-for-women-in-science-fellowships/' title='[From Nalini Joshi -T.] Applications for the 2010 L’Oréal Australia For Women In Science Fellowships are now open and close on Monday 3 May. The three $20,000 Fellowships are intended to help early-career women scientists to consolidate their careers and rise to leadership positions in science. The Fellowships are awarded to women  who have completed [...] [&hellip;]'>L’Oréal Australia For Women In Science Fellowships</a> <span class="rss-date">11 April, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/01/18/postdoctoral-position-level-a-in-mathematics-at-australian-national-university/' title='The Mathematical Sciences Institute at the Australian National University is currently advertising a 2 year postdoctoral position, funded by a new ARC grant awarded to Andrew Hassell, in spectral theory/microlocal analysis/harmonic analysis/PDE. The closing date for applications is Feb 5. This position is most suitable for someone with a recent PhD (e.g. wit [&hellip;]'>Postdoctoral position (Level A) in mathematics at Australian National University</a> <span class="rss-date">18 January, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/12/02/cheryl-praeger-named-as-2009-western-australian-scientist-of-the-yearu/' title='Cheryl Praeger at UWA has just been named 2009 Western Australian Scientist of the Year, after becoming a finalist last week.    Congratulations Cheryl! [Via SymOmega.]'>Cheryl Praeger named as 2009 Western Australian Scientist of the Year</a> <span class="rss-date">2 December, 2009</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/11/04/positions-at-australian-national-university/' title='[Via Jim Borger.] &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;- Permanent positions &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;- These positions are at levels B and C, which are the Australian equivalent of an assistant or associate professorship. It is important to add that, as is usual in the Australian system, the positions at both levels are permanent  [&hellip;]'>Positions at Australian National University</a> <span class="rss-date">4 November, 2009</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/10/27/mathematics-skills-out-for-the-count/' title='Two recent articles in the Daily Telegraph, &#8221;Students in almost 60 percent of high schools taught by unqualified teachers&#8221; and &#8220;Mathematics skills out for the count&#8220;, highlight two key (and related) concerns in Australian mathematics education: the continuing shortages of skilled maths teachers in high schools (with one in five school [&hellip;]'>Mathematics skills out for the count</a> <span class="rss-date">26 October, 2009</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/10/14/federal-government-awards-2-million-for-improving-mathematics-education-in-schools-project/' title='As reported today on the Funneled Web, the Federal Minister for Education, Julia Gillard, has announced a $2 million grant to fund the &#8220;Improving Mathematics Education in Schools&#8221; project, an initiative run by AMSI in collaboration with industry and teachers to promote mathematics education and awareness of mathematics career opportunities, parti [&hellip;]'>Federal government awards $2 million for Improving Mathematics Education in Schools project</a> <span class="rss-date">13 October, 2009</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/10/09/message-from-amsi-regarding-proposed-cuts-at-victoria-university/' title='The new director of the Australian Mathematical Sciences Institute, Geoff Prince, has written an open letter to the Vice Chancellor and President of Victoria University, Elizabeth Harman, regarding the proposed severe cuts in the mathematics and statistics departments (from 8.5 FTE to 4.5 FTE) through targeted. (We posted about these cuts in a previous post. [&hellip;]'>Message from AMSI regarding proposed cuts at Victoria University</a> <span class="rss-date">9 October, 2009</span></li></ul></div>
+</div>
+
+</div>
+<div id="wpl-likebox"><div id="wpl-button"><a href='http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/?like=1&amp;_wpnonce=251343adf9' title='I like this post' class='like needs-login'><span>Like</span></a></div><div id="wpl-count"><span>2</span> bloggers like this post.</div><div id="wpl-avatars"><a href="http://gravatar.com/mathsnail" title="mathsnail"><img src='http://0.gravatar.com/avatar/0301bdfd5a6a3ff7f737817d370a465e?s=35&amp;d=identicon&amp;r=PG' class='avatar avatar-35' alt='mathsnail' width='30' height='30' /> </a><a href="http://gravatar.com/longlongwaytogo" title="longlongwaytogo"><img src='http://0.gravatar.com/avatar/813cc88009437c425146b7468cbf72fe?s=35&amp;d=identicon&amp;r=PG' class='avatar avatar-35' alt='longlongwaytogo' width='30' height='30' /> </a></div></div>
+<div id="comments" class="commentlist">
+
+	<div id="comments-meta">
+		<h2 class="comments-title">14 comments</h2>
+		<p class="comments-feed"><a href='http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/feed/'>Comments feed for this article</a></p>
+	</div>
+
+
+			
+	<div class="comment even thread-even depth-1 vcard parent" id="comment-43696">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43696" title="Permalink to this comment">22 February, 2010 at 1:39 am</a></p>
+			<p class="comment-author"><strong class="fn">Anonymous</strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Dear Prof. Tao,</p>
+<p>If <img src='http://l.wordpress.com/latex.php?latex=u%3A+%5Cmathbb%7BR%7D+%5Crightarrow+V&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='u: \mathbb{R} \rightarrow V' title='u: \mathbb{R} \rightarrow V' class='latex' /> and V is a finite dimensional vector space, how do we define the derivative of u with respect to t?</p>
+<p>thanks</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43696"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43696={"id":132742,"unique_id":"wp-comment-43696","title":"Dear Prof. Tao,If $latex u: \\mathbb{R} \\rightarrow V$ and V is a finite dimensional vector space, how do we define the derivative of u with respect to t?thanks...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43696","item_id":"_comm_43696"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43696#respond' onclick='return addComment.moveForm("comment-43696", "43696", "respond", "3488")'>Reply</a>		</div>
+	</div>
+<ul class='children'>
+		
+	<div class="comment byuser comment-author-teorth bypostauthor odd alt depth-2 vcard parent" id="comment-43699">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43699" title="Permalink to this comment">22 February, 2010 at 9:17 am</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://www.math.ucla.edu/~tao' rel='external nofollow' class='url'>Terence Tao</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://1.gravatar.com/avatar/3c795880f3b73784a9b75fbff3772701?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Derivatives of vector-valued functions can be defined in the same way as that of scalar-valued functions, e.g. as limits of Newton quotients <img src='http://l.wordpress.com/latex.php?latex=%28u%28t%2Bdt%29-u%28t%29%29%2Fdt&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='(u(t+dt)-u(t))/dt' title='(u(t+dt)-u(t))/dt' class='latex' />.  One can also take the derivative of each component.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43699"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43699={"id":132742,"unique_id":"wp-comment-43699","title":"Derivatives of vector-valued functions can be defined in the same way as that of scalar-valued functions, e.g. as limits of Newton quotients $latex (u(t+dt)-u(t))\/dt$.  One can also take the deri...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43699","item_id":"_comm_43699"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43699#respond' onclick='return addComment.moveForm("comment-43699", "43699", "respond", "3488")'>Reply</a>		</div>
+	</div>
+<ul class='children'>
+		
+	<div class="comment even depth-3 vcard parent" id="comment-43702">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43702" title="Permalink to this comment">22 February, 2010 at 12:22 pm</a></p>
+			<p class="comment-author"><strong class="fn">Anonymous</strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>but in that case do not we need at least a norm? is it a vector space or a norm space?</p>
+<p>thanks</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43702"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43702={"id":132742,"unique_id":"wp-comment-43702","title":"but in that case do not we need at least a norm? is it a vector space or a norm space?thanks...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43702","item_id":"_comm_43702"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43702#respond' onclick='return addComment.moveForm("comment-43702", "43702", "respond", "3488")'>Reply</a>		</div>
+	</div>
+<ul class='children'>
+		
+	<div class="comment odd alt depth-4 vcard" id="comment-43703">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43703" title="Permalink to this comment">22 February, 2010 at 1:14 pm</a></p>
+			<p class="comment-author"><strong class="fn">timur</strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://1.gravatar.com/avatar/385a10f3df04016e37ba1901106d731e?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>You can put a norm on any finite dimensional space by choosing a basis and taking the Euclidean norm w.r.t. that basis. So defined norm will be equivalent to any other norm.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43703"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43703={"id":132742,"unique_id":"wp-comment-43703","title":"You can put a norm on any finite dimensional space by choosing a basis and taking the Euclidean norm w.r.t. that basis. So defined norm will be equivalent to any other norm....","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43703","item_id":"_comm_43703"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43703#respond' onclick='return addComment.moveForm("comment-43703", "43703", "respond", "3488")'>Reply</a>		</div>
+	</div>
+</ul>
+</ul>
+</ul>
+		
+	<div class="comment even thread-odd thread-alt depth-1 vcard parent" id="comment-43697">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43697" title="Permalink to this comment">22 February, 2010 at 6:55 am</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://www.desy.de/~pribeiro/' rel='external nofollow' class='url'>Pedro Lauridsen Ribeiro</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://0.gravatar.com/avatar/03935dda8f945df44d35c300f42e131e?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Dear Prof. Tao,</p>
+<p>It often happens when one deals with, say, quasilinear wave equations, that we have equivalence between the energy norm given by the principal symbol of the linearized operator at a certain background field and the one given at the zero section, usually the Minkowski metric. When this happens, one can employ, for instance, a commutator trick and recover the loss of derivatives for higher energy estimates. Do the same ideas apply in the examples you&#8217;ve discussed?</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43697"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43697={"id":132742,"unique_id":"wp-comment-43697","title":"Dear Prof. Tao,It often happens when one deals with, say, quasilinear wave equations, that we have equivalence between the energy norm given by the principal symbol of the linearized operator at ...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43697","item_id":"_comm_43697"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43697#respond' onclick='return addComment.moveForm("comment-43697", "43697", "respond", "3488")'>Reply</a>		</div>
+	</div>
+<ul class='children'>
+		
+	<div class="comment byuser comment-author-teorth bypostauthor odd alt depth-2 vcard" id="comment-43700">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43700" title="Permalink to this comment">22 February, 2010 at 9:19 am</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://www.math.ucla.edu/~tao' rel='external nofollow' class='url'>Terence Tao</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://1.gravatar.com/avatar/3c795880f3b73784a9b75fbff3772701?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>One can certainly use commutator estimates to perform the a priori estimates, and obtain higher derivative control on individual solutions with no loss of regularity.  Combining this with a penalisation, regularisation, or viscosity method, this is usually enough to get existence and uniqueness.  However, when the time comes to do the continuous dependence on the data, which requires one to study differences of solutions rather than solutions themselves, then commutator estimates are not sufficient by themselves to recover all the derivatives needed to close the argument.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43700"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43700={"id":132742,"unique_id":"wp-comment-43700","title":"One can certainly use commutator estimates to perform the a priori estimates, and obtain higher derivative control on individual solutions with no loss of regularity.  Combining this with a penal...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43700","item_id":"_comm_43700"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43700#respond' onclick='return addComment.moveForm("comment-43700", "43700", "respond", "3488")'>Reply</a>		</div>
+	</div>
+</ul>
+		
+	<div class="comment even thread-even depth-1 vcard parent" id="comment-43698">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43698" title="Permalink to this comment">22 February, 2010 at 7:57 am</a></p>
+			<p class="comment-author"><strong class="fn">PDEbeginner</strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Dear Prof. Tao, </p>
+<p>Thanks for the so nice post! </p>
+<p>I didn&#8217;t quite understand the estimate immediately above (5), is it because <img src='http://l.wordpress.com/latex.php?latex=%5Cpartial_x+u_x%3D0&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='\partial_x u_x=0' title='\partial_x u_x=0' class='latex' /> at the maxima?  I am also a little worry about exchange the operations <img src='http://l.wordpress.com/latex.php?latex=%5Cpartial_t&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='\partial_t' title='\partial_t' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7C%7C%5Ccdot%7C%7C&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='||\cdot||' title='||\cdot||' class='latex' />.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43698"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43698={"id":132742,"unique_id":"wp-comment-43698","title":"Dear Prof. Tao, Thanks for the so nice post! I didn't quite understand the estimate immediately above (5), is it because $latex \\partial_x u_x=0$ at the maxima?  I am also a little worry about ex...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43698","item_id":"_comm_43698"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43698#respond' onclick='return addComment.moveForm("comment-43698", "43698", "respond", "3488")'>Reply</a>		</div>
+	</div>
+<ul class='children'>
+		
+	<div class="comment byuser comment-author-teorth bypostauthor odd alt depth-2 vcard" id="comment-43701">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43701" title="Permalink to this comment">22 February, 2010 at 9:21 am</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://www.math.ucla.edu/~tao' rel='external nofollow' class='url'>Terence Tao</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://1.gravatar.com/avatar/3c795880f3b73784a9b75fbff3772701?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Yes, this is correct.  To rigorously justify the derivative of the supremum norm, it is best to work from first principles (i.e. using Newton quotients).  (It is also convenient to interpret the derivative in the sense of forward difference quotients only.)  Alternatively one can use a comparison or barrier method, solving the associated ODE and using that ODE solution (possibly adding an epsilon drift to gain a bit of room, cf. the standard proof of the maximum principle) as a barrier for the sup norm of the PDE solution via a continuity argument.</p>
+<p>Alternatively, as one is dealing here with forced transport equations, one can also use the more elementary method of characteristics (or equivalently, change to Lagrangian coordinates) to achieve the same result.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43701"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43701={"id":132742,"unique_id":"wp-comment-43701","title":"Yes, this is correct.  To rigorously justify the derivative of the supremum norm, it is best to work from first principles (i.e. using Newton quotients).  (It is also convenient to interpret the ...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43701","item_id":"_comm_43701"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43701#respond' onclick='return addComment.moveForm("comment-43701", "43701", "respond", "3488")'>Reply</a>		</div>
+	</div>
+</ul>
+		
+	<div class="pingback even thread-odd thread-alt depth-1 vcard" id="comment-43758">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43758" title="Permalink to this comment">1 March, 2010 at 6:36 am</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://xiaojunwang.wordpress.com/2010/02/02/2010-feb-notes/' rel='external nofollow' class='url'>2010 Feb notes &laquo; 逝去日子</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+						<p>[...] 2, 2010 作者为 曾经话说要如何    7. loss of one order regularity, see Tao&#8217;s for space , and my trial for [...]</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43758"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43758={"id":132742,"unique_id":"wp-comment-43758","title":"[...] 2, 2010      7. loss of one order regularity, see Tao&#8217;s for space , and my trial for [...]...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43758","item_id":"_comm_43758"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43758#respond' onclick='return addComment.moveForm("comment-43758", "43758", "respond", "3488")'>Reply</a>		</div>
+	</div>
+		
+	<div class="comment byuser comment-author-williewwong odd alt thread-even depth-1 vcard parent" id="comment-43768">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43768" title="Permalink to this comment">2 March, 2010 at 2:13 pm</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://williewong.wordpress.com' rel='external nofollow' class='url'>Willie Wong</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://1.gravatar.com/avatar/d920f847ad7a04bc3082e10e6e347954?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Terry, in the third to last equation, to get the C^2 norm of v_0 to be o(epsilon), don&#8217;t you need that P is a symmetric mollifier?  Maybe it is easier to just leave it in O(epsilon) since it looks like it is enough to close anyway.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43768"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43768={"id":132742,"unique_id":"wp-comment-43768","title":"Terry, in the third to last equation, to get the C^2 norm of v_0 to be o(epsilon), don't you need that P is a symmetric mollifier?  Maybe it is easier to just leave it in O(epsilon) since it look...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43768","item_id":"_comm_43768"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43768#respond' onclick='return addComment.moveForm("comment-43768", "43768", "respond", "3488")'>Reply</a>		</div>
+	</div>
+<ul class='children'>
+		
+	<div class="comment byuser comment-author-williewwong even depth-2 vcard" id="comment-43769">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43769" title="Permalink to this comment">2 March, 2010 at 2:24 pm</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://williewong.wordpress.com' rel='external nofollow' class='url'>Willie Wong</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://1.gravatar.com/avatar/d920f847ad7a04bc3082e10e6e347954?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Ack. I meant 1/epsilon in both cases above.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43769"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43769={"id":132742,"unique_id":"wp-comment-43769","title":"Ack. I meant 1\/epsilon in both cases above....","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43769","item_id":"_comm_43769"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43769#respond' onclick='return addComment.moveForm("comment-43769", "43769", "respond", "3488")'>Reply</a>		</div>
+	</div>
+		
+	<div class="comment byuser comment-author-teorth bypostauthor odd alt depth-2 vcard" id="comment-43770">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43770" title="Permalink to this comment">2 March, 2010 at 2:32 pm</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://www.math.ucla.edu/~tao' rel='external nofollow' class='url'>Terence Tao</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://1.gravatar.com/avatar/3c795880f3b73784a9b75fbff3772701?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Fair enough; I&#8217;ve removed the estimate.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43770"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43770={"id":132742,"unique_id":"wp-comment-43770","title":"Fair enough; I've removed the estimate....","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43770","item_id":"_comm_43770"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43770#respond' onclick='return addComment.moveForm("comment-43770", "43770", "respond", "3488")'>Reply</a>		</div>
+	</div>
+</ul>
+		
+	<div class="comment even thread-odd thread-alt depth-1 vcard" id="comment-43921">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43921" title="Permalink to this comment">19 March, 2010 at 7:41 am</a></p>
+			<p class="comment-author"><strong class="fn">bk</strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Dear Terry,<br />
+I have a silly confusion.<br />
+Isn&#8217;t there a gap between the estimate (14) and the two above it?<br />
+Seemingly it is not necessarily true that <img src='http://l.wordpress.com/latex.php?latex=%7C%7Cu_0-u_0%5En%7C%7C_%7BC%5E0%7D%3D+o%28%5Cepsilon%29&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='||u_0-u_0^n||_{C^0}= o(\epsilon)' title='||u_0-u_0^n||_{C^0}= o(\epsilon)' class='latex' />. Right?</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43921"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43921={"id":132742,"unique_id":"wp-comment-43921","title":"Dear Terry,I have a silly confusion. Isn't there a gap between the estimate (14) and the two above it?Seemingly it is not necessarily true that $latex ||u_0-u_0^n||_{C^0}= o(\\epsilon)$. Right?...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43921","item_id":"_comm_43921"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43921#respond' onclick='return addComment.moveForm("comment-43921", "43921", "respond", "3488")'>Reply</a>		</div>
+	</div>
+		
+	<div class="comment odd alt thread-even depth-1 vcard" id="comment-43922">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/#comment-43922" title="Permalink to this comment">19 March, 2010 at 7:48 am</a></p>
+			<p class="comment-author"><strong class="fn">bk</strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Instead of saying a gap there, maybe I should  say &#8216;a gap in the reasoning below (14)&#8217; by which I mean when you need <img src='http://l.wordpress.com/latex.php?latex=o%28%5Cepsilon%29&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='o(\epsilon)' title='o(\epsilon)' class='latex' /> estimate in (14), actually you need it for both of the formula above(14). Am I right?</p>
+<p><i>[Corrected, thanks - T.]</i></p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_43922"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_43922={"id":132742,"unique_id":"wp-comment-43922","title":"Instead of saying a gap there, maybe I should  say 'a gap in the reasoning below (14)' by which I mean when you need $latex o(\\epsilon)$ estimate in (14), actually you need it for both of the for...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/02\/21\/quasilinear-well-posedness\/#comment-43922","item_id":"_comm_43922"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/02/21/quasilinear-well-posedness/?replytocom=43922#respond' onclick='return addComment.moveForm("comment-43922", "43922", "respond", "3488")'>Reply</a>		</div>
+	</div>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<br />
+
+</div>
+
+	
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2010/02/21/quasilinear-well-posedness/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://terrytao.wordpress.com/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published.</p>							<p class="comment-form-author"><label for="author">Name</label> <input id="author" name="author" type="text" value="" size="30" /></p>
+<p class="comment-form-email"><label for="email">Email</label> <input id="email" name="email" type="text" value="" size="30" /></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;pre&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='3488' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1293716626" />
+<p><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe">Notify me of follow-up comments via email.</label></p><p><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;" tabindex="7"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts via email.</label></p><input type="hidden" name="sub-type" value="comment-form-text0" /><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="ad58d1bf1d" /></p>					</form>
+							</div><!-- #respond -->
+						
+</div>
+
+<div id="footer">
+
+	<div id="miscellany">
+	
+	<div class="widgets">
+
+	<div id="text-1" class="widget widget_text"><h3>For commenters</h3>			<div class="textwidget">To enter in LaTeX in comments, use $latex <I>&lt;Your LaTeX code&gt;</I>$ (without the &lt; and &gt; signs, of course; in fact, these signs should be avoided as they can cause formatting errors).  See the <A HREF="http://terrytao.wordpress.com/about/">about page</A> for details and for other commenting policy.</div>
+		</div>	
+	</div>
+
+	</div>
+
+
+	<div id="about">
+		<div class="navigation">
+					<div class="left"></div>
+			<div class="right"></div>
+		</div>		
+	</div>
+
+
+	<div id="theme-info">
+		<div class="primary content">
+			<p><span class="designer">Theme: <a href="http://theme.wordpress.com/themes/tarski/">Tarski</a> by Ben Eastaugh and Chris Sternal-Johnson. </span><span class="generator"><a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>.</span></p>
+		</div>
+		<div class="secondary">
+			<p><a class="feed" title="Subscribe to the What&#8217;s new feed" href="http://terrytao.wordpress.com/feed/">Subscribe to feed.</a></p>
+		</div>
+	</div>
+
+
+</div>
+
+</div><script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	/* <![CDATA[ */
+		jQuery( function() {
+			
+			jQuery('#wpl-button > a.like').click( function(e) {
+				e.preventDefault();
+				
+				jQuery('#wpl-mustlogin').remove();
+
+				jQuery.post( 'http://terrytao.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_like_click'
+				} );
+
+				var tenMins = new Date();
+				tenMins.setTime( tenMins.getTime() + 600000 );
+				document.cookie = 'wpl_rand=435efe41c7; expires=' + tenMins.toGMTString() + '; domain=wordpress.com; path=/;';
+				
+				jQuery('#wpl-count').after( '\
+					<div id="wpl-mustlogin"> \
+						<form action="http://terrytao.wordpress.com/wp-login.php" method="post"> \
+							<p>Just one more step to like this post:</p> \
+							<label><span>Username</span> <input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="80" /></label> \
+							<label><span>Password</span> <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="81" /></label> \
+							<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="82" /> \
+							<input type="hidden" name="redirect_to" value="http://terrytao.wordpress.com/2010/02/21/quasilinear-well-posedness/?like=1" /> \
+							<input type="hidden" name="wpl_rand" value="435efe41c7" /> \
+							<p>Not a member yet? <a href="http://wordpress.com/signup/?ref=likebox" id="wpl-signup-link">Sign up with WordPress.com</a></p> \
+						</form> \
+					</div> \
+				');
+				
+				jQuery('#wpl-mustlogin').hide().slideDown('fast');
+			} );
+			
+			jQuery('#wpl-mustlogin input.input').live( 'focus', function() {
+				jQuery(this).prev().hide();
+			}).live( 'blur', function() {
+				if ( jQuery(this).val() == '' )
+					jQuery(this).prev().show();
+			});
+			
+			jQuery('#wpl-mustlogin input#wp-submit').live( 'click', function(e) {
+				e.preventDefault();
+				
+				jQuery.post( 'http://terrytao.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_login_submit'
+				}, function() {
+					jQuery('#wpl-mustlogin form').submit();
+				} );
+			});			
+			
+			jQuery('#wpl-mustlogin a#wpl-signup-link').live( 'click', function(e) {
+				e.preventDefault();
+				
+				var link = jQuery(this).attr('href');
+				
+				jQuery.post( 'http://terrytao.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_signup_click'
+				}, function() {
+					location.href = link;
+				} );
+			});					
+			
+		});
+	/* ]]> */
+	</script>
+<script type="text/javascript">_qoptions={qacct:'p-18-mFEk4J448M',labels:'language.en,type.wpcom,posttag.burgers-equation,posttag.quasilinear-equations,posttag.transport-equation,posttag.well-posedness,as'};</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript><p><img class="robots-nocontent" src="http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=language.en%2Ctype.wpcom%2Cposttag.burgers-equation%2Cposttag.quasilinear-equations%2Cposttag.transport-equation%2Cposttag.well-posedness%2Cas" style="display:none" height="1" width="1" alt="" /></p></noscript>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?o&#038;ver=MU'></script>
+	<script type="text/javascript">	
+	// <![CDATA[
+	WPGroHo = {
+		data: {},
+		renderers: {},
+		syncProfileData: function( hash, id ) {
+			if ( !WPGroHo.data[hash] ) {
+				WPGroHo.data[hash] = {};
+				a = jQuery( 'div.grofile-hash-map-' + hash + ' span' ).each( function() {
+					WPGroHo.data[hash][this.className] = jQuery( this ).text();
+				} );
+			}
+
+			WPGroHo.appendProfileData( WPGroHo.data[hash], hash, id );
+		},
+		appendProfileData: function( data, hash, id ) {
+			for ( var key in data ) {
+				if ( jQuery.isFunction( WPGroHo.renderers[key] ) ) {
+					return WPGroHo.renderers[key]( data[key], hash, id, key );
+				}
+
+				jQuery( '#' + id ).find( 'h4' ).after( jQuery( '<p class="grav-extra ' + key + '" />' ).html( data[key] ) );
+			}
+		}
+	};
+	jQuery(document).ready(function($){
+		Gravatar.profile_cb = function( h, d ) {
+			WPGroHo.syncProfileData( h, d );
+		};
+		Gravatar.attach_profiles();
+	});
+	// ]]>
+	</script>
+	<div style="display:none">
+	<div class="grofile-hash-map-d26ffa8dde6cc82ccb805e2a20a4978c">
+	</div>
+	<div class="grofile-hash-map-d41d8cd98f00b204e9800998ecf8427e">
+	</div>
+	<div class="grofile-hash-map-34e0ff98a2134ddb8321f528880e68aa">
+	</div>
+	<div class="grofile-hash-map-3c795880f3b73784a9b75fbff3772701">
+	</div>
+	<div class="grofile-hash-map-03935dda8f945df44d35c300f42e131e">
+	</div>
+	<div class="grofile-hash-map-0011985460c0eca3dfd231047cf277f7">
+	</div>
+	<div class="grofile-hash-map-339b183e12491a824f86a1cfde24f420">
+	</div>
+	<div class="grofile-hash-map-385a10f3df04016e37ba1901106d731e">
+	</div>
+	<div class="grofile-hash-map-d920f847ad7a04bc3082e10e6e347954">
+	</div>
+	</div>
+<script type='text/javascript'>_acseed='Nm01fCNhbSRDMChRJH01MEN8ViA3Lk9ATFJ2TkJkWDs3bHJCTT5rcVZRN312UjozRFs6d3NNNlgobGJSdixFOywgJjduSzBxS3U6SC10WToqSzxtTjZxLyUyaEpxPlNOIDY4SmZNcV1tRTg6eUgubjpqPkBqXk0qbw==';</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/sharing/sharing.js?m=1289605033g&amp;ver=0.1'></script>
+	<div id="sharing_email" style="display: none;">
+		<form action="" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="text" name="target_email" id="target_email" value="" />
+			
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+				
+				<label for="source_email">Your Email Address</label>
+				<input type="text" name="source_email" id="source_email" value="" />
+
+						
+			<div class="recaptcha" id="sharing_recaptcha"></div>
+			<img style="float: right; display: none" class="loading" src="http://terrytao.wordpress.com/wp-content/mu-plugins/sharing/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a href="#cancel" class="sharing_cancel">Cancel</a>
+			
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+			
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+<script type='text/javascript' src='http://i.polldaddy.com/ratings/rating.js?ver=MU'></script>
+<script type="text/javascript" src="http://b.scorecardresearch.com/beacon.js"></script><script type="text/javascript">try{COMSCORE.beacon({c1:2,c2:7518284});}catch(e){}</script><noscript><p class="robots-nocontent"><img src="http://b.scorecardresearch.com/p?cj=1c1=2&#038;c2=7518284" alt="" style="display:none" width="1" height="1" /></p></noscript><script src="http://s.stats.wordpress.com/w.js?19" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'817149','v':'wpcom','user_id':'0','post':'3488','subd':'terrytao'});
+ex_go({'crypt':'RDZ8LFkxbXF2SHZYWn5vOStxTl10X2F1Q1VVakpwRGdob2NQW0RGMEFfcklsa3FMTFF+NS49UnJnRnFDYjNfVmVbd00/QWw/ajJmdSZfNn45NDRnW1lGS0ZpeUdlNllufk91WHFOcHE9flFIZEdrRHh6VW82LHI/THZDPUtPc1M/OW13Vmxjcj03NUFhcSsvWlImSDR6LHNbLjkta2diOG9tMGFPQ1FtTGJTTSV+Ly1xRXh0eFcvWWdbX2RRSDhJVUx0QkV0JURrYklXckx+Sld1JmVVTU5ESWRJY11YRU8vamUzVXx1bSslV0FhM2g0JWQyJXk2TS9vS0pBTkJSMEV4VHBiVlp6cENHZm9iNDFvW1M3RXV+YnZbLXEmeXx1W3o9Tz1VcXxmdzAzN0RTPW0wdHg4b0ZCNk9WPTRZa09pK05NdFtpaWZpeGliUy9mVGtqeHk='});
+addLoadEvent(function(){linktracker_init('817149',3488);});
+	</script>
+</body></html>

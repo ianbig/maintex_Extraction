@@ -1,0 +1,1070 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+
+<!--
+	generated in 0.915 seconds
+	177862 bytes batcached for 300 seconds
+-->
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>The Bourgain-Guth argument for proving restriction theorems &laquo; What&#8217;s new</title>
+	<meta name="robots" content="all" />
+	<meta name="description" content="Updates on my research and expository papers, discussion of open problems, and other maths-related topics.  By Terence Tao" />
+	
+	<link rel="pingback" href="http://terrytao.wordpress.com/xmlrpc.php" />
+	<link rel="stylesheet" href="http://s2.wp.com/wp-content/themes/pub/tarski/style.css?m=1292638056g" type="text/css" media="screen,projection" />
+	<link rel="stylesheet" href="http://s2.wp.com/wp-content/themes/pub/tarski/print.css?m=1235252726g" type="text/css" media="print" />
+	
+<meta name="google-site-verification" content="YnmTzeF3F_x_iP1LlMorwk_-PaRMR7FRkMea24K_cnY" />
+<link rel="alternate" type="application/rss+xml" title="What&#039;s new &raquo; Feed" href="http://terrytao.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="What&#039;s new &raquo; Comments Feed" href="http://terrytao.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="What&#039;s new &raquo; The Bourgain-Guth argument for proving restriction&nbsp;theorems Comments Feed" href="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" href="http://s0.wp.com/wp-content/themes/h4/global.css?m=1291749258g" type="text/css" />
+<link rel='stylesheet' id='sharedaddy-css'  href='http://s1.wp.com/wp-content/mu-plugins/sharing/sharing.css?m=1287601727g&#038;ver=MU' type='text/css' media='all' />
+<script type='text/javascript' src='http://s2.wp.com/wp-includes/js/l10n.js?m=1290133841g&amp;ver=20101110'></script>
+<script type='text/javascript' src='http://s1.wp.com/wp-includes/js/jquery/jquery.js?m=1290133841g&amp;ver=1.4.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-includes/js/comment-reply.js?m=1235252719g&amp;ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://terrytao.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://terrytao.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='What&#8217;s new' href='http://terrytao.wordpress.com/' />
+<link rel='prev' title='Outliers in the spectrum of iid matrices with bounded rank&nbsp;perturbations' href='http://terrytao.wordpress.com/2010/12/22/outliers-in-the-spectrum-of-iid-matrices-with-bounded-rank-permutations/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/' />
+<link rel='shortlink' href='http://wp.me/p3qzP-1bu' />
+<link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/85c3b42f063afd73a5347679b67e4688?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/85c3b42f063afd73a5347679b67e4688?s=16" sizes="16x16" />
+<link rel="apple-touch-icon" href="http://1.gravatar.com/blavatar/9ecc6262507441727044ba5428d2d2b7?s=158" />
+	<style type="text/css">
+	/* <![CDATA[ */
+				div#likes { margin-top: 15px; }
+		.like-button { border: 1px solid #eee; padding: 2px 6px; font-size: 13px; font-family: arial, tahoma, sans-serif; }
+		#wpl-likebox { clear: left; font-size: 11px; font-family: arial, tahoma, verdana, sans-serif !important; min-height: 30px; margin: 10px 0 !important; padding: 5px 0 10px 0 !important; }
+		#wpl-button { float: left; background: url( /i/buttonbg.png ) top left repeat-x; margin-right: 7px; border: 1px solid #d4d4d4; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-button a { color: #666 !important; line-height: 130% !important; text-decoration: none !important; outline: none; float: left; padding: 3px 6px 2px 24px !important; font-size: 11px !important; background: url( /i/likestar.png ) 6px 49.8% no-repeat; }
+		#wpl-button.liked { background: #feffce; border: 1px solid #f3e389; }
+		#wpl-button.liked a { color: #ba871b !important; }
+		#wpl-likebox #wpl-count { min-height: 25px; line-height: 130% !important; float: left; padding-top: 4px; }
+		#wpl-likebox #wpl-avatars { clear: left; max-height: 98px; overflow: hidden; margin-top: 15px; line-height: 130% !important; }
+		#wpl-likebox #wpl-avatars img { border: none !important; }
+		#wpl-likebox #wpl-mustlogin { line-height: 14px !important; font-size: 11px; clear: left; margin-top: 5px; background: #f0f0f0; padding: 10px; width: 65%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-likebox #wpl-mustlogin a { color: #888; text-decoration: underline; }
+		#wpl-likebox #wpl-mustlogin p { margin: 5px 0; padding: 0 }
+		#wpl-likebox #wpl-mustlogin input.input { padding: 2px; background: #fff; font-size: 11px; font-family: inherit; border: 1px solid #ccc; -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin input#wp-submit { border: 1px solid #ccc; font-size: 11px; background: #fafafa; repeat-x; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 2px 4px !important; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin label { position: relative; cursor: text; }
+		#wpl-likebox #wpl-mustlogin label span { position: absolute; top: 0px; left: 5px; padding: 0 !important; }
+		#wpl-likebox #wpl-mustlogin label span { top /*\**/: -10px\9; }
+	/* ]]> */
+	</style>
+	<link rel='openid.server' href='http://terrytao.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://terrytao.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://terrytao.wordpress.com/osd.xml" title="What&#039;s new" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+<style type="text/css">.recentcomments a{display:inline !important;padding: 0 !important;margin: 0 !important;}</style>
+<meta name="application-name" content="What&#039;s new" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Updates on my research and expository papers, discussion of open problems, and other maths-related topics.  By Terence Tao" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://terrytao.wordpress.com/feed/;icon-uri=http://0.gravatar.com/blavatar/85c3b42f063afd73a5347679b67e4688?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" />
+<style type='text/css'>
+table.recentcommentsavatar img.avatar {border: 0px; margin:0;}
+table.recentcommentsavatar a {border: 0px !important;background-color: transparent !important}
+td.recentcommentsavatartop {padding:0px 0px 1px 0px;margin:0px; }
+td.recentcommentsavatarend {padding:0px 0px 1px 0px;margin:0px; }
+td.recentcommentstexttop { border: none !important;padding:0px 0px 0px 10px;}
+td.recentcommentstextend { border: none !important;padding:0px 0px 2px 10px;}
+</style>
+<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd.wordpress.com/botd.gif?blogid=817149&postid=4556&lang=1&date=1293575500&ip=72.52.94.227&url=http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/&loc='+document.location;i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
+
+<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd2.wordpress.com/botd.gif?blog=817149&post=4556&lang=en&date=1293575500&ip=72.52.94.227&url=http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/';i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
+
+	<link rel="stylesheet" type="text/css" href="http://terrytao.wordpress.com?custom-css=1&#038;csblog=3qzP&#038;cscache=5&#038;csrev=1" />
+<script type="text/javascript"> 
+	window.google_analytics_uacct = "UA-52447-2"; 
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+</head>
+
+<body class="center  single"><div id="wrapper">
+
+<div id="header">
+
+	<div id="header-image">
+		<a title="Return to front page" href="http://terrytao.wordpress.com/"><img alt="Header image" src="http://terrytao.files.wordpress.com/2009/06/greentree.jpg" /></a>	</div>
+
+	<div id="title">
+		<a title="Return to front page" href="http://terrytao.wordpress.com/"><span id="blog-title">What&#8217;s new</span></a>		<p id="tagline">Updates on my research and expository papers, discussion of open problems, and other maths-related topics.  By Terence Tao</p>	</div>
+	
+	<div id="navigation">
+		<ul id="nav-1">
+	<li><a title="Return to front page" href="http://terrytao.wordpress.com/">Home</a></li>
+	<li class="page_item page-item-2"><a href="http://terrytao.wordpress.com/about/" title="About">About</a></li>
+<li class="page_item page-item-51"><a href="http://terrytao.wordpress.com/career-advice/" title="Career&nbsp;advice">Career&nbsp;advice</a></li>
+<li class="page_item page-item-78"><a href="http://terrytao.wordpress.com/advice-on-writing-papers/" title="On&nbsp;writing">On&nbsp;writing</a></li>
+<li class="page_item page-item-134"><a href="http://terrytao.wordpress.com/books/" title="Books">Books</a></li>
+<li class="page_item page-item-306"><a href="http://terrytao.wordpress.com/support-usq-maths/" title="Support USQ&nbsp;maths">Support USQ&nbsp;maths</a></li>
+</ul>
+
+		<ul id="nav-2">
+			<li><a class="feed" title="Subscribe to the What's new feed" href="http://terrytao.wordpress.com/feed/">Subscribe to feed</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<div id="content">
+
+<div id="primary">
+
+
+	<div class="entry">
+		<div class="post-meta">
+			<h1 class="post-title" id="post-4556">The Bourgain-Guth argument for proving restriction&nbsp;theorems</h1>
+			<p class="post-metadata">28 December, 2010 in <a href="http://en.wordpress.com/tag/expository/" title="View all posts in expository" rel="category tag">expository</a>, <a href="http://en.wordpress.com/tag/mathca/" title="View all posts in math.CA" rel="category tag">math.CA</a> | Tags: <a href="http://en.wordpress.com/tag/jean-bourgain/" rel="tag">Jean Bourgain</a>, <a href="http://en.wordpress.com/tag/larry-guth/" rel="tag">Larry Guth</a>, <a href="http://en.wordpress.com/tag/restriction-conjecture/" rel="tag">restriction conjecture</a> | by <a href="http://terrytao.wordpress.com/author/teorth/" title="Posts by Terence Tao">Terence Tao</a>			</p>
+		</div>
+		<div class="post-content">
+			<script type="text/javascript" src="http://s0.wp.com/wp-content/plugins/adverts/adsense.js?m=1253160243g&amp;1"></script><p>
+ One of my favourite unsolved problems in harmonic analysis is the <em>restriction problem</em>. This problem, first posed explicitly by Elias Stein, can take many equivalent forms, but one of them is this: one starts with a smooth compact hypersurface <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' /> (possibly with boundary) in <img src='http://l.wordpress.com/latex.php?latex=%7B%7B%5Cbf+R%7D%5Ed%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{{\bf R}^d}' title='{{\bf R}^d}' class='latex' />, such as the unit sphere <img src='http://l.wordpress.com/latex.php?latex=%7BS+%3D+S%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S = S^2}' title='{S = S^2}' class='latex' /> in <img src='http://l.wordpress.com/latex.php?latex=%7B%7B%5Cbf+R%7D%5E3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{{\bf R}^3}' title='{{\bf R}^3}' class='latex' />, and equips it with surface measure <img src='http://l.wordpress.com/latex.php?latex=%7Bd%5Csigma%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{d\sigma}' title='{d\sigma}' class='latex' />. One then takes a bounded measurable function <img src='http://l.wordpress.com/latex.php?latex=%7Bf+%5Cin+L%5E%5Cinfty%28S%2Cd%5Csigma%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{f \in L^\infty(S,d\sigma)}' title='{f \in L^\infty(S,d\sigma)}' class='latex' /> on this surface, and then computes the (inverse) Fourier transform </p>
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5Cwidehat%7Bfd%5Csigma%7D%28x%29+%3D+%5Cint_S+e%5E%7B2%5Cpi+i+x+%5Ccdot+%5Comega%7D+f%28%5Comega%29+d%5Csigma%28%5Comega%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \widehat{fd\sigma}(x) = \int_S e^{2\pi i x \cdot \omega} f(\omega) d\sigma(\omega)' title='\displaystyle  \widehat{fd\sigma}(x) = \int_S e^{2\pi i x \cdot \omega} f(\omega) d\sigma(\omega)' class='latex' /></p>
+<p> of the measure <img src='http://l.wordpress.com/latex.php?latex=%7Bfd%5Csigma%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{fd\sigma}' title='{fd\sigma}' class='latex' />. As <img src='http://l.wordpress.com/latex.php?latex=%7Bf%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{f}' title='{f}' class='latex' /> is bounded and <img src='http://l.wordpress.com/latex.php?latex=%7Bd%5Csigma%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{d\sigma}' title='{d\sigma}' class='latex' /> is a finite measure, this is a bounded function on <img src='http://l.wordpress.com/latex.php?latex=%7B%7B%5Cbf+R%7D%5Ed%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{{\bf R}^d}' title='{{\bf R}^d}' class='latex' />; from the dominated convergence theorem, it is also continuous. The restriction problem asks whether this Fourier transform also decays in space, and specifically whether <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cwidehat%7Bfd%5Csigma%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\widehat{fd\sigma}}' title='{\widehat{fd\sigma}}' class='latex' /> lies in <img src='http://l.wordpress.com/latex.php?latex=%7BL%5Eq%28%7B%5Cbf+R%7D%5Ed%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^q({\bf R}^d)}' title='{L^q({\bf R}^d)}' class='latex' /> for some <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3C+%5Cinfty%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &lt; \infty}' title='{q &lt; \infty}' class='latex' />. (This is a natural space to control decay because it is translation invariant, which is compatible on the frequency space side with the modulation invariance of <img src='http://l.wordpress.com/latex.php?latex=%7BL%5E%5Cinfty%28S%2Cd%5Csigma%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^\infty(S,d\sigma)}' title='{L^\infty(S,d\sigma)}' class='latex' />.) By the <a href="http://en.wikipedia.org/wiki/Closed_graph_theorem">closed graph theorem</a>, this is the case if and only if there is an estimate of the form <a name="fds">
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+%5Cwidehat%7Bf+d%5Csigma%7D+%5C%7C_%7BL%5Eq%28%7B%5Cbf+R%7D%5Ed%29%7D+%5Cleq+C_%7Bq%2Cd%2CS%7D+%5C%7Cf%5C%7C_%7BL%5E%5Cinfty%28S%2Cd%5Csigma%29%7D+%5C+%5C+%5C+%5C+%5C+%281%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| \widehat{f d\sigma} \|_{L^q({\bf R}^d)} \leq C_{q,d,S} \|f\|_{L^\infty(S,d\sigma)} \ \ \ \ \ (1)' title='\displaystyle  \| \widehat{f d\sigma} \|_{L^q({\bf R}^d)} \leq C_{q,d,S} \|f\|_{L^\infty(S,d\sigma)} \ \ \ \ \ (1)' class='latex' /></p>
+<p></a> for some constant <img src='http://l.wordpress.com/latex.php?latex=%7BC_%7Bq%2Cd%2CS%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{C_{q,d,S}}' title='{C_{q,d,S}}' class='latex' /> that can depend on <img src='http://l.wordpress.com/latex.php?latex=%7Bq%2Cd%2CS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q,d,S}' title='{q,d,S}' class='latex' /> but not on <img src='http://l.wordpress.com/latex.php?latex=%7Bf%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{f}' title='{f}' class='latex' />. By a limiting argument, to provide such an estimate, it suffices to prove such an estimate under the additional assumption that <img src='http://l.wordpress.com/latex.php?latex=%7Bf%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{f}' title='{f}' class='latex' /> is smooth.</p>
+<p>
+Strictly speaking, the above problem should be called the <em>extension problem</em>, but it is dual to the original formulation of the <em>restriction problem</em>, which asks to find those exponents <img src='http://l.wordpress.com/latex.php?latex=%7B1+%5Cleq+q%27+%5Cleq+%5Cinfty%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{1 \leq q&#039; \leq \infty}' title='{1 \leq q&#039; \leq \infty}' class='latex' /> for which the Fourier transform of an <img src='http://l.wordpress.com/latex.php?latex=%7BL%5E%7Bq%27%7D%28%7B%5Cbf+R%7D%5Ed%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^{q&#039;}({\bf R}^d)}' title='{L^{q&#039;}({\bf R}^d)}' class='latex' /> function <img src='http://l.wordpress.com/latex.php?latex=%7Bg%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{g}' title='{g}' class='latex' /> can be meaningfully restricted to a hypersurface <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' />, in the sense that the map <img src='http://l.wordpress.com/latex.php?latex=%7Bg+%5Cmapsto+%5Chat+g%7C_%7BS%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{g \mapsto \hat g|_{S}}' title='{g \mapsto \hat g|_{S}}' class='latex' /> can be continuously defined from <img src='http://l.wordpress.com/latex.php?latex=%7BL%5E%7Bq%27%7D%28%7B%5Cbf+R%7D%5Ed%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^{q&#039;}({\bf R}^d)}' title='{L^{q&#039;}({\bf R}^d)}' class='latex' /> to, say, <img src='http://l.wordpress.com/latex.php?latex=%7BL%5E1%28S%2Cd%5Csigma%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^1(S,d\sigma)}' title='{L^1(S,d\sigma)}' class='latex' />. A duality argument shows that the exponents <img src='http://l.wordpress.com/latex.php?latex=%7Bq%27%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q&#039;}' title='{q&#039;}' class='latex' /> for which the restriction property holds are the dual exponents to the exponents <img src='http://l.wordpress.com/latex.php?latex=%7Bq%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q}' title='{q}' class='latex' /> for which the extension problem holds.
+</p>
+<p>
+There are several motivations for studying the restriction problem. The problem is connected to the classical question of determining the nature of the convergence of various Fourier summation methods (and specifically, Bochner-Riesz summation); very roughly speaking, if one wishes to perform a partial Fourier transform by restricting the frequencies (possibly using a well-chosen weight) to some region <img src='http://l.wordpress.com/latex.php?latex=%7BB%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B}' title='{B}' class='latex' /> (such as a ball), then one expects this operation to well behaved if the boundary <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cpartial+B%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\partial B}' title='{\partial B}' class='latex' /> of this region has good restriction (or extension) properties. More generally, the restriction problem for a surface <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' /> is connected to the behaviour of Fourier multipliers whose symbols are singular at <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' />. The problem is also connected to the analysis of various linear PDE such as the Helmholtz equation, Schro\&#8221;dinger equation, wave equation, and the (linearised) Korteweg-de Vries equation, because solutions to such equations can be expressed via the Fourier transform in the form <img src='http://l.wordpress.com/latex.php?latex=%7Bfd%5Csigma%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{fd\sigma}' title='{fd\sigma}' class='latex' /> for various surfaces <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' /> (the sphere, paraboloid, light cone, and cubic for the Helmholtz, Schr&ouml;dinger, wave, and linearised Korteweg de Vries equation respectively). A particular family of restriction-type theorems for such surfaces, known as <em>Strichartz estimates</em>, play a foundational role in the nonlinear perturbations of these linear equations (e.g. the nonlinear Schr&ouml;dinger equation, the nonlinear wave equation, and the Korteweg-de Vries equation). Last, but not least, there is a a fundamental connection between the restriction problem and the <a href="http://en.wikipedia.org/wiki/Kakeya_set">Kakeya problem</a>, which roughly speaking concerns how tubes that point in different directions can overlap. Indeed, by superimposing special functions of the type <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cwidehat%7Bfd%5Csigma%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\widehat{fd\sigma}}' title='{\widehat{fd\sigma}}' class='latex' />, known as <em>wave packets</em>, and which are concentrated on tubes in various directions, one can &#8220;encode&#8221; the Kakeya problem inside the restriction problem; in particular, the conjectured solution to the restriction problem implies the conjectured solution to the Kakeya problem. Finally, the restriction problem serves as a simplified toy model for studying discrete exponential sums whose coefficients do not have a well controlled phase; this perspective was, for instance, used <a href="???">by Ben Green</a> when he established Roth&#8217;s theorem in the primes by Fourier-analytic methods, which was in turn one of the main inspirations for our later work establishing arbitrarily long progressions in the primes, although we ended up using ergodic-theoretic arguments instead of Fourier-analytic ones and so did not directly use restriction theory in that paper.
+</p>
+<p>
+The estimate <a href="#fds">(1)</a> is trivial for <img src='http://l.wordpress.com/latex.php?latex=%7Bq%3D%5Cinfty%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q=\infty}' title='{q=\infty}' class='latex' /> and becomes harder for smaller <img src='http://l.wordpress.com/latex.php?latex=%7Bq%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q}' title='{q}' class='latex' />. The geometry, and more precisely the <em>curvature</em>, of the surface <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' />, plays a key role: if <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' /> contains a portion which is completely flat, then it is not difficult to concoct an <img src='http://l.wordpress.com/latex.php?latex=%7Bf%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{f}' title='{f}' class='latex' /> for which <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cwidehat%7Bf+d%5Csigma%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\widehat{f d\sigma}}' title='{\widehat{f d\sigma}}' class='latex' /> fails to decay in the normal direction to this flat portion, and so there are no restriction estimates for any finite <img src='http://l.wordpress.com/latex.php?latex=%7Bq%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q}' title='{q}' class='latex' />. Conversely, if <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' /> is not infinitely flat at any point, then from the method of stationary phase, the Fourier transform <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cwidehat%7Bd%5Csigma%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\widehat{d\sigma}}' title='{\widehat{d\sigma}}' class='latex' /> can be shown to decay at a power rate at infinity, and this together with a standard method known as the <img src='http://l.wordpress.com/latex.php?latex=%7BTT%5E%2A%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{TT^*}' title='{TT^*}' class='latex' /> argument can be used to give non-trivial restriction estimates for finite <img src='http://l.wordpress.com/latex.php?latex=%7Bq%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q}' title='{q}' class='latex' />. However, these arguments fall somewhat short of obtaining the best possible exponents <img src='http://l.wordpress.com/latex.php?latex=%7Bq%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q}' title='{q}' class='latex' />. For instance, in the case of the sphere <img src='http://l.wordpress.com/latex.php?latex=%7BS+%3D+S%5E%7Bd-1%7D+%5Csubset+%7B%5Cbf+R%7D%5Ed%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S = S^{d-1} \subset {\bf R}^d}' title='{S = S^{d-1} \subset {\bf R}^d}' class='latex' />, the Fourier transform <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cwidehat%7Bd%5Csigma%7D%28x%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\widehat{d\sigma}(x)}' title='{\widehat{d\sigma}(x)}' class='latex' /> is known to decay at the rate <img src='http://l.wordpress.com/latex.php?latex=%7BO%28%7Cx%7C%5E%7B-%28d-1%29%2F2%7D%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O(|x|^{-(d-1)/2})}' title='{O(|x|^{-(d-1)/2})}' class='latex' /> and no better as <img src='http://l.wordpress.com/latex.php?latex=%7Bd+%5Crightarrow+%5Cinfty%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{d \rightarrow \infty}' title='{d \rightarrow \infty}' class='latex' />, which shows that the condition <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3E+%5Cfrac%7B2d%7D%7Bd-1%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &gt; \frac{2d}{d-1}}' title='{q &gt; \frac{2d}{d-1}}' class='latex' /> is necessary in order for <a href="#fds">(1)</a> to hold for this surface. The <em>restriction conjecture for <img src='http://l.wordpress.com/latex.php?latex=%7BS%5E%7Bd-1%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S^{d-1}}' title='{S^{d-1}}' class='latex' /></em> asserts that this necessary condition is also sufficient. However, the <img src='http://l.wordpress.com/latex.php?latex=%7BTT%5E%2A%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{TT^*}' title='{TT^*}' class='latex' />-based argument gives only the <a href="http://www.ams.org/mathscinet-getitem?mr=358216">Tomas-Stein theorem</a>, which in this context gives <a href="#fds">(1)</a> in the weaker range <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%5Cgeq+%5Cfrac%7B2%28d%2B1%29%7D%7Bd-1%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q \geq \frac{2(d+1)}{d-1}}' title='{q \geq \frac{2(d+1)}{d-1}}' class='latex' />. (On the other hand, by the nature of the <img src='http://l.wordpress.com/latex.php?latex=%7BTT%5E%2A%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{TT^*}' title='{TT^*}' class='latex' /> method, the Tomas-Stein theorem does allow the <img src='http://l.wordpress.com/latex.php?latex=%7BL%5E%5Cinfty%28S%2Cd%5Csigma%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^\infty(S,d\sigma)}' title='{L^\infty(S,d\sigma)}' class='latex' /> norm on the right-hand side to be relaxed to <img src='http://l.wordpress.com/latex.php?latex=%7BL%5E2%28S%2Cd%5Csigma%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^2(S,d\sigma)}' title='{L^2(S,d\sigma)}' class='latex' />, at which point the Tomas-Stein exponent <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cfrac%7B2%28d%2B1%29%7D%7Bd-1%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\frac{2(d+1)}{d-1}}' title='{\frac{2(d+1)}{d-1}}' class='latex' /> becomes best possible. The fact that the Tomas-Stein theorem has an <img src='http://l.wordpress.com/latex.php?latex=%7BL%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^2}' title='{L^2}' class='latex' /> norm on the right-hand side is particularly valuable for applications to PDE, leading in particular to the Strichartz estimates mentioned earlier.)
+</p>
+<p>
+Over the last two decades, there was a fair amount of work in pushing past the Tomas-Stein barrier. For sake of concreteness let us work just with the restriction problem for the unit sphere <img src='http://l.wordpress.com/latex.php?latex=%7BS%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S^2}' title='{S^2}' class='latex' /> in <img src='http://l.wordpress.com/latex.php?latex=%7B%7B%5Cbf+R%7D%5E3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{{\bf R}^3}' title='{{\bf R}^3}' class='latex' />. Here, the restriction conjecture asserts that <a href="#fds">(1)</a> holds for all <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3E+3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &gt; 3}' title='{q &gt; 3}' class='latex' />, while the Tomas-Stein theorem gives only <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%5Cgeq+4%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q \geq 4}' title='{q \geq 4}' class='latex' />. By combining a multiscale analysis approach with some new progress on the Kakeya conjecture, <a href="http://www.ams.org/mathscinet-getitem?mr=1097257">Bourgain was able</a> to obtain the first improvement on this range, establishing the restriction conjecture for <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3E+4+-+%5Cfrac%7B2%7D%7B15%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &gt; 4 - \frac{2}{15}}' title='{q &gt; 4 - \frac{2}{15}}' class='latex' />. The methods were steadily refined over the years; until recently, the best result (<a href="http://www.ams.org/mathscinet-getitem?mr=2033842">due to myself</a>) was that the conjecture held for all <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3E+3+%5Cfrac%7B1%7D%7B3%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &gt; 3 \frac{1}{3}}' title='{q &gt; 3 \frac{1}{3}}' class='latex' />, which proceeded by analysing a &#8220;bilinear <img src='http://l.wordpress.com/latex.php?latex=%7BL%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^2}' title='{L^2}' class='latex' />&#8221; variant of the problem studied previously <a href="http://www.ams.org/mathscinet-getitem?mr=1353448">by Bourgain</a> and <a href="http://www.ams.org/mathscinet-getitem?mr=1836285">by Wolff</a>. This is essentially the limit of that method; the relevant bilinear <img src='http://l.wordpress.com/latex.php?latex=%7BL%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{L^2}' title='{L^2}' class='latex' /> estimate fails for <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3C+3+%2B+%5Cfrac%7B1%7D%7B3%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &lt; 3 + \frac{1}{3}}' title='{q &lt; 3 + \frac{1}{3}}' class='latex' />. (This estimate was recently established at the endpoint <img src='http://l.wordpress.com/latex.php?latex=%7Bq%3D3%2B%5Cfrac%7B1%7D%7B3%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q=3+\frac{1}{3}}' title='{q=3+\frac{1}{3}}' class='latex' /> by Jungjin Lee (personal communication), though this does not quite improve the range of exponents in <a href="#fds">(1)</a> due to a logarithmic inefficiency in converting the bilinear estimate to a linear one.)
+</p>
+<p>
+On the other hand, the full range <img src='http://l.wordpress.com/latex.php?latex=%7Bq%3E3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q&gt;3}' title='{q&gt;3}' class='latex' /> of exponents in <a href="#fds">(1)</a> was obtained by <a href="http://www.ams.org/mathscinet-getitem?mr=2275834">Bennett, Carbery, and myself</a> (with an alternate proof later <a href="http://arxiv.org/abs/0811.2251">given by Guth</a>), but only under the additional assumption of <em>non-coplanar interactions</em>. In three dimensions, this assumption was enforced by replacing <a href="#fds">(1)</a> with the weaker trilinear (and localised) variant <a name="trilinear">
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+%5Cwidehat%7Bf_1+d%5Csigma_1%7D+%5Cwidehat%7Bf_2+d%5Csigma_2%7D+%5Cwidehat%7Bf_3+d%5Csigma_3%7D+%5C%7C_%7BL%5E%7Bq%2F3%7D%28B%280%2CR%29%29%7D+%5Cleq+C_%7Bq%2Cd%2CS_1%2CS_2%2CS_3%2C%5Cepsilon%7D+R%5E%5Cepsilon+%5C%7Cf_1%5C%7C_%7BL%5E%5Cinfty%28S_1%2Cd%5Csigma_1%29%7D+%5C%7Cf_2%5C%7C_%7BL%5E%5Cinfty%28S_2%2Cd%5Csigma_2%29%7D+%5C%7Cf_3%5C%7C_%7BL%5E%5Cinfty%28S_3%2Cd%5Csigma_3%29%7D+%5C+%5C+%5C+%5C+%5C+%282%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| \widehat{f_1 d\sigma_1} \widehat{f_2 d\sigma_2} \widehat{f_3 d\sigma_3} \|_{L^{q/3}(B(0,R))} \leq C_{q,d,S_1,S_2,S_3,\epsilon} R^\epsilon \|f_1\|_{L^\infty(S_1,d\sigma_1)} \|f_2\|_{L^\infty(S_2,d\sigma_2)} \|f_3\|_{L^\infty(S_3,d\sigma_3)} \ \ \ \ \ (2)' title='\displaystyle  \| \widehat{f_1 d\sigma_1} \widehat{f_2 d\sigma_2} \widehat{f_3 d\sigma_3} \|_{L^{q/3}(B(0,R))} \leq C_{q,d,S_1,S_2,S_3,\epsilon} R^\epsilon \|f_1\|_{L^\infty(S_1,d\sigma_1)} \|f_2\|_{L^\infty(S_2,d\sigma_2)} \|f_3\|_{L^\infty(S_3,d\sigma_3)} \ \ \ \ \ (2)' class='latex' /></p>
+<p></a> where <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cepsilon%3E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\epsilon&gt;0}' title='{\epsilon&gt;0}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7BR+%5Cgeq+1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R \geq 1}' title='{R \geq 1}' class='latex' /> are arbitrary, <img src='http://l.wordpress.com/latex.php?latex=%7BB%280%2CR%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B(0,R)}' title='{B(0,R)}' class='latex' /> is the ball of radius <img src='http://l.wordpress.com/latex.php?latex=%7BR%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R}' title='{R}' class='latex' /> in <img src='http://l.wordpress.com/latex.php?latex=%7B%7B%5Cbf+R%7D%5E3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{{\bf R}^3}' title='{{\bf R}^3}' class='latex' />, and <img src='http://l.wordpress.com/latex.php?latex=%7BS_1%2CS_2%2CS_3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_1,S_2,S_3}' title='{S_1,S_2,S_3}' class='latex' /> are compact portions of <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' /> whose unit normals <img src='http://l.wordpress.com/latex.php?latex=%7Bn_1%28%29%2Cn_2%28%29%2Cn_3%28%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{n_1(),n_2(),n_3()}' title='{n_1(),n_2(),n_3()}' class='latex' /> are never coplanar, thus there is a uniform lower bound </p>
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%7Cn_1%28%5Comega_1%29+%5Cwedge+n_2%28%5Comega_2%29+%5Cwedge+n_3%28%5Comega_3%29%7C+%5Cgeq+c&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  |n_1(\omega_1) \wedge n_2(\omega_2) \wedge n_3(\omega_3)| \geq c' title='\displaystyle  |n_1(\omega_1) \wedge n_2(\omega_2) \wedge n_3(\omega_3)| \geq c' class='latex' /></p>
+<p> for some <img src='http://l.wordpress.com/latex.php?latex=%7Bc%3E0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{c&gt;0}' title='{c&gt;0}' class='latex' /> and all <img src='http://l.wordpress.com/latex.php?latex=%7B%5Comega_1+%5Cin+S_1%2C+%5Comega_2+%5Cin+S_2%2C+%5Comega_3+%5Cin+S_3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\omega_1 \in S_1, \omega_2 \in S_2, \omega_3 \in S_3}' title='{\omega_1 \in S_1, \omega_2 \in S_2, \omega_3 \in S_3}' class='latex' />. If it were not for this non-coplanarity restriction, <a href="#trilinear">(2)</a> would be equivalent to <a href="#fds">(1)</a> (by setting <img src='http://l.wordpress.com/latex.php?latex=%7BS_1%3DS_2%3DS_3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_1=S_2=S_3}' title='{S_1=S_2=S_3}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bf_1%3Df_2%3Df_3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{f_1=f_2=f_3}' title='{f_1=f_2=f_3}' class='latex' />, with the converse implication coming from H&ouml;lder&#8217;s inequality; the <img src='http://l.wordpress.com/latex.php?latex=%7BR%5E%5Cepsilon%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R^\epsilon}' title='{R^\epsilon}' class='latex' /> loss can be removed by a lemma from <a href="http://www.ams.org/mathscinet-getitem?mr=1666558">a paper of mine</a>). At the time we wrote this paper, we tried fairly hard to try to remove this non-coplanarity restriction in order to recover progress on the original restriction conjecture, but without much success.</p>
+<p>
+A few weeks ago, though, <a href="http://arxiv.org/abs/1012.3760">Bourgain and Guth</a> found a new way to use multiscale analysis to &#8220;interpolate&#8221; between the result of Bennett, Carbery and myself (that has optimal exponents, but requires non-coplanar interactions), with a more classical square function estimate of C&oacute;rdoba that handles the coplanar case. A direct application of this interpolation method already ties with the previous best known result in three dimensions (i.e. that <a href="#fds">(1)</a> holds for <img src='http://l.wordpress.com/latex.php?latex=%7Bp+%3E+3+%5Cfrac%7B1%7D%7B3%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{p &gt; 3 \frac{1}{3}}' title='{p &gt; 3 \frac{1}{3}}' class='latex' />). But it also allows for the insertion of additional input, such as the best Kakeya estimate currently known in three dimensions, <a href="http://www.ams.org/mathscinet-getitem?mr=1363209">due to Wolff</a>. This enlarges the range slightly to <img src='http://l.wordpress.com/latex.php?latex=%7Bp+%3E+3.3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{p &gt; 3.3}' title='{p &gt; 3.3}' class='latex' />. The method also can extend to variable-coefficient settings, and in some of these cases (where there is so much &#8220;compression&#8221; going on that no additional Kakeya estimates are available) the estimates are best possible.
+</p>
+<p>
+As is often the case in this field, there is a lot of technical book-keeping and juggling of parameters in the formal arguments of Bourgain and Guth, but the main ideas and &#8220;numerology&#8221; can be expressed fairly readily. (In mathematics, <em>numerology</em> refers to the empirically observed relationships between various key exponents and other numerical parameters; in many cases, one can use shortcuts such as dimensional analysis or informal heuristic, to compute these exponents long before the formal argument is completely in place.) Below the fold, I would like to record this numerology for the simplest of the Bourgain-Guth arguments, namely a reproof of <a href="#fds">(1)</a> for <img src='http://l.wordpress.com/latex.php?latex=%7Bp+%3E+3+%5Cfrac%7B1%7D%7B3%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{p &gt; 3 \frac{1}{3}}' title='{p &gt; 3 \frac{1}{3}}' class='latex' />. This is primarily for my own benefit, but may be of interest to other experts in this particular topic. (See also my <a href="http://front.math.ucdavis.edu/math.CA/0311181">2003 lecture notes</a> on the restriction conjecture.)
+</p>
+<p>
+In order to focus on the ideas in the paper (rather than on the technical details), I will adopt an informal, heuristic approach, for instance by interpreting the uncertainty principle and the pigeonhole principle rather liberally, and by focusing on main terms in a decomposition and ignoring secondary terms. I will also be somewhat vague with regard to asymptotic notation such as <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cll%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\ll}' title='{\ll}' class='latex' />. Making the arguments rigorous requires a certain amount of standard but tedious effort (and is one of the main reasons why the Bourgain-Guth paper is as long as it is), which I will not focus on here.
+</p>
+<p>
+<span id="more-4556"></span>
+</p>
+</p>
+<p align="center"><b> &mdash;  1. The C&oacute;rdoba square function estimate  &mdash; </b></p>
+<p>
+In two dimensions, the restriction theory is well understood, due to the work of C&oacute;rdoba, Fefferman, and others. The situation is particularly simple when one looks at bilinear expressions such as </p>
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F_1+F_2+%5C%7C_%7BL%5E2%28%7B%5Cbf+R%7D%5E2%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F_1 F_2 \|_{L^2({\bf R}^2)}' title='\displaystyle  \| F_1 F_2 \|_{L^2({\bf R}^2)}' class='latex' /></p>
+<p> where <img src='http://l.wordpress.com/latex.php?latex=%7BF_1+%3A%3D%5Cwidehat%7Bf_1+d%5Csigma_1%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_1 :=\widehat{f_1 d\sigma_1}}' title='{F_1 :=\widehat{f_1 d\sigma_1}}' class='latex' />, <img src='http://l.wordpress.com/latex.php?latex=%7BF_2+%3A%3D+%5Cwidehat%7Bf_2+d%5Csigma_2%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_2 := \widehat{f_2 d\sigma_2}}' title='{F_2 := \widehat{f_2 d\sigma_2}}' class='latex' />, and <img src='http://l.wordpress.com/latex.php?latex=%7Bd%5Csigma_1%2C+d%5Csigma_2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{d\sigma_1, d\sigma_2}' title='{d\sigma_1, d\sigma_2}' class='latex' /> are surface measures on two smooth compact curves <img src='http://l.wordpress.com/latex.php?latex=%7BS_1%2C+S_2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_1, S_2}' title='{S_1, S_2}' class='latex' /> that are <em>transverse</em> in the sense that the unit normals of <img src='http://l.wordpress.com/latex.php?latex=%7BS_1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_1}' title='{S_1}' class='latex' /> are never oriented in the same direction as the unit normals of <img src='http://l.wordpress.com/latex.php?latex=%7BS_2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_2}' title='{S_2}' class='latex' />. (A model case to consider here are two arcs of the unit circle, one near <img src='http://l.wordpress.com/latex.php?latex=%7B%281%2C0%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{(1,0)}' title='{(1,0)}' class='latex' /> and one near <img src='http://l.wordpress.com/latex.php?latex=%7B%280%2C1%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{(0,1)}' title='{(0,1)}' class='latex' />.) In this case, we can use Plancherel&#8217;s theorem to rewrite the above expression as a convolution
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+f_1+d%5Csigma_1+%2A+f_2+d%5Csigma_2+%5C%7C_%7BL%5E2%28%7B%5Cbf+R%7D%5E2%29%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| f_1 d\sigma_1 * f_2 d\sigma_2 \|_{L^2({\bf R}^2)}.' title='\displaystyle  \| f_1 d\sigma_1 * f_2 d\sigma_2 \|_{L^2({\bf R}^2)}.' class='latex' /></p>
+<p> The transversality of <img src='http://l.wordpress.com/latex.php?latex=%7BS_1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_1}' title='{S_1}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7BS_2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_2}' title='{S_2}' class='latex' />, combined with the inverse function theorem, shows that <img src='http://l.wordpress.com/latex.php?latex=%7Bf_1+d%5Csigma_1+%2A+f_2+d%5Csigma_2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{f_1 d\sigma_1 * f_2 d\sigma_2}' title='{f_1 d\sigma_1 * f_2 d\sigma_2}' class='latex' /> is a non-degenerate pushforward of the tensor product <img src='http://l.wordpress.com/latex.php?latex=%7Bf_1+%5Cotimes+f_2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{f_1 \otimes f_2}' title='{f_1 \otimes f_2}' class='latex' />, and so one obtains the basic bilinear restriction estimate
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F_1+F_2+%5C%7C_%7BL%5E2%28%7B%5Cbf+R%7D%5E2%29%7D+%5Cll+%5C%7Cf_1%5C%7C_%7BL%5E2%28S_1%2Cd%5Csigma_1%29%7D+%5C%7Cf_2%5C%7C_%7BL%5E2%28S_2%2Cd%5Csigma_2%29%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F_1 F_2 \|_{L^2({\bf R}^2)} \ll \|f_1\|_{L^2(S_1,d\sigma_1)} \|f_2\|_{L^2(S_2,d\sigma_2)}.' title='\displaystyle  \| F_1 F_2 \|_{L^2({\bf R}^2)} \ll \|f_1\|_{L^2(S_1,d\sigma_1)} \|f_2\|_{L^2(S_2,d\sigma_2)}.' class='latex' /></p>
+<p> This estimate (and higher-dimensional analogues thereof) lead to the <em>bilinear <img src='http://l.wordpress.com/latex.php?latex=%7BX%5E%7Bs%2Cb%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{X^{s,b}}' title='{X^{s,b}}' class='latex' /> estimates</em> which are of fundamental importance in nonlinear dispersive equations (particularly those in which the nonlinearity contains derivatives). </p>
+<p>
+This bilinear estimate can be localised. Suppose one splits <img src='http://l.wordpress.com/latex.php?latex=%7BS_1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_1}' title='{S_1}' class='latex' /> into arcs <img src='http://l.wordpress.com/latex.php?latex=%7BS_%7B1%2C%5Calpha%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_{1,\alpha}}' title='{S_{1,\alpha}}' class='latex' /> of diameter <img src='http://l.wordpress.com/latex.php?latex=%7B%5Csim+1%2Fr%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\sim 1/r}' title='{\sim 1/r}' class='latex' /> for some <img src='http://l.wordpress.com/latex.php?latex=%7Br+%5Cgg+1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{r \gg 1}' title='{r \gg 1}' class='latex' />, which induces a decomposition <img src='http://l.wordpress.com/latex.php?latex=%7BF_1+%3D+%5Csum_%5Calpha+F_%7B1%2C%5Calpha%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_1 = \sum_\alpha F_{1,\alpha}}' title='{F_1 = \sum_\alpha F_{1,\alpha}}' class='latex' /> of <img src='http://l.wordpress.com/latex.php?latex=%7BF_1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_1}' title='{F_1}' class='latex' /> into components <img src='http://l.wordpress.com/latex.php?latex=%7BF_%7B1%2C%5Calpha%7D+%3A%3D+%5Cwidehat%7B+f_1+1_%7BS_%7B1%2C%5Calpha%7D%7D+d%5Csigma_1%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_{1,\alpha} := \widehat{ f_1 1_{S_{1,\alpha}} d\sigma_1}}' title='{F_{1,\alpha} := \widehat{ f_1 1_{S_{1,\alpha}} d\sigma_1}}' class='latex' />. Similarly decompose <img src='http://l.wordpress.com/latex.php?latex=%7BF_2+%3D+%5Csum_%5Cbeta+F_%7B2%2C%5Cbeta%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_2 = \sum_\beta F_{2,\beta}}' title='{F_2 = \sum_\beta F_{2,\beta}}' class='latex' />. Then we have </p>
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++F_1+F_2+%3D+%5Csum_%5Calpha+%5Csum_%5Cbeta+F_%7B1%2C%5Calpha%7D+F_%7B2%2C%5Cbeta%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  F_1 F_2 = \sum_\alpha \sum_\beta F_{1,\alpha} F_{2,\beta}.' title='\displaystyle  F_1 F_2 = \sum_\alpha \sum_\beta F_{1,\alpha} F_{2,\beta}.' class='latex' /></p>
+<p> The Fourier transform of <img src='http://l.wordpress.com/latex.php?latex=%7BF_%7B1%2C%5Calpha%7D+F_%7B2%2C%5Cbeta%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_{1,\alpha} F_{2,\beta}}' title='{F_{1,\alpha} F_{2,\beta}}' class='latex' /> is supported in the Minkowski sum <img src='http://l.wordpress.com/latex.php?latex=%7BS_%7B1%2C%5Calpha%7D+%2B+S_%7B2%2C%5Cbeta%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_{1,\alpha} + S_{2,\beta}}' title='{S_{1,\alpha} + S_{2,\beta}}' class='latex' />. The transversality of <img src='http://l.wordpress.com/latex.php?latex=%7BS_1%2C+S_2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_1, S_2}' title='{S_1, S_2}' class='latex' /> ensures that these sums are basically disjoint as <img src='http://l.wordpress.com/latex.php?latex=%7B%5Calpha%2C%5Cbeta%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\alpha,\beta}' title='{\alpha,\beta}' class='latex' /> varies, so by almost orthogonality one has
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F_1+F_2+%5C%7C_%7BL%5E2%28%7B%5Cbf+R%7D%5E2%29%7D+%5Cll+%28%5Csum_%7B%5Calpha%7D+%5Csum_%5Cbeta+%5C%7C+F_%7B1%2C%5Calpha%7D+F_%7B2%2C%5Cbeta%7D+%5C%7C_%7BL%5E2%28%7B%5Cbf+R%7D%5E2%29%7D%5E2%29%5E%7B1%2F2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F_1 F_2 \|_{L^2({\bf R}^2)} \ll (\sum_{\alpha} \sum_\beta \| F_{1,\alpha} F_{2,\beta} \|_{L^2({\bf R}^2)}^2)^{1/2}' title='\displaystyle  \| F_1 F_2 \|_{L^2({\bf R}^2)} \ll (\sum_{\alpha} \sum_\beta \| F_{1,\alpha} F_{2,\beta} \|_{L^2({\bf R}^2)}^2)^{1/2}' class='latex' /></p>
+<p> or equivalently
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F_1+F_2+%5C%7C_%7BL%5E2%28%7B%5Cbf+R%7D%5E2%29%7D+%5Cll+%5C%7C+%28%5Csum_%7B%5Calpha%7D+%7CF_%7B1%2C%5Calpha%7D%7C%5E2%29%5E%7B1%2F2%7D%29+%28+%5Csum_%5Cbeta+%7CF_%7B2%2C%5Cbeta%7D%7C%5E2%29%5E%7B1%2F2%7D+%5C%7C_%7BL%5E2%28%7B%5Cbf+R%7D%5E2%29%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F_1 F_2 \|_{L^2({\bf R}^2)} \ll \| (\sum_{\alpha} |F_{1,\alpha}|^2)^{1/2}) ( \sum_\beta |F_{2,\beta}|^2)^{1/2} \|_{L^2({\bf R}^2)}.' title='\displaystyle  \| F_1 F_2 \|_{L^2({\bf R}^2)} \ll \| (\sum_{\alpha} |F_{1,\alpha}|^2)^{1/2}) ( \sum_\beta |F_{2,\beta}|^2)^{1/2} \|_{L^2({\bf R}^2)}.' class='latex' /></p>
+<p> Actually, this estimate is morally localisable to balls <img src='http://l.wordpress.com/latex.php?latex=%7BB%28x%2Cr%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B(x,r)}' title='{B(x,r)}' class='latex' /> of radius <img src='http://l.wordpress.com/latex.php?latex=%7Br%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{r}' title='{r}' class='latex' />; heuristically, we have <a name="f12r">
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F_1+F_2+%5C%7C_%7BL%5E2%28B%28x%2Cr%29%29%7D+%5Cll+%5C%7C+%28%5Csum_%7B%5Calpha%7D+%7CF_%7B1%2C%5Calpha%7D%7C%5E2%29%5E%7B1%2F2%7D%29+%28+%5Csum_%5Cbeta+%7CF_%7B2%2C%5Cbeta%7D%7C%5E2%29%5E%7B1%2F2%7D+%5C%7C_%7BL%5E2%28B%28x%2Cr%29%29%7D.+%5C+%5C+%5C+%5C+%5C+%283%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F_1 F_2 \|_{L^2(B(x,r))} \ll \| (\sum_{\alpha} |F_{1,\alpha}|^2)^{1/2}) ( \sum_\beta |F_{2,\beta}|^2)^{1/2} \|_{L^2(B(x,r))}. \ \ \ \ \ (3)' title='\displaystyle  \| F_1 F_2 \|_{L^2(B(x,r))} \ll \| (\sum_{\alpha} |F_{1,\alpha}|^2)^{1/2}) ( \sum_\beta |F_{2,\beta}|^2)^{1/2} \|_{L^2(B(x,r))}. \ \ \ \ \ (3)' class='latex' /></p>
+<p></a> Informally, this is due to the uncertainty principle: localising in space to scale <img src='http://l.wordpress.com/latex.php?latex=%7Br%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{r}' title='{r}' class='latex' /> wouuld cause the arcs <img src='http://l.wordpress.com/latex.php?latex=%7BS_%7B1%2C%5Calpha%7D%2C+S_%7B2%2C%5Cbeta%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_{1,\alpha}, S_{2,\beta}}' title='{S_{1,\alpha}, S_{2,\beta}}' class='latex' /> in Fourier space to blur out at the scale <img src='http://l.wordpress.com/latex.php?latex=%7B1%2Fr%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{1/r}' title='{1/r}' class='latex' />, but this will not significantly affect the almost disjointness of the Minkowski sums <img src='http://l.wordpress.com/latex.php?latex=%7BS_%7B1%2C%5Calpha%7D+%2B+S_%7B2%2C%5Cbeta%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_{1,\alpha} + S_{2,\beta}}' title='{S_{1,\alpha} + S_{2,\beta}}' class='latex' />. (To make this rigorous, one would use a smoother cutoff than <img src='http://l.wordpress.com/latex.php?latex=%7B1_%7BB%28x%2Cr%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{1_{B(x,r)}}' title='{1_{B(x,r)}}' class='latex' />, and in particular it is convenient to use a cutoff which is compactly supported in Fourier space rather than physical space; we will not discuss these technicalities further here.) </p>
+<p>
+Furthermore, the uncertainty principle suggests to us that <img src='http://l.wordpress.com/latex.php?latex=%7BF_%7B1%2C%5Calpha%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_{1,\alpha}}' title='{F_{1,\alpha}}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7BF_%7B2%2C%5Cbeta%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_{2,\beta}}' title='{F_{2,\beta}}' class='latex' /> are essentially constant on balls <img src='http://l.wordpress.com/latex.php?latex=%7BB%28x%2Cr%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B(x,r)}' title='{B(x,r)}' class='latex' /> of radius <img src='http://l.wordpress.com/latex.php?latex=%7Br%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{r}' title='{r}' class='latex' />. As such, the expression inside the norm on the right-hand side of <a href="#f12r">(3)</a> is morally constant on such balls, which allows us to apply H&ouml;lder&#8217;s inequality and conclude that <a name="bilinearisation">
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F_1+F_2+%5C%7C_%7BL%5Eq%28B%28x%2Cr%29%29%7D+%5Cll+%5C%7C+%28%5Csum_%7B%5Calpha%7D+%7CF_%7B1%2C%5Calpha%7D%7C%5E2%29%5E%7B1%2F2%7D%29+%28+%5Csum_%5Cbeta+%7CF_%7B2%2C%5Cbeta%7D%7C%5E2%29%5E%7B1%2F2%7D+%5C%7C_%7BL%5Eq%28B%28x%2Cr%29%29%7D+%5C+%5C+%5C+%5C+%5C+%284%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F_1 F_2 \|_{L^q(B(x,r))} \ll \| (\sum_{\alpha} |F_{1,\alpha}|^2)^{1/2}) ( \sum_\beta |F_{2,\beta}|^2)^{1/2} \|_{L^q(B(x,r))} \ \ \ \ \ (4)' title='\displaystyle  \| F_1 F_2 \|_{L^q(B(x,r))} \ll \| (\sum_{\alpha} |F_{1,\alpha}|^2)^{1/2}) ( \sum_\beta |F_{2,\beta}|^2)^{1/2} \|_{L^q(B(x,r))} \ \ \ \ \ (4)' class='latex' /></p>
+<p></a> for any <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%5Cleq+2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q \leq 2}' title='{q \leq 2}' class='latex' />.
+</p>
+<p>
+This is a bilinear estimate, but for heuristic purposes it is morally equivalent to the linear estimate <a name="juice">
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F+%5C%7C_%7BL%5Eq%28B%28x%2Cr%29%29%7D+%5Cll+%5C%7C+%28%5Csum_%7B%5Calpha%7D+%7CF_%7B%5Calpha%7D%7C%5E2%29%5E%7B1%2F2%7D%29+%5C%7C_%7BL%5Eq%28B%28x%2Cr%29%29%7D+%5C+%5C+%5C+%5C+%5C+%285%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F \|_{L^q(B(x,r))} \ll \| (\sum_{\alpha} |F_{\alpha}|^2)^{1/2}) \|_{L^q(B(x,r))} \ \ \ \ \ (5)' title='\displaystyle  \| F \|_{L^q(B(x,r))} \ll \| (\sum_{\alpha} |F_{\alpha}|^2)^{1/2}) \|_{L^q(B(x,r))} \ \ \ \ \ (5)' class='latex' /></p>
+<p></a> for <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%5Cleq+4%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q \leq 4}' title='{q \leq 4}' class='latex' />, where <img src='http://l.wordpress.com/latex.php?latex=%7BF+%3D+%5Cwidehat%7Bf+d%5Csigma%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F = \widehat{f d\sigma}}' title='{F = \widehat{f d\sigma}}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7Bd%5Csigma%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{d\sigma}' title='{d\sigma}' class='latex' /> is the surface measure on a curve <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' /> which &#8220;exhibits curvature&#8221; and such that <img src='http://l.wordpress.com/latex.php?latex=%7BF%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F}' title='{F}' class='latex' /> is &#8220;dominated by transverse interactions&#8221;, <img src='http://l.wordpress.com/latex.php?latex=%7BF_%5Calpha+%3D+%5Cwidehat%7Bf+1_%7BS_%5Calpha%7D+d%5Csigma%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_\alpha = \widehat{f 1_{S_\alpha} d\sigma}}' title='{F_\alpha = \widehat{f 1_{S_\alpha} d\sigma}}' class='latex' />, and <img src='http://l.wordpress.com/latex.php?latex=%7BS%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S}' title='{S}' class='latex' /> is partitioned into arcs <img src='http://l.wordpress.com/latex.php?latex=%7BS_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_\alpha}' title='{S_\alpha}' class='latex' /> of diameter <img src='http://l.wordpress.com/latex.php?latex=%7B%5Csim+1%2Fr%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\sim 1/r}' title='{\sim 1/r}' class='latex' />. For the purposes of numerology, we will pretend that <a href="#juice">(5)</a> is true as stated, though in practice one has to actually work with the bilinearisation <a href="#bilinearisation">(4)</a> instead.
+</p>
+<p>
+We remark that <a href="http://www.ams.org/mathscinet-getitem?mr=688026">C&oacute;rdoba used</a> (a rigorous form of) <a href="#juice">(5)</a> to establish the restriction conjecture <a href="#fds">(1)</a> for curves in the plane (such as the unit circle) in the optimal range <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3E+4%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &gt; 4}' title='{q &gt; 4}' class='latex' />.
+</p>
+<p>
+The estimate <a href="#juice">(5)</a> is a two-dimensional one, but it can be stepped up to a three-dimensional estimate <a name="juice-3d">
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F+%5C%7C_%7BL%5Eq%28B%28x%2Cr%29%29%7D+%5Cll+%5C%7C+%28%5Csum_%7B%5Calpha%7D+%7CF_%7B%5Calpha%7D%7C%5E2%29%5E%7B1%2F2%7D%29+%5C%7C_%7BL%5Eq%28B%28x%2Cr%29%29%7D+%5C+%5C+%5C+%5C+%5C+%286%29&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F \|_{L^q(B(x,r))} \ll \| (\sum_{\alpha} |F_{\alpha}|^2)^{1/2}) \|_{L^q(B(x,r))} \ \ \ \ \ (6)' title='\displaystyle  \| F \|_{L^q(B(x,r))} \ll \| (\sum_{\alpha} |F_{\alpha}|^2)^{1/2}) \|_{L^q(B(x,r))} \ \ \ \ \ (6)' class='latex' /></p>
+<p></a> for <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%5Cleq+4%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q \leq 4}' title='{q \leq 4}' class='latex' />, where <img src='http://l.wordpress.com/latex.php?latex=%7BF+%3D+%5Cwidehat%7Bf+d%5Csigma%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F = \widehat{f d\sigma}}' title='{F = \widehat{f d\sigma}}' class='latex' />, <img src='http://l.wordpress.com/latex.php?latex=%7Bd%5Csigma%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{d\sigma}' title='{d\sigma}' class='latex' /> is now surface measure on the sphere <img src='http://l.wordpress.com/latex.php?latex=%7BS%5E2+%5Csubset+%7B%5Cbf+R%7D%5E3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S^2 \subset {\bf R}^3}' title='{S^2 \subset {\bf R}^3}' class='latex' />, which one decomposes into caps <img src='http://l.wordpress.com/latex.php?latex=%7BS_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_\alpha}' title='{S_\alpha}' class='latex' /> of diameter <img src='http://l.wordpress.com/latex.php?latex=%7BO%281%2Fr%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O(1/r)}' title='{O(1/r)}' class='latex' />, <img src='http://l.wordpress.com/latex.php?latex=%7Bf%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{f}' title='{f}' class='latex' /> is supported on the <img src='http://l.wordpress.com/latex.php?latex=%7BO%281%2Fr%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O(1/r)}' title='{O(1/r)}' class='latex' />-neighbourhood of a great circle in <img src='http://l.wordpress.com/latex.php?latex=%7BS%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S^2}' title='{S^2}' class='latex' /> with <img src='http://l.wordpress.com/latex.php?latex=%7BF_%5Calpha%3A%3D+%5Cwidehat%7B+f+1_%7BS_%5Calpha%7D+d%5Csigma%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_\alpha:= \widehat{ f 1_{S_\alpha} d\sigma}}' title='{F_\alpha:= \widehat{ f 1_{S_\alpha} d\sigma}}' class='latex' />, and <img src='http://l.wordpress.com/latex.php?latex=%7BF%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F}' title='{F}' class='latex' /> is &#8220;dominated by transverse interactions&#8221; in a sense that we will not quantify precisely here. This gives efficient control on <img src='http://l.wordpress.com/latex.php?latex=%7BF%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F}' title='{F}' class='latex' /> in terms of square functions, but only in the &#8220;transverse coplanar case&#8221; in which the frequencies that dominate <img src='http://l.wordpress.com/latex.php?latex=%7BF%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F}' title='{F}' class='latex' /> are both coplanar (in the sense that they all lie roughly on the same great circle) and transverse.
+</p>
+</p>
+<p align="center"><b> &mdash;  2. The Bourgain-Guth argument  &mdash; </b></p>
+<p>
+Now we sketch how the Bourgain-Guth argument works to establish <a href="#fds">(1)</a> for <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3E+%5Cfrac%7B10%7D%7B3%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &gt; \frac{10}{3}}' title='{q &gt; \frac{10}{3}}' class='latex' />. Fix <img src='http://l.wordpress.com/latex.php?latex=%7Bq%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q}' title='{q}' class='latex' />; we may assume <img src='http://l.wordpress.com/latex.php?latex=%7Bq%3C4%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q&lt;4}' title='{q&lt;4}' class='latex' />. For each radius <img src='http://l.wordpress.com/latex.php?latex=%7BR+%5Cgeq+1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R \geq 1}' title='{R \geq 1}' class='latex' />, let <img src='http://l.wordpress.com/latex.php?latex=%7BQ_R%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{Q_R}' title='{Q_R}' class='latex' /> be the best constant in the local restriction estimate </p>
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F+%5C%7C_%7BL%5Eq%28B%28x%2CR%29%29%7D+%5Cleq+Q_R+%5C%7Cf%5C%7C_%7BL%5E%5Cinfty%28S%5E2%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F \|_{L^q(B(x,R))} \leq Q_R \|f\|_{L^\infty(S^2)}' title='\displaystyle  \| F \|_{L^q(B(x,R))} \leq Q_R \|f\|_{L^\infty(S^2)}' class='latex' /></p>
+<p> where <img src='http://l.wordpress.com/latex.php?latex=%7BF+%3A%3D+%5Cwidehat%7Bf+d%5Csigma%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F := \widehat{f d\sigma}}' title='{F := \widehat{f d\sigma}}' class='latex' />. To show <a href="#fds">(1)</a>, one has to show that <img src='http://l.wordpress.com/latex.php?latex=%7BQ_R%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{Q_R}' title='{Q_R}' class='latex' /> is bounded uniformly in <img src='http://l.wordpress.com/latex.php?latex=%7BR%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R}' title='{R}' class='latex' />. Actually, thanks to an &#8220;epsilon removal lemma&#8221; that <a href="http://www.ams.org/mathscinet-getitem?mr=1666558">I proved some time ago</a> using a variant of the Tomas-Stein argument, it suffices to show that the logarithmic growth estimate <img src='http://l.wordpress.com/latex.php?latex=%7BQ_R+%5Cll+R%5E%5Cepsilon%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{Q_R \ll R^\epsilon}' title='{Q_R \ll R^\epsilon}' class='latex' /> for any <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cepsilon+%3E+0%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\epsilon &gt; 0}' title='{\epsilon &gt; 0}' class='latex' />.</p>
+<p>
+An effective technique for achieving this is an <em>induction on scales</em> argument, bounding <img src='http://l.wordpress.com/latex.php?latex=%7BQ_R%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{Q_R}' title='{Q_R}' class='latex' /> efficiently in terms of <img src='http://l.wordpress.com/latex.php?latex=%7BQ_R%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{Q_R}' title='{Q_R}' class='latex' /> for various scales <img src='http://l.wordpress.com/latex.php?latex=%7BR%27%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R&#039;}' title='{R&#039;}' class='latex' /> between <img src='http://l.wordpress.com/latex.php?latex=%7B1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{1}' title='{1}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7BR%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R}' title='{R}' class='latex' />. This technique was introduced <a href="http://www.ams.org/mathscinet-getitem?mr=1097257">by Bourgain</a>, using the intermediate scale <img src='http://l.wordpress.com/latex.php?latex=%7BR%27+%3A%3D+%5Csqrt%7BR%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R&#039; := \sqrt{R}}' title='{R&#039; := \sqrt{R}}' class='latex' /> (which is a natural scale for the purposes of approximating spherical caps by disks while still respecting the uncertainty principle). A subsequent <a href="http://www.ams.org/mathscinet-getitem?mr=1836285">paper of Wolff</a> adapted this argument by also relying on scales <img src='http://l.wordpress.com/latex.php?latex=%7BR%27+%3D+R%5E%7B1-%5Cepsilon%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R&#039; = R^{1-\epsilon}}' title='{R&#039; = R^{1-\epsilon}}' class='latex' /> that were much closer to <img src='http://l.wordpress.com/latex.php?latex=%7BR%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R}' title='{R}' class='latex' />. The Bourgain-Guth argument is closer in spirit to this latter approach.
+</p>
+<p>
+Specifically, one sets <img src='http://l.wordpress.com/latex.php?latex=%7BK+%3A%3D+R%5E%5Cepsilon%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{K := R^\epsilon}' title='{K := R^\epsilon}' class='latex' /> to be a small power of <img src='http://l.wordpress.com/latex.php?latex=%7BR%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{R}' title='{R}' class='latex' />, and divides the sphere <img src='http://l.wordpress.com/latex.php?latex=%7BS%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S^2}' title='{S^2}' class='latex' /> into largish caps <img src='http://l.wordpress.com/latex.php?latex=%7BS_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_\alpha}' title='{S_\alpha}' class='latex' /> of radius <img src='http://l.wordpress.com/latex.php?latex=%7B%5Csim+1%2FK%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\sim 1/K}' title='{\sim 1/K}' class='latex' />, thus splitting <img src='http://l.wordpress.com/latex.php?latex=%7BF+%3D+%5Csum_%5Calpha+F_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F = \sum_\alpha F_\alpha}' title='{F = \sum_\alpha F_\alpha}' class='latex' />. At the same time, we cover <img src='http://l.wordpress.com/latex.php?latex=%7BB%28x%2CR%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B(x,R)}' title='{B(x,R)}' class='latex' /> by smallish balls <img src='http://l.wordpress.com/latex.php?latex=%7BB%28y%2CK%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B(y,K)}' title='{B(y,K)}' class='latex' /> of radius <img src='http://l.wordpress.com/latex.php?latex=%7BK%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{K}' title='{K}' class='latex' />. On each such ball <img src='http://l.wordpress.com/latex.php?latex=%7BB%28y%2CK%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B(y,K)}' title='{B(y,K)}' class='latex' />, the functions <img src='http://l.wordpress.com/latex.php?latex=%7BF_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_\alpha}' title='{F_\alpha}' class='latex' /> are morally constant, as per the uncertainty principle. Of course, the amplitude of the <img src='http://l.wordpress.com/latex.php?latex=%7BF_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_\alpha}' title='{F_\alpha}' class='latex' /> on <img src='http://l.wordpress.com/latex.php?latex=%7BB%28y%2CK%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B(y,K)}' title='{B(y,K)}' class='latex' /> depend on <img src='http://l.wordpress.com/latex.php?latex=%7B%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\alpha}' title='{\alpha}' class='latex' />; for each small ball <img src='http://l.wordpress.com/latex.php?latex=%7BB%28y%2CK%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B(y,K)}' title='{B(y,K)}' class='latex' />, only a fraction of the <img src='http://l.wordpress.com/latex.php?latex=%7BF_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_\alpha}' title='{F_\alpha}' class='latex' /> will &#8220;dominate&#8221; the sum <img src='http://l.wordpress.com/latex.php?latex=%7BF%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F}' title='{F}' class='latex' />. Roughly speaking, we can then sort the balls <img src='http://l.wordpress.com/latex.php?latex=%7BB%28y%2CK%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{B(y,K)}' title='{B(y,K)}' class='latex' /> into three classes:
+</p>
+<p><ol>
+<li> (Non-coplanar case) There exist three dominant caps <img src='http://l.wordpress.com/latex.php?latex=%7BS_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_\alpha}' title='{S_\alpha}' class='latex' /> which do not lie within <img src='http://l.wordpress.com/latex.php?latex=%7BO%281%2FK%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O(1/K)}' title='{O(1/K)}' class='latex' /> of a great circle. </li>
+<li> (Non-transverse case) All the dominant caps <img src='http://l.wordpress.com/latex.php?latex=%7BS_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_\alpha}' title='{S_\alpha}' class='latex' /> lie in a cap of size <img src='http://l.wordpress.com/latex.php?latex=%7Bo%281%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{o(1)}' title='{o(1)}' class='latex' />. </li>
+<li> (Transverse coplanar case) All the dominant caps lie within <img src='http://l.wordpress.com/latex.php?latex=%7BO%281%2FK%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O(1/K)}' title='{O(1/K)}' class='latex' /> of a great circle, but at least two of them are at distance <img src='http://l.wordpress.com/latex.php?latex=%7B%5Csim+1%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\sim 1}' title='{\sim 1}' class='latex' /> from each other.
+</li>
+</ol>
+<p>
+In the first case, one can control <img src='http://l.wordpress.com/latex.php?latex=%7B%5C%7C+F+%5C%7C_%7BL%5Eq%28B%28y%2CK%29%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\| F \|_{L^q(B(y,K))}}' title='{\| F \|_{L^q(B(y,K))}}' class='latex' /> by <img src='http://l.wordpress.com/latex.php?latex=%7BO%28K%5E%7BO%281%29%7D%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O(K^{O(1)})}' title='{O(K^{O(1)})}' class='latex' /> non-coplanar interactions of the form <img src='http://l.wordpress.com/latex.php?latex=%7B%5C%7C+F_1+F_2+F_3+%5C%7C_%7BL%5E%7Bq%2F3%7D%28B%28y%2CK%29%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\| F_1 F_2 F_3 \|_{L^{q/3}(B(y,K))}}' title='{\| F_1 F_2 F_3 \|_{L^{q/3}(B(y,K))}}' class='latex' />, where <img src='http://l.wordpress.com/latex.php?latex=%7BF_1%2C+F_2%2C+F_3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_1, F_2, F_3}' title='{F_1, F_2, F_3}' class='latex' /> are portions of <img src='http://l.wordpress.com/latex.php?latex=%7BF%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F}' title='{F}' class='latex' /> on non-coplanar portions of the sphere <img src='http://l.wordpress.com/latex.php?latex=%7BS%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S^2}' title='{S^2}' class='latex' />. In this case, one can use <a href="#trilinear">(2)</a> and obtain a contribution of <img src='http://l.wordpress.com/latex.php?latex=%7BO%28+K%5E%7BO%281%29%7D+%29+%3D+O%28R%5E%7BO%28%5Cepsilon%29%7D+%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O( K^{O(1)} ) = O(R^{O(\epsilon)} )}' title='{O( K^{O(1)} ) = O(R^{O(\epsilon)} )}' class='latex' /> in this case.
+</p>
+<p>
+It has been known for some time (since a <a href="http://www.ams.org/mathscinet-getitem?mr=1625056">paper of myself, Vargas, and Vega</a>) that the non-transverse case can always be eliminated. Basically, if we group the caps <img src='http://l.wordpress.com/latex.php?latex=%7BS_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_\alpha}' title='{S_\alpha}' class='latex' /> into larger caps <img src='http://l.wordpress.com/latex.php?latex=%7B%5Ctilde+S_%5Cbeta%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\tilde S_\beta}' title='{\tilde S_\beta}' class='latex' /> of radius <img src='http://l.wordpress.com/latex.php?latex=%7B1%2FK%27+%3D+o%281%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{1/K&#039; = o(1)}' title='{1/K&#039; = o(1)}' class='latex' />, and decompose <img src='http://l.wordpress.com/latex.php?latex=%7BF+%3D+%5Csum_%5Cbeta+%5Ctilde+F_%5Cbeta%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F = \sum_\beta \tilde F_\beta}' title='{F = \sum_\beta \tilde F_\beta}' class='latex' /> accordingly, then in the non-transverse case we can morally bound </p>
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%7CF%7C+%5Cll+%28%5Csum_%5Cbeta+%7C%5Ctilde+F_%7B%5Cbeta%7D%7C%5Eq%29%5E%7B1%2Fq%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  |F| \ll (\sum_\beta |\tilde F_{\beta}|^q)^{1/q}' title='\displaystyle  |F| \ll (\sum_\beta |\tilde F_{\beta}|^q)^{1/q}' class='latex' /></p>
+<p> and so
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7CF%5C%7C_%7BL%5Eq%28B%28x%2CR%29%29%7D+%5Cll+%28%5Csum_%5Cbeta+%5C%7C%5Ctilde+F_%7B%5Cbeta%7D%5C%7C_%7BL%5Eq%28B%28x%2CR%29%29%7D%5Eq%29%5E%7B1%2Fq%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|F\|_{L^q(B(x,R))} \ll (\sum_\beta \|\tilde F_{\beta}\|_{L^q(B(x,R))}^q)^{1/q}.' title='\displaystyle  \|F\|_{L^q(B(x,R))} \ll (\sum_\beta \|\tilde F_{\beta}\|_{L^q(B(x,R))}^q)^{1/q}.' class='latex' /></p>
+<p> However, a standard parabolic rescaling argument (which, strictly speaking, requires one to generalise the sphere to a larger family of similarly curved surfaces, but let us ignore this technical detail) shows that
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C%5Ctilde+F_%7B%5Cbeta%7D%5C%7C_%7BL%5Eq%28B%28x%2CR%29%29%7D+%5Cll+Q_%7BR%2FK%27%7D+%28K%27%29%5E%7B4%2Fq-2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|\tilde F_{\beta}\|_{L^q(B(x,R))} \ll Q_{R/K&#039;} (K&#039;)^{4/q-2}' title='\displaystyle  \|\tilde F_{\beta}\|_{L^q(B(x,R))} \ll Q_{R/K&#039;} (K&#039;)^{4/q-2}' class='latex' /></p>
+<p> and so (since there are <img src='http://l.wordpress.com/latex.php?latex=%7B%5Csim+%28K%27%29%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\sim (K&#039;)^2}' title='{\sim (K&#039;)^2}' class='latex' /> large caps <img src='http://l.wordpress.com/latex.php?latex=%7B%5Ctilde+S_%5Cbeta%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\tilde S_\beta}' title='{\tilde S_\beta}' class='latex' />)
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7CF%5C%7C_%7BL%5Eq%28B%28x%2CR%29%29%7D+%5Cll+%28K%27%29%5E%7B6%2Fq-2%7D+Q_%7BR%2FK%27%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|F\|_{L^q(B(x,R))} \ll (K&#039;)^{6/q-2} Q_{R/K&#039;}.' title='\displaystyle  \|F\|_{L^q(B(x,R))} \ll (K&#039;)^{6/q-2} Q_{R/K&#039;}.' class='latex' /></p>
+<p> Since <img src='http://l.wordpress.com/latex.php?latex=%7Bq%3E3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q&gt;3}' title='{q&gt;3}' class='latex' />, the exponent of <img src='http://l.wordpress.com/latex.php?latex=%7BK%27%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{K&#039;}' title='{K&#039;}' class='latex' /> here is positive, and so this is a good term for the recurrence.</p>
+<p>
+Finally, we deal with the transverse, coplanar case. Here, the main tool is the C&oacute;rdoba-type square function estimate <a href="#juice-3d">(6)</a>. Being coplanar, there are only about <img src='http://l.wordpress.com/latex.php?latex=%7BO%28K%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O(K)}' title='{O(K)}' class='latex' /> caps <img src='http://l.wordpress.com/latex.php?latex=%7BS_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_\alpha}' title='{S_\alpha}' class='latex' /> that contribute here, so we can pay a factor of <img src='http://l.wordpress.com/latex.php?latex=%7BO%28K%5E%7B1%2F2+-+1%2Fq%7D%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O(K^{1/2 - 1/q})}' title='{O(K^{1/2 - 1/q})}' class='latex' /> and convert the square function to a <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cell%5Eq%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\ell^q}' title='{\ell^q}' class='latex' />-function: </p>
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F+%5C%7C_%7BL%5Eq%28B%28y%2CK%29%29%7D+%5Cll+K%5E%7B1%2F2+-+1%2Fq%7D+%5C%7C+%28%5Csum_%7B%5Calpha%7D+%7CF_%7B%5Calpha%7D%7C%5Eq%29%5E%7B1%2Fq%7D%29+%5C%7C_%7BL%5Eq%28B%28y%2CK%29%29%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F \|_{L^q(B(y,K))} \ll K^{1/2 - 1/q} \| (\sum_{\alpha} |F_{\alpha}|^q)^{1/q}) \|_{L^q(B(y,K))}.' title='\displaystyle  \| F \|_{L^q(B(y,K))} \ll K^{1/2 - 1/q} \| (\sum_{\alpha} |F_{\alpha}|^q)^{1/q}) \|_{L^q(B(y,K))}.' class='latex' /></p>
+<p> Summing over all such balls, we obtain
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7C+F+%5C%7C_%7BL%5Eq%28B%28x%2CR%29%29%7D+%5Cll+K%5E%7B1%2F2+-+1%2Fq%7D+%5Csum_%7B%5Calpha%7D+%5C%7CF_%7B%5Calpha%7D%5C%7C_%7BL%5Eq%28B%28x%2CR%29%29%7D%5Eq%29%5E%7B1%2Fq%7D%29.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \| F \|_{L^q(B(x,R))} \ll K^{1/2 - 1/q} \sum_{\alpha} \|F_{\alpha}\|_{L^q(B(x,R))}^q)^{1/q}).' title='\displaystyle  \| F \|_{L^q(B(x,R))} \ll K^{1/2 - 1/q} \sum_{\alpha} \|F_{\alpha}\|_{L^q(B(x,R))}^q)^{1/q}).' class='latex' /></p>
+<p> Again, a parabolic rescaling gives
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++%5C%7CF_%7B%5Calpha%7D%5C%7C_%7BL%5Eq%28B%28x%2CR%29%29%7D+%5Cll+K%5E%7B4%2Fq-2%7D+Q_%7BR%2FK%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  \|F_{\alpha}\|_{L^q(B(x,R))} \ll K^{4/q-2} Q_{R/K}' title='\displaystyle  \|F_{\alpha}\|_{L^q(B(x,R))} \ll K^{4/q-2} Q_{R/K}' class='latex' /></p>
+<p> so the net contribution to <img src='http://l.wordpress.com/latex.php?latex=%7B%5C%7CF%5C%7C_%7BL%5Eq%28B%28x%2CR%29%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\|F\|_{L^q(B(x,R))}}' title='{\|F\|_{L^q(B(x,R))}}' class='latex' /> here is <img src='http://l.wordpress.com/latex.php?latex=%7BO%28+K%5E%7B1%2F2+-+1%2Fq%7D+K%5E%7B6%2Fq-2%7D+Q_%7BR%2FK%7D+%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O( K^{1/2 - 1/q} K^{6/q-2} Q_{R/K} )}' title='{O( K^{1/2 - 1/q} K^{6/q-2} Q_{R/K} )}' class='latex' />. This leads to the recursion
+<p align="center"><img src='http://l.wordpress.com/latex.php?latex=%5Cdisplaystyle++Q_R+%5Cll+R%5E%7BO%28%5Cepsilon%29%7D+%2B+%28K%27%29%5E%7B6%2Fq-2%7D+Q_%7BR%2FK%27%7D+%2B+K%5E%7B1%2F2+-+1%2Fq%7D+K%5E%7B6%2Fq-2%7D+Q_%7BR%2FK%7D.&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\displaystyle  Q_R \ll R^{O(\epsilon)} + (K&#039;)^{6/q-2} Q_{R/K&#039;} + K^{1/2 - 1/q} K^{6/q-2} Q_{R/K}.' title='\displaystyle  Q_R \ll R^{O(\epsilon)} + (K&#039;)^{6/q-2} Q_{R/K&#039;} + K^{1/2 - 1/q} K^{6/q-2} Q_{R/K}.' class='latex' /></p>
+<p> For <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3E+10%2F3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &gt; 10/3}' title='{q &gt; 10/3}' class='latex' />, the exponents of <img src='http://l.wordpress.com/latex.php?latex=%7BK%27%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{K&#039;}' title='{K&#039;}' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=%7BK%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{K}' title='{K}' class='latex' /> are negative, and this allows one to induct on scales and get the required bound <img src='http://l.wordpress.com/latex.php?latex=%7BQ_R+%5Cll+R%5E%7BO%28%5Cepsilon%29%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{Q_R \ll R^{O(\epsilon)}}' title='{Q_R \ll R^{O(\epsilon)}}' class='latex' />.</p>
+<p>
+The argument given above is not optimal; the main inefficiency here is the factor of <img src='http://l.wordpress.com/latex.php?latex=%7BO%28K%5E%7B1%2F2-1%2Fq%7D%29%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{O(K^{1/2-1/q})}' title='{O(K^{1/2-1/q})}' class='latex' /> that one pays to convert the square function to the <img src='http://l.wordpress.com/latex.php?latex=%7B%5Cell%5Eq%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\ell^q}' title='{\ell^q}' class='latex' /> function. This factor is only truly present if almost every cap <img src='http://l.wordpress.com/latex.php?latex=%7BS_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_\alpha}' title='{S_\alpha}' class='latex' /> along a great circle is genuinely contributing to <img src='http://l.wordpress.com/latex.php?latex=%7BF%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F}' title='{F}' class='latex' />. However, one can use Kakeya estimates to prevent this event from happening too often. Indeed, thanks to the nature of parabolic scaling, the functions <img src='http://l.wordpress.com/latex.php?latex=%7BF_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{F_\alpha}' title='{F_\alpha}' class='latex' /> are not merely essentially constant on balls of radius <img src='http://l.wordpress.com/latex.php?latex=%7BK%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{K}' title='{K}' class='latex' />, but are in fact essentially constant on <img src='http://l.wordpress.com/latex.php?latex=%7BK+%5Ctimes+K%5E2%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{K \times K^2}' title='{K \times K^2}' class='latex' /> tubes oriented in the normal direction of <img src='http://l.wordpress.com/latex.php?latex=%7BS_%5Calpha%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{S_\alpha}' title='{S_\alpha}' class='latex' />. One can use a Kakeya estimate (such as <a href="http://www.ams.org/mathscinet-getitem?mr=1363209">Wolff&#8217;s Kakeya estimate</a>) to then prevent these tubes from congregating too often with too high of a multiplicity; quantifying this, Bourgain and Guth were able to relax the constraint <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3E+10%2F3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &gt; 10/3}' title='{q &gt; 10/3}' class='latex' /> to <img src='http://l.wordpress.com/latex.php?latex=%7Bq+%3E+3.3%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{q &gt; 3.3}' title='{q &gt; 3.3}' class='latex' />. Unfortunately, there are still some residual inefficiencies, and even with the full Kakekya conjecture, the argument given in that paper only gets down to <img src='http://l.wordpress.com/latex.php?latex=%7B3+%5Cfrac%7B3%7D%7B11%7D%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{3 \frac{3}{11}}' title='{3 \frac{3}{11}}' class='latex' />.
+</p>
+</p>
+<div class="snap_nopreview sharing robots-nocontent">
+<ul>
+<li class="sharing_label">Share this:</li>
+<li class="share-print share-regular"><a rel="nofollow" class="share-print share-icon" href="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/#print" title="Click to print">Print</a></li>
+<li class="share-email share-regular"><a rel="nofollow" class="share-email share-icon" href="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/?share=email" title="Click to email this to a friend">Email</a></li>
+<li class="share-end"></li>
+</ul>
+<div class="sharing-clear"></div>
+</div>
+<div style="margin-top: 1em" class="possibly-related"><hr /><p><strong>Possibly related posts: (automatically generated)</strong></p><ul><li><a rel='related' href='http://terrytao.wordpress.com/2009/07/20/imo-2009-q6-as-a-mini-polymath-project/' style='font-weight:bold'>IMO 2009 Q6 as a mini-polymath project</a></li><li><a rel='related nofollow' href='http://weaselmark.wordpress.com/2010/03/10/problems-with-my-writing/'>Problems With My Writing</a></li><li><a rel='related nofollow' href='http://simonjohanning.wordpress.com/2009/11/09/091108/'>09/11/08</a></li></ul></div>
+<!--adcode-->
+<div align="center" style="padding-top: 5px; text-align: left;" class="adcode">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3443918307802676";
+google_ad_output = "js";
+google_feedback = "on";
+google_max_num_ads = "4";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_image_size = "336x280";
+google_ad_type = "text,flash,html";
+google_ad_channel ="7770228814+6875057225+7401333398+7453468586+7250744022";
+var color_bg = 'ffffff';
+var color_text = '545454';
+var color_link = '005a80';
+var color_border = 'ffffff';
+var color_url = '005a80';
+
+google_analytics_domain_name = "wordpress.com";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+<div style="clear: both"><br /></div>
+<!--/adcode-->
+		</div>
+					</div>
+</div>
+<div id="secondary">
+
+<div class="widgets">
+
+	<div id="recent-comments" class="widget widget_recent_comments">		<h3>Recent Comments</h3>		<table class='recentcommentsavatar' cellspacing='0' cellpadding='0' border='0'><tr><td title="Anon" class="recentcommentsavatartop" style="height:32px; width:32px"><img alt='' src='http://1.gravatar.com/avatar/d26ffa8dde6cc82ccb805e2a20a4978c?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstexttop">Anon on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49295">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="Anon" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://1.gravatar.com/avatar/d26ffa8dde6cc82ccb805e2a20a4978c?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anon on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49294">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49289">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/2010/09/19/245a-notes-2-the-lebesgue-integral/#comment-49248">245A, Notes 2: The Lebesgue&hellip;</a></td></tr><tr><td title="KVV" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://1.gravatar.com/avatar/34e0ff98a2134ddb8321f528880e68aa?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">KVV on <a href="http://terrytao.wordpress.com/books/analysis-ii/#comment-49246">Analysis&nbsp;II</a></td></tr><tr><td title="Terence Tao" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://www.math.ucla.edu/~tao' rel='nofollow'><img alt='' src='http://1.gravatar.com/avatar/3c795880f3b73784a9b75fbff3772701?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://www.math.ucla.edu/~tao' rel='nofollow'>Terence Tao</a> on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49245">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="Terence Tao" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://www.math.ucla.edu/~tao' rel='nofollow'><img alt='' src='http://1.gravatar.com/avatar/3c795880f3b73784a9b75fbff3772701?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://www.math.ucla.edu/~tao' rel='nofollow'>Terence Tao</a> on <a href="http://terrytao.wordpress.com/2010/12/22/outliers-in-the-spectrum-of-iid-matrices-with-bounded-rank-permutations/#comment-49244">Outliers in the spectrum of ii&hellip;</a></td></tr><tr><td title="Pedro Lauridsen Ribeiro" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://www.desy.de/~pribeiro' rel='nofollow'><img alt='' src='http://0.gravatar.com/avatar/03935dda8f945df44d35c300f42e131e?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://www.desy.de/~pribeiro' rel='nofollow'>Pedro Lauridsen Ribe&hellip;</a> on <a href="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/#comment-49238">The Bourgain-Guth argument for&hellip;</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/#comment-49237">245A, Notes 1: Lebesgue&nbsp;m&hellip;</a></td></tr><tr><td title="Benaych-Georges" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://www.cmapx.polytechnique.fr/~benaych/' rel='nofollow'><img alt='' src='http://0.gravatar.com/avatar/0011985460c0eca3dfd231047cf277f7?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://www.cmapx.polytechnique.fr/~benaych/' rel='nofollow'>Benaych-Georges</a> on <a href="http://terrytao.wordpress.com/2010/12/22/outliers-in-the-spectrum-of-iid-matrices-with-bounded-rank-permutations/#comment-49234">Outliers in the spectrum of ii&hellip;</a></td></tr><tr><td title="J.P. McCarthy" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://irishjip.wordpress.com' rel='nofollow'><img alt='' src='http://1.gravatar.com/avatar/339b183e12491a824f86a1cfde24f420?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></a></td><td class="recentcommentstextend"><a href='http://irishjip.wordpress.com' rel='nofollow'>J.P. McCarthy</a> on <a href="http://terrytao.wordpress.com/books/analysis-i/#comment-49233">Analysis&nbsp;I</a></td></tr><tr><td title="The Euler-Arnold Equation &laquo; Sergeysk&#039;s Blog" class="recentcommentsavatarend" style="height:32px; width:32px"><a href='http://sergeysk.wordpress.com/2010/12/29/the-euler-arnold-equation/' rel='nofollow'></a></td><td class="recentcommentstextend"><a href='http://sergeysk.wordpress.com/2010/12/29/the-euler-arnold-equation/' rel='nofollow'>The Euler-Arnold Equ&hellip;</a> on <a href="http://terrytao.wordpress.com/2010/06/07/the-euler-arnold-equation/#comment-49224">The Euler-Arnold&nbsp;equation</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/books/analysis-i/#comment-49223">Analysis&nbsp;I</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/books/analysis-i/#comment-49222">Analysis&nbsp;I</a></td></tr><tr><td title="" class="recentcommentsavatarend" style="height:32px; width:32px"><img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' /></td><td class="recentcommentstextend">Anonymous on <a href="http://terrytao.wordpress.com/books/analysis-i/#comment-49221">Analysis&nbsp;I</a></td></tr></table>
+	</div><div id="search-2" class="widget widget_search"><div class="searchbox">
+	<form method="get" id="searchform" action="/"><fieldset>
+		<input type="text" value="" name="s" id="s" tabindex="21" />
+		<input type="submit" id="searchsubmit" value="Search" tabindex="22" />
+	</fieldset></form>
+</div></div><div id="linkcat-198071" class="widget widget_links"><h3>Articles by others</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.washingtonpost.com/wp-dyn/content/article/2007/04/04/AR2007040401721.html">Gene Weingarten &#8211; Pearls before breakfast</a></li>
+<li><a href="http://chem.tufts.edu/AnswersInScience/RelativityofWrong.htm">Isaac Asimov &#8211; The relativity of wrong</a></li>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2007/02/25/the-cult-of-genius/">Julianne Dalcanton &#8211; The cult of genius</a></li>
+<li><a href="http://www.edge.org/3rd_culture/taleb08/taleb08_index.html">Nassim Taleb &#8211; The fourth quadrant: a map of the limits of statistics</a></li>
+<li><a href="http://nymag.com/news/features/27840/">Po Bronson &#8211; How not to talk to your kids</a></li>
+<li><a href="http://scottaaronson.com/blog/?p=304">Scott Aaronson &#8211; Ten signs a claimed mathematical proof is wrong</a></li>
+<li><a href="http://arxiv.org/abs/math.HO/9404236">William Thurston &#8211; On proof and progress in mathematics</a></li>
+
+	</ul>
+</div>
+<div id="linkcat-5580" class="widget widget_links"><h3>Diversions</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://abstrusegoose.com/">Abstruse Goose</a></li>
+<li><a href="http://www.gamereclaim.com/2008/10/128/" title="A game with real-world physics">Assembler</a></li>
+<li><a href="http://www.factcheck.org/">Factcheck.org</a></li>
+<li><a href="http://www.fivethirtyeight.com/" title="Politics done right">FiveThirtyEight</a></li>
+<li><a href="http://www.gapminder.org/" title="A good example of the power of graphical presentation software">Gapminder</a></li>
+<li><a href="http://www.planarity.net/" title="A simple game based on planar graphs">Planarity</a></li>
+<li><a href="http://politifact.com/truth-o-meter/" title="Sorting out the truth in politics">PolitiFact</a></li>
+<li><a href="http://www.qi.com/" title="An eclectic quiz show, hosted by Stephen Fry.">Quite Interesting</a></li>
+<li><a href="http://www.snopes.com/" title="Urban legends reference pages">snopes</a></li>
+<li><a href="http://strangemaps.wordpress.com/">Strange maps</a></li>
+<li><a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/Tropes" title="A wiki for standardised tropes in storytelling, especially in television">Television tropes and idioms</a></li>
+<li><a href="http://www.thedailyshow.com/" title="Current Events &amp; Pop Culture, Comedy &amp; Fake News">The Daily Show with Jon Stewart</a></li>
+<li><a href="http://www.economist.com/" title="Analysis of world business and current affairs">The Economist</a></li>
+<li><a href="http://www.theonion.com/content/index" title="America&#8217;s finest news source">The Onion</a></li>
+<li><a href="http://www.straightdope.com/" title="Fighting ignorance since 1973">The Straight Dope</a></li>
+<li><a href="http://www.thislife.org/Radio_Episode.aspx?episode=355" title="An hour in length, but well worth it">This American Life on the financial crisis I</a></li>
+<li><a href="http://www.thislife.org/Radio_Episode.aspx?sched=1263" title="Another hour in length, but also well worth it">This American Life on the financial crisis II</a></li>
+<li><a href="http://www.xkcd.com/" title="A webcomic of romance, sarcasm, math, and language">xkcd</a></li>
+
+	</ul>
+</div>
+<div id="linkcat-3582" class="widget widget_links"><h3>Mathematics</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://11011110.livejournal.com/" title="David Eppstein&#8217;s blog">0xDE</a></li>
+<li><a href="http://themathingpot.wordpress.com/" title="A group blog about mathematics">A mathematical melting pot</a></li>
+<li><a href="http://hilbertthm90.wordpress.com/" title="Musings on art, philosophy, mathematics, and physics">A Mind for Madness</a></li>
+<li><a href="http://mzargar.wordpress.com/" title="Olympiad level mathematical problems">A Portion of the Book</a></li>
+<li><a href="http://sunejakobsen.wordpress.com/">Absolutely useless</a></li>
+<li><a href="http://mathgradblog.williams.edu/" title="by and for math grad students">AMS Graduate Student Blog</a></li>
+<li><a href="http://pjm.math.berkeley.edu/apde/about/journal/about.html" title="A new journal in analysis &amp; PDE (I am one of the editors), run by and for mathematicians">Analysis &amp; PDE</a></li>
+<li><a href="http://tosio.math.utoronto.ca/wiki/index.php/Conferences" title="A list of upcoming conferences in analysis &amp; PDE">Analysis &amp; PDE Conferences</a></li>
+<li><a href="http://qchu.wordpress.com/" title="Mathematicians are annoyingly precise.">Annoying Precision</a></li>
+<li><a href="http://www.arsmathematica.net/" title="Dedicated to the mathematical arts.">Ars Mathematica</a></li>
+<li><a href="http://avzel.blogspot.com/" title="Andrei Zelevinsky&#8217;s blog (in Russian)">Avzel&#039;s journal</a></li>
+<li><a href="http://williewong.wordpress.com/">Bubbles Bad; Ripples Good</a></li>
+<li><a href="http://amathew.wordpress.com/" title="Thoughts on mathematics">Climbing Mount Bourbaki</a></li>
+<li><a href="http://coloquiooleis.wordpress.com/" title="los seguidores de Manolo (Spanish)">Coloquio Oleis</a></li>
+<li><a href="http://gilkalai.wordpress.com/" rel="friend colleague" title="Gil Kalai&#8217;s blog">Combinatorics and more</a></li>
+<li><a href="http://www.compressedsensing.com/" title="Maintained by Rice university">Compressed sensing resources</a></li>
+<li><a href="http://weblog.fortnow.com/" title="by Lance Fortnow and Bill Gasarch">Computational Complexity</a></li>
+<li><a href="http://concretenonsense.wordpress.com/" title="A group blog about mathematics">Concrete nonsense</a></li>
+<li><a href="http://deltaepsilons.wordpress.com/" title="Mathematical research and problem solving">Delta epsilons</a></li>
+<li><a href="http://detexify.kirelabs.org/classify.html" title="Latex symbol classifier">Detexify</a></li>
+<li><a href="http://tosio.math.toronto.edu/wiki/index.php/Main_Page" title="A wiki for nonlinear dispersive and wave equations">DispersiveWiki</a></li>
+<li><a href="http://matheuscmss.wordpress.com/" title="Carlos Matheus&#8217; blog">Disquisitiones Mathematicae</a></li>
+<li><a href="http://embuchestissues.wordpress.com/">Embûches tissues</a></li>
+<li><a href="http://blogs.ethz.ch/kowalski/" title="Emmanuel Kowalski&#8217;s blog">Emmanuel Kowalski&#8217;s blog</a></li>
+<li><a href="http://equatorialmaths.wordpress.com/" title="Mathematics, teaching, brain meltdown">Equatorial Mathematics</a></li>
+<li><a href="http://blogs.williams.edu/Morgan/" title="Math, Teaching, and Other Items of Interest">Frank Morgan&#8217;s blog</a></li>
+<li><a href="http://gerardbesson.wordpress.com/">Gérard Besson&#039;s Blog</a></li>
+<li><a href="http://rjlipton.wordpress.com/" title="http://rjlipton.wordpress.com/">Gödel’s Lost Letter and P=NP</a></li>
+<li><a href="http://392c.wordpress.com/" title="Residual finiteness and word-hyperbolic groups">Geometric Group Theory</a></li>
+<li><a href="http://lamington.wordpress.com/" title="Geometry, explored in examples; and commentary on recent developments (by Danny Calegari)">Geometry and the imagination</a></li>
+<li><a href="http://godplaysdice.blogspot.com/" title="A random walk through mathematics &#8212; mostly through the random part.">God Plays Dice</a></li>
+<li><a href="http://scienceblogs.com/goodmath/" title="Finding the fun in good math; squashing bad math and the fools who promote it">Good Math, Bad Math</a></li>
+<li><a href="http://alanrendall.wordpress.com/" title="Alan Rendall&#8217;s blog">Hydrobates</a></li>
+<li><a href="http://yannisparissis.wordpress.com/" title="A day in the life of a mathematician. From an analysis point of view.">I Woke Up In A Strange Place</a></li>
+<li><a href="http://images.math.cnrs.fr/" title="La recherches mathématiques en mots et en images (in French)">Images des mathématiques</a></li>
+<li><a href="http://lucatrevisan.wordpress.com/" title="Luca Trevisan&#8217;s blog">In theory</a></li>
+<li><a href="http://oldweb.cecm.sfu.ca/projects/ISC/ISCmain.html" title="Converts a floating point decimal into a symbolic expression">Inverse Symbolic Calculator</a></li>
+<li><a href="http://www.ams.org/jams/" title="A premier journal in mathematics;I am one of the editors">Journal of the American Mathematical Society</a></li>
+<li><a href="http://lucatrevisan.wordpress.com/latex-to-wordpress/" title="Luca Trevisan&#8217;s python script for converting LaTeX to wordpress posts">LaTeX to Wordpress</a></li>
+<li><a href="http://yetaspblog.wordpress.com/" title="Yet Another Signal Processing (and Applied Math) blog">Le Petit Chercheur Illustré</a></li>
+<li><a href="http://lewko.wordpress.com/">Lewko&#039;s blog</a></li>
+<li><a href="http://blog.djalil.chafai.net/" title="WordPress weblog of Djalil Chafaï">Libres pensées d’un mathématicien ordinaire</a></li>
+<li><a href="http://londonnumbertheory.wordpress.com/" title="Things for number theorists to do in London">London number theory</a></li>
+<li><a href="http://ldtopology.wordpress.com/" title="Recent Progress and Open Problems">Low Dimensional Topology</a></li>
+<li><a href="http://maaminutemath.blogspot.com/" title="Daily problems from the AMC">MAA MinuteMath</a></li>
+<li><a href="http://mathoverflow.net/">Math Overflow</a></li>
+<li><a href="http://matthewkahle.wordpress.com/" title="Mathematical musings, a place for informal mathematical writings: expository, puzzles, art, and open problems. By Matthew Kahle.">Mathematical musings</a></li>
+<li><a href="http://wiki.henryfarrell.net/wiki/index.php/Mathematics/Statistics" title="A very partial list &#8211; needs contributions">Mathematics blogs wiki</a></li>
+<li><a href="http://www.learner.org/courses/mathilluminated/" title="A thirteen-part series for adult learners and high school teachers">Mathematics Illuminated</a></li>
+<li><a href="http://austmaths.wordpress.com/" title="Current issues, news, and events in Australian mathematical research and education">Mathematics in Australia</a></li>
+<li><a href="http://notable.math.ucdavis.edu/wiki/Mathematics_Jobs_Wiki" title="Rumours and authoritative information about the mathematics jobs market">Mathematics Jobs Wiki</a></li>
+<li><a href="http://math.stackexchange.com/">Mathematics Stack Exchange</a></li>
+<li><a href="http://micromath.wordpress.com/" title="Atomic objects, structures and concepts of mathematics">Mathematics under the Microscope</a></li>
+<li><a href="http://www.scienceblogs.de/mathlog/" title="Thilo Kuessner&#8217;s blog (in German)">Mathlog</a></li>
+<li><a href="http://mathonline.andreaferretti.it/">MathOnline</a></li>
+<li><a href="http://homotopical.wordpress.com/" title="Cohomology in algebraic geometry">Motivic stuff</a></li>
+<li><a href="http://muchado.blogli.co.il/" title="On mathematics and other animals (in Hebrew)">Much ado about nothing</a></li>
+<li><a href="http://scherk.pbwiki.com/" title="A wiki for online multiple choice quizzes">Multiple Choice Quiz Wiki</a></li>
+<li><a href="http://www.neverendingbooks.org/" title="lieven le bruyn’s blog">neverendingbooks</a></li>
+<li><a href="http://ncatlab.org/nlab/show/HomePage" title="Collaborative work on Mathematics, Physics and Philosophy">nLab</a></li>
+<li><a href="http://noncommutativegeometry.blogspot.com/" title="A group blog by several mathematicians, including Alain Connes">Noncommutative geometry blog</a></li>
+<li><a href="http://nuit-blanche.blogspot.com/" title="Focused on technical issues in compressed sensing and related topics">Nuit-blanche</a></li>
+<li><a href="http://www.numbertheory.org/" title="Resources for number theorists">Number theory web</a></li>
+<li><a href="http://outofprintmath.blogspot.com/" title="Bringing out-of-print math books into print – Vote for which book you would like to see come back into print">outofprintmath</a></li>
+<li><a href="http://cameroncounts.wordpress.com/" title="Counting the things that need to be counted">Peter Cameron&#039;s Blog</a></li>
+<li><a href="http://philippelefloch.wordpress.com/">Phillipe LeFloch&#039;s blog</a></li>
+<li><a href="http://quomodocumque.wordpress.com/" title="Jordan Ellenberg&#8217;s blog">Quomodocumque</a></li>
+<li><a href="http://stochastix.wordpress.com/" title="scientia potentia est">Reasonable Deviations</a></li>
+<li><a href="http://borcherds.wordpress.com/" title="Richard Borcherds&#8217; blog">Richard Borcherds&#8217; blog</a></li>
+<li><a href="http://rigtriv.wordpress.com/" title="A group blog in mathematics">Rigorous Trivialities</a></li>
+<li><a href="http://sagemath.blogspot.com/" title="A blog by William Stein">Sage: Open Source Mathematical Software</a></li>
+<li><a href="http://sbseminar.wordpress.com" title="A group maths blog at Berkeley">Secret Blogging Seminar</a></li>
+<li><a href="http://www.scottaaronson.com/blog/" title="Scott Aaronson&#8217;s blog">Shtetl-Optimized</a></li>
+<li><a href="http://ifwisdomwereteachable.wordpress.com/" title="… we simply try to teach mathematics.">Since it is not&#8230;</a></li>
+<li><a href="http://sketchesoftopology.wordpress.com/" title="Visualizations of low dimensional topology">Sketches of topology</a></li>
+<li><a href="http://math.columbia.edu/~dejong/wordpress/">Stacks Project Blog</a></li>
+<li><a href="http://symomega.wordpress.com/">SymOmega</a></li>
+<li><a href="http://tcsmath.wordpress.com" title="Some mathematics of theoretical computer science">tcs math</a></li>
+<li><a href="http://tex.stackexchange.com/" title="A MathOverflow-like site for TeX">TeX, LaTeX, and friends</a></li>
+<li><a href="http://ilaba.wordpress.com/" title="Izabella Laba&#8217;s blog">The accidental mathematician</a></li>
+<li><a href="http://cornellmath.wordpress.com/" title="A group maths blog at Cornell">The Everything Seminar</a></li>
+<li><a href="http://geomblog.blogspot.com/" title="Ruminations on computational geometry, algorithms, theoretical computer science and life">The Geomblog</a></li>
+<li><a href="http://golem.ph.utexas.edu/category/" title="A group blog on math, physics and philosophy">The n-Category Café</a></li>
+<li><a href="http://www.noncommutative.org/" title="A noncommutative geometry group blog">The n-geometry cafe</a></li>
+<li><a href="http://polylogblog.wordpress.com/" title="streams, sketches, samples, sensing etc.">The polylogblog</a></li>
+<li><a href="http://polymathprojects.wordpress.com/" title="A central location for proposing, planning, and running polymath projects">The polymath blog</a></li>
+<li><a href="http://michaelnielsen.org/polymath1/index.php?title=Main_Page" title="The wiki for polymath projects.">The polymath wiki</a></li>
+<li><a href="http://www.tricki.org/" title="A repository of mathematical know-how">The Tricki</a></li>
+<li><a href="http://twofoldgaze.wordpress.com/">The twofold gaze</a></li>
+<li><a href="http://unapologetic.wordpress.com/" title="Mathematics for the interested.">The Unapologetic Mathematician</a></li>
+<li><a href="http://cstheory.stackexchange.com/" title="A MathOverflow-like site for TCS">Theoretical Computer Science &#8211; StackExchange</a></li>
+<li><a href="http://gowers.wordpress.com" title="Mathematics related discussions (and the Princeton Companion to Mathematics)">Tim Gowers&#8217; blog</a></li>
+<li><a href="http://www.dpmms.cam.ac.uk/~wtg10/mathsindex.html" title="Informal discussions of elementary (and sometimes deep) mathematics">Tim Gowers&#8217; mathematical discussions</a></li>
+<li><a href="http://topologicalmusings.wordpress.com/" title="Just another mathematical blog">Todd and Vishal’s blog</a></li>
+<li><a href="http://vuhavan.wordpress.com/" title="In vietnamese">Van Vu&#039;s blog</a></li>
+<li><a href="http://vieuxgirondin.wordpress.com/" title="A lazy mathematician&#8217;s blog">Vieux Girondin</a></li>
+<li><a href="http://vivatsgasse7.wordpress.com/" title="A group maths blog at Bonn">Vivatsgasse 7</a></li>
+<li><a href="http://blogs.williams.edu/math/" title="Mathematics and Statistics at Williams College">Williams College Math/Stat Blog</a></li>
+<li><a href="http://www.wiskundemeisjes.nl/" title="A group maths blog from U. Leiden (in Dutch)">Wiskundemeisjes</a></li>
+<li><a href="http://xorshammer.wordpress.com/">XOR&#8217;s hammer</a></li>
+
+	</ul>
+</div>
+<div id="linkcat-203526" class="widget widget_links"><h3>Selected articles</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://terrytao.wordpress.com/2009/09/17/a-speech-for-the-american-academy-of-arts-and-sciences/">American Academy of Arts and Sciences speech</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/09/05/amplification-arbitrage-and-the-tensor-power-trick/" title="A discussion of one of my favourite types of trick in analysis">Amplification, arbitrage, and the tensor power trick</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/12/09/an-airport-inspired-puzzle/">An airport-inspired puzzle</a></li>
+<li><a href="http://terrytao.wordpress.com/2009/07/03/benfords-law-zipfs-law-and-the-pareto-distribution/">Benford&#039;s law, Zipf&#039;s law, and the Pareto distribution</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/04/13/compressed-sensing-and-single-pixel-cameras/" title="A non-technical introduction to compressed sensing">Compressed sensing and single-pixel cameras</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/12/28/einsteins-derivation-of-emc2/">Einstein&#8217;s derivation of E=mc^2</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/12/14/on-multiple-choice-questions-in-mathematics/">On multiple choice questions in mathematics</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/02/26/quantum-mechanics-and-tomb-raider/" title="Uses Tomb Raider to construct a world with quantum-like effects.">Quantum mechanics and Tomb Raider</a></li>
+<li><a href="http://terrytao.wordpress.com/2009/03/23/sailing-into-the-wind-or-faster-than-the-wind/" title="An idealised mathematical model of sailing">Sailing into the wind, or faster than the wind</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/04/05/simons-lecture-i-structure-and-randomness-in-fourier-analysis-and-number-theory/" title="A set of three lectures on structure and randomness in mathematics">Simons lectures on structure and randomness</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/10/10/small-samples-and-the-margin-of-error/">Small samples, and the margin of error</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/05/23/soft-analysis-hard-analysis-and-the-finite-convergence-principle/" title="A discussion of soft and hard analysis">Soft analysis, hard analysis, and the finite convergence principle</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/02/05/the-blue-eyed-islanders-puzzle/" title="A remarkably subtle and unintuitive logic puzzle">The blue-eyed islanders puzzle</a></li>
+<li><a href="http://terrytao.wordpress.com/2009/09/03/the-cosmic-distance-ladder-2/" title="Some slides on the cosmic distance ladder in astronomy">The cosmic distance ladder</a></li>
+<li><a href="http://terrytao.wordpress.com/2009/05/04/the-federal-budget-rescaled/">The federal budget, rescaled</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/06/25/ultrafilters-nonstandard-analysis-and-epsilon-management/" title="Nonstandard analysis, from a hard analysis perspective.">Ultrafilters, non-standard analysis, and epsilon management</a></li>
+<li><a href="http://terrytao.wordpress.com/2008/09/27/what-is-a-gauge/">What is a gauge?</a></li>
+<li><a href="http://arxiv.org/abs/math.HO/0702396" title="An essay on what good mathematics is, and whether we should define it at all">What is good mathematics?</a></li>
+<li><a href="http://terrytao.wordpress.com/2007/03/18/why-global-regularity-for-navier-stokes-is-hard/" title="A detailed discussion of the global regularity problem for Navier-Stokes">Why global regularity for Navier-Stokes is hard</a></li>
+
+	</ul>
+</div>
+<div id="linkcat-702846" class="widget widget_links"><h3>The sciences</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://wiki.henryfarrell.net/wiki/index.php/Main_Page" title="A wiki for academic blogs">Academic blogs</a></li>
+<li><a href="http://www.amacad.org/">American Academy of Arts and Sciences</a></li>
+<li><a href="http://www.science.org.au/">Australian Academy of Science</a></li>
+<li><a href="http://blogs.discovermagazine.com/badastronomy/" title="Phil Plait&#8217;s blog">Bad Astronomy</a></li>
+<li><a href="http://www.nasonline.org/site/PageServer">National Academy of Science</a></li>
+<li><a href="http://www.realclimate.org/" title="Climate science, minus (most of the) politics">RealClimate</a></li>
+<li><a href="http://www.schneier.com/blog/" title="Bruce Schneier on security issues">Schneier on security</a></li>
+<li><a href="http://www.sciencebasedmedicine.org/" title="Exploring issues and controversies in the relationship between science and medicine">Science-Based Medicine</a></li>
+<li><a href="http://chronicle.com/free/v49/i21/21b02001.htm" title="A Chronicle article from 2003; still timely">Seven warning signs of bogus science</a></li>
+<li><a href="http://royalsociety.org/">The Royal Society</a></li>
+<li><a href="http://blog.lib.umn.edu/denis036/thisweekinevolution/" title="Recent papers in evolutionary biology">This week in evolution</a></li>
+<li><a href="http://www.tolweb.org/tree/" title="Explore the tree of life">Tree of Life Web Project</a></li>
+
+	</ul>
+</div>
+		<div id="top-posts" class="widget widget_stats_topposts">			<h3>Top Posts</h3>			<ul><li><a href='http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/'>The Bourgain-Guth argument for proving restriction theorems</a></li><li><a href='http://terrytao.wordpress.com/career-advice/'>Career advice</a></li><li><a href='http://terrytao.wordpress.com/books/'>Books</a></li><li><a href='http://terrytao.wordpress.com/career-advice/does-one-have-to-be-a-genius-to-do-maths/'>Does one have to be a genius to do maths?</a></li><li><a href='http://terrytao.wordpress.com/2010/12/22/outliers-in-the-spectrum-of-iid-matrices-with-bounded-rank-permutations/'>Outliers in the spectrum of iid matrices with bounded rank perturbations</a></li><li><a href='http://terrytao.wordpress.com/advice-on-writing-papers/'>On writing</a></li><li><a href='http://terrytao.wordpress.com/2010/09/09/245a-notes-1-lebesgue-measure/'>245A, Notes 1: Lebesgue measure</a></li><li><a href='http://terrytao.wordpress.com/books/an-epsilon-of-room-pages-from-year-three-of-a-mathematical-blog/'>An epsilon of room: pages from year three of a mathematical blog</a></li><li><a href='http://terrytao.wordpress.com/2010/11/20/the-guth-katz-bound-on-the-erdos-distance-problem/'>The Guth-Katz bound on the Erdős distance problem</a></li><li><a href='http://terrytao.wordpress.com/books/analysis-i/'>Analysis I</a></li></ul>		</div><div id="archives-2" class="widget widget_archive"><h3>Archives</h3>		<ul>
+			<li><a href='http://terrytao.wordpress.com/2010/12/' title='December 2010'>December 2010</a>&nbsp;(5)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/11/' title='November 2010'>November 2010</a>&nbsp;(6)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/10/' title='October 2010'>October 2010</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/09/' title='September 2010'>September 2010</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/08/' title='August 2010'>August 2010</a>&nbsp;(3)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/07/' title='July 2010'>July 2010</a>&nbsp;(4)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/06/' title='June 2010'>June 2010</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/05/' title='May 2010'>May 2010</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/04/' title='April 2010'>April 2010</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/03/' title='March 2010'>March 2010</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/02/' title='February 2010'>February 2010</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2010/01/' title='January 2010'>January 2010</a>&nbsp;(12)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/12/' title='December 2009'>December 2009</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/11/' title='November 2009'>November 2009</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/10/' title='October 2009'>October 2009</a>&nbsp;(15)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/09/' title='September 2009'>September 2009</a>&nbsp;(6)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/08/' title='August 2009'>August 2009</a>&nbsp;(13)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/07/' title='July 2009'>July 2009</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/06/' title='June 2009'>June 2009</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/05/' title='May 2009'>May 2009</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/04/' title='April 2009'>April 2009</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/03/' title='March 2009'>March 2009</a>&nbsp;(14)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/02/' title='February 2009'>February 2009</a>&nbsp;(13)</li>
+	<li><a href='http://terrytao.wordpress.com/2009/01/' title='January 2009'>January 2009</a>&nbsp;(18)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/12/' title='December 2008'>December 2008</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/11/' title='November 2008'>November 2008</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/10/' title='October 2008'>October 2008</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/09/' title='September 2008'>September 2008</a>&nbsp;(5)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/08/' title='August 2008'>August 2008</a>&nbsp;(6)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/07/' title='July 2008'>July 2008</a>&nbsp;(7)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/06/' title='June 2008'>June 2008</a>&nbsp;(8)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/05/' title='May 2008'>May 2008</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/04/' title='April 2008'>April 2008</a>&nbsp;(12)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/03/' title='March 2008'>March 2008</a>&nbsp;(12)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/02/' title='February 2008'>February 2008</a>&nbsp;(13)</li>
+	<li><a href='http://terrytao.wordpress.com/2008/01/' title='January 2008'>January 2008</a>&nbsp;(17)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/12/' title='December 2007'>December 2007</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/11/' title='November 2007'>November 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/10/' title='October 2007'>October 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/09/' title='September 2007'>September 2007</a>&nbsp;(7)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/08/' title='August 2007'>August 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/07/' title='July 2007'>July 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/06/' title='June 2007'>June 2007</a>&nbsp;(6)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/05/' title='May 2007'>May 2007</a>&nbsp;(10)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/04/' title='April 2007'>April 2007</a>&nbsp;(11)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/03/' title='March 2007'>March 2007</a>&nbsp;(9)</li>
+	<li><a href='http://terrytao.wordpress.com/2007/02/' title='February 2007'>February 2007</a>&nbsp;(4)</li>
+		</ul>
+</div><div id="categories-1" class="widget widget_categories"><h3>Categories</h3>		<ul>
+			<li class="cat-item cat-item-162892"><a href="http://terrytao.wordpress.com/category/expository/" title="Expository papers, notes, discussions, etc.">expository</a> (100)
+<ul class='children'>
+	<li class="cat-item cat-item-4841"><a href="http://terrytao.wordpress.com/category/expository/tricks/" title="Articles for the Tricks Wiki">tricks</a> (7)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-279350"><a href="http://terrytao.wordpress.com/category/guest-blog/" title="Posts by a guest speaker">guest blog</a> (7)
+</li>
+	<li class="cat-item cat-item-3582"><a href="http://terrytao.wordpress.com/category/mathematics/" title="All posts and links of a mathematical nature">Mathematics</a> (387)
+<ul class='children'>
+	<li class="cat-item cat-item-1702720"><a href="http://terrytao.wordpress.com/category/mathematics/mathac/" title="Commutative rings, modules, ideals, homological algebra, computational aspects, invariant theory, connections to algebraic geometry and combinatorics">math.AC</a> (3)
+</li>
+	<li class="cat-item cat-item-1440174"><a href="http://terrytao.wordpress.com/category/mathematics/mathag/" title="Algebraic varieties, stacks, sheaves, schemes, moduli spaces, complex geometry, quantum cohomology
+">math.AG</a> (14)
+</li>
+	<li class="cat-item cat-item-1440182"><a href="http://terrytao.wordpress.com/category/mathematics/mathap/" title="Existence and uniquness, boundary conditions, linear and non-linear operators, stability, soliton theory, integrable PDE&#039;s, conservation laws, qualitative dynamics
+">math.AP</a> (65)
+</li>
+	<li class="cat-item cat-item-1702715"><a href="http://terrytao.wordpress.com/category/mathematics/mathat/" title="Homotopy theory, homological algebra, algebraic treatments of manifolds">math.AT</a> (12)
+</li>
+	<li class="cat-item cat-item-1440094"><a href="http://terrytao.wordpress.com/category/mathematics/mathca/" title="Special functions, orthogonal polynomials, harmonic analysis, ODE&#039;s, differential relations, calculus of variations, approximations, expansions, asymptotics
+">math.CA</a> (77)
+</li>
+	<li class="cat-item cat-item-1440100"><a href="http://terrytao.wordpress.com/category/mathematics/mathco/" title="Discrete mathematics, graph theory, enumeration, combinatorial optimization, Ramsey theory, combinatorial game theory">math.CO</a> (97)
+</li>
+	<li class="cat-item cat-item-1606003"><a href="http://terrytao.wordpress.com/category/mathematics/mathct/" title="Enriched categories, topoi, abelian categories, monoidal categories, homological algebra">math.CT</a> (3)
+</li>
+	<li class="cat-item cat-item-1440190"><a href="http://terrytao.wordpress.com/category/mathematics/mathcv/" title="Holomorphic functions, automorphic group actions and forms, pseudoconvexity, complex geometry, analytic spaces, analytic sheaves">math.CV</a> (7)
+</li>
+	<li class="cat-item cat-item-1440342"><a href="http://terrytao.wordpress.com/category/mathematics/mathdg/" title="Complex, contact, Riemannian, pseudo-Riemannian and Finsler geometry, relativity, gauge theory, global analysis
+">math.DG</a> (27)
+</li>
+	<li class="cat-item cat-item-1440109"><a href="http://terrytao.wordpress.com/category/mathematics/mathds/" title="Dynamics of differential equations and flows, mechanics, classical few-body problems, iterations, complex dynamics, delayed differential equations">math.DS</a> (49)
+</li>
+	<li class="cat-item cat-item-1702685"><a href="http://terrytao.wordpress.com/category/mathematics/mathfa/" title="Banach spaces, function spaces, real functions, integral transforms, theory of distributions, measure theory">math.FA</a> (19)
+</li>
+	<li class="cat-item cat-item-1440160"><a href="http://terrytao.wordpress.com/category/mathematics/mathgm/" title="Mathematical material of general interest, topics not covered elsewhere">math.GM</a> (7)
+</li>
+	<li class="cat-item cat-item-1702723"><a href="http://terrytao.wordpress.com/category/mathematics/mathgn/" title="Continuum theory, point-set topology, spaces with algebraic structure, foundations, dimension theory, local and global properties
+">math.GN</a> (11)
+</li>
+	<li class="cat-item cat-item-1440379"><a href="http://terrytao.wordpress.com/category/mathematics/mathgr/" title="Finite groups, topological groups, representation theory, cohomology, classification and structure
+">math.GR</a> (26)
+</li>
+	<li class="cat-item cat-item-1440175"><a href="http://terrytao.wordpress.com/category/mathematics/mathgt/" title="Manifolds, orbifolds, polyhedra, cell complexes, foliations, geometric structures
+">math.GT</a> (9)
+</li>
+	<li class="cat-item cat-item-1440153"><a href="http://terrytao.wordpress.com/category/mathematics/mathho/" title="Biographies, philosophy of mathematics, mathematics education, recreational mathematics, communication of mathematics
+">math.HO</a> (8)
+</li>
+	<li class="cat-item cat-item-1702724"><a href="http://terrytao.wordpress.com/category/mathematics/mathit/" title="Covers theoretical and experimental aspects of information theory and coding.">math.IT</a> (8)
+</li>
+	<li class="cat-item cat-item-1440125"><a href="http://terrytao.wordpress.com/category/mathematics/mathlo/" title="Logic, set theory, point-set topology, formal mathematics
+">math.LO</a> (30)
+</li>
+	<li class="cat-item cat-item-1440121"><a href="http://terrytao.wordpress.com/category/mathematics/mathmg/" title="Euclidean, hyperbolic, discrete, convex, coarse geometry, comparisons in Riemannian geometry, symmetric spaces
+">math.MG</a> (20)
+</li>
+	<li class="cat-item cat-item-1440193"><a href="http://terrytao.wordpress.com/category/mathematics/mathmp/" title="Mathematical methods in quantum field theory, quantum mechanics, statistical mechanics, condensed matter, nuclear and atomic physics
+">math.MP</a> (15)
+</li>
+	<li class="cat-item cat-item-1440120"><a href="http://terrytao.wordpress.com/category/mathematics/mathna/" title="Numerical algorithms for problems in analysis and algebra, scientific computation
+">math.NA</a> (9)
+</li>
+	<li class="cat-item cat-item-1440053"><a href="http://terrytao.wordpress.com/category/mathematics/mathnt/" title="Prime numbers, diophantine equations, analytic number theory, algebraic number theory, arithmetic geometry, Galois theory
+">math.NT</a> (43)
+</li>
+	<li class="cat-item cat-item-1702729"><a href="http://terrytao.wordpress.com/category/mathematics/mathoa/" title="Algebras of operators on Hilbert space, C^*-algebras, von Neumann algebras, non-commutative geometry">math.OA</a> (11)
+</li>
+	<li class="cat-item cat-item-1440146"><a href="http://terrytao.wordpress.com/category/mathematics/mathpr/" title="Theory and applications of probability and stochastic processes: e.g. central limit theorems, large deviations, stochastic differential equations, models from statistical mechanics, queuing theory">math.PR</a> (53)
+</li>
+	<li class="cat-item cat-item-1440376"><a href="http://terrytao.wordpress.com/category/mathematics/mathqa/" title="Quantum groups, skein theories, operadic and diagrammatic algebra, quantum field theory">math.QA</a> (3)
+</li>
+	<li class="cat-item cat-item-1440395"><a href="http://terrytao.wordpress.com/category/mathematics/mathra/" title="Non-commutative rings and algebras, non-associative algebras, universal algebra and lattice theory, linear algebra, semigroups
+">math.RA</a> (11)
+</li>
+	<li class="cat-item cat-item-1702678"><a href="http://terrytao.wordpress.com/category/mathematics/mathrt/" title="Linear representations of algebras and groups, Lie theory, associative algebras, multilinear algebra">math.RT</a> (5)
+</li>
+	<li class="cat-item cat-item-1702696"><a href="http://terrytao.wordpress.com/category/mathematics/mathsg/" title="Hamiltonian systems, symplectic flows, classical integrable systems">math.SG</a> (3)
+</li>
+	<li class="cat-item cat-item-1440331"><a href="http://terrytao.wordpress.com/category/mathematics/mathsp/" title="Schrodinger operators, operators on manifolds, general differential operators, numerical studies, integral operators, discrete models, resonances, non-self-adjoint operators, random operators/matrices">math.SP</a> (23)
+</li>
+	<li class="cat-item cat-item-1702731"><a href="http://terrytao.wordpress.com/category/mathematics/mathst/" title="Applied, computational and theoretical statistics: e.g. statistical inference, regression, time series, multivariate analysis, data analysis, Markov chain Monte Carlo, design of experiments, case studies">math.ST</a> (3)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-47932"><a href="http://terrytao.wordpress.com/category/non-technical/" title="Articles intended for a lay audience">non-technical</a> (85)
+<ul class='children'>
+	<li class="cat-item cat-item-102"><a href="http://terrytao.wordpress.com/category/non-technical/admin/" title="Posts relating to the structure of the blog itself">admin</a> (23)
+</li>
+	<li class="cat-item cat-item-521"><a href="http://terrytao.wordpress.com/category/non-technical/advertising/" title="View all posts filed under advertising">advertising</a> (11)
+</li>
+	<li class="cat-item cat-item-26904563"><a href="http://terrytao.wordpress.com/category/non-technical/diversions-non-technical/" title="View all posts filed under diversions">diversions</a> (4)
+</li>
+	<li class="cat-item cat-item-292"><a href="http://terrytao.wordpress.com/category/non-technical/media/" title="Posts relating to non-technical media, such as print journalism">media</a> (9)
+	<ul class='children'>
+	<li class="cat-item cat-item-5465"><a href="http://terrytao.wordpress.com/category/non-technical/media/journals/" title="Academic journals and publishing">journals</a> (1)
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-21091"><a href="http://terrytao.wordpress.com/category/non-technical/obituary/" title="Notable deaths">obituary</a> (4)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-352"><a href="http://terrytao.wordpress.com/category/opinion/" title="Personal and subjective thoughts on various topics">opinion</a> (25)
+</li>
+	<li class="cat-item cat-item-19368"><a href="http://terrytao.wordpress.com/category/paper/" title="My research and survey papers">paper</a> (102)
+<ul class='children'>
+	<li class="cat-item cat-item-2364"><a href="http://terrytao.wordpress.com/category/paper/book/" title="Posts concerning my books">book</a> (8)
+</li>
+	<li class="cat-item cat-item-349586"><a href="http://terrytao.wordpress.com/category/paper/companion/" title="Articles relating to the Princeton Companion to Mathematics">Companion</a> (13)
+</li>
+	<li class="cat-item cat-item-3251"><a href="http://terrytao.wordpress.com/category/paper/update/" title="Updates and errata for previously announced, uploaded, or published papers or other results">update</a> (9)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-395"><a href="http://terrytao.wordpress.com/category/question/" title="Open problems and questions">question</a> (50)
+<ul class='children'>
+	<li class="cat-item cat-item-123554"><a href="http://terrytao.wordpress.com/category/question/polymath/" title="Massively collaborative mathematical projects">polymath</a> (28)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-739"><a href="http://terrytao.wordpress.com/category/talk/" title="Reports on talks given by myself or other speakers">talk</a> (58)
+<ul class='children'>
+	<li class="cat-item cat-item-1922770"><a href="http://terrytao.wordpress.com/category/talk/dls/" title="Distinguished Lecture Series at UCLA">DLS</a> (19)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1591"><a href="http://terrytao.wordpress.com/category/teaching/" title="Classes and other topics related to teaching">teaching</a> (102)
+<ul class='children'>
+	<li class="cat-item cat-item-41596685"><a href="http://terrytao.wordpress.com/category/teaching/245a-real-analysis/" title="View all posts filed under 245A &#8211; Real analysis">245A &#8211; Real analysis</a> (10)
+</li>
+	<li class="cat-item cat-item-14547275"><a href="http://terrytao.wordpress.com/category/teaching/245b-real-analysis/" title="View all posts filed under 245B &#8211; Real analysis">245B &#8211; Real analysis</a> (19)
+</li>
+	<li class="cat-item cat-item-17974405"><a href="http://terrytao.wordpress.com/category/teaching/245c-real-analysis/" title="View all posts filed under 245C &#8211; Real analysis">245C &#8211; Real analysis</a> (6)
+</li>
+	<li class="cat-item cat-item-3213081"><a href="http://terrytao.wordpress.com/category/teaching/254a-ergodic-theory/" title="My winter 2008 class on topics in ergodic theory">254A &#8211; ergodic theory</a> (18)
+</li>
+	<li class="cat-item cat-item-28369345"><a href="http://terrytao.wordpress.com/category/teaching/254a-random-matrices/" title="View all posts filed under 254A &#8211; random matrices">254A &#8211; random matrices</a> (13)
+</li>
+	<li class="cat-item cat-item-32495288"><a href="http://terrytao.wordpress.com/category/teaching/254b-higher-order-fourier-analysis/" title="View all posts filed under 254B &#8211; Higher order Fourier analysis">254B &#8211; Higher order Fourier analysis</a> (8)
+</li>
+	<li class="cat-item cat-item-5649515"><a href="http://terrytao.wordpress.com/category/teaching/285g-poincare-conjecture/" title="My Spring 2008 class on Perelman&#039;s proof of the Poincare conjecture">285G &#8211; poincare conjecture</a> (20)
+</li>
+	<li class="cat-item cat-item-26480429"><a href="http://terrytao.wordpress.com/category/teaching/logic-reading-seminar/" title="View all posts filed under Logic reading seminar">Logic reading seminar</a> (8)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-200"><a href="http://terrytao.wordpress.com/category/travel/" title="Posts relating to places that I am visiting">travel</a> (25)
+</li>
+		</ul>
+</div><div id="rss-4" class="widget widget_rss"><h3><a class='rsswidget' href='http://buzz.googleapis.com/feeds/114134834346472219368/public/posted' title='Syndicate this content'><img style='background:orange;color:white;border:none;' width='14' height='14' src='http://s.wordpress.com/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='' title=''>Buzz feed</a></h3><ul><li><a class='rsswidget' href='http://www.google.com/buzz/114134834346472219368/Cr5MUB8GAaM/A-dramatic-contrast-between-worst-case-scenario' title=''>Buzz by Terence Tao from Buzz</a> <span class="rss-date">1 October, 2010</span><div class='rssSummary'>A dramatic contrast between worst-case scenario costs and actual costs: the infamous Troubled Assets Relief Program (TARP) from 2008-2010, popularly viewed as a $700 billion bailout to banks, begins winding down this week (with no further outlays permitted), and is now projected to actually have a net cost about $50 billion; when compared against the stabili [&hellip;]</div></li><li><a class='rsswidget' href='http://www.google.com/buzz/114134834346472219368/ECyHjjGbQEo/The-Bourgain-Guth-argument-for-proving-restriction' title=''>Buzz by Terence Tao from What&#039;s new</a> <span class="rss-date">28 December, 2010</span><div class='rssSummary'>The Bourgain-Guth argument for proving restriction theorems</div></li><li><a class='rsswidget' href='http://www.google.com/buzz/114134834346472219368/4pDxqWdcdwk/I-happened-across-this-nice-example-of-a' title=''>Buzz by Terence Tao from Buzz</a> <span class="rss-date">27 December, 2010</span><div class='rssSummary'>I happened across this nice example of a deceptively simple problem in control theory, known as Witsenhausen&#039;s counterexample, that has no known exact optimum (or even an efficient algorithm to come close to an exact optimum).The situation is as follows. One starts with a random input x_0 (of mean zero, with a known variance [; \sigma^2 ;]; \sigma = 5 i [&hellip;]</div></li><li><a class='rsswidget' href='http://www.google.com/buzz/114134834346472219368/4yMCfy2fVQA/I-was-quite-surprised-to-see-a-graph-theory-result' title=''>Buzz by Terence Tao from Buzz</a> <span class="rss-date">26 December, 2010</span><div class='rssSummary'>I was quite surprised to see a graph theory result from 2003 come up in a quiz show (about six minutes in, after a lot of silliness involving tissues).</div></li></ul></div><div id="wp_tag_cloud" class="widget wp_widget_tag_cloud"><h3>Tags</h3><div style="overflow:hidden"><a href='http://terrytao.wordpress.com/tag/additive-combinatorics/' class='tag-link-1830943' title='17 topics' style='font-size: 19.878787878788pt;'>additive combinatorics</a>
+<a href='http://terrytao.wordpress.com/tag/advice/' class='tag-link-157' title='4 topics' style='font-size: 8pt;'>advice</a>
+<a href='http://terrytao.wordpress.com/tag/ben-green/' class='tag-link-1831468' title='13 topics' style='font-size: 17.545454545455pt;'>Ben Green</a>
+<a href='http://terrytao.wordpress.com/tag/circular-law/' class='tag-link-5525501' title='5 topics' style='font-size: 9.6969696969697pt;'>circular law</a>
+<a href='http://terrytao.wordpress.com/tag/compactness/' class='tag-link-2081313' title='5 topics' style='font-size: 9.6969696969697pt;'>compactness</a>
+<a href='http://terrytao.wordpress.com/tag/compressed-sensing/' class='tag-link-1831153' title='8 topics' style='font-size: 13.30303030303pt;'>compressed sensing</a>
+<a href='http://terrytao.wordpress.com/tag/correspondence-principle/' class='tag-link-1831139' title='7 topics' style='font-size: 12.242424242424pt;'>correspondence principle</a>
+<a href='http://terrytao.wordpress.com/tag/eigenvalues/' class='tag-link-1830977' title='6 topics' style='font-size: 11.181818181818pt;'>eigenvalues</a>
+<a href='http://terrytao.wordpress.com/tag/entropy/' class='tag-link-45250' title='6 topics' style='font-size: 11.181818181818pt;'>entropy</a>
+<a href='http://terrytao.wordpress.com/tag/equidistribution/' class='tag-link-1835017' title='8 topics' style='font-size: 13.30303030303pt;'>equidistribution</a>
+<a href='http://terrytao.wordpress.com/tag/ergodic-theory/' class='tag-link-1831136' title='7 topics' style='font-size: 12.242424242424pt;'>ergodic theory</a>
+<a href='http://terrytao.wordpress.com/tag/finite-fields/' class='tag-link-966672' title='8 topics' style='font-size: 13.30303030303pt;'>finite fields</a>
+<a href='http://terrytao.wordpress.com/tag/fourier-transform/' class='tag-link-1831011' title='9 topics' style='font-size: 14.363636363636pt;'>Fourier transform</a>
+<a href='http://terrytao.wordpress.com/tag/freimans-theorem/' class='tag-link-1831469' title='7 topics' style='font-size: 12.242424242424pt;'>Freiman's theorem</a>
+<a href='http://terrytao.wordpress.com/tag/gowers-uniformity-norms/' class='tag-link-31375369' title='6 topics' style='font-size: 11.181818181818pt;'>Gowers uniformity norms</a>
+<a href='http://terrytao.wordpress.com/tag/gradient-shrinking-solitons/' class='tag-link-6999624' title='5 topics' style='font-size: 9.6969696969697pt;'>gradient shrinking solitons</a>
+<a href='http://terrytao.wordpress.com/tag/graph-theory/' class='tag-link-751916' title='7 topics' style='font-size: 12.242424242424pt;'>graph theory</a>
+<a href='http://terrytao.wordpress.com/tag/gue/' class='tag-link-45419' title='6 topics' style='font-size: 11.181818181818pt;'>GUE</a>
+<a href='http://terrytao.wordpress.com/tag/harmonic-analysis/' class='tag-link-817033' title='4 topics' style='font-size: 8pt;'>harmonic analysis</a>
+<a href='http://terrytao.wordpress.com/tag/hypergraphs/' class='tag-link-1831138' title='5 topics' style='font-size: 9.6969696969697pt;'>hypergraphs</a>
+<a href='http://terrytao.wordpress.com/tag/inverse-conjecture/' class='tag-link-2549157' title='5 topics' style='font-size: 9.6969696969697pt;'>inverse conjecture</a>
+<a href='http://terrytao.wordpress.com/tag/kakeya-conjecture/' class='tag-link-5620918' title='6 topics' style='font-size: 11.181818181818pt;'>Kakeya conjecture</a>
+<a href='http://terrytao.wordpress.com/tag/littlewood-offord-theorems/' class='tag-link-1830976' title='5 topics' style='font-size: 9.6969696969697pt;'>Littlewood-Offord theorems</a>
+<a href='http://terrytao.wordpress.com/tag/multiple-recurrence/' class='tag-link-3919295' title='5 topics' style='font-size: 9.6969696969697pt;'>multiple recurrence</a>
+<a href='http://terrytao.wordpress.com/tag/nilpotent-groups/' class='tag-link-5314333' title='5 topics' style='font-size: 9.6969696969697pt;'>nilpotent groups</a>
+<a href='http://terrytao.wordpress.com/tag/nls/' class='tag-link-636232' title='5 topics' style='font-size: 9.6969696969697pt;'>NLS</a>
+<a href='http://terrytao.wordpress.com/tag/nonstandard-analysis/' class='tag-link-1831165' title='7 topics' style='font-size: 12.242424242424pt;'>nonstandard analysis</a>
+<a href='http://terrytao.wordpress.com/tag/politics/' class='tag-link-398' title='7 topics' style='font-size: 12.242424242424pt;'>politics</a>
+<a href='http://terrytao.wordpress.com/tag/polymath1/' class='tag-link-16273585' title='15 topics' style='font-size: 18.606060606061pt;'>polymath1</a>
+<a href='http://terrytao.wordpress.com/tag/polynomial-method/' class='tag-link-5620919' title='5 topics' style='font-size: 9.6969696969697pt;'>polynomial method</a>
+<a href='http://terrytao.wordpress.com/tag/polynomials/' class='tag-link-718088' title='7 topics' style='font-size: 12.242424242424pt;'>polynomials</a>
+<a href='http://terrytao.wordpress.com/tag/prime-numbers/' class='tag-link-864113' title='6 topics' style='font-size: 11.181818181818pt;'>prime numbers</a>
+<a href='http://terrytao.wordpress.com/tag/project-heatwave/' class='tag-link-8071582' title='6 topics' style='font-size: 11.181818181818pt;'>project heatwave</a>
+<a href='http://terrytao.wordpress.com/tag/random-matrices/' class='tag-link-1830975' title='22 topics' style='font-size: 22pt;'>random matrices</a>
+<a href='http://terrytao.wordpress.com/tag/randomness/' class='tag-link-1568' title='21 topics' style='font-size: 21.575757575758pt;'>randomness</a>
+<a href='http://terrytao.wordpress.com/tag/ratners-theorem/' class='tag-link-1834777' title='10 topics' style='font-size: 15.212121212121pt;'>Ratner's theorem</a>
+<a href='http://terrytao.wordpress.com/tag/regularity-lemma/' class='tag-link-1831196' title='6 topics' style='font-size: 11.181818181818pt;'>regularity lemma</a>
+<a href='http://terrytao.wordpress.com/tag/ricci-flow/' class='tag-link-1831237' title='11 topics' style='font-size: 16.060606060606pt;'>Ricci flow</a>
+<a href='http://terrytao.wordpress.com/tag/schrodinger-equation/' class='tag-link-1454573' title='6 topics' style='font-size: 11.181818181818pt;'>Schrodinger equation</a>
+<a href='http://terrytao.wordpress.com/tag/structure/' class='tag-link-25716' title='18 topics' style='font-size: 20.30303030303pt;'>structure</a>
+<a href='http://terrytao.wordpress.com/tag/szemeredis-theorem/' class='tag-link-1831146' title='7 topics' style='font-size: 12.242424242424pt;'>Szemeredi's theorem</a>
+<a href='http://terrytao.wordpress.com/tag/tamar-ziegler/' class='tag-link-7591055' title='6 topics' style='font-size: 11.181818181818pt;'>Tamar Ziegler</a>
+<a href='http://terrytao.wordpress.com/tag/universality/' class='tag-link-553131' title='11 topics' style='font-size: 16.060606060606pt;'>universality</a>
+<a href='http://terrytao.wordpress.com/tag/van-vu/' class='tag-link-9482008' title='9 topics' style='font-size: 14.363636363636pt;'>Van Vu</a>
+<a href='http://terrytao.wordpress.com/tag/wave-maps/' class='tag-link-1830969' title='6 topics' style='font-size: 11.181818181818pt;'>wave maps</a></div></div><div id="rss-2" class="widget widget_rss"><h3><a class='rsswidget' href='http://polymathprojects.org/feed/rss/' title='Syndicate this content'><img style='background:orange;color:white;border:none;' width='14' height='14' src='http://s.wordpress.com/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://polymathprojects.org' title='Massively collaborative mathematical projects'>The Polymath Blog</a></h3><ul><li><a class='rsswidget' href='http://polymathprojects.org/2010/09/30/polymath3-polynomial-hirsch-conjecture-now-officially-open/' title='After some discussion and a lengthy hiatus, the Polymath3 project (on attacking the polynomial Hirsch conjecture via combinatorial means) has officially started with a new research thread on Gil Kalai&#8217;s blog (which, for now, can also double as the discussion thread, given that the activity level is still quite low), and a Polymath wiki page. [...]'>Polymath3 (polynomial Hirsch conjecture) now officially open</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2010/07/08/minipolymath2-project-imo-2010-q5/' title='This post marks the official opening of the mini-polymath2 project to solve a problem from the 2010 IMO.  I have selected the fifth question (which appears to be slightly more challenging than the sixth, for a change) as the problem to focus on: Problem. In each of six boxes there is initially one coin. There [...]'>Minipolymath2 project: IMO 2010 Q5</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2010/06/29/draft-version-of-polymath4-paper/' title='I&#8217;ve written up a draft version of a short paper giving the results we already have in the finding primes project.  The source files for the paper can be found here. The paper is focused on what I think is our best partial result, namely that the prime counting polynomial has a circuit complexity of [...]'>Draft version of polymath4 paper</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2010/06/12/mini-polymath-proposal-imo-2010-q6/' title='I am proposing the sixth question for the 2010 International Mathematical Olympiad (traditionally, the trickiest of the six problems) as a mini-polymath project for next month.  Details and discussions are in this post on my other blog. [Update, June 27: the project is scheduled to start on Thursday, July 8 16:00 UTC.] Filed under: news, [...]'>Mini-polymath proposal: IMO 2010 Q6</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2010/01/09/polymath5-erdos%e2%80%99s-discrepancy-problem/' title='Is taking place on Gowers&#8217;s blog! Posted in polymath proposals'>Polymath5: Erdős’s discrepancy problem</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/12/31/proposal-tim-gowers-erdos-discrepancy-problem/' title='For a description of Erdos&#8217; discrepancy problem and a large discussion see this blog on Gowers&#8217;s blog. The decision for the next polymath project over Gowers&#8217;s blog will be between three projects: The polynomial DHJ problem, Littlewood problem, and the Erdos discrepency problem. To help making the decision four polls are in place! Posted in [&hellip;]'>Proposal (Tim Gowers): Erdos’ Discrepancy Problem</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/11/20/proposals-tim-gowers-polynomial-dhj-and-littlewoods-problem/' title='Tim Gowers described two additional proposed polymath projects. One about the first unknown cases of the polynomial Density Hales Jewett problem. Another about the Littelwood&#8217;s conjecture. I will state one problem from each of these posts: 1) (Related to polynomial DHJ) Suppose you have a family of graphs on n labelled vertices, so that we [...]'>Proposals (Tim Gowers): Polynomial DHJ, and Littlewood’s problem</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/11/08/proposal-tim-gowers-the-origin-of-life/' title=''>Proposal (Tim Gowers) The Origin of Life</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/10/27/research-thread-v-determinstic-way-to-find-primes/' title='It&#8217;s probably time to refresh the previous thread for the &#8220;finding primes&#8221; project, and to summarise the current state of affairs. The current goal is to find a deterministic way to locate a prime in an interval in time that breaks the &#8220;square root barrier&#8221; of (or more precisely, ).  Currently, we have two ways [...]'>(Research thread V) Determinstic way to find primes</a></li><li><a class='rsswidget' href='http://polymathprojects.org/2009/10/16/nature-article-on-polymath/' title='Timothy Gowers and Michael Nielsen have written an article &#8220;Massively collaborative mathematics&#8220;, focusing primarily on the first Polymath project, for the October issue of Nature. Posted in news'>Nature article on Polymath</a></li></ul></div><div id="rss-3" class="widget widget_rss"><h3><a class='rsswidget' href='http://austmaths.wordpress.com/feed/' title='Syndicate this content'><img style='background:orange;color:white;border:none;' width='14' height='14' src='http://s.wordpress.com/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://austmaths.wordpress.com' title='Discussions of issues facing mathematics research and education in Australia today'>Mathematics in Australia</a></h3><ul><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/11/09/junior-positions-at-anu/' title='The math department at the ANU (Australian National University) is advertising five junior jobs, two of them permanent and three postdocs. More information can be found at http://wwwmaths.anu.edu.au/~borger/2010_job_ad_webpage (Via Amnon Neeman)'>Junior positions at ANU</a> <span class="rss-date">8 November, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/10/11/austms-now-on-twitter/' title='The AustMS now has a twitter feed, which has now also been added to the sidebar of this blog. (Via Nalini Joshi)'>AustMS now on twitter</a> <span class="rss-date">10 October, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/05/09/research-not-bad-but-not-stellar/' title='As reported by the Australian, the Australian Innovation System Report 2010 ranks physics, geosciences, space sciences, environment and mathematics among Australia&#8217;s strongest research fields (as measured by impact factor of publications), with the country as a whole ranked 16th among OECD countries.   (via Birgit Loch)'>Research not bad, but not stellar</a> <span class="rss-date">9 May, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/04/11/l%e2%80%99oreal-australia-for-women-in-science-fellowships/' title='[From Nalini Joshi -T.] Applications for the 2010 L’Oréal Australia For Women In Science Fellowships are now open and close on Monday 3 May. The three $20,000 Fellowships are intended to help early-career women scientists to consolidate their careers and rise to leadership positions in science. The Fellowships are awarded to women  who have completed [...] [&hellip;]'>L’Oréal Australia For Women In Science Fellowships</a> <span class="rss-date">11 April, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2010/01/18/postdoctoral-position-level-a-in-mathematics-at-australian-national-university/' title='The Mathematical Sciences Institute at the Australian National University is currently advertising a 2 year postdoctoral position, funded by a new ARC grant awarded to Andrew Hassell, in spectral theory/microlocal analysis/harmonic analysis/PDE. The closing date for applications is Feb 5. This position is most suitable for someone with a recent PhD (e.g. wit [&hellip;]'>Postdoctoral position (Level A) in mathematics at Australian National University</a> <span class="rss-date">18 January, 2010</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/12/02/cheryl-praeger-named-as-2009-western-australian-scientist-of-the-yearu/' title='Cheryl Praeger at UWA has just been named 2009 Western Australian Scientist of the Year, after becoming a finalist last week.    Congratulations Cheryl! [Via SymOmega.]'>Cheryl Praeger named as 2009 Western Australian Scientist of the Year</a> <span class="rss-date">2 December, 2009</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/11/04/positions-at-australian-national-university/' title='[Via Jim Borger.] &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;- Permanent positions &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;- These positions are at levels B and C, which are the Australian equivalent of an assistant or associate professorship. It is important to add that, as is usual in the Australian system, the positions at both levels are permanent  [&hellip;]'>Positions at Australian National University</a> <span class="rss-date">4 November, 2009</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/10/27/mathematics-skills-out-for-the-count/' title='Two recent articles in the Daily Telegraph, &#8221;Students in almost 60 percent of high schools taught by unqualified teachers&#8221; and &#8220;Mathematics skills out for the count&#8220;, highlight two key (and related) concerns in Australian mathematics education: the continuing shortages of skilled maths teachers in high schools (with one in five school [&hellip;]'>Mathematics skills out for the count</a> <span class="rss-date">26 October, 2009</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/10/14/federal-government-awards-2-million-for-improving-mathematics-education-in-schools-project/' title='As reported today on the Funneled Web, the Federal Minister for Education, Julia Gillard, has announced a $2 million grant to fund the &#8220;Improving Mathematics Education in Schools&#8221; project, an initiative run by AMSI in collaboration with industry and teachers to promote mathematics education and awareness of mathematics career opportunities, parti [&hellip;]'>Federal government awards $2 million for Improving Mathematics Education in Schools project</a> <span class="rss-date">13 October, 2009</span></li><li><a class='rsswidget' href='http://austmaths.wordpress.com/2009/10/09/message-from-amsi-regarding-proposed-cuts-at-victoria-university/' title='The new director of the Australian Mathematical Sciences Institute, Geoff Prince, has written an open letter to the Vice Chancellor and President of Victoria University, Elizabeth Harman, regarding the proposed severe cuts in the mathematics and statistics departments (from 8.5 FTE to 4.5 FTE) through targeted. (We posted about these cuts in a previous post. [&hellip;]'>Message from AMSI regarding proposed cuts at Victoria University</a> <span class="rss-date">9 October, 2009</span></li></ul></div>
+</div>
+
+</div>
+<div id="wpl-likebox"><div id="wpl-button"><a href='http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/?like=1&amp;_wpnonce=251343adf9' title='I like this post' class='like needs-login'><span>Like</span></a></div><div id="wpl-count">Be the first to like this post.</div></div>
+<div id="comments" class="commentlist">
+
+	<div id="comments-meta">
+		<h2 class="comments-title">4 comments</h2>
+		<p class="comments-feed"><a href='http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/feed/'>Comments feed for this article</a></p>
+	</div>
+
+
+			
+	<div class="comment even thread-even depth-1 vcard parent" id="comment-49211">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/#comment-49211" title="Permalink to this comment">28 December, 2010 at 5:06 pm</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://www.desy.de/~pribeiro' rel='external nofollow' class='url'>Pedro Lauridsen Ribeiro</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://0.gravatar.com/avatar/03935dda8f945df44d35c300f42e131e?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Dear Prof. Tao, </p>
+<p>There is an historical question I have about the circle of ideas around the restriction problem, namely the decay estimates coming from stationary<br />
+phase that enter the proof of Strichartz estimates, say, for the Schrödinger and wave / Klein-Gordon operators. When were these decay estimates first proved, and by whom? The oldest reference I know of is a landmark paper on axiomatic quantum field theory due to David Ruelle:</p>
+<p>- D. Ruelle, &#8220;On the Asymptotic Condition in Quantum Field Theory&#8221;.<br />
+  Helvetica Physica Acta 35 (1962) 147-163.</p>
+<p>He proves the aforementioned estimates for the wave and Klein-Gordon operators, with the purpose of constructing an axiomatic scattering theory for quantum fields following earlier ideas due to Rudolf Haag. As for the Schrödinger operator, I couldn&#8217;t track back to anything before Strichartz&#8217;s classic Duke Math. J. paper in &#8217;75 and Hörmander&#8217;s paper on long range scattering theory (Math. Z. 146 (1976) 69-91). The first reference refers to<br />
+explicit formulae for Green functions in the first volume of Gel&#8217;fand-Shilov&#8217;s book on generalized functions, whereas the second seems to do everything from scratch.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_49211"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_49211={"id":132742,"unique_id":"wp-comment-49211","title":"Dear Prof. Tao, There is an historical question I have about the circle of ideas around the restriction problem, namely the decay estimates coming from stationary phase that enter the proof of St...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/12\/28\/the-bourgain-guth-argument-for-proving-restriction-theorems\/#comment-49211","item_id":"_comm_49211"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/?replytocom=49211#respond' onclick='return addComment.moveForm("comment-49211", "49211", "respond", "4556")'>Reply</a>		</div>
+	</div>
+<ul class='children'>
+		
+	<div class="comment byuser comment-author-teorth bypostauthor odd alt depth-2 vcard parent" id="comment-49220">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/#comment-49220" title="Permalink to this comment">28 December, 2010 at 10:13 pm</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://www.math.ucla.edu/~tao' rel='external nofollow' class='url'>Terence Tao</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://1.gravatar.com/avatar/3c795880f3b73784a9b75fbff3772701?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>The earliest reference I know of is by Littman from 1963, <a href="http://www.ams.org/mathscinet-getitem?mr=146521" rel="nofollow">http://www.ams.org/mathscinet-getitem?mr=146521</a> , where he gives counterexamples to various L^p dispersive inequalities.  Another early reference is Segal&#8217;s 1976 paper <a href="http://www.ams.org/mathscinet-getitem?mr=492892" rel="nofollow">http://www.ams.org/mathscinet-getitem?mr=492892</a> .</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_49220"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_49220={"id":132742,"unique_id":"wp-comment-49220","title":"The earliest reference I know of is by Littman from 1963, http:\/\/www.ams.org\/mathscinet-getitem?mr=146521 , where he gives counterexamples to various L^p dispersive inequalities.  Another early r...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/12\/28\/the-bourgain-guth-argument-for-proving-restriction-theorems\/#comment-49220","item_id":"_comm_49220"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/?replytocom=49220#respond' onclick='return addComment.moveForm("comment-49220", "49220", "respond", "4556")'>Reply</a>		</div>
+	</div>
+<ul class='children'>
+		
+	<div class="comment even depth-3 vcard" id="comment-49238">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/#comment-49238" title="Permalink to this comment">29 December, 2010 at 6:06 am</a></p>
+			<p class="comment-author"><strong class="fn"><a href='http://www.desy.de/~pribeiro' rel='external nofollow' class='url'>Pedro Lauridsen Ribeiro</a></strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://0.gravatar.com/avatar/03935dda8f945df44d35c300f42e131e?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>Oh yes, I had forgotten Segal&#8217;s paper. I had seen Littman&#8217;s paper quoted in some lecture notes about Strichartz estimates, but only regarding some of the counterexamples you&#8217;ve mentioned &#8211; to wit, counterexamples to &#8220;energy-like&#8221; estimates in <img src='http://l.wordpress.com/latex.php?latex=L%5Ep&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='L^p' title='L^p' class='latex' /> for <img src='http://l.wordpress.com/latex.php?latex=p%5Cneq+2&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='p\neq 2' title='p\neq 2' class='latex' />. Like Strichartz, Littman also seems to work with an explicit representation of Green&#8217;s functions for the wave operator. </p>
+<p>Neither Segal&#8217;s paper, nor Littman&#8217;s, seem to give earlier references for the proof of <img src='http://l.wordpress.com/latex.php?latex=L%5E1-L%5E%5Cinfty&#038;bg=ffffff&#038;fg=545454&#038;s=0' alt='L^1-L^\infty' title='L^1-L^\infty' class='latex' /> decay estimates using stationary phase, though, which form the other &#8220;interpolation tip&#8221;. It seems that Ruelle&#8217;s paper is the oldest reference with respect to this, after all &#8211; however, he was only interested in these decay estimates by themselves, and didn&#8217;t try to interpolate them with energy estimates.</p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_49238"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_49238={"id":132742,"unique_id":"wp-comment-49238","title":"Oh yes, I had forgotten Segal's paper. I had seen Littman's paper quoted in some lecture notes about Strichartz estimates, but only regarding some of the counterexamples you've mentioned - to wit...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/12\/28\/the-bourgain-guth-argument-for-proving-restriction-theorems\/#comment-49238","item_id":"_comm_49238"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/?replytocom=49238#respond' onclick='return addComment.moveForm("comment-49238", "49238", "respond", "4556")'>Reply</a>		</div>
+	</div>
+</ul>
+</ul>
+		
+	<div class="comment odd alt thread-odd thread-alt depth-1 vcard" id="comment-49218">
+		<div class="comment-metadata">
+			<p class="comment-permalink"><a href="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/#comment-49218" title="Permalink to this comment">28 December, 2010 at 8:44 pm</a></p>
+			<p class="comment-author"><strong class="fn">Zaher</strong></p>
+			 
+		</div>
+		
+		<div class="comment-content">
+			<img alt='' src='http://0.gravatar.com/avatar/?s=32&amp;d=identicon&amp;r=PG' class='avatar avatar-32' height='32' width='32' />			<p>The left-hand side of the statement of the Bennet-Carbery-Tao result is written above as a product of norms rather than as the $L^{q/3}$ norm of the product.</p>
+<p><i>[Corrected, thanks - T.]</i></p>
+
+<div class="pd-rating" id="pd_rating_holder_132742_comm_49218"></div><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+PDRTJS_settings_132742_comm_49218={"id":132742,"unique_id":"wp-comment-49218","title":"The left-hand side of the statement of the Bennet-Carbery-Tao result is written above as a product of norms rather than as the $L^{q\/3}$ norm of the product.<i>[Corrected, thanks - T.]<\/i>...","permalink":"http:\/\/terrytao.wordpress.com\/2010\/12\/28\/the-bourgain-guth-argument-for-proving-restriction-theorems\/#comment-49218","item_id":"_comm_49218"}
+//--><!]]></script>
+		</div>
+		<div class="reply">
+				<a class='comment-reply-link' href='/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/?replytocom=49218#respond' onclick='return addComment.moveForm("comment-49218", "49218", "respond", "4556")'>Reply</a>		</div>
+	</div>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<br />
+
+</div>
+
+	
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://terrytao.wordpress.com/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published.</p>							<p class="comment-form-author"><label for="author">Name</label> <input id="author" name="author" type="text" value="" size="30" /></p>
+<p class="comment-form-email"><label for="email">Email</label> <input id="email" name="email" type="text" value="" size="30" /></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;pre&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='4556' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1293716587" />
+<p><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe">Notify me of follow-up comments via email.</label></p><p><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;" tabindex="7"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Subscribe to this site by email</label></p><input type="hidden" name="sub-type" value="comment-form-text2" /><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8982ae58fd" /></p>					</form>
+							</div><!-- #respond -->
+						
+</div>
+
+<div id="footer">
+
+	<div id="miscellany">
+	
+	<div class="widgets">
+
+	<div id="text-1" class="widget widget_text"><h3>For commenters</h3>			<div class="textwidget">To enter in LaTeX in comments, use $latex <I>&lt;Your LaTeX code&gt;</I>$ (without the &lt; and &gt; signs, of course; in fact, these signs should be avoided as they can cause formatting errors).  See the <A HREF="http://terrytao.wordpress.com/about/">about page</A> for details and for other commenting policy.</div>
+		</div>	
+	</div>
+
+	</div>
+
+
+	<div id="about">
+		<div class="navigation">
+					<div class="left"></div>
+			<div class="right"></div>
+		</div>		
+	</div>
+
+
+	<div id="theme-info">
+		<div class="primary content">
+			<p><span class="designer">Theme: <a href="http://theme.wordpress.com/themes/tarski/">Tarski</a> by Ben Eastaugh and Chris Sternal-Johnson. </span><span class="generator"><a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>.</span></p>
+		</div>
+		<div class="secondary">
+			<p><a class="feed" title="Subscribe to the What&#8217;s new feed" href="http://terrytao.wordpress.com/feed/">Subscribe to feed.</a></p>
+		</div>
+	</div>
+
+
+</div>
+
+</div><script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	/* <![CDATA[ */
+		jQuery( function() {
+			
+			jQuery('#wpl-button > a.like').click( function(e) {
+				e.preventDefault();
+				
+				jQuery('#wpl-mustlogin').remove();
+
+				jQuery.post( 'http://terrytao.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_like_click'
+				} );
+
+				var tenMins = new Date();
+				tenMins.setTime( tenMins.getTime() + 600000 );
+				document.cookie = 'wpl_rand=99389e0851; expires=' + tenMins.toGMTString() + '; domain=wordpress.com; path=/;';
+				
+				jQuery('#wpl-count').after( '\
+					<div id="wpl-mustlogin"> \
+						<form action="http://terrytao.wordpress.com/wp-login.php" method="post"> \
+							<p>Just one more step to like this post:</p> \
+							<label><span>Username</span> <input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="80" /></label> \
+							<label><span>Password</span> <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="81" /></label> \
+							<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="82" /> \
+							<input type="hidden" name="redirect_to" value="http://terrytao.wordpress.com/2010/12/28/the-bourgain-guth-argument-for-proving-restriction-theorems/?like=1" /> \
+							<input type="hidden" name="wpl_rand" value="99389e0851" /> \
+							<p>Not a member yet? <a href="http://wordpress.com/signup/?ref=likebox" id="wpl-signup-link">Sign up with WordPress.com</a></p> \
+						</form> \
+					</div> \
+				');
+				
+				jQuery('#wpl-mustlogin').hide().slideDown('fast');
+			} );
+			
+			jQuery('#wpl-mustlogin input.input').live( 'focus', function() {
+				jQuery(this).prev().hide();
+			}).live( 'blur', function() {
+				if ( jQuery(this).val() == '' )
+					jQuery(this).prev().show();
+			});
+			
+			jQuery('#wpl-mustlogin input#wp-submit').live( 'click', function(e) {
+				e.preventDefault();
+				
+				jQuery.post( 'http://terrytao.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_login_submit'
+				}, function() {
+					jQuery('#wpl-mustlogin form').submit();
+				} );
+			});			
+			
+			jQuery('#wpl-mustlogin a#wpl-signup-link').live( 'click', function(e) {
+				e.preventDefault();
+				
+				var link = jQuery(this).attr('href');
+				
+				jQuery.post( 'http://terrytao.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_signup_click'
+				}, function() {
+					location.href = link;
+				} );
+			});					
+			
+		});
+	/* ]]> */
+	</script>
+<script type="text/javascript">_qoptions={qacct:'p-18-mFEk4J448M',labels:'language.en,type.wpcom,posttag.jean-bourgain,posttag.larry-guth,posttag.restriction-conjecture,as'};</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript><p><img class="robots-nocontent" src="http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=language.en%2Ctype.wpcom%2Cposttag.jean-bourgain%2Cposttag.larry-guth%2Cposttag.restriction-conjecture%2Cas" style="display:none" height="1" width="1" alt="" /></p></noscript>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?o&#038;ver=MU'></script>
+	<script type="text/javascript">	
+	// <![CDATA[
+	WPGroHo = {
+		data: {},
+		renderers: {},
+		syncProfileData: function( hash, id ) {
+			if ( !WPGroHo.data[hash] ) {
+				WPGroHo.data[hash] = {};
+				a = jQuery( 'div.grofile-hash-map-' + hash + ' span' ).each( function() {
+					WPGroHo.data[hash][this.className] = jQuery( this ).text();
+				} );
+			}
+
+			WPGroHo.appendProfileData( WPGroHo.data[hash], hash, id );
+		},
+		appendProfileData: function( data, hash, id ) {
+			for ( var key in data ) {
+				if ( jQuery.isFunction( WPGroHo.renderers[key] ) ) {
+					return WPGroHo.renderers[key]( data[key], hash, id, key );
+				}
+
+				jQuery( '#' + id ).find( 'h4' ).after( jQuery( '<p class="grav-extra ' + key + '" />' ).html( data[key] ) );
+			}
+		}
+	};
+	jQuery(document).ready(function($){
+		Gravatar.profile_cb = function( h, d ) {
+			WPGroHo.syncProfileData( h, d );
+		};
+		Gravatar.attach_profiles();
+	});
+	// ]]>
+	</script>
+	<div style="display:none">
+	<div class="grofile-hash-map-d26ffa8dde6cc82ccb805e2a20a4978c">
+	</div>
+	<div class="grofile-hash-map-d41d8cd98f00b204e9800998ecf8427e">
+	</div>
+	<div class="grofile-hash-map-34e0ff98a2134ddb8321f528880e68aa">
+	</div>
+	<div class="grofile-hash-map-3c795880f3b73784a9b75fbff3772701">
+	</div>
+	<div class="grofile-hash-map-03935dda8f945df44d35c300f42e131e">
+	</div>
+	<div class="grofile-hash-map-0011985460c0eca3dfd231047cf277f7">
+	</div>
+	<div class="grofile-hash-map-339b183e12491a824f86a1cfde24f420">
+	</div>
+	</div>
+<script type='text/javascript'>_acseed='Nm01fCNhbSRDMChRJH01MEN8ViA3Lk82LVJXWW06OFR5Z1tUVVdVX0drYnd4ZEggWDEuRkp8SH4/aWhCbipoMjp9WVJJTmVnbjh0Z0J8JX1WY3dhWnpyYzl7Ymk+LHkwQ3VBQUZiJW9PIHxjcmQqalRVS21lLmpTJjI6SEYqJnkvNlNNQH55cVFzOFNuQmA1dXwqVlQ6IEd+NA==';</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/sharing/sharing.js?m=1289605033g&amp;ver=0.1'></script>
+	<div id="sharing_email" style="display: none;">
+		<form action="" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="text" name="target_email" id="target_email" value="" />
+			
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+				
+				<label for="source_email">Your Email Address</label>
+				<input type="text" name="source_email" id="source_email" value="" />
+
+						
+			<div class="recaptcha" id="sharing_recaptcha"></div>
+			<img style="float: right; display: none" class="loading" src="http://terrytao.wordpress.com/wp-content/mu-plugins/sharing/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a href="#cancel" class="sharing_cancel">Cancel</a>
+			
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+			
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+<script type='text/javascript' src='http://i.polldaddy.com/ratings/rating.js?ver=MU'></script>
+<script type="text/javascript" src="http://b.scorecardresearch.com/beacon.js"></script><script type="text/javascript">try{COMSCORE.beacon({c1:2,c2:7518284});}catch(e){}</script><noscript><p class="robots-nocontent"><img src="http://b.scorecardresearch.com/p?cj=1c1=2&#038;c2=7518284" alt="" style="display:none" width="1" height="1" /></p></noscript><script src="http://s.stats.wordpress.com/w.js?19" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'817149','v':'wpcom','user_id':'0','post':'4556','subd':'terrytao'});
+ex_go({'crypt':'RDZ8LFkxbXF2SHZYWn5vOStxTl10X2F1Q1VVakpwRGdob2NQW0RGMEFfcklsa3FMTFF+NS49UnJnRnFDYjNfVmVbd00/QWw/ajJmdSZfNn45NDRnW1lGS0ZpeUdlNllufGFmfkhYTW18Tml0Vy98TWtWWn4wcUZ3QmFzMENbZXgtVjZ2VWZYL1FJb2NaRnxiYlE5fHZUdmxsK0g3TFg2RV1WPzNIVlFrbExPWUJKamgvW2FxLlNFdjZsW2VPZWZvYVZVWTdlSC5sTy50X1VyL2hZMmFlLy5FSTdBVF1WN3RMS09IXVp5RlJaKy5xTEJKX353SlVBeS1PSHNjY1pUMTk5MVNxdWlSUkdWLDVEZlEzWDBoYmRTcEkyVmlLOWJHanNhXS5kTmFlckg3PVIxcjA/OUxQdzZRSTV4SDdpbVJQVnZFbTVIZl9pWDdmLG9uZmtTdFlTai85K0ErTW41ZTlzNUx4QzNKW0duPWdMS0VPUFtnektoaHI9fF1kLF92THVtZWhVbA=='});
+re_go({'d[terrytao.wordpress.com]':'1','d[weaselmark.wordpress.com]':'1','d[simonjohanning.wordpress.com]':'1','v':'sph','b':'817149','p':'4556'});
+addLoadEvent(function(){linktracker_init('817149',4556);});
+	</script>
+</body></html>

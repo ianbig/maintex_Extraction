@@ -1,0 +1,969 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<title>Official Google Maps API Blog: Love My Maps? Use its Line and Shape Editing in your API Apps!</title>
+<link href='http://www.google.com/uds/solutions/partnerbar/gfpartnerbar.css' rel='stylesheet' type='text/css'/>
+<link type='text/css' rel='stylesheet' href='http://www.blogger.com/static/v1/widgets/1743847221-widget_css_bundle.css' />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=18549845&zx=a53f3ec6-9be8-4ce2-8448-9dc9e534d0f9"/>
+<style type="text/css">#navbar-iframe { display:block }
+</style>
+
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     26 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#fff">
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#58a">
+<Variable name="pagetitlecolor" description="Blog Title Color"
+type="color" default="#929292">
+<Variable name="pagesubtitlecolor" description="Blog Sub Title Color"
+type="color" default="#929292">
+<Variable name="descriptioncolor" description="Blog Description Color"
+type="color" default="#666666">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#73afdf">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#ccc">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#000000">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#666">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#999">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 100% Arial, sans-serif">
+<Variable name="headerfont" description="Sidebar Title Font"
+type="font"
+default="normal normal 95% Arial, sans-serif">
+<Variable name="pagetitlefont" description="Blog Title Font"
+type="font"
+default="normal normal 150% Arial, sans-serif">
+<Variable name="pagesubtitlefont" description="Blog Sub Title Font"
+type="font"
+default="normal normal 50% Arial, sans-serif">
+<Variable name="descriptionfont" description="Blog Description Font"
+type="font"
+default="normal normal 100% Arial, sans-serif">
+<Variable name="postfooterfont" description="Post Footer Font"
+type="font"
+default="normal normal 78% Arial, sans-serif">
+*/
+/* Use this with templates/template-twocol.html */
+body {
+background:#ffffff;
+margin:0;
+color:#333333;
+font-size/* */:/**/small;
+font-size: /**/small;
+text-align: center;
+}
+a img {
+border-width:0;
+}
+/* Header
+-----------------------------------------------
+*/
+#searchcontrol {
+width : 150px;
+}
+#searchResults {
+margin-right: 25px;
+}
+#searchResults .gsc-control {
+width : 100%;
+}
+#searchResults .gsc-resultsbox-visible {
+border-bottom : 1px solid #e9e9e9;
+margin-bottom : 10px;
+}
+#header-wrapper {
+margin:0 auto 15px;
+min-width:550px;
+}
+#header {
+margin: 5px;
+color:#929292;
+}
+#logo {
+background-image:url('http://bp1.blogger.com/_7ZYqYi4xigk/RszKKWYy5xI/AAAAAAAAAEo/huOEKeBPpGc/s1600/codeheader.jpg');
+background-repeat:no-repeat;
+padding-left:225px;
+padding-top:49px;
+height:90px;
+width:550px;
+font: Arial, sans-serif;
+}
+#logo h1 {
+color:#929292;
+padding:0px;
+margin:0px;
+font: Arial, Helvetica, sans-serif;
+font-size:26px;
+font-weight:normal;
+}
+#logo h2 {
+color:#929292;
+padding:0px;
+margin:0px;
+font: Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+#header h1 {
+margin:5px 5px 0;
+padding:15px 20px .25em;
+line-height:1.2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+}
+#header .description {
+margin:0;
+padding:15px 0;
+max-width:700px;
+font: normal normal 100% Arial, sans-serif;
+color: #666666;
+}
+/* Outer-Wrapper
+----------------------------------------------- */
+#outer-wrapper {
+margin:10px 0px 20px 0px;
+padding:0px;
+text-align:left;
+font: normal normal 100% Arial, sans-serif;
+width:800px;
+}
+#main-wrapper {
+width: 630px;
+margin:0 0px 5px;
+float:left;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+#sidebar-wrapper {
+margin-left:10px;
+padding-left:10px;
+width: 150px;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+#countdown {font-size: 14pt; font-color: black;}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin:1.5em 0 .75em;
+font:normal normal 95% Arial, sans-serif;
+color:#666666;
+}
+/* Posts
+-----------------------------------------------
+*/
+h2.date-header {
+margin:0;
+padding:0;
+}
+h2.post-author {
+margin:0 0 .5em;
+padding-top:0;
+}
+.byline-author {
+margin: 0;
+padding: 0 0 0 0;
+color: #666666;
+}
+.post {
+margin:.5em 0 1.5em 0;
+border-bottom:1px dotted #cccccc;
+padding-bottom:1.5em;
+}
+.post-body p {
+margin-top:0;
+padding-top:0;
+}
+.post h3 {
+margin:.25em 0 0 0;
+padding:0;
+font-size:160%;
+font-weight:normal;
+line-height:1.4em;
+color:#73afdf;
+}
+.post h3 a, .post h3 a:visited, .post h3 strong {
+display:block;
+text-decoration:none;
+color:#73afdf;
+font-weight:normal;
+margin-bottom:0;
+padding-bottom:0;
+}
+.post h3 strong, .post h3 a:hover {
+color:#333333;
+}
+.post p {
+}
+.post-footer {
+margin: .75em 0;
+color:#666666;
+font: normal normal 100% Arial, sans-serif;
+line-height: 1.4em;
+}
+.comment-link {
+margin-left:.6em;
+}
+.post img {
+padding:4px;
+border:1px solid #cccccc;
+}
+.post blockquote {
+margin:1em 20px;
+}
+.post blockquote p {
+margin:.75em 0;
+}
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+margin:.25em 0 .5em 0;
+padding:0 0 4px;
+font-size:160%;
+font-weight:normal;
+line-height:1.4em;
+color:#73afdf;
+}
+#comments-block {
+margin:1em 0 1.5em;
+line-height:1.6em;
+}
+#comments-block .comment-author {
+margin:.5em 0;
+}
+#comments-block .comment-body {
+margin:.25em 0 0;
+}
+#comments-block .comment-footer {
+margin:-.25em 0 2em;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+#comments-block .comment-body p {
+margin:0 0 .75em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+}
+/* Sidebar Content
+----------------------------------------------- */
+.sidebar {
+color: #666666;
+line-height: 1.5em;
+}
+.sidebar h2 {
+margin:1em 0 .25em 0;
+padding:7px 0 2px;
+font: Arial, Helvetica, sans-serif;
+font-size:115%;
+font-weight:bold;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 0 0;
+padding:0 0 0 0;
+text-indent:none;
+}
+.sidebar li {
+margin:0;
+padding:0 0 .25em 0px;
+line-height:1.5em;
+}
+.smalllink {
+font-size:75%;
+color:#666666;
+}
+.listelement {
+margin-bottom: .7em;
+}
+padding:
+.sidebar .widget, .main .widget {
+margin:0 0 1.5em;
+padding:0 0 1.5em;
+}
+.main .Blog {
+border-bottom-width: 0;
+margin-left: 5px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin: 0 5px 5px 0;
+padding: 4px;
+border: 1px solid #cccccc;
+}
+.profile-data {
+margin:0;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% Arial, sans-serif;
+color: #666666;
+font-weight: bold;
+line-height: 1.6em;
+}
+.profile-datablock {
+margin:.5em 0 .5em;
+}
+.profile-textblock {
+margin: 0.5em 0;
+line-height: 1.6em;
+}
+.profile-link {
+font: normal normal 78% Arial, sans-serif;
+text-transform: uppercase;
+letter-spacing: .1em;
+}
+/* Footer
+----------------------------------------------- */
+#footer {
+margin:0 auto;
+clear:both;
+padding-top:15px;
+line-height: 1.6em;
+text-align: left;
+font: normal normal 100% Arial, sans-serif;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #header {
+margin-left: 0px;
+margin-right: 0px;
+}
+/** jcooper:
+This section of CSS is all about the PartnerBar. This should require only minimal changes
+and I will help you if you find yourself boxed in.
+*/
+/* Partner Bar
+----------------------------------------------- */
+#partnerBar .pb-root {
+font-weight: normal;
+line-height: 1.25em;
+width : 100%;
+}
+#partnerBar .pb-root a {
+text-decoration : none;
+}
+#partnerBar .pb-root a:hover {
+text-decoration : underline;
+}
+/* logo-title rules */
+#partnerBar .pb-root a:visited .pb-logo-title,
+#partnerBar .pb-root a:hover .pb-logo-title,
+#partnerBar .pb-root a .pb-logo-title {
+color : #73afdf;
+text-decoration : none;
+}
+#partnerBar .pb-root a:hover .pb-logo-title {
+color : #73afdf;
+text-decoration : underline;
+}
+#partnerBar .pb-root a:visited .pb-logo-title {
+color : #73afdf;
+}
+/* logo-subtitle rules */
+#partnerBar .pb-root a:visited .pb-logo-subtitle,
+#partnerBar .pb-root a .pb-logo-subtitle {
+color : #666666;
+text-decoration : none;
+}
+#partnerBar .pb-root a:hover .pb-logo-subtitle {
+color : #5588aa;
+}
+#partnerBar h3.pb-header {
+font-size : 16px;
+font-weight : bold;
+color : #000000;
+padding : 4px 18px 8px 8px;
+margin : 12px 0px 8px 0px;
+}
+#partnerBar .pb-logo-subtitle {
+font-size: 11px;
+font-weight: normal;
+margin-bottom : 6px;
+line-height : 1.25em;
+height : 1.25em;
+overflow : hidden;
+}
+#partnerBar h4 {
+font-size: 12px;
+margin : 0px 0px 0px 0px;
+}
+#partnerBar h5 {
+margin : 0px 0px 0px 0px;
+}
+#partnerBar h4.pb-partner-logo,
+#partnerBar div.pb-partner-logo {
+text-decoration : none;
+text-transform : none;
+font-weight: bold;
+letter-spacing: 0pt;
+line-height: 1.4em;
+text-align: left;
+word-spacing: normal;
+}
+#partnerBar .pb-partner-cell {
+border-top : 1px solid #f9f9f9;
+border-right : 1px solid #f9f9f9;
+border-left : 1px solid #f9f9f9;
+border-bottom : 1px solid #f9f9f9;
+width : 200px;
+padding : 4px 10px 4px 10px;
+margin : 4px 8px 4px 8px;
+}
+#partnerBar div.pb-title {
+line-height : 1.25em;
+height : 1.25em;
+overflow : hidden;
+}
+#partnerBar li.pb-entry {
+margin-bottom : 4px;
+}
+#partnerBar .pb-root ul {
+margin-top : 2px;
+}
+#partnerBar .pb-root li {
+background-image : url("http://www.google.com/uds/solutions/partnerbar/skins/bullet.gif");
+background-position : 0pt .45em;
+background-repeat : no-repeat;
+font-size : 90%;
+line-height : 1.2em;
+padding : 0px 0px 0px 8px;
+}
+
+--></style>
+<link href='http://www2.blogger.com/widgets/3319451950-blogarchive.css' rel='stylesheet' type='text/css'/><link href='http://www2.blogger.com/widgets/2791266615-blog.css' rel='stylesheet' type='text/css'/><!-- --><style type='text/css'>@import url('http://www2.blogger.com/css/blog_controls.css');
+@import url('http://www2.blogger.com/dyn-css/authorization.css?blogID=15045980');
+</style>
+<script src='http://www.google.com/jsapi?key=internal-googleblogs' type='text/javascript'></script>
+<script SRC='http://www.google.com/uds/solutions/partnerbar/gfpartnerbar.js' TYPE='text/javascript'></script>
+<script language='Javascript' type='text/javascript'>
+    //<![CDATA[
+
+      // Load Search and Feed APIs
+    google.load("search", "1");
+    google.load("feeds", "1");
+
+    // This function is called once the page has loaded
+    // the first part of this function is identical to
+    // the old code. It just loads a search control into
+    // the sidebar
+    function OnLoad() {
+      var controlRoot = document.getElementById("searchResults");
+      // Create a search control
+      var searchControl = new GSearchControl();
+      searchControl.setLinkTarget(GSearch.LINK_TARGET_SELF);
+      searchControl.setResultSetSize(GSearch.LARGE_RESULTSET);
+
+      // Tell the searcher to draw itself and tell it where to attach
+       
+      var searchFormElement = document.getElementById("searchcontrol");
+      var drawOptions = new GdrawOptions();
+      drawOptions.setSearchFormRoot(searchFormElement);
+      drawOptions.setDrawMode(GSearchControl.DRAW_MODE_TABBED);
+      
+        // This Blog
+      var searcher = new GwebSearch();
+      searcher.setSiteRestriction("http://googlemapsapi.blogspot.com/");
+      searcher.setUserDefinedLabel("This Blog");
+      searchControl.addSearcher(searcher);
+
+      // Official Google Blogs
+      var searcher = new GwebSearch();
+      searcher.setSiteRestriction("010222979794876194725:abdomvzqczg");
+      searcher.setUserDefinedLabel("Google Blogs");
+      searchControl.addSearcher(searcher);
+
+      // the web
+      searcher = new GwebSearch();
+      searchControl.addSearcher(searcher);
+
+      // all blogs
+      searcher = new GblogSearch();
+      searchControl.addSearcher(searcher);
+
+      // news
+      searcher = new GnewsSearch();
+      searchControl.addSearcher(searcher);
+
+      // draw it
+      searchControl.draw(controlRoot, drawOptions);
+   // Now, Load the Partnerbar. First thing we do is set up
+      // the options.
+      // - open links in the current window
+      // - generate semantic markup (ul, li, hN markup)
+      // - headerTitle is the optional section title for the partnerbar
+      // - numEntries : 3 means 3 articles per blog are shown in each cell
+      // - randomSelectionCounte : 9 says to pick 9 blogs from the array of all blogs
+      // - autoRefresh : true says to re-select a different set of 9 every few seconds
+      // read all about it: http://www.google.com/uds/solutions/partnerbar/index.html
+      //
+      // - the first argument "partnerBar" matches the id of a DIV element just above the page's footer.
+      // - the second argument sampleGoogleBlogs is an array of blog descripters that we select from
+      // each blog descriptor contains title, subtitle, the blog's feed url, and the blog's url
+      // - the third argument is the options
+      var options = {
+            linkTarget : google.feeds.LINK_TARGET_SELF,
+            semanticMarkup : true,
+            headerTitle : "From our Google Blogs",
+            numEntries : 3,
+            randomSelectionCount : 9,  // jcooper: take out the leading X to enable random selection
+            autoRefresh : true,        // jcooper: take out the leading X to enable auto refresh
+            cycleTime : 15000
+          }
+      new PartnerBar("partnerBar", googleBlogs, options);
+    }
+
+
+    var scratchpad_loaded = false;
+    function toggleScratchPad() {
+      var container = document.getElementById("scratchpad-container");
+      var link = document.getElementById("scratchpad-link");
+      if (container.style.display != "block") {
+        if (!scratchpad_loaded) {
+          container.innerHTML = [
+            '<div style="text-align:right;">[<a onclick="toggleScratchPad();" href="javascript:void(0);">close</a>]</div>',
+            '<iframe style="width:100%; height:435px;" frameborder="0" scrolling="no" src="http://gmodules.com/ig/ifr?url=scratchpad.xml&amp;synd=open&amp;output=html"></iframe>'
+          ].join("");
+          scratchpad_loaded = true;
+        }  
+        container.style.display = "block";
+      } else {  
+        container.style.display = "none";
+      }
+    }
+    // This function call schedules OnLoad() to be called as soon as the page finishes loading
+    // Note, your template used to have a script block that called OnLoad() directly. Remove
+    // that script block. It is wrong and will cause some number of errors
+    google.setOnLoadCallback(OnLoad, true);
+    //]]>
+</script>
+<!-- This loads the list of googleBlogs -->
+<script SRC='http://www.google.com/uds/solutions/partnerbar/google-blogs.js' TYPE='text/javascript'></script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=18549845&amp;blogName=Official+Google+Maps+API+Blog&amp;publishMode=PUBLISH_MODE_BLOGSPOT&amp;navbarType=BLUE&amp;layoutType=LAYOUTS&amp;searchRoot=http%3A%2F%2Fgooglemapsapi.blogspot.com%2Fsearch&amp;blogLocale=en_US&amp;homepageUrl=http%3A%2F%2Fgooglemapsapi.blogspot.com%2F&amp;targetPostID=1067346797265518234" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe>
+<div></div></div></div>
+<center>
+<div id='outer-wrapper'><div id='wrap2'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div id='content-wrapper'>
+<div id='scratchpad-container'></div>
+<div id='main-wrapper'>
+<div id='searchResults'></div>
+<div class='header-wrapper'>
+<div id='logo' onClick='window.location="http://googlemapsapi.blogspot.com/";' style='cursor:pointer;'><h1>Maps API Blog</h1></div></div>
+<div class='header section' id='header'>
+</div>
+<div id='searchResults'></div>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts'>
+<div class='post uncustomized-post-template'>
+<a name='1067346797265518234'></a>
+<h3 class='post-title'>
+<a href='http://googlemapsapi.blogspot.com/2008/05/love-my-maps-use-its-line-and-shape.html'>Love My Maps? Use its Line and Shape Editing in your API Apps!</a>
+</h3>
+<h2 class='date-header'>Friday, May 16, 2008
+at
+4:30:00 PM</h2>
+<div class='post-body'>
+<p><span class="byline-author">Posted by Keith Golden, My Maps team</span>
+<p>
+When we launched the map editing tools in Google Maps, the reaction of developers was "This is cool, but how can I use it on my own site?"  As someone who was originally drawn to Google in part because of the Maps API and the great developer community around it, I committed to making the My Maps tools useful for developers on their own sites.
+</p>
+<p>
+Today, I'm pleased to announce that our user interface functionality for editable polylines and polygons is now part of the Maps API. 
+</p>
+<p>
+Say, for example, that you have a <code><a href="http://code.google.com/apis/maps/documentation/reference.html#GPolygon">GPolygon</a></code> you want users to be able to edit.  Simply call <code>GPolygon.enableEditing()</code> and the poly will have draggable edit control vertices when the user mouses over it. To later make it non-editable, call <code>GPolygon.disableEditing()</code>. 
+</p>
+<p>
+We've also exposed additional events for <code><a href="http://code.google.com/apis/maps/documentation/reference.html#GPolygon">GPolygon</a></code> and <code><a href="http://code.google.com/apis/maps/documentation/reference.html#GPolyline">GPolyline</a></code> so that you can easily mimic the MyMaps behavior (in mashups <b>or</b> <a href="http://maps.google.com/ig/add?pid=mpl&synd=mpl&moduleurl=http://gmaps-samples.googlecode.com/svn/trunk/poly/mymapstoolbar.xml">Mapplets</a>) by calling <code>enableEditing</code> on "mouseover" and <code>disableEditing</code> on "mouseout". To find out when the user makes an edit, listen for the "lineupdated" event.  And if you want users to be able to draw a new <code>GPolyline</code> completely from scratch, just use <code>enableDrawing</code> as shown below: 
+</p>
+
+<pre class="code">
+var polyline = new GPolyline([]);
+map.addOverlay(polyline);
+polyline.enableDrawing();
+</pre>
+
+<p>
+Every click on the map will add a new vertex to the polyline until the user double-clicks or clicks again on the last vertex.  You can also call <code>enableDrawing</code> to lets users append vertices to either end of an existing polyline.  And just because everyone likes pretty colors, we exposed methods to let you change the style of a polyline or polygon: <code>setStrokeStyle</code> and <code>setFillStyle</code>.  Have fun, and let us know what you think in <a href="http://groups.google.com/group/Google-Maps-API/">the forum</a>.
+</p>
+
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/poly/mymapstoolbar.html" frameborder="0" width="550" height="450">
+</iframe>
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/poly/mymapstoolbar.html">View example in its own window.</a>
+</p></p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<span class='post-comment-link'>
+<a href='http://googlemapsapi.blogspot.com/2008/05/love-my-maps-use-its-line-and-shape.html' title='permanent link'>Permalink</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1504359573'>
+<a href='http://www.blogger.com/post-edit.g?blogID=18549845&postID=1067346797265518234' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+<a name='links'></a><h4>
+</h4>
+<p class='comment-footer'>
+<a class='comment-link' href='' id='Blog1_backlinks-create-link' target='_blank'>
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://googlemapsapi.blogspot.com/2008/05/libkml-marches-on.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://googlemapsapi.blogspot.com/2008/05/introducing-google-maps-api-for-flash.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://googlemapsapi.blogspot.com/'>Home</a>
+</div>
+<div class='clear'></div>
+</div></div>
+</div>
+<div id='sidebar-wrapper' valign='top'>
+<div id='searchcontrol'></div>
+<script type='text/javascript'>
+OnLoad();
+</script>
+<div class='sidebar section' id='sidebar'><div class='widget HTML' id='HTML5'>
+<div class='widget-content'>
+<a href="http://googlemapsapi.blogspot.com/atom.xml"><img src="http://www.google.com/images/feed-icon.gif"/></a> <a href="http://googlemapsapi.blogspot.com/atom.xml">Site Feed</a><br/>
+<a href="http://fusion.google.com/add?feedurl=http%3A//googlemapsapi.blogspot.com/atom.xml"><img border="0" alt="Add to Google" style="padding-top:5px;" width="104" src="http://buttons.googlesyndication.com/fusion/add.gif" height="17"/></a>
+<p><a href="http://feeds.feedburner.com/OfficialGoogleMapsApiBlog"><img width="88" style="border:0" alt="" src="http://feeds.feedburner.com/~fc/OfficialGoogleMapsApiBlog?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26"/></a></p>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=HTML&widgetId=HTML5&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML5"));' target='configHTML5' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML6'>
+<h2 class='title'>More Blogs from Google</h2>
+<div class='widget-content'>
+Visit our <a href="http://www.google.com/press/blogs/directory.html#tab0"> directory</a> for more information about Google blogs.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=HTML&widgetId=HTML6&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML6"));' target='configHTML6' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>Archives</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<select id='BlogArchive1_ArchiveMenu'>
+<option value=''>Archives</option>
+<option value='http://googlemapsapi.blogspot.com/2008_05_01_archive.html'>May (9)</option>
+<option value='http://googlemapsapi.blogspot.com/2008_04_01_archive.html'>April (6)</option>
+<option value='http://googlemapsapi.blogspot.com/2008_03_01_archive.html'>March (6)</option>
+<option value='http://googlemapsapi.blogspot.com/2008_02_01_archive.html'>February (7)</option>
+<option value='http://googlemapsapi.blogspot.com/2008_01_01_archive.html'>January (7)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_12_01_archive.html'>December (6)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_11_01_archive.html'>November (5)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_10_01_archive.html'>October (7)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_09_01_archive.html'>September (7)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_08_01_archive.html'>August (6)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_07_01_archive.html'>July (9)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_06_01_archive.html'>June (11)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_05_01_archive.html'>May (7)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_04_01_archive.html'>April (8)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_03_01_archive.html'>March (7)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_02_01_archive.html'>February (5)</option>
+<option value='http://googlemapsapi.blogspot.com/2007_01_01_archive.html'>January (4)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_12_01_archive.html'>December (1)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_11_01_archive.html'>November (5)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_10_01_archive.html'>October (3)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_09_01_archive.html'>September (6)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_08_01_archive.html'>August (3)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_07_01_archive.html'>July (3)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_06_01_archive.html'>June (5)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_05_01_archive.html'>May (4)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_04_01_archive.html'>April (7)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_03_01_archive.html'>March (5)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_02_01_archive.html'>February (3)</option>
+<option value='http://googlemapsapi.blogspot.com/2006_01_01_archive.html'>January (1)</option>
+<option value='http://googlemapsapi.blogspot.com/2005_12_01_archive.html'>December (3)</option>
+<option value='http://googlemapsapi.blogspot.com/2005_11_01_archive.html'>November (2)</option>
+</select>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML2'>
+<h2 class='title'>We Love Feedback</h2>
+<div class='widget-content'>
+<p><a href="http://groups-beta.google.com/group/Google-Maps-API">Discuss the Maps API</a> in the official discussion group, or <a href="http://local.google.com/support/bin/answer.py?answer=29435">contact us</a> if you have any questions about this blog.</p>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=HTML&widgetId=HTML2&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget LinkList' id='LinkList1'>
+<h2>Links</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://code.google.com/'>Google Code</a></li>
+<li><a href='http://www.google.com/apis/maps'>Google Maps API</a></li>
+<li><a href='http://www.google.com/apis/maps/documentation/'>Documentation</a></li>
+<li><a href='http://groups-beta.google.com/group/Google-Maps-API'>Discussion Group</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=LinkList&widgetId=LinkList1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target='configLinkList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget LinkList' id='LinkList2'>
+<h2>What We're Reading</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://googlemapsmania.blogspot.com/'>Google Maps Mania</a></li>
+<li><a href='http://www.googlesightseeing.com/'>Google Sightseeing</a></li>
+<li><a href='http://www.gearthblog.com/'>Google Earth Blog</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=LinkList&widgetId=LinkList2&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList2"));' target='configLinkList2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML3'>
+<h2 class='title'>More Google Dev Blog Posts</h2>
+<div class='widget-content'>
+<div id="blog_posts">
+
+<script type="text/javascript">
+
+function build_posts(data) {
+  var container = document.getElementById('blog_posts');
+  var list = document.createElement('div');
+  // Loop through all data items returned
+  for (var i=0; i < data.items.length; i++) {
+  	
+    var item = data.items[i];
+var listElement= document.createElement('div');
+listElement.className="listelement";
+
+		var link = document.createElement('a');
+		link.appendChild(document.createTextNode(item.title));
+
+	link.href = item.alternate.href;
+        listElement.appendChild(link)
+	listElement.appendChild(document.createElement('br'));    
+       
+
+
+var bloglink = document.createElement('a');
+bloglink.appendChild(document.createTextNode(item.origin.title));
+bloglink.href = item.origin.htmlUrl;
+bloglink.className="smalllink";
+listElement.appendChild(bloglink);
+list.appendChild(listElement);
+
+
+ }
+  container.appendChild(list);
+}
+</script>
+
+
+<script src="http://www.google.com/reader/public/javascript/user/10949413115399023739/label/officialgoogleblogs-dev?n=5&callback=build_posts" type="text/javascript"></script>
+
+
+</div>
+
+<a href="http://www.google.com/reader/shared/user/10949413115399023739/label/officialgoogleblogs-dev">Read more...</a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=HTML&widgetId=HTML3&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML4'>
+<div class='widget-content'>
+<br/>
+<i>Google Maps API Blog</i> is powered by Blogger. <a href="http://www.blogger.com/">Start your own weblog</a>.
+<br/><br/>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=HTML&widgetId=HTML4&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML4"));' target='configHTML4' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BloggerButton' id='BloggerButton1'>
+<div class='widget-content'>
+<a href='http://www.blogger.com'><img alt='Powered By Blogger' src='http://www.blogger.com/buttons/blogger-powerby-blue.gif'/></a>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=BloggerButton&widgetId=BloggerButton1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("BloggerButton1"));' target='configBloggerButton1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class='clear'>&#160;</div>
+</div>
+<!-- end content-wrapper -->
+<div id='footer-wrapper'>
+<div id='partnerBar'></div>
+<div class='footer section' id='footer'><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+Copyright &#169; 2008 Google Inc. All rights reserved.<br/>
+   <a href="http://www.google.com/privacy.html">Privacy Policy</a> | 
+	      <a href="http://www.google.com/terms_of_service.html">Terms of Service</a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=18549845&widgetType=HTML&widgetId=HTML1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div></div>
+</center><!-- end outer-wrapper -->
+<script src='https://ssl.google-analytics.com/urchin.js' type='text/javascript'>
+</script>
+<script type='text/javascript'>
+    _uacct="UA-18027-4";
+    _uanchor=1;
+    urchinTracker();
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="http://www.blogger.com/static/v1/widgets/512629240-widgets.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '18549845';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=18549845','http://googlemapsapi.blogspot.com/2008/05/love-my-maps-use-its-line-and-shape.html','18549845');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=18549845','94e_qyDEnxEU9PVkW9x_v4CgJZw:1293664331255','AOuZoY7OSFkYfutEpnQrv_uhHdAKHXnFqw:1293664331255');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Official Google Maps API Blog', 'pageType': 'item', 'url': 'http://googlemapsapi.blogspot.com/2008/05/love-my-maps-use-its-line-and-shape.html', 'canonicalUrl': 'http://googlemapsapi.blogspot.com/2008/05/love-my-maps-use-its-line-and-shape.html', 'homepageUrl': 'http://googlemapsapi.blogspot.com/', 'enabledCommentProfileImages': true, 'searchLabel': '', 'searchQuery': '', 'pageName': 'Love My Maps? Use its Line and Shape Editing in your API Apps!', 'pageTitle': 'Official Google Maps API Blog: Love My Maps? Use its Line and Shape Editing in your API Apps!', 'encoding': 'UTF-8', 'locale': 'en-US', 'isPrivate': false, 'isMobile': false, 'mobileClass': '', 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Official Google Maps API Blog - Atom\42 href\75\42http://googlemapsapi.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Official Google Maps API Blog - RSS\42 href\75\42http://googlemapsapi.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Official Google Maps API Blog - Atom\42 href\75\42http://www.blogger.com/feeds/18549845/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\07518549845\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Official Google Maps API Blog - Atom\42 href\75\42http://googlemapsapi.blogspot.com/feeds/1067346797265518234/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function c(b){this.t\75{};this.tick\75function(d,i,e){e\75e?e:(new Date).getTime();this.t[d]\75[e,i]};this.tick(\42start\42,null,b)}var f\75new c;a.jstiming\75{Timer:c,load:f};try{var g\75null;if(a.chrome\46\46a.chrome.csi)g\75Math.floor(a.chrome.csi().pageT);if(g\75\75null)if(a.gtbExternal)g\75a.gtbExternal.pageT();if(g\75\75null)if(a.external)g\75a.external.pageT;if(g)a.jstiming.pt\75g}catch(h){};a.tickAboveFold\75function(b){b\75b;var d\0750;if(b.offsetParent){do d+\75b.offsetTop;while(b\75b.offsetParent)}b\75d;b\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var j\75false;function k(){if(!j){j\75true;a.jstiming.load.tick(\42firstScrollTime\42)}}a.addEventListener?a.addEventListener(\42scroll\42,k,false):a.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': ''}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'footer', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar', null, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML6', 'sidebar', null, document.getElementById('HTML6'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'sidebar', null, document.getElementById('LinkList2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BloggerButtonView', new _WidgetInfo('BloggerButton1', 'sidebar', null, document.getElementById('BloggerButton1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'commentInteractionIframeUrl': 'http://www.blogger.com/comment-interaction-iframe.g?blogId\07518549845', 'showBacklinks': true, 'postId': '1067346797265518234', 'mobile': false}, 'displayModeFull'));
+</script>
+</body>
+</html>

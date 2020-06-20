@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    
+    <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="alexaVerifyID" content="dkPrlrocB3BLvlvyocBIdCgG_ik" /> <!-- this line is temporary. remove it in 73rd or 74th release -->
+    <title>11011110: Multiterminal planar flow</title>
+    <link rel="home" title="Home" href="http://www.livejournal.com/" />
+    <link rel="contents" title="Site Map" href="http://www.livejournal.com/site/" />
+    <link rel="help" title="Technical Support" href="http://www.livejournal.com/support/" />
+    <link rel="apple-touch-icon" href="http://l-stat.livejournal.com/img/apple-touch-icon.png" />
+    
+    
+        
+
+    <script>
+    
+    </script>
+     
+    
+        <script type="text/javascript">
+            Site = window.Site || {};
+
+            (function(){
+                var p = {"media_embed_enabled":1,"inbox_update_poll":0,"has_remote":0,"statprefix":"http://l-stat.livejournal.com","server_time":1293717272,"ctx_popup":1,"remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1,"remote_can_track_threads":null,"currentJournal":"11011110","siteroot":"http://www.livejournal.com","currentJournalBase":"http://11011110.livejournal.com"}, i;
+                for (i in p) Site[i] = p[i];
+            })();
+       </script>
+    <link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css,lj_base-app.css,ad_base.css,horizon/screen.css,horizon/layout.css,widget.css,statistics/un_stats.css,horizon/un_rblocks.css,horizon/loggedout.css,reskining/december2010/noncyr/december2010.css?v=1292528858" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1292528841" /><![endif]-->
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base-ie.css,horizon/ie.css?v=1277844792" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1263499801" /><![endif]-->
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery.js,jquery_fn.js,basic.js,livejournal.js,esn.js,ippu.js,lj_ippu.js,ljwidget.js,ljwidget_ippu.js,journal.js,hourglass.js,contextualhover.js,livejournal-local.js,thread_expander.js,thread_expander.ex.js,quickreply.js,md5.js?v=1292965427"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??horizon.js?v=1276636761"></script>
+
+    <script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=1483b796-4406-4000-98db-019c32f6059e&amp;type=website&amp;embeds=true&amp;post_services=livejournal%2Cfacebook%2Ctwitter%2Cmyspace%2Cdigg%2Cdelicious%2Clinkedin%2Cfriendfeed%2Cwordpress%2Cblogger%2Cgoogle_bmarks%2Ctechnorati&amp;onmouseover=false"></script><link href='http://www.livejournal.com/go.bml?journal=11011110&amp;itemid=211407&amp;dir=prev' rel='Previous' />
+<link href='http://www.livejournal.com/go.bml?journal=11011110&amp;itemid=211407&amp;dir=next' rel='Next' />
+
+    
+
+  </head>
+
+
+    <body class='logged-out' >
+    <div id="big-content-wrapper">
+	
+    <div id="content">
+    
+    <div id="content-inner">
+      
+      
+
+      
+      
+
+      
+
+      
+      <h1 class='logged-out'></h1>
+
+      <div id='content-wrapper' class='' style='margin-right: ; height: 1%'>
+        
+
+        
+
+        <!-- Content -->
+        <p><table><tr valign='middle'><td><img src='http://l-userpic.livejournal.com/32934265/7784841' width='100' height='100' align='absmiddle' hspace='3' title='0xDE' alt=''></td><td>0xDE (<span class='ljuser ljuser-name_' lj:user='11011110' style='white-space:nowrap'><a href='http://11011110.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=1' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://11011110.livejournal.com/'><b>11011110</b></a></span>) wrote,<br /><font size='-1'>@ <a href="http://11011110.livejournal.com/2010/">2010</a>-<a href="http://11011110.livejournal.com/2010/12/">12</a>-<a href="http://11011110.livejournal.com/2010/12/29/">29</a> 22:40:00</font></td></tr></table><div class="standout"><table class="container"><tr><td>
+<table><tr><td valign='middle'><a href="http://www.livejournal.com/go.bml?journal=11011110&amp;itemid=211407&amp;dir=prev"><img src="http://l-stat.livejournal.com/img/btn_prev.gif?v=1" width="24" height="24" alt="Previous Entry" title="Previous Entry" border='0' align="absmiddle" /></a>&nbsp;&nbsp;<a href="http://www.livejournal.com/tools/memadd.bml?journal=11011110&amp;itemid=211407"><img src="http://l-stat.livejournal.com/img/memadd.gif?v=1" width="24" height="24" alt="Add to memories!" title="Add to memories!" border='0' align="absmiddle" /></a>&nbsp;&nbsp;<a href="javascript:void(0)"><img src="http://l-stat.livejournal.com/img/btn_sharethis.gif?v=1" width="24" height="24" alt="Share this!" title="Share this!" border='0' align="absmiddle" /></a><script type="text/javascript">
+            SHARETHIS.addEntry({url:'http://11011110.livejournal.com/211407.html', title: 'Multiterminal planar flow'}, {button: false})
+                .attachButton(jQuery('a:last')[0]);
+            </script>&nbsp;&nbsp;<a href="http://www.livejournal.com/go.bml?journal=11011110&amp;itemid=211407&amp;dir=next"><img src="http://l-stat.livejournal.com/img/btn_next.gif?v=1" width="24" height="24" alt="Next Entry" title="Next Entry" border='0' align="absmiddle" /></a></td></tr></table>
+</td></tr></table></div>
+<div style='margin-left: 30px'><table border=0>
+<tr><td align=right><b>Entry tags:</b></td><td><a href='http://11011110.livejournal.com/tag/graph%20algorithms'>graph algorithms</a>, <a href='http://11011110.livejournal.com/tag/papers'>papers</a></td></tr>
+</table><p>
+<font face='Arial,Helvetica' size='+1'><i><b>Multiterminal planar flow</b></i></font><br />
+The main point of this post is to talk about two recent arXiv preprints on <a href="http://en.wikipedia.org/wiki/Maximum_flow_problem">maximum flow algorithms</a>, "Multiple-Source Multiple-Sink Maximum Flow in Planar Graphs" (<a href="http://arxiv.org/abs/1012.4767">arXiv:1012.4767</a>) by Yahav Nussbaum, and "Multiple-Source Multiple-Sink Maximum Flow in Directed Planar Graphs in O(n<sup>3/2</sup>log&nbsp;n) Time" (<a href="http://arxiv.org/abs/1012.5870">arXiv:1012.5870</a>) by Shay Mozes. However, first I'd like to set the stage by apologizing for some sloppy scholarship in the literature survey component of one of my own papers.<br /><br /><a name="cutid1"></a>In my recent ISAAC paper "Flows in One-Crossing-Minor-Free Graphs" with Erin Chambers, we wrote "Due to known <a href="http://en.wikipedia.org/wiki/Planar_separator_theorem">separator theorems</a> for minor-closed families, an algorithm of Johnson and Venkatesan can be applied to find flows in any minor-closed family in time O(n<sup>3/2</sup>log&nbsp;n)". But this appears to be overstated at best, and more likely just wrong. Johnson and Venkatesan's paper is about flows in planar networks, and they use both simple-cycle separators (having the property that contracting one side of the separator preserves planarity) and the duality between cuts and paths in the case that the two flow terminals are on the outer face of a planar embedding. So simply having separators is not good enough; one needs other ideas to make their techniques work, and the analogues to those other ideas in more general minor-closed families do not seem to be present. Which means that finding a maximum flow algorithm for minor-closed families that is better than the algorithms for arbitrary sparse graphs remains an interesting open problem.<br /><br />Now, on to planar multiple-source multiple-sink flow. One may well ask, why doesn't one see more papers on flows with multiple sources and sinks? It seems a natural enough variation on the problem. The answer is that, when the class of input graphs is unrestricted and one has multiple sources, one can replace them by a single new source connected by infinite-capacity edges to the previous sources. And similarly multiple sinks can be replaced by a single new sink. So flow with multiple sources and sinks is equivalent to a conventional flow problem with a single source and a single sink in a graph with two new vertices. But of course adding these vertices could destroy planarity. The graphs formed by adding two vertices to a planar graph (the 2-apex graphs) are minor-closed, so if the remark in my paper had been accurate then we would already know how to solve planar multi-terminal flows in time O(n<sup>3/2</sup>log&nbsp;n). But the remark was not accurate and before these papers came out we didn't know how to do that.<br /><br />Both new papers use cycle separators, and both have a divide-and-conquer strategy in which the "conquer" steps use as a subproblem algorithms for flow in planar graphs with multiple sources and a single sink (or multiple sinks and a single source). This subproblem was solved independently and nearly simultaneously in two other recent arXiv preprints by Borradaile and Wulﬀ-Nilsen (<a href="http://arxiv.org/abs/1008.4966">arXiv:1008.4966</a>) and Klein and Mozes (<a href="http://arxiv.org/abs/1008.5332">arXiv:1008.5332</a>) and its solution is itself a cycle-separator-based divide and conquer, whose running time is O(n<sup>3/2</sup>log&nbsp;n). In Nussbaum's algorithm, the outer level of divide and conquer multiplies the time by another log factor, while Mozes finds a way of avoiding this penalty.<br /><br />In a little more detail, Nussbaum uses a weighted separator theorem that allows him to partition the input graph into subgraphs with a number of sources and sinks that decreases by a constant factor at each level of the recursion. Mozes instead uses an unweighted separator theorem that decreases the total number of vertices by a constant factor at each level but that may not evenly split the sources and the sinks.<br /><br />After dividing the vertices by his separator, Nussbaum finds a maximum flow from the sources on the left side of the separator to the sinks on the right side (by combining a multiple-source single-sink flow from the sources to the separator and a single-source multiple-sink flow from the separator to the sinks, and then reconciling these two flows). The minimum cut corresponding to this maximum flow is itself a good separator, allowing Nussbaum to recurse on each side of the cut. Then he adds the cut edges back to the graph and finds the remaining flow from the sources on the right side of the separator to the sinks on the left (again, by combining multi-source single-sink and single-source multi-sink flow subproblems).<br /><br />Mozes performs the recursion in a slightly different order: he first finds a maximum flow in each subproblem, and then finds and reconciles maximum flows from the subproblems to the separator vertices and vice versa. By doing things in this order, he avoids having to find a cut that is a good separator, allowing him to use unweighted separators. So he gets a time that can be analyzed by something resembling the recurrence T(n)&nbsp;=&nbsp;2T(n/2)&nbsp;+&nbsp;O(n<sup>3/2</sup>log&nbsp;n), which solves to O(n<sup>3/2</sup>log&nbsp;n) without any additional logs.<br /><br />As well as being interesting for their algorithmic results, to me this sequence of papers is interesting as a case study of the speed-up in research made possible by preprint services such as the arXiv. If Nussbaum had to wait for one conference reviewing cycle to find out about the multiple-source single-sink papers that he needed for his result, and then Mozes had to wait for another cycle for Nussbaum's paper to come out before he could improve it, it would all have taken a much longer time. And the mistake in my own paper could have made the delay even longer, by tricking some conference program committee members into thinking Nussbaum and Mozes' results were already known. Because of the arXiv, these unnecessary delays can be avoided, speeding the pace of research.<a name='cutid1-end'></a></div><br style='clear: both' /><hr width='100%' size='2' align='center' /><div id='Comments'><a name='comments'></a><form style='display: inline' method='post' action='http://www.livejournal.com/talkmulti.bml' name='multiform' onsubmit='return multiformSubmit(this, {no_action: "You have not selected one of the actions",no_comments: "You have not selected any comments",conf_delete: "Are you sure you wish to delete the selected comments?"})'><p class='lesstop' align='center'><b>(<a href='http://11011110.livejournal.com/211407.html?mode=reply'>Post a new comment</a>)</b></p><input type='hidden' name="ditemid" value="211407" /><input type='hidden' name="journal" value="11011110" /></form></div>
+
+        <div class='clear'></div>
+      
+      </div>
+
+      
+
+    </div>
+    </div>
+    <div class="push"></div>
+    </div>
+    <!-- End \#content -->
+
+    
+        <div id="footer">
+            <div id="footer-links">
+                <table><tr>
+                    <td>
+                        <h3>About</h3>
+                        <ul id="footer-links-col1">
+                            <li><a href="http://www.livejournal.com/contact/">Contact</a></li>
+                            <li><a href="http://livejournalinc.com/sales.php">Advertise</a></li>
+                            <li><a href="http://www.livejournalinc.com/jobs/">Jobs</a></li>
+                            <li><a href="http://www.livejournal.com/news.bml">Site News</a></li>
+                            <li><a href="http://www.livejournalinc.com/">More...</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Help</h3>
+                        <ul id="footer-links-col2">
+                            <li><a href="http://www.livejournal.com/support/">Support</a> /
+                            <a href="http://www.livejournal.com/support/faq.bml">FAQs</a></li>
+                            <li><a href="http://www.livejournal.com/site/safetytips.bml">Safety Tips</a></li>
+                        </ul>
+                        <h3>Get Involved</h3>
+                        <ul>
+                            <li><a href="http://www.livejournal.com/support/faqbrowse.bml?faqid=57">Volunteer</a></li>
+                            <li><a href="http://community.livejournal.com/lj_dev/">Developers</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Legal</h3>
+                        <ul id="footer-links-col3">
+                            <li><a href="http://www.livejournal.com/legal/tos.bml">Terms of Service</a></li>
+                            <li><a href="http://www.livejournal.com/legal/privacy.bml">Privacy Policy</a></li>
+                            <li><a href="http://www.livejournal.com/legal/dmca.bml">Copyright</a></li>
+                            <li><a href="http://www.livejournal.com/abuse/policy.bml">Abuse Policy</a></li>
+                        </ul>
+                      	<h3>LJ Labs</h3>
+                        <ul class="footer-links-col" id="footer-links-col5">
+                            <li><a href="http://aqua.livejournal.ru/">LJ Aqua</a></li>
+                            <li><a href="http://www.livejournal.com/labs.bml">More...</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Store</h3>
+                        <ul id="footer-links-col4">
+                            <li><a href="http://www.livejournal.com/manage/account/">Upgrade Account</a></li>
+                            <li><a href="http://www.livejournal.com/shop/vgift.bml">Virtual Gifts</a></li>
+                            <li><a href="https://www.zazzle.com/livejournal*">Merchandise</a></li>
+                            <li><a href="http://www.livejournal.com/shop/">More...</a></li>
+                        </ul>
+                    </td>
+                     <td class="last">
+                        <ul id="footer-links-col6">
+                            <li>Change language:</li>
+                            <li><select name="lang" id="footer_lang_list">
+<option value="en_LJ" selected='selected'>English</option>
+<option value="en_GB">English (UK)</option>
+<option value="de">Deutsch</option>
+<option value="da">Dansk</option>
+<option value="es">español</option>
+<option value="fr">Français</option>
+<option value="it">Italiano</option>
+<option value="ru">Русский</option>
+<option value="uk">Українська</option>
+<option value="be">Беларуская</option>
+<option value="ja">日本語</option>
+<option value="pt">Português</option>
+<option value="eo">Esperanto</option>
+<option value="he">עברית</option>
+<option value="nl">Nederlands</option>
+<option value="hu">Magyar</option>
+<option value="ga">Gaeilge</option>
+<option value="is">íslenska</option>
+<option value="fi">suomi</option>
+<option value="gr">Ελληνικά</option>
+<option value="nb">Norsk bokmål</option>
+<option value="sv">Svenska</option>
+<option value="pl">polski</option>
+<option value="zh">简体中文</option>
+<option value="lv">Latviešu</option>
+<option value="tr">Türkçe</option>
+<option value="ms">Bahasa Melayu</option>
+<option value="hi">हिन्दी</option>
+<option value="pt_BR">Português Brasileiro</option>
+<option value="zh_TR">繁體中文</option>
+<option value="lt">Lietuvių</option>
+<option value="nn">Norsk nynorsk</option>
+</select></li>
+                        </ul>
+						<dl class="current-version"><dt><a href="http://news.livejournal.com/"><a href="http://lj-releases.livejournal.com">Current version</a></a>:</dt><dd>v.74.1</dd></dl>
+                    </td>
+                </tr><tr>
+                    <td colspan="5">
+                        <p class="more_lj"><a href="http://www.livejournal.com/site/">&raquo; View Full Sitemap</a></p>
+                    </td>
+                </tr></table>
+            </div>
+            <div id="footer-copyright">Copyright &copy; 1999-2010 LiveJournal, Inc.  All rights reserved.</div>
+        </div>
+        <!-- end footer -->
+    
+
+
+    <div id="navigation">
+    <div id='Userpic'></div><!-- end #Userpic -->
+      <div id="NavigationWelcomeLogo">
+      
+
+      </div>
+      <!-- End Navigation and Welcome -->
+
+            <div id='NavBar'>
+      <ul id='NavMenu'>
+      <li class='NavMenuItem' id='NavMenuItem1'><a href='http://www.livejournal.com/' id='horizon-menu-home'>Home</a></li>
+<li class='NavMenuItem' id='NavMenuItem2'><a href='http://www.livejournal.com/create.bml' id='horizon-menu-home'>Create an account</a></li>
+<li class='NavMenuItem' id='NavMenuItem3'><a href='http://www.livejournal.com/search/' id='horizon-menu-explore'>Explore</a><ul class='NavMenuSubNav' id='NavMenu3'>
+<li class='NavMenuSubNavBack'><iframe src='about:blank' frameborder='0' class='NavMenuSubNavBack'></iframe></li><li class=''><a href='http://www.livejournal.com/interests.bml'>Search by Interest</a></li>
+<li class=''><a href='http://www.livejournal.com/schools/'>Search by School</a></li>
+<li class=''><a href='http://www.livejournal.com/browse/'>Community Directory</a></li>
+<li class=''><a href='http://www.livejournal.com/syn/'>Feeds</a></li>
+<li class=''><a href='http://www.livejournal.com/misc/qotdarchive.bml'>Question of the Day</a></li>
+<li class=''><a href='http://www.livejournal.com/radio/'>FRNK Radio</a></li>
+</ul>
+</li>
+<li class='NavMenuItem' id='NavMenuItem4'><a href='http://www.livejournal.com/shop/' id='horizon-menu-shop'>Shop</a><ul class='NavMenuSubNav' id='NavMenu4'>
+<li class='NavMenuSubNavBack'><iframe src='about:blank' frameborder='0' class='NavMenuSubNavBack'></iframe></li><li class=''><a href='http://www.livejournal.com/shop/paidaccount.bml?form=3'>Gift Paid Account</a></li>
+<li class=''><a href='http://www.livejournal.com/shop/vgift.bml'>Virtual Gifts</a></li>
+<li class=''><a href='http://www.zazzle.com/livejournal'>Merchandise</a></li>
+</ul>
+</li>
+<li class='NavMenuItem' id='NavMenuItem5'><a href='http://www.livejournal.com/extra/' id='horizon-menu-apps'>LJ Extras</a><ul class='NavMenuSubNav' id='NavMenu5'>
+<li class='NavMenuSubNavBack'><iframe src='about:blank' frameborder='0' class='NavMenuSubNavBack'></iframe></li><li class=''><a href='http://www.livejournal.com/devices'>Mobile</a></li>
+<li class=''><a href='http://www.livejournal.com/chat/'>LJ Talk</a></li>
+<li class=''><a href='http://www.livejournal.com/download/'>Downloads</a></li>
+<li class=''><a href='http://www.livejournal.com/classifieds'>Classifieds</a></li>
+</ul>
+</li>
+
+        <li id="NavMenuSearch">
+          <form action="http://www.livejournal.com/search/" method="get">
+          
+            <input type="text" value="Find" size="12" name="q" id='SearchText' onfocus="if(this.value=='Find')this.value='';" onblur="if(this.value=='')this.value='Find';" />
+          
+                <select name="area">
+                    <option value='default'>All</option>
+                    <option value='posts'>Entries</option>
+                    <option value='comments'>Comments</option>
+                    <option value='journals'>Journals</option>
+                    <option value='faq'>FAQ</option>
+                </select>
+            
+            <input type="submit" value="Search" />
+          </form>
+        </li>
+      </ul>
+      </div>
+      <!-- End navbar -->
+
+
+      
+
+    </div>
+    <!-- End #navigation -->
+    <dl class="b-reskining-about"><dt></dt><dd>Image by <span class='ljuser ljuser-name_perplexedchick' lj:user='perplexedchick' style='white-space:nowrap'><a href='http://perplexedchick.livejournal.com/profile'><img src='http://files.livejournal.com/userhead/146' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://perplexedchick.livejournal.com/'><b>perplexedchick</b></a></span>. Join the contest in <span class='ljuser ljuser-name_remixed' lj:user='remixed' style='white-space:nowrap'><a href='http://community.livejournal.com/remixed/profile'><img src='http://l-stat.livejournal.com/img/community.gif?v=1' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://community.livejournal.com/remixed/'><b>remixed</b></a></span>!</dd></dl>
+
+    <!-- Login -->
+            <div class="lj_loginform" id="Login">
+          <form style='margin: 0; padding: 0;' method="post" action="https://www.livejournal.com/login.bml?ret=1" id="login" class="lj_login_form">
+            
+            <input type='hidden' name='mode' value='login' />
+            
+            <table cellspacing="2" cellpadding="0">
+              <tr>
+                <th class="desc"><label for='login_user'>Username:</label></th>
+                <td><input type="text" name="user" size="24" id='login_user' tabindex="1" /></td>
+                <td rowspan="3" style="padding-left: 10px; vertical-align: top;">
+                  <a href="http://www.livejournal.com/create.bml">Create an Account</a><br />
+                  <a href="http://www.livejournal.com/lostinfo.bml">Forgot your login or password?</a><br/>
+                  <a href="http://www.livejournal.com/identity/login.bml?type=openid" title="Log in with OpenID" class="i-auth"><img src="http://l-stat.livejournal.com/img/icons/openid-16.gif" width="16" height="16" alt="Log in with OpenID" /></a> <a href="http://www.livejournal.com/identity/login.bml?type=facebook" title="Login with Facebook" class="i-auth"><img src="http://l-stat.livejournal.com/img/icons/facebook-16.gif" width="16" height="16" alt="Login with Facebook" /></a> <a href="http://www.livejournal.com/identity/login.bml?type=twitter" title="Login with Twitter" class="i-auth"><img src="http://l-stat.livejournal.com/img/icons/twitter-16.gif" width="16" height="16" alt="Login with Twitter" /></a><br />
+                </td>
+              </tr>
+              <tr>
+                <th class="desc"><label for='login_password'>Password:</label></th>
+                <td style='white-space: nowrap;'><input type="password" name="password" size="15" class="lj_login_password" tabindex="2" />
+                <input type='submit' value="Log in" tabindex='3' />
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><label><input type="checkbox" name="remember_me" value="1" tabindex="4"  /> Remember Me</label></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="2" style='font-size: .8em; white-space: nowrap'>
+                    <a href="http://www.livejournal.com/manage/settings/?cat=display">English &bull; Español &bull; Deutsch &bull; Русский&hellip;</a>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+    <!-- End Login -->
+
+    <!-- Logo -->
+    <div id="Logo">
+    <a href='http://www.livejournal.com' style='border: 0'><img src='http://l-stat.livejournal.com/horizon/logo.png' style='width: 83px; height: 86px' alt='' class='transparentpng' />
+</a><div id='SiteName'><a href='http://www.livejournal.com' style='border: 0'><img src='http://l-stat.livejournal.com/horizon/livejournal.png' style='width: 189px; height: 27px' alt='' class='transparentpng' />
+</a></div>
+    </div>
+    <!-- End Logo -->
+
+
+    <!-- Extra block to read style from and call to initialize Horizon which reads style -->
+    <div id='Alpha' style='display: none !important'>&nbsp;</div>
+    <!--[if lt IE 7]><script>Horizon.scheme_init();</script><![endif]-->
+
+    <div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<script type="text/javascript"> var DR_id = 1111; </script>
+<script src="http://l-stat.livejournal.com/js/pagestats/DR_v4u3.js?v=1" type="text/javascript"></script>
+    <!-- Begin comScore Tag -->
+<script>
+    document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+
+<script>
+  COMSCORE.beacon({
+    c1:2,
+    c2:7602110,
+    c3:"",
+    c4:"",
+    c5:"",
+    c6:"",
+    c15:""
+  });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=7602110&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+</div>
+
+    
+    
+  </body>
+</html>
+

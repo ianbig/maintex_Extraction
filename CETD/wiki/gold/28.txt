@@ -1,0 +1,114 @@
+﻿
+Endosymbiotic theory
+
+Electron micrograph of a mitochondrion showing its mitochondrial matrix and membranes.
+The endosymbiotic theory concerns the origins of mitochondria, plastids (e.g. chloroplasts), and possibly other organelles of eukaryotic cells. According to this theory, certain organelles originated as free-living bacteria that were taken inside another cell as endosymbionts. Mitochondria developed from proteobacteria (in particular, Rickettsiales or close relatives) and chloroplasts from cyanobacteria.
+Contents [hide]
+1 History
+2 Evidence
+3 Secondary endosymbiosis
+4 Problems
+5 See also
+6 Notes
+7 References
+8 External links
+[edit]History
+
+The endosymbiotic theory was first articulated by the Russian botanist Konstantin Mereschkowski in 1905.[1] Mereschkowski was familiar with work by botanist Andreas Schimper, who had observed in 1883 that the division of chloroplasts in green plants closely resembled that of free-living cyanobacteria, and who had himself tentatively proposed (in a footnote) that green plants had arisen from a symbiotic union of two organisms.[2] Ivan Wallin extended the idea of an endosymbiotic origin to mitochondria in the 1920s.[3] These theories were initially dismissed or ignored. More detailed electron microscopic comparisons between cyanobacteria and chloroplasts (for example studies by Hans Ris[4]), combined with the discovery that plastids and mitochondria contain their own DNA[5] (which by that stage was recognized to be the hereditary material of organisms) led to a resurrection of the idea in the 1960s.
+The endosymbiotic theory was advanced and substantiated with microbiological evidence by Lynn Margulis in a 1967 paper, The Origin of Mitosing Eukaryotic Cells.[6] In her 1981 work Symbiosis in Cell Evolution she argued that eukaryotic cells originated as communities of interacting entities, including endosymbiotic spirochaetes that developed into eukaryotic flagella and cilia. This last idea has not received much acceptance, because flagella lack DNA and do not show ultrastructural similarities to bacteria or archaea. See also Evolution of flagella. According to Margulis and Dorion Sagan,[7] "Life did not take over the globe by combat, but by networking" (i.e., by cooperation). The possibility that peroxisomes may have an endosymbiotic origin has also been considered, although they lack DNA. Christian de Duve proposed that they may have been the first endosymbionts, allowing cells to withstand growing amounts of free molecular oxygen in the Earth's atmosphere. However, it now appears that they may be formed de novo, contradicting the idea that they have a symbiotic origin.[8]
+It is believed that over millenia these endosymbionts transferred some of their own DNA to the host cell's nucleus during the evolutionary transition from a symbiotic community to an instituted eukaryotic cell (called "serial endosymbiosis"). This hypothesis is thought to be possible because it is known today from scientific observation that transfer of DNA occurs between bacteria species, even if they are not closely related. Bacteria can take up DNA from their surroundings and have a limited ability to incorporate it into their own genome.
+[edit]Evidence
+
+Evidence that mitochondria and plastids arose from bacteria is as follows[9][10][11]:
+New mitochondria and plastids are formed only through a process similar to binary fission. In some algae, such as Euglena, the plastids can be destroyed by certain chemicals or prolonged absence of light without otherwise affecting the cell. In such a case, the plastids will not regenerate.
+They are surrounded by two or more membranes, and the innermost of these shows differences in composition from the other membranes of the cell. The composition is like that of a bacterial cell membrane.
+Both mitochondria and plastids contain DNA that is different from that of the cell nucleus and that is similar to that of bacteria (in being circular in shape and in its size).
+DNA sequence analysis and phylogenetic estimates suggest that nuclear DNA contains genes that probably came from plastids.
+These organelles' ribosomes are like those found in bacteria (70s).
+Proteins of organelle origin, like those of bacteria, use N-formylmethionine as the initiating amino acid.
+Much of the internal structure and biochemistry of plastids, for instance the presence of thylakoids and particular chlorophylls, is very similar to that of cyanobacteria. Phylogenetic estimates constructed with bacteria, plastids, and eukaryotic genomes also suggest that plastids are most closely related to cyanobacteria.
+Mitochondria have several enzymes and transport systems similar to those of bacteria.
+Some proteins encoded in the nucleus are transported to the organelle, and both mitochondria and plastids have small genomes compared to bacteria. This is consistent with an increased dependence on the eukaryotic host after forming an endosymbiosis. Most genes on the organellar genomes have been lost or moved to the nucleus. Most genes needed for mitochondrial and plastid function are located in the nucleus. Many originate from the bacterial endosymbiont.
+Plastids are present in very different groups of protists, some of which are closely related to forms lacking plastids. This suggests that if chloroplasts originated de novo, they did so multiple times, in which case their close similarity to each other is difficult to explain.
+Many of these protists contain "primary" plastids that have not yet been acquired from other plastid-containing eukaryotes.
+Among eukaryotes that acquired their plastids directly from bacteria (known as Primoplantae), the glaucophyte algae have chloroplasts that strongly resemble cyanobacteria. In particular, they have a peptidoglycan cell wall between the two membranes.
+Mitochondria and plastids are similar in size to bacteria.
+[edit]Secondary endosymbiosis
+
+Primary endosymbiosis involves the engulfment of a bacterium by another free living organism. Secondary endosymbiosis occurs when the product of primary endosymbiosis is itself engulfed and retained by another free living eukaryote. Secondary endosymbiosis has occurred several times and has given rise to extremely diverse groups of algae and other eukaryotes. Some organisms can take opportunistic advantage of a similar process, where they engulf an alga and use the products of its photosynthesis, but once the prey item dies (or is lost) the host returns to a free living state. Obligate secondary endosymbionts become dependent on their organelles and are unable to survive in their absence (for a review see McFadden 2001[12]). RedToL, the Red Algal Tree of Life Initiative funded by the National Science Foundation highlights the role red algae or Rhodophyta played in the evolution of our planet through secondary endosymbiosis.
+One possible secondary endosymbiosis in process has been observed by Okamoto & Inouye (2005). The heterotrophic protist Hatena behaves like a predator until it ingests a green alga, which loses its flagella and cytoskeleton, while Hatena, now a host, switches to photosynthetic nutrition, gains the ability to move towards light and loses its feeding apparatus.
+The process of secondary endosymbiosis left its evolutionary signature within the unique topography of plastid membranes. Secondary plastids are surrounded by three (in euglenophytes and some dinoflagellates) or four membranes (in haptophytes, heterokonts, cryptophytes, and chlorarachniophytes). The two additional membranes are thought to correspond to the plasma membrane of the engulfed alga and the phagosomal membrane of the host cell. The endosymbiotic acquisition of a eukaryote cell is represented in the cryptophytes; where the remnant nucleus of the red algal symbiont (the nucleomorph) is present between the two inner and two outer plastid membranes.[citation needed]
+Despite the diversity of organisms containing plastids, the morphology, biochemistry, genomic organisation, and molecular phylogeny of plastid RNAs and proteins suggest a single origin of all extant plastids – although this theory is still debated.[13][14]
+[edit]Problems
+
+
+This section does not cite any references or sources.
+Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (July 2009)
+Neither mitochondria nor plastids can survive in oxygen or outside the cell, having lost many essential genes required for survival. The standard counterargument points to the large timespan that the mitochondria/plastids have co-existed with their hosts. In this view, genes and systems that were no longer necessary were simply deleted, or in many cases, transferred into the host genome instead. (In fact these transfers constitute an important way for the host cell to regulate plastid or mitochondrial activity.)
+The transfer of genes from mitochondria and plastids to the “host genome” or cell nucleus raises a further problem: why were all genes not transferred? In other words, why do any genes at all remain in mitochondria and plastids? This problem is addressed by the CoRR Hypothesis, which proposes that genes and respiratory chain proteins are Co-located for Redox Regulation.
+A large cell, especially one equipped for phagocytosis, has vast energetic requirements, which cannot be achieved without the internalisation of energy production (due to the decrease in the surface area to volume ratio as size increases). This implies that, for the cell to gain mitochondria, it could not have been a eukaryote, and must have been a bacterium. This in turn implies that the emergence of the eukaryotes and the formation of mitochondria were achieved simultaneously. This may be explained by possibly a very close symbiotic relationship between two types of bacteria which eventually led to gene exchange and engulfing of the mitochondria precursors through partial fusion or engulfing by the host bacteria.
+Genetic analysis of small eukaryotes that lack mitochondria shows that they all still retain genes for mitochondrial proteins. This implies that all these eukaryotes once had mitochondria. This objection can be answered if, as suggested above, the origin of the eukaryotes coincided with the formation of mitochondria.
+These last two problems are accounted for in the Hydrogen hypothesis.
+[edit]See also
+
+Hatena
+Lichen
+Symbiogenesis
+Transfer of mitochondrial and chloroplast DNA to the nucleus
+Viral Eukaryogenesis (hypothesis that the cell nucleus originated from endosymbiosis).
+Protobiont
+Numt
+Hydrogen hypothesis
+[edit]Notes
+
+^ Mereschkowski C (1905). "Über Natur und Ursprung der Chromatophoren im Pflanzenreiche". Biol Centralbl 25: 593–604.
+^ Schimper AFW (1883). "Über die Entwicklung der Chlorophyllkörner und Farbkörper". Bot. Zeitung 41: 105–14, 121–31, 137–46, 153–62.
+^ Wallin IE (1923). "The Mitochondria Problem". The American Naturalist 57 (650): 255–61. doi:10.1086/279919.
+^ Ris H, Singh RN (January 1961). "Electron microscope studies on blue-green algae". J Biophys Biochem Cytol 9 (1): 63–80. doi:10.1083/jcb.9.1.63. PMID 13741827. PMC 2224983. http://www.jcb.org/cgi/pmidlookup?view=long&pmid=13741827.
+^ Stocking C and Gifford E (1959). "Incorporation of thymidine into chloroplasts of Spirogyra". Biochem. Biophys. Res. Comm. 1: 159–64. doi:10.1016/0006-291X(59)90010-5.
+^ Lynn Sagan (1967). "On the origin of mitosing cells". J Theor Bio. 14 (3): 255–274. doi:10.1016/0022-5193(67)90079-3. PMID 11541392.
+^ Margulis, Lynn; Sagan, Dorion (2001). "Marvellous microbes". Resurgence 206: 10–12.
+^ Gabaldón T, Snel B, van Zimmeren F, Hemrika W, Tabak H, Huynen MA (2006). "Origin and evolution of the peroxisomal proteome". Biol. Direct 1: 8. doi:10.1186/1745-6150-1-8. PMID 16556314. PMC 1472686. http://www.biology-direct.com/content/1//8. (Provides evidence that contradicts an endosymbiotic origin of peroxisomes. Instead it is suggested that they evolutionarily originate from the Endoplasmic Reticulum)
+^ http://biology-pages.info Kimball, J. 2010. Kimball's Biology Pages. Accessed October 13, 2010. An online open source biology text by Harvard professor, and author of a general biology text, John W. Kimball.
+^ Reece, J., Lisa A. Urry, Michael L. Cain, Steven A. Wasserman, Peter V. Minorsky, Robert B. Jackson, 2010. Campbell Biology. 9th Edition Benjamin Cummings; 9th Ed. (October 7, 2010)
+^ Raven, P., George Johnson, Kenneth Mason, Jonathan Losos, Susan Singer, 2010. Biology. McGraw-Hill 9th Ed. (January 14, 2010)
+^ McFadden GI (2001). "Primary and secondary endosymbiosis and the origin of plastids". J Phycology 37 (6): 951–9. doi:10.1046/j.1529-8817.2001.01126.x.
+^ McFadden GI, van Dooren GG (July 2004). "Evolution: red algal genome affirms a common origin of all plastids". Curr. Biol. 14 (13): R514–6. doi:10.1016/j.cub.2004.06.041. PMID 15242632. http://linkinghub.elsevier.com/retrieve/pii/S0960982204004464.
+^ Gould SB, Waller RF, McFadden GI (2008). "Plastid evolution". Annu Rev Plant Biol 59: 491–517. doi:10.1146/annurev.arplant.59.032607.092915. PMID 18315522. http://arjournals.annualreviews.org/doi/abs/10.1146/annurev.arplant.59.032607.092915?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dncbi.nlm.nih.gov.
+[edit]References
+
+Alberts, Bruce (2002). Molecular biology of the cell. New York: Garland Science. ISBN 0-8153-3218-1. (General textbook)
+Blanchard JL, Lynch M (July 2000). "Organellar genes: why do they end up in the nucleus?". Trends Genet. 16 (7): 315–20. doi:10.1016/S0168-9525(00)02053-9. PMID 10858662. http://linkinghub.elsevier.com/retrieve/pii/S0168-9525(00)02053-9. (Discusses theories on how mitochondria and chloroplast genes are transferred into the nucleus, and also what steps a gene needs to go through in order to complete this process.)
+Jarvis P (April 2001). "Intracellular signalling: the chloroplast talks!". Curr. Biol. 11 (8): R307–10. doi:10.1016/S0960-9822(01)00171-3. PMID 11369220. http://linkinghub.elsevier.com/retrieve/pii/S0960-9822(01)00171-3. (Recounts evidence that chloroplast-encoded proteins affect transcription of nuclear genes, as opposed to the more well-documented cases of nuclear-encoded proteins that affect mitochondria or chloroplasts.)
+Brinkman FS, Blanchard JL, Cherkasov A, et al. (August 2002). "Evidence that plant-like genes in Chlamydia species reflect an ancestral relationship between Chlamydiaceae, cyanobacteria, and the chloroplast". Genome Res. 12 (8): 1159–67. doi:10.1101/gr.341802. PMID 12176923. PMC 186644. http://www.genome.org/cgi/content/full/12/8/1159.
+Okamoto N, Inouye I (October 2005). "A secondary symbiosis in progress?". Science 310 (5746): 287. doi:10.1126/science.1116125. PMID 16224014. http://www.sciencemag.org/cgi/pmidlookup?view=long&pmid=16224014.
+Cohen WD, Gardner RS (1959). "Viral Theory and Endosymbiosis". http://www.psychoneuroendocrinology.com/symbiosis.pdf. (Discusses theory of origin of eukaryotic cells by incorporating mitochondria and chloroplasts into anaerobic cells with emphasis on 'phage bacterial and putative viral mitochondrial/chloroplast interactions.)
+[edit]External links
+
+Tree of Life Eukaryotes
+v • d • e
+Major subfields of biology
+Anatomy · Astrobiology · Biochemistry · Biomechanics · Biophysics · Bioinformatics · Biostatistics · Botany · Cell biology · Cellular microbiology · Chemical biology · Chronobiology · Conservation biology · Developmental biology · Ecology · Epidemiology · Evolutionary biology · Genetics · Genomics · Histology · Human biology · Immunology · Marine biology · Mathematical biology · Microbiology · Molecular biology · Mycology · Neuroscience · Nutrition · Origin of life · Paleontology · Parasitology · Pathology · Pharmacology · Physiology · Systems biology · Taxonomy · Toxicology · Zoology
+v • d • e
+Basic topics in evolutionary biology
+Evidence of common descent
+Processes of evolution	
+Adaptation · Macroevolution · Microevolution · Speciation
+Population genetic mechanisms	
+Genetic drift · Gene flow · Mutation · Natural selection
+Evolutionary developmental
+biology (Evo-devo) concepts	
+Canalisation · Inversion · Modularity · Phenotypic plasticity
+Evolution of organs
+and biological processes	
+Aging · Cellular · DNA · The Ear · The Eye · Flagella · Flight · Hair · Human intelligence · Modular · Multicellular · Sex
+Taxa evolution	
+Birds · Butterflies · Cephalopods · Dinosaurs · Dolphins and whales · Fungi · Horses · Humans · Influenza · Insects · Lemur · Life · Molluscs · Plants · Sirenians (sea cows) · Spiders · Viruses
+Modes of speciation	
+Anagenesis · Catagenesis · Cladogenesis
+History of evolutionary thought	
+Charles Darwin · On the Origin of Species · Modern evolutionary synthesis · Gene-centered view of evolution · Life (classification trees)
+Other subfields	
+Ecological genetics · Molecular evolution · Phylogenetics · Systematics
+List of evolutionary biology topics · Timeline of evolution
+Categories: Evolutionary biology | Symbiosis | Microbiology

@@ -1,0 +1,1205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>Scheme (programming language) - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Scheme_(programming_language)",
+wgTitle="Scheme (programming language)",
+wgAction="view",
+wgArticleId=28119,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=403294009,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["Scheme programming language", "Articles with example Scheme code"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+<style type="text/css">/*<![CDATA[*/
+.source-scheme {line-height: normal;}
+.source-scheme li, .source-scheme pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for scheme
+ * CSS class: source-scheme, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.scheme.source-scheme .de1, .scheme.source-scheme .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.scheme.source-scheme  {font-family:monospace;}
+.scheme.source-scheme .imp {font-weight: bold; color: red;}
+.scheme.source-scheme li, .scheme.source-scheme .li1 {font-weight: normal; vertical-align:top;}
+.scheme.source-scheme .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.scheme.source-scheme .li2 {font-weight: bold; vertical-align:top;}
+.scheme.source-scheme .kw1 {color: #b1b100;}
+.scheme.source-scheme .co1 {color: #808080; font-style: italic;}
+.scheme.source-scheme .coMULTI {color: #808080; font-style: italic;}
+.scheme.source-scheme .es0 {color: #000099; font-weight: bold;}
+.scheme.source-scheme .br0 {color: #66cc66;}
+.scheme.source-scheme .sy0 {color: #66cc66;}
+.scheme.source-scheme .st0 {color: #ff0000;}
+.scheme.source-scheme .nu0 {color: #cc66cc;}
+.scheme.source-scheme .me0 {color: #202020;}
+.scheme.source-scheme .ln-xtra, .scheme.source-scheme li.ln-xtra, .scheme.source-scheme div.ln-xtra {background-color: #ffc;}
+.scheme.source-scheme span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+/*]]>*/
+</style></head>
+<body class="mediawiki ltr ns-0 ns-subject page-Scheme_programming_language skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --><script type="text/javascript" language="JavaScript">
+/* <![CDATA[ */
+document.writeln("\x3cdiv id=\"localNotice\"\x3e\x3cp\x3e\x3c/p\x3e\n\x3c/div\x3e");
+/* ]]> */
+</script></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Scheme (programming language)</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<div class="dablink">This article is about the programming language.  For other uses, see <a href="/wiki/Scheme_(disambiguation)" title="Scheme (disambiguation)" class="mw-redirect">Scheme</a>.</div>
+<table class="infobox vevent" cellspacing="5" style="width:22em; text-align:left; font-size:88%; line-height:1.5em;">
+<caption class="summary" style="font-size:125%; font-weight:bold;">Scheme</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="/wiki/File:Lambda_lc.svg" class="image"><img alt="Lambda lc.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lambda_lc.svg/100px-Lambda_lc.svg.png" width="100" height="100" /></a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td class="" style=""><a href="/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">multi-paradigm</a>: <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>, <a href="/wiki/Metaprogramming" title="Metaprogramming">meta</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">1975</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style=""><a href="/wiki/Guy_L._Steele" title="Guy L. Steele" class="mw-redirect">Guy L. Steele</a> and <a href="/wiki/Gerald_Jay_Sussman" title="Gerald Jay Sussman">Gerald Jay Sussman</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">R6RS (ratified standard) (2007)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style=""><a href="/wiki/Strong_typing" title="Strong typing">strong</a>, <a href="/wiki/Dynamic_typing" title="Dynamic typing" class="mw-redirect">dynamic</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Programming_language_implementation" title="Programming language implementation">Major implementations</a></th>
+<td class="" style="">Many. See <a href="/wiki/Category:Scheme_implementations" title="Category:Scheme implementations">Category:Scheme implementations</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+<td class="" style=""><a href="/wiki/T_(programming_language)" title="T (programming language)">T</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style=""><a href="/wiki/Lisp_programming_language" title="Lisp programming language" class="mw-redirect">Lisp</a>, <a href="/wiki/ALGOL" title="ALGOL">ALGOL</a>, <a href="/wiki/MDL_(programming_language)" title="MDL (programming language)">MDL</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced</th>
+<td class="" style=""><a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, <a href="/wiki/EuLisp" title="EuLisp">EuLisp</a>, <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a>, <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="/wiki/Dylan_(programming_language)" title="Dylan (programming language)">Dylan</a>, <a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a>, <a href="/wiki/Hop_(software)" title="Hop (software)">Hop</a>, <a href="/wiki/Racket_(programming_language)" title="Racket (programming language)">Racket</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Usual <a href="/wiki/Filename_extension" title="Filename extension">file extensions</a></th>
+<td class="" style="">.scm, .ss</td>
+</tr>
+</table>
+<p><b>Scheme</b> is one of the two main <a href="/wiki/Programming_language_dialect" title="Programming language dialect" class="mw-redirect">dialects</a> of the programming language <a href="/wiki/Lisp_programming_language" title="Lisp programming language" class="mw-redirect">Lisp</a>. Unlike <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, the other main dialect, Scheme follows a <a href="/wiki/Computing_minimalism" title="Computing minimalism" class="mw-redirect">minimalist</a> design philosophy specifying a small standard core with powerful tools for language extension. Its compactness and elegance have made it popular with educators, language designers, programmers, implementors, and hobbyists, and this diverse appeal is seen as both a strength and, because of the diversity of its constituencies and the wide divergence between implementations, one of its weaknesses.<sup id="cite_ref-position_paper_0-0" class="reference"><a href="#cite_note-position_paper-0"><span>[</span>1<span>]</span></a></sup></p>
+<p>Scheme was developed at the <a href="/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory" title="MIT Computer Science and Artificial Intelligence Laboratory">MIT AI Lab</a> by <a href="/wiki/Guy_L._Steele" title="Guy L. Steele" class="mw-redirect">Guy L. Steele</a> and <a href="/wiki/Gerald_Jay_Sussman" title="Gerald Jay Sussman">Gerald Jay Sussman</a> who introduced it to the academic world via a series of memos, now referred to as the <a href="/wiki/History_of_the_Scheme_programming_language#The_Lambda_Papers" title="History of the Scheme programming language">Lambda Papers</a>, over the period 1975-1980. The Scheme language is standardized in the official <a href="/wiki/Institute_of_Electrical_and_Electronics_Engineers" title="Institute of Electrical and Electronics Engineers">IEEE</a> standard,<sup id="cite_ref-ieee1178_1-0" class="reference"><a href="#cite_note-ieee1178-1"><span>[</span>2<span>]</span></a></sup> and a de facto standard called the <i>Revised<sup>n</sup> Report on the Algorithmic Language Scheme</i> (R<i>n</i>RS). The most widely implemented standard is R5RS (1998),<sup id="cite_ref-r5rs_2-0" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup> and a new standard R6RS<sup id="cite_ref-r6rs_3-0" class="reference"><a href="#cite_note-r6rs-3"><span>[</span>4<span>]</span></a></sup> was ratified in 2007.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup></p>
+<p>Scheme was the first dialect of Lisp to choose <a href="/wiki/Scope_(programming)" title="Scope (programming)">lexical scope</a> and the first to require implementations to perform <a href="/wiki/Tail-call_optimization" title="Tail-call optimization" class="mw-redirect">tail-call optimization</a>. It was also one of the first programming languages to support <a href="/wiki/First-class_object" title="First-class object">first-class</a> <a href="/wiki/Continuation" title="Continuation">continuations</a>. It had a significant influence on the effort that led to the development of its sister, <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>.<sup id="cite_ref-cl_steele_5-0" class="reference"><a href="#cite_note-cl_steele-5"><span>[</span>6<span>]</span></a></sup></p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Origin"><span class="tocnumber">1</span> <span class="toctext">Origin</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Distinguishing_features"><span class="tocnumber">2</span> <span class="toctext">Distinguishing features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Fundamental_design_features"><span class="tocnumber">2.1</span> <span class="toctext">Fundamental design features</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Minimalism"><span class="tocnumber">2.1.1</span> <span class="toctext">Minimalism</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Lexical_scope"><span class="tocnumber">2.1.2</span> <span class="toctext">Lexical scope</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Lambda_calculus"><span class="tocnumber">2.1.3</span> <span class="toctext">Lambda calculus</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Block_structure"><span class="tocnumber">2.1.4</span> <span class="toctext">Block structure</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Proper_tail_recursion"><span class="tocnumber">2.1.5</span> <span class="toctext">Proper tail recursion</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#First-class_continuations"><span class="tocnumber">2.1.6</span> <span class="toctext">First-class continuations</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Shared_namespace_for_procedures_and_variables"><span class="tocnumber">2.1.7</span> <span class="toctext">Shared namespace for procedures and variables</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Implementation_standards"><span class="tocnumber">2.2</span> <span class="toctext">Implementation standards</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#Numerical_tower"><span class="tocnumber">2.2.1</span> <span class="toctext">Numerical tower</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Delayed_evaluation"><span class="tocnumber">2.2.2</span> <span class="toctext">Delayed evaluation</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Order_of_evaluation_of_procedure_arguments"><span class="tocnumber">2.2.3</span> <span class="toctext">Order of evaluation of procedure arguments</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Hygienic_macros"><span class="tocnumber">2.2.4</span> <span class="toctext">Hygienic macros</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Environments_and_eval"><span class="tocnumber">2.2.5</span> <span class="toctext">Environments and eval</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#Treatment_of_non-boolean_values_in_boolean_expressions"><span class="tocnumber">2.2.6</span> <span class="toctext">Treatment of non-boolean values in boolean expressions</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Disjointness_of_primitive_datatypes"><span class="tocnumber">2.2.7</span> <span class="toctext">Disjointness of primitive datatypes</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Equivalence_predicates"><span class="tocnumber">2.2.8</span> <span class="toctext">Equivalence predicates</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#Comments"><span class="tocnumber">2.2.9</span> <span class="toctext">Comments</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Input.2Foutput"><span class="tocnumber">2.2.10</span> <span class="toctext">Input/output</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Redefinition_of_standard_procedures"><span class="tocnumber">2.2.11</span> <span class="toctext">Redefinition of standard procedures</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-23"><a href="#Nomenclature_and_naming_conventions"><span class="tocnumber">2.3</span> <span class="toctext">Nomenclature and naming conventions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Review_of_standard_forms_and_procedures"><span class="tocnumber">3</span> <span class="toctext">Review of standard forms and procedures</span></a>
+<ul>
+<li class="toclevel-2 tocsection-25"><a href="#Standard_forms"><span class="tocnumber">3.1</span> <span class="toctext">Standard forms</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Standard_procedures"><span class="tocnumber">3.2</span> <span class="toctext">Standard procedures</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="#Scheme_Requests_for_Implementation_-_portable_extensions_to_the_standard"><span class="tocnumber">4</span> <span class="toctext">Scheme Requests for Implementation - portable extensions to the standard</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#Implementations"><span class="tocnumber">5</span> <span class="toctext">Implementations</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#R6RS"><span class="tocnumber">6</span> <span class="toctext">R6RS</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#R7RS"><span class="tocnumber">7</span> <span class="toctext">R7RS</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#Usage"><span class="tocnumber">8</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#Further_reading"><span class="tocnumber">11</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Origin">edit</a>]</span> <span class="mw-headline" id="Origin">Origin</span></h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/History_of_the_Scheme_programming_language" title="History of the Scheme programming language">History of the Scheme programming language</a></div>
+<p>Scheme started as an attempt to understand <a href="/wiki/Carl_Hewitt" title="Carl Hewitt">Carl Hewitt</a>'s <a href="/wiki/Actor_model" title="Actor model">Actor model</a>, for which purpose Steele and Sussman wrote a "tiny Lisp interpreter" using <a href="/wiki/Maclisp" title="Maclisp">Maclisp</a> and then "added mechanisms for creating actors and sending messages."<sup id="cite_ref-revisited_6-0" class="reference"><a href="#cite_note-revisited-6"><span>[</span>7<span>]</span></a></sup> Scheme was originally called "Schemer", in the tradition of other <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>-derived languages like <a href="/wiki/Planner_(programming_language)" title="Planner (programming language)">Planner</a> or <i>Conniver</i>. The current name resulted from the authors' use of the <a href="/wiki/Incompatible_Timesharing_System" title="Incompatible Timesharing System">ITS operating system</a>, which limited filenames to two components of at most six characters each. Currently, "Schemer" is commonly used to refer to a Scheme programmer.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Distinguishing features">edit</a>]</span> <span class="mw-headline" id="Distinguishing_features">Distinguishing features</span></h2>
+<div class="rellink boilerplate seealso">See also: <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp (programming language)</a></div>
+<p>Scheme is primarily a <a href="/wiki/Functional_programming" title="Functional programming">functional</a> programming language. It shares many characteristics with other members of the Lisp programming language family. Scheme's very simple syntax is based on <a href="/wiki/S-expression" title="S-expression">s-expressions</a>, parenthesized lists in which a prefix operator is followed by its arguments. Scheme programs thus consist of sequences of nested lists. Lists are also the main data structure in Scheme, leading to a close equivalence between source code and data formats (<a href="/wiki/Homoiconicity" title="Homoiconicity">homoiconicity</a>). Scheme programs can easily create and evaluate pieces of Scheme code dynamically.</p>
+<p>The reliance on lists as data structures is shared by all Lisp dialects. Scheme inherits a rich set of <a href="/wiki/List_(computing)" title="List (computing)">list-processing</a> primitives such as <a href="/wiki/CAR_and_CDR" title="CAR and CDR"><tt>cons</tt>, <tt>car</tt> and <tt>cdr</tt></a> from its Lisp ancestors. Scheme uses strictly but <a href="/wiki/Type_system" title="Type system">dynamically typed variables</a> and supports <a href="/wiki/First-class_function" title="First-class function">first-class functions</a>. Thus, functions can be assigned as values to variables or passed as arguments to functions.</p>
+<p>This section concentrates mainly on innovative features of the language, including those features that distinguish Scheme from other Lisps. Unless stated otherwise, descriptions of features relate to the R5RS standard.</p>
+<p><i>In examples provided in this section, the notation "===&gt; result" is used to indicate the result of evaluating the expression on the immediately preceding line. This is the same convention used in R5RS.</i></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Fundamental design features">edit</a>]</span> <span class="mw-headline" id="Fundamental_design_features">Fundamental design features</span></h3>
+<p>This subsection describes those features of Scheme that have distinguished it from other programming languages from its earliest days. These are the aspects of Scheme that most strongly influence any product of the Scheme language, and they are the aspects that all versions of the Scheme programming language, from 1973 onward, share.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Minimalism">edit</a>]</span> <span class="mw-headline" id="Minimalism">Minimalism</span></h4>
+<p>Scheme is a very simple language, much easier to implement than any language of comparable <a href="/wiki/Expressive_power" title="Expressive power">expressive power</a>.<sup id="cite_ref-easy_to_implement_scheme48_7-0" class="reference"><a href="#cite_note-easy_to_implement_scheme48-7"><span>[</span>8<span>]</span></a></sup> This ease is attributable to the use of <a href="/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a> to derive much of the syntax of the language from more primitive forms. For instance of the 23 s-expression-based syntactic constructs defined in the R5RS Scheme standard, 11 are classed as derived or library forms, which can be written as macros involving more fundamental forms, principally lambda. As R5RS says (R5RS sec. 3.1): "The most fundamental of the variable binding constructs is the lambda expression, because all other variable binding constructs can be explained in terms of lambda expressions."<sup id="cite_ref-r5rs_2-1" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup></p>
+<dl>
+<dd><b>Fundamental forms</b>: define, lambda, if, quote, unquote, unquote-splicing, quasiquote, define-syntax, let-syntax, letrec-syntax, syntax-rules, set!</dd>
+<dd><b>Library forms</b>: do, let, let*, letrec, cond, case, and, or, begin, named let, delay</dd>
+</dl>
+<p>Example: a macro to implement <code>let</code> as an expression using <code>lambda</code> to perform the variable bindings.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">define-syntax</span> <span class="kw1">let</span>
+  <span class="br0">(</span><span class="kw1">syntax-rules</span> <span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">(</span><span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>var expr<span class="br0">)</span> ...<span class="br0">)</span> body ...<span class="br0">)</span>
+      <span class="br0">(</span><span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>var ...<span class="br0">)</span> body ...<span class="br0">)</span> expr ...<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Thus using <code>let</code> as defined above a Scheme implementation would rewrite "<code>(let ((a 1)(b 2)) (+ b a))</code>" as "<code>((lambda (a b) (+ b a)) 1 2)</code>", which reduces implementation's task to that of coding procedure instantiations.</p>
+<p>In 1998 Sussman and Steele remarked that the minimalism of Scheme was not a conscious design goal, but rather the unintended outcome of the design process. "We were actually trying to build something complicated and discovered, serendipitously, that we had accidentally designed something that met all our goals but was much simpler than we had intended....we realized that the lambda calculus—a small, simple formalism—could serve as the core of a powerful and expressive programming language. "<sup id="cite_ref-revisited_6-1" class="reference"><a href="#cite_note-revisited-6"><span>[</span>7<span>]</span></a></sup></p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Lexical scope">edit</a>]</span> <span class="mw-headline" id="Lexical_scope">Lexical scope</span></h4>
+<div class="rellink boilerplate seealso">See also: <a href="/wiki/Scope_(programming)" title="Scope (programming)">Scope (programming)</a></div>
+<p>Like most modern programming languages and unlike earlier Lisps such as <a href="/wiki/Maclisp" title="Maclisp">Maclisp</a> or <a href="/wiki/Emacs_Lisp" title="Emacs Lisp">Emacs Lisp</a>, Scheme is lexically scoped: all possible variable bindings in a program unit can be analyzed by reading the text of the program unit without consideration of the contexts in which it may be called.</p>
+<p>This contrasts with dynamic scoping which was characteristic of early Lisp dialects because of the processing costs associated with the primitive textual substitution methods used to implement lexical scoping algorithms in compilers and interpreters of the day. In those Lisps, it was perfectly possible for a reference to a <a href="/wiki/Free_variable" title="Free variable" class="mw-redirect">free variable</a> inside a procedure to refer to quite distinct bindings external to the procedure depending on the context of the call.</p>
+<p>The impetus to incorporate what was, in the early 1970s, an unusual scoping model into their new version of Lisp came from Sussman's studies of <a href="/wiki/ALGOL" title="ALGOL">ALGOL</a>, He suggested that ALGOL-like lexical scoping mechanisms would help to realise their initial goal of implementing <a href="/wiki/Carl_Hewitt#Actor_model" title="Carl Hewitt">Hewitt's Actor model</a> in Lisp.<sup id="cite_ref-revisited_6-2" class="reference"><a href="#cite_note-revisited-6"><span>[</span>7<span>]</span></a></sup></p>
+<p>The key insights on how to introduce lexical scoping into a Lisp dialect were popularized in Sussman and Steele's 1975 Lambda Paper, "Scheme: An Interpreter for Extended Lambda Calculus",<sup id="cite_ref-lambda_paper_1_8-0" class="reference"><a href="#cite_note-lambda_paper_1-8"><span>[</span>9<span>]</span></a></sup> where they adopted the concept of the <a href="/wiki/Closure_(computer_science)" title="Closure (computer science)">lexical closure</a>, which had been described in an <a href="/wiki/AI_Memo" title="AI Memo">AI Memo</a> in 1970 by <a href="/wiki/Joel_Moses" title="Joel Moses">Joel Moses</a>, who attributed the idea to <a href="/wiki/Peter_J._Landin" title="Peter J. Landin">Peter J. Landin</a>.<sup id="cite_ref-Moses_9-0" class="reference"><a href="#cite_note-Moses-9"><span>[</span>10<span>]</span></a></sup></p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Lambda calculus">edit</a>]</span> <span class="mw-headline" id="Lambda_calculus">Lambda calculus</span></h4>
+<div class="rellink boilerplate seealso">See also: <a href="/wiki/Lambda_calculus" title="Lambda calculus">Lambda calculus</a></div>
+<p><a href="/wiki/Alonzo_Church" title="Alonzo Church">Alonzo Church</a>'s mathematical notation, the lambda calculus, has inspired Lisp's use of "lambda" as a keyword for introducing a procedure, as well as influencing the development of <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> techniques involving the use of <a href="/wiki/Higher-order_function" title="Higher-order function">higher-order functions</a> in Lisp. But early Lisps were not suitable expressions of the lambda calculus because of their treatment of <a href="/wiki/Free_variables_and_bound_variables" title="Free variables and bound variables">free variables</a>.<sup id="cite_ref-revisited_6-3" class="reference"><a href="#cite_note-revisited-6"><span>[</span>7<span>]</span></a></sup></p>
+<p>The introduction of lexical scope resolved the problem by making an equivalence between some forms of lambda notation and their practical expression in a working programming language. Sussman and Steele showed that the new language could be used to elegantly derive all the imperative and declarative semantics of other programming languages including ALGOL and <a href="/wiki/Fortran" title="Fortran">Fortran</a>, and the dynamic scope of other Lisps, by using lambda expressions not as simple procedure instantiations but as "control structures and environment modifiers."<sup id="cite_ref-lambda_paper_2_10-0" class="reference"><a href="#cite_note-lambda_paper_2-10"><span>[</span>11<span>]</span></a></sup> They introduced <a href="/wiki/Continuation-passing_style" title="Continuation-passing style">continuation-passing style</a> along with their first description of Scheme in the first of the Lambda Papers, and in subsequent papers they proceeded to demonstrate the raw power of this practical use of lambda calculus.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Block structure">edit</a>]</span> <span class="mw-headline" id="Block_structure">Block structure</span></h4>
+<p>Scheme inherits its block structure from earlier block structured languages, particularly <a href="/wiki/ALGOL" title="ALGOL">ALGOL</a>. In Scheme blocks are implemented by three <i>binding constructs</i>: <code>let</code>, <code>let*</code> and <code>letrec</code>. For instance, the following construct creates a <a href="/wiki/Block_(programming)" title="Block (programming)">block</a> in which a symbol called <code>var</code> is bound to the number 10:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">define</span> var <span class="st0">"goose"</span><span class="br0">)</span>
+<span class="co1">;; Any reference to var here will be bound to "goose"</span>
+<span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>var <span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="co1">;; statements go here.  Any reference to var here will be bound to 10.</span>
+  <span class="br0">)</span>
+<span class="co1">;; Any reference to var here will be bound to "goose"</span>
+</pre></div>
+</div>
+<p>Blocks can be <a href="/wiki/Nesting_(computing)" title="Nesting (computing)">nested</a> to create arbitrarily complex block structures according to the need of the programmer. The use of block structuring to create local bindings alleviates the risk of <a href="/wiki/Naming_collision" title="Naming collision">namespace collision</a> that can otherwise occur.</p>
+<p>One variant of <code>let</code>, <code>let*</code>, permits bindings to refer to variables defined earlier in the same construct, thus:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">let*</span> <span class="br0">(</span><span class="br0">(</span>var1 <span class="nu0">10</span><span class="br0">)</span>
+      <span class="br0">(</span>var2 <span class="br0">(</span><span class="sy0">+</span> var1 <span class="nu0">12</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="co1">;; But the definition of var1 could not refer to var2</span>
+  <span class="br0">)</span>
+</pre></div>
+</div>
+<p>The other variant, <code>letrec</code>, is designed to enable <a href="/wiki/Mutual_recursion" title="Mutual recursion">mutually recursive</a> procedures to be bound to one another.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="co1">;; Tabulation of Hofstadter's male and female sequences</span>
+<span class="br0">(</span><span class="kw1">letrec</span> <span class="br0">(</span><span class="br0">(</span>female <span class="br0">(</span><span class="kw1">lambda</span><span class="br0">(</span>n<span class="br0">)</span>
+                   <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="sy0">=</span> n 0<span class="br0">)</span> 1
+                       <span class="br0">(</span><span class="sy0">-</span> n <span class="br0">(</span>male <span class="br0">(</span>female <span class="br0">(</span><span class="sy0">-</span> n 1<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+         <span class="br0">(</span>male <span class="br0">(</span><span class="kw1">lambda</span><span class="br0">(</span>n<span class="br0">)</span>
+                 <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="sy0">=</span> n 0<span class="br0">)</span> 0
+                     <span class="br0">(</span><span class="sy0">-</span> n <span class="br0">(</span>female <span class="br0">(</span>male <span class="br0">(</span><span class="sy0">-</span> n 1<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"i male(i) female(i)"</span><span class="br0">)</span><span class="br0">(</span><span class="kw1">newline</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">do</span> <span class="br0">(</span><span class="br0">(</span>i 0 <span class="br0">(</span><span class="sy0">+</span> i 1<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+      <span class="br0">(</span><span class="br0">(</span><span class="sy0">&gt;</span> i 8<span class="br0">)</span> #f<span class="br0">)</span>
+    <span class="br0">(</span><span class="kw1">display</span> i<span class="br0">)</span> <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"   "</span><span class="br0">)</span><span class="br0">(</span><span class="kw1">display</span> <span class="br0">(</span>male i<span class="br0">)</span><span class="br0">)</span><span class="br0">(</span><span class="kw1">display</span> <span class="st0">"         "</span><span class="br0">)</span><span class="br0">(</span><span class="kw1">display</span> <span class="br0">(</span>female i<span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">(</span><span class="kw1">newline</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>(See <a href="/wiki/Hofstadter_sequence#Hofstadter_Female_and_Male_sequences" title="Hofstadter sequence">Hofstadter's male and female sequences</a> for the definitions used in this example)</p>
+<p>All procedures bound in a single <code>letrec</code> may refer to one another by name, as well as to values of variables defined earlier in the same <code>letrec</code>, but they may not refer to <i>values</i> defined later in the same <code>letrec</code>.</p>
+<p>A variant of <code>let</code>, the "named let" form, has an identifier after the <code>let</code> keyword. This binds the let variables to the argument of a procedure whose name is the given identifier and whose body is the body of the let form. The body may be repeated as desired by calling the procedure. The named let is widely used to implement iteration.</p>
+<p>Example: a simple counter</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">let</span> loop <span class="br0">(</span><span class="br0">(</span>n 1<span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="sy0">&lt;=</span> n 10<span class="br0">)</span>
+    <span class="br0">(</span><span class="kw1">begin</span>
+      <span class="br0">(</span><span class="kw1">display</span> n<span class="br0">)</span><span class="br0">(</span><span class="kw1">newline</span><span class="br0">)</span>
+      <span class="br0">(</span>loop <span class="br0">(</span><span class="sy0">+</span> n <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Like any procedure in Scheme the procedure created in the named let is a first class object.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Proper tail recursion">edit</a>]</span> <span class="mw-headline" id="Proper_tail_recursion">Proper tail recursion</span></h4>
+<div class="rellink boilerplate seealso">For more details on this topic, see <a href="/wiki/Tail_recursion" title="Tail recursion" class="mw-redirect">Tail recursion</a>.</div>
+<p>Scheme has an iteration construct, <code>do</code>, but it is more <a href="/wiki/Programming_idiom" title="Programming idiom">idiomatic</a> in Scheme to use <a href="/wiki/Tail_recursion" title="Tail recursion" class="mw-redirect">tail recursion</a> to express <a href="/wiki/Iteration" title="Iteration">iteration</a>. Standard-conforming Scheme implementations are required to optimize tail calls so as to support an unbounded number of active tail calls (R5RS sec. 3.5)<sup id="cite_ref-r5rs_2-2" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup>—a property the Scheme report describes as <i>proper tail recursion</i>—making it safe for Scheme programmers to write iterative algorithms using recursive language which is sometimes more intuitive. Tail recursive procedures and the <i>named <code>let</code></i> form provide support for iteration using tail recursion.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="co1">;; Tabulation of squares from 0 to 9:</span>
+<span class="co1">;; Note: loop is simply an arbitrary symbol used as a label. Any symbol will do.</span>
+<span class="br0">(</span><span class="kw1">let</span> loop <span class="br0">(</span><span class="br0">(</span>i 0<span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="kw1">not</span> <span class="br0">(</span><span class="sy0">=</span> i 10<span class="br0">)</span><span class="br0">)</span>
+     <span class="br0">(</span><span class="kw1">begin</span>
+        <span class="br0">(</span><span class="kw1">display</span> i<span class="br0">)</span><span class="br0">(</span><span class="kw1">display</span> <span class="st0">" squared = "</span><span class="br0">)</span><span class="br0">(</span><span class="kw1">display</span> <span class="br0">(</span><span class="sy0">*</span> i i<span class="br0">)</span><span class="br0">)</span><span class="br0">(</span><span class="kw1">newline</span><span class="br0">)</span>
+        <span class="br0">(</span>loop <span class="br0">(</span><span class="sy0">+</span> i <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: First-class continuations">edit</a>]</span> <span class="mw-headline" id="First-class_continuations">First-class continuations</span></h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/Continuation" title="Continuation">continuation</a></div>
+<p>Continuations in Scheme are <a href="/wiki/First-class_object" title="First-class object">first-class objects</a>. Scheme provides the procedure <code><a href="/wiki/Call-with-current-continuation" title="Call-with-current-continuation">call-with-current-continuation</a></code> (also known as <code>call/cc</code>) to capture the current continuation by packing it up as an escape procedure bound to a formal argument in a procedure provided by the programmer. (R5RS sec. 6.4)<sup id="cite_ref-r5rs_2-3" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup> First-class continuations enable the programmer to create non-local control constructs such as <a href="/wiki/Iterator" title="Iterator">iterators</a>, <a href="/wiki/Coroutine" title="Coroutine">coroutines</a>, and <a href="/wiki/Backtracking" title="Backtracking">backtracking</a>.</p>
+<p>The following example, a traditional programmer's puzzle, shows that Scheme can handle continuations as first-class objects, binding them to variables and passing them as arguments to procedures.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">let*</span> <span class="br0">(</span><span class="br0">(</span>yin
+         <span class="br0">(</span><span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>cc<span class="br0">)</span> <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"@"</span><span class="br0">)</span> cc<span class="br0">)</span> <span class="br0">(</span><span class="kw1">call-with-current-continuation</span> <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>c<span class="br0">)</span> c<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+       <span class="br0">(</span>yang
+         <span class="br0">(</span><span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>cc<span class="br0">)</span> <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"*"</span><span class="br0">)</span> cc<span class="br0">)</span> <span class="br0">(</span><span class="kw1">call-with-current-continuation</span> <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>c<span class="br0">)</span> c<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">)</span>
+    <span class="br0">(</span>yin yang<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>When executed this code displays a counting sequence: "@*@**@***@****@*****@******@*******@********..."</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Shared namespace for procedures and variables">edit</a>]</span> <span class="mw-headline" id="Shared_namespace_for_procedures_and_variables">Shared namespace for procedures and variables</span></h4>
+<p>In contrast to <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, all data and procedures in Scheme share a common namespace, whereas in Common Lisp functions and data have separate namespaces making it possible for a function and a variable to have the same name, and requiring special notation for referring to a function as a value. This is sometimes known as the "Lisp-1/Lisp-2" distinction, referring to the unified namespace of Scheme and the separate namespaces of Common Lisp.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>12<span>]</span></a></sup></p>
+<p>In Scheme, the same primitives that are used to manipulate and bind data can be used to bind procedures. There is no equivalent of Common Lisp's <code>defun</code>, <code>setf</code> and <code>#'</code> primitives.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="co1">;; Variable bound to a number:</span>
+<span class="br0">(</span><span class="kw1">define</span> <span class="kw1">f</span> 10<span class="br0">)</span>
+<span class="kw1">f</span>
+<span class="sy0">===&gt;</span> <span class="nu0">10</span>
+<span class="co1">;; Mutation (altering the bound value)</span>
+<span class="br0">(</span><span class="kw1">set!</span> <span class="kw1">f</span> <span class="br0">(</span><span class="sy0">+</span> <span class="kw1">f</span> <span class="kw1">f</span> <span class="nu0">6</span><span class="br0">)</span><span class="br0">)</span>
+<span class="sy0">===&gt;</span> <span class="nu0">26</span>
+<span class="co1">;; Assigning a procedure to the same variable:</span>
+<span class="br0">(</span><span class="kw1">set!</span> <span class="kw1">f</span> <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>n<span class="br0">)</span> <span class="br0">(</span><span class="sy0">+</span> n 12<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+<span class="br0">(</span><span class="kw1">f</span> <span class="nu0">6</span><span class="br0">)</span>
+<span class="sy0">===&gt;</span> <span class="nu0">18</span>
+<span class="co1">;; Assigning the result of an expression to the same variable:</span>
+<span class="br0">(</span><span class="kw1">set!</span> <span class="kw1">f</span> <span class="br0">(</span><span class="kw1">f</span> 1<span class="br0">)</span><span class="br0">)</span>
+<span class="kw1">f</span>
+<span class="sy0">===&gt;</span> <span class="nu0">13</span>
+<span class="co1">;; functional programming:</span>
+<span class="br0">(</span>apply <span class="sy0">+</span> '<span class="br0">(</span>1 2 3 4 5 6<span class="br0">)</span><span class="br0">)</span>
+<span class="sy0">===&gt;</span> 21
+<span class="br0">(</span><span class="kw1">set!</span> <span class="kw1">f</span> <span class="br0">(</span><span class="kw1">lambda</span><span class="br0">(</span>n<span class="br0">)</span> <span class="br0">(</span><span class="sy0">+</span> n 100<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+<span class="br0">(</span><span class="kw1">map</span> <span class="kw1">f</span> '<span class="br0">(</span><span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span>
+<span class="sy0">===&gt;</span> <span class="br0">(</span><span class="nu0">101</span> <span class="nu0">102</span> <span class="nu0">103</span><span class="br0">)</span>
+</pre></div>
+</div>
+<h3><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Implementation standards">edit</a>]</span> <span class="mw-headline" id="Implementation_standards">Implementation standards</span></h3>
+<p>This subsection documents design decisions that have been taken over the years which have given Scheme a particular character, but are not the direct outcomes of the original design.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Numerical tower">edit</a>]</span> <span class="mw-headline" id="Numerical_tower">Numerical tower</span></h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/Numerical_tower" title="Numerical tower">Numerical tower</a></div>
+<p>Scheme specifies a comparatively full set of numerical datatypes including <a href="/wiki/Complex_number" title="Complex number">complex</a> and <a href="/wiki/Rational_number" title="Rational number">rational</a> types, which is known in Scheme as the numerical tower. (R5RS sec. 6.2<sup id="cite_ref-r5rs_2-4" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup>) The standard treats these as abstractions and does not commit the implementor to a particular internal representation.</p>
+<p>Numbers may have the quality of exactness. An exact number can only be produced by a sequence of exact operations involving other exact numbers—inexactness is thus contagious. The standard specifies that any two implementations must produce equivalent results for all operations resulting in exact numbers.</p>
+<p>The R5RS standard specifies procedures <code>exact-&gt;inexact</code> and <code>inexact-&gt;exact</code> which can be used to change the exactness of a number. <code>inexact-&gt;exact</code> produces "the exact number that is numerically closest to the argument." <code>exact-&gt;inexact</code> produces "the inexact number that is numerically closest to the argument." The R6RS standard omits these procedures from the main report but specifies them as R5RS compatibility procedures in the standard library (rnrs r5rs (6)).</p>
+<p>At R5RS standard. Scheme implementations are not required to implement the whole numerical tower but they must implement "a coherent subset consistent with both the purposes of the implementation and the spirit of the Scheme language." (R5RS sec. 6.2.3).<sup id="cite_ref-r5rs_2-5" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup> The new R6RS standard does require implementation of the whole tower and "exact integer objects and exact rational number objects of practically unlimited size and precision, and to implement certain procedures...so they always return exact results when given exact arguments" (R6RS sec. 3.4, sec. 11.7.1).<sup id="cite_ref-r6rs_3-1" class="reference"><a href="#cite_note-r6rs-3"><span>[</span>4<span>]</span></a></sup></p>
+<p>Example 1: exact arithmetic in an implementation that supports exact rational complex numbers.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="co1">;; Sum of three rational real numbers and two rational complex numbers </span>
+<span class="br0">(</span><span class="kw1">define</span> x <span class="br0">(</span><span class="sy0">+</span> <span class="nu0">1</span><span class="sy0">/</span><span class="nu0">3</span> <span class="nu0">1</span><span class="sy0">/</span><span class="nu0">4</span> <span class="sy0">-</span><span class="nu0">1</span><span class="sy0">/</span><span class="nu0">5</span> <span class="sy0">-</span><span class="nu0">1</span><span class="sy0">/</span>3i <span class="nu0">405</span><span class="sy0">/</span><span class="nu0">50</span><span class="sy0">+</span><span class="nu0">2</span><span class="sy0">/</span>3i<span class="br0">)</span><span class="br0">)</span>
+x
+<span class="sy0">===&gt;</span> <span class="nu0">509</span><span class="sy0">/</span><span class="nu0">60</span><span class="sy0">+</span><span class="nu0">1</span><span class="sy0">/</span>3i
+<span class="co1">;; Check for exactness.</span>
+<span class="br0">(</span><span class="kw1">exact?</span> x<span class="br0">)</span>
+<span class="sy0">===&gt;</span> #t
+</pre></div>
+</div>
+<p>Example 2: Same arithmetic in an implementation that supports neither exact rational numbers nor complex numbers but does accept real numbers in rational notation.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="co1">;; Sum of four rational real numbers</span>
+<span class="br0">(</span><span class="kw1">define</span> xr <span class="br0">(</span><span class="sy0">+</span> <span class="nu0">1</span><span class="sy0">/</span><span class="nu0">3</span> <span class="nu0">1</span><span class="sy0">/</span><span class="nu0">4</span> <span class="sy0">-</span><span class="nu0">1</span><span class="sy0">/</span><span class="nu0">5</span> <span class="nu0">405</span><span class="sy0">/</span><span class="nu0">50</span><span class="br0">)</span><span class="br0">)</span>
+<span class="co1">;; Sum of two rational real numbers</span>
+<span class="br0">(</span><span class="kw1">define</span> xi <span class="br0">(</span><span class="sy0">+</span> <span class="sy0">-</span><span class="nu0">1</span><span class="sy0">/</span><span class="nu0">3</span> <span class="nu0">2</span><span class="sy0">/</span><span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span>
+xr
+<span class="sy0">===&gt;</span> <span class="nu0">8.48333333333333</span>
+xi
+<span class="sy0">===&gt;</span> <span class="nu0">0.333333333333333</span>
+<span class="co1">;; Check for exactness.</span>
+<span class="br0">(</span><span class="kw1">exact?</span> xr<span class="br0">)</span>
+<span class="sy0">===&gt;</span> #f
+<span class="br0">(</span><span class="kw1">exact?</span> xi<span class="br0">)</span>
+<span class="sy0">===&gt;</span> #f
+</pre></div>
+</div>
+<p>Both implementations conform to the R5RS standard but the second does not conform to R6RS because it does not implement the full numerical tower.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: Delayed evaluation">edit</a>]</span> <span class="mw-headline" id="Delayed_evaluation">Delayed evaluation</span></h4>
+<div class="rellink boilerplate seealso">See also: <a href="/wiki/Lazy_evaluation" title="Lazy evaluation">Lazy evaluation</a></div>
+<p>Scheme supports delayed evaluation through the <code>delay</code> form and the procedure <code>force</code>.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">define</span> a 10<span class="br0">)</span>
+<span class="br0">(</span><span class="kw1">define</span> eval<span class="sy0">-</span>aplus2 <span class="br0">(</span><span class="kw1">delay</span> <span class="br0">(</span><span class="sy0">+</span> a 2<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+<span class="br0">(</span><span class="kw1">set!</span> a 20<span class="br0">)</span>
+<span class="br0">(</span><span class="kw1">force</span> eval<span class="sy0">-</span>aplus2<span class="br0">)</span>
+<span class="sy0">===&gt;</span> 22
+<span class="br0">(</span><span class="kw1">define</span> eval<span class="sy0">-</span>aplus50 <span class="br0">(</span><span class="kw1">delay</span> <span class="br0">(</span><span class="sy0">+</span> a 50<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+<span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>a 8<span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">force</span> eval<span class="sy0">-</span>aplus50<span class="br0">)</span><span class="br0">)</span>
+<span class="sy0">===&gt;</span> 70
+<span class="br0">(</span><span class="kw1">set!</span> a 100<span class="br0">)</span>
+<span class="br0">(</span><span class="kw1">force</span> eval<span class="sy0">-</span>aplus2<span class="br0">)</span>
+<span class="sy0">===&gt;</span> <span class="nu0">22</span>
+</pre></div>
+</div>
+<p>The lexical context of the original definition of the promise is preserved, and its value is also preserved after the first use of <code>force</code>, The promise is only ever evaluated once.</p>
+<p>These primitives, which produce or handle values known as <a href="/wiki/Futures_and_promises" title="Futures and promises">promises</a>, can be used to implement advanced <a href="/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a> constructs such as <a href="/wiki/Stream_(computing)" title="Stream (computing)">streams</a>.<sup id="cite_ref-srfi-41_12-0" class="reference"><a href="#cite_note-srfi-41-12"><span>[</span>13<span>]</span></a></sup></p>
+<p>In the R6RS standard, these are no longer primitives but instead are provided as part of the R5RS compatibility library (rnrs r5rs (6)).</p>
+<p>In R5RS, a suggested implementation of <code>delay</code> and <code>force</code> is given, implementing the promise as a procedure with no arguments (a thunk) and using <a href="/wiki/Memoization" title="Memoization">memoization</a> to ensure that it is only ever evaluated once irrespective of the number of times <code>force</code> is called. (R5RS sec. 6.4)<sup id="cite_ref-r5rs_2-6" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup></p>
+<p>SRFI 41 enables the expression of both finite and infinite sequences with extraordinary economy. For example this is a definition of the <a href="/wiki/Fibonacci_number" title="Fibonacci number">fibonacci sequence</a> using the functions defined in SRFI 41:<sup id="cite_ref-srfi-41_12-1" class="reference"><a href="#cite_note-srfi-41-12"><span>[</span>13<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="co1">;; Define the Fibonacci sequence:</span>
+<span class="br0">(</span><span class="kw1">define</span> fibs
+  <span class="br0">(</span>stream<span class="sy0">-</span><span class="kw1">cons</span> 0
+    <span class="br0">(</span>stream<span class="sy0">-</span><span class="kw1">cons</span> 1
+      <span class="br0">(</span>stream<span class="sy0">-</span><span class="kw1">map</span> <span class="sy0">+</span>
+        fibs
+        <span class="br0">(</span>stream<span class="sy0">-</span><span class="kw1">cdr</span> fibs<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+<span class="co1">;; Compute the hundredth number in the sequence:</span>
+<span class="br0">(</span>stream<span class="sy0">-</span>ref fibs <span class="nu0">99</span><span class="br0">)</span>
+<span class="sy0">===&gt;</span>  <span class="nu0">218922995834555169026</span>
+</pre></div>
+</div>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: Order of evaluation of procedure arguments">edit</a>]</span> <span class="mw-headline" id="Order_of_evaluation_of_procedure_arguments">Order of evaluation of procedure arguments</span></h4>
+<p>Most Lisps specify an order of evaluation for procedure arguments. Scheme does not. Order of evaluation—including the order in which the expression in the operator position is evaluated—may be chosen by an implementation on a call-by-call basis, and the only constraint is that "the effect of any concurrent evaluation of the operator and operand expressions is constrained to be consistent with some sequential order of evaluation." (R5RS sec. 4.1.3)<sup id="cite_ref-r5rs_2-7" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>ev <span class="br0">(</span><span class="kw1">lambda</span><span class="br0">(</span>n<span class="br0">)</span> <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"Evaluating "</span><span class="br0">)</span>
+                     <span class="br0">(</span><span class="kw1">display</span> <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="kw1">procedure?</span> n<span class="br0">)</span> <span class="st0">"procedure"</span> n<span class="br0">)</span><span class="br0">)</span>
+                     <span class="br0">(</span><span class="kw1">newline</span><span class="br0">)</span> n<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="br0">(</span>ev <span class="sy0">+</span><span class="br0">)</span> <span class="br0">(</span>ev <span class="nu0">1</span><span class="br0">)</span> <span class="br0">(</span>ev <span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+<span class="sy0">===&gt;</span> <span class="nu0">3</span>
+</pre></div>
+</div>
+<p>ev is a procedure that describes the argument passed to it, then returns the value of the argument. In contrast with other Lisps, the appearance of an expression in the operator position (the first item) of a Scheme expression is quite legal, as long as the result of the expression in the operator position is a procedure.</p>
+<p>In calling the procedure "+" to add 1 and 2, the expressions (ev +), (ev 1) and (ev 2) may be evaluated in any order, as long as the effect is not as if they were evaluated in parallel. Thus the following three lines may be displayed in any order by standard Scheme when the above example code is executed, although the text of one line may not be interleaved with another because that would violate the sequential evaluation constraint.</p>
+<dl>
+<dd>Evaluating 1</dd>
+<dd>Evaluating 2</dd>
+<dd>Evaluating procedure</dd>
+</dl>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: Hygienic macros">edit</a>]</span> <span class="mw-headline" id="Hygienic_macros">Hygienic macros</span></h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/Hygienic_macro" title="Hygienic macro">hygienic macro</a></div>
+<p>The R5RS standard introduced a powerful hygienic macro system that allows the programmer to add new syntactic constructs to the language using a simple <a href="/wiki/Pattern_matching" title="Pattern matching">pattern matching</a> sublanguage. (R5RS sec 4.3)<sup id="cite_ref-r5rs_2-8" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup> Prior to this the hygienic macro system had been relegated to an appendix of the R4RS standard, as a "high level" system alongside a "low level" macro system, both of which were treated as extensions to Scheme rather than an essential part of the language.<sup id="cite_ref-r4rs_13-0" class="reference"><a href="#cite_note-r4rs-13"><span>[</span>14<span>]</span></a></sup></p>
+<p>Implementations of the hygienic macro system, also called <code>syntax-rules</code>, are required to respect the lexical scoping of the rest of the language. This is assured by special naming and scoping rules for macro expansion and avoids common programming errors that can occur in the macro systems of other programming languages. R6RS specifies a more sophisticated transformation system, <code>syntax-case</code>, which has been available as a language extension to R5RS Scheme for some time.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="co1">;; Define a macro to implement a variant of "if" with a multi-expression</span>
+<span class="co1">;; true branch and no false branch.</span>
+<span class="br0">(</span><span class="kw1">define-syntax</span> when
+  <span class="br0">(</span><span class="kw1">syntax-rules</span> <span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">(</span><span class="br0">(</span>when pred <span class="kw1">exp</span> exps ...<span class="br0">)</span>
+      <span class="br0">(</span><span class="kw1">if</span> pred <span class="br0">(</span><span class="kw1">begin</span> <span class="kw1">exp</span> exps ...<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Thus the syntax of Scheme can easily be extended.</p>
+<p>Invocations of macros and procedures bear a close resemblance—both are s-expressions—but they are treated differently. When the compiler encounters an s-expression in the program it first checks to see if the symbol is defined as a syntactic keyword within the current lexical scope. If so it then attempts to expand the macro treating the items in the tail of the s-expression as arguments without compiling code to evaluate them, and this process is repeated recursively until no macro invocations remain. If it is not a syntactic keyword, the compiler compiles code to evaluate the arguments in the tail of the s-expression and then to evaluate the variable represented by the symbol at the head of the s-expression and call it as a procedure with the evaluated tail expressions passed as actual arguments to it.</p>
+<p>Most Scheme implementations also provide additional macro systems. Among popular ones are <a href="/wiki/Hygienic_macro#syntactic_closures" title="Hygienic macro">syntactic closures</a>, <a href="/wiki/Hygienic_macro#explicit_renaming" title="Hygienic macro">explicit renaming macros</a> and <code>define-macro</code>, a non-hygienic macro system similar to <code>defmacro</code> system provided in <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: Environments and eval">edit</a>]</span> <span class="mw-headline" id="Environments_and_eval">Environments and eval</span></h4>
+<p>Prior to R5RS, Scheme had no standard equivalent of the <code>eval</code> procedure which is ubiquitous in other Lisps, although the first Lambda Paper had described <code>evaluate</code> as "similar to the LISP function EVAL"<sup id="cite_ref-lambda_paper_1_8-1" class="reference"><a href="#cite_note-lambda_paper_1-8"><span>[</span>9<span>]</span></a></sup> and the first Revised Report in 1978 replaced this with <code>enclose</code>, which took two arguments. The second, third and fourth revised reports omitted any equivalent of <code>eval</code>.</p>
+<p>The reason for this confusion is that in Scheme with its lexical scoping the result of evaluating an expression depends on where it is evaluated. For instance, it is not clear whether the result of evaluating the following expression should be 5 or 6:<sup id="cite_ref-rees_1992_14-0" class="reference"><a href="#cite_note-rees_1992-14"><span>[</span>15<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>name '<span class="sy0">+</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span><span class="sy0">+</span> <span class="sy0">*</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">(</span>evaluate <span class="br0">(</span><span class="kw1">list</span> name <span class="nu0">2</span> <span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>If it is evaluated in the outer environment, where <code>name</code> is defined, the result is the sum of the operands. If it is evaluated in the inner environment, where the symbol "+" has been bound to the value of the procedure "*", the result is the product of the two operands.</p>
+<p>R5RS resolves this confusion by specifying three procedures that return environments, and providing a procedure <code>eval</code> that takes an s-expression and an environment and evaluates the expression in the environment provided. (R5RS sec. 6.5)<sup id="cite_ref-r5rs_2-9" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup> R6RS extends this by providing a procedure called <code>environment</code> by which the programmer can specify exactly which objects to import into the evaluation environment.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=17" title="Edit section: Treatment of non-boolean values in boolean expressions">edit</a>]</span> <span class="mw-headline" id="Treatment_of_non-boolean_values_in_boolean_expressions">Treatment of non-boolean values in boolean expressions</span></h4>
+<p>In most dialects of Lisp including Common Lisp, by convention the value <code>NIL</code> evaluates to the value false in a boolean expression. In Scheme, since the IEEE standard in 1991,<sup id="cite_ref-ieee1178_1-1" class="reference"><a href="#cite_note-ieee1178-1"><span>[</span>2<span>]</span></a></sup> all values except #f, including <code>NIL</code>'s equivalent in Scheme which is written as '(), evaluate to the value true in a boolean expression. (R5RS sec. 6.3.1)<sup id="cite_ref-r5rs_2-10" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup></p>
+<p>Where the constant representing the boolean value of true is <code>T</code> in most Lisps, in Scheme it is <code>#t</code>.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=18" title="Edit section: Disjointness of primitive datatypes">edit</a>]</span> <span class="mw-headline" id="Disjointness_of_primitive_datatypes">Disjointness of primitive datatypes</span></h4>
+<p>In Scheme the primitive datatypes are disjoint. Only one of the following predicates can be true of any Scheme object: <code>boolean?</code>, <code>pair?</code>, <code>symbol?</code>, <code>number?</code>, <code>char?</code>, <code>string?</code>, <code>vector?</code>, <code>port?</code>, <code>procedure?</code>. (R5RS sec 3.2)<sup id="cite_ref-r5rs_2-11" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup></p>
+<p>Within the numerical datatype, by contrast, the numerical values overlap. For example, an integer value satisfies all of the <code>integer?</code>, <code>rational?</code>, <code>real?</code>, <code>complex?</code> and <code>number?</code> predicates at the same time. (R5RS sec 6.2)<sup id="cite_ref-r5rs_2-12" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup></p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=19" title="Edit section: Equivalence predicates">edit</a>]</span> <span class="mw-headline" id="Equivalence_predicates">Equivalence predicates</span></h4>
+<div class="rellink boilerplate seealso">See also: <a href="/wiki/Relational_operator" title="Relational operator">relational operator</a></div>
+<p>Scheme has three different types of equivalence between arbitrary objects denoted by three different <i>equivalence predicates</i>, relational operators for testing equality, <code>eq?</code>, <code>eqv?</code> and <code>equal?</code>:</p>
+<ul>
+<li><code>eq?</code> evaluates to <code>#f</code> unless its parameters represent the same data object in memory;</li>
+<li><code>eqv?</code> is generally the same as <code>eq?</code> but treats primitive objects (e.g. characters and numbers) specially so that numbers that represent the same value are <code>eqv?</code> even if they do not refer to the same object;</li>
+<li><code>equal?</code> compares data structures such as lists, vectors and strings to determine if they have congruent structure and <code>eqv?</code> contents.(R5RS sec. 6.1)<sup id="cite_ref-r5rs_2-13" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup></li>
+</ul>
+<p>Type dependent equivalence operations also exist in Scheme: <code>string=?</code> and <code>string-ci=?</code> compare two strings (the latter performs a case-independent comparison); <code>char=?</code> and <code>char-ci=?</code> compare characters; <code>=</code> compares numbers.<sup id="cite_ref-r5rs_2-14" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup></p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=20" title="Edit section: Comments">edit</a>]</span> <span class="mw-headline" id="Comments">Comments</span></h4>
+<div class="rellink boilerplate seealso">See also: <a href="/wiki/Comment_(computer_programming)" title="Comment (computer programming)">Comment (computer programming)</a></div>
+<p>Up to the R5RS standard, the standard comment in Scheme was a semicolon, which makes the rest of the line invisible to Scheme. Numerous implementations have supported alternative conventions permitting comments to extend for more than a single line, and the R6RS standard permits two of them: an entire <a href="/wiki/S-expression" title="S-expression">s-expression</a> may be turned into a comment (or "commented out") by preceding it with <code>#;</code> (introduced in SRFI 62<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>16<span>]</span></a></sup>) and a multiline comment or "block comment" may be produced by surrounding text by <code>#|</code> and <code>|#</code>.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=21" title="Edit section: Input/output">edit</a>]</span> <span class="mw-headline" id="Input.2Foutput">Input/output</span></h4>
+<p>Scheme's input and output is based on the <i>port</i> datatype. (R5RS sec 6.6)<sup id="cite_ref-r5rs_2-15" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup> R5RS defines two default ports, accessible with the procedures <code>current-input-port</code> and <code>current-output-port</code>, which correspond to the Unix notions of <a href="/wiki/Standard_streams" title="Standard streams">standard input and standard output</a>. Most implementations also provide <code>current-error-port</code>. <a href="/wiki/Redirection_(computing)" title="Redirection (computing)">Redirection</a> of input and standard output is supported in the standard, by standard procedures such as <code>with-input-from-file</code> and <code>with-output-to-file</code>. Most implementations provide string ports with similar redirection capabilities, enabling many normal input-output operations to be performed on string buffers instead of files, using procedures described in SRFI 6.<sup id="cite_ref-srfi-6_16-0" class="reference"><a href="#cite_note-srfi-6-16"><span>[</span>17<span>]</span></a></sup> The R6RS standard specifies much more sophisticated and capable port procedures and many new types of port.</p>
+<p>The following examples are written in strict R5RS Scheme.</p>
+<p>Example 1: With output defaulting to (current-output-port):</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>hello0 <span class="br0">(</span><span class="kw1">lambda</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"Hello world"</span><span class="br0">)</span><span class="br0">(</span><span class="kw1">newline</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span>hello0<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Example 2: As 1, but using optional port argument to output procedures</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>hello1 <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>p<span class="br0">)</span> <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"Hello world"</span> p<span class="br0">)</span><span class="br0">(</span><span class="kw1">newline</span> p<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span>hello1 <span class="br0">(</span><span class="kw1">current-output-port</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Example 3: As 1, but output is redirected to a newly created file</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="co1">;; NB: with-output-to-file is an optional procedure in R5RS</span>
+<span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>hello0 <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span><span class="br0">)</span> <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"Hello world"</span><span class="br0">)</span><span class="br0">(</span><span class="kw1">newline</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">with-output-to-file</span> <span class="st0">"helloworldoutputfile"</span> hello0<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Example 4: As 2, but with explicit file open and port close to send output to file</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>hello1 <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>p<span class="br0">)</span> <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"Hello world"</span> p<span class="br0">)</span><span class="br0">(</span><span class="kw1">newline</span> p<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+      <span class="br0">(</span><span class="kw1">output-port</span> <span class="br0">(</span><span class="kw1">open-output-file</span> <span class="st0">"helloworldoutputfile"</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span>hello1 <span class="kw1">output-port</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">close-output-port</span> <span class="kw1">output-port</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Example 5: As 2, but with using call-with-output-file to send output to a file.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>hello1 <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>p<span class="br0">)</span> <span class="br0">(</span><span class="kw1">display</span> <span class="st0">"Hello world"</span> p<span class="br0">)</span><span class="br0">(</span><span class="kw1">newline</span> p<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">call-with-output-file</span> <span class="st0">"helloworldoutputfile"</span> hello1<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Similar procedures are provided for input. R5RS Scheme provides the predicates <code>input-port?</code> and <code>output-port?</code>. For character input and output, <code>write-char</code>, <code>read-char</code>, <code>peek-char</code>, <code>char-ready?</code> are provided. For writing and reading Scheme expressions, Scheme provides <code>read</code> and <code>write</code>. On a read operation, the result returned is the end-of-file object if the input port has reached the end of the file, and this can be tested using the predicate <code>eof-object?</code>.</p>
+<p>In addition to the standard, SRFI 28 defines a basic formatting procedure resembling Common Lisp's <code>format</code> function, after which it is named.<sup id="cite_ref-srfi-28_17-0" class="reference"><a href="#cite_note-srfi-28-17"><span>[</span>18<span>]</span></a></sup></p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=22" title="Edit section: Redefinition of standard procedures">edit</a>]</span> <span class="mw-headline" id="Redefinition_of_standard_procedures">Redefinition of standard procedures</span></h4>
+<p>In Scheme procedures are bound to variables. At R5RS the language standard formally mandated that programs may change the variable bindings of built-in procedures, effectively redefining them. (R5RS "Language changes")<sup id="cite_ref-r5rs_2-16" class="reference"><a href="#cite_note-r5rs-2"><span>[</span>3<span>]</span></a></sup> For example, one may extend <code>+</code> to accept strings as well as numbers by redefining it:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="scheme source-scheme" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">set!</span> <span class="sy0">+</span>
+      <span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>original<span class="sy0">+</span> <span class="sy0">+</span><span class="br0">)</span><span class="br0">)</span>
+        <span class="br0">(</span><span class="kw1">lambda</span> args
+          <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="kw1">and</span> <span class="br0">(</span><span class="kw1">not</span> <span class="br0">(</span><span class="kw1">null?</span> args<span class="br0">)</span><span class="br0">)</span> <span class="br0">(</span><span class="kw1">string?</span> <span class="br0">(</span><span class="kw1">car</span> args<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+              <span class="br0">(</span>apply <span class="kw1">string-append</span> args<span class="br0">)</span>
+              <span class="br0">(</span>apply original<span class="sy0">+</span> args<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+<span class="br0">(</span><span class="sy0">+</span> <span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span><span class="br0">)</span>
+<span class="sy0">===&gt;</span> <span class="nu0">6</span>
+<span class="br0">(</span><span class="sy0">+</span> <span class="st0">"1"</span> <span class="st0">"2"</span> <span class="st0">"3"</span><span class="br0">)</span>
+<span class="sy0">===&gt;</span> <span class="st0">"123"</span>
+</pre></div>
+</div>
+<p>In R6RS every binding, including the standard ones, belongs to some library, and all exported bindings are immutable. (R6RS sec 7.1)<sup id="cite_ref-r6rs_3-2" class="reference"><a href="#cite_note-r6rs-3"><span>[</span>4<span>]</span></a></sup> Because of this, redefinition of standard procedures by mutation is forbidden. Instead, it is possible to import a different procedure under the name of a standard one, which in effect is similar to redefinition.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=23" title="Edit section: Nomenclature and naming conventions">edit</a>]</span> <span class="mw-headline" id="Nomenclature_and_naming_conventions">Nomenclature and naming conventions</span></h3>
+<p>In Standard Scheme, procedures that convert from one datatype to another contain the character string "-&gt;" in their name, predicates end with a "?", and procedures that change the value of already-allocated data end with a "!". These conventions are often followed by Scheme programmers.</p>
+<p>In formal contexts such as Scheme standards, the word "procedure" is used in preference to "function" to refer to a lambda expression or primitive procedure. In normal usage the words "procedure" and "function" are used interchangeably. Procedure application is sometimes referred to formally as <i>combination</i>.</p>
+<p>As in other Lisps, the term "<a href="/wiki/Thunk" title="Thunk">thunk</a>" is used in Scheme to refer to a procedure with no arguments. The term "proper tail recursion" refers to the property of all Scheme implementations, that they perform tail-call optimization so as to support an indefinite number of active <a href="/wiki/Tail_call" title="Tail call">tail calls</a>.</p>
+<p>The form of the titles of the standards documents since R3RS, "Revised<sup>n</sup> Report on the Algorithmic Language Scheme", is a reference to the title of the <a href="/wiki/ALGOL" title="ALGOL">ALGOL 60</a> standard document, "Revised Report on the Algorithmic Language Algol 60," The Summary page of R3RS is closely modeled on the Summary page of the ALGOL 60 Report.<sup id="cite_ref-algol_report_18-0" class="reference"><a href="#cite_note-algol_report-18"><span>[</span>19<span>]</span></a></sup><sup id="cite_ref-r3rs_19-0" class="reference"><a href="#cite_note-r3rs-19"><span>[</span>20<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=24" title="Edit section: Review of standard forms and procedures">edit</a>]</span> <span class="mw-headline" id="Review_of_standard_forms_and_procedures">Review of standard forms and procedures</span></h2>
+<p>The language is formally defined in the standards R5RS (1998) and R6RS (2007). They describe standard "forms": keywords and accompanying syntax, which provide the control structure of the language, and standard procedures which perform common tasks.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=25" title="Edit section: Standard forms">edit</a>]</span> <span class="mw-headline" id="Standard_forms">Standard forms</span></h3>
+<p>This table describes the standard forms in Scheme. Some forms appear in more than one row because they cannot easily be classified into a single function in the language.</p>
+<p>Forms marked "L" in this table are classed as derived "library" forms in the standard and are often implemented as macros using more fundamental forms in practice, making the task of implementation much easier than in other languages.</p>
+<table class="wikitable">
+<caption>Standard forms in the language R5RS Scheme</caption>
+<tr>
+<th>Purpose</th>
+<th>Forms</th>
+</tr>
+<tr>
+<td>Definition</td>
+<td>define</td>
+</tr>
+<tr>
+<td>Binding constructs</td>
+<td>lambda, do (L), let (L), let* (L), letrec (L)</td>
+</tr>
+<tr>
+<td>Conditional evaluation</td>
+<td>if, cond (L), case (L), and (L), or (L)</td>
+</tr>
+<tr>
+<td>Sequential evaluation</td>
+<td>begin (L)</td>
+</tr>
+<tr>
+<td>Iteration</td>
+<td>lambda, do (L), named let (L)</td>
+</tr>
+<tr>
+<td>Syntactic extension</td>
+<td>define-syntax, let-syntax, letrec-syntax, syntax-rules (R5RS), syntax-case (R6RS)</td>
+</tr>
+<tr>
+<td>Quoting</td>
+<td>quote('), unquote(,), quasiquote(`), unquote-splicing(,@)</td>
+</tr>
+<tr>
+<td>Assignment</td>
+<td>set!</td>
+</tr>
+<tr>
+<td>Delayed evaluation</td>
+<td>delay (L)</td>
+</tr>
+</table>
+<h3><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=26" title="Edit section: Standard procedures">edit</a>]</span> <span class="mw-headline" id="Standard_procedures">Standard procedures</span></h3>
+<p>The following two tables describe the standard procedures in R5RS Scheme. R6RS is far more extensive and a summary of this type would not be practical.</p>
+<p>Some procedures appear in more than one row because they cannot easily be classified into a single function in the language.</p>
+<table class="wikitable">
+<caption>Standard procedures in the language R5RS Scheme</caption>
+<tr>
+<th>Purpose</th>
+<th>Procedures</th>
+</tr>
+<tr>
+<td>Construction</td>
+<td>vector, make-vector, make-string, list</td>
+</tr>
+<tr>
+<td>Equivalence predicates</td>
+<td>eq?, eqv?, equal?, string=?, string-ci=?, char=?, char-ci=?</td>
+</tr>
+<tr>
+<td>Type conversion</td>
+<td>vector-&gt;list, list-&gt;vector, number-&gt;string, string-&gt;number, symbol-&gt;string, string-&gt;symbol, char-&gt;integer, integer-&gt;char, string-&gt;list, list-&gt;string</td>
+</tr>
+<tr>
+<td>Numbers</td>
+<td><i>See separate table</i></td>
+</tr>
+<tr>
+<td>Strings</td>
+<td>string?, make-string, string, string-length, string-ref, string-set!, string=?, string-ci=?, string&lt;? string-ci&lt;?, string&lt;=? string-ci&lt;=?, string&gt;? string-ci&gt;?, string&gt;=? string-ci&gt;=?, substring, string-append, string-&gt;list, list-&gt;string, string-copy, string-fill!</td>
+</tr>
+<tr>
+<td>Characters</td>
+<td>char?, char=?, char-ci=?, char&lt;? char-ci&lt;?, char&lt;=? char-ci&lt;=?, char&gt;? char-ci&gt;?, char&gt;=? char-ci&gt;=?, char-alphabetic?, char-numeric?, char-whitespace?, char-upper-case?, char-lower-case?, char-&gt;integer, integer-&gt;char, char-upcase, char-downcase</td>
+</tr>
+<tr>
+<td>Vectors</td>
+<td>make-vector, vector, vector?, vector-length, vector-ref, vector-set!, vector-&gt;list, list-&gt;vector, vector-fill!</td>
+</tr>
+<tr>
+<td>Symbols</td>
+<td>symbol-&gt;string, string-&gt;symbol, symbol?</td>
+</tr>
+<tr>
+<td>Pairs and lists</td>
+<td>pair?, cons, car, cdr, set-car!, set-cdr!, null?, list?, list, length, append, reverse, list-tail, list-ref, memq. memv. member, assq, assv, assoc, list-&gt;vector, vector-&gt;list, list-&gt;string, string-&gt;list</td>
+</tr>
+<tr>
+<td>Identity predicates</td>
+<td>boolean?, pair?, symbol?, number?, char?, string?, vector?, port?, procedure?</td>
+</tr>
+<tr>
+<td>Continuations</td>
+<td>call-with-current-continuation (call/cc), values, call-with-values, dynamic-wind</td>
+</tr>
+<tr>
+<td>Environments</td>
+<td>eval, scheme-report-environment, null-environment, interaction-environment (optional)</td>
+</tr>
+<tr>
+<td>Input/output</td>
+<td>display, newline, read, write, read-char, write-char, peek-char, char-ready?, eof-object? open-input-file, open-output-file, close-input-port, close-output-port, input-port?, output-port?, current-input-port, current-output-port, call-with-input-file, call-with-output-file, with-input-from-file(optional), with-output-to-file(optional)</td>
+</tr>
+<tr>
+<td>System interface</td>
+<td>load (optional), transcript-on (optional), transcript-off (optional)</td>
+</tr>
+<tr>
+<td>Functional programming</td>
+<td>procedure?, apply, map, for-each</td>
+</tr>
+<tr>
+<td>Booleans</td>
+<td>boolean? not</td>
+</tr>
+</table>
+<p>String and character procedures that contain "-ci" in their names perform case-independent comparisons between their arguments: upper case and lower case versions of the same character are taken to be equal.</p>
+<table class="wikitable">
+<caption>Standard numeric procedures in the language R5RS Scheme</caption>
+<tr>
+<th>Purpose</th>
+<th>Procedures</th>
+</tr>
+<tr>
+<td>Basic arithmetic operators</td>
+<td>+, -, *, /, abs, quotient, remainder, modulo, gcd, lcm, expt, sqrt</td>
+</tr>
+<tr>
+<td>Rational numbers</td>
+<td>numerator, denominator, rational?, rationalize</td>
+</tr>
+<tr>
+<td>Approximation</td>
+<td>floor, ceiling, truncate, round</td>
+</tr>
+<tr>
+<td>Exactness</td>
+<td>inexact-&gt;exact, exact-&gt;inexact, exact?, inexact?</td>
+</tr>
+<tr>
+<td>Inequalities</td>
+<td>&lt;, &lt;=, &gt;, &gt;=</td>
+</tr>
+<tr>
+<td>Miscellaneous predicates</td>
+<td>zero?, negative?, positive? odd? even?</td>
+</tr>
+<tr>
+<td>Maximum and minimum</td>
+<td>max, min</td>
+</tr>
+<tr>
+<td>Trigonometry</td>
+<td>sin, cos, tan, asin, acos, atan</td>
+</tr>
+<tr>
+<td>Exponentials</td>
+<td>exp, log</td>
+</tr>
+<tr>
+<td>Complex numbers</td>
+<td>make-rectangular, make-polar, real-part, imag-part, magnitude, angle, complex?</td>
+</tr>
+<tr>
+<td>Input-output</td>
+<td>number-&gt;string, string-&gt;number</td>
+</tr>
+<tr>
+<td>Type predicates</td>
+<td>integer?, rational?, real?, complex?, number?</td>
+</tr>
+</table>
+<p>Implementations of - and / that take more than two arguments are defined but left optional at R5RS.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=27" title="Edit section: Scheme Requests for Implementation - portable extensions to the standard">edit</a>]</span> <span class="mw-headline" id="Scheme_Requests_for_Implementation_-_portable_extensions_to_the_standard">Scheme Requests for Implementation - portable extensions to the standard</span></h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/Scheme_Requests_for_Implementation" title="Scheme Requests for Implementation">Scheme Requests for Implementation</a></div>
+<p>Because of Scheme's minimalism, many common procedures and syntactic forms are not defined by the standard. In order to keep the core language small but facilitate standardization of extensions, the Scheme community has a "Scheme Request for Implementation" (SRFI) process by which extension libraries are defined through careful discussion of extension proposals. This promotes code portability. Many of the SRFIs are supported by all or most Scheme implementations.</p>
+<p>SRFIs with fairly wide support in different implementations include<sup id="cite_ref-srfi_support_20-0" class="reference"><a href="#cite_note-srfi_support-20"><span>[</span>21<span>]</span></a></sup>:</p>
+<ul>
+<li>0: feature-based conditional expansion construct</li>
+<li>1: list library</li>
+<li>4: homogeneous numeric vector datatypes</li>
+<li>6: basic string ports</li>
+<li>8: receive, binding to multiple values</li>
+<li>9: defining record types</li>
+<li>13: string library</li>
+<li>14: character-set library</li>
+<li>16: syntax for procedures of variable <a href="/wiki/Arity" title="Arity">arity</a></li>
+<li>17: generalized set!</li>
+<li>18: Multithreading support</li>
+<li>19: time data types and procedures</li>
+<li>25: multi-dimensional array primitives</li>
+<li>26: notation for specializing parameters without <a href="/wiki/Currying" title="Currying">currying</a></li>
+<li>27: sources of random bits</li>
+<li>28: basic format strings</li>
+<li>29: <a href="/wiki/Internationalization_and_localization" title="Internationalization and localization">localization</a></li>
+<li>30: nested multi-line comments</li>
+<li>31: a special form for recursive evaluation</li>
+<li>37: args-fold: a program argument processor</li>
+<li>39: parameter objects</li>
+<li>41: <a href="/wiki/Stream_(computing)" title="Stream (computing)">streams</a></li>
+<li>42: <a href="/wiki/List_comprehension" title="List comprehension">eager comprehensions</a></li>
+<li>43: vector library</li>
+<li>45: primitives for expressing iterative lazy algorithms</li>
+<li>60: integers as bits</li>
+<li>61: a more general cond clause</li>
+<li>66: octet vectors</li>
+<li>67: compare procedures</li>
+</ul>
+<p>A full list of accepted (finalized) SRFIs is available at <a href="http://srfi.schemers.org/final-srfis.html" class="external free" rel="nofollow">http://srfi.schemers.org/final-srfis.html</a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=28" title="Edit section: Implementations">edit</a>]</span> <span class="mw-headline" id="Implementations">Implementations</span></h2>
+<dl>
+<dd><i>See <a href="/wiki/Category:Scheme_implementations" title="Category:Scheme implementations">Category:Scheme implementations</a> for a list of major implementations</i></dd>
+</dl>
+<p>The elegant, minimalist design has made Scheme a popular target for language designers, hobbyists, and educators, and because of the small size of a typical interpreter it is also a popular choice for <a href="/wiki/Embedded_system" title="Embedded system">embedded systems</a> and <a href="/wiki/Scripting_language" title="Scripting language">scripting</a>. This has resulted in scores of implementations,<sup id="cite_ref-scheme_implementations_21-0" class="reference"><a href="#cite_note-scheme_implementations-21"><span>[</span>22<span>]</span></a></sup> most of which differ from each other so much that porting programs from one implementation to another is quite difficult and the small size of the standard language means that writing a useful program of any great complexity in standard, portable Scheme is almost impossible. The R6RS standard specifies a much broader language in an attempt to broaden its appeal to programmers.</p>
+<p>Almost all implementations provide a traditional Lisp-style <a href="/wiki/Read-eval-print_loop" title="Read-eval-print loop">read-eval-print loop</a> for development and debugging. Many also compile Scheme programs to executable binary. Support for embedding Scheme code in programs written in other languages is also common, as the relative simplicity of Scheme implementations make Scheme a popular choice for adding scripting capabilities to larger systems developed in languages such as C. <a href="/wiki/Gambit_(Scheme_implementation)" title="Gambit (Scheme implementation)">Gambit</a>, <a href="/wiki/Chicken_(Scheme_implementation)" title="Chicken (Scheme implementation)">Chicken</a> and <a href="/wiki/Bigloo" title="Bigloo">Bigloo</a> work by compiling Scheme to <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, which makes embedding particularly easy. In addition, Bigloo's compiler can be configured to generate <a href="/wiki/Java_Virtual_Machine" title="Java Virtual Machine">JVM</a> bytecode, and it also features an experimental bytecode generator for <a href="/wiki/.NET_Framework" title=".NET Framework">.Net</a>.</p>
+<p>Some implementations support additional features. For example, <a href="/wiki/Kawa_(Scheme_implementation)" title="Kawa (Scheme implementation)">Kawa</a> and <a href="/wiki/JScheme" title="JScheme">JScheme</a> provide integration with Java classes, and the Scheme to C compilers often make it easy to use external libraries written in C, up to allowing the embedding of actual C code in the Scheme source. Another example is PVTS which offers a set of visual tools for supporting the learning of Scheme.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=29" title="Edit section: R6RS">edit</a>]</span> <span class="mw-headline" id="R6RS">R6RS</span></h2>
+<p>A new language standardization process began at the 2003 Scheme workshop, with the goal of producing an R6RS standard in 2006. This process broke with the earlier R<i>n</i>RS approach of unanimity.</p>
+<p>R6RS features a standard module system, allowing a split between the core language and libraries. A number of drafts of the R6RS specification were released, the final version being R5.97RS. A successful vote resulted in the ratification of the new standard, announced on August 28, 2007.<sup id="cite_ref-r6rs_3-3" class="reference"><a href="#cite_note-r6rs-3"><span>[</span>4<span>]</span></a></sup></p>
+<p>Currently the newest releases of various Scheme implementations, e.g. <a href="/wiki/Ikarus_(Scheme_implementation)" title="Ikarus (Scheme implementation)">Ikarus</a>, <a href="/wiki/Larceny_(Scheme_implementation)" title="Larceny (Scheme implementation)">Larceny</a>, <a href="/wiki/Racket_(programming_language)" title="Racket (programming language)">Racket</a> and <a href="/wiki/Ypsilon_(Scheme_implementation)" title="Ypsilon (Scheme implementation)">Ypsilon</a> support the R6RS standard. There is a portable reference implementation of the proposed implicitly-phased libraries for R6RS, called psyntax, which loads and bootstraps itself properly on various older Scheme implementations.<sup id="cite_ref-psyntax_22-0" class="reference"><a href="#cite_note-psyntax-22"><span>[</span>23<span>]</span></a></sup></p>
+<p>R6RS introduces numerous significant changes to the language.<sup id="cite_ref-r6rs_Language_changes_23-0" class="reference"><a href="#cite_note-r6rs_Language_changes-23"><span>[</span>24<span>]</span></a></sup> The source code is now specified in <a href="/wiki/Unicode" title="Unicode">Unicode</a>, and a large subset of Unicode characters may now appear in Scheme symbols and <a href="/wiki/Identifier" title="Identifier">identifiers</a>, and there are other minor changes to the lexical rules. Character data is also now specified in Unicode. Many standard procedures have been moved to the new standard libraries, which themselves form a large expansion of the standard, containing procedures and syntactic forms that were formerly not part of the standard. A new module system has been introduced, and systems for exception handling are now standardized. Syntax-rules has been replaced with a more expressive syntactic abstraction facility (syntax-case) which allows the use of all of Scheme at macro expansion time. Compliant implementations are now <i>required</i> to support Scheme's full numeric tower, and the semantics of numbers have been expanded, mainly in the direction of support for the <a href="/wiki/IEEE_754-1985" title="IEEE 754-1985">IEEE 754</a> standard for floating point numerical representation.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=30" title="Edit section: R7RS">edit</a>]</span> <span class="mw-headline" id="R7RS">R7RS</span></h2>
+<p>The R6RS standard has caused controversy because it is seen to have departed from the minimalist philosophy.<sup id="cite_ref-r6rs_electorate_24-0" class="reference"><a href="#cite_note-r6rs_electorate-24"><span>[</span>25<span>]</span></a></sup><sup id="cite_ref-r6rs_feeley_25-0" class="reference"><a href="#cite_note-r6rs_feeley-25"><span>[</span>26<span>]</span></a></sup> In August 2009, the Scheme Steering Committee which oversees the standardization process announced its intention to recommend splitting Scheme into two languages: a large modern programming language for programmers, and a subset of the large version retaining the minimalism prized by educators and casual implementors<sup id="cite_ref-position_paper_0-1" class="reference"><a href="#cite_note-position_paper-0"><span>[</span>1<span>]</span></a></sup>; two working groups were created to work on these two new versions of Scheme. The [<a href="http://www.scheme-reports.org/" class="external text" rel="nofollow">Scheme Reports Process</a>] site has links to the working groups charters, public discussions and issue tracking system.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=31" title="Edit section: Usage">edit</a>]</span> <span class="mw-headline" id="Usage">Usage</span></h2>
+<p>Scheme is widely used by a number<sup id="cite_ref-schemers_inc_26-0" class="reference"><a href="#cite_note-schemers_inc-26"><span>[</span>27<span>]</span></a></sup> of schools; in particular, a number of introductory <a href="/wiki/Computer_Science" title="Computer Science" class="mw-redirect">Computer Science</a> courses use Scheme in conjunction with the textbook <i><a href="/wiki/Structure_and_Interpretation_of_Computer_Programs" title="Structure and Interpretation of Computer Programs">Structure and Interpretation of Computer Programs</a></i> (SICP).<sup id="cite_ref-sicp_adopters_27-0" class="reference"><a href="#cite_note-sicp_adopters-27"><span>[</span>28<span>]</span></a></sup> For the past 12 years, <a href="/wiki/PLT_Scheme" title="PLT Scheme" class="mw-redirect">PLT</a> has run the <a href="/wiki/TeachScheme!" title="TeachScheme!">TeachScheme!</a> project, which has exposed close to 600 high school teachers and thousands of high school students to rudimentary Scheme programming. <a href="/wiki/MIT" title="MIT" class="mw-redirect">MIT</a>'s old introductory programming class 6.001 was taught in Scheme,<sup id="cite_ref-6.001_28-0" class="reference"><a href="#cite_note-6.001-28"><span>[</span>29<span>]</span></a></sup> Although 6.001 has been replaced by more modern courses, SICP continues to be taught at MIT.<sup id="cite_ref-6.001_zombies_29-0" class="reference"><a href="#cite_note-6.001_zombies-29"><span>[</span>30<span>]</span></a></sup> The textbook <i><a href="/wiki/How_to_Design_Programs" title="How to Design Programs">How to Design Programs</a></i> by Matthias Felleisen, currently at Northeastern University, is used by some institutes of higher education for their introductory computer science courses. Both <a href="/wiki/Northeastern_University" title="Northeastern University">Northeastern University</a> and <a href="/wiki/Worcester_Polytechnic_Institute" title="Worcester Polytechnic Institute">Worcester Polytechnic Institute</a> use Scheme exclusively for their introductory courses Fundamentals of Computer Science (CS2500) and Introduction to Program Design (CS1101), respectively. <sup id="cite_ref-neu_30-0" class="reference"><a href="#cite_note-neu-30"><span>[</span>31<span>]</span></a></sup> <sup id="cite_ref-wpi_31-0" class="reference"><a href="#cite_note-wpi-31"><span>[</span>32<span>]</span></a></sup> <a href="/wiki/Indiana_University" title="Indiana University" class="mw-redirect">Indiana University</a>'s introductory class, C211, is taught entirely in Scheme. The introductory class at <a href="/wiki/UC_Berkeley" title="UC Berkeley" class="mw-redirect">UC Berkeley</a>, CS 61A, is taught entirely in Scheme, save minor diversions into Logo to demonstrate dynamic scope; all course materials, including lecture webcasts, are available online free of charge.<sup id="cite_ref-61A_32-0" class="reference"><a href="#cite_note-61A-32"><span>[</span>33<span>]</span></a></sup> The introductory computer science courses at <a href="/wiki/Yale" title="Yale" class="mw-redirect">Yale</a> and <a href="/wiki/Grinnell_College" title="Grinnell College">Grinnell College</a> are also taught in Scheme.<sup id="cite_ref-yale_cs201_33-0" class="reference"><a href="#cite_note-yale_cs201-33"><span>[</span>34<span>]</span></a></sup> Several introductory Computer Science courses at <a href="/wiki/Rice_University" title="Rice University">Rice University</a> are also taught in Scheme.<sup id="cite_ref-rice_34-0" class="reference"><a href="#cite_note-rice-34"><span>[</span>35<span>]</span></a></sup> Programming Design Paradigms,<sup id="cite_ref-neu_30-1" class="reference"><a href="#cite_note-neu-30"><span>[</span>31<span>]</span></a></sup> a mandatory course for the Computer science Graduate Students at <a href="/wiki/Northeastern_University" title="Northeastern University">Northeastern University</a>, also extensively uses Scheme. The introduction Computer Science course at the University of Minnesota - Twin Cities, CSci 1901, also uses Scheme as its primary language, followed by a course that introduces students to the Java programming language.<sup id="cite_ref-umn_35-0" class="reference"><a href="#cite_note-umn-35"><span>[</span>36<span>]</span></a></sup> LambdaBeans<sup id="cite_ref-lambdabeans_36-0" class="reference"><a href="#cite_note-lambdabeans-36"><span>[</span>37<span>]</span></a></sup> is an open source Scheme editor, helping with syntax coloring, code completion, and other features typical to code editors.</p>
+<p>Although there are relatively few examples of Scheme in apparent usage<sup id="cite_ref-faq_general_37-0" class="reference"><a href="#cite_note-faq_general-37"><span>[</span>38<span>]</span></a></sup> for non-pedagogical purposes, the <a href="/wiki/Document_Style_Semantics_and_Specification_Language" title="Document Style Semantics and Specification Language">Document Style Semantics and Specification Language</a> (DSSSL), which provides a method of specifying <a href="/wiki/SGML" title="SGML" class="mw-redirect">SGML</a> <a href="/wiki/Style_sheet_(web_development)" title="Style sheet (web development)">stylesheets</a>, uses a Scheme subset.<sup id="cite_ref-dsssl_38-0" class="reference"><a href="#cite_note-dsssl-38"><span>[</span>39<span>]</span></a></sup> In addition, the well-known <a href="/wiki/Open_source" title="Open source">open source</a> <a href="/wiki/Raster_graphics_editor" title="Raster graphics editor">raster graphics editor</a> <a href="/wiki/GIMP" title="GIMP">GIMP</a> uses Scheme as a <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a>.<sup id="cite_ref-gimp_39-0" class="reference"><a href="#cite_note-gimp-39"><span>[</span>40<span>]</span></a></sup> <a href="/wiki/GNU_Guile" title="GNU Guile">Guile</a> has been adopted by <a href="/wiki/GNU" title="GNU">GNU</a> project as its official scripting language, and that implementation of Scheme is embedded in such applications as <a href="/wiki/GNU_LilyPond" title="GNU LilyPond">GNU LilyPond</a> and <a href="/wiki/GnuCash" title="GnuCash">GnuCash</a> as a scripting language for extensions. Likewise, Guile used to be the scripting language for the <a href="/wiki/Desktop_environment" title="Desktop environment">desktop environment</a> <a href="/wiki/GNOME" title="GNOME">GNOME</a>,<sup id="cite_ref-archive_gnomefaq_40-0" class="reference"><a href="#cite_note-archive_gnomefaq-40"><span>[</span>41<span>]</span></a></sup> and GNOME still has a project that provides Guile bindings to its library stack.<sup id="cite_ref-live_gnome_41-0" class="reference"><a href="#cite_note-live_gnome-41"><span>[</span>42<span>]</span></a></sup> <a href="/wiki/Extension_Language_Kit" title="Extension Language Kit">Elk Scheme</a> is used by <a href="/wiki/Synopsys" title="Synopsys">Synopsys</a> as a scripting language for its <a href="/wiki/Technology_CAD" title="Technology CAD">technology CAD (TCAD)</a> tools.<sup id="cite_ref-tcad_42-0" class="reference"><a href="#cite_note-tcad-42"><span>[</span>43<span>]</span></a></sup> Shiro Kawai, senior programmer on the movie <a href="/wiki/Final_Fantasy:_The_Spirits_Within" title="Final Fantasy: The Spirits Within">Final Fantasy: The Spirits Within</a>, used Scheme as a scripting language for managing the real-time rendering engine.<sup id="cite_ref-shiro_kawai_43-0" class="reference"><a href="#cite_note-shiro_kawai-43"><span>[</span>44<span>]</span></a></sup> <a href="/wiki/Google" title="Google">Google</a>'s App Inventor for <a href="/wiki/Android_(operating_system)" title="Android (operating system)">Android</a> uses Scheme, where <a href="/wiki/Kawa_(Scheme_implementation)" title="Kawa (Scheme implementation)">Kawa</a> is used to compile the Scheme code down to byte-codes for the <a href="/wiki/Java_Virtual_Machine" title="Java Virtual Machine">Java Virtual Machine</a> running on Android devices.<sup id="cite_ref-android_44-0" class="reference"><a href="#cite_note-android-44"><span>[</span>45<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=32" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul>
+<li><i><a href="/wiki/Structure_and_Interpretation_of_Computer_Programs" title="Structure and Interpretation of Computer Programs">Structure and Interpretation of Computer Programs</a></i>, a classic <a href="/wiki/Computer_science" title="Computer science">computer science</a> textbook. (Accompanying videos on YouTube and on a <a href="http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/" class="external text" rel="nofollow">homepage</a>.)</li>
+<li><i><a href="/wiki/How_to_Design_Programs" title="How to Design Programs">How to Design Programs</a></i>, which intends to teach principles that go beyond Scheme and to address <a href="http://www.ccs.neu.edu/scheme/pubs/#jfp2004-fffk" class="external text" rel="nofollow">perceived incongruities in SICP</a>.</li>
+<li><a href="/wiki/Call-with-current-continuation" title="Call-with-current-continuation">Call-with-current-continuation</a> (call/cc)</li>
+<li><a href="/wiki/SXML" title="SXML">SXML</a> - an illustrative representation for XML in Scheme that provides a straightforward approach to XML data processing in Scheme</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=33" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist references-small references-column-width" style="column-width: 30em; -moz-column-width: 30em; -webkit-column-width: 30em;">
+<div class="references">
+<ol>
+<li id="cite_note-position_paper-0">^ <a href="#cite_ref-position_paper_0-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-position_paper_0-1"><sup><i><b>b</b></i></sup></a> <span class="citation web">Will Clinger, Marc Feeley, Chris Hanson, Jonathan Rees and Olin Shivers (2009-08-20). <a href="http://scheme-reports.org/2009/position-statement.html" class="external text" rel="nofollow">"Position Statement, <i>draft</i>"</a>. Scheme Steering Committee<span class="printonly">. <a href="http://scheme-reports.org/2009/position-statement.html" class="external free" rel="nofollow">http://scheme-reports.org/2009/position-statement.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Position+Statement%2C+%27%27draft%27%27&amp;rft.atitle=&amp;rft.aulast=Will+Clinger%2C+Marc+Feeley%2C+Chris+Hanson%2C+Jonathan+Rees+and+Olin+Shivers&amp;rft.au=Will+Clinger%2C+Marc+Feeley%2C+Chris+Hanson%2C+Jonathan+Rees+and+Olin+Shivers&amp;rft.date=2009-08-20&amp;rft.pub=Scheme+Steering+Committee&amp;rft_id=http%3A%2F%2Fscheme-reports.org%2F2009%2Fposition-statement.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-ieee1178-1">^ <a href="#cite_ref-ieee1178_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ieee1178_1-1"><sup><i><b>b</b></i></sup></a> 1178-1990 (Reaff 2008) IEEE Standard for the Scheme Programming Language. IEEE part number STDPD14209, <a href="http://standards.ieee.org/board/rev/308minutes.html" class="external text" rel="nofollow">unanimously reaffirmed</a> at a meeting of the IEEE-SA Standards Board Standards Review Committee (RevCom), March 26, 2008 (item 6.3 on minutes), reaffirmation minutes accessed October 2009. NOTE: this document is only available for purchase from IEEE and is not available online at the time of writing (2009).</li>
+<li id="cite_note-r5rs-2">^ <a href="#cite_ref-r5rs_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-r5rs_2-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-r5rs_2-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-r5rs_2-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-r5rs_2-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-r5rs_2-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-r5rs_2-6"><sup><i><b>g</b></i></sup></a> <a href="#cite_ref-r5rs_2-7"><sup><i><b>h</b></i></sup></a> <a href="#cite_ref-r5rs_2-8"><sup><i><b>i</b></i></sup></a> <a href="#cite_ref-r5rs_2-9"><sup><i><b>j</b></i></sup></a> <a href="#cite_ref-r5rs_2-10"><sup><i><b>k</b></i></sup></a> <a href="#cite_ref-r5rs_2-11"><sup><i><b>l</b></i></sup></a> <a href="#cite_ref-r5rs_2-12"><sup><i><b>m</b></i></sup></a> <a href="#cite_ref-r5rs_2-13"><sup><i><b>n</b></i></sup></a> <a href="#cite_ref-r5rs_2-14"><sup><i><b>o</b></i></sup></a> <a href="#cite_ref-r5rs_2-15"><sup><i><b>p</b></i></sup></a> <a href="#cite_ref-r5rs_2-16"><sup><i><b>q</b></i></sup></a> <span class="citation Journal">Richard Kelsey, William Clinger, Jonathan Rees et al. (August 1998). <a href="http://www.schemers.org/Documents/Standards/R5RS/" class="external text" rel="nofollow">"Revised<sup>5</sup> Report on the Algorithmic Language Scheme"</a>. <i>Higher-Order and Symbolic Computation</i> <b>11</b> (1): 7–105. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1023%2FA%3A1010051815785" class="external text" rel="nofollow">10.1023/A:1010051815785</a><span class="printonly">. <a href="http://www.schemers.org/Documents/Standards/R5RS/" class="external free" rel="nofollow">http://www.schemers.org/Documents/Standards/R5RS/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Revised%3Csup%3E5%3C%2Fsup%3E+Report+on+the+Algorithmic+Language+Scheme&amp;rft.jtitle=Higher-Order+and+Symbolic+Computation&amp;rft.aulast=Richard+Kelsey%2C+William+Clinger%2C+Jonathan+Rees+et+al.&amp;rft.au=Richard+Kelsey%2C+William+Clinger%2C+Jonathan+Rees+et+al.&amp;rft.date=August+1998&amp;rft.volume=11&amp;rft.issue=1&amp;rft.pages=7%E2%80%93105&amp;rft_id=info:doi/10.1023%2FA%3A1010051815785&amp;rft_id=http%3A%2F%2Fwww.schemers.org%2FDocuments%2FStandards%2FR5RS%2F&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-r6rs-3">^ <a href="#cite_ref-r6rs_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-r6rs_3-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-r6rs_3-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-r6rs_3-3"><sup><i><b>d</b></i></sup></a> <span class="citation web">Michael Sperber, R. Kent Dybvig, Matthew Flatt, Anton Van Straaten et al. (August 2007). <a href="http://www.r6rs.org/" class="external text" rel="nofollow">"Revised<sup>6</sup> Report on the Algorithmic Language Scheme (R6RS)"</a>. Scheme Steering Committee<span class="printonly">. <a href="http://www.r6rs.org/" class="external free" rel="nofollow">http://www.r6rs.org/</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Revised%3Csup%3E6%3C%2Fsup%3E+Report+on+the+Algorithmic+Language+Scheme+%28R6RS%29&amp;rft.atitle=&amp;rft.aulast=Michael+Sperber%2C+R.+Kent+Dybvig%2C+Matthew+Flatt%2C+Anton+Van+Straaten++et+al.&amp;rft.au=Michael+Sperber%2C+R.+Kent+Dybvig%2C+Matthew+Flatt%2C+Anton+Van+Straaten++et+al.&amp;rft.date=August+2007&amp;rft.pub=Scheme+Steering+Committee&amp;rft_id=http%3A%2F%2Fwww.r6rs.org%2F&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <span class="citation web"><a href="http://www.r6rs.org/ratification/results.html" class="external text" rel="nofollow">"R6RS ratification-voting results"</a>. Scheme Steering Committee. 2007-08-13<span class="printonly">. <a href="http://www.r6rs.org/ratification/results.html" class="external free" rel="nofollow">http://www.r6rs.org/ratification/results.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=R6RS+ratification-voting+results&amp;rft.atitle=&amp;rft.date=2007-08-13&amp;rft.pub=Scheme+Steering+Committee&amp;rft_id=http%3A%2F%2Fwww.r6rs.org%2Fratification%2Fresults.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-cl_steele-5"><b><a href="#cite_ref-cl_steele_5-0">^</a></b> Common LISP: The Language, 2nd Ed., Guy L. Steele Jr. Digital Press; 1981. <a href="/wiki/Special:BookSources/9781555580414" class="internal mw-magiclink-isbn">ISBN 978-1555580414</a>. "Common Lisp is a new dialect of Lisp, a successor to MacLisp, influenced strongly by ZetaLisp and to some extent by Scheme and InterLisp."</li>
+<li id="cite_note-revisited-6">^ <a href="#cite_ref-revisited_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-revisited_6-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-revisited_6-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-revisited_6-3"><sup><i><b>d</b></i></sup></a> <span class="citation Journal"><a href="/wiki/Gerald_Jay_Sussman" title="Gerald Jay Sussman">Gerald Jay Sussman</a> and <a href="/wiki/Guy_L._Steele,_Jr." title="Guy L. Steele, Jr.">Guy L. Steele, Jr.</a> (December 1998). <a href="http://www.brics.dk/~hosc/local/HOSC-11-4-pp399-404.pdf" class="external text" rel="nofollow">"The First Report on Scheme Revisited"</a> (PDF). <i>Higher-Order and Symbolic Computation</i> <b>11</b> (4): 399–404. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1023%2FA%3A1010079421970" class="external text" rel="nofollow">10.1023/A:1010079421970</a>. <a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a>&#160;<a href="http://www.worldcat.org/issn/1388-3690" class="external text" rel="nofollow">1388-3690</a><span class="printonly">. <a href="http://www.brics.dk/~hosc/local/HOSC-11-4-pp399-404.pdf" class="external free" rel="nofollow">http://www.brics.dk/~hosc/local/HOSC-11-4-pp399-404.pdf</a></span><span class="reference-accessdate">. Retrieved 2006-06-19</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+First+Report+on+Scheme+Revisited&amp;rft.jtitle=Higher-Order+and+Symbolic+Computation&amp;rft.aulast=%5B%5BGerald+Jay+Sussman%5D%5D+and+%5B%5BGuy+L.+Steele%2C+Jr.%5D%5D&amp;rft.au=%5B%5BGerald+Jay+Sussman%5D%5D+and+%5B%5BGuy+L.+Steele%2C+Jr.%5D%5D&amp;rft.date=December+1998&amp;rft.volume=11&amp;rft.issue=4&amp;rft.pages=399%E2%80%93404&amp;rft_id=info:doi/10.1023%2FA%3A1010079421970&amp;rft.issn=1388-3690&amp;rft_id=http%3A%2F%2Fwww.brics.dk%2F%7Ehosc%2Flocal%2FHOSC-11-4-pp399-404.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-easy_to_implement_scheme48-7"><b><a href="#cite_ref-easy_to_implement_scheme48_7-0">^</a></b> Indeed, the <a href="/wiki/Scheme_48" title="Scheme 48">Scheme 48</a> implementation is so-named because the interpreter was written by Richard Kelsey and Jonathan Rees in 48 hours on August 6th and 7th, 1986. See <span class="citation web">Richard Kelsey, Jonathan Rees, Mike Sperber (2008-01-10). <a href="http://s48.org/1.8/manual/manual.html" class="external text" rel="nofollow">"The Incomplete Scheme 48 Reference Manual for release 1.8"</a>. Jonathan Rees, s48.org<span class="printonly">. <a href="http://s48.org/1.8/manual/manual.html" class="external free" rel="nofollow">http://s48.org/1.8/manual/manual.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Incomplete+Scheme+48+Reference+Manual+for+release+1.8&amp;rft.atitle=&amp;rft.aulast=Richard+Kelsey%2C+Jonathan+Rees%2C+Mike+Sperber&amp;rft.au=Richard+Kelsey%2C+Jonathan+Rees%2C+Mike+Sperber&amp;rft.date=2008-01-10&amp;rft.pub=Jonathan+Rees%2C+s48.org&amp;rft_id=http%3A%2F%2Fs48.org%2F1.8%2Fmanual%2Fmanual.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-lambda_paper_1-8">^ <a href="#cite_ref-lambda_paper_1_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-lambda_paper_1_8-1"><sup><i><b>b</b></i></sup></a> <span class="citation Journal">Gerald Jay Sussman and Guy Lewis Steele, Jr. (December 1975). <a href="http://library.readscheme.org/page1.html" class="external text" rel="nofollow">"Scheme: An Interpreter for Extended Lambda Calculus"</a> (postscript or PDF). <i>AI Memos</i> (<a href="/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory" title="MIT Computer Science and Artificial Intelligence Laboratory">MIT AI Lab</a>) <b>AIM-349</b><span class="printonly">. <a href="http://library.readscheme.org/page1.html" class="external free" rel="nofollow">http://library.readscheme.org/page1.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Scheme%3A+An+Interpreter+for+Extended+Lambda+Calculus&amp;rft.jtitle=AI+Memos&amp;rft.aulast=Gerald+Jay+Sussman+and+Guy+Lewis+Steele%2C+Jr.&amp;rft.au=Gerald+Jay+Sussman+and+Guy+Lewis+Steele%2C+Jr.&amp;rft.date=December+1975&amp;rft.volume=AIM-349&amp;rft.pub=%5B%5BMIT+Computer+Science+and+Artificial+Intelligence+Laboratory%7CMIT+AI+Lab%5D%5D&amp;rft_id=http%3A%2F%2Flibrary.readscheme.org%2Fpage1.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-Moses-9"><b><a href="#cite_ref-Moses_9-0">^</a></b> <span class="citation" id="CITEREF.5B.5BJoel_Moses.5D.5D1970"><a href="/wiki/Joel_Moses" title="Joel Moses">Joel Moses</a> (June 1970) (pdf), <a href="http://dspace.mit.edu/handle/1721.1/5854" class="external text" rel="nofollow"><i>The Function of FUNCTION in LISP, or Why the FUNARG Problem Should Be Called the Environment Problem</i></a>, <a href="/wiki/AI_Memo" title="AI Memo">AI Memo</a> 199<span class="printonly">, <a href="http://dspace.mit.edu/handle/1721.1/5854" class="external free" rel="nofollow">http://dspace.mit.edu/handle/1721.1/5854</a></span><span class="reference-accessdate">, retrieved 2009-10-27</span>, "A useful metaphor for the difference between FUNCTION and QUOTE in LISP is to think of QUOTE as a porous or an open covering of the function since free variables escape to the current environment. FUNCTION acts as a closed or nonporous covering (hence the term "closure" used by Landin). Thus we talk of "open" Lambda expressions (functions in LISP are usually Lambda expressions) and "closed" Lambda expressions. [...] My interest in the environment problem began while Landin, who had a deep understanding of the problem, visited MIT during 1966-67. I then realized the correspondence between the FUNARG lists which are the results of the evaluation of "closed" Lambda expressions in <a href="/wiki/LISP_1.5" title="LISP 1.5" class="mw-redirect">LISP</a> and <a href="/wiki/ISWIM" title="ISWIM">ISWIM</a>'s Lambda Closures."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Function+of+FUNCTION+in+LISP%2C+or+Why+the+FUNARG+Problem+Should+Be+Called+the+Environment+Problem&amp;rft.aulast=%5B%5BJoel+Moses%5D%5D&amp;rft.au=%5B%5BJoel+Moses%5D%5D&amp;rft.date=June+1970&amp;rft_id=http%3A%2F%2Fdspace.mit.edu%2Fhandle%2F1721.1%2F5854&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-lambda_paper_2-10"><b><a href="#cite_ref-lambda_paper_2_10-0">^</a></b> <span class="citation Journal">Gerald Jay Sussman and Guy Lewis Steele, Jr. (March 1976). <a href="http://library.readscheme.org/page1.html" class="external text" rel="nofollow">"Lambda: The Ultimate Imperative"</a> (postscript or PDF). <i>AI Memos</i> (<a href="/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory" title="MIT Computer Science and Artificial Intelligence Laboratory">MIT AI Lab</a>) <b>AIM-353</b><span class="printonly">. <a href="http://library.readscheme.org/page1.html" class="external free" rel="nofollow">http://library.readscheme.org/page1.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Lambda%3A+The+Ultimate+Imperative&amp;rft.jtitle=AI+Memos&amp;rft.aulast=Gerald+Jay+Sussman+and+Guy+Lewis+Steele%2C+Jr.&amp;rft.au=Gerald+Jay+Sussman+and+Guy+Lewis+Steele%2C+Jr.&amp;rft.date=March+1976&amp;rft.volume=AIM-353&amp;rft.pub=%5B%5BMIT+Computer+Science+and+Artificial+Intelligence+Laboratory%7CMIT+AI+Lab%5D%5D&amp;rft_id=http%3A%2F%2Flibrary.readscheme.org%2Fpage1.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-11"><b><a href="#cite_ref-11">^</a></b> <span class="citation news"><a href="/wiki/Richard_P._Gabriel" title="Richard P. Gabriel">Gabriel, Richard P.</a>; <a href="/wiki/Kent_Pitman" title="Kent Pitman">Pitman, Kent</a> (1988). <a href="http://www.nhplace.com/kent/Papers/Technical-Issues.html" class="external text" rel="nofollow">"Technical Issues of Separation in Function Cells and Value Cells"</a>. <i>Lisp and Symbolic Computation</i> <b>1</b> (1): pp.&#160;81–101. June 1988. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2FBF01806178" class="external text" rel="nofollow">10.1007/BF01806178</a><span class="printonly">. <a href="http://www.nhplace.com/kent/Papers/Technical-Issues.html" class="external free" rel="nofollow">http://www.nhplace.com/kent/Papers/Technical-Issues.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-14</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Technical+Issues+of+Separation+in+Function+Cells+and+Value+Cells&amp;rft.jtitle=Lisp+and+Symbolic+Computation&amp;rft.aulast=Gabriel&amp;rft.aufirst=Richard+P.&amp;rft.au=Gabriel%2C%26%2332%3BRichard+P.&amp;rft.au=Pitman%2C%26%2332%3BKent&amp;rft.date=1988&amp;rft.volume=1&amp;rft.issue=1&amp;rft.pages=pp.%26nbsp%3B81%E2%80%93101&amp;rft_id=info:doi/10.1007%2FBF01806178&amp;rft_id=http%3A%2F%2Fwww.nhplace.com%2Fkent%2FPapers%2FTechnical-Issues.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-srfi-41-12">^ <a href="#cite_ref-srfi-41_12-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-srfi-41_12-1"><sup><i><b>b</b></i></sup></a> <span class="citation web">Philip L. Bewig (2008-01-24). <a href="http://srfi.schemers.org/srfi-41/srfi-41.html" class="external text" rel="nofollow">"SRFI 41: Streams"</a>. The SRFI Editors, schemers.org<span class="printonly">. <a href="http://srfi.schemers.org/srfi-41/srfi-41.html" class="external free" rel="nofollow">http://srfi.schemers.org/srfi-41/srfi-41.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=SRFI+41%3A+Streams&amp;rft.atitle=&amp;rft.aulast=Philip+L.+Bewig&amp;rft.au=Philip+L.+Bewig&amp;rft.date=2008-01-24&amp;rft.pub=The+SRFI+Editors%2C+schemers.org&amp;rft_id=http%3A%2F%2Fsrfi.schemers.org%2Fsrfi-41%2Fsrfi-41.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-r4rs-13"><b><a href="#cite_ref-r4rs_13-0">^</a></b> <span class="citation Journal">William Clinger and Jonathan Rees, editors (1991). <a href="http://www.cs.indiana.edu/scheme-repository/R4RS/r4rs_toc.html" class="external text" rel="nofollow">"Revised<sup>4</sup> Report on the Algorithmic Language Scheme"</a>. <i>ACM Lisp Pointers</i> <b>4</b> (3): 1–55<span class="printonly">. <a href="http://www.cs.indiana.edu/scheme-repository/R4RS/r4rs_toc.html" class="external free" rel="nofollow">http://www.cs.indiana.edu/scheme-repository/R4RS/r4rs_toc.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Revised%3Csup%3E4%3C%2Fsup%3E+Report+on+the+Algorithmic+Language+Scheme&amp;rft.jtitle=ACM+Lisp+Pointers&amp;rft.aulast=William+Clinger+and+Jonathan+Rees%2C+editors&amp;rft.au=William+Clinger+and+Jonathan+Rees%2C+editors&amp;rft.date=1991&amp;rft.volume=4&amp;rft.issue=3&amp;rft.pages=1%E2%80%9355&amp;rft_id=http%3A%2F%2Fwww.cs.indiana.edu%2Fscheme-repository%2FR4RS%2Fr4rs_toc.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-rees_1992-14"><b><a href="#cite_ref-rees_1992_14-0">^</a></b> Jonathan Rees, <a href="http://mumble.net/~jar/pubs/scheme-of-things/june-92-meeting.ps" class="external text" rel="nofollow">The Scheme of Things The June 1992 Meeting</a> (postscript), in Lisp Pointers, V(4), October-December 1992. retrieved 2009-10-20</li>
+<li id="cite_note-15"><b><a href="#cite_ref-15">^</a></b> <span class="citation web">Taylor Campbell (2005-07-21). <a href="http://srfi.schemers.org/srfi-62/srfi-62.html" class="external text" rel="nofollow">"SRFI 62: S-expression comments"</a>. The SRFI Editors, schemers.org<span class="printonly">. <a href="http://srfi.schemers.org/srfi-62/srfi-62.html" class="external free" rel="nofollow">http://srfi.schemers.org/srfi-62/srfi-62.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=SRFI+62%3A+S-expression+comments&amp;rft.atitle=&amp;rft.aulast=Taylor+Campbell&amp;rft.au=Taylor+Campbell&amp;rft.date=2005-07-21&amp;rft.pub=The+SRFI+Editors%2C+schemers.org&amp;rft_id=http%3A%2F%2Fsrfi.schemers.org%2Fsrfi-62%2Fsrfi-62.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-srfi-6-16"><b><a href="#cite_ref-srfi-6_16-0">^</a></b> <span class="citation web">William D Clinger (1999-07-01). <a href="http://srfi.schemers.org/srfi-6/srfi-6.html" class="external text" rel="nofollow">"SRFI 6: Basic String Ports"</a>. The SRFI Editors, schemers.org<span class="printonly">. <a href="http://srfi.schemers.org/srfi-6/srfi-6.html" class="external free" rel="nofollow">http://srfi.schemers.org/srfi-6/srfi-6.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=SRFI+6%3A+Basic+String+Ports&amp;rft.atitle=&amp;rft.aulast=William+D+Clinger&amp;rft.au=William+D+Clinger&amp;rft.date=1999-07-01&amp;rft.pub=The+SRFI+Editors%2C+schemers.org&amp;rft_id=http%3A%2F%2Fsrfi.schemers.org%2Fsrfi-6%2Fsrfi-6.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-srfi-28-17"><b><a href="#cite_ref-srfi-28_17-0">^</a></b> <span class="citation web">Scott G. Miller (2002-06-25). <a href="http://srfi.schemers.org/srfi-28/srfi-28.html" class="external text" rel="nofollow">"SRFI 28: Basic Format Strings"</a>. The SRFI Editors, schemers.org<span class="printonly">. <a href="http://srfi.schemers.org/srfi-28/srfi-28.html" class="external free" rel="nofollow">http://srfi.schemers.org/srfi-28/srfi-28.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=SRFI+28%3A+Basic+Format+Strings&amp;rft.atitle=&amp;rft.aulast=Scott+G.+Miller&amp;rft.au=Scott+G.+Miller&amp;rft.date=2002-06-25&amp;rft.pub=The+SRFI+Editors%2C+schemers.org&amp;rft_id=http%3A%2F%2Fsrfi.schemers.org%2Fsrfi-28%2Fsrfi-28.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-algol_report-18"><b><a href="#cite_ref-algol_report_18-0">^</a></b> <span class="citation Journal">J.W. Backus, F.L. Bauer, J.Green, C. Katz, J. McCarthy P. Naur, et al (January-April, 1960). <a href="http://www.masswerk.at/algol60/report.htm" class="external text" rel="nofollow">"Revised Report on the Algorithmic Language Algol 60"</a>. <i>Numerische Mathematik, Communications of the ACM, and Journal of the British Computer Society</i><span class="printonly">. <a href="http://www.masswerk.at/algol60/report.htm" class="external free" rel="nofollow">http://www.masswerk.at/algol60/report.htm</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Revised+Report+on+the+Algorithmic+Language+Algol+60&amp;rft.jtitle=Numerische+Mathematik%2C+Communications+of+the+ACM%2C+and+Journal+of+the+British+Computer+Society&amp;rft.aulast=J.W.+Backus%2C+F.L.+Bauer%2C+J.Green%2C+C.+Katz%2C+J.+McCarthy%0AP.+Naur%2C+et+al&amp;rft.au=J.W.+Backus%2C+F.L.+Bauer%2C+J.Green%2C+C.+Katz%2C+J.+McCarthy%0AP.+Naur%2C+et+al&amp;rft.date=January-April%2C+1960&amp;rft_id=http%3A%2F%2Fwww.masswerk.at%2Falgol60%2Freport.htm&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-r3rs-19"><b><a href="#cite_ref-r3rs_19-0">^</a></b> <span class="citation Journal">Jonathan Rees and William Clinger (Editors), Hal Abelson, R. K. Dybvig et al. (December 1986). <a href="http://groups.csail.mit.edu/mac/ftpdir/scheme-reports/r3rs-html/r3rs_toc.html" class="external text" rel="nofollow">"Revised(3) Report on the Algorithmic Language Scheme, (Dedicated to the Memory of ALGOL 60)"</a>. <i>ACM SIGPLAN Notices</i> <b>21</b> (12): 37–79<span class="printonly">. <a href="http://groups.csail.mit.edu/mac/ftpdir/scheme-reports/r3rs-html/r3rs_toc.html" class="external free" rel="nofollow">http://groups.csail.mit.edu/mac/ftpdir/scheme-reports/r3rs-html/r3rs_toc.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Revised%283%29+Report+on+the+Algorithmic+Language+Scheme%2C+%28Dedicated+to+the+Memory+of+ALGOL+60%29&amp;rft.jtitle=ACM+SIGPLAN+Notices&amp;rft.aulast=Jonathan+Rees+and+William+Clinger+%28Editors%29%2C+Hal+Abelson%2C+R.+K.+Dybvig+et+al.&amp;rft.au=Jonathan+Rees+and+William+Clinger+%28Editors%29%2C+Hal+Abelson%2C+R.+K.+Dybvig+et+al.&amp;rft.date=December+1986&amp;rft.volume=21&amp;rft.issue=12&amp;rft.pages=37%E2%80%9379&amp;rft_id=http%3A%2F%2Fgroups.csail.mit.edu%2Fmac%2Fftpdir%2Fscheme-reports%2Fr3rs-html%2Fr3rs_toc.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-srfi_support-20"><b><a href="#cite_ref-srfi_support_20-0">^</a></b> <span class="citation web"><a href="http://srfi.schemers.org/srfi-implementers.html" class="external text" rel="nofollow">"Scheme Systems Supporting SRFIs"</a>. The SRFI Editors, schemers.org. 2009-08-30<span class="printonly">. <a href="http://srfi.schemers.org/srfi-implementers.html" class="external free" rel="nofollow">http://srfi.schemers.org/srfi-implementers.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Scheme+Systems+Supporting+SRFIs&amp;rft.atitle=&amp;rft.date=2009-08-30&amp;rft.pub=The+SRFI+Editors%2C+schemers.org&amp;rft_id=http%3A%2F%2Fsrfi.schemers.org%2Fsrfi-implementers.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-scheme_implementations-21"><b><a href="#cite_ref-scheme_implementations_21-0">^</a></b> 75 known implementations of Scheme are listed by <span class="citation web"><a href="http://community.schemewiki.org/?scheme-faq-standards#implementations" class="external text" rel="nofollow">"scheme-faq-standards"</a>. Community Scheme Wiki. 2009-06-25<span class="printonly">. <a href="http://community.schemewiki.org/?scheme-faq-standards#implementations" class="external free" rel="nofollow">http://community.schemewiki.org/?scheme-faq-standards#implementations</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=scheme-faq-standards&amp;rft.atitle=&amp;rft.date=2009-06-25&amp;rft.pub=Community+Scheme+Wiki&amp;rft_id=http%3A%2F%2Fcommunity.schemewiki.org%2F%3Fscheme-faq-standards%23implementations&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-psyntax-22"><b><a href="#cite_ref-psyntax_22-0">^</a></b> <span class="citation web">Abdulaziz Ghuloum (2007-10-27). <a href="https://www.cs.indiana.edu/~aghuloum/r6rs-libraries/" class="external text" rel="nofollow">"R6RS Libraries and syntax-case system (psyntax)"</a>. Ikarus Scheme<span class="printonly">. <a href="https://www.cs.indiana.edu/~aghuloum/r6rs-libraries/" class="external free" rel="nofollow">https://www.cs.indiana.edu/~aghuloum/r6rs-libraries/</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=R6RS+Libraries+and+syntax-case+system+%28psyntax%29&amp;rft.atitle=&amp;rft.aulast=Abdulaziz+Ghuloum&amp;rft.au=Abdulaziz+Ghuloum&amp;rft.date=2007-10-27&amp;rft.pub=Ikarus+Scheme&amp;rft_id=https%3A%2F%2Fwww.cs.indiana.edu%2F%7Eaghuloum%2Fr6rs-libraries%2F&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-r6rs_Language_changes-23"><b><a href="#cite_ref-r6rs_Language_changes_23-0">^</a></b> <span class="citation web"><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-19.html#node_chap_E" class="external text" rel="nofollow">"Revised^6 Report on the Algorithmic Language Scheme, Appendix E: language changes"</a>. Scheme Steering Committee. 2007-09-26<span class="printonly">. <a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-19.html#node_chap_E" class="external free" rel="nofollow">http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-19.html#node_chap_E</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Revised%5E6+Report+on+the+Algorithmic+Language+Scheme%2C+Appendix+E%3A+language+changes&amp;rft.atitle=&amp;rft.date=2007-09-26&amp;rft.pub=Scheme+Steering+Committee&amp;rft_id=http%3A%2F%2Fwww.r6rs.org%2Ffinal%2Fhtml%2Fr6rs%2Fr6rs-Z-H-19.html%23node_chap_E&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-r6rs_electorate-24"><b><a href="#cite_ref-r6rs_electorate_24-0">^</a></b> <span class="citation web"><a href="http://www.r6rs.org/ratification/electorate.html" class="external text" rel="nofollow">"R6RS Electorate"</a>. Scheme Steering Committee. 2007<span class="printonly">. <a href="http://www.r6rs.org/ratification/electorate.html" class="external free" rel="nofollow">http://www.r6rs.org/ratification/electorate.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=R6RS+Electorate&amp;rft.atitle=&amp;rft.date=2007&amp;rft.pub=Scheme+Steering+Committee&amp;rft_id=http%3A%2F%2Fwww.r6rs.org%2Fratification%2Felectorate.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-r6rs_feeley-25"><b><a href="#cite_ref-r6rs_feeley_25-0">^</a></b> <span class="citation web">Marc Feeley (compilation) (2007-10-26). <a href="http://lists.r6rs.org/pipermail/r6rs-discuss/2007-October/003351.html" class="external text" rel="nofollow">"Implementors' intentions concerning R6RS"</a>. Scheme Steering Committee, r6rs-discuss mailing list<span class="printonly">. <a href="http://lists.r6rs.org/pipermail/r6rs-discuss/2007-October/003351.html" class="external free" rel="nofollow">http://lists.r6rs.org/pipermail/r6rs-discuss/2007-October/003351.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Implementors%27+intentions+concerning+R6RS&amp;rft.atitle=&amp;rft.aulast=Marc+Feeley+%28compilation%29&amp;rft.au=Marc+Feeley+%28compilation%29&amp;rft.date=2007-10-26&amp;rft.pub=Scheme+Steering+Committee%2C+r6rs-discuss+mailing+list&amp;rft_id=http%3A%2F%2Flists.r6rs.org%2Fpipermail%2Fr6rs-discuss%2F2007-October%2F003351.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-schemers_inc-26"><b><a href="#cite_ref-schemers_inc_26-0">^</a></b> <span class="citation web">Ed Martin (2009-07-20). <a href="http://www.schemers.com/schools.html" class="external text" rel="nofollow">"List of Scheme-using schools"</a>. Schemers Inc.<span class="printonly">. <a href="http://www.schemers.com/schools.html" class="external free" rel="nofollow">http://www.schemers.com/schools.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=List+of+Scheme-using+schools&amp;rft.atitle=&amp;rft.aulast=Ed+Martin&amp;rft.au=Ed+Martin&amp;rft.date=2009-07-20&amp;rft.pub=Schemers+Inc.&amp;rft_id=http%3A%2F%2Fwww.schemers.com%2Fschools.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-sicp_adopters-27"><b><a href="#cite_ref-sicp_adopters_27-0">^</a></b> <span class="citation web"><a href="http://mitpress.mit.edu/sicp/adopt-list.html" class="external text" rel="nofollow">"List of SICP-using schools"</a>. MIT Press. 1999-01-26<span class="printonly">. <a href="http://mitpress.mit.edu/sicp/adopt-list.html" class="external free" rel="nofollow">http://mitpress.mit.edu/sicp/adopt-list.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=List+of+SICP-using+schools&amp;rft.atitle=&amp;rft.date=1999-01-26&amp;rft.pub=MIT+Press&amp;rft_id=http%3A%2F%2Fmitpress.mit.edu%2Fsicp%2Fadopt-list.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-6.001-28"><b><a href="#cite_ref-6.001_28-0">^</a></b> <span class="citation web">Eric Grimson (Spring, 2005). <a href="http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-001Spring-2005/CourseHome/index.htm" class="external text" rel="nofollow">"6.001 Structure and Interpretation of Computer Programs"</a>. MIT Open Courseware<span class="printonly">. <a href="http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-001Spring-2005/CourseHome/index.htm" class="external free" rel="nofollow">http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-001Spring-2005/CourseHome/index.htm</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=6.001+Structure+and+Interpretation+of+Computer+Programs&amp;rft.atitle=&amp;rft.aulast=Eric+Grimson&amp;rft.au=Eric+Grimson&amp;rft.date=Spring%2C+2005&amp;rft.pub=MIT+Open+Courseware&amp;rft_id=http%3A%2F%2Focw.mit.edu%2FOcwWeb%2FElectrical-Engineering-and-Computer-Science%2F6-001Spring-2005%2FCourseHome%2Findex.htm&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-6.001_zombies-29"><b><a href="#cite_ref-6.001_zombies_29-0">^</a></b> <span class="citation web">Alex Vandiver, Nelson Elhage, et al (January 2009). <a href="http://web.mit.edu/alexmv/6.001/" class="external text" rel="nofollow">"6.184 - Zombies drink caffeinated 6.001"</a>. MIT CSAIL<span class="printonly">. <a href="http://web.mit.edu/alexmv/6.001/" class="external free" rel="nofollow">http://web.mit.edu/alexmv/6.001/</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=6.184+-+Zombies+drink+caffeinated+6.001&amp;rft.atitle=&amp;rft.aulast=Alex+Vandiver%2C+Nelson+Elhage%2C+et+al&amp;rft.au=Alex+Vandiver%2C+Nelson+Elhage%2C+et+al&amp;rft.date=January+2009&amp;rft.pub=MIT+CSAIL&amp;rft_id=http%3A%2F%2Fweb.mit.edu%2Falexmv%2F6.001%2F&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-neu-30">^ <a href="#cite_ref-neu_30-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-neu_30-1"><sup><i><b>b</b></i></sup></a> <a href="http://www.ccs.neu.edu/course/cs2500/" class="external text" rel="nofollow">CS 2500: Fundamentals of Computer Science I</a>, <a href="/wiki/Northeastern_University" title="Northeastern University">Northeastern University</a></li>
+<li id="cite_note-wpi-31"><b><a href="#cite_ref-wpi_31-0">^</a></b> <a href="http://web.cs.wpi.edu/~cs1101/a05/details.html#software" class="external text" rel="nofollow">CS 1101: Introduction to Program Design (A05): course software</a>, <a href="/wiki/Worcester_Polytechnic_Institute" title="Worcester Polytechnic Institute">Worcester Polytechnic Institute</a></li>
+<li id="cite_note-61A-32"><b><a href="#cite_ref-61A_32-0">^</a></b> <span class="citation web">Brian Harvey (Fall 2009). <a href="http://inst.eecs.berkeley.edu/~cs61a/" class="external text" rel="nofollow">"Computer Science 61A, Berkeley"</a>. Department of Electrical Engineering and Computer Sciences, Berkeley<span class="printonly">. <a href="http://inst.eecs.berkeley.edu/~cs61a/" class="external free" rel="nofollow">http://inst.eecs.berkeley.edu/~cs61a/</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Computer+Science+61A%2C+Berkeley&amp;rft.atitle=&amp;rft.aulast=Brian+Harvey&amp;rft.au=Brian+Harvey&amp;rft.date=Fall+2009&amp;rft.pub=Department+of+Electrical+Engineering+and+Computer+Sciences%2C+Berkeley&amp;rft_id=http%3A%2F%2Finst.eecs.berkeley.edu%2F%7Ecs61a%2F&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-yale_cs201-33"><b><a href="#cite_ref-yale_cs201_33-0">^</a></b> <span class="citation web">Dana Angluin (Fall 2009). <a href="http://zoo.cs.yale.edu/classes/cs201/" class="external text" rel="nofollow">"Introduction to Computer Science (CPSC 201)"</a>. The Zoo, Yale University Computer Science Department<span class="printonly">. <a href="http://zoo.cs.yale.edu/classes/cs201/" class="external free" rel="nofollow">http://zoo.cs.yale.edu/classes/cs201/</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Introduction+to+Computer+Science+%28CPSC+201%29&amp;rft.atitle=&amp;rft.aulast=Dana+Angluin&amp;rft.au=Dana+Angluin&amp;rft.date=Fall+2009&amp;rft.pub=The+Zoo%2C+Yale+University+Computer+Science+Department&amp;rft_id=http%3A%2F%2Fzoo.cs.yale.edu%2Fclasses%2Fcs201%2F&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-rice-34"><b><a href="#cite_ref-rice_34-0">^</a></b> <span class="citation web"><a href="http://cohesion.rice.edu//engineering/computerscience/about.cfm?doc_id=8045" class="external text" rel="nofollow">"Computer Science Courses 100-400, Rice University"</a>. Rice University Computer Science Department. Fall 2009<span class="printonly">. <a href="http://cohesion.rice.edu//engineering/computerscience/about.cfm?doc_id=8045" class="external free" rel="nofollow">http://cohesion.rice.edu//engineering/computerscience/about.cfm?doc_id=8045</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Computer+Science+Courses+100-400%2C+Rice+University&amp;rft.atitle=&amp;rft.date=Fall+2009&amp;rft.pub=Rice+University+Computer+Science+Department&amp;rft_id=http%3A%2F%2Fcohesion.rice.edu%2F%2Fengineering%2Fcomputerscience%2Fabout.cfm%3Fdoc_id%3D8045&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-umn-35"><b><a href="#cite_ref-umn_35-0">^</a></b> University of Minnesota Computer Science Department <a href="http://www-users.itlabs.umn.edu/classes/Spring-2010/csci1901/" class="external free" rel="nofollow">http://www-users.itlabs.umn.edu/classes/Spring-2010/csci1901/</a> Structure of Computer Programming I, University of Minnesota Spring 2010 2010-1-30</li>
+<li id="cite_note-lambdabeans-36"><b><a href="#cite_ref-lambdabeans_36-0">^</a></b> <span class="citation web">Geertjan Wieleng (2009-04-13). <a href="http://netbeans.dzone.com/news/scheme-editor-netbeans" class="external text" rel="nofollow">"Scheme Editor on the NetBeans Platform"</a>. DZone, Inc.<span class="printonly">. <a href="http://netbeans.dzone.com/news/scheme-editor-netbeans" class="external free" rel="nofollow">http://netbeans.dzone.com/news/scheme-editor-netbeans</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Scheme+Editor+on+the+NetBeans+Platform&amp;rft.atitle=&amp;rft.aulast=Geertjan+Wieleng&amp;rft.au=Geertjan+Wieleng&amp;rft.date=2009-04-13&amp;rft.pub=DZone%2C+Inc.&amp;rft_id=http%3A%2F%2Fnetbeans.dzone.com%2Fnews%2Fscheme-editor-netbeans&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-faq_general-37"><b><a href="#cite_ref-faq_general_37-0">^</a></b> See <i>What is Scheme used for?</i> at <span class="citation web"><a href="http://community.schemewiki.org/?scheme-faq-general" class="external text" rel="nofollow">"scheme-faq-general"</a>. Community Scheme Wiki. 2009-03-21<span class="printonly">. <a href="http://community.schemewiki.org/?scheme-faq-general" class="external free" rel="nofollow">http://community.schemewiki.org/?scheme-faq-general</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=scheme-faq-general&amp;rft.atitle=&amp;rft.date=2009-03-21&amp;rft.pub=Community+Scheme+Wiki&amp;rft_id=http%3A%2F%2Fcommunity.schemewiki.org%2F%3Fscheme-faq-general&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-dsssl-38"><b><a href="#cite_ref-dsssl_38-0">^</a></b> <span class="citation web">Robin Cover (2002-02-25). <a href="http://xml.coverpages.org/dsssl.html" class="external text" rel="nofollow">"DSSSL - Document Style Semantics and Specification Language. ISO/IEC 10179:1996"</a>. Cover Pages<span class="printonly">. <a href="http://xml.coverpages.org/dsssl.html" class="external free" rel="nofollow">http://xml.coverpages.org/dsssl.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=DSSSL+-+Document+Style+Semantics+and+Specification+Language.+ISO%2FIEC+10179%3A1996&amp;rft.atitle=&amp;rft.aulast=Robin+Cover&amp;rft.au=Robin+Cover&amp;rft.date=2002-02-25&amp;rft.pub=Cover+Pages&amp;rft_id=http%3A%2F%2Fxml.coverpages.org%2Fdsssl.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-gimp-39"><b><a href="#cite_ref-gimp_39-0">^</a></b> "<i>The major scripting language for the GIMP that has been attached to it today is Scheme.</i>" From <span class="citation web">Dov Grobgeld (2002). <a href="http://www.gimp.org/tutorials/Basic_Scheme/" class="external text" rel="nofollow">"The GIMP Basic Scheme Tutorial"</a>. The GIMP Team<span class="printonly">. <a href="http://www.gimp.org/tutorials/Basic_Scheme/" class="external free" rel="nofollow">http://www.gimp.org/tutorials/Basic_Scheme/</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+GIMP+Basic+Scheme+Tutorial&amp;rft.atitle=&amp;rft.aulast=Dov+Grobgeld&amp;rft.au=Dov+Grobgeld&amp;rft.date=2002&amp;rft.pub=The+GIMP+Team&amp;rft_id=http%3A%2F%2Fwww.gimp.org%2Ftutorials%2FBasic_Scheme%2F&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-archive_gnomefaq-40"><b><a href="#cite_ref-archive_gnomefaq_40-0">^</a></b> <span class="citation web">Todd Graham Lewis, David Zoll, Julian Missig (2002). <a href="http://web.archive.org/web/20000522010523/http://www.gnome.org/gnomefaq/html/x930.html" class="external text" rel="nofollow">"GNOME FAQ from</a> <a href="/wiki/Internet_Archive" title="Internet Archive">Internet Archive</a>". The Gnome Team, gnome.org. Archived from <a href="http://www.gnome.org/gnomefaq/html/x930.html" class="external text" rel="nofollow">the original</a> on 2000-05-22<span class="printonly">. <a href="http://web.archive.org/web/20000522010523/http://www.gnome.org/gnomefaq/html/x930.html" class="external free" rel="nofollow">http://web.archive.org/web/20000522010523/http://www.gnome.org/gnomefaq/html/x930.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=GNOME+FAQ+from+%5B%5BInternet+Archive%5D%5D&amp;rft.atitle=&amp;rft.aulast=Todd+Graham+Lewis%2C+David+Zoll%2C+Julian+Missig&amp;rft.au=Todd+Graham+Lewis%2C+David+Zoll%2C+Julian+Missig&amp;rft.date=2002&amp;rft.pub=The+Gnome+Team%2C+gnome.org&amp;rft_id=http%3A%2F%2Fweb.archive.org%2Fweb%2F20000522010523%2Fhttp%3A%2F%2Fwww.gnome.org%2Fgnomefaq%2Fhtml%2Fx930.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-live_gnome-41"><b><a href="#cite_ref-live_gnome_41-0">^</a></b> <span class="citation web"><a href="http://www.gnu.org/software/guile-gnome/" class="external text" rel="nofollow">"guile-gnome"</a>. Free Software Foundation<span class="printonly">. <a href="http://www.gnu.org/software/guile-gnome/" class="external free" rel="nofollow">http://www.gnu.org/software/guile-gnome/</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=guile-gnome&amp;rft.atitle=&amp;rft.pub=Free+Software+Foundation&amp;rft_id=http%3A%2F%2Fwww.gnu.org%2Fsoftware%2Fguile-gnome%2F&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-tcad-42"><b><a href="#cite_ref-tcad_42-0">^</a></b> <span class="citation web">Laurence Brevard (2006-11-09). <a href="http://www.synopsys.com/community/interoperability/documents/devforum_pres/2006nov/milkywaysession_mapin_overview.pdf" class="external text" rel="nofollow">"Synopsys MAP-in<sup>SM</sup> Program Update: EDA Interoperability Developers’ Forum"</a> (pdf). Synopsis Inc<span class="printonly">. <a href="http://www.synopsys.com/community/interoperability/documents/devforum_pres/2006nov/milkywaysession_mapin_overview.pdf" class="external free" rel="nofollow">http://www.synopsys.com/community/interoperability/documents/devforum_pres/2006nov/milkywaysession_mapin_overview.pdf</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Synopsys+MAP-in%3Csup%3ESM%3C%2Fsup%3E+Program+Update%3A+EDA+Interoperability+Developers%E2%80%99+Forum&amp;rft.atitle=&amp;rft.aulast=Laurence+Brevard&amp;rft.au=Laurence+Brevard&amp;rft.date=2006-11-09&amp;rft.pub=Synopsis+Inc&amp;rft_id=http%3A%2F%2Fwww.synopsys.com%2Fcommunity%2Finteroperability%2Fdocuments%2Fdevforum_pres%2F2006nov%2Fmilkywaysession_mapin_overview.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-shiro_kawai-43"><b><a href="#cite_ref-shiro_kawai_43-0">^</a></b> <span class="citation Journal">Kawai, Shiro (October 2002). <a href="http://practical-scheme.net/docs/ILC2002.html" class="external text" rel="nofollow">"Gluing Things Together - Scheme in the Real-time CG Content Production"</a>. <i>Proceedings of the First International Lisp Conference, San Francisco</i>: 342–348<span class="printonly">. <a href="http://practical-scheme.net/docs/ILC2002.html" class="external free" rel="nofollow">http://practical-scheme.net/docs/ILC2002.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Gluing+Things+Together+-+Scheme+in+the+Real-time+CG+Content+Production&amp;rft.jtitle=Proceedings+of+the+First+International+Lisp+Conference%2C+San+Francisco&amp;rft.aulast=Kawai&amp;rft.aufirst=Shiro&amp;rft.au=Kawai%2C%26%2332%3BShiro&amp;rft.date=October+2002&amp;rft.pages=342%E2%80%93348&amp;rft_id=http%3A%2F%2Fpractical-scheme.net%2Fdocs%2FILC2002.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-android-44"><b><a href="#cite_ref-android_44-0">^</a></b> <span class="citation web">Bill Magnuson, Hal Abelson, and Mark Friedman (2009-08-11). <a href="http://googleresearch.blogspot.com/2009/08/under-hood-of-app-inventor-for-android.html" class="external text" rel="nofollow">"Under the Hood of App Inventor for Android"</a>. Google Inc, Official Google Research blog<span class="printonly">. <a href="http://googleresearch.blogspot.com/2009/08/under-hood-of-app-inventor-for-android.html" class="external free" rel="nofollow">http://googleresearch.blogspot.com/2009/08/under-hood-of-app-inventor-for-android.html</a></span><span class="reference-accessdate">. Retrieved 2009-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Under+the+Hood+of+App+Inventor+for+Android&amp;rft.atitle=&amp;rft.aulast=Bill+Magnuson%2C+Hal+Abelson%2C+and+Mark+Friedman&amp;rft.au=Bill+Magnuson%2C+Hal+Abelson%2C+and+Mark+Friedman&amp;rft.date=2009-08-11&amp;rft.pub=Google+Inc%2C+Official+Google+Research+blog&amp;rft_id=http%3A%2F%2Fgoogleresearch.blogspot.com%2F2009%2F08%2Funder-hood-of-app-inventor-for-android.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+</ol>
+</div>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=34" title="Edit section: Further reading">edit</a>]</span> <span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<ul>
+<li><a href="ftp://ftp.cs.utexas.edu/pub/garbage/cs345/schintro-v14/schintro_toc.html" class="external text" rel="nofollow">An Introduction to Scheme and its Implementation</a> (<a href="http://www.federated.com/~jim/schintro-v14/schintro_toc.html" class="external text" rel="nofollow">alternative link</a>)</li>
+<li><span class="citation web">Christopher T. Haynes (1999-06-22). <a href="http://acm.org/tsc/sstd.html" class="external text" rel="nofollow">"The Scheme Programming Language Standardization Experience"</a><span class="printonly">. <a href="http://acm.org/tsc/sstd.html" class="external free" rel="nofollow">http://acm.org/tsc/sstd.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Scheme+Programming+Language+Standardization+Experience&amp;rft.atitle=&amp;rft.aulast=Christopher+T.+Haynes&amp;rft.au=Christopher+T.+Haynes&amp;rft.date=1999-06-22&amp;rft_id=http%3A%2F%2Facm.org%2Ftsc%2Fsstd.html&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation web"><a href="/wiki/Guy_L._Steele,_Jr." title="Guy L. Steele, Jr.">Guy L. Steele, Jr.</a>, <a href="/wiki/Richard_P._Gabriel" title="Richard P. Gabriel">Richard P. Gabriel</a>. <a href="http://www.dreamsongs.com/NewFiles/HOPL2-Uncut.pdf" class="external text" rel="nofollow">"The Evolution of Lisp"</a> (pdf)<span class="printonly">. <a href="http://www.dreamsongs.com/NewFiles/HOPL2-Uncut.pdf" class="external free" rel="nofollow">http://www.dreamsongs.com/NewFiles/HOPL2-Uncut.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Evolution+of+Lisp&amp;rft.atitle=&amp;rft.aulast=%5B%5BGuy+L.+Steele%2C+Jr.%5D%5D%2C+%5B%5BRichard+P.+Gabriel%5D%5D&amp;rft.au=%5B%5BGuy+L.+Steele%2C+Jr.%5D%5D%2C+%5B%5BRichard+P.+Gabriel%5D%5D&amp;rft_id=http%3A%2F%2Fwww.dreamsongs.com%2FNewFiles%2FHOPL2-Uncut.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Scheme_(programming_language)"><span style="display: none;">&#160;</span></span></li>
+<li><a href="/wiki/Gerald_Sussman" title="Gerald Sussman" class="mw-redirect">Gerald Sussman</a> and <a href="/wiki/Guy_Steele" title="Guy Steele" class="mw-redirect">Guy Steele</a>. <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.128.80" class="external text" rel="nofollow"><i>SCHEME: An Interpreter for Extended Lambda Calculus</i> AI Memo 349</a>, MIT Artificial Intelligence Laboratory, Cambridge, Massachusetts, December 1975.</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit&amp;section=35" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;">
+<tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" /></td>
+<td class="mbox-text" style="">Wikibooks has a book on the topic of
+<div style="margin-left:10px;"><i><b><a href="http://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours" class="extiw" title="wikibooks:Write Yourself a Scheme in 48 Hours">Write Yourself a Scheme in 48 Hours</a></b></i></div>
+</td>
+</tr>
+</table>
+<ul>
+<li><a href="http://www.r6rs.org" class="external text" rel="nofollow">The latest version of the Scheme standard: R6RS</a></li>
+<li><a href="http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme.html" class="external text" rel="nofollow">A tutorial for new Scheme programmers</a>, the text of <a href="/wiki/Teach_Yourself_Scheme_in_Fixnum_Days" title="Teach Yourself Scheme in Fixnum Days">Teach Yourself Scheme in Fixnum Days</a> by Dorai Sitaram</li>
+<li><a href="http://www.dmoz.org/Computers/Programming/Languages/Lisp/Scheme/" class="external text" rel="nofollow">Scheme</a> at the <a href="/wiki/Open_Directory_Project" title="Open Directory Project">Open Directory Project</a></li>
+<li><a href="http://srfi.schemers.org/" class="external text" rel="nofollow">Scheme Requests for Implementation (SRFI)</a></li>
+<li><a href="http://www.schemers.org/" class="external text" rel="nofollow">Schemers.org</a></li>
+<li><a href="http://dynamo.iro.umontreal.ca/~gambit/wiki/index.php/A_Tour_of_Scheme_in_Gambit" class="external text" rel="nofollow">A Tour of Scheme in Gambit</a>, introduction on how to do software development in <a href="/wiki/Gambit_(Scheme_implementation)" title="Gambit (Scheme implementation)">Gambit Scheme</a> for people with experiences in general programming languages.</li>
+<li><a href="http://library.readscheme.org/" class="external text" rel="nofollow">Bibliography of Scheme-related research</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 24983/1000000
+Post-expand include size: 190209/2048000 bytes
+Template argument size: 75466/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:28119-0!1!0!default!!en!4 and timestamp 20101222041545 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Scheme_(programming_language)">http://en.wikipedia.org/wiki/Scheme_(programming_language)</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:Scheme_programming_language" title="Category:Scheme programming language">Scheme programming language</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_with_example_Scheme_code" title="Category:Articles with example Scheme code">Articles with example Scheme code</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Scheme_(programming_language)" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/Scheme_(programming_language)"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:Scheme_(programming_language)"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/Scheme_(programming_language)" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=Scheme_(programming_language)&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=Scheme_(programming_language)&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Scheme_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Scheme_(programming_language)" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=Scheme_(programming_language)&amp;oldid=403294009" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Scheme_(programming_language)&amp;id=403294009" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Scheme+%28programming+language%29" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Scheme+%28programming+language%29&amp;oldid=403294009&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Scheme_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-bn"><a href="http://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A6%BF%E0%A6%AE_(%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82_%E0%A6%AD%E0%A6%BE%E0%A6%B7%E0%A6%BE)" title="স্কিম (প্রোগ্রামিং ভাষা)">বাংলা</a></li>
+					<li class="interwiki-bg"><a href="http://bg.wikipedia.org/wiki/Scheme" title="Scheme">Български</a></li>
+					<li class="interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Scheme" title="Scheme">Català</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Scheme" title="Scheme">Česky</a></li>
+					<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/Scheme" title="Scheme">Dansk</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Scheme" title="Scheme">Deutsch</a></li>
+					<li class="interwiki-et"><a href="http://et.wikipedia.org/wiki/Scheme" title="Scheme">Eesti</a></li>
+					<li class="interwiki-el"><a href="http://el.wikipedia.org/wiki/Scheme" title="Scheme">Ελληνικά</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Scheme" title="Scheme">Español</a></li>
+					<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Scheme" title="Scheme">Esperanto</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D8%A7%D8%B3%DA%A9%DB%8C%D9%85" title="اسکیم">فارسی</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Scheme" title="Scheme">Français</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EC%8A%A4%ED%82%B4_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" title="스킴 (프로그래밍 언어)">한국어</a></li>
+					<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/Scheme" title="Scheme">Hrvatski</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Scheme" title="Scheme">Italiano</a></li>
+					<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/Scheme" title="Scheme">עברית</a></li>
+					<li class="interwiki-lt"><a href="http://lt.wikipedia.org/wiki/Scheme" title="Scheme">Lietuvių</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Scheme" title="Scheme">Magyar</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Scheme" title="Scheme">Nederlands</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/Scheme" title="Scheme">日本語</a></li>
+					<li class="interwiki-no"><a href="http://no.wikipedia.org/wiki/Scheme" title="Scheme">‪Norsk (bokmål)‬</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Scheme" title="Scheme">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Scheme" title="Scheme">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Scheme_(limbaj_de_programare)" title="Scheme (limbaj de programare)">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/Scheme" title="Scheme">Русский</a></li>
+					<li class="interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Simple English</a></li>
+					<li class="interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Scheme_(programovac%C3%AD_jazyk)" title="Scheme (programovací jazyk)">Slovenčina</a></li>
+					<li class="interwiki-sl"><a href="http://sl.wikipedia.org/wiki/Scheme_(programski_jezik)" title="Scheme (programski jezik)">Slovenščina</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Scheme" title="Scheme">Suomi</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Scheme" title="Scheme">Svenska</a></li>
+					<li class="interwiki-ta"><a href="http://ta.wikipedia.org/wiki/%E0%AE%87%E0%AE%9A%E0%AF%81%E0%AE%95%E0%AF%80%E0%AE%AE%E0%AF%8D" title="இசுகீம்">தமிழ்</a></li>
+					<li class="interwiki-tg"><a href="http://tg.wikipedia.org/wiki/Scheme" title="Scheme">Тоҷикӣ</a></li>
+					<li class="interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Scheme" title="Scheme">Türkçe</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/Scheme" title="Scheme">Українська</a></li>
+					<li class="interwiki-vi"><a href="http://vi.wikipedia.org/wiki/Scheme" title="Scheme">Tiếng Việt</a></li>
+					<li class="interwiki-bat-smg"><a href="http://bat-smg.wikipedia.org/wiki/Scheme" title="Scheme">Žemaitėška</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/Scheme" title="Scheme">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 20 December 2010 at 04:23.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv275 in 0.045 secs. -->			</body>
+</html>

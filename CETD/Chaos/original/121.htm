@@ -1,0 +1,855 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="icon" href="http://i.stanford.edu/~heymann/blogger/images/infolab_david_favicon.ico" type="image/x-icon" /> 
+<link rel="shortcut icon" href="http://i.stanford.edu/~heymann/blogger/images/infolab_david_favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="http://i.stanford.edu/~heymann/blogger/pngfix.js"></script>
+<![endif]-->
+
+  <title>Stanford InfoBlog: Simrank++: Putting together 3 simple ideas (Posted by Ioannis Antonellis)</title>
+  <script type="text/javascript">(function() { var a=window;function c(b){this.t={};this.tick=function(d,i,e){e=e?e:(new Date).getTime();this.t[d]=[e,i]};this.tick("start",null,b)}var f=new c;a.jstiming={Timer:c,load:f};try{var g=null;if(a.chrome&&a.chrome.csi)g=Math.floor(a.chrome.csi().pageT);if(g==null)if(a.gtbExternal)g=a.gtbExternal.pageT();if(g==null)if(a.external)g=a.external.pageT;if(g)a.jstiming.pt=g}catch(h){};a.tickAboveFold=function(b){b=b;var d=0;if(b.offsetParent){do d+=b.offsetTop;while(b=b.offsetParent)}b=d;b<=750&&a.jstiming.load.tick("aft")};var j=false;function k(){if(!j){j=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",k,false):a.attachEvent("onscroll",k);
+ })();</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="generator" content="Blogger" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.blogger.com/favicon.ico"/>
+<link rel="alternate" type="application/atom+xml" title="Stanford InfoBlog - Atom" href="http://infoblog.stanford.edu/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Stanford InfoBlog - RSS" href="http://infoblog.stanford.edu/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Stanford InfoBlog - Atom" href="http://www.blogger.com/feeds/7751293754523140922/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=7751293754523140922" />
+<link rel="alternate" type="application/atom+xml" title="Stanford InfoBlog - Atom" href="http://infoblog.stanford.edu/feeds/968902751639847433/comments/default" />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/static/v1/v-css/50269083-blog_controls.css"/> <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=7751293754523140922&zx=260617fe-1cb7-4b95-9f96-715a47563b81"/><script type="text/javascript" src="http://www.blogger.com/static/v1/v-js/979395223-backlink.js"></script>
+<script type="text/javascript" src="http://www.blogger.com/static/v1/v-js/1895108979-backlink_control.js"></script>
+<script type="text/javascript">var BL_backlinkURL = "http://www.blogger.com/dyn-js/backlink_count.js";var BL_blogId = "7751293754523140922";</script>
+
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://infoblog.stanford.edu/atom.xml" />
+
+<style type="text/css" media="screen">
+/*  
+Theme Name:  Kiss for Blogger
+Theme URI:   http://www.bloggertemplates.org/review/kiss-for-blogger
+Description: Kiss for Blogger is a modification of a WordPress theme called Kiss,
+             originally designed by Oinam (http://www.oinam.com). WordPress and 
+             TypePad versions of this beautiful theme can be found at;
+             http://labs.oinam.com/css/kiss/
+Version:     0.1
+Author:      Ali Kuru
+Author URI:  http://www.acemiblogcu.com
+Licence:     (cc) Creative Commons Attribution-ShareAlike 2.5
+Licence URI: http://creativecommons.org/licenses/by-sa/2.5/
+*/
+
+/* ---------------------------------------------------
+			global settings		
+------------------------------------------------------ */
+* {
+margin: 0;
+padding: 0;
+}
+body {
+background: #fff;	
+font: 100%/1.4em "lucida sans unicode", "lucida grande", verdana, 'trebuchet ms', sans-serif;
+color: #666;
+text-align: center;
+}
+
+/* links */
+
+a:link {
+text-decoration: none;
+color: #c30;
+}
+a:visited {
+text-decoration: none;
+color: #c30;
+}
+a:hover {
+text-decoration: none;
+color: #930;
+}
+a:active {
+text-decoration: none;
+color: #c30;
+}
+a img { 
+border: 0; 
+}
+
+/* hn */
+
+h1, h2, h3, h4, h5, h6 { 
+font-weight: normal; 
+color: #333;
+}
+h1, h2, h3, h4, h5, h6, p {
+margin: 10px 0;
+}
+h1 {
+font-size: 1.3em;
+}
+h2 {
+font-size: 1.1em;
+}
+h3 {
+font-size: 1em;
+}
+h4 {
+font-size: 0.9em;
+}
+
+/* misc */
+
+abbr, acronym {
+font-style: normal; 
+border-bottom: 1px dotted #666; 
+cursor: help;
+}
+code {
+margin: 10px 0;
+font: 0.9em "Courier New", Courier, Monospace;
+color: #666;
+background-color: #f8f8f8;
+}
+pre {
+margin: 10px 0;
+font: 110% "Courier New", Courier, Monospace;
+color: #666;
+}
+
+/* defination lists */
+
+dl {
+margin: 20px 0;
+}
+dt {
+font-size: 0.9em;
+text-transform: uppercase;
+}
+dd {
+margin: 0 0 20px;
+}
+
+/* list styles */
+
+ul {
+margin: 10px 0;
+} 
+ul li {
+height: 1%;
+list-style-type: none;
+margin: 0 0 5px 0;
+padding: 0 0 0 15px;
+line-height: 20px;
+}
+ol {
+margin: 10px 0 10px 25px;
+}
+ol li {
+margin: 0 0 5px 0;
+}
+
+/* blockquote */
+
+blockquote {
+margin: 10px 0;
+padding: 5px 10px;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+font: 0.9em/1.5em georgia, "lucida sans unicode", "trebuchet ms", sans-serif;
+color: #666;
+}
+/* ---------------------------------------------------
+			layout		
+------------------------------------------------------ */
+#kisswrap {
+width: 799px;
+margin: 0 auto;
+text-align: left; 
+}
+#kisscontainer {
+height: 1%;
+margin: 15px 0;
+}
+#kisscontainer-top {
+height: 30px;
+}
+#kisscontainer-bottom {
+clear: both;
+height: 30px;
+}
+/* ---------------------------------------------------
+			header
+------------------------------------------------------ */
+#kissheader {
+width: 572px;
+height: 1%;
+padding: 0 0 12px;
+text-align: center;
+}
+#kissheader div {
+padding: 10px 20px;
+}
+#kissheader h1 {
+margin: 0;
+font-size: 0.9em;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+}
+#kissheader h1 a {
+color: #eee;
+}
+#kissheader h1 a:hover {
+color: #fff;
+}
+h2.description {
+margin: 0;
+font-size: 0.75em;
+color: #b2b2b2;
+line-height: 1.4em;
+}
+/* ---------------------------------------------------
+			main column		
+------------------------------------------------------ */
+#kissmain {
+width: 572px;
+display: inline; 
+float: left;
+font-size: 0.75em;
+}
+#kissmain-1 {
+margin: 20px 35px;
+}
+
+/* post */
+
+div.post {
+margin: 0 0 20px;
+padding: 0 0 40px;
+}
+h2.post-title {
+margin: 0;
+font: 0.9em georgia, "lucida sans unicode", "trebuchet ms", sans-serif;
+color: #333;
+text-transform: uppercase;
+letter-spacing: 0.5em;
+text-align: center;
+}                  
+h3.post-date {
+margin: 0;
+font-size: 0.85em;
+color: #999;
+text-align: center;
+}
+div.post-body {
+margin: 20px 0 0;
+}
+p.postmetadata {
+margin: 20px 0 0;
+padding: 0 0 0 20px;
+line-height: 19px;
+font-size: 0.85em;
+color: #999;
+}
+p.prev-next {
+height: 1%;
+margin: 0 0 20px;
+padding: 0 0 20px;
+text-align: center;
+}
+
+/* Search results page
+div.search-result {
+height: 1%;
+margin: 40px 0 0px;
+padding: 0 0 20px;
+background: url(http://i.stanford.edu/~heymann/blogger/images/dot.gif) 0 100% repeat-x;
+}
+div.search-result h3 {
+margin: 0;
+font-size: 1.1em;
+}
+div.search-result p.postmetadata {
+margin: 0;
+}
+
+#search-main {
+margin: 0 0 20px;
+padding: 0 0 40px;
+background: url('http://i.stanford.edu/~heymann/blogger/images/line5gn-wide.gif') no-repeat 0 100%;
+text-align: left;
+}
+*/
+
+/* Comments */
+
+#comments {
+margin: 20px 0;
+padding: 0 0 40px;
+}
+#comments h2 {
+margin: 0;
+font: 0.9em georgia, "lucida sans unicode", "trebuchet ms", sans-serif;
+color: #333;
+text-transform: uppercase;
+letter-spacing: 0.5em;
+text-align: center;
+}
+#comments ol {
+}
+#comments li {
+height: 1%;
+margin: 0 0 20px;
+padding: 0 0 20px;
+font-size: 0.9em;
+}
+#comments li span {
+font-size: 0.95em;
+text-transform: uppercase;
+}
+#commentform label {
+display: block;
+font-size: 0.85em;
+text-transform: uppercase;
+}
+#author, 
+#email,
+#url,
+#comment {
+width: 90%;
+margin: 0 0 10px;
+padding: 2px;
+border: 1px solid #ccc;
+}
+#searchsubmit, #submit {
+padding: 2px;
+background: #eee;
+border: 3px double #666;
+border-top-color: #ccc;
+border-left-color: #ccc;
+font-size: 85%;
+color: #333;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 0.1em;
+}
+
+/* ---- backlinks --- */
+
+#backlinks {
+margin: 20px 0;
+padding: 0 0 40px;
+}
+#backlinks h2 {
+margin: 0;
+font: 0.9em georgia, "lucida sans unicode", "trebuchet ms", sans-serif;
+color: #333;
+text-transform: uppercase;
+letter-spacing: 0.5em;
+text-align: center;
+}
+#backlinks ol {
+}
+#backlinks li {
+height: 1%;
+margin: 0 0 20px;
+padding: 0 0 20px;
+font-size: 0.9em;
+}
+#backlinks li span {
+font-size: 0.95em;
+text-transform: uppercase;
+}
+
+
+
+/* ---------------------------------------------------
+			side		
+------------------------------------------------------ */
+#sidebar {
+display: inline; 
+float: left;
+width: 180px;
+margin: 10px 0;
+font-size: 0.7em;
+}
+div.side-sec {
+height: 1%;
+margin: 0 0 10px 15px;
+padding: 0 0 10px;
+}
+div.side-sec h3 {
+font-size: 1em;
+text-transform: uppercase;
+}
+div.side-sec li {
+list-style-type: none;
+padding: 0 0 0 15px;
+line-height: 20px;
+}
+div.side-sec search {
+padding: 0 0 20px;
+}
+#sidebar #searchsubmit {
+padding: 2px;
+background: #eee;
+border: 3px double #666;
+border-top-color: #ccc;
+border-left-color: #ccc;
+font-size: 85%;
+color: #333;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 0.1em;
+}
+#sidebar #searchform #s {
+width: 90%;
+margin: 0 0 10px;
+padding: 4px;
+border: 1px solid #ccc;
+}
+
+/* Calendar
+
+#wp-calendar #prev a {
+font-size: 9pt;
+}
+#wp-calendar a {
+text-decoration: none;
+}
+#wp-calendar caption {
+font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+text-align: center;
+}
+#wp-calendar th {
+font-style: normal;
+text-transform: capitalize;
+}
+#wp-calendar {
+empty-cells: show;
+margin: 10px auto 0;
+width: 155px;
+}
+#wp-calendar #next a {
+padding-right: 10px;
+text-align: right;
+}
+#wp-calendar #prev a {
+padding-left: 10px;
+text-align: left;
+}
+#wp-calendar a {
+display: block;
+}
+#wp-calendar caption {
+text-align: center;
+width: 100%;
+}
+#wp-calendar caption {
+text-decoration: none;
+}
+#wp-calendar td {
+padding: 3px 0;
+text-align: center;
+}
+*/
+
+/* footer */
+
+#footer {
+padding: 0 0 0 1px;
+margin: 0 auto;
+width: 760px;
+clear: both;
+}
+#footer p {
+margin: 0;
+padding: 20px 0;
+text-align: center;
+}
+
+/* Images */
+
+p img {
+padding: 0;
+max-width: 100%;
+}
+img.centered {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+img.alignright {
+padding: 4px;
+margin: 0 0 2px 7px;
+display: inline;
+}
+img.alignleft {
+padding: 4px;
+
+
+margin: 0 7px 2px 0;
+display: inline;
+}
+.alignright {
+float: right;
+}
+.alignleft {
+float: left
+}
+
+ul li {
+background: url('http://i.stanford.edu/~heymann/blogger/images/iconarrow.gif') no-repeat 0 0;
+}
+
+#kisscontainer {
+background: url('http://i.stanford.edu/~heymann/blogger/images/main-wide.gif') 0 100% repeat-y;
+}
+
+#kisscontainer-top {
+background: url('http://i.stanford.edu/~heymann/blogger/images/maintop-wide.gif') 0 0 no-repeat;
+}
+
+#kisscontainer-bottom {
+background: url('http://i.stanford.edu/~heymann/blogger/images/mainbottom-wide.gif') 0 0 no-repeat;
+}
+
+#kissheader {
+background: #696969 url('http://i.stanford.edu/~heymann/blogger/images/header-wide.gif') no-repeat 0 100%;
+}
+
+#kissheader div {
+background: url('http://i.stanford.edu/~heymann/blogger/images/headerin-wide.gif') repeat-y;
+}
+
+div.post {
+background: url('http://i.stanford.edu/~heymann/blogger/images/line-wide.gif') no-repeat 0 100%;
+}
+
+p.postmetadata {
+background: url('http://i.stanford.edu/~heymann/blogger/images/iconmeta.gif') no-repeat;
+}
+
+p.prev-next {
+background: url('http://i.stanford.edu/~heymann/blogger/images/dot.gif') 0 100% repeat-x;
+}
+
+#comments {
+background: url('http://i.stanford.edu/~heymann/blogger/images/line-wide.gif') no-repeat 0 100%;
+}
+
+#comments li {
+background: url('http://i.stanford.edu/~heymann/blogger/images/dot.gif') 0 100% repeat-x;
+}
+
+#backlinks {
+background: url('http://i.stanford.edu/~heymann/blogger/images/line-wide.gif') no-repeat 0 100%;
+}
+
+#backlinks li {
+background: url('http://i.stanford.edu/~heymann/blogger/images/dot.gif') 0 100% repeat-x;
+}
+
+div.side-sec {
+background: url('http://i.stanford.edu/~heymann/blogger/images/dot.gif') 0 100% repeat-x;
+}
+
+div.side-sec li {
+background: url('http://i.stanford.edu/~heymann/blogger/images/iconarrow.gif') no-repeat;
+}
+/* End Theme Images */
+#b-navbar {
+  height:0px;
+  visibility:hidden;
+  display:none
+}
+#navbar {
+height:0px;
+visibility:hidden;
+display:none
+}
+
+#navbar-iframe { height: 0px; visibility: hidden; display: none;}
+</style>
+<!-- --><style type="text/css">@import url(http://www.blogger.com/static/v1/v-css/navbar/697174003-classic.css);
+div.b-mobile {display:none;}
+</style>
+
+</head>
+<body><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=7751293754523140922&amp;blogName=Stanford+InfoBlog&amp;publishMode=PUBLISH_MODE_HOSTED&amp;navbarType=BLUE&amp;layoutType=CLASSIC&amp;searchRoot=http%3A%2F%2Finfoblog.stanford.edu%2Fsearch&amp;blogLocale=en&amp;homepageUrl=http%3A%2F%2Finfoblog.stanford.edu%2F" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe>
+<div></div>
+<div id="kisswrap">
+	<div id="kissheader">
+		<div>
+                <img src="http://i.stanford.edu/~heymann/blogger/images/infowhite.png" alt="InfoLab Logo Header" />
+		<!--<h1><a href="http://infoblog.stanford.edu/" title="Stanford InfoBlog">Stanford InfoBlog</a></h1>
+		<h2 class="description">The unofficial blog of the Stanford InfoLab and friends, discussing issues in databases, information management, and the web from an academic research perspective.</h2>-->
+		</div>
+	</div>
+
+<div id="kisscontainer">
+
+<div id="kisscontainer-top"></div>
+
+	<div id="kissmain"><div id="kissmain-1">
+		
+
+
+<!-- </div></div> -->
+
+
+
+<p class="prev-next"><span>&laquo; <a href="http://infoblog.stanford.edu/">Home</a> | <a href="http://infoblog.stanford.edu/2008/05/why-write-blog.html">Next</a> &raquo;</span><span style="display:none"></span></p>
+
+<!-- <div id="main"><div id="main-1"> -->
+
+
+	
+	<div class="post" id="post-968902751639847433">
+
+	<h2 class="post-title">Simrank++: Putting together 3 simple ideas (Posted by Ioannis Antonellis)</h2>
+			
+	<div class="post-body">
+		<p><div style="clear:both;"></div><div style="text-align: justify;">Two ideas that really pushed web search further came from two completely different directions.<br /><br /><span style="font-size:130%;">Two ideas</span><br /><br />The first one,<span style="font-style: italic;"> <span style="font-weight: bold;">link analysis</span></span>, came into play as a tool for improving the quality of search results. The idea as people express it today is simple, yet its power has been proven invaluable. The more web pages that link to your web page, the more popular your web page becomes.<br /><br />The second idea, <span style="font-style: italic; font-weight: bold;">sponsored search</span>, allowed search engines to  make revenue, grow and keep providing their service for <span style="font-style: italic;">free</span>. The idea again is simple: The search engine sells each keyword to up to 10 advertisers and it displays their ads to the users that issue a query with that keyword. Since the keywords are not real goods that you can easily set a price for, the search engines rely on auctions to determine the price for each keyword. (Had the search engines been able to set fixed keyword prices, many Ph.D. students, including myself, would have no thesis topic to work on...)<br /><br /><span style="font-size:130%;">Another idea: The wisdom of Crowds<br /></span><br />But, my favorite simple idea that has started flooding around recently is that of exploiting the <span style="font-style: italic; font-weight: bold;">wisdom of the crowds</span><span style="font-style: italic;">;</span> the information that the billions of web users provide in all its forms. The most concrete and recent example of a successful application that is based on this idea is Wikipedia. Now that this large repository of knowledge has been created, many researchers have started to think about using it to improve existing data mining methods.<br /><br />Another, still under development and immature, set of techniques that are based on the wisdom of the crowds uses click logs as a source of implicit information that web search users provide.<br /><br /><span style="font-size:130%;">The paper</span><br /><br />In our paper <a style="border-bottom-style: groove;" href="http://dbpubs.stanford.edu/pub/2007-32">"Simrank++: Query Rewriting through link analysis of the Click Graph"</a>, which will be presented at Auckland, New Zealand in the coming VLDB 2008 conference, we are trying to put all these three ideas into play together. Specifically, we develop a link analysis technique for click graphs that can be used to increase the revenue of a sponsored search engine.<br /><br />So, what is a click graph, how exactly do we analyze its link structure and how does this improve the revenue of a search engine?<br /><br /><span style="font-weight: bold;font-size:100%;" >Click graph</span><br /><br />The click graph is a bipartite graph with query nodes on one side, ad nodes on the other  and an edge between a query and an ad when a user that issued the query clicked on the ad. In addition, each edge between a query and an ad has associated with it a weight that corresponds to the number of clicks the query brought to the ad.<br /><br /><span style="font-weight: bold;">How to increase search engine revenue</span><br /><br />The potential for revenue increase comes from queries that no advertiser has bid on. Since the search engine has no indication which ads are relevant to those queries, there are no ads it can display. Given such a query, if there was a way to guess which ads are relevant (but for some reason the associated advertisers decided not to bid on it), we could display the relevant ads and keep both the advertisers and the search engine happy.<br /><br />The solution comes from the click graph: the wisdom of the crowds. Given a query, we use the click graph to generate a list of query rewrites, i.e., of other queries that are "similar" to it.  For example, for the query "camera," the queries "digital camera" and "photography" may be useful because the user may also be interested in ads for those related queries. The query "battery" may also be useful because users that want a camera may also be in the market for a spare battery. Both the query and its rewrites can then be used to find ads.<br /><br />The schemes we present analyze the connections in the click graph to identify rewrites that may be useful. Our techniques identify not only queries that are directly connected by an ad (e.g., users that  submit either "mp3" or "i-tunes" click on ad an for "iPod") but also queries that are more indirectly related.<br /><br /><span style="font-weight: bold;">Simrank++</span><br /><br />The intuition of our solution, Simrank++, is the following:<br /><ul><li>two queries are similar if they are connected to similar ads and two ads are similar if they are connected to similar queries.<br /></li></ul>Sounds confusing, but it reveals the power of recursion. Initially each query/ad is only similar to  itself, but by continuously applying these two rules, you end  up with a similarity score for each pair of queries.<br /><br />Are these scores always correct? How can we even define what a correct score is? And how does everything change when you try to take into account the edge weights of the click graph in the computation of the similarity scores?<br /><br />The answers to these more detailed questions are in the <a style="border-bottom-style: groove;" href="http://dbpubs.stanford.edu/pub/2007-32">paper</a>...<br /></div><div style="clear:both; padding-bottom:0.25em"></div><p class="blogger-labels">Labels: <a rel='tag' href="http://infoblog.stanford.edu/search/label/click%20graph">click graph</a>, <a rel='tag' href="http://infoblog.stanford.edu/search/label/collaborative%20filtering">collaborative filtering</a>, <a rel='tag' href="http://infoblog.stanford.edu/search/label/ioannis">ioannis</a>, <a rel='tag' href="http://infoblog.stanford.edu/search/label/link%20analysis">link analysis</a>, <a rel='tag' href="http://infoblog.stanford.edu/search/label/recommendation%20system">recommendation system</a>, <a rel='tag' href="http://infoblog.stanford.edu/search/label/search%20advertising">search advertising</a>, <a rel='tag' href="http://infoblog.stanford.edu/search/label/simrank%2B%2B">simrank++</a>, <a rel='tag' href="http://infoblog.stanford.edu/search/label/sponsored%20search">sponsored search</a>, <a rel='tag' href="http://infoblog.stanford.edu/search/label/yannis">yannis</a></p></p>
+		<script src="http://feeds.feedburner.com/~s/stanfordinfoblog?i=http://infoblog.stanford.edu/2008/06/simrank-putting-together-3-simple-ideas.html" type="text/javascript" charset="utf-8"></script>
+		<p class="postmetadata">
+			This entry was posted by Ioannis Antonellis, on
+			Friday, June 6, 2008.
+			
+			You can <a href="https://www.blogger.com/comment.g?blogID=7751293754523140922&postID=968902751639847433" location.href=https://www.blogger.com/comment.g?blogID=7751293754523140922&postID=968902751639847433;>leave your response</a>.
+			
+			<span class="item-control blog-admin pid-141929014"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=7751293754523140922&postID=968902751639847433" title="Edit Post"><img class="icon-action" alt="" src="http://img2.blogblog.com/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span></p>
+	</div>
+</div>		
+
+
+
+
+<div id="comments">
+<h2><script type="text/javascript">var a = 1; if(a == 0) {document.write('no comments');} else if(a == 1) {document.write('1 comment');}else{document.write(a+' comments');}</script></h2>
+
+<ol>
+	
+
+
+	<li id="comment-7962957629613339350">
+
+		<span><span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="http://img2.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" /></span>&nbsp;<a href="http://www.blogger.com/profile/08835143972957022099" rel="nofollow">Paul Heymann</a> | <a href="#comment-7962957629613339350" title="">June 13, 2008 2:07 PM</a> | <span class="item-control blog-admin pid-1858888983"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=7751293754523140922&postID=7962957629613339350" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span></span>
+		<p>Hey Yannis, isn't link analysis also the Wisdom of Crowds?  What's up?</p>
+	</li>
+
+
+
+</ol>
+<p style="text-align: center;"><a href="https://www.blogger.com/comment.g?blogID=7751293754523140922&postID=968902751639847433" location.href=https://www.blogger.com/comment.g?blogID=7751293754523140922&postID=968902751639847433;>leave a response</a></p>
+</div>	
+
+
+
+
+
+<div id="backlinks">
+<h2>Links to this post (if any)</h2>
+<ol>
+  <script type="text/javascript" src="http://www.blogger.com/dyn-js/backlink.js?blogID=7751293754523140922&postID=968902751639847433" charset="utf-8" defer="true">
+</script>
+<noscript><a href="http://blogsearch.google.com/?ui=blg&q=link%3Ahttp%3A%2F%2Finfoblog.stanford.edu%2F2008%2F06%2Fsimrank-putting-together-3-simple-ideas.html">See links to this post</a></noscript>
+<div id="blogger-dcom-block" style="display:none">
+  <li class="backlink">
+  <span>
+  <!--<span class="comment-toggler">&nbsp;</span>-->
+  <a href="<$BlogBacklinkURL$>" rel="nofollow">
+  <$BlogBacklinkTitle$></a> 
+  <br/>
+  <$BlogBacklinkAuthor$> |
+  <$BlogBacklinkDateTime$> <span class="item-control blog-admin"><a style="border:none;" href="http://www.blogger.com/delete-backlink.g?blogID=7751293754523140922&amp;postID=968902751639847433&amp;backlinkURL=%3C$BlogBacklinkURLEscaped$%3E" title="Remove Link" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+  </span>
+  <p><$BlogBacklinkSnippet$></p>
+  </li>
+  </div>
+<script type="text/javascript">if (typeof BL_addOnLoadEvent == 'function') { BL_addOnLoadEvent(function() { BL_writeBacklinks(); }); }</script>
+
+</ol>
+<p style="text-align: center;"><a class="comment-link" href="javascript:BlogThis();" id="b-backlink">create link here by posting on Blogger</a><br/>(or just link from your blog!)</p>
+</div>	
+
+
+
+
+
+
+
+</div></div>
+
+<div id="sidebar">
+	
+	<div class="side-sec search">
+		<h3>Search</h3>
+	  <!-- Search Google -->
+	  <form method="get" id="searchform" action="http://www.google.com/custom">
+	  	<div>
+				<input type=text id="s" name=q size=15 maxlength=255 value="">
+				<input type=hidden name=domains value="http://infoblog.stanford.edu/">
+				<input type=hidden name=sitesearch value="http://infoblog.stanford.edu/">
+				<input type=submit id="searchsubmit" name=sa value="Search">
+			</div>
+		</form>
+		<!-- Search Google -->
+	</div>
+   <div class="side-sec posts">
+  	<h3>recent posts</h3>
+  	<ul>
+  		
+  			<li><a href="http://infoblog.stanford.edu/2008/05/why-write-blog.html">Why Write a Blog? (Posted by Paul Heymann)</a></li>
+  		
+  	</ul>
+	</div>
+	
+  
+	
+	<div class="side-sec archives">
+		<h3>Archives</h3>
+		<ul>
+			
+				<li><a href="http://infoblog.stanford.edu/2008_05_01_archive.html">May 2008</a></li>
+			
+				<li><a href="http://infoblog.stanford.edu/2008_06_01_archive.html">June 2008</a></li>
+			
+				<li><a href="http://infoblog.stanford.edu/2008_07_01_archive.html">July 2008</a></li>
+			
+				<li><a href="http://infoblog.stanford.edu/2008_08_01_archive.html">August 2008</a></li>
+			
+				<li><a href="http://infoblog.stanford.edu/2008_09_01_archive.html">September 2008</a></li>
+			
+				<li><a href="http://infoblog.stanford.edu/2008_10_01_archive.html">October 2008</a></li>
+			
+				<li><a href="http://infoblog.stanford.edu/2008_11_01_archive.html">November 2008</a></li>
+			
+				<li><a href="http://infoblog.stanford.edu/2008_12_01_archive.html">December 2008</a></li>
+			
+				<li><a href="http://infoblog.stanford.edu/2009_01_01_archive.html">January 2009</a></li>
+			
+		</ul>
+	</div>
+	
+	<div class="side-sec pages">
+		<h3>Authors</h3>
+			<p>The <a href="http://i.stanford.edu">InfoLab</a> blog is an unofficial blog of several
+                           members of the Stanford InfoLab and associated friends.</p>
+                <ul><li class="page_item"><a href="http://www.stanford.edu/~paraga/">Parag Agrawal</a></li>
+                <li class="page_item"><a href="http://www.stanford.edu/~antonell/">Ioannis Antonellis</a></li>
+                <li class="page_item"><a href="http://i.stanford.edu/~anishds/">Anish Das Sarma</a></li>
+                <li class="page_item"><a href="http://infolab.stanford.edu/people/hector.html">Hector Garcia-Molina</a></li>
+                <li class="page_item"><a href="http://heymann.stanford.edu/">Paul Heymann</a></li>
+                <li class="page_item"><a href="http://www.stanford.edu/~rmikeda/">Robert Ikeda</a></li>
+                <li class="page_item"><a href="http://www.stanford.edu/~koutrika/">Georgia Koutrika</a></li>
+                <li class="page_item"><a href="http://hammerhead.stanford.edu/">Bob Mungamuru</a></li>
+                <li class="page_item"><a href="http://infolab.stanford.edu/~paepcke/">Andreas Paepcke</a></li>
+                <li class="page_item"><a href="http://www.stanford.edu/~ppapadim/">Panagiotis Papadimitriou</a></li>
+                <li class="page_item"><a href="http://www.stanford.edu/~dramage/">Daniel Ramage</a></li>
+                <li class="page_item"><a href="http://www.stanford.edu/~euijong/">Steven Whang</a></li>
+                <li class="page_item"><a href="http://infolab.stanford.edu/~widom/">Jennifer Widom</a></li></ul>
+
+	</div>
+	
+
+	
+	<div class="side-sec links">
+		<h3>Links</h3>
+		<!-- 
+
+		
+		Links below are just examples, feel free to delete them and replace with your own
+		
+		-->
+		<ul>
+			<li><a href="http://www.stanford.edu/">Stanford</a>
+                        <ul>
+			  <li><a href="http://cs.stanford.edu/">Computer Science</a>
+                          <ul>
+			    <li><a href="http://i.stanford.edu/">InfoLab</a>
+                            <ul>
+                              <li><a href="http://ilpubs.stanford.edu/">Publications</a></li>
+                              <li><a href="http://infolab.stanford.edu/trio/">Trio</a></li>
+                              <li><a href="http://infolab.stanford.edu/serf/">SERF</a></li>
+                            </ul></li>
+			    <li><a href="http://theory.stanford.edu/">Theory</a>
+                            <ul>
+                              <li><a href="http://www.stanford.edu/~sunabar/rain/">RAIN</a></li>
+                            </ul></li>
+                            <li><a href="http://ai.stanford.edu/">AI Lab (SAIL)</a>
+                            <ul>
+			      <li><a href="http://nlp.stanford.edu/">NLP</a></li>
+                              <li><a href="http://dags.stanford.edu/">DAGS</a></li>
+                              <li><a href="http://wordgame.stanford.edu/">WordGames</a></li>
+                            </ul></li>
+                          </ul></li>
+                        </ul></li>
+		</ul>
+	</div>
+	
+	<div class="side-sec subscribe">				
+		<h3>Subscribe</h3>
+                <p>
+                We offer two methods to subscribe to the InfoBlog: <a href="http://feeds.feedburner.com/stanfordinfoblog" rel="alternate" type="application/rss+xml">RSS/Atom</a> (preferred) and <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=2096088&amp;loc=en_US">HTML e-mail</a>.
+                The (highly experimental) HTML e-mail option may disappear, but
+                we know many of our readers only read e-mail, so we are offering it to
+                determine demand.
+                </p>
+		<ul>
+                        <li><p><a href="http://feeds.feedburner.com/stanfordinfoblog" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/stanfordinfoblog" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></li>
+                        <li><p><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=2096088&amp;loc=en_US">Subscribe by HTML e-mail (experimental)</a></p></li>
+<!--			<li><a title="Atom 0.3" href="http://infoblog.stanford.edu/atom.xml">Atom Site Feed</a></li>
+			<li><a title="RSS" href="http://infoblog.stanford.edu/atom.xml?alt=rss">RSS Site Feed</a></li>-->
+		</ul>
+	</div>
+	
+	<div class="side-sec misc">
+		<h3>Admin</h3>
+		<ul>
+			<li><a href="http://www.blogger.com/start">Login</a></li>
+		</ul>
+	</div>
+	
+	<!--
+	
+	Please do not remove the credit links below, thank you.
+	
+	-->
+	
+	<div class="side-sec misc">	
+		<p><a href="http://infoblog.stanford.edu/" title="Stanford InfoBlog">Stanford InfoBlog</a> is powered by <a href="http://www.blogger.com" title="Blogger">Blogger</a> and <a href="http://www.bloggertemplates.org" rel="nofollow">Blogger Templates</a>. Theme is designed by <a href="http://www.oinam.com" title="oinam.com" rel="nofollow">Oinam</a> with some minor modifications by Paul.</p>
+	</div>
+
+</div>
+
+<div id="kisscontainer-bottom"></div>
+</div>
+
+</div>
+<!--<script src="http://i.stanford.edu/~heymann/blogger/js/ASCIIMathML.js" type="text/javascript"></script>-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3689278-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- -->
+<script src="http://tags.stanford.edu/include.js" type="text/javascript"></script>
+<!-- -->
+<script type="text/javascript" src="http://www.blogger.com/static/v1/common/js/755007736-csitail.js"></script>
+<script type="text/javascript">BLOG_initCsi('classic_blogspot');</script></body>
+</html>

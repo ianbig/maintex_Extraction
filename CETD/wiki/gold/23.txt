@@ -1,0 +1,208 @@
+﻿
+Evolutionary biology
+Part of the Biology series on
+Evolution
+Mechanisms and processes
+Adaptation
+Genetic drift
+Gene flow
+Mutation
+Natural selection
+Speciation
+Research and history
+Introduction
+Evidence
+Evolutionary history of life
+History
+Level of support
+Modern synthesis
+Objections / Controversy
+Social effect
+Theory and fact
+Evolutionary biology fields
+Cladistics
+Ecological genetics
+Evolutionary development
+Evolutionary psychology
+Molecular evolution
+Phylogenetics
+Population genetics
+Systematics
+Biology portal · v • d • e 
+Evolutionary biology is a sub-field of biology concerned with the origin of species from a common descent and descent of species, as well as their change, multiplication and diversity over time. Someone who studies evolutionary biology is known as an evolutionary biologist. To philosopher Kim Sterelny, "the development of evolutionary biology since 1858 is one of the great intellectual achievements of science".[1]
+Contents [hide]
+1 Description
+2 History
+3 Notable evolutionary biologists
+4 Bibliography
+4.1 Textbooks
+4.2 Notable monographs and other works
+5 Topics in evolutionary biology
+6 Relationship to other biological disciplines
+7 See also
+8 References
+[edit]Description
+
+Evolutionary biology is an interdisciplinary field because it includes scientists from a wide range of both field and lab oriented disciplines. For example, it generally includes scientists who may have a specialist training in particular organisms such as mammalogy, ornithology, or herpetology, but use those organisms as case studies to answer general questions in evolution. It also generally includes paleontologists and geologists who use fossils to answer questions about the tempo and mode of evolution, as well as theoreticians in areas such as population genetics and evolutionary psychology. Experimentalists have used selection in Drosophila to develop an understanding of the evolution of aging, and experimental evolution is a very active subdiscipline.
+In the 1990s developmental biology made a re-entry into evolutionary biology, from its initial exclusion from the modern synthesis, through the study of evolutionary developmental biology.
+Findings from evolutionary biology feed strongly into new disciplines that study mankind's sociocultural evolution and evolutionary behavior. Evolutionary biology's frameworks of ideas and conceptual tools are now finding application in the study of a range of subjects from computing to nanotechnology. It also contributes to the field of evolutionary medicine.[2][3]
+Artificial life is a sub-field of bioinformatics that attempts to model, or even recreate, the evolution of organisms as described by evolutionary biology. Usually this is done through mathematics and computer models.
+[edit]History
+
+Main article: History of evolutionary thought
+Evolutionary biology as an academic discipline in its own right emerged as a result of the modern evolutionary synthesis in the 1930s and 1940s.[4] It was not until the 1970s and 1980s, however, that a significant number of universities had departments that specifically included the term evolutionary biology in their titles. In the United States, as a result of the rapid growth of molecular and cell biology, many universities have split (or aggregated) their biology departments into molecular and cell biology-style departments and ecology and evolutionary biology-style departments (which often have subsumed older departments in paleontology, zoology and the like).
+Microbiology has recently developed into an evolutionary discipline. It was originally ignored due to the paucity of morphological traits and the lack of a species concept in microbiology. Now, evolutionary researchers are taking advantage of our extensive understanding of microbial physiology, the ease of microbial genomics, and the quick generation time of some microbes to answer evolutionary questions. Similar features have led to progress in viral evolution, particularly for bacteriophages.
+[edit]Notable evolutionary biologists
+
+Main category: Evolutionary biologists
+Notable contributors to evolutionary biology
+Richard D. Alexander
+William H. Cade
+Sean B. Carroll
+Brian Charlesworth
+Deborah Charlesworth
+Bryan Clarke
+Jerry Coyne
+James Crow
+Charles Darwin
+Richard Dawkins
+Jared Diamond
+Theodosius Dobzhansky
+Niles Eldredge
+R. A. Fisher
+Edmund Brisco Ford
+Stephen Jay Gould
+Rosemary Grant
+Ernst Haeckel
+J. B. S. Haldane
+W. D. "Bill" Hamilton
+Judith Hand
+Julian Huxley
+Daniel Janzen
+Motoo Kimura
+Alexey Kondrashov
+Jean-Baptiste Lamarck
+Richard Levins
+Richard Lewontin
+Gustave Malécot
+Lynn Margulis
+Pierre Louis Maupertuis
+Ernst Mayr
+Ivan Vladimirovich Michurin
+Hermann Joseph Muller
+George and Elizabeth Peckham
+Edward Loranus Rice
+Barbara A. Schaal
+John Maynard Smith
+Mark G. Thomas
+Robert Trivers
+Leigh Van Valen
+Alfred Russel Wallace
+August Weismann
+George C. Williams
+Allan Wilson
+Edward Osborne Wilson
+Sewall Wright
+Carl Woese
+Emile Zuckerkandl
+Evolutionary biologists known primarily for their science popularization
+Richard Dawkins
+Stephen Jay Gould
+Steve Jones
+Kenneth R. Miller
+Notable popularizers of evolution whose research isn't primarily concerned with evolutionary biology
+Robert Ardrey
+Peter Atkins
+Daniel Dennett
+Greg Graffin
+Christopher Hitchens
+Steven Pinker
+Matt Ridley
+Michael Ruse
+Carl Sagan
+[edit]Bibliography
+
+[edit]Textbooks
+Douglas J. Futuyma, Evolutionary Biology (3rd Edition), Sinauer Associates (1998) ISBN 0-87893-189-9
+Douglas J. Futuyma, Evolution, Sinauer Associates (2005) ISBN 0-87893-187-2
+Mark Ridley, Evolution (3rd edition), Blackwell (2003) ISBN 1-4051-0345-0
+Scott R. Freeman and Jon C. Herron, Evolutionary Analysis, Prentice Hall (2003) ISBN 0-13-101859-0
+Michael R. Rose and Laurence D. Mueller, Evolution and Ecology of the Organism, Prentice Hall (2005) ISBN 0-13-010404-3
+Monroe W. Strickberger, Evolution (3rd Edition), Jones & Bartlett Publishers (2000) ISBN 0-7637-1066-0
+[edit]Notable monographs and other works
+Main article: :List of publications in biology
+Jean-Baptiste Lamarck (1809) Philosophie Zoologique
+Charles Darwin (1859) The Origin of Species
+Charles Darwin (1871) The Descent of Man and Selection in Relation to Sex
+R. A. Fisher (1930) The Genetical Theory of Natural Selection
+J. B. S. Haldane (1932) The Causes of Evolution
+Ernst Mayr (1941) Systematics and the Origin of Species
+Susumu Ohno (1970) Evolution by gene duplication
+Richard Dawkins (1976) The Selfish Gene
+Richard Dawkins (2004) The Ancestor's Tale
+Motoo Kimura (1983) The Neutral Theory of Molecular Evolution
+Stephen Jay Gould (2002) The Structure of Evolutionary Theory
+[edit]Topics in evolutionary biology
+
+Fitness landscape
+Foster's rule
+Koinophilia
+List of other evolutionary biology topics
+Muller's ratchet
+Mutational meltdown
+[edit]Relationship to other biological disciplines
+
+ 
+
+The structure of evolutionary biology and its relationship to other biological disciplines. The history and causes of evolution (center) are the subject of the various subdisciplines of evolutionary biology (inner ring), which grade into one another and, as shown by the arrows, are related both to one another and to other disciplines (outer ring). The areas of the segments in the diagram convey an impression of the historical contributions of the subdisciplines to the literature of evolutionary biology. (Click on individual words for links to other articles or click here for the original non-clickable image)
+[edit]See also
+
+	Evolutionary biology portal
+Artificial selection
+Computational phylogenetics
+Evolution of dietary antioxidants
+Evolutionary ecology
+Evolutionary physiology
+Evolutionary tree
+Experimental evolution
+Genetics
+Paleontology
+Phylogenetic comparative methods
+Phylogenetics
+Quantitative genetics
+Selective breeding
+Sexual selection
+Systematics
+Evolutionary dynamics
+[edit]References
+
+^ Sterelny, K. (2009). "Philosophy of Evolutionary Thought". In Michael Ruse & Joseph Travis. Evolution: The First Four Billion Years. Cambridge, Massachusetts: The Belknap Press of Harvard University Press. p. 313. ISBN 978-0-674-03175-3.
+^ Nesse, R.M., & Williams, G.C. (1996). Evolution and Healing: The New Science of Darwinian Medicine. London: Phoenix. ISBN 1-85799-506-6.
+^ Antolin, M.F. (2009). "Evolutionary Biology of Disease and Darwinian Medicine". In Michael Ruse & Joseph Travis. Evolution: The First Four Billion Years. Cambridge, Massachusetts: The Belknap Press of Harvard University Press. pp. 281–298. ISBN 978-0-674-03175-3.
+^ Sterelny (2009) p.314
+v • d • e
+Major subfields of biology
+Anatomy · Astrobiology · Biochemistry · Biomechanics · Biophysics · Bioinformatics · Biostatistics · Botany · Cell biology · Cellular microbiology · Chemical biology · Chronobiology · Conservation biology · Developmental biology · Ecology · Epidemiology · Evolutionary biology · Genetics · Genomics · Histology · Human biology · Immunology · Marine biology · Mathematical biology · Microbiology · Molecular biology · Mycology · Neuroscience · Nutrition · Origin of life · Paleontology · Parasitology · Pathology · Pharmacology · Physiology · Systems biology · Taxonomy · Toxicology · Zoology
+v • d • e
+Basic topics in evolutionary biology
+Evidence of common descent
+Processes of evolution	
+Adaptation · Macroevolution · Microevolution · Speciation
+Population genetic mechanisms	
+Genetic drift · Gene flow · Mutation · Natural selection
+Evolutionary developmental
+biology (Evo-devo) concepts	
+Canalisation · Inversion · Modularity · Phenotypic plasticity
+Evolution of organs
+and biological processes	
+Aging · Cellular · DNA · The Ear · The Eye · Flagella · Flight · Hair · Human intelligence · Modular · Multicellular · Sex
+Taxa evolution	
+Birds · Butterflies · Cephalopods · Dinosaurs · Dolphins and whales · Fungi · Horses · Humans · Influenza · Insects · Lemur · Life · Molluscs · Plants · Sirenians (sea cows) · Spiders · Viruses
+Modes of speciation	
+Anagenesis · Catagenesis · Cladogenesis
+History of evolutionary thought	
+Charles Darwin · On the Origin of Species · Modern evolutionary synthesis · Gene-centered view of evolution · Life (classification trees)
+Other subfields	
+Ecological genetics · Molecular evolution · Phylogenetics · Systematics
+List of evolutionary biology topics · Timeline of evolution
+Categories: Evolutionary biology

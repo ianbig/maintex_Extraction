@@ -1,0 +1,154 @@
+﻿
+Lynx (web browser)
+Not to be confused with Links (web browser).
+Not to be confused with LynxOS.
+Lynx
+
+Wikipedia Article displayed in Lynx
+Original author(s)	Lou Montulli, Michael Grobe, Charles Rezac
+Developer(s)	Thomas Dickey
+Initial release	c. 1992
+Stable release	2.8.7rel.2  (June 21, 2010; 5 months ago) [+/−]
+Preview release	2.8.8dev.4  (June 21, 2010; 5 months ago) [+/−]
+Written in	ISO C
+Platform	Cross-platform
+Available in	English
+Type	web browser
+License	GNU GPL[1]
+Website	lynx.isc.org
+Lynx is a text-based web browser for use on cursor-addressable character cell terminals[2] and is very configurable.[3]
+Contents [hide]
+1 Usage
+2 Privacy
+3 Development history
+4 Platforms and features
+5 See also
+6 References
+7 External links
+[edit]Usage
+
+Browsing in Lynx consists of highlighting the chosen link using cursor keys, or having all links on a page numbered and entering the chosen link's number. Current versions support SSL[3] and many HTML features. Tables are formatted using spaces, while frames are identified by name and can be explored as if they were separate pages. Lynx cannot inherently display various types of non-text content on the web, such as images and video,[2] but it can launch external programs to handle it, such as an image viewer or a video player.
+Because of its text-to-speech–friendly interface,[4] Lynx was once popular with visually impaired users, but better screen readers have reduced the appeal of this application.[4] Lynx is also used to check for usability of websites in older browsers. It is still included in a number of Unix products and Linux distributions,[5] and is particularly useful for reading documentation or downloading files[6] when only a text-based environment is available. It is also useful for accessing websites from a remotely connected system in which no graphical display is available.[6] Despite its text-only nature and age, it can still be used to effectively browse much of the modern web, including performing interactive tasks such as editing Wikipedia. The speed benefits of text-only browsing are most apparent when using low bandwidth internet connections, or older computer hardware that may be slow to render image-heavy content.
+[edit]Privacy
+
+Because Lynx does not support graphics, web bugs that track user information are not fetched, and emails can be read without the privacy concerns of graphic web browsers[7]—though many webmail services today disable images in emails by default, and most graphic web browsers allow images to be disabled as well.[citation needed]
+Lynx does support HTTP cookies,[2] which can also be used to track user information, but it does not support JavaScript and thus JavaScript cookies, which some websites require to work correctly. However, like most web browsers, cookie support can be disabled in Lynx. Similarly, Lynx also supports browsing histories and page caching, both of which can raise privacy concerns.[citation needed]
+[edit]Development history
+
+Lynx was a product of the Distributed Computing Group within Academic Computing Services of the University of Kansas,[7] and was initially developed in 1992 by a team of students at the university (Lou Montulli, Michael Grobe and Charles Rezac) as a hypertext browser used solely to distribute campus information as part of a Campus-Wide Information Server and for browsing the Gopher space.[4] Beta availability was announced to Usenet on 22 July 1992.[8] In 1993 Montulli added an Internet interface and released a new version (2.0) of the browser.[9][10]
+Garrett Blythe created DosLynx in April 1994 [11] and later joined the Lynx effort as well. Foteos Macrides ported much of Lynx to VMS and maintained it for a time. In 1995, Lynx was released under the GNU General Public License, and is now maintained by a group of volunteers led by Thomas Dickey.
+[edit]Platforms and features
+
+
+
+The Logo of the OS/2 port: Lynx/2.
+Lynx was originally designed for Unix and VMS and is a popular console browser on Linux. Versions are also available for DOS, recent versions run on all Microsoft Windows releases, and Mac OS X.[12][13] There was also an early port to "Classic" Macintosh version called MacLynx "for System 7 and later".[14] Ports to BeOS, MINIX, QNX, AmigaOS (called ALynx)[7] and OS/2 (called Lynx/2)[7] are also available.
+Lynx is based on the libwww[15][16] and thus supports many computer protocols: Gopher, HTTP, HTTPS,[3] FTP, WAIS, and NNTP.
+[edit]See also
+
+	Wikimedia Commons has media related to: Lynx web browser
+	Free software portal
+Computer accessibility
+[edit]References
+
+^ "COPYHEADER for Lynx 2.8.7". October 2, 2006. http://lynx.isc.org/lynx2.8.7/lynx2-8-7/COPYHEADER.
+^ a b c Rakitin, Jason (27 Oktober 1997). "Review: Alternative Web browsers". Network World Fusion. Archived from the original on 5October 2001. http://web.archive.org/web/20011005005015/www.nwfusion.com/news/1997/1027browser2.html. Retrieved 26 July 2010.
+^ a b c Legan, Dallas (September 2001). "Text-Mode Web Browsers for OS/2". The Southern California OS/2 User Group. http://www.scoug.com/os24u/2001/scoug009.textbrowsers.html. Retrieved 16 August 2010.
+^ a b c Bolso, Erik Inge (8 March 2005). "2005 Text Mode Browser Roundup". Linux Journal. http://www.linuxjournal.com/article/8148. Retrieved 5 August 2010.
+^ "OpenBSD 4.8 release notes". 1 November 2010. http://www.openbsd.org/48.html#new.
+^ a b Wayner, Peter (19 October 2010). "Top 10 specialty Web browsers you may have missed". InfoWorld. p. 3. http://www.infoworld.com/d/applications/top-10-specialty-web-browsers-you-may-have-missed-026?page=0,3#dillo. Retrieved 28 October 2010.
+^ a b c d Legan, Dallas E. (October 2002). "Lynx on OS/2: Straight Answers and Keen Tricks - Part 1 - Start Using the Lynx Browser". The Southern California OS/2 User Group. http://www.scoug.com/os24u/2002/scoug210.lynx1.html. Retrieved 16 August 2010.
+^ http://groups.google.com/group/alt.hypertext/msg/de730e3e5c2b2e54
+^ "Web Browser History". Living Internet. http://www.livinginternet.com/w/wi_browse.htm. Retrieved 2008-02-03.
+^ Lynn H. Nelson (2000-11-07). "Before the Web: the early development of History on-line". http://chnm.gmu.edu/digitalhistory/links/pdf/chapter1/1.2b.pdf. Retrieved 2008-02-03.
+^ http://www.fdisk.com/doslynx/BETAHYPE.HTM
+^ "Lynx for DOS 386+ or Win32". http://www.fdisk.com/doslynx/lynxport.htm. Retrieved 2008-01-03.
+^ "Lynx text web browser 2.8.7d9u". Apple Inc.. 2008-01-28. http://www.apple.com/downloads/macosx/unix_open_source/lynxtextwebbrowser.html. Retrieved 2009-01-03.
+^ Adams, Chris. "MacLynx, a text-only browser". http://ccadams.org/se/lynx.html. Retrieved 2008-01-03.
+^ Kahan, José (7 June 2002). "Change History of libwww". World Wide Web Consortium. http://www.w3.org/Library/User/History.html. Retrieved 30 May 2010.
+^ Kahan, José (5 August 1999). "Why Libwww?". World Wide Web Consortium. http://www.w3.org/Library/Activity.html. Retrieved 15 June 2010.
+Lynx from FOLDOC
+[edit]External links
+
+Lynx homepage (old but still cited: doslynx, Lynx links and original)
+Michael Grobe's personal recollections of Lynx development
+Extremely Lynx resource page from version 2.7
+MacLynx
+Lynx for Mac OS X 2.8.7d13u
+Lynx for Windows 2.8.5rel1 installer
+Lynx on OS/2
+Test how your site looks like on Lynx
+Learn how to use Lynx
+v • d • e
+Mac OS X web browsers
+Mac OS exclusive	
+Camino · Cyberdog · iCab · Internet Explorer for Mac · OmniWeb · Shiira · Stainless
+Cross-platform	
+Amaya · Arora · Dillo · ELinks · Epiphany · Google Chrome · Firefox · Flock · Galeon · Konqueror · Links · Lynx · Netscape · Opera · Safari · SeaMonkey · w3m
+Related	
+Browser wars · HyperCard · Gopher · E-mail · Elm · Web page · Viewdata · Teletext · Videotex · X.25 · Aliweb · ASCII · HyperText Markup Language · HyTelnet · Virtual Reality Markup Language · File Transfer Protocol · Telnet · NLS · NCSA Telnet · UUCP · Usenet · ARPANET · BITNET · Prodigy · CompuServe · World Wide Web · Whole Internet User's Guide and Catalog
+v • d • e
+Gopher
+Active clients	
+Amaya · Arachne · Camino · Classilla · Conkeror · ELinks · Epiphany · Firefox for mobile · Flock · Galeon · Gnuzilla · K-Meleon · K-Ninja · Kazehakase · Line Mode Browser · Lynx · Mosaic-CK · Mothra · Mozilla Firefox 3 · OmniWeb · SeaMonkey · Sleipnir · Songbird · VMS Mosaic · W3m · XeroBank Browser
+Discontinued clients	
+Agora · Arena · AT&T Pogo · Beonex Communicator · Cello · Cyberjack · IBrowse · Internet Explorer 2, 3, 4, 5, for Mac · Minimo · Minuet · Mosaic · Mozilla Application Suite · Netscape Browser · Netscape Communicator · Netscape Navigator 9 · SlipKnot · tkWWW · UdiWWW
+Server software	
+Bucktooth · PyGopherd · Squid
+Persons	
+Mark P. McCahill
+See also	
+Gopher+ · GopherVR · Jughead · Libwww · Phlog · SDF Public Access Unix System · Veronica · CCSO Nameserver · Wide area information server
+v • d • e
+Web browsers
+Comparison · History · List (for Unix) · Timeline · Usage share
+Trident-shells	
+AOL Explorer · Avant · Deepnet Explorer · Enigma · GreenBrowser · IEs4Linux · Maxthon · MenuBox · NeoPlanet · NetCaptor · Netscape 8 · Internet Explorer (1, 2, 3, 4, 5, 6, 7, 8; 9; for UNIX; Mobile) · iRider · MediaBrowser · Sleipnir · SlimBrowser · SpaceTime · Timberwolf · TheWorld · UltraBrowser · WebbIE · ZAC Browser
+Gecko-based	
+AmiZilla · AT&T Pogo · Beonex Communicator · Camino · Classilla · Conkeror · Epiphany (2.26.3 and below) · Flock (versions before 3.0) · Galeon · Ghostzilla · GNU IceCat · Gnuzilla · Gollum browser · K-Meleon · Kazehakase · Kirix Strata · MicroB · Minimo · Mozilla · Mozilla Firefox (2, 3, 3.5, 3.6, 4, for mobile) · Netscape (6, 7, 8, 9) · SeaMonkey · Skyfire · Sleipnir · Swiftfox · Swiftweasel · Timberwolf · Wyzo · XeroBank Browser
+WebKit-based	
+Arora · Chrome · Chromium · Epiphany (2.28+) · Flock (3.0+) · iCab · Iris Browser · Midori · OmniWeb · Origyn Web Browser · Rekonq · RockMelt · S60 web browser · Safari · Shiira · SRWare Iron · Steam overlay · Steel · Teashark · WebPositive · Uzbl
+Presto-based	
+Opera (10) · Nintendo DS & DSi Browser · Internet Channel · Opera Mini · Opera Mobile
+Java-based	
+HotJava · Lobo · Opera Mini · Teashark · uZard Web · X-Smiles
+KHTML-based	
+Konqueror · Konqueror Embedded · Sputnik
+Tasman-based	
+Internet Explorer for Mac · MSN for Mac OS X
+Command-/Text-based	
+ELinks · Emacs/W3 · Line Mode Browser · Links (ALynx) · Lynx · Net-Tamer · w3m · WebbIE
+Mobile browsers	
+Blazer · Bolt browser · Firefox for mobile · Galio · IbisBrowser · Internet Explorer Mobile · Iris Browser · Konqueror Embedded · MicroB · Minimo · NetFront · Obigo Browser · Opera Mobile · Pixo · S60 web browser · Safari · Steel · ThunderHawk · UC Browser · WinWAP
+HTML transcoders
+Deepfish · JOCA · Opera Mini · Skyfire · Skweezer · Teashark · uZard Web · Vision
+Other	
+3B · abaco · Amaya · Arachne · Arena · Charon · Dillo · EGBrowser · Gazelle · IBM Home Page Reader · IBrowse · KidZui · Lunascape · Mosaic-CK · Mothra · NetPositive · Netscape Communicator · NetSurf · Oregano · VMS Mosaic
+Offline reader‎	
+HTTrack
+Features	
+Ad filtering · Augmented browsing · Download manager · Cookies · Favicon · Incremental search · bookmarks (Bookmarklet, Live bookmark, Smart Bookmark) · Privacy mode · Tabbed browsing · Universal Edit Button
+Web standards	
+Acid tests · Cascading Style Sheets · HTML · HTML5 · OCSP · SVG · XHTML
+Related articles	
+World Wide Web · Widget · Rich Internet application · Site-specific browser · Internet suite · Mobile Web · Net Applications · BrowserChoice.eu · Pwn2Own
+italics = No longer in development
+v • d • e
+Early web browsers (up to 1996)
+Comparison  · History  · List (for Unix)  · Timeline  · Usage share
+1991	
+WorldWideWeb (Nexus) · Line Mode Browser (libwww)
+1992	
+ViolaWWW · Erwise · MidasWWW · MacWWW (Samba) · tkWWW
+1993	
+NCSA Mosaic · AMosaic · VMS Mosaic · Cello · Lynx (2.0) · Arena
+1994	
+IBM WebExplorer · Netscape Navigator · MicroMind SlipKnot (1.0) · TradeWave MacWeb · IBrowse · Navipress · Argo · Minuet · AIR Mosaic(Internet in a Box) · Spyglass Mosaic · TCP/Connect II · ANT Fresco
+1995	
+Internet Explorer 1 · Netscape Navigator 2.0 · OmniWeb · WebRouser · Sun WebRunner (HotJava) · Grail · Internet Explorer 2 · Delrina Cyberjack · AOL Web Browser for Macintosh · eWorld Web Browser for Macintosh · NetShark · WebShark · Opera · AMSD Ariadna · UdiWWW · ALynx
+1996	
+Arachne 1.0 · Internet Explorer 3 · Netscape Navigator 3.0 · Oracle PowerBrowser · Apple Cyberdog · INRIA Amaya (.9) · AWeb · VaporWare Voyager · tcpCONNECT4
+Related technologies
+and concepts	
+3D Markup Language for Web · Aliweb · ARPANET · ASCII · BITNET · Browser wars · CompuServe · Email · Elm · File Transfer Protocol · Gopher · HyperCard · HTML · HyTelnet · libwww · NCSA Telnet · NLS · Prodigy · Teletext · Telnet · Usenet · UUCP · Videotex · Viewdata · Virtual Reality Markup Language · Web page · Whole Internet User's Guide and Catalog · World Wide Web · X.25
+Categories: OS/2 web browsers | POSIX web browsers | Mac OS X web browsers | Web browsers for DOS | Text-based web browsers | Gopher clients | Free web browsers | FTP clients | HTTP clients | Portable software | Embedded Linux | University of Kansas | 1992 software | Curses (programming library) | S-Lang (programming library) | Cross-platform software | Command-line software

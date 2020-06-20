@@ -1,0 +1,337 @@
+﻿
+Gödel's incompleteness theorems
+  (Redirected from Incompleteness theorem)
+
+This is the latest accepted revision, accepted on 12 December 2010.
+Gödel's incompleteness theorems are two theorems of mathematical logic that establish inherent limitations of all but the most trivial axiomatic systems for mathematics. The theorems, proven by Kurt Gödel in 1931, are important both in mathematical logic and in the philosophy of mathematics. The two results are widely interpreted as showing that Hilbert's program to find a complete and consistent set of axioms for all of mathematics is impossible, thus giving a negative answer to Hilbert's second problem.
+The first incompleteness theorem states that no consistent system of axioms whose theorems can be listed by an "effective procedure" (essentially, a computer program) is capable of proving all facts about the natural numbers. For any such system, there will always be statements about the natural numbers that are true, but that are unprovable within the system. The second incompleteness theorem shows that if such a system is also capable of proving certain basic facts about the natural numbers, then one particular arithmetic truth the system cannot prove is the consistency of the system itself.
+Contents [hide]
+1 Background
+2 First incompleteness theorem
+2.1 Meaning of the first incompleteness theorem
+2.2 Relation to the liar paradox
+2.3 Original statements
+2.4 Extensions of Gödel's original result
+3 Second incompleteness theorem
+3.1 Implications for consistency proofs
+4 Examples of undecidable statements
+5 Limitations of Gödel's theorems
+6 Relationship with computability
+7 Proof sketch for the first theorem
+7.1 Arithmetization of syntax
+7.2 Diagonalization
+7.3 Proof of independence
+7.4 Proof via Berry's paradox
+7.5 Formalized proofs
+8 Proof sketch for the second theorem
+9 Discussion and implications
+9.1 Minds and machines
+9.2 Paraconsistent logic
+9.3 Appeals to the incompleteness theorems in other fields
+9.4 The role of self-reference
+10 History
+10.1 Announcement
+10.2 Generalization and acceptance
+10.3 Criticism
+10.3.1 Wittgenstein and Gödel
+11 See also
+12 Notes
+13 References
+13.1 Articles by Gödel
+13.2 Translations, during his lifetime, of Gödel’s paper into English
+13.3 Articles by others
+13.4 Books about the theorems
+13.5 Miscellaneous references
+14 External links
+[edit]Background
+
+In mathematical logic, a theory is a set of sentences expressed in a formal language. Some statements in a theory are included without proof (these are the axioms of the theory), and others (the theorems) are included because they are implied by the axioms.
+Because statements of a formal theory are written in symbolic form, it is possible to mechanically verify that a formal proof from a finite set of axioms is valid. This task, known as automatic proof verification, is closely related to automated theorem proving. The difference is that instead of constructing a new proof, the proof verifier simply checks that a provided formal proof (or, in some cases, instructions that can be followed to create a formal proof) is correct. This process is not merely hypothetical; systems such as Isabelle are used today to formalize proofs and then check their validity.
+Many theories of interest include an infinite set of axioms, however. To verify a formal proof when the set of axioms is infinite, it must be possible to determine whether a statement that is claimed to be an axiom is actually an axiom. This issue arises in first order theories of arithmetic, such as Peano arithmetic, because the principle of mathematical induction is expressed as an infinite set of axioms (an axiom schema).
+A formal theory is said to be effectively generated if its set of axioms is a recursively enumerable set. This means that there is a computer program that, in principle, could enumerate all the axioms of the theory without listing any statements that are not axioms. This is equivalent to the existence of a program to enumerate all the theorems of the theory without enumerating any statements that are not theorems. Examples of effectively generated theories with infinite sets of axioms include Peano arithmetic and Zermelo–Fraenkel set theory.
+In choosing a set of axioms, one goal is to be able to prove as many correct results as possible, without proving any incorrect results. A set of axioms is complete if, for any statement in the axioms' language, either that statement or its negation is provable from the axioms. A set of axioms is (simply) consistent if there is no statement such that both the statement and its negation are provable from the axioms. In the standard system of first-order logic, an inconsistent set of axioms will prove every statement in its language (this is sometimes called the principle of explosion), and is thus automatically complete. A set of axioms that is both complete and consistent, however, proves a maximal set of non-contradictory theorems. Gödel's incompleteness theorems show that in certain cases it is not possible to obtain an effectively generated, complete, consistent theory.
+[edit]First incompleteness theorem
+
+Gödel's first incompleteness theorem states that:
+Any effectively generated theory capable of expressing elementary arithmetic cannot be both consistent and complete. In particular, for any consistent, effectively generated formal theory that proves certain basic arithmetic truths, there is an arithmetical statement that is true,[1] but not provable in the theory (Kleene 1967, p. 250).
+The true but unprovable statement referred to by the theorem is often referred to as “the Gödel sentence” for the theory. It is not unique; there are infinitely many statements in the language of the theory that share the property of being true but unprovable.[2]
+For each consistent formal theory T having the required small amount of number theory, the corresponding Gödel sentence G asserts: “G cannot be proved to be true within the theory T”. If G were provable under the axioms and rules of inference of T, then T would have a theorem, G, which effectively contradicts itself, and thus the theory T would be inconsistent. This means that if the theory T is consistent then G cannot be proved within it, and so the theory T is incomplete. Moreover, G's claim about its own unprovability is correct. In this sense G is not only unprovable but true. Thus provability-within-the-theory-T is not the same as truth.
+Each effectively generated theory has its own Gödel statement. It is possible to define a larger theory T’ that contains the whole of T, plus G as an additional axiom. This will not result in a complete theory, because Gödel's theorem will also apply to T’, and thus T’ cannot be complete. In this case, G is indeed a theorem in T’, because it is an axiom. Since G states only that it is not provable in T, no contradiction is presented by its provability in T’. However, because the incompleteness theorem applies to T’: there will be a new Gödel statement G’ for T’, showing that T’ is also incomplete. G’ will differ from G in that G’ will refer to T’, rather than T.
+To prove the first incompleteness theorem, Gödel represented statements by numbers. Then the theory at hand, which is assumed to prove certain facts about numbers, also proves facts about its own statements, provided that it is effectively generated. Questions about the provability of statements are represented as questions about the properties of numbers, which would be decidable by the theory if it were complete. In these terms, the Gödel sentence states that no natural number exists with a certain, strange property. A number with this property would encode a proof of the inconsistency of the theory. If there were such a number then the theory would be inconsistent, contrary to the consistency hypothesis. So, under the assumption that the theory is consistent, there is no such number.
+[edit]Meaning of the first incompleteness theorem
+Gödel's first incompleteness theorem shows that any consistent formal system that includes enough of the theory of the natural numbers is incomplete: there are true statements expressible in its language that are unprovable. Thus no formal system (satisfying the hypotheses of the theorem) that aims to characterize the natural numbers can actually do so, as there will be true number-theoretical statements which that system cannot prove. This fact is sometimes thought to have severe consequences for the program of logicism proposed by Gottlob Frege and Bertrand Russell, which aimed to define the natural numbers in terms of logic (Hellman 1981, p. 451–468). Some (like Bob Hale and Crispin Wright) argue that it is not a problem for logicism because the incompleteness theorems apply equally to second order logic as they do to arithmetic. They argue that only those who believe that the natural numbers are to be defined in terms of first order logic have this problem.
+The existence of an incomplete formal system is, in itself, not particularly surprising. A system may be incomplete simply because not all the necessary axioms have been discovered. For example, Euclidean geometry without the parallel postulate is incomplete; it is not possible to prove or disprove the parallel postulate from the remaining axioms.
+Gödel's theorem shows that, in theories that include a small portion of number theory, a complete and consistent finite list of axioms can never be created, nor even an infinite list that can be enumerated by a computer program. Each time a new statement is added as an axiom, there are other true statements that still cannot be proved, even with the new axiom. If an axiom is ever added that makes the system complete, it does so at the cost of making the system inconsistent.
+There are complete and consistent list of axioms that cannot be enumerated by a computer program. For example, one might take all true statements about the natural numbers to be axioms (and no false statements), which gives the theory known as "true arithmetic". The difficulty is that there is no mechanical way to decide, given a statement about the natural numbers, whether it is an axiom of this theory, and thus there is no effective way to verify a formal proof in this theory.
+Many logicians believe that Gödel's incompleteness theorems struck a fatal blow to David Hilbert's second problem, which asked for a finitary consistency proof for mathematics. The second incompleteness theorem, in particular, is often viewed as making the problem impossible. Not all mathematicians agree with this analysis, however, and the status of Hilbert's second problem is not yet decided (see "Modern viewpoints on the status of the problem").
+[edit]Relation to the liar paradox
+The liar paradox is the sentence "This sentence is false." An analysis of the liar sentence shows that it cannot be true (for then, as it asserts, it is false), nor can it be false (for then, it is true). A Gödel sentence G for a theory T makes a similar assertion to the liar sentence, but with truth replaced by provability: G says "G is not provable in the theory T." The analysis of the truth and provability of G is a formalized version of the analysis of the truth of the liar sentence.
+It is not possible to replace "not provable" with "false" in a Gödel sentence because the predicate "Q is the Gödel number of a false formula" cannot be represented as a formula of arithmetic. This result, known as Tarski's undefinability theorem, was discovered independently by Gödel (when he was working on the proof of the incompleteness theorem) and by Alfred Tarski.
+[edit]Original statements
+The first incompleteness theorem first appeared as "Theorem VI" in Gödel's 1931 paper On Formally Undecidable Propositions in Principia Mathematica and Related Systems I. The second incompleteness theorem appeared as "Theorem XI" in the same paper.
+[edit]Extensions of Gödel's original result
+Gödel demonstrated the incompleteness of the theory of Principia Mathematica, a particular theory of arithmetic, but a parallel demonstration could be given for any effective theory of a certain expressiveness. Gödel commented on this fact in the introduction to his paper, but restricted the proof to one system for concreteness. In modern statements of the theorem, it is common to state the effectiveness and expressiveness conditions as hypotheses for the incompleteness theorem, so that it is not limited to any particular formal theory. The terminology used to state these conditions was not yet developed in 1931 when Gödel published his results.
+Gödel's original statement and proof of the incompleteness theorem requires the assumption that the theory is not just consistent but ω-consistent. A theory is ω-consistent if it is not ω-inconsistent, and is ω-inconsistent if there is a predicate P such that for every specific natural number n the theory proves ~P(n), and yet the theory also proves that there exists a natural number n such that P(n). That is, the theory says that a number with property P exists while denying that it has any specific value. The ω-consistency of a theory implies its consistency, but consistency does not imply ω-consistency. J. Barkley Rosser (1936) strengthened the incompleteness theorem by finding a variation of the proof (Rosser's trick) that only requires the theory to be consistent, rather than ω-consistent. This is mostly of technical interest, since all true formal theories of arithmetic (theories whose axioms are all true statements about natural numbers) are ω-consistent, and thus Gödel's theorem as originally stated applies to them. The stronger version of the incompleteness theorem that only assumes consistency, rather than ω-consistency, is now commonly known as Gödel's incompleteness theorem and as the Gödel–Rosser theorem.
+[edit]Second incompleteness theorem
+
+Gödel's second incompleteness theorem can be stated as follows:
+For any formal effectively generated theory T including basic arithmetical truths and also certain truths about formal provability, T includes a statement of its own consistency if and only if T is inconsistent.
+This strengthens the first incompleteness theorem, because the statement constructed in the first incompleteness theorem does not directly express the consistency of the theory. The proof of the second incompleteness theorem is obtained, essentially, by formalizing the proof of the first incompleteness theorem within the theory itself.
+A technical subtlety in the second incompleteness theorem is how to express the consistency of T as a formula in the language of T. There are many ways to do this, and not all of them lead to the same result. In particular, different formalizations of the claim that T is consistent may be inequivalent in T, and some may even be provable. For example, first-order Peano arithmetic (PA) can prove that the largest consistent subset of PA is consistent. But since PA is consistent, the largest consistent subset of PA is just PA, so in this sense PA "proves that it is consistent". What PA does not prove is that the largest consistent subset of PA is, in fact, the whole of PA. (The term "largest consistent subset of PA" is rather vague, but what is meant here is the largest consistent initial segment of the axioms of PA ordered according to some criteria; for example, by "Gödel numbers", the numbers encoding the axioms as per the scheme used by Gödel mentioned above).
+In the case of Peano arithmetic, or any familiar explicitly axiomatized theory T, it is possible to canonically define a formula Con(T) expressing the consistency of T; this formula expresses the property that "there does not exist a natural number coding a sequence of formulas, such that each formula is either one of the axioms of T, a logical axiom, or an immediate consequence of preceding formulas according to the rules of inference of first-order logic, and such that the last formula is a contradiction".
+The formalization of Con(T) depends on two factors: formalizing the notion of a sentence being derivable from a set of sentences and formalizing the notion of being an axiom of T. Formalizing derivability can be done in canonical fashion: given an arithmetical formula A(x) defining a set of axioms, one can canonically form a predicate ProvA(P) which expresses that P is provable from the set of axioms defined by A(x).
+In addition, the standard proof of the second incompleteness theorem assumes that ProvA(P) satisfies that Hilbert–Bernays provability conditions. Letting #(P) represent the Gödel number of a formula P, the derivability conditions say:
+If T proves P, then T proves ProvA(#(P)).
+T proves 1.; that is, T proves that if T proves P, then T proves ProvA(#(P)). In other words, T proves that ProvA(#(P)) implies ProvA(#(ProvA(#(P)))).
+T proves that if T proves that (P → Q) and T proves P then T proves Q. In other words, T proves that ProvA(#(P → Q)) and ProvA(#(P)) imply ProvA(#(Q)).
+[edit]Implications for consistency proofs
+Gödel's second incompleteness theorem also implies that a theory T1 satisfying the technical conditions outlined above cannot prove the consistency of any theory T2 which proves the consistency of T1. This is because such a theory T1 can prove that if T2 proves the consistency of T1, then T1 is in fact consistent. For the claim that T1 is consistent has form "for all numbers n, n has the decidable property of not being a code for a proof of contradiction in T1". If T1 were in fact inconsistent, then T2 would prove for some n that n is the code of a contradiction in T1. But if T2 also proved that T1 is consistent (that is, that there is no such n), then it would itself be inconsistent. This reasoning can be formalized in T1 to show that if T2 is consistent, then T1 is consistent. Since, by second incompleteness theorem, T1 does not prove its consistency, it cannot prove the consistency of T2 either.
+This corollary of the second incompleteness theorem shows that there is no hope of proving, for example, the consistency of Peano arithmetic using any finitistic means that can be formalized in a theory the consistency of which is provable in Peano arithmetic. For example, the theory of primitive recursive arithmetic (PRA), which is widely accepted as an accurate formalization of finitistic mathematics, is provably consistent in PA. Thus PRA cannot prove the consistency of PA. This fact is generally seen to imply that Hilbert's program, which aimed to justify the use of "ideal" (infinitistic) mathematical principles in the proofs of "real" (finitistic) mathematical statements by giving a finitistic proof that the ideal principles are consistent, cannot be carried out.[clarification needed]
+The corollary also indicates the epistemological relevance of the second incompleteness theorem. It would actually provide no interesting information if a theory T proved its consistency. This is because inconsistent theories prove everything, including their consistency. Thus a consistency proof of T in T would give us no clue as to whether T really is consistent; no doubts about the consistency of T would be resolved by such a consistency proof. The interest in consistency proofs lies in the possibility of proving the consistency of a theory T in some theory T’ which is in some sense less doubtful than T itself, for example weaker than T. For many naturally occurring theories T and T’, such as T = Zermelo–Fraenkel set theory and T’ = primitive recursive arithmetic, the consistency of T’ is provable in T, and thus T’ can't prove the consistency of T by the above corollary of the second incompleteness theorem.
+The second incompleteness theorem does not rule out consistency proofs altogether, only consistency proofs that could be formalized in the theory that is proved consistent. For example, Gerhard Gentzen proved the consistency of Peano arithmetic (PA) using the assumption that a certain ordinal called ε0 is actually wellfounded; see Gentzen's consistency proof. Gentzen's theorem spurred the development of ordinal analysis in proof theory.
+[edit]Examples of undecidable statements
+
+See also: List of statements undecidable in ZFC
+There are two distinct senses of the word "undecidable" in mathematics and computer science. The first of these is the proof-theoretic sense used in relation to Gödel's theorems, that of a statement being neither provable nor refutable in a specified deductive system. The second sense, which will not be discussed here, is used in relation to computability theory and applies not to statements but to decision problems, which are countably infinite sets of questions each requiring a yes or no answer. Such a problem is said to be undecidable if there is no computable function that correctly answers every question in the problem set (see undecidable problem).
+Because of the two meanings of the word undecidable, the term independent is sometimes used instead of undecidable for the "neither provable nor refutable" sense. The usage of "independent" is also ambiguous, however. Some use it to mean just "not provable", leaving open whether an independent statement might be refuted.
+Undecidability of a statement in a particular deductive system does not, in and of itself, address the question of whether the truth value of the statement is well-defined, or whether it can be determined by other means. Undecidability only implies that the particular deductive system being considered does not prove the truth or falsity of the statement. Whether there exist so-called "absolutely undecidable" statements, whose truth value can never be known or is ill-specified, is a controversial point in the philosophy of mathematics.
+The combined work of Gödel and Paul Cohen has given two concrete examples of undecidable statements (in the first sense of the term): The continuum hypothesis can neither be proved nor refuted in ZFC (the standard axiomatization of set theory), and the axiom of choice can neither be proved nor refuted in ZF (which is all the ZFC axioms except the axiom of choice). These results do not require the incompleteness theorem. Gödel proved in 1940 that neither of these statements could be disproved in ZF or ZFC set theory. In the 1960s, Cohen proved that neither is provable from ZF, and the continuum hypothesis cannot be proven from ZFC.
+In 1973, the Whitehead problem in group theory was shown to be undecidable, in the first sense of the term, in standard set theory.
+In 1977, Paris and Harrington proved that the Paris-Harrington principle, a version of the Ramsey theorem, is undecidable in the first-order axiomatization of arithmetic called Peano arithmetic, but can be proven to be true in the larger system of second-order arithmetic. Kirby and Paris later showed Goodstein's theorem, a statement about sequences of natural numbers somewhat simpler than the Paris-Harrington principle, to be undecidable in Peano arithmetic.
+Kruskal's tree theorem, which has applications in computer science, is also undecidable from Peano arithmetic but provable in set theory. In fact Kruskal's tree theorem (or its finite form) is undecidable in a much stronger system codifying the principles acceptable on the basis of a philosophy of mathematics called predicativism. The related but more general graph minor theorem (2003) has consequences for computational complexity theory.
+Gregory Chaitin produced undecidable statements in algorithmic information theory and proved another incompleteness theorem in that setting. Chaitin's theorem states that for any theory that can represent enough arithmetic, there is an upper bound c such that no specific number can be proven in that theory to have Kolmogorov complexity greater than c. While Gödel's theorem is related to the liar paradox, Chaitin's result is related to Berry's paradox.
+[edit]Limitations of Gödel's theorems
+
+The conclusions of Gödel's theorems are only proven for the formal theories that satisfy the necessary hypotheses. Not all axiom systems satisfy these hypotheses, even when these systems have models that include the natural numbers as a subset. For example, there are first-order axiomatizations of Euclidean geometry, of real closed fields, and of arithmetic in which multiplication is not provably total; none of these meet the hypotheses of Gödel's theorems. The key fact is that these axiomatizations are not expressive enough to define the set of natural numbers or develop basic properties of the natural numbers. Regarding the third example, Dan E. Willard (Willard 2001) has studied many weak systems of arithmetic which do not satisfy the hypotheses of the second incompleteness theorem, and which are consistent and capable of proving their own consistency (see self-verifying theories).
+Gödel's theorems only apply to effectively generated (that is, recursively enumerable) theories. If all true statements about natural numbers are taken as axioms for a theory, then this theory is a consistent, complete extension of Peano arithmetic (called true arithmetic) for which none of Gödel's theorems hold, because this theory is not recursively enumerable.
+The second incompleteness theorem only shows that the consistency of certain theories cannot be proved from the axioms of those theories themselves. It does not show that the consistency cannot be proved from other (consistent) axioms. For example, the consistency of the Peano arithmetic can be proved in Zermelo–Fraenkel set theory (ZFC), or in theories of arithmetic augmented with transfinite induction, as in Gentzen's consistency proof.
+[edit]Relationship with computability
+
+The incompleteness theorem is closely related to several results about undecidable sets in recursion theory.
+Stephen Cole Kleene (1943) presented a proof of Gödel's incompleteness theorem using basic results of computability theory. One such result shows that the halting problem is unsolvable: there is no computer program that can correctly determine, given a program P as input, whether P eventually halts when run with some given input. Kleene showed that the existence of a complete effective theory of arithmetic with certain consistency properties would force the halting problem to be decidable, a contradiction. This method of proof has also been presented by Shoenfield (1967, p. 132); Charlesworth (1980); and Hopcroft and Ullman (1979).
+Franzén (2005, p. 73) explains how Matiyasevich's solution to Hilbert's 10th problem can be used to obtain a proof to Gödel's first incompleteness theorem. Matiyasevich proved that there is no algorithm that, given a multivariate polynomial p(x1, x2,...,xk) with integer coefficients, determines whether there is an integer solution to the equation p = 0. Because polynomials with integer coefficients, and integers themselves, are directly expressible in the language of arithmetic, if a multivariate integer polynomial equation p = 0 does have a solution in the integers then any sufficiently strong theory of arithmetic T will prove this. Moreover, if the theory T is ω-consistent, then it will never prove that some polynomial equation has a solution when in fact there is no solution in the integers. Thus, if T were complete and ω-consistent, it would be possible to algorithmically determine whether a polynomial equation has a solution by merely enumerating proofs of T until either "p has a solution" or "p has no solution" is found, in contradiction to Matiyasevich's theorem.
+Smorynski (1977, p. 842) shows how the existence of recursively inseparable sets can be used to prove the first incompleteness theorem. This proof is often extended to show that systems such as Peano arithmetic are essentially undecidable (see Kleene 1967, p. 274).
+[edit]Proof sketch for the first theorem
+
+Main article: Proof sketch for Gödel's first incompleteness theorem
+Throughout the proof we assume a formal system is fixed and satisfies the necessary hypotheses. The proof has three essential parts. The first part is to show that statements can be represented by natural numbers, known as Gödel numbers, and that properties of the statements can be detected by examining their Gödel numbers. This part culminates in the construction of a formula expressing the idea that a statement is provable in the system. The second part of the proof is to construct a particular statement that, essentially, says that it is unprovable. The third part of the proof is to analyze this statement to show that it is neither provable nor disprovable in the system.
+[edit]Arithmetization of syntax
+The main problem in fleshing out the proof described above is that it seems at first that to construct a statement p that is equivalent to "p cannot be proved", p would have to somehow contain a reference to p, which could easily give rise to an infinite regress. Gödel's ingenious trick, which was later used by Alan Turing in his work on the Entscheidungsproblem, is to represent statements as numbers, which is often called the arithmetization of syntax. This allows a self-referential formula to be constructed in a way that avoids any infinite regress of definitions.
+To begin with, every formula or statement that can be formulated in our system gets a unique number, called its Gödel number. This is done in such a way that it is easy to mechanically convert back and forth between formulas and Gödel numbers. It is similar, for example, to the way English sentences are encoded as sequences (or "strings") of numbers using ASCII: such a sequence is considered as a single (if potentially very large) number. Because our system is strong enough to reason about numbers, it is now also possible to reason about formulas within the system.
+A formula F(x) that contains exactly one free variable x is called a statement form or class-sign. As soon as x is replaced by a specific number, the statement form turns into a bona fide statement, and it is then either provable in the system, or not. For certain formulas one can show that for every natural number n, F(n) is true if and only if it can be proven (the precise requirement in the original proof is weaker, but for the proof sketch this will suffice). In particular, this is true for every specific arithmetic operation between a finite number of natural numbers, such as "2×3=6".
+Statement forms themselves are not statements and therefore cannot be proved or disproved. But every statement form F(x) can be assigned with a Gödel number which we will denote by G(F). The choice of the free variable used in the form F(x) is not relevant to the assignment of the Gödel number G(F).
+Now comes the trick: The notion of provability itself can also be encoded by Gödel numbers, in the following way. Since a proof is a list of statements which obey certain rules, we can define the Gödel number of a proof. Now, for every statement p, we may ask whether a number x is the Gödel number of its proof. The relation between the Gödel number of p and x, the Gödel number of its proof, is an arithmetical relation between two numbers. Therefore there is a statement form Bew(x) that uses this arithmetical relation to state that a Gödel number of a proof of x exists:
+Bew(y) = ∃ x ( y is the Gödel number of a formula and x is the Gödel number of a proof of the formula encoded by y).
+The name Bew is short for beweisbar, the German word for "provable"; this name was originally used by Gödel to denote the provability formula just described. Note that "Bew(y)" is merely an abbreviation that represents a particular, very long, formula in the original language of T; the string "Bew" itself is not claimed to be part of this language.
+An important feature of the formula Bew(y) is that if a statement p is provable in the system then Bew(G(p)) is also provable. This is because any proof of p would have a corresponding Gödel number, the existence of which causes Bew(G(p)) to be satisfied.
+[edit]Diagonalization
+The next step in the proof is to obtain a statement that says it is unprovable. Although Gödel constructed this statement directly, the existence of at least one such statement follows from the diagonal lemma, which says that for any sufficiently strong formal system and any statement form F there is a statement p such that the system proves
+p ↔ F(G(p)).
+We obtain p by letting F be the negation of Bew(x); thus p roughly states that its own Gödel number is the Gödel number of an unprovable formula.
+The statement p is not literally equal to ~Bew(G(p)); rather, p states that if a certain calculation is performed, the resulting Gödel number will be that of an unprovable statement. But when this calculation is performed, the resulting Gödel number turns out to be the Gödel number of p itself. This is similar to the following sentence in English:
+", when preceded by itself in quotes, is unprovable.", when preceded by itself in quotes, is unprovable.
+This sentence does not directly refer to itself, but when the stated transformation is made the original sentence is obtained as a result, and thus this sentence asserts its own unprovability. The proof of the diagonal lemma employs a similar method.
+[edit]Proof of independence
+We will now assume that our axiomatic system is ω-consistent. We let p be the statement obtained in the previous section.
+If p were provable, then Bew(G(p)) would be provable, as argued above. But p asserts the negation of Bew(G(p)). Thus our system would be inconsistent, proving both a statement and its negation. This contradiction shows that p cannot be provable.
+If the negation of p were provable, then Bew(G(p)) would be provable (because p was constructed to be equivalent to the negation of Bew(G(p))). However, for each specific number x, x cannot be the Gödel number of the proof of p, because p is not provable (from the previous paragraph). Thus on one hand the system proves there is a number with a certain property (that it is the Gödel number of the proof of p), but on the other hand, for every specific number x, we can prove that it does not have this property. This is impossible in an ω-consistent system. Thus the negation of p is not provable.
+Thus the statement p is undecidable: it can neither be proved nor disproved within the system.
+It should be noted that p is not provable (and thus true) in every consistent system. The assumption of ω-consistency is only required for the negation of p to be not provable. Thus:
+In an ω-consistent formal system, we may prove neither p nor its negation, and so p is undecidable.
+In a consistent formal system we may either have the same situation, or we may prove the negation of p; In the later case, we have a statement ("not p") which is false but provable.
+Note that if one tries to "add the missing axioms" to avoid the undecidability of the system, then one has to add either p or "not p" as axioms. But then the definition of "being a Gödel number of a proof" of a statement changes. which means that the statement form Bew(x) is now different. Thus when we apply the diagonal lemma to this new form Bew, we obtain a new statement p, different from the previous one, which will be undecidable in the new system if it is ω-consistent.
+[edit]Proof via Berry's paradox
+George Boolos (1989) sketches an alternative proof of the first incompleteness theorem that uses Berry's paradox rather than the liar paradox to construct a true but unprovable formula. A similar proof method was independently discovered by Saul Kripke (Boolos 1998, p. 383). Boolos's proof proceeds by constructing, for any computably enumerable set S of true sentences of arithmetic, another sentence which is true but not contained in S. This gives the first incompleteness theorem as a corollary. According to Boolos, this proof is interesting because it provides a "different sort of reason" for the incompleteness of effective, consistent theories of arithmetic (Boolos 1998, p. 388).
+[edit]Formalized proofs
+Formalized proofs of versions of the incompleteness theorem have been developed by Natarajan Shankar in 1986 using Nqthm (Shankar 1994) and by R. O'Connor in 2003 using Coq (O'Connor 2005).
+[edit]Proof sketch for the second theorem
+
+The main difficulty in proving the second incompleteness theorem is to show that various facts about provability used in the proof of the first incompleteness theorem can be formalized within the system using a formal predicate for provability. Once this is done, the second incompleteness theorem essentially follows by formalizing the entire proof of the first incompleteness theorem within the system itself.
+Let p stand for the undecidable sentence constructed above, and assume that the consistency of the system can be proven from within the system itself. We have seen above that if the system is consistent, then p is not provable. The proof of this implication can be formalized within the system, and therefore the statement "p is not provable", or "not P(p)" can be proven in the system.
+But this last statement is equivalent to p itself (and this equivalence can be proven in the system), so p can be proven in the system. This contradiction shows that the system must be inconsistent.
+[edit]Discussion and implications
+
+The incompleteness results affect the philosophy of mathematics, particularly versions of formalism, which use a single system formal logic to define their principles. One can paraphrase the first theorem as saying the following:
+We can never find an all-encompassing axiomatic system which is able to prove all mathematical truths, but no falsehoods.
+On the other hand, from a strict formalist perspective this paraphrase would be considered meaningless because it presupposes that mathematical "truth" and "falsehood" are well-defined in an absolute sense, rather than relative to each formal system.
+The following rephrasing of the second theorem is even more unsettling to the foundations of mathematics:
+If an axiomatic system can be proven to be consistent from within itself, then it is inconsistent.
+Therefore, to establish the consistency of a system S, one needs to use some other more powerful system T, but a proof in T is not completely convincing unless T's consistency has already been established without using S.
+Theories such as Peano arithmetic, for which any computably enumerable consistent extension is incomplete, are called essentially undecidable or essentially incomplete.
+[edit]Minds and machines
+Main article: Mechanism (philosophy)#Gödelian arguments
+Authors including J. R. Lucas have debated what, if anything, Gödel's incompleteness theorems imply about human intelligence. Much of the debate centers on whether the human mind is equivalent to a Turing machine, or by the Church–Turing thesis, any finite machine at all. If it is, and if the machine is consistent, then Gödel's incompleteness theorems would apply to it.
+Hilary Putnam (1960) suggested that while Gödel's theorems cannot be applied to humans, since they make mistakes and are therefore inconsistent, it may be applied to the human faculty of science or mathematics in general. If we are to assume that it is consistent, then either we cannot prove its consistency, or it cannot be represented by a Turing machine.
+Avi Wigderson (2010) has proposed that the concept of mathematical "knowability" should be based on computational complexity rather than logical decidability. He writes that "when knowability is interpreted by modern standards, namely via computational complexity, the Gödel phenomena are very much with us."
+[edit]Paraconsistent logic
+Although Gödel's theorems are usually studied in the context of classical logic, they also have a role in the study of paraconsistent logic and of inherently contradictory statements (dialethia). Graham Priest (1984, 2006) argues that replacing the notion of formal proof in Gödel's theorem with the usual notion of informal proof can be used to show that naive mathematics is inconsistent, and uses this as evidence for dialethism. The cause of this inconsistency is the inclusion of a truth predicate for a theory within the language of the theory (Priest 2006:47). Stewart Shapiro (2002) gives a more mixed appraisal of the applications of Gödel's theorems to dialethism. Carl Hewitt (2008) has proposed that (inconsistent) paraconsistent logics that prove their own Gödel sentences may have applications in software engineering.
+[edit]Appeals to the incompleteness theorems in other fields
+Appeals and analogies are sometimes made to the incompleteness theorems in support of arguments that go beyond mathematics and logic. A number of authors have commented negatively on such extensions and interpretations, including Torkel Franzén (2005); Alan Sokal and Jean Bricmont (1999); and Ophelia Benson and Jeremy Stangroom (2006). Bricmont and Stangroom (2006, p. 10), for example, quote from Rebecca Goldstein's comments on the disparity between Gödel's avowed Platonism and the anti-realist uses to which his ideas are sometimes put. Sokal and Bricmont (1999, p. 187) criticize Régis Debray's invocation of the theorem in the context of sociology; Debray has defended this use as metaphorical (ibid.).
+[edit]The role of self-reference
+Torkel Franzén (2005, p. 46) observes:
+Gödel's proof of the first incompleteness theorem and Rosser's strengthened version have given many the impression that the theorem can only be proved by constructing self-referential statements [...] or even that only strange self-referential statements are known to be undecidable in elementary arithmetic. To counteract such impressions, we need only introduce a different kind of proof of the first incompleteness theorem.
+He then proposes the proofs based on Computability, or on information theory, as described earlier in this article, as examples of proofs that should "counteract such impressions".
+[edit]History
+
+After Gödel published his proof of the completeness theorem as his doctoral thesis in 1929, he turned to a second problem for his habilitation. His original goal was to obtain a positive solution to Hilbert's second problem (Dawson 1997, p. 63). At the time, theories of the natural numbers and real numbers similar to second-order arithmetic were known as "analysis", while theories of the natural numbers alone were known as "arithmetic".
+Gödel was not the only person working on the consistency problem. Ackermann had published a flawed consistency proof for analysis in 1925, in which he attempted to use the method of ε-substitution originally developed by Hilbert. Later that year, von Neumann was able to correct the proof for a theory of arithmetic without any axioms of induction. By 1928, Ackermann had communicated a modified proof to Bernays; this modified proof led Hilbert to announce his belief in 1929 that the consistency of arithmetic had been demonstrated and that a consistency proof of analysis would likely soon follow. After the publication of the incompleteness theorems showed that Ackermann's modified proof must be erroneous, von Neumann produced a concrete example showing that its main technique was unsound (Zach 2006, p. 418, Zach 2003, p. 33).
+In the course of his research, Gödel discovered that although a sentence which asserts its own falsehood leads to paradox, a sentence that asserts its own non-provability does not. In particular, Gödel was aware of the result now called Tarski's indefinability theorem, although he never published it. Gödel announced his first incompleteness theorem to Carnap, Feigel and Waismann on August 26, 1930; all four would attend a key conference in Königsberg the following week.
+[edit]Announcement
+The 1930 Königsberg conference was a joint meeting of three academic societies, with many of the key logicians of the time in attendance. Carnap, Heyting, and von Neumann delivered one-hour addresses on the mathematical philosophies of logicism, intuitionism, and formalism, respectively (Dawson 1996, p. 69). The conference also included Hilbert's retirement address, as he was leaving his position at the University of Göttingen. Hilbert used the speech to argue his belief that all mathematical problems can be solved. He ended his address by saying,
+"For the mathematician there is no Ignorabimus, and, in my opinion, not at all for natural science either. ... The true reason why [no one] has succeeded in finding an unsolvable problem is, in my opinion, that there is no unsolvable problem. In contrast to the foolish Ignoramibus, our credo avers: We must know. We shall know!"
+This speech quickly became known as a summary of Hilbert's beliefs on mathematics (its final six words, "Wir müssen wissen. Wir werden wissen!", were used as Hilbert's epitaph in 1943). Although Gödel was likely in attendance for Hilbert's address, the two never met face to face (Dawson 1996, p. 72).
+Gödel announced his first incompleteness theorem at a roundtable discussion session on the third day of the conference. The announcement drew little attention apart from that of von Neumann, who pulled Gödel aside for conversation. Later that year, working independently with knowledge of the first incompleteness theorem, von Neumann obtained a proof of the second incompleteness theorem, which he announced to Gödel in a letter dated November 20, 1930 (Dawson 1996, p. 70). Gödel had independently obtained the second incompleteness theorem and included it in his submitted manuscript, which was received by Monatshefte für Mathematik on November 17, 1930.
+Gödel's paper was published in the Monatshefte in 1931 under the title Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I (On Formally Undecidable Propositions in Principia Mathematica and Related Systems I). As the title implies, Gödel originally planned to publish a second part of the paper; it was never written.
+[edit]Generalization and acceptance
+Gödel gave a series of lectures on his theorems at Princeton in 1933–1934 to an audience that included Church, Kleene, and Rosser. By this time, Gödel had grasped that the key property his theorems required is that the theory must be effective (at the time, the term "general recursive" was used). Rosser proved in 1936 that the hypothesis of ω-consistency, which was an integral part of Gödel's original proof, could be replaced by simple consistency, if the Gödel sentence was changed in an appropriate way. These developments left the incompleteness theorems in essentially their modern form.
+Gentzen published his consistency proof for first-order arithmetic in 1936. Hilbert accepted this proof as "finitary" although (as Gödel's theorem had already shown) it cannot be formalized within the system of arithmetic that is being proved consistent.
+The impact of the incompleteness theorems on Hilbert's program was quickly realized. Bernays included a full proof of the incompleteness theorems in the second volume of Grundlagen der Mathematik (1939), along with additional results of Ackermann on the ε-substitution method and Gentzen's consistency proof of arithmetic. This was the first full published proof of the second incompleteness theorem.
+[edit]Criticism
+In September 1931, Ernst Zermelo wrote Gödel to announce what he described as an "essential gap" in Gödel’s argument (Dawson:76). In October, Gödel replied with a 10-page letter (Dawson:76, Grattain-Guinness:512-513). But Zermelo did not relent and published his criticisms in print with “a rather scathing paragraph on his young competitor” (Grattain-Guinees:513). Gödel decided that to pursue the matter further was pointless, and Carnap agreed (Dawson:77). Much of Zermelo's subsequent work was related to logics stronger than first-order logic, with which he hoped to show both the consistency and categoricity of mathematical theories.
+Paul Finsler (1926) used a version of Richard's paradox to construct an expression that was false but unprovable in a particular, informal framework he had developed. Gödel was unaware of this paper when he proved the incompleteness theorems (Collected Works Vol. IV., p. 9). Finsler wrote Gödel in 1931 to inform him about this paper, which Finsler felt had priority for an incompleteness theorem. Finsler's methods did not rely on formalized provability, and had only a superficial resemblance to Gödel's work (van Heijenoort 1967:328). Gödel read the paper but found it deeply flawed, and his response to Finsler laid out concerns about the lack of formalization (Dawson:89). Finsler continued to argue for his philosophy of mathematics, which eschewed formalization, for the remainder of his career.
+[edit]Wittgenstein and Gödel
+Ludwig Wittgenstein wrote several passages about the incompleteness theorems that were published posthumously in his 1953 Remarks on the Foundations of Mathematics. Because Wittgenstein's Tractatus (1921) was extremely influential, particularly with logicists such as Bertrand Russell, the new remarks were of great interest, although they had not been finalized by Wittgenstein prior to his death.
+Bernays, Dummett, and Kreisel wrote separate reviews on Wittgenstein's remarks, all of which were extremely negative (Berto 2009:208). The unanimity of this criticism caused Wittgenstein's remarks on the incompleteness theorems to have little impact on the logic community. In 1972, Gödel wrote to Karl Menger that Wittgenstein's comments demonstrate a fundamental misunderstanding of the incompleteness theorems.
+"It is clear from the passages you cite that Wittgenstein did "not" understand [the first incompleteness theorem] (or pretended not to understand it). He interpreted it as a kind of logical paradox, while in fact is just the opposite, namely a mathematical theorem within an absolutely uncontroversial part of mathematics (finitary number theory or combinatorics)." (Wang 1996:197)
+Since the publication of Wittgenstein's Nachlass in 2000, a series of papers in philosophy have sought to evaluate whether the original criticism of Wittgenstein's remarks was justified. Floyd and Putnam (2000) argue that Wittgenstein had a more complete understanding of the incompleteness theorem than was previously assumed. They are particularly concerned with the interpretation of a Gödel sentence for an ω-inconsistent theory as actually saying "I am not provable", since the theory has no models in which the provability predicate corresponds to actual provability. Rodych (2003) argues that their interpretation of Wittgenstein is not historically justified, while Bays (2004) argues against Floyd and Putnam's philosophical analysis of the provability predicate. Berto (2009) explores the relationship between Wittgenstein's writing and theories of paraconsistent logic.
+[edit]See also
+
+Gödel's completeness theorem
+Löb's Theorem
+Provability logic
+Münchhausen Trilemma
+Non-standard model of arithmetic
+Tarski's undefinability theorem
+Minds, Machines and Gödel
+Third Man Argument
+[edit]Notes
+
+^ The word "true" is used disquotationally here: the Gödel sentence is true in this sense because it "asserts its own unprovability and it is indeed unprovable" (Smoryński 1977 p. 825; also see Franzén 2005 pp. 28–33). It is also possible to read "GT is true" in the formal sense that primitive recursive arithmetic proves the implication Con(T)→GT, where Con(T) is a canonical sentence asserting the consistency of T (Smoryński 1977 p. 840, Kikuchi and Tanaka 1994 p. 403)
+^ For example, the conjunction of the Gödel sentence and any logically valid sentence will have this property.
+[edit]References
+
+[edit]Articles by Gödel
+1931, Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme, I. Monatshefte für Mathematik und Physik 38: 173-98.
+Hirzel, Martin, 2000, On formally undecidable propositions of Principia Mathematica and related systems I.. A modern translation by the author.
+1951, Some basic theorems on the foundations of mathematics and their implications in Solomon Feferman, ed., 1995. Collected works / Kurt Gödel, Vol. III. Oxford University Press: 304-23.
+[edit]Translations, during his lifetime, of Gödel’s paper into English
+None of the following agree in all translated words and in typography. The typography is a serious matter, because Gödel expressly wished to emphasize “those metamathematical notions that had been defined in their usual sense before . . ."(van Heijenoort 1967:595). Three translations exist. Of the first John Dawson states that: “The Meltzer translation was seriously deficient and received a devastating review in the Journal of Symbolic Logic; ”Gödel also complained about Braithwaite’s commentary (Dawson 1997:216). “Fortunately, the Meltzer translation was soon supplanted by a better one prepared by Elliott Mendelson for Martin Davis’s anthology The Undecidable . . . he found the translation “not quite so good” as he had expected . . . [but because of time constraints he] agreed to its publication” (ibid). (In a footnote Dawson states that “he would regret his compliance, for the published volume was marred throughout by sloppy typography and numerous misprints” (ibid)). Dawson states that “The translation that Gödel favored was that by Jean van Heijenoort”(ibid). For the serious student another version exists as a set of lecture notes recorded by Stephen Kleene and J. B. Rosser "during lectures given by Gödel at to the Institute for Advanced Study during the spring of 1934" (cf commentary by Davis 1965:39 and beginning on p. 41); this version is titled "On Undecidable Propositions of Formal Mathematical Systems". In their order of publication:
+B. Meltzer (translation) and R. B. Braithwaite (Introduction), 1962. On Formally Undecidable Propositions of Principia Mathematica and Related Systems, Dover Publications, New York (Dover edition 1992), ISBN 0-486-66980-7 (pbk.) This contains a useful translation of Gödel's German abbreviations on pp. 33–34. As noted above, typography, translation and commentary is suspect. Unfortunately, this translation was reprinted with all its suspect content by
+Stephen Hawking editor, 2005. God Created the Integers: The Mathematical Breakthroughs That Changed History, Running Press, Philadelphia, ISBN 0-7624-1922-9. Gödel’s paper appears starting on p. 1097, with Hawking’s commentary starting on p. 1089.
+Martin Davis editor, 1965. The Undecidable: Basic Papers on Undecidable Propositions, Unsolvable problems and Computable Functions, Raven Press, New York, no ISBN. Gödel’s paper begins on page 5, preceded by one page of commentary.
+Jean van Heijenoort editor, 1967, 3rd edition 1967. From Frege to Gödel: A Source Book in Mathematical Logic, 1979-1931, Harvard University Press, Cambridge Mass., ISBN 0-674-32449-8 (pbk). van Heijenoort did the translation. He states that “Professor Gödel approved the translation, which in many places was accommodated to his wishes.”(p. 595). Gödel’s paper begins on p. 595; van Heijenoort’s commentary begins on p. 592.
+Martin Davis editor, 1965, ibid. "On Undecidable Propositions of Formal Mathematical Systems." A copy with Gödel's corrections of errata and Gödel's added notes begins on page 41, preceded by two pages of Davis's commentary. Until Davis included this in his volume this lecture existed only as mimeographed notes.
+[edit]Articles by others
+George Boolos, 1989, "A New Proof of the Gödel Incompleteness Theorem", Notices of the American Mathematical Society v. 36, pp. 388–390 and p. 676, reprinted in Boolos, 1998, Logic, Logic, and Logic, Harvard Univ. Press. ISBN 0 674 53766 1
+Arthur Charlesworth, 1980, "A Proof of Godel's Theorem in Terms of Computer Programs," Mathematics Magazine, v. 54 n. 3, pp. 109–121. JStor
+Martin Davis, "The Incompleteness Theorem", in Notices of the AMS vol. 53 no. 4 (April 2006), p. 414.
+Jean van Heijenoort, 1963. "Gödel's Theorem" in Edwards, Paul, ed., Encyclopedia of Philosophy, Vol. 3. Macmillan: 348-57.
+Geoffrey Hellman, How to Gödel a Frege-Russell: Gödel's Incompleteness Theorems and Logicism. Noûs, Vol. 15, No. 4, Special Issue on Philosophy of Mathematics. (Nov., 1981), pp. 451–468.
+David Hilbert, 1900, "Mathematical Problems." English translation of a lecture delivered before the International Congress of Mathematicians at Paris, containing Hilbert's statement of his Second Problem.
+Kikuchi, Makoto; Tanaka, Kazuyuki (1994), "On formalization of model-theoretic proofs of Gödel's theorems", Notre Dame Journal of Formal Logic 35 (3): 403–412, doi:10.1305/ndjfl/1040511346, MR1326122, ISSN 0029-4527
+Stephen Cole Kleene, 1943, "Recursive predicates and quantifiers," reprinted from Transactions of the American Mathematical Society, v. 53 n. 1, pp. 41–73 in Martin Davis 1965, The Undecidable (loc. cit.) pp. 255–287.
+John Barkley Rosser, 1936, "Extensions of some theorems of Gödel and Church," reprinted from the Journal of Symbolic Logic vol. 1 (1936) pp. 87–91, in Martin Davis 1965, The Undecidable (loc. cit.) pp. 230–235.
+John Barkley Rosser, 1939, "An Informal Exposition of proofs of Gödel's Theorem and Church's Theorem", Reprinted from the Journal of Symbolic Logic, vol. 4 (1939) pp. 53–60, in Martin Davis 1965, The Undecidable (loc. cit.) pp. 223–230
+C. Smoryński, "The incompleteness theorems", in J. Barwise, ed., Handbook of Mathematical Logic, North-Holland 1982 ISBN 978-0444863881, pp. 821–866.
+Dan E. Willard (2001), "Self-Verifying Axiom Systems, the Incompleteness Theorem and Related Reflection Principles", Journal of Symbolic Logic, v. 66 n. 2, pp. 536–596. doi:10.2307/2695030
+Zach, Richard (2003), "The Practice of Finitism: Epsilon Calculus and Consistency Proofs in Hilbert's Program", Synthese (Berlin, New York: Springer-Verlag) 137 (1): 211–259, doi:10.1023/A:1026247421383, ISSN 0039-7857, http://www.ucalgary.ca/~rzach/static/conprf.pdf
+Richard Zach, 2005, "Paper on the incompleteness theorems" in Grattan-Guinness, I., ed., Landmark Writings in Western Mathematics. Elsevier: 917-25.
+[edit]Books about the theorems
+Francesco Berto. There's Something about Gödel: The Complete Guide to the Incompleteness Theorem John Wiley and Sons. 2010.
+Domeisen, Norbert, 1990. Logik der Antinomien. Bern: Peter Lang. 142 S. 1990. ISBN 3-261-04214-1. Zentralblatt MATH
+Torkel Franzén, 2005. Gödel's Theorem: An Incomplete Guide to its Use and Abuse. A.K. Peters. ISBN 1568812388 MR2007d:03001
+Douglas Hofstadter, 1979. Gödel, Escher, Bach: An Eternal Golden Braid. Vintage Books. ISBN 0465026850. 1999 reprint: ISBN 0465026567. MR80j:03009
+Douglas Hofstadter, 2007. I Am a Strange Loop. Basic Books. ISBN 9780465030781. ISBN 0465030785. MR2008g:00004
+Stanley Jaki, OSB, 2005. The drama of the quantities. Real View Books.
+Per Lindström, 1997, Aspects of Incompleteness, Lecture Notes in Logic v. 10.
+J.R. Lucas, FBA, 1970. The Freedom of the Will. Clarendon Press, Oxford, 1970.
+Ernest Nagel, James Roy Newman, Douglas Hofstadter, 2002 (1958). Gödel's Proof, revised ed. ISBN 0814758169. MR2002i:03001
+Rudy Rucker, 1995 (1982). Infinity and the Mind: The Science and Philosophy of the Infinite. Princeton Univ. Press. MR84d:03012
+Smith, Peter, 2007. An Introduction to Gödel's Theorems. Cambridge University Press. MathSciNet
+N. Shankar, 1994. Metamathematics, Machines and Gödel's Proof, Volume 38 of Cambridge tracts in theoretical computer science. ISBN 0521585333
+Raymond Smullyan, 1991. Godel's Incompleteness Theorems. Oxford Univ. Press.
+—, 1994. Diagonalization and Self-Reference. Oxford Univ. Press. MR96c:03001
+Hao Wang, 1997. A Logical Journey: From Gödel to Philosophy. MIT Press. ISBN 0262231891 MR97m:01090
+[edit]Miscellaneous references
+Francesco Berto. "The Gödel Paradox and Wittgenstein's Reasons" Philosophia Mathematica (III) 17. 2009.
+John W. Dawson, Jr., 1997. Logical Dilemmas: The Life and Work of Kurt Gödel, A.K. Peters, Wellesley Mass, ISBN 1-56881-256-6.
+Goldstein, Rebecca, 2005, Incompleteness: the Proof and Paradox of Kurt Gödel, W. W. Norton & Company. ISBN 0-393-05169-2
+Juliet Floyd and Hilary Putnam, 2000, "A Note on Wittgenstein's 'Notorious Paragraph' About the Gödel Theorem", Journal of Philosophy v. 97 n. 11, pp. 624–632.
+Carl Hewitt, 2008, "Large-scale Organizational Computing requires Unstratified Reflection and Strong Paraconsistency", Coordination, Organizations, Institutions, and Norms in Agent Systems III, Springer-Verlag.
+David Hilbert and Paul Bernays, Grundlagen der Mathematik, Springer-Verlag.
+John Hopcroft and Jeffrey Ullman 1979, Introduction to Automata theory, Addison-Wesley, ISBN 0-201-02988-X
+Stephen Cole Kleene, 1967, Mathematical Logic. Reprinted by Dover, 2002. ISBN 0-486-42533-9
+Graham Priest, 2006, In Contradiction: A Study of the Transconsistent, Oxford University Press, ISBN 0-199-26329-9
+Graham Priest, 1984, "Logic of Paradox Revisited", Journal of Philosophical Logic, v. 13, n. 2, pp. 153–179
+Hilary Putnam, 1960, Minds and Machines in Sidney Hook, ed., Dimensions of Mind: A Symposium. New York University Press. Reprinted in Anderson, A. R., ed., 1964. Minds and Machines. Prentice-Hall: 77.
+Russell O'Connor, 2005, "Essential Incompleteness of Arithmetic Verified by Coq", Lecture Notes in Computer Science v. 3603, pp. 245–260.
+Victor Rodych, 2003, "Misunderstanding Gödel: New Arguments about Wittgenstein and New Remarks by Wittgenstein", Dialectica v. 57 n. 3, pp. 279–313. doi:10.1111/j.1746-8361.2003.tb00272.x
+Stewart Shapiro, 2002, "Incompleteness and Inconsistency", Mind, v. 111, pp 817–32. doi:10.1093/mind/111.444.817
+Alan Sokal and Jean Bricmont, 1999, Fashionable Nonsense: Postmodern Intellectuals' Abuse of Science, Picador. ISBN 0-31-220407-8
+Joseph R. Shoenfield (1967), Mathematical Logic. Reprinted by A.K. Peters for the Association of Symbolic Logic, 2001. ISBN 978-156881135-2
+Jeremy Stangroom and Ophelia Benson, Why Truth Matters, Continuum. ISBN 0-82-649528-1
+George Tourlakis, Lectures in Logic and Set Theory, Volume 1, Mathematical Logic, Cambridge University Press, 2003. ISBN 978-0-52175373-9
+Wigderson, Avi (2010), "The Gödel Phenomena in Mathematics: A Modern View", Kurt Gödel and the Foundations of Mathematics: Horizons of Truth, Cambridge University Press, http://www.math.ias.edu/~avi/BOOKS/Godel_Widgerson_Text.pdf
+Hao Wang, 1996, A Logical Journey: From Gödel to Philosophy, The MIT Press, Cambridge MA, ISBN 0-262-23189-1.
+Richard Zach, 2006, "Hilbert's program then and now", in Philosophy of Logic, Dale Jacquette (ed.), Handbook of the Philosophy of Science, v. 5., Elsevier, pp. 411–447.
+[edit]External links
+
+Stanford Encyclopedia of Philosophy: "Kurt Gödel" -- by Juliette Kennedy.
+MacTutor biographies:
+Kurt Gödel.
+Gerhard Gentzen.
+What is Mathematics:Gödel's Theorem and Around by Karlis Podnieks. An online free book.
+World's shortest explanation of Gödel's theorem using a printing machine as an example.
+v • d • e
+Logic
+ Related articles
+Academic areas	
+Argumentation theory · Axiology · Critical thinking · Computability theory · Formal semantics · History of logic · Informal logic · Logic in computer science · Mathematical logic · Mathematics · Metalogic · Metamathematics · Model theory · Philosophical logic · Philosophy · Philosophy of logic · Philosophy of mathematics · Proof theory · Set theory
+Foundational concepts	
+Abduction · Analytic truth · Antinomy · A priori · Deduction · Definition · Description · Entailment · Induction · Inference · Logical consequence · Logical form · Logical implication · Logical truth · Name · Necessity · Meaning · Paradox · Possible world · Presupposition · Probability · Reason · Reasoning · Reference · Semantics · Statement · Substitution · Syntax · Truth · Truth value · Validity
+ Philosophical logic
+Critical thinking and Informal logic	
+Analysis · Ambiguity · Belief · Credibility · Evidence · Explanation · Explanatory power · Fact · Fallacy · Inquiry · Opinion · Parsimony · Premise · Propaganda · Prudence · Reasoning · Relevance · Rhetoric · Rigor · Vagueness
+Theories of deduction	
+Constructivism · Dialetheism · Fictionalism · Finitism · Formalism · Intuitionism · Logical atomism · Logicism · Nominalism · Platonic realism · Pragmatism · Realism
+ Metalogic and Metamathematics
+Cantor's theorem · Church's theorem · Church's thesis · Consistency · Effective method · Foundations of mathematics · Gödel's completeness theorem · Gödel's incompleteness theorems · Soundness · Completeness · Decidability · Interpretation · Löwenheim–Skolem theorem · Metatheorem · Satisfiability · Independence · Type–token distinction · Use–mention distinction ·
+ Mathematical logic
+General
+Formal language · Formation rule · Formal system · Deductive system · Formal proof · Formal semantics · Well-formed formula · Set · Element · Class · Classical logic · Axiom · Natural deduction · Rule of inference · Relation · Theorem · Logical consequence · Axiomatic system · Type theory · Symbol · Syntax · Theory
+Traditional logic
+Proposition · Inference · Argument · Validity · Cogency · Syllogism · Square of opposition · Venn diagram
+Propositional calculus and Boolean logic
+Boolean functions · Propositional calculus · Propositional formula · Logical connectives · Quantifiers · Truth tables
+Predicate
+First-order · Quantifiers · Predicate · Second-order · Monadic predicate calculus
+Set theory
+Set · Empty set · Enumeration · Extensionality · Finite set · Function · Subset · Power set · Countable set · Recursive set · Domain · Range · Ordered pair · Uncountable set
+Model theory
+Model · Interpretation · Non-standard model · Truth value · Validity
+Proof theory
+Formal proof · Deductive system · Formal system · Theorem · Logical consequence · Rule of inference · Syntax
+Computability theory
+Recursion · Recursive set · Recursively enumerable set · Decision problem · Church–Turing thesis · Computable function · Primitive recursive function ·
+ Non-classical logic
+Modal logic
+Alethic · Axiologic · Deontic · Doxastic · Epistemic · Temporal
+Intuitionism
+Intuitionistic logic · Constructive analysis · Heyting arithmetic · Intuitionistic type theory · Constructive set theory ·
+Fuzzy logic
+Degree of truth · Fuzzy rule · Fuzzy set · Fuzzy finite element · Fuzzy set operations ·
+Substructural logic
+Structural rule · Relevance logic · Linear logic
+Paraconsistent logic
+Dialetheism
+Description logic
+Ontology  · Ontology language
+ Logicians
+Anderson · Aristotle · Averroes · Avicenna · Barwise · Bernays · Boole · Boolos · Cantor · Carnap · Church · Chrysippus · Curry · De Morgan · Frege · Geach · Gentzen · Gödel · Hilbert · Kleene · Kripke · Leibniz · Löwenheim · Peano · Peirce · Putnam · Quine · Russell · Scotus · Skolem · Smullyan · Tarski · Turing · Whitehead · William of Ockham · Wittgenstein · Zermelo
+ Lists
+Topics	
+Outline of logic · Index of logic articles · Mathematical logic · Boolean algebra · Set theory
+Other	
+Logicians · Rules of inference · Paradoxes · Fallacies · Logic symbols
+Portal · Category · Outline · WikiProject · Talk · changes
+Categories: Mathematical theorems | Mathematical logic | Model theory | Proof theory | Epistemology | Metatheorems

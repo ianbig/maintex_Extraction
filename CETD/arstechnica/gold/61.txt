@@ -1,0 +1,40 @@
+﻿December 2010 Patch Tuesday will come with most bulletins ever
+By Emil Protalinski | Last updated 21 days ago
+According to the Microsoft Security Response Center, Microsoft will issue 17 Security Bulletins addressing 40 vulnerabilities on Tuesday, December 14. It will also host a webcast to address customer questions the following day.
+
+Two of the vulnerabilities are rated "Critical," 14 are marked "Important," and the last one is classified as "Moderate." All of the Critical vulnerabilities earned their rating through a remote code execution impact, meaning a hacker could potentially gain control of an infected machine. At least eight of the 17 patches will require a restart.
+
+The list of affected operating systems includes Windows XP, Windows Server 2003, Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2. Microsoft Office XP, Office 2003, Office 2007, and Office 2010 are also being patched, but no Mac versions are.
+
+Compared to last month's record Patch Tuesday, this one is massive. In fact, this is the highest number of bulletins Microsoft has ever released in one month. Still, it's lower than the record number of vulnerabilities that are being patched. The last record was set two months ago: 16 bulletins and 49 vulnerabilities fixed. The exact breakdown of the bulletins for this month follows:
+
+#	Rating	Impact	Affected software
+1	Critical	Remote Code Execution	IE6/7/8 on Windows XP/2003/Vista/2008/7/2008 R2
+2	Critical	Remote Code Execution	Windows XP/2003/Vista/2008/7/2008 R2
+3	Important	Elevation of Privilege	Windows Vista/2008/7/2008 R2
+4	Important	Remote Code Execution	Windows Vista
+5	Important	Remote Code Execution	Itanium unaffected: Windows XP/2003/Vista/2008
+6	Important	Remote Code Execution	Windows 7/2008 R2
+7	Important	Remote Code Execution	Windows XP/2003/Vista/2008/7/2008 R2
+8	Important	Remote Code Execution	Windows XP/2003
+9	Important	Elevation of Privilege	Windows XP/2003/Vista/2008/7/2008 R2
+10	Important	Elevation of Privilege	Windows XP/2003
+11	Important	Elevation of Privilege	Windows Vista/2008/7/2008 R2
+12	Important	Denial of Service	Windows 2003/2008/2008 R2
+13	Important	Denial of Service	32-bit and Itanium unaffected Windows 2008/2008 R2
+14	Important	Remote Code Execution	Publisher 2002/2003/2007/2010
+15	Important	Remote Code Execution	SharePoint Server 2007
+16	Important	Remote Code Execution	Office XP/2003/2007/2010
+17	Moderate	Denial of Service	Exchange Server 2007
+These include two issues that were publicly disclosed. Microsoft says it will be closing the last Stuxnet-related issues this month. That's a local Elevation of Privilege vulnerability, so it's either Bulletin 3, 9, 10, or 11. The company is also addressing the Internet Explorer vulnerability described in Security Advisory 2458511, which IE8 remains immune to via the Data Execution Prevention (DEP) feature.
+
+Along with these patches, Microsoft is also planning to release the following on Patch Tuesday:
+
+One or more nonsecurity, high-priority updates on Windows Update (WU) and Windows Server Update Services (WSUS)
+One or more nonsecurity, high-priority updates on Microsoft Update (MU) and WSUS
+An updated version of the Microsoft Windows Malicious Software Removal Tool on Windows Update, Microsoft Update, Windows Server Update Services, and the Microsoft Download Center
+This information is subject to change by Patch Tuesday; Microsoft has been known to rush patches or to pull them as it deems necessary.
+
+Further reading
+
+Microsoft Security Bulletin Advance Notification for December 2010 (microsoft.com)

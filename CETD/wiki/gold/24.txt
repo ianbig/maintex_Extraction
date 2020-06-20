@@ -1,0 +1,208 @@
+﻿
+Developmental biology
+For the journal, see Developmental Biology (journal).
+
+This article needs additional citations for verification.
+Please help improve this article by adding reliable references. Unsourced material may be challenged and removed. (July 2007)
+
+
+"Views of a Fetus in the Womb", Leonardo da Vinci, ca. 1510-1512. The subject of prenatal development is a major subset of developmental biology.
+Developmental biology is the study of the process by which organisms grow and develop. Modern developmental biology studies the genetic control of cell growth, differentiation and "morphogenesis", which is the process that gives rise to tissues, organs and anatomy.
+Contents [hide]
+1 Related fields of study
+2 Perspectives
+3 Developmental model organisms
+4 Studied phenomena
+4.1 Cell differentiation
+4.2 Embryonal development
+4.3 Growth
+4.4 Metamorphosis
+4.5 Regeneration
+5 Developmental systems biology
+6 See also
+7 References
+8 External links
+[edit]Related fields of study
+
+Embryology is a subfield, the study of organisms between the one-cell stage (generally, the zygote) and the end of the embryonic stage. Embryology was originally a more descriptive science until the 20th century. Embryology and developmental biology today deal with the various steps necessary for the correct and complete formation of the body of a living organism.
+The related field of evolutionary developmental biology was formed largely in the 1990s and is a synthesis of findings from molecular developmental biology and evolutionary biology which considers the diversity of organismal form in an evolutionary context.
+[edit]Perspectives
+
+The development of a new life is a spectacular process and represents a masterpiece of temporal and spatial control of gene expression. Developmental genetics studies the effect that genes have in a phenotype, given normal or abnormal epigenetic parameters. The findings of developmental biology can help to understand developmental abnormalities such as chromosomal aberrations that cause Down syndrome. An understanding of the specialization of cells during embryogenesis has provided information on how stem cells specialize into specific tissues and organs. This information has led, for example, to the cloning of specific organs for medical purposes.[1][2] Another biologically important process that occurs during development is apoptosis—programmed cell death or "suicide." Many developmental models are used to elucidate the physiology and molecular basis of this cellular process. Similarly, a deeper understanding of developmental biology can foster greater progress in the treatment of congenital disorders and diseases, e.g. studying human sex determination can lead to treatment for disorders such as congenital adrenal hyperplasia.
+[edit]Developmental model organisms
+
+
+
+Gene expression pattern determined by histochemical GUS assays in Physcomitrella patens. The Polycomb gene FIE is expressed (blue) in unfertilised egg cells of the moss Physcomitrella patens (right) and expression ceases after fertilisation in the developing diploid sporophyte (left). In situ GUS staining of two female sex organs (archegonia) of a transgenic plant expressing a translational fusion of FIE-uidA under control of the native FIE promoter[3]
+Often used model organisms in developmental biology include the following:
+Vertebrates
+Zebrafish Danio rerio[4]
+Medakafish Oryzias latipes
+Fugu (pufferfish) Takifugu rubripes
+Frog Xenopus laevis, Xenopus tropicalis[5]
+Chicken Gallus gallus
+Mouse Mus musculus (Mammalian embryogenesis)[6]
+Invertebrates
+Lancelet Branchiostoma lanceolatum
+Ascidian Ciona intestinalis
+Sea urchin Strongylocentrotus purpuratus
+Roundworm Caenorhabditis elegans
+Fruit fly Drosophila melanogaster (Drosophila embryogenesis)
+Plants (Plant embryogenesis)
+Physcomitrella patens [3]
+Arabidopsis thaliana
+Maize
+Snapdragon Antirrhinum majus
+Other
+Slime mold Dictyostelium discoideum
+[edit]Studied phenomena
+
+[edit]Cell differentiation
+Differentiation is the formation of cell types, from what is originally one cell – the zygote or spore. The formation of cell types like nerve cells occurs with a number of intermediary, less differentiated cell types. A cell stays a certain cell type by maintaining a particular pattern of gene expression.[7] This depends on regulatory genes, e.g. for [[transcription factor] name=WolpertDifferentiationmodels>Wolpert L, Beddington R, Jessell T, Lawrence P, Meyerowitz E, Smith J (2002). Principles of development (2nd ed.). Oxford university press. pp. 304–307. ISBN 0-19-879291-3.</ref>
+[edit]Embryonal development
+
+
+The initial stages of human embryogenesis.
+Embryogenesis is the step in the life cycle after fertilisation – the development of the embryo, starting from the zygote (fertilised egg). Organisms can differ drastically in the how embryo develops, especially when they belong to different phyla. For example, embryonal development in placental mammals starts with cleavage of the zygote into eight uncommited cells, which then form a ball (morula). The outer cells become the trophectoderm or trophoblast, which will form in combination with maternal uterine endometrial tissue the placenta, needed for fetal nurturing via maternal blood, while inner cells become the inner cell mass that will form all fetal organs (the bridge between these two parts eventually forms the umbilical cord). In contrast, the fruit fly zygote first forms a sausage-shaped syncytium, which is still one cell but with many cell nuclei.[8]
+Patterning is important for determining which cells develop into which organs. This is mediated by signaling between adjacent cells by proteins on their surfaces, and by gradients of signaling secreted molecules.[9] An example is retinoic acid, which forms a gradient in the head to tail direction in animals. Retinoic acid enters cells and activates Hox genes in a concentration-dependent manner – Hox genes differ in how much retinoic acid they require for activation and will thus show differential rostral expression boundaries, in a colinear fashion with their genomic order. As Hox genes code for transcription factors, this causes different activated combinations of both Hox and other genes in discrete anteroposterior transverse segments of the neural tube (neuromeres) and related patterns in surrounding tissues, such as branchial arches, lateral mesoderm, neural crest, skin and endoderm, in the head to tail direction.[10] This is important for e.g. the segmentation of the spine in vertebrates.[9]
+Embryonal development does not always proceed correctly, and errors can result in birth defects or miscarriage. Often the reason is genetic (mutation or chromosome abnormality), but there can be environmental influence (like teratogens) or stochastic events.[11][12] Abnormal development caused by mutation is also of evolutionary interest as it provides a mechanism for changes in body plan (see evolutionary developmental biology).[13]
+[edit]Growth
+Growth is the enlargement of a tissue or organism. Growth continues after the embryonal stage, and occurs through cell proliferation, enlargement of cells or accumulation of extracellular material. In plants, growth results in an adult organism that is strikingly different from the embryo. The proliferating cells tend to be distinct from differentiated cells (see stem cell and progenitor cell). In some tissues proliferating cells are restricted to specialised areas, such as the growth plates of bones.[14] But some stem cells migrate to where they are needed, such as mesenchymal stem cells which can migrate from the bone marrow to form e.g. muscle, bone or adipose tissue.[15] The size of an organ frequently determines its growth, as in the case of the liver which grows back to its previous size if a part is removed. Growth factors, such as fibroblast growth factors in the animal embryo and growth hormone in juvenile mammals, also control the extent of growth.[14]
+[edit]Metamorphosis
+Most animals have a larval stage, with a body plan different from that of the adult organism. The larva abrubtly develops into an adult in a process called metamorphosis. For example, caterpillars (butterfly larvae) are specialized for feeding whereas adult butterflies (imagos) are specialised for flight and reproduction. When the caterpillar has grown enough, it turns into an immobile pupa. Here, the imago develops from imaginal discs found inside the larva.[16]
+[edit]Regeneration
+Regeneration is the reactivation of development so that a missing body part grows back. This phenomenon has been studied particularly in salamanders, where the adults can reconstruct a whole limb after it has been amputated.[17] Researchers hope to one day be able to induce regeneration in humans (see regenerative medicine).[18] There is little spontaneous regeneration in adult humans, although the liver is a notable exception. Like for salamanders, the regeneration of the liver involves dedifferentiation of some cells to a more embryonal state.[17]
+[edit]Developmental systems biology
+
+Computer simulation of multicellular development is a research methodology to understand the function of the very complex processes involved in the development of organisms. This includes simulation of cell signaling, multicell interactions and regulatory genomic networks in development of multicellular structures and processes (see French flag model or Biological Physics of the Developing Embryo for literature). Minimal genomes for minimal multicellular organisms may pave the way to understand such complex processes in vivo.
+[edit]See also
+
+Altricial and Precocial
+Auxology
+Body plan
+Cell signaling
+Embryogenesis
+Embryology
+Evolutionary developmental biology
+Plant evolutionary developmental biology
+Fertilization
+Fish development
+Cell signaling networks
+Developmental noise
+Enhancer
+Enhanceosome
+Gene regulatory network
+promoter (biology)
+Signal transduction
+Transcription factor
+[edit]References
+
+^ Anthony Atala, S. Bauer, S. Soker, J. Yoo, A. Retik (2006-04-04). "Tissue-engineered autologous bladders for patients needing cystoplasty". The Lancet 367 (9518): 1241–1246. doi:10.1016/S0140-6736(06)68438-9. http://www.lawrencegaltman.com/Naugbio/Bio212/Lecture/UrinaryBladder%20Engineering.pdf.
+^ Wake Forest University (2006-04-03). "Wake Forest Physician Reports First Human Recipients of Laboratory-Grown Organs". Press release. http://www.wfubmc.edu/AboutUs/NewsArticle.aspx?id=7087. Retrieved 2010-04-06.
+^ a b doi:10.1242/10.1242/dev.035048
+This citation will be automatically completed in the next few minutes. You can jump the queue or expand by hand
+^ Haffter P, Nüsslein-Volhard C (1996). "Large scale genetics in a small vertebrate, the zebrafish". Int. J. Dev. Biol. 40 (1): 221–7. PMID 8735932. http://www.intjdevbiol.com/paper.php?doi=8735932.
+^ Amaya E (2005). "Xenomics". Genome Res. 15 (12): 1683–91. doi:10.1101/gr.3801805. PMID 16339366. http://genome.cshlp.org/content/15/12/1683.long.
+^ Keller G (2005). "Embryonic stem cell differentiation: emergence of a new era in biology and medicine". Genes Dev. 19 (10): 1129–55. doi:10.1101/gad.1303605. PMID 15905405. http://genesdev.cshlp.org/content/19/10/1129.long.
+^ Wolpert L, Beddington R, Jessell T, Lawrence P, Meyerowitz E, Smith J (2002). Principles of development (2nd ed.). Oxford university press. pp. 293–295. ISBN 0-19-879291-3.
+^ Wolpert L, Beddington R, Jessell T, Lawrence P, Meyerowitz E, Smith J (2002). Principles of development (2nd ed.). Oxford university press. pp. 41–50, 493. ISBN 0-19-879291-3.
+^ a b Christ B, Schmidt C, Huang R, Wilting J, Brand-Saberi B (January 1998). "Segmentation of the vertebrate body". Anat. Embryol. 197 (1): 1–8. doi:10.1007/s004290050116. PMID 9462855. http://link.springer.de/link/service/journals/00429/bibs/7197001/71970001.htm.
+^ Marshall H, Morrison A, Studer M, Pöpperl H, Krumlauf R (July 1996). "Retinoids and Hox genes". FASEB J. 10 (9): 969–78. PMID 8801179. http://www.fasebj.org/cgi/pmidlookup?view=long&pmid=8801179.
+^ Holtzman NA, Khoury MJ (1986). "Monitoring for congenital malformations". Annu Rev Public Health 7: 237–66. doi:10.1146/annurev.pu.07.050186.001321. PMID 3521645.
+^ Wolf U (1997). "Identical mutations and phenotypic variation". Hum Genet 100 (3-4): 305–21. doi:10.1007/s004390050509. PMID 9272148.
+^ Fujimoto K, Ishihara S, Kaneko K (2008). "Network evolution of body plans". PLoS ONE 3 (7): e2772. doi:10.1371/journal.pone.0002772. PMID 18648662.
+^ a b Wolpert L, Beddington R, Jessell T, Lawrence P, Meyerowitz E, Smith J (2002). Principles of development (2nd ed.). Oxford university press. pp. 467–482. ISBN 0-19-879291-3.
+^ Chamberlain G, Fox J, Ashton B, Middleton J (November 2007). "Concise review: mesenchymal stem cells: their phenotype, differentiation capacity, immunological features, and potential for homing". Stem Cells 25 (11): 2739–49. doi:10.1634/stemcells.2007-0197. PMID 17656645.
+^ Gilbert SF (2003). Developmental biology (7th ed.). Sinauer. pp. 575–585. ISBN 0-87893-258-5.
+^ a b Gilbert SF (2003). Developmental biology (7th ed.). Sinauer. pp. 592–601. ISBN 0-87893-258-5.
+^ Stocum DL (December 2002). "Development. A tail of transdifferentiation". Science 298 (5600): 1901–3. doi:10.1126/science.1079853. PMID 12471238.
+[edit]External links
+
+	Wikibooks has more on the topic of
+Developmental biology
+Developmental Biology of Plants and Animals
+Developmental Biology - 8th Edition by Scott Gilbert (online textbook)
+v • d • e
+Major subfields of biology
+Anatomy · Astrobiology · Biochemistry · Biomechanics · Biophysics · Bioinformatics · Biostatistics · Botany · Cell biology · Cellular microbiology · Chemical biology · Chronobiology · Conservation biology · Developmental biology · Ecology · Epidemiology · Evolutionary biology · Genetics · Genomics · Histology · Human biology · Immunology · Marine biology · Mathematical biology · Microbiology · Molecular biology · Mycology · Neuroscience · Nutrition · Origin of life · Paleontology · Parasitology · Pathology · Pharmacology · Physiology · Systems biology · Taxonomy · Toxicology · Zoology
+v • d • e
+Developmental biology
+Embryology	
+Embryogenesis (Human embryogenesis · Drosophila embryogenesis · Fish embryogenesis) · Polarity in embryogenesis
+Other	
+Metamorphosis · Regeneration · Ageing · Model organisms · Compartment · Metamerism
+v • d • e
+Developmental biology > Human embryogenesis (development of embryo) and development of fetus
+First three
+weeks	
+Week 1
+Fertilization · Egg activation · Zygote · Cleavage · Morula · Blastula (Blastomere) · Blastocyst · Inner cell mass
+Week 2
+(Bilaminar)
+Hypoblast · Epiblast
+Week 3
+(Trilaminar)
+Germ layers
+Archenteron/Primitive streak (Primitive pit, Primitive knot/Blastopore, Primitive groove) · Gastrula/Gastrulation · Regional specification
+Ectoderm
+Surface ectoderm · Neuroectoderm · Somatopleure · Neurulation · Neural crest
+Endoderm
+Splanchnopleure
+Mesoderm
+Chorda- · Paraxial (Somite/Somitomere/Sclerotome/Myotome/Dermatome) · Intermediate · Lateral plate (Intraembryonic coelom, Splanchnopleure/Somatopleure)
+Extraembryonic/
+uterus	
+Trophoblast (Cytotrophoblast, Syncytiotrophoblast)
+Blastocoele · Yolk sack/exocoelomic cavity · Heuser's membrane · Extraembryonic coelom · Vitelline duct
+Umbilical cord (Umbilical artery, Umbilical vein, Wharton's jelly) · Allantois
+Placenta · Decidua (Decidual cells) · Chorionic villi/Intervillous space · Gestational sac (Amnion/Amniotic sac/Amniotic cavity, Chorion)
+Histogenesis	
+Programmed cell death (Apoptosis) · Stem cells · Germ line development
+Organogenesis	
+Limb development: Limb bud · Apical ectodermal ridge/AER
+other structures: Eye development · Cutaneous structure development · Heart development · Development of the urinary and reproductive organs
+(Some dates are approximate—see Carnegie stages and a timeline.)
+M: OBS
+phys/devp
+mthr/fetu/infc, epon
+proc, drug(2A/G2C)
+v • d • e
+Human Development: Biological  • Psychological
+ 
+
+Pre- and perinatal	
+Biological
+Prenatal development
+Psychological
+Pre- and perinatal psychology
+Infancy	
+Biological
+Infant
+Psychological
+Infant and child psychology
+Childhood	
+Biological
+Child development · Child development stages · Toddler
+Psychological
+Infant and child psychology · Preadolescence
+Adolescence	
+Biological
+Puberty
+Psychological
+Youth development · Adolescent psychology
+Young adulthood	
+Psychological
+Young adult (psychology)
+Middle adulthood	
+Biological
+Middle age
+Maturity	
+Biological
+Ageing · Senescence
+Psychological
+Old age
+Legal and general definitions	
+Minor (law) · Infancy · Child · Childhood · Adolescence · Age of majority · Adult
+Theorists and theories	
+Bowlby—attachment · Brofenbrenner—ecological systems · Erikson—psychosocial dev. · Freud—psychosexual dev. · Kohlberg—moral dev. · Piaget—cognitive dev. · Vygotsky—cultural-historical psych.
+Categories: Developmental biology

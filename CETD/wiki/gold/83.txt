@@ -1,0 +1,159 @@
+﻿
+The Art of Computer Programming
+The Art of Computer Programming, Volume 1: Fundamental Algorithms  
+
+Author	Donald Knuth
+Country	United States
+Language	English
+Genre(s)	Non-fiction
+Publisher	Addison-Wesley
+Publication date	1968
+Media type	Print (Hardcover)
+Pages	634
+ISBN	0-201-03801-3
+The Art of Computer Programming (acronym: TAOCP) is a comprehensive monograph written by Donald Knuth that covers many kinds of programming algorithms and their analysis. Knuth began the project, originally conceived as a single book, in 1962. The first three of what were then expected to be seven volumes were published in rapid succession in 1968, 1969, and 1973. The first installment of Volume 4 was not published until February 2005. Additional installments are planned for release approximately biannually with a break before fascicle 5 to finish the "Selected Papers" series.[1]
+Contents [hide]
+1 History
+2 Assembly language in the book
+3 Critical response
+4 Chapter outline of published and unpublished volumes
+5 Detailed outline of unpublished Volume 4
+5.1 Subvolume 4A Enumeration and Backtracking
+5.2 Subvolume 4B Graph and Network Algorithms
+5.3 Subvolumes 4C and 4D Optimization and Recursion
+6 English editions
+6.1 Current editions
+6.2 Previous editions
+7 Notes
+8 Footnotes
+9 References
+10 External links
+[edit]History
+
+
+
+Donald Knuth in 2005
+Considered an expert at writing compilers, Knuth started to write a book about compiler design in 1962, and soon realized that the scope of the book needed to be much larger. In June 1965, Knuth finished the first draft of what was originally planned to be a single volume of twelve chapters. His hand-written manuscript was 3,000 pages long: he had assumed that about five hand-written pages would translate into one printed page, but his publisher said instead that about 1½ hand-written pages translated to one printed page. This meant the book would be approximately 2,000 pages in length. At this point, the plan was changed: the book would be published in seven volumes, each with just one or two chapters. Due to the growth in the material, the plan for Volume 4 has since expanded to include Volumes 4A, 4B, 4C, and possibly 4D.
+In 1976, Knuth prepared a second edition of Volume 2, requiring it to be typeset again, but the style of type used in the first edition (called hot type) was no longer available. In 1977, he decided to spend a few months working up something more suitable. Eight years later, he returned with TeX, which is currently used for all volumes.
+The famous offer of a reward check worth "one hexadecimal dollar" (100HEX base 16 cents, in decimal, is $2.56) for any errors found, and the correction of these errors in subsequent printings, has contributed to the highly polished and still-authoritative nature of the work, long after its first publication. Another characteristic of the volumes is the variation in the difficulty of the exercises. The level of difficulty ranges from "warm-up" exercises to unsolved research problems, providing a challenge for any reader. Knuth's dedication is also famous:
+This series of books is affectionately dedicated
+to the Type 650 computer once installed at
+Case Institute of Technology,
+with whom I have spent many pleasant evenings.[nb 1]
+[edit]Assembly language in the book
+
+All examples in the books use a language called "MIX assembly language", which runs on the hypothetical MIX computer. (Currently, the MIX computer is being replaced by the MMIX computer, which is a RISC version.) Software such as GNU MDK exists to provide emulation of the MIX architecture.
+Some readers are put off by the use of assembly language, but Knuth considers this necessary because algorithms need to be in context in order for their speed and memory usage to be judged. This does, however, limit the accessibility of the book for many readers, and limits its usefulness as a "cookbook" for practicing programmers, who may not be familiar with assembly, or who may have no particular desire to translate assembly language code into a high-level language. A number of more accessible algorithms textbooks using high-level language examples exist and are popular for precisely these reasons.
+[edit]Critical response
+
+American Scientist has included this work among "100 or so Books that shaped a Century of Science", referring to the 20th century,[2] and within the computer science community it is regarded as the first and still the best comprehensive treatment of its subject. Covers of the third edition of Volume 1 quote Bill Gates as saying, "If you think you're a really good programmer . . . read (Knuth's) Art of Computer Programming . . . You should definitely send me a résumé if you can read the whole thing." [nb 2] The New York Times referred to it as "the profession's defining treatise".[3]
+[edit]Chapter outline of published and unpublished volumes
+
+Volume 1 - Fundamental Algorithms
+Chapter 1 - Basic concepts
+Chapter 2 - Information structures
+Volume 2 - Seminumerical Algorithms
+Chapter 3 - Random numbers
+Chapter 4 - Arithmetic
+Volume 3 - Sorting and Searching
+Chapter 5 - Sorting
+Chapter 6 - Searching
+Volume 4 - Combinatorial Algorithms, in preparation (five fascicles have been published as of April 2009, and alpha-test versions of additional fascicles are downloadable from Knuth's page below).
+Volume 4A - Enumeration and Backtracking
+Chapter 7 - Combinatorial searching
+Volume 4B - Graph and Network Algorithms
+Chapter 7 continued
+Volume 4C and possibly 4D - Optimization and Recursion
+Chapter 7 continued
+Chapter 8 - Recursion
+Volume 5 - Syntactic Algorithms, planned (as of August 2006, estimated in 2015).
+Chapter 9 - Lexical scanning
+Chapter 10 - Parsing techniques
+Volume 6 - Theory of Context-Free Languages, planned.
+Volume 7 - Compiler Techniques, planned.
+[edit]Detailed outline of unpublished Volume 4
+
+[edit]Subvolume 4A Enumeration and Backtracking
+7 - Introduction (82pp) - published in Volume 4, Fascicle 0
+7.1 - Zeros and ones
+7.1.1 - Boolean basics (88 pp) - published in Volume 4, Fascicle 0
+7.1.2 - Boolean evaluation (67 pp) - published in Volume 4, Fascicle 0
+7.1.3 - Bitwise tricks and techniques (122 pp) - published in Volume 4, Fascicle 1
+7.1.4 - Binary decision diagrams (150 pp) - published in Volume 4, Fascicle 1
+7.2 - Generating all possibilities
+7.2.1 - Combinatorial generators (397 pp)
+7.2.1.1 - Generating all n-tuples - published in Volume 4, Fascicle 2
+7.2.1.2 - Generating all permutations - published in Volume 4, Fascicle 2
+7.2.1.3 - Generating all combinations - published in Volume 4, Fascicle 3
+7.2.1.4 - Generating all partitions - published in Volume 4, Fascicle 3
+7.2.1.5 - Generating all set partitions - published in Volume 4, Fascicle 3
+7.2.1.6 - Generating all trees - published in Volume 4, Fascicle 4
+7.2.1.7 - History and further references - published in Volume 4, Fascicle 4
+[edit]Subvolume 4B Graph and Network Algorithms
+7.2 - Generating all possibilities (Cont)
+7.2.2 - Basic backtrack
+7.2.3 - Efficient backtracking
+7.3 - Shortest paths
+7.4 - Graph algorithms
+7.4.1 - Components and traversal
+7.4.2 - Special classes of graphs
+7.4.3 - Expander graphs
+7.4.4 - Random graphs
+7.5 - Network algorithms
+7.5.1 - Distinct representatives
+7.5.2 - The assignment problem
+7.5.3 - Network flows
+7.5.4 - Optimum subtrees
+7.5.5 - Optimum matching
+7.5.6 - Optimum orderings
+7.6 - Independence theory
+7.6.1 - Independence structures
+7.6.2 - Efficient matroid algorithms
+[edit]Subvolumes 4C and 4D Optimization and Recursion
+7.7 - Discrete dynamic programming
+7.8 - Branch-and-bound techniques
+7.9 - Herculean tasks (aka NP-hard problems)
+7.10 - Near-optimization
+8 - Recursion
+[edit]English editions
+
+[edit]Current editions
+In order by volume number:
+Volume 1: Fundamental Algorithms. Third Edition (Reading, Massachusetts: Addison-Wesley, 1997), xx+650pp. ISBN 0-201-89683-4
+Volume 1, Fascicle 1: MMIX -- A RISC Computer for the New Millennium. (Addison-Wesley, February 14, 2005) ISBN 0-201-85392-2 (will be in the fourth edition of volume 1)
+Volume 2: Seminumerical Algorithms. Third Edition (Reading, Massachusetts: Addison-Wesley, 1997), xiv+762pp. ISBN 0-201-89684-2
+Volume 3: Sorting and Searching. Second Edition (Reading, Massachusetts: Addison-Wesley, 1998), xiv+780pp.+foldout. ISBN 0-201-89685-0
+Volume 4, Fascicle 0: Introduction to Combinatorial Algorithms and Boolean Functions, (Addison-Wesley Professional, April 28, 2008) vi+240pp, ISBN 0-321-53496-4
+Volume 4, Fascicle 1: Bitwise tricks & techniques; Binary Decision Diagrams (Addison-Wesley Professional, March 27, 2009) viii+260pp, ISBN 0-321-58050-8
+Volume 4, Fascicle 2: Generating All Tuples and Permutations, (Addison-Wesley, February 14, 2005) v+127pp, ISBN 0-201-85393-0
+Volume 4, Fascicle 3: Generating All Combinations and Partitions. (Addison-Wesley, July 26, 2005) vi+150pp, ISBN 0-201-85394-9
+Volume 4, Fascicle 4: Generating all Trees -- History of Combinatorial Generation, (Addison-Wesley, February 6, 2006) vi+120pp, ISBN 0-321-33570-8
+[edit]Previous editions
+In order by publication date:
+Volume 1, first edition, 1968, xxi+634pp, ISBN 0-201-03801-3.
+Volume 2, first edition, 1969, xi+624pp, ISBN 0-201-03802-1.
+Volume 3, first edition, 1973, xi+723pp+centerfold, ISBN 0-201-03803-X
+Volume 1, second edition, 1973, xxi+634pp, ISBN 0-201-03809-9.
+Volume 2, second edition, 1981, xiii+ 688pp, ISBN 0-201-03822-6.
+[edit]Notes
+
+^ The dedication was worded slightly differently in the first edition.
+^ According to folklore.org, Steve Jobs actually made the incredible claim. [1]
+[edit]Footnotes
+
+^ Web of stories
+^ Morrison, Philip; Morrison, Phylis (November–December 1999). "100 or so Books that shaped a Century of Science". American Scientist (Sigma Xi, The Scientific Research Society) 87 (6). http://www.americanscientist.org/bookshelf/pub/100-or-so-books-that-shaped-a-century-of-science. Retrieved 2008-01-11
+^ Lohr, Steve (2001-12-17). "Frances E. Holberton, 84, Early Computer Programmer". The New York Times. http://www.nytimes.com/2001/12/17/business/17HOLB.html. Retrieved 2010-05-17.
+[edit]References
+
+Slater, Robert (1987). Portraits in Silicon. MIT Press. ISBN 0-262-19262-4.
+Shasha, Dennis; Cathy Lazere (1995). Out of Their Minds: The Lives and Discoveries of 15 Great Computer Scientists. Copernicus. ISBN 0-387-97992-1.
+[edit]External links
+
+Overview of topics (Knuth's personal homepage)
+Oral history interview with Donald E. Knuth at Charles Babbage Institute, University of Minnesota, Minneapolis. Knuth discusses software patenting, structured programming, collaboration and his development of TeX. The oral history discusses the writing of The Art of Computer Programming.
+"Robert W Floyd, In Memoriam", by Donald E. Knuth -(on the influence of Bob Floyd)
+Injokes in the books
+Who is Bill Gosper? (on the influence of Bill Gosper on the 2nd Edition of Volume 2.)
+TAoCP and its Influence of Computer Science(Softpanorama)
+Categories: 1968 books | 1969 books | 1973 books | 1981 books | Computer books | Computer programming | Computer science books | Algorithms | Analysis of algorithms | Monographs | Books by Donald Knuth | Addison-Wesley books

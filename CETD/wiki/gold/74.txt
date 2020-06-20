@@ -1,0 +1,114 @@
+﻿
+Hypertext
+"Metatext" redirects here. For the literary concept, see Metafiction.
+Hypertext is text displayed on a computer or other electronic device with references (hyperlinks) to other text that the reader can immediately access, usually by a mouse click or keypress sequence. Apart from running text, hypertext may contain tables, images and other presentational devices. Hypertext is the underlying concept defining the structure of the World Wide Web, making it an easy-to-use and flexible format to share information over the Internet.[1]
+Contents [hide]
+1 Etymology
+2 Types and uses of hypertext
+3 History
+4 Implementations
+5 Academic conferences
+6 Hypertext fiction
+6.1 Critics and theorists
+7 See also
+8 References
+9 Further reading
+10 External links
+[edit]Etymology
+
+The prefix hyper- (comes from the Greek prefix "υπερ-" and means "over" or "beyond") signifies the overcoming of the old linear constraints of written text. The term "hypertext" is often used where the term "hypermedia" might seem appropriate. In 1992, author Ted Nelson – who coined both terms in 1965 – wrote:
+By now the word "hypertext" has become generally accepted for branching and responding text, but the corresponding word "hypermedia", meaning complexes of branching and responding graphics, movies and sound – as well as text – is much less used. Instead they use the strange term "interactive multimedia": this is four syllables longer, and does not express the idea of extending hypertext. — Nelson, Literary Machines, 1992
+[edit]Types and uses of hypertext
+
+Hypertext documents can either be static (prepared and stored in advance) or dynamic (continually changing in response to user input). Static hypertext can be used to cross-reference collections of data in documents, software applications, or books on CDs. A well-constructed system can also incorporate other user-interface conventions, such as menus and command lines. Hypertext can develop very complex and dynamic systems of linking and cross-referencing. The most famous implementation of hypertext is the World Wide Web , first deployed in 1992.
+[edit]History
+
+Main article: History of hypertext
+All major histories of what we now call hypertext start in 1945, when Vannevar Bush wrote an article in The Atlantic Monthly called "As We May Think", about a futuristic device he called a Memex. Ted Nelson coined the words "hypertext" and "hypermedia" in 1965 and worked with Andries van Dam to develop the Hypertext Editing System in 1968 at Brown University.
+The first hypermedia application was the Aspen Movie Map in 1977. In 1980, Tim Berners-Lee created ENQUIRE, an early hypertext database system somewhat like a wiki. The early 1980s also saw a number of experimental hypertext and hypermedia programs, many of whose features and terminology were later integrated into the Web. Guide, the first significant hypertext system for personal computers, was developed by Peter J. Brown at UKC in 1982. In 1983, a hypermedia authoring tool, Tutor-Tech, designed for Apple II computers, was produced for educators.
+In August 1987, Apple Computer released HyperCard for the Macintosh line at the MacWorld convention. Its impact, combined with interest in Peter J. Brown's GUIDE (marketed by OWL and released earlier that year) and Brown University's Intermedia, led to broad interest in and enthusiasm for hypertext and new media. The first ACM Hypertext academic conference took place in November 1987, in Chapel Hill NC, where many other applications, including the hypertext literature writing software Storyspace were also demoed[2]
+Meanwhile Nelson, who had been working on and advocating his Xanadu system for over two decades, along with the commercial success of HyperCard, stirred Autodesk to invest in his revolutionary ideas. The project continued at Autodesk for four years, but no product was released.
+In the late 1980s, Berners-Lee, then a scientist at CERN, invented the World Wide Web to meet the demand for simple and immediate information-sharing among physicists working at CERN and different universities or institutes all over the world. In 1992, Lynx was born as an early Internet web browser. Its ability to provide hypertext links within documents that could reach into documents anywhere on the Internet began the creation of the Web on the Internet.
+After the release of web browsers for both the PC and Macintosh environments, traffic on the World Wide Web quickly exploded from only 500 known web servers in 1993 to over 10,000 in 1994. Thus, all earlier hypertext systems were overshadowed by the success of the Web, even though it originally lacked many features of those earlier systems, such as an easy way to edit what you were reading, typed links, backlinks, transclusion, and source tracking.
+[edit]Implementations
+
+Besides the already mentioned Project Xanadu, Hypertext Editing System, NLS, HyperCard, and World Wide Web, there are other noteworthy early implementations of hypertext, with different feature sets:
+FRESS – A 1970s multi-user successor to the Hypertext Editing System.
+Electronic Document System – An early 1980s text and graphic editor for interactive hypertexts such as equipment repair manuals and computer-aided instruction.
+Information Presentation Facility – Used to display online help in IBM operating systems.
+Intermedia – A mid-1980s program for group web-authoring and information sharing.
+Storyspace – A mid-1980s program for hypertext narrative.
+Texinfo – The GNU help system.
+XML with the XLink extension – A newer hypertext markup language that extends and expands capabilities introduced by HTML.
+Wikis – aim to compensate for the lack of integrated editors in most Web browsers. Various wiki software have slightly different conventions for formatting, usually simpler than HTML.
+Adobe's Portable Document Format – A widely used publication format for electronic documents including links.
+Windows Help
+PaperKiller - A document editor specifically designed for hypertext. Started in 1996 as IPer (educational project for ED-Media 1997).
+Amigaguide - released on Amiga Workbench 1990.
+[edit]Academic conferences
+
+Among the top academic conferences for new research in hypertext is the annual ACM Conference on Hypertext and Hypermedia ([1] ACM SIGWEB Hypertext Conference page). Although not exclusively about hypertext, the World Wide Web series of conferences, organized by IW3C2, include many papers of interest. There is a list on the web with links to all conferences in the series.
+[edit]Hypertext fiction
+
+Main article: Hypertext fiction
+Hypertext writing has developed its own style of fiction, coinciding with the growth and proliferation of hypertext development software and the emergence of electronic networks. Two software programs specifically designed for literary hypertext, Storyspace and Intermedia became available in the 1990s.
+Storyspace 2.0, a professional level hypertext development tool, is available from Eastgate Systems, which has also published many notable works of electronic literature, including Michael Joyce's afternoon, a story, Shelley Jackson's Patchwork Girl, Stuart Moulthrop's Victory Garden, and Judy Malloy's its name was Penelope, Forward Anywhere. Other works include Julio Cortázar's Rayuela and Milorad Pavić's Dictionary of the Khazars.
+An advantage of writing a narrative using hypertext technology is that the meaning of the story can be conveyed through a sense of spatiality and perspective that is arguably unique to digitally networked environments. An author's creative use of nodes, the self-contained units of meaning in a hypertextual narrative, can play with the reader's orientation and add meaning to the text.
+Critics of hypertext claim that it inhibits the old, linear, reader experience by creating several different tracks to read on, and that this in turn contributes to a postmodernist fragmentation of worlds. In some cases, hypertext can be more a problem to get appealing stories than a tool to develop creativity.[3] However, they do see value in its ability to present several different views on the same subject in a simple way.[4]. This echoes the arguments of 'medium theorists' like Marshall McLuhan who look at the social and psychological impacts of the media. New media can become so dominant in public culture that they effectively create a "paradigm shift" (Lelia Green, 2001:15) as people have shifted their perceptions, understanding of the world and ways of interacting with the world and each other in relation to new technologies and media. So hypertext signifies a change from linear, structured and hierarchical forms of representing and understanding the world into fractured, decentralized and changeable media based on the technological concept of hypertext links.
+[edit]Critics and theorists
+
+This article is in a list format that may be better presented using prose. You can help by converting this article to prose, if appropriate. Editing help is available. (May 2010)
+Tim Berners-Lee
+Jay David Bolter
+Vannevar Bush
+Robert Coover
+J. Yellowlees Douglas
+N. Katherine Hayles
+Michael Joyce
+George Landow
+Lev Manovich
+Stuart Moulthrop
+Ted Nelson
+Paul Otlet
+[edit]See also
+
+Timeline of hypertext technology
+HTML (HyperText Markup Language)
+Hypotext
+Hyperwords
+HTTP
+Cybertext
+[edit]References
+
+^ "Internet legal definition of Internet". West's Encyclopedia of American Law, edition 2. Free Online Law Dictionary. July 15, 2009. http://legal-dictionary.thefreedictionary.com/Internet. Retrieved November 25, 2008.
+^ Hawisher, Gail E., Paul LeBlanc, Charles Moran, and Cynthia L. Selfe (1996). Computers and the Teaching of Writing in American Higher Education, 1979-1994: A History Ablex Publishing Corporation, Norwood NJ, p. 213
+^ Biblumliteraria
+^ The Game of Reading an Electronic Sir Gawain and the Green Knight
+[edit]Further reading
+
+Barnet, Belinda (2004). Lost In The Archive: Vision, Artefact And Loss In The Evolution Of Hypertext. University of New South Wales, PhD thesis.
+Bolter, Jay David (2001). Writing Space: Computers, Hypertext, and the Remediation of Print. New Jersey: Lawrence Erlbaum Associates. ISBN 0-8058-2919-9.
+Buckland, Michael (2006). Emanuel Goldberg and His Knowledge Machine. Libraries Unlimited. ISBN 0-31331-332-6.
+Byers, T. J. (April 1987). "Built by association". PC World 5: 244–251.
+Cicconi, Sergio (1999). "Hypertextuality". Mediapolis. Ed. Sam Inkinen. Berlino & New York: De Gruyter.: 21–43.
+Conklin, J. (1987). "Hypertext: An Introduction and Survey". Computer 20 (9): 17–41. doi:10.1109/MC.1987.1663693.
+Crane, Gregory (1988). "Extending the boundaries of instruction and research". T.H.E. Journal (Technological Horizons in Education) (Macintosh Special Issue): 51–54.
+Engelbart, Douglas C. (1962). Augmenting Human Intellect: A Conceptual Framework, AFOSR-3233 Summary Report, SRI Project No. 3579. http://www.bootstrap.org/augdocs/friedewald030402/augmentinghumanintellect/ahi62index.html.
+Ensslin, Astrid (2007). Canonizing Hypertext: Explorations and Constructions. London: Continuum. ISBN 0-8264-95583.
+Heim, Michael (1987). Electric Language: A Philosophical Study of Word Processing. New Haven: Yale University Press. ISBN 0-300-07746-7.
+Landow, George (2006). Hypertext 3.0 Critical Theory and New Media in an Era of Globalization: Critical Theory and New Media in a Global Era (Parallax, Re-Visions of Culture and Society). Baltimore: The Johns Hopkins University Press. ISBN 0-8018-8257-5.
+Nelson, Theodor H. (September 1965). "Complex information processing: a file structure for the complex, the changing and the indeterminate". ACM/CSC-ER Proceedings of the 1965 20th national conference. http://portal.acm.org/citation.cfm?id=806036.
+Nelson, Theodor H. (September 1970). "No More Teachers’ Dirty Looks". Computer Decisions. http://www.newmediareader.com/excerpts.html.
+Nelson, Theodor H. (1973). "A Conceptual framework for man-machine everything". AFIPS Conference Proceedings VOL. 42. pp. M22–M23.
+Nelson, Theodor H. (1992). Literary Machines 93.1. Sausalito CA: Mindful Press. ISBN 0-89347-062-7.
+van Dam, Andries (July 1988). "Hypertext: '87 keynote address". Communications of the ACM 31: 887–895. doi:10.1145/48511.48519. http://www.cs.brown.edu/memex/HT_87_Keynote_Address.html.
+Yankelovich, Nicole; Landow, George P., and Cody, David (1987). "Creating hypermedia materials for English literature students". SIGCUE Outlook 20 (3): All.
+[edit]External links
+
+	Look up hypertext in Wiktionary, the free dictionary.
+Hypertext: Behind the Hype
+Reviving Advanced Hypertext (whether and how concepts from hypertext research can be used on the Web)
+Hypertext Conferences
+Ed-Media World Conference on Educational Multimedia, Hypermedia, and Telecommunications
+The ACM Conference on Hypertext and Hypermedia
+Categories: Hypertext | Hypermedia | Electronic literature | American inventions | Ted Nelson

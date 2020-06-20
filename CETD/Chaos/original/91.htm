@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>Wolfram Blog : Fixing Bad Astrophotography Using Mathematica 8 and Advanced Image Deconvolution</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="http://blog.wolfram.com/wp-content/themes/WRI_2_0/style.css" type="text/css" media="all" />
+   <meta name="generator" content="WordPress 2.8.4" /> <!-- leave this for stats please -->
+   <meta name="Description" content="Richardson-Lucy, Steepest Descent, & other deconvolution algorithms in Mathematica 8 provide powerful tools for cleaning up and enhancing astronomical images." />
+      <link rel="shortcut icon" href="http://blog.wolfram.com/favicon.ico" type="image/vnd.microsoft.icon" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.wolfram.com/feed/" />
+   <link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.wolfram.com/feed/rss/" />
+   <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://blog.wolfram.com/feed/atom/" />
+   <link rel="pingback" href="http://blog.wolfram.com/xmlrpc.php" />
+         <link rel="alternate" type="application/rss+xml" title="Wolfram Blog &raquo; Fixing Bad Astrophotography Using &lt;em&gt;Mathematica&lt;/em&gt; 8 and Advanced Image Deconvolution Comments Feed" href="http://blog.wolfram.com/2010/12/27/fixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution/feed/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.wolfram.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.wolfram.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Wolfram Blog' href='http://blog.wolfram.com' />
+<link rel='start' title='Welcome to the Wolfram Blog' href='http://blog.wolfram.com/2007/05/01/welcome-to-the-wolfram-blog/' />
+<link rel='prev' title='The Battle of the Marlborough Maze at Blenheim Palace Continues' href='http://blog.wolfram.com/2010/12/21/the-battle-of-the-marlborough-maze-at-blenheim-palace-continues/' />
+<meta name="generator" content="WordPress 2.8.4" />
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5677369-3']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!-- WP-SWFObject 2.3 by unijimpe -->
+<script src="/wp-content/plugins/wp-swfobject/2.0/swfobject.js" type="text/javascript"></script>
+</head>
+<body>
+   <div id="banner"><img src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/bannerandlogo_print.gif" border="0"></div>
+   <a id="logo_left" href="http://blog.wolfram.com" title="Wolfram Blog--News, views, &amp; ideas from the front lines at Wolfram Research"></a>
+   <a id="logo_right" href="http://www.wolfram.com/" title="Wolfram Research"></a>
+
+   <div id="content">
+   
+               <div id="banner_more_posts">
+      <a href="http://blog.wolfram.com/2010/12/21/the-battle-of-the-marlborough-maze-at-blenheim-palace-continues/">Previous</a> |       December 27, 2010            </div>
+      <div class="post">
+         <img class="author" src="http://blog.wolfram.com/images/people/sherlock.jpg" alt="Tom Sherlock" title="Tom Sherlock" />
+         <div class="post_content">
+            <div class="post_title">
+               <a href="http://blog.wolfram.com/2010/12/27/fixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution/" title="Permanent Link to Fixing Bad Astrophotography Using Mathematica 8 and Advanced Image Deconvolution">Fixing Bad Astrophotography Using <em>Mathematica</em> 8 and Advanced Image Deconvolution</a>
+            </div>
+            <div class="post_time">
+               December 27, 2010            </div>
+            <div class="author_info">
+               Tom Sherlock, User Interface Group            </div>
+            <p>Here is a shot I took of M27, the famous Dumbbell Nebula, with my home-brew 90mm astrograph and inexpensive equatorial mount.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad1.png" alt="M27 Dumbbell Nebula" title="M27 Dumbbell Nebula" width="400" height="299" class="alignnone size-full wp-image-4526" /></p>
+<p>Actually, it isn&#8217;t a single shot, but a combination of about 30 fairly short exposures, added together. Adding together short subframes rather than taking a single longer exposure makes it possible to create astrophotos without additional equipment for &#8220;guiding&#8221; the telescope. Guiding means applying small corrections, either manually or automatically, during the exposure to compensate for imperfections in either the mount&#8217;s alignment away from the polar axis or the mount&#8217;s drive mechanism. Combining the subframes has the additional benefit of reducing noise and increasing the signal to produce a result similar to a much longer exposure.  </p>
+<p>Before we go further, it&#8217;s fun to look up information about M27 using the new <a href="http://www.wolframalpha.com/">Wolfram|Alpha</a> features built in to <a href="http://www.wolfram.com/products/mathematica/index.html"><em>Mathematica</em></a> 8.<br />
+<span id="more-4524"></span><br />
+<a href="http://www.wolframalpha.com/input/?i=M27"><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad2.png" alt="M27 information given by Wolfram|Alpha inside Mathematica" title="M27 information given by Wolfram|Alpha inside Mathematica" width="405" height="1153" class="alignnone size-full wp-image-4529" border="0" /></a></p>
+<p>In my photo, notice the egg-shaped stars. In addition to normal &#8220;bloating&#8221; of the pixels around bright stars, these are due to the mount being slightly misaligned from the polar axis, which caused a slight drift, and also from the stacking process, which averaged the drift and tracking errors into oval blob-shaped stars.</p>
+<p>Luckily we can use the new <a href="http://reference.wolfram.com/mathematica/ref/ImageDeconvolve.html">deconvolution</a> features in <em>Mathematica</em> and <a href="http://www.wolfram.com/mathematica-home-edition/"><em>Mathematica Home Edition</em></a>&#8217;s <a href="http://www.wolfram.com/mathematica/new-in-8/comprehensive-image-processing-environment/">image processing</a> package to reduce the effects of these errors.</p>
+<p>First, I bring the stacked <a href="http://reference.wolfram.com/mathematica/ref/format/FITS.html">FITS</a> image file directly into <em>Mathematica</em>:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad3.png" alt="Stacked FITS image file brought directly into Mathematica" title="Stacked FITS image file brought directly into Mathematica" width="317" height="26" class="alignnone size-full wp-image-4535" /></p>
+<p>These are the RGB color components of the image:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad4.png" alt="RGB color components of the image" title="RGB color components of the image" width="427" height="323" class="alignnone size-full wp-image-4536" /></p>
+<p>After combining the color components to form a full color image, we can automatically crop out the borders caused by the stacking process:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad5.png" alt="Combined and cropped image" title="Combined and cropped image" width="444" height="309" class="alignnone size-full wp-image-4538" /></p>
+<p>It is difficult to see the nebula in this image because we haven&#8217;t yet stretched the contrast to emphasize it. We will do that in the last step because we don&#8217;t want to introduce spurious noise at this point into the deconvolution routines.</p>
+<p>We can assume that this image is a &#8220;perfect&#8221; image that has been distorted by a mathematical function, which has transformed the point images of the stars into the egg-shaped blobs we see here. This function, known as a point spread function (or PSF), combines the tracking errors of the mount and the distortions produced by the imperfect optics (and all optics are imperfect, by the way) and the atmosphere.</p>
+<p>If we can estimate the PSF, <em>Mathematica</em> 8 has some new tools in its image processing package that will let us recover an approximation of the perfect image from the distorted image above.</p>
+<p>For this, we are going to use Richardson&ndash;Lucy (RL) deconvolution <a href="#Bib">[1-2]</a>.</p>
+<p>Image deconvolution is a mathematical technique to remove the effects of a distorting function on the signal portion of an image. Deconvolution has been used famously in the past to improve early images taken by the Hubble Space Telescope before corrective optics were installed to compensate for the spherical aberration in its flawed primary mirror.</p>
+<p>We can model a distorted image by representing the observed pixel value at location <em>i</em> in the bad image, <em>b<sub>i</sub></em> as a convolution of the point spread function with the good image:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad6.png" alt="Modeling a distorted image" title="Modeling a distorted image" width="70" height="38" class="alignnone size-full wp-image-4542" /></p>
+<p>Here, <em>p<sub>ij</sub></em> is the point spread function, which is the portion of the light coming from position <em>j</em> that is observed at position <em>i</em>, and <em>g<sub>j</sub></em> is the &#8220;true&#8221; pixel value at location <em>j</em> in the good image.</p>
+<p>If we can estimate the PSF, Richardson&ndash;Lucy deconvolution can estimate the successive approximations of the good pixel <em>g</sub>j</sub></em> from the bad pixels <em>b<sub>i</sub></em> by using an iterative process:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad7.png" alt="Estimating successive approximations using an iterative process" title="Estimating successive approximations using an iterative process" width="96" height="41" class="alignnone size-full wp-image-4546" /></p>
+<p>where the weights are:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad8.png" alt="Weights of the iterative process" title="Weights of the iterative process" width="69" height="37" class="alignnone size-full wp-image-4547" /></p>
+<p>We have to estimate the point spread function that describes the distortion. Luckily the PSF can easily be derived from the image itself.  </p>
+<p>As a brief aside, because of the wave nature of light, given perfect optics and atmospheric conditions, stars will appear in a telescope&#8217;s field of view as ring-shaped diffraction patterns, which we can simulate by plotting <em>sin(r)<sup>2</sup>/r<sup>2</sup></em>:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad9.png" alt="Plot of sin(r)^2/r^2" title="Plot of sin(r)^2/r^2" width="404" height="422" class="alignnone size-full wp-image-4550" /></p>
+<p>For low magnification images, where the image scale is much larger than the scale of the above diffraction pattern (typically on the order of an arc second for amateur scopes), we can take the stars to essentially be point images. Therefore, in order to estimate the point spread function, we can use a distorted, unsaturated image of a star in the input image as a reasonable approximation. </p>
+<p>To approximate the PSF, we need a star that best represents the tracking error. We need a dim star because we don&#8217;t want to be affected by the CCD camera&#8217;s bloating effect that occurs when exposing bright stars. Luckily, <em>Mathematica</em> makes picking stars out of the image easy. Here we use <a href="http://reference.wolfram.com/mathematica/ref/ComponentMeasurements.html"><tt>ComponentMeasurements</tt></a> and <a href="http://reference.wolfram.com/mathematica/ref/MorphologicalComponents.html"><tt>MorphologicalComponents</tt></a> to obtain the pixel coordinates of all the stars a certain amount above the background:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad12.png" alt="Obtaining pixel coordinates of all stars a certain amount above the background" title="Obtaining pixel coordinates of all stars a certain amount above the background" width="470" height="177" class="alignnone size-full wp-image-4553" /></p>
+<p>Once we have their coordinates, we can use <a href="http://reference.wolfram.com/mathematica/ref/ImageTrim.html"><tt>ImageTrim</tt></a> to carve these out of the original image with a bit of padding, and then choose a star:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad14.png" alt="Carving stars out of the original image using ImageTrim" title="Carving stars out of the original image using ImageTrim" width="415" height="253" class="alignnone size-full wp-image-4556" /></p>
+<p>We need to remove background noise from the PSF before using it, because the deconvolution algorithms are highly sensitive to noise:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad15.png" alt="Removing background noise" title="Removing background noise" width="299" height="20" class="alignnone size-full wp-image-4558" /></p>
+<p>and then normalize the values:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad16.png" alt="Normalizing the values" title="Normalizing the values" width="468" height="68" class="alignnone size-full wp-image-4559" /></p>
+<p>Now it can be used as part of the input into the new Richardson&ndash;Lucy image deconvolution feature in <em>Mathematica</em> 8&#8217;s image processing package:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad17.png" alt="Richardson&ndash;Lucy image deconvolution feature in Mathematica 8" title="Richardson&ndash;Lucy image deconvolution feature in Mathematica 8" width="432" height="52" class="alignnone size-full wp-image-4561" /></p>
+<p>Finally, we stretch the image to bring out the nebula:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad18.png" alt="Stretching the image to bring out the nebula" title="Stretching the image to bring out the nebula" width="449" height="309" class="alignnone size-full wp-image-4562" /></p>
+<p>The stars are smaller and more symmetric. The purple halos around the brighter stars are a product of the chromatic aberration caused by achromatic optics in the telescope. If you look closely, there is also a faint, dark &#8220;ringing” around the star images, which is an artifact of the RL deconvolution process.</p>
+<p>The Richardson&ndash;Lucy algorithm, dating from 1972, is a venerable and widely used image deconvolution algorithm. <em>Mathematica</em> 8 also includes newer algorithms, which can also be used in astronomical image processing. For example, the Steepest Descent algorithm <a href="#Bib">[3]</a> produces similar results to RL in fewer iterations, has less ringing, and brings out fainter details that reveal the bubble-like nature of the nebula:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/FixingBad19.png" alt="Steepest Descent image deconvolution algorithm" title="Steepest Descent image deconvolution algorithm" width="449" height="367" class="alignnone size-full wp-image-4565" /></p>
+<p>In conclusion, Richardson&ndash;Lucy, Steepest Descent, and other deconvolution algorithms in <em>Mathematica</em> 8 provide powerful tools for cleaning up and enhancing astronomical images. In future blog entries, I&#8217;ll show how other image processing techniques can be used to further enhance these images.</p>
+<p><a name="Bib"></a><br />
+<strong>Bibliography</strong></p>
+<p>1. Richardson, W. H. &#8220;Bayesian-Based Iterative Method of Image Restoration.” <em>Journal of the Optical Society of America</em> 62, no. 1 (1972): 55-59.</p>
+<p>2. Lucy, L.B. &#8220;An Iterative Technique for the Rectification of Observed Distributions.” <em>Astronomical Journal</em> 79, no. 6 (1974): 745-754.</p>
+<p>3. Nagy, J.G. and Z. Strakos. &#8220;Enforcing Nonnegativity in Image Reconstruction Algorithms.” In <em>Proceedings SPIE Mathematical Modeling, Estimation, and Imaging</em>, 182-190, 2000.</p>
+            <div class="post_footer">
+               <div class="post_footer_left">
+                  <a href="http://blog.wolfram.com/2010/12/27/fixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution/" title="Permanent Link to Fixing Bad Astrophotography Using Mathematica 8 and Advanced Image Deconvolution">Permalink</a> 
+               </div>
+               <div class="post_footer_right">
+                  <a href="http://www.addthis.com/bookmark.php?pub=L4DJFTEHPAW2JE1G&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F27%2Ffixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution%2F&amp;title=Fixing+Bad+Astrophotography+Using+Mathematica+8+and+Advanced+Image+Deconvolution" title="Bookmark using any bookmark manager">add this</a> 
+                  | <a href="http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F27%2Ffixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution%2F&amp;title=Fixing+Bad+Astrophotography+Using+Mathematica+8+and+Advanced+Image+Deconvolution" title="Submit to del.icio.us">del.icio.us</a>
+                  | <a href="http://digg.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F27%2Ffixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution%2F&amp;title=Fixing+Bad+Astrophotography+Using+Mathematica+8+and+Advanced+Image+Deconvolution" title="Submit to Digg">digg</a> 
+                  | <a href="http://reddit.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F27%2Ffixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution%2F&amp;title=Fixing+Bad+Astrophotography+Using+Mathematica+8+and+Advanced+Image+Deconvolution" title="Submit to Reddit">reddit</a> 
+                  | <a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F27%2Ffixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution%2F&amp;title=Fixing+Bad+Astrophotography+Using+Mathematica+8+and+Advanced+Image+Deconvolution" title="Submit to Slashdot">slashdot</a>
+               </div>
+               <div class="single_post_separator"></div>
+            </div>            
+
+
+<div id="comments">
+
+<h2>Comments</h2>
+<ol class="commentlist">
+        <li class="alt" id="comment-4608"  >
+	<p>Really interesting, thanks for that. It would be nice to have a before and after shot next to each other to compare. Any possibility of adding this to the post?</p>
+<p>Many thanks,</p>
+<p>Jonathan</p>
+	<cite><span class="comment_auth">Posted by <a href='http://www.jonstraveladventures.blogspot.com' rel='external nofollow' class='url'>Jonathan</a></span><span class="comment_time"><a href="#comment-4608" title="">December 27, 2010 at 4:52 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-4609"  >
+	<p>Useful example of some of the new tools. It would be nice to have the original fits file so we could play with it and compare results.</p>
+	<cite><span class="comment_auth">Posted by Mike Burns</span><span class="comment_time"><a href="#comment-4609" title="">December 27, 2010 at 9:31 pm</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-4610" style="border: none" >
+	<p>very nice and interesting surprise</p>
+<p>Many thanks,</p>
+<p>Lukasz</p>
+	<cite><span class="comment_auth">Posted by <a href='http://www.matematyka.pl' rel='external nofollow' class='url'>Luke</a></span><span class="comment_time"><a href="#comment-4610" title="">December 28, 2010 at 3:11 am</a></span></cite>
+	</li>
+
+
+</ol>
+
+
+<h2 id="respond">Leave a Reply</h2>
+
+	
+<form action="http://blog.wolfram.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author">Name (required)</label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email">Mail (required, but will not be published)</label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url">Website</label></p>
+
+
+<p><textarea name="comment" id="comment" cols="50" rows="5" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit"  />
+<input type="hidden" name="comment_post_ID" value="4524" />
+</p>
+
+</form>
+
+
+</div>
+
+         </div>
+      </div>
+
+      <div id="single_footer_more_posts">
+      <a href="http://blog.wolfram.com/2010/12/21/the-battle-of-the-marlborough-maze-at-blenheim-palace-continues/">Previous</a> |       December 27, 2010            </div>      
+      
+                
+      <div id="copyright">&copy; 2010 Wolfram Research, Inc.</div>
+   </div>
+   
+   <ul id="sidebar">
+   <li>
+      <div id="home_link">
+         <a href="http://blog.wolfram.com" title="Home">Home</a> 
+      </div>
+   </li>
+      <li id="search" class="widget wri_widget_search"><h2 class="widgettitle">Search This Blog</h2>
+<form method="get" action="http://blog.wolfram.com/" id="search_form">
+<input type="text" value="" name="s" id="search_text" />
+<input id="search_submit" type="image" src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/form_button.gif" name="submit" />
+</form>
+</li>
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+				<li><a href="http://blog.wolfram.com/2010/12/27/fixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution/" title="Fixing Bad Astrophotography Using &lt;em&gt;Mathematica&lt;/em&gt; 8 and Advanced Image Deconvolution">Fixing Bad Astrophotography Using <em>Mathematica</em> 8 and Advanced Image Deconvolution </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/21/the-battle-of-the-marlborough-maze-at-blenheim-palace-continues/" title="The Battle of the Marlborough Maze at Blenheim Palace Continues">The Battle of the Marlborough Maze at Blenheim Palace Continues </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/17/the-mathematica-one-liner-competition/" title="The &lt;em&gt;Mathematica&lt;/em&gt; One-Liner Competition">The <em>Mathematica</em> One-Liner Competition </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/14/the-legacy-of-tron/" title="The Legacy of &lt;em&gt;TRON&lt;/em&gt;">The Legacy of <em>TRON</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/" title="Automatic Physical Units in &lt;em&gt;Mathematica&lt;/em&gt;">Automatic Physical Units in <em>Mathematica</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/" title="Navigating the Blenheim Maze">Navigating the Blenheim Maze </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/" title="How to Win at Coin Flipping">How to Win at Coin Flipping </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/23/conrad-wolframs-ted-talk-stop-teaching-calculating-start-teaching-math/" title="Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221;">Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221; </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/16/programming-with-natural-language-is-actually-going-to-work/" title="Programming with Natural Language Is Actually Going to Work">Programming with Natural Language Is Actually Going to Work </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/" title="The Free-Form Linguistics Revolution in &lt;em&gt;Mathematica&lt;/em&gt;">The Free-Form Linguistics Revolution in <em>Mathematica</em> </a></li>
+				</ul>
+		</li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<ul>
+			<li><a href='http://blog.wolfram.com/2010/12/' title='December 2010'>December 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/11/' title='November 2010'>November 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/08/' title='August 2010'>August 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/07/' title='July 2010'>July 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/06/' title='June 2010'>June 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/02/' title='February 2010'>February 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/11/' title='November 2009'>November 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/10/' title='October 2009'>October 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/09/' title='September 2009'>September 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/08/' title='August 2009'>August 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/07/' title='July 2009'>July 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/06/' title='June 2009'>June 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/05/' title='May 2009'>May 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/04/' title='April 2009'>April 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/03/' title='March 2009'>March 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/02/' title='February 2009'>February 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/01/' title='January 2009'>January 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2008/12/' title='December 2008'>December 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/11/' title='November 2008'>November 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/10/' title='October 2008'>October 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/09/' title='September 2008'>September 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/08/' title='August 2008'>August 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/07/' title='July 2008'>July 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/06/' title='June 2008'>June 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/05/' title='May 2008'>May 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/04/' title='April 2008'>April 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/03/' title='March 2008'>March 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/02/' title='February 2008'>February 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/01/' title='January 2008'>January 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2007/12/' title='December 2007'>December 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/11/' title='November 2007'>November 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/10/' title='October 2007'>October 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/09/' title='September 2007'>September 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/08/' title='August 2007'>August 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/07/' title='July 2007'>July 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/06/' title='June 2007'>June 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/05/' title='May 2007'>May 2007</a></li>
+		</ul>
+</li>
+<li id="text-1" class="widget widget_text"><h2 class="widgettitle">Related Links</h2>
+			<div class="textwidget"><ul>
+<li><a href="http://www.wolfram.com">Wolfram Research</a></li>
+<li><a href="http://www.wolfram.com/products/mathematica"><i>Mathematica</i></a></li>
+<li><a href="http://demonstrations.wolfram.com">Demonstrations Project</a></li>
+<li><a href="http://mathworld.wolfram.com"><i>MathWorld</i></a></li>
+<li><a href="http://tones.wolfram.com">Wolfram<i>Tones</i></a></li>
+<li><a href="http://www.wolframscience.com">Wolfram Science</a></li>
+<li><a href="http://www.stephenwolfram.com">Stephen Wolfram</a></li>
+<li><a href="http://forums.wolfram.com/mathgroup/"><i>MathGroup</i></a></li>
+<li><a href="http://www.wolfram.com/webresources.html">More Wolfram sites...</a><br /><br /></li>
+<li><a href="/feed">Subscribe to this blog's feed</a></li>
+</ul></div>
+		</li>
+   </ul>
+
+</body>
+</html>

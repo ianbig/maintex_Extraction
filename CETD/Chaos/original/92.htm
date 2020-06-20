@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>Wolfram Blog : The Legacy of TRON</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="http://blog.wolfram.com/wp-content/themes/WRI_2_0/style.css" type="text/css" media="all" />
+   <meta name="generator" content="WordPress 2.8.4" /> <!-- leave this for stats please -->
+   <meta name="Description" content="Discussion of the graphics behind Tron--the first time computer animation was a major part of the movie--and the upcoming sequel." />
+      <link rel="shortcut icon" href="http://blog.wolfram.com/favicon.ico" type="image/vnd.microsoft.icon" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.wolfram.com/feed/" />
+   <link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.wolfram.com/feed/rss/" />
+   <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://blog.wolfram.com/feed/atom/" />
+   <link rel="pingback" href="http://blog.wolfram.com/xmlrpc.php" />
+         <link rel="alternate" type="application/rss+xml" title="Wolfram Blog &raquo; The Legacy of &lt;em&gt;TRON&lt;/em&gt; Comments Feed" href="http://blog.wolfram.com/2010/12/14/the-legacy-of-tron/feed/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.wolfram.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.wolfram.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Wolfram Blog' href='http://blog.wolfram.com' />
+<link rel='start' title='Welcome to the Wolfram Blog' href='http://blog.wolfram.com/2007/05/01/welcome-to-the-wolfram-blog/' />
+<link rel='prev' title='Automatic Physical Units in &lt;em&gt;Mathematica&lt;/em&gt;' href='http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/' />
+<link rel='next' title='The &lt;em&gt;Mathematica&lt;/em&gt; One-Liner Competition' href='http://blog.wolfram.com/2010/12/17/the-mathematica-one-liner-competition/' />
+<meta name="generator" content="WordPress 2.8.4" />
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5677369-3']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!-- WP-SWFObject 2.3 by unijimpe -->
+<script src="/wp-content/plugins/wp-swfobject/2.0/swfobject.js" type="text/javascript"></script>
+</head>
+<body>
+   <div id="banner"><img src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/bannerandlogo_print.gif" border="0"></div>
+   <a id="logo_left" href="http://blog.wolfram.com" title="Wolfram Blog--News, views, &amp; ideas from the front lines at Wolfram Research"></a>
+   <a id="logo_right" href="http://www.wolfram.com/" title="Wolfram Research"></a>
+
+   <div id="content">
+   
+               <div id="banner_more_posts">
+      <a href="http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/">Previous</a> |       December 14, 2010       | <a href="http://blog.wolfram.com/2010/12/17/the-mathematica-one-liner-competition/">Next</a>      </div>
+      <div class="post">
+         <img class="author" src="http://blog.wolfram.com/images/people/edp.jpg" alt="Ed Pegg Jr" title="Ed Pegg Jr" />
+         <div class="post_content">
+            <div class="post_title">
+               <a href="http://blog.wolfram.com/2010/12/14/the-legacy-of-tron/" title="Permanent Link to The Legacy of TRON">The Legacy of <em>TRON</em></a>
+            </div>
+            <div class="post_time">
+               December 14, 2010            </div>
+            <div class="author_info">
+               Ed Pegg Jr, Scientific Information Group            </div>
+            <p><em>Editorial note: A future post will explore some of the contributions to the visual arts and media facilitated by Mathematica.</em></p>
+<p>The year 1982 saw a lot of important movies: <em>Blade Runner</em>, <em>E.T.: The Extra-Terrestrial</em>, <em>Poltergeist</em>, <em>Star Trek II: The Wrath of Khan</em>, <em>The Thing</em>, <em>Mad Max 2: The Road Warrior</em>, <em>Pink Floyd The Wall</em>, <em>First Blood</em>, <em>Conan the Barbarian</em>, <em>Fast Times at Ridgemont High</em>, <em>The Dark Crystal</em>, and <em>TRON</em>.</p>
+<p>I used <em><a href="http://www.wolfram.com/mathematica/">Mathematica</a></em> functionality to turn the <em>TRON</em> logo into something you can manipulate. You can <a href="http://blog.wolfram.com/data/uploads/2010/12/LegacyofTron.nb">download my notebook</a> to play with the logo. (<em><a href="http://www.wolfram.com/mathematica-home-edition/">Mathematica Home Edition</a></em> could be used to do this as well.)</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/tronlogo.jpg" alt="Tron Logo" title="Tron Logo" width="420" height="140" class="alignleft size-full wp-image-4416" /><br />
+<span id="more-4415"></span><br />
+In the early 1980s, there were four main firms doing computer graphics: <a href="http://en.wikipedia.org/wiki/Information_International_Inc." target="_blank">Information International, Inc.</a>, <a href="http://en.wikipedia.org/wiki/Robert_Abel_and_Associates" target="_blank">Robert Abel and Associates</a>, <a href="http://en.wikipedia.org/wiki/Mathematical_Applications_Group,_Inc." target="_blank">Mathematical Applications Group, Inc.</a>, and <a href="http://en.wikipedia.org/wiki/Digital_Effects" target="_blank">Digital Effects Inc.</a> For <em>TRON</em>, all four firms were hired. For example, Digital Effects produced the <a href="http://www.youtube.com/watch?v=_fGujzulsas" target="_blank">Bit sequence</a>. Bit&#8217;s &#8220;no&#8221; state is the <a href="http://www.mathconsult.ch/showroom/icosahedra/35.html" target="_blank">35th stellation of the icosahedron</a>. The null state is a <a href="http://mathworld.wolfram.com/Dodecahedron-IcosahedronCompound.html">dodecahedron-icosahedron compound</a>.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/tronstar.jpg" alt="A Bit in a no state" title="A Bit in a no state" width="405" height="239" class="alignleft size-full wp-image-4417" /></p>
+<p><em>TRON</em> marked the first time computer animation was a major part of a movie. Systems of the era had 2 MB of memory and used disks with 330 MB of storage. To compensate for this, they faded anything non-vital to black to save on memory. The Academy of Motion Picture Arts &#038; Sciences refused to consider a special effects award for <em>TRON</em> because the <a href="http://articles.sfgate.com/2002-01-09/technology/17524410_1_tron-steven-lisberger-tilda-swinton/3" target="_blank">use of computers was considered cheating at the time</a>.</p>
+<p>The <a href="http://www.youtube.com/watch?v=-3ODe9mqoDE" target="_blank">Light Cycle</a> sequence was based on the computer game <em>Surround</em> (also called <em>Snake</em>, <em>Blockade</em>, and <em>Worm</em>). For me, it was one of the first times the Cartesian grid was rendered in an exciting way.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/tronlightcycle.jpg" alt="The Light Cycle sequence" title="The Light Cycle sequence" width="405" height="256" class="alignleft size-full wp-image-4418" /></p>
+<p>Many staples of computer graphics today, such as <a href="http://en.wikipedia.org/wiki/Perlin_noise" target="_blank">Perlin noise</a>, were originally developed for <em>TRON</em>. The sequel, <em>TRON: Legacy</em>, has a reputation to follow&mdash;not only cutting edge computer graphics, but also general computer geekiness. For example, the rotating scoreboard in one of the <em>TRON: Legacy</em> games has 16 notable computer scientists (image below from Justin Springer&#8217;s <em><a href="http://www.amazon.com/Art-Tron-Legacy-Justin-Springer/dp/1423131495/wolframresearch-20" target="_blank">The Art of TRON: Legacy</a></em>). </p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/tronlegacy.jpg" alt="Scoreboard from TRON: Legacy" title="Scoreboard from TRON: Legacy" width="405" height="95" class="alignleft size-full wp-image-4419" /></p>
+<p>Here are a few of the scientists listed on the scoreboard:</p>
+<p><a href="http://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a> developed the World Wide Web.<br />
+<a href="http://en.wikipedia.org/wiki/Thomas_Eugene_Kurtz" target="_blank">Thomas Eugene Kurtz</a> developed the BASIC programming language.<br />
+<a href="http://en.wikipedia.org/wiki/J._Presper_Eckert" target="_blank">J. Presper Eckert</a> developed ENIAC.<br />
+<a href="http://en.wikipedia.org/wiki/Peter_J._Landin" target="_blank">Peter J. Landin</a> developed ALGOL.<br />
+<a href="http://en.wikipedia.org/wiki/Ed_Logg" target="_blank">Ed Logg</a> developed Centipede and Gauntlet.<br />
+<a href="http://en.wikipedia.org/wiki/William_Wulf" target="_blank">William Wulf</a> developed the BLISS programming language.<br />
+<a href="http://en.wikipedia.org/wiki/John_Backus" target="_blank">John Backus</a> developed FORTAN.<br />
+<a href="http://en.wikipedia.org/wiki/Turing" target="_blank">Alan Turing</a> developed many of the initial concepts of computers.<br />
+<a href="http://en.wikipedia.org/wiki/Seymour_Cray" target="_blank">Seymour Cray</a> developed supercomputers.</p>
+<p>If a teapot appears in the movie, you can bet that it will be a <a href="http://demonstrations.wolfram.com/TempestuousTeapot/">Utah teapot</a>, which is a historically famous computer graphic image.</p>
+<p><a href="http://demonstrations.wolfram.com/TempestuousTeapot/"><img src="http://blog.wolfram.com/data/uploads/2010/12/tronteapot.jpg" alt="Tempestuous Teapot" title="Tempestuous Teapot" width="405" height="357" class="alignleft size-full wp-image-4420" border="0" /></a></p>
+<p>The director of the sequel is Joseph Kosinski, who got his start with computer graphics and their applications to architecture. Very early on in the development of <em>TRON: Legacy</em>, he digitally created all the sets. As always happens in architecture, these designs saw many changes. In some movies, the effort would have stopped there&mdash;the <em>Star Wars</em> prequels are good examples. Instead, most of the sets were physically built.</p>
+<p>Classically, movies created a sense of awe with &#8220;How did they do that?&#8221; type effects. Computer graphics have become so good that they became the answer to every question, which served to deflate the awe. The movie <em>Iron Man</em> <a href="http://en.wikipedia.org/wiki/Iron_Man_%28film%29#Effects" target="_blank">broke that cliche</a> by really using props in many cases where they could have used computer animation. <em>TRON: Legacy</em> has continued in that line, by letting the film crew control the computers instead of the other way around.</p>
+<p>I greatly look forward to seeing it.</p>
+<p><a href="http://blog.wolfram.com/data/uploads/2010/12/LegacyofTron.nb">Download notebook</a></p>
+            <div class="post_footer">
+               <div class="post_footer_left">
+                  <a href="http://blog.wolfram.com/2010/12/14/the-legacy-of-tron/" title="Permanent Link to The Legacy of TRON">Permalink</a> 
+               </div>
+               <div class="post_footer_right">
+                  <a href="http://www.addthis.com/bookmark.php?pub=L4DJFTEHPAW2JE1G&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F14%2Fthe-legacy-of-tron%2F&amp;title=The+Legacy+of+TRON" title="Bookmark using any bookmark manager">add this</a> 
+                  | <a href="http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F14%2Fthe-legacy-of-tron%2F&amp;title=The+Legacy+of+TRON" title="Submit to del.icio.us">del.icio.us</a>
+                  | <a href="http://digg.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F14%2Fthe-legacy-of-tron%2F&amp;title=The+Legacy+of+TRON" title="Submit to Digg">digg</a> 
+                  | <a href="http://reddit.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F14%2Fthe-legacy-of-tron%2F&amp;title=The+Legacy+of+TRON" title="Submit to Reddit">reddit</a> 
+                  | <a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F14%2Fthe-legacy-of-tron%2F&amp;title=The+Legacy+of+TRON" title="Submit to Slashdot">slashdot</a>
+               </div>
+               <div class="single_post_separator"></div>
+            </div>            
+
+
+<div id="comments">
+
+<h2>Comments</h2>
+<ol class="commentlist">
+        <li class="alt" id="comment-4482"  >
+	<p>Here&#8217;s a related post about algorithms inspired by Tron &#8212; <a href="http://11011110.livejournal.com/210416.html" rel="nofollow">http://11011110.livejournal.com/210416.html</a></p>
+	<cite><span class="comment_auth">Posted by <a href='http://mathematica-bits.blogspot.com' rel='external nofollow' class='url'>Yaroslav Bulatov</a></span><span class="comment_time"><a href="#comment-4482" title="">December 14, 2010 at 6:04 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-4500"  >
+	<p>I downloaded the .nb file, but there was no &#8220;turn the TRON logo into a Manipulate&#8221; code. Just the article&#8230;.. Could you send a link?</p>
+<p>Thanks.</p>
+	<cite><span class="comment_auth">Posted by <a href='http://www.mumscienceclub.com' rel='external nofollow' class='url'>Barrettt A. Leslie</a></span><span class="comment_time"><a href="#comment-4500" title="">December 15, 2010 at 3:44 am</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-4557"  >
+	<p><a href="http://www.wired.com/magazine/2010/11/ff_tron/" rel="nofollow">http://www.wired.com/magazine/2010/11/ff_tron/</a></p>
+	<cite><span class="comment_auth">Posted by Herbert Exner</span><span class="comment_time"><a href="#comment-4557" title="">December 17, 2010 at 8:15 am</a></span></cite>
+	</li>
+
+
+        <li id="comment-4582" style="border: none" >
+	<p>I like it , it is Very cool!!</p>
+	<cite><span class="comment_auth">Posted by <a href='http://www.flickr.com/photos/29955618@N06/' rel='external nofollow' class='url'>Jorge Gamaliel Frade Chàvez</a></span><span class="comment_time"><a href="#comment-4582" title="">December 19, 2010 at 8:14 pm</a></span></cite>
+	</li>
+
+
+</ol>
+
+
+<h2 id="respond">Leave a Reply</h2>
+
+	
+<form action="http://blog.wolfram.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author">Name (required)</label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email">Mail (required, but will not be published)</label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url">Website</label></p>
+
+
+<p><textarea name="comment" id="comment" cols="50" rows="5" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit"  />
+<input type="hidden" name="comment_post_ID" value="4415" />
+</p>
+
+</form>
+
+
+</div>
+
+         </div>
+      </div>
+
+      <div id="single_footer_more_posts">
+      <a href="http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/">Previous</a> |       December 14, 2010       | <a href="http://blog.wolfram.com/2010/12/17/the-mathematica-one-liner-competition/">Next</a>      </div>      
+      
+                
+      <div id="copyright">&copy; 2010 Wolfram Research, Inc.</div>
+   </div>
+   
+   <ul id="sidebar">
+   <li>
+      <div id="home_link">
+         <a href="http://blog.wolfram.com" title="Home">Home</a> 
+      </div>
+   </li>
+      <li id="search" class="widget wri_widget_search"><h2 class="widgettitle">Search This Blog</h2>
+<form method="get" action="http://blog.wolfram.com/" id="search_form">
+<input type="text" value="" name="s" id="search_text" />
+<input id="search_submit" type="image" src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/form_button.gif" name="submit" />
+</form>
+</li>
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+				<li><a href="http://blog.wolfram.com/2010/12/27/fixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution/" title="Fixing Bad Astrophotography Using &lt;em&gt;Mathematica&lt;/em&gt; 8 and Advanced Image Deconvolution">Fixing Bad Astrophotography Using <em>Mathematica</em> 8 and Advanced Image Deconvolution </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/21/the-battle-of-the-marlborough-maze-at-blenheim-palace-continues/" title="The Battle of the Marlborough Maze at Blenheim Palace Continues">The Battle of the Marlborough Maze at Blenheim Palace Continues </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/17/the-mathematica-one-liner-competition/" title="The &lt;em&gt;Mathematica&lt;/em&gt; One-Liner Competition">The <em>Mathematica</em> One-Liner Competition </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/14/the-legacy-of-tron/" title="The Legacy of &lt;em&gt;TRON&lt;/em&gt;">The Legacy of <em>TRON</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/" title="Automatic Physical Units in &lt;em&gt;Mathematica&lt;/em&gt;">Automatic Physical Units in <em>Mathematica</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/" title="Navigating the Blenheim Maze">Navigating the Blenheim Maze </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/" title="How to Win at Coin Flipping">How to Win at Coin Flipping </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/23/conrad-wolframs-ted-talk-stop-teaching-calculating-start-teaching-math/" title="Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221;">Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221; </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/16/programming-with-natural-language-is-actually-going-to-work/" title="Programming with Natural Language Is Actually Going to Work">Programming with Natural Language Is Actually Going to Work </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/" title="The Free-Form Linguistics Revolution in &lt;em&gt;Mathematica&lt;/em&gt;">The Free-Form Linguistics Revolution in <em>Mathematica</em> </a></li>
+				</ul>
+		</li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<ul>
+			<li><a href='http://blog.wolfram.com/2010/12/' title='December 2010'>December 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/11/' title='November 2010'>November 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/08/' title='August 2010'>August 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/07/' title='July 2010'>July 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/06/' title='June 2010'>June 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/02/' title='February 2010'>February 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/11/' title='November 2009'>November 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/10/' title='October 2009'>October 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/09/' title='September 2009'>September 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/08/' title='August 2009'>August 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/07/' title='July 2009'>July 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/06/' title='June 2009'>June 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/05/' title='May 2009'>May 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/04/' title='April 2009'>April 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/03/' title='March 2009'>March 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/02/' title='February 2009'>February 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/01/' title='January 2009'>January 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2008/12/' title='December 2008'>December 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/11/' title='November 2008'>November 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/10/' title='October 2008'>October 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/09/' title='September 2008'>September 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/08/' title='August 2008'>August 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/07/' title='July 2008'>July 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/06/' title='June 2008'>June 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/05/' title='May 2008'>May 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/04/' title='April 2008'>April 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/03/' title='March 2008'>March 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/02/' title='February 2008'>February 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/01/' title='January 2008'>January 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2007/12/' title='December 2007'>December 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/11/' title='November 2007'>November 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/10/' title='October 2007'>October 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/09/' title='September 2007'>September 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/08/' title='August 2007'>August 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/07/' title='July 2007'>July 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/06/' title='June 2007'>June 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/05/' title='May 2007'>May 2007</a></li>
+		</ul>
+</li>
+<li id="text-1" class="widget widget_text"><h2 class="widgettitle">Related Links</h2>
+			<div class="textwidget"><ul>
+<li><a href="http://www.wolfram.com">Wolfram Research</a></li>
+<li><a href="http://www.wolfram.com/products/mathematica"><i>Mathematica</i></a></li>
+<li><a href="http://demonstrations.wolfram.com">Demonstrations Project</a></li>
+<li><a href="http://mathworld.wolfram.com"><i>MathWorld</i></a></li>
+<li><a href="http://tones.wolfram.com">Wolfram<i>Tones</i></a></li>
+<li><a href="http://www.wolframscience.com">Wolfram Science</a></li>
+<li><a href="http://www.stephenwolfram.com">Stephen Wolfram</a></li>
+<li><a href="http://forums.wolfram.com/mathgroup/"><i>MathGroup</i></a></li>
+<li><a href="http://www.wolfram.com/webresources.html">More Wolfram sites...</a><br /><br /></li>
+<li><a href="/feed">Subscribe to this blog's feed</a></li>
+</ul></div>
+		</li>
+   </ul>
+
+</body>
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>The Art of Computer Programming - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="The_Art_of_Computer_Programming",
+wgTitle="The Art of Computer Programming",
+wgAction="view",
+wgArticleId=31358,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=403250470,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["1968 books", "1969 books", "1973 books", "1981 books", "Computer books", "Computer programming", "Computer science books", "Algorithms", "Analysis of algorithms", "Monographs", "Books by Donald Knuth", "Addison-Wesley books"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-The_Art_of_Computer_Programming skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading"><i>The Art of Computer Programming</i></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<table class="infobox" cellspacing="5" style="width:22em; text-align:left; font-size:88%; line-height:1.5em; width:20em;">
+<tr>
+<th colspan="2" class="" style="text-align:center; text-align:center; font-size:125%; font-weight:bold; background:inherit; font-weight:bold; font-style:italic;">The Art of Computer Programming, Volume 1: Fundamental Algorithms <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Art+of+Computer+Programming%2C+Volume+1%3A+Fundamental+Algorithms&amp;rft.author=%5B%5BDonald+Knuth%5D%5D&amp;rft.date=1968&amp;rft.pub=%5B%5BAddison-Wesley%5D%5D&amp;rft.pages=634">&#160;</span></th>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="/wiki/File:ArtOfComputerProgramming.jpg" class="image" title="The cover of the third edition of volume 1"><img alt="The cover of the third edition of volume 1" src="http://upload.wikimedia.org/wikipedia/en/thumb/6/62/ArtOfComputerProgramming.jpg/200px-ArtOfComputerProgramming.jpg" width="200" height="282" /></a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:inherit; white-space:nowrap;">Author</th>
+<td class="" style=""><a href="/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:inherit; white-space:nowrap;">Country</th>
+<td class="" style=""><a href="/wiki/United_States" title="United States">United States</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:inherit; white-space:nowrap;">Language</th>
+<td class="" style=""><a href="/wiki/English_language" title="English language">English</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:inherit; white-space:nowrap;">Genre(s)</th>
+<td class="" style=""><a href="/wiki/Non-fiction" title="Non-fiction">Non-fiction</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:inherit; white-space:nowrap;">Publisher</th>
+<td class="" style=""><a href="/wiki/Addison-Wesley" title="Addison-Wesley" class="mw-redirect">Addison-Wesley</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:inherit; white-space:nowrap;">Publication date</th>
+<td class="" style="">1968</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:inherit; white-space:nowrap;">Media type</th>
+<td class="" style="">Print (<a href="/wiki/Hardcover" title="Hardcover">Hardcover</a>)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:inherit; white-space:nowrap;">Pages</th>
+<td class="" style="">634</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:inherit; white-space:nowrap;"><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a></th>
+<td class="" style=""><a href="/wiki/Special:BookSources/0-201-03801-3" title="Special:BookSources/0-201-03801-3">0-201-03801-3</a></td>
+</tr>
+</table>
+<p><i><b>The Art of Computer Programming</b></i> (acronym: <b>TAOCP</b>) is a comprehensive <a href="/wiki/Monograph" title="Monograph">monograph</a> written by <a href="/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a> that covers many kinds of <a href="/wiki/Programming" title="Programming" class="mw-redirect">programming</a> <a href="/wiki/Algorithm" title="Algorithm">algorithms</a> and <a href="/wiki/Analysis_of_algorithms" title="Analysis of algorithms">their analysis</a>. Knuth began the project, originally conceived as a single book, in 1962. The first three of what were then expected to be seven volumes were published in rapid succession in 1968, 1969, and 1973. The first installment of Volume 4 was not published until February 2005. Additional installments are planned for release approximately biannually with a break before <a href="http://en.wiktionary.org/wiki/fascicle" class="extiw" title="wikt:fascicle">fascicle</a> 5 to finish the "Selected Papers" series.<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Assembly_language_in_the_book"><span class="tocnumber">2</span> <span class="toctext">Assembly language in the book</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Critical_response"><span class="tocnumber">3</span> <span class="toctext">Critical response</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Chapter_outline_of_published_and_unpublished_volumes"><span class="tocnumber">4</span> <span class="toctext">Chapter outline of published and unpublished volumes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Detailed_outline_of_unpublished_Volume_4"><span class="tocnumber">5</span> <span class="toctext">Detailed outline of unpublished Volume 4</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Subvolume_4A_Enumeration_and_Backtracking"><span class="tocnumber">5.1</span> <span class="toctext">Subvolume 4A Enumeration and Backtracking</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Subvolume_4B_Graph_and_Network_Algorithms"><span class="tocnumber">5.2</span> <span class="toctext">Subvolume 4B Graph and Network Algorithms</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Subvolumes_4C_and_4D_Optimization_and_Recursion"><span class="tocnumber">5.3</span> <span class="toctext">Subvolumes 4C and 4D Optimization and Recursion</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#English_editions"><span class="tocnumber">6</span> <span class="toctext">English editions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Current_editions"><span class="tocnumber">6.1</span> <span class="toctext">Current editions</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Previous_editions"><span class="tocnumber">6.2</span> <span class="toctext">Previous editions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Notes"><span class="tocnumber">7</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Footnotes"><span class="tocnumber">8</span> <span class="toctext">Footnotes</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=1" title="Edit section: History">edit</a>]</span> <span class="mw-headline" id="History">History</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:KnuthAtOpenContentAlliance.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/KnuthAtOpenContentAlliance.jpg/200px-KnuthAtOpenContentAlliance.jpg" width="200" height="237" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:KnuthAtOpenContentAlliance.jpg" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Donald Knuth in 2005</div>
+</div>
+</div>
+<p>Considered an expert at writing <a href="/wiki/Compilers" title="Compilers" class="mw-redirect">compilers</a>, Knuth started to write a book about compiler design in 1962, and soon realized that the scope of the book needed to be much larger. In June 1965, Knuth finished the first draft of what was originally planned to be a single volume of twelve chapters. His hand-written manuscript was 3,000 pages long: he had assumed that about five hand-written pages would translate into one printed page, but his publisher said instead that about 1½ hand-written pages translated to one printed page. This meant the book would be approximately 2,000 pages in length. At this point, the plan was changed: the book would be published in seven volumes, each with just one or two chapters. Due to the growth in the material, the plan for Volume 4 has since expanded to include Volumes 4A, 4B, 4C, and possibly 4D.</p>
+<p>In 1976, Knuth prepared a second edition of Volume 2, requiring it to be <a href="/wiki/Typesetting" title="Typesetting">typeset</a> again, but the style of type used in the first edition (called <a href="/wiki/Hot_metal_typesetting" title="Hot metal typesetting">hot type</a>) was no longer available. In 1977, he decided to spend a few months working up something more suitable. Eight years later, he returned with <a href="/wiki/TeX" title="TeX">TeX</a>, which is currently used for all volumes.</p>
+<p>The famous offer of a <a href="/wiki/Knuth_reward_check" title="Knuth reward check">reward check</a> worth "one hexadecimal dollar" (100<sub><a href="/wiki/Hexadecimal" title="Hexadecimal">HEX</a></sub> <a href="/wiki/Hexadecimal" title="Hexadecimal">base 16</a> cents, in <a href="/wiki/Decimal" title="Decimal">decimal</a>, is $2.56) for any errors found, and the correction of these errors in subsequent printings, has contributed to the highly polished and still-authoritative nature of the work, long after its first publication. Another characteristic of the volumes is the variation in the difficulty of the exercises. The level of difficulty ranges from "warm-up" exercises to unsolved research problems, providing a challenge for any reader. Knuth's dedication is also famous:</p>
+<blockquote>
+<p>This series of books is affectionately dedicated<br />
+to the <a href="/wiki/IBM_650" title="IBM 650">Type 650 computer</a> once installed at<br />
+<a href="/wiki/Case_Institute_of_Technology" title="Case Institute of Technology" class="mw-redirect">Case Institute of Technology</a>,<br />
+with whom I have spent many pleasant evenings.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>nb 1<span>]</span></a></sup></p>
+</blockquote>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=2" title="Edit section: Assembly language in the book">edit</a>]</span> <span class="mw-headline" id="Assembly_language_in_the_book">Assembly language in the book</span></h2>
+<p>All examples in the books use a language called "MIX assembly language", which runs on the hypothetical <a href="/wiki/MIX" title="MIX">MIX</a> computer. (Currently, the MIX computer is being replaced by the <a href="/wiki/MMIX" title="MMIX">MMIX</a> computer, which is a <a href="/wiki/RISC" title="RISC" class="mw-redirect">RISC</a> version.) Software such as <a href="/wiki/GNU_MDK" title="GNU MDK" class="mw-redirect">GNU MDK</a> exists to provide emulation of the MIX architecture.</p>
+<p>Some readers are put off by the use of <a href="/wiki/Assembly_language" title="Assembly language">assembly language</a>, but Knuth considers this necessary because algorithms need to be in context in order for their speed and memory usage to be judged. This does, however, limit the accessibility of the book for many readers, and limits its usefulness as a "cookbook" for practicing programmers, who may not be familiar with assembly, or who may have no particular desire to translate assembly language code into a high-level language. A number of more accessible algorithms textbooks using high-level language examples exist and are popular for precisely these reasons.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=3" title="Edit section: Critical response">edit</a>]</span> <span class="mw-headline" id="Critical_response">Critical response</span></h2>
+<p><i><a href="/wiki/American_Scientist" title="American Scientist">American Scientist</a></i> has included this work among "100 or so Books that shaped a Century of Science", referring to the 20th century,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> and within the computer science community it is regarded as the first and still the best comprehensive treatment of its subject. Covers of the third edition of Volume 1 quote <a href="/wiki/Bill_Gates" title="Bill Gates">Bill Gates</a> as saying, "If you think you're a really good programmer .&#160;.&#160;. read (Knuth's) Art of Computer Programming .&#160;.&#160;. You should definitely send me a résumé if you can read the whole thing." <sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>nb 2<span>]</span></a></sup> <i><a href="/wiki/The_New_York_Times" title="The New York Times">The New York Times</a></i> referred to it as "the profession's defining treatise".<sup id="cite_ref-lohr_4-0" class="reference"><a href="#cite_note-lohr-4"><span>[</span>3<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=4" title="Edit section: Chapter outline of published and unpublished volumes">edit</a>]</span> <span class="mw-headline" id="Chapter_outline_of_published_and_unpublished_volumes">Chapter outline of published and unpublished volumes</span></h2>
+<ul>
+<li>Volume 1 - Fundamental Algorithms
+<ul>
+<li>Chapter 1 - Basic concepts</li>
+<li>Chapter 2 - Information structures</li>
+</ul>
+</li>
+<li>Volume 2 - Seminumerical Algorithms
+<ul>
+<li>Chapter 3 - Random numbers</li>
+<li>Chapter 4 - Arithmetic</li>
+</ul>
+</li>
+<li>Volume 3 - Sorting and Searching
+<ul>
+<li>Chapter 5 - <a href="/wiki/Sorting_algorithm" title="Sorting algorithm">Sorting</a></li>
+<li>Chapter 6 - <a href="/wiki/Search_algorithm" title="Search algorithm">Searching</a></li>
+</ul>
+</li>
+<li>Volume 4 - <a href="/wiki/Combinatorics" title="Combinatorics">Combinatorial</a> Algorithms, in preparation (five fascicles have been published as of April 2009, and alpha-test versions of additional fascicles are downloadable from Knuth's page <a href="#External_links">below</a>).
+<ul>
+<li>Volume 4A - <a href="/wiki/Enumeration" title="Enumeration">Enumeration</a> and <a href="/wiki/Backtracking" title="Backtracking">Backtracking</a>
+<ul>
+<li>Chapter 7 - Combinatorial searching</li>
+</ul>
+</li>
+<li>Volume 4B - <a href="/wiki/Graph_theory" title="Graph theory">Graph</a> and Network Algorithms
+<ul>
+<li>Chapter 7 <i>continued</i></li>
+</ul>
+</li>
+<li>Volume 4C and possibly 4D - <a href="/wiki/Program_optimization" title="Program optimization">Optimization</a> and Recursion
+<ul>
+<li>Chapter 7 <i>continued</i></li>
+<li>Chapter 8 - <a href="/wiki/Recursion" title="Recursion">Recursion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Volume 5 - Syntactic Algorithms, planned (as of August 2006, <i>estimated</i> in 2015).
+<ul>
+<li>Chapter 9 - <a href="/wiki/Lexical_analysis" title="Lexical analysis">Lexical scanning</a></li>
+<li>Chapter 10 - <a href="/wiki/Parsing" title="Parsing">Parsing</a> techniques</li>
+</ul>
+</li>
+<li>Volume 6 - Theory of <a href="/wiki/Context-free_language" title="Context-free language">Context-Free Languages</a>, planned.</li>
+<li>Volume 7 - Compiler Techniques, planned.</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=5" title="Edit section: Detailed outline of unpublished Volume 4">edit</a>]</span> <span class="mw-headline" id="Detailed_outline_of_unpublished_Volume_4">Detailed outline of unpublished Volume 4</span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=6" title="Edit section: Subvolume 4A Enumeration and Backtracking">edit</a>]</span> <span class="mw-headline" id="Subvolume_4A_Enumeration_and_Backtracking">Subvolume 4A Enumeration and Backtracking</span></h3>
+<ul>
+<li>7 - Introduction (82pp) - published in Volume 4, Fascicle 0
+<ul>
+<li>7.1 - Zeros and ones
+<ul>
+<li>7.1.1 - Boolean basics (88 pp) - published in Volume 4, Fascicle 0</li>
+<li>7.1.2 - Boolean evaluation (67 pp) - published in Volume 4, Fascicle 0</li>
+<li>7.1.3 - Bitwise tricks and techniques (122 pp) - published in Volume 4, Fascicle 1</li>
+<li>7.1.4 - <a href="/wiki/Binary_decision_diagrams" title="Binary decision diagrams" class="mw-redirect">Binary decision diagrams</a> (150 pp) - published in Volume 4, Fascicle 1</li>
+</ul>
+</li>
+<li>7.2 - Generating all possibilities
+<ul>
+<li>7.2.1 - Combinatorial generators (397 pp)
+<ul>
+<li>7.2.1.1 - Generating all n-tuples - published in Volume 4, Fascicle 2</li>
+<li>7.2.1.2 - Generating all permutations - published in Volume 4, Fascicle 2</li>
+<li>7.2.1.3 - Generating all combinations - published in Volume 4, Fascicle 3</li>
+<li>7.2.1.4 - Generating all partitions - published in Volume 4, Fascicle 3</li>
+<li>7.2.1.5 - Generating all set partitions - published in Volume 4, Fascicle 3</li>
+<li>7.2.1.6 - Generating all trees - published in Volume 4, Fascicle 4</li>
+<li>7.2.1.7 - History and further references - published in Volume 4, Fascicle 4</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=7" title="Edit section: Subvolume 4B Graph and Network Algorithms">edit</a>]</span> <span class="mw-headline" id="Subvolume_4B_Graph_and_Network_Algorithms">Subvolume 4B Graph and Network Algorithms</span></h3>
+<ul>
+<li>
+<ul>
+<li>7.2 - Generating all possibilities (Cont)
+<ul>
+<li>7.2.2 - Basic backtrack</li>
+<li>7.2.3 - Efficient backtracking</li>
+</ul>
+</li>
+<li>7.3 - Shortest paths</li>
+<li>7.4 - Graph algorithms
+<ul>
+<li>7.4.1 - Components and traversal</li>
+<li>7.4.2 - Special classes of graphs</li>
+<li>7.4.3 - Expander graphs</li>
+<li>7.4.4 - Random graphs</li>
+</ul>
+</li>
+<li>7.5 - Network algorithms
+<ul>
+<li>7.5.1 - Distinct representatives</li>
+<li>7.5.2 - The assignment problem</li>
+<li>7.5.3 - Network flows</li>
+<li>7.5.4 - Optimum subtrees</li>
+<li>7.5.5 - Optimum matching</li>
+<li>7.5.6 - Optimum orderings</li>
+</ul>
+</li>
+<li>7.6 - Independence theory
+<ul>
+<li>7.6.1 - Independence structures</li>
+<li>7.6.2 - Efficient matroid algorithms</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=8" title="Edit section: Subvolumes 4C and 4D Optimization and Recursion">edit</a>]</span> <span class="mw-headline" id="Subvolumes_4C_and_4D_Optimization_and_Recursion">Subvolumes 4C and 4D Optimization and Recursion</span></h3>
+<ul>
+<li>
+<ul>
+<li>7.7 - Discrete <a href="/wiki/Dynamic_programming" title="Dynamic programming">dynamic programming</a></li>
+<li>7.8 - <a href="/wiki/Branch-and-bound" title="Branch-and-bound" class="mw-redirect">Branch-and-bound</a> techniques</li>
+<li>7.9 - Herculean tasks (aka <a href="/wiki/NP-hard" title="NP-hard">NP-hard</a> problems)</li>
+<li>7.10 - <a href="/wiki/Approximation_algorithm" title="Approximation algorithm">Near-optimization</a></li>
+</ul>
+</li>
+<li>8 - <a href="/wiki/Recursion" title="Recursion">Recursion</a></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=9" title="Edit section: English editions">edit</a>]</span> <span class="mw-headline" id="English_editions">English editions</span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=10" title="Edit section: Current editions">edit</a>]</span> <span class="mw-headline" id="Current_editions">Current editions</span></h3>
+<p>In order by volume number:</p>
+<ul>
+<li><i>Volume 1: Fundamental <a href="/wiki/Algorithm" title="Algorithm">Algorithms</a></i>. Third Edition (Reading, Massachusetts: Addison-Wesley, 1997), xx+650pp. <a href="/wiki/Special:BookSources/0201896834" class="internal mw-magiclink-isbn">ISBN 0-201-89683-4</a></li>
+<li><i>Volume 1, Fascicle 1: <a href="/wiki/MMIX" title="MMIX">MMIX</a> -- A <a href="/wiki/RISC" title="RISC" class="mw-redirect">RISC</a> Computer for the New Millennium</i>. (Addison-Wesley, February 14, 2005) <a href="/wiki/Special:BookSources/0201853922" class="internal mw-magiclink-isbn">ISBN 0-201-85392-2</a> (will be in the fourth edition of volume 1)</li>
+<li><i>Volume 2: Seminumerical Algorithms</i>. Third Edition (Reading, Massachusetts: Addison-Wesley, 1997), xiv+762pp. <a href="/wiki/Special:BookSources/0201896842" class="internal mw-magiclink-isbn">ISBN 0-201-89684-2</a></li>
+<li><i>Volume 3: <a href="/wiki/Sorting_algorithm" title="Sorting algorithm">Sorting</a> and <a href="/wiki/Search_algorithms" title="Search algorithms" class="mw-redirect">Searching</a></i>. Second Edition (Reading, Massachusetts: Addison-Wesley, 1998), xiv+780pp.+foldout. <a href="/wiki/Special:BookSources/0201896850" class="internal mw-magiclink-isbn">ISBN 0-201-89685-0</a></li>
+<li><i>Volume 4, Fascicle 0: Introduction to <a href="/wiki/Combinatorics" title="Combinatorics">Combinatorial Algorithms</a> and <a href="/wiki/Boolean_function" title="Boolean function">Boolean Functions</a></i>, (Addison-Wesley Professional, April 28, 2008) vi+240pp, <a href="/wiki/Special:BookSources/0321534964" class="internal mw-magiclink-isbn">ISBN 0-321-53496-4</a></li>
+<li><i>Volume 4, Fascicle 1: Bitwise tricks &amp; techniques; Binary Decision Diagrams</i> (Addison-Wesley Professional, March 27, 2009) viii+260pp, <a href="/wiki/Special:BookSources/0321580508" class="internal mw-magiclink-isbn">ISBN 0-321-58050-8</a></li>
+<li><i>Volume 4, Fascicle 2: Generating All <a href="/wiki/Tuple" title="Tuple">Tuples</a> and <a href="/wiki/Permutation" title="Permutation">Permutations</a></i>, (Addison-Wesley, February 14, 2005) v+127pp, <a href="/wiki/Special:BookSources/0201853930" class="internal mw-magiclink-isbn">ISBN 0-201-85393-0</a></li>
+<li><i>Volume 4, Fascicle 3: Generating All <a href="/wiki/Combination" title="Combination">Combinations</a> and <a href="/wiki/Partition_(number_theory)" title="Partition (number theory)">Partitions</a></i>. (Addison-Wesley, July 26, 2005) vi+150pp, <a href="/wiki/Special:BookSources/0201853949" class="internal mw-magiclink-isbn">ISBN 0-201-85394-9</a></li>
+<li><i>Volume 4, Fascicle 4: Generating all <a href="/wiki/Tree_(graph_theory)" title="Tree (graph theory)">Trees</a> -- History of Combinatorial Generation</i>, (Addison-Wesley, February 6, 2006) vi+120pp, <a href="/wiki/Special:BookSources/0321335708" class="internal mw-magiclink-isbn">ISBN 0-321-33570-8</a></li>
+</ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=11" title="Edit section: Previous editions">edit</a>]</span> <span class="mw-headline" id="Previous_editions">Previous editions</span></h3>
+<p>In order by publication date:</p>
+<ul>
+<li><i>Volume 1</i>, first edition, 1968, xxi+634pp, <a href="/wiki/Special:BookSources/0201038013" class="internal mw-magiclink-isbn">ISBN 0-201-03801-3</a>.</li>
+<li><i>Volume 2</i>, first edition, 1969, xi+624pp, <a href="/wiki/Special:BookSources/0201038021" class="internal mw-magiclink-isbn">ISBN 0-201-03802-1</a>.</li>
+<li><i>Volume 3</i>, first edition, 1973, xi+723pp+centerfold, <a href="/wiki/Special:BookSources/020103803X" class="internal mw-magiclink-isbn">ISBN 0-201-03803-X</a></li>
+<li><i>Volume 1</i>, second edition, 1973, xxi+634pp, <a href="/wiki/Special:BookSources/0201038099" class="internal mw-magiclink-isbn">ISBN 0-201-03809-9</a>.</li>
+<li><i>Volume 2</i>, second edition, 1981, xiii+ 688pp, <a href="/wiki/Special:BookSources/0201038226" class="internal mw-magiclink-isbn">ISBN 0-201-03822-6</a>.</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=12" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h2>
+<ol class="references">
+<li id="cite_note-1"><small><b><a href="#cite_ref-1">^</a></b> The dedication was worded slightly differently in the first edition.</small></li>
+<li id="cite_note-3"><small><b><a href="#cite_ref-3">^</a></b> According to <a href="/wiki/Folklore.org" title="Folklore.org" class="mw-redirect">folklore.org</a>, <a href="/wiki/Steve_Jobs" title="Steve Jobs">Steve Jobs</a> actually made the incredible claim. <a href="http://www.folklore.org/StoryView.py?project=Macintosh&amp;story=Close_Encounters_of_the_Steve_Kind.txt" class="external autonumber" rel="nofollow">[1]</a></small></li>
+</ol>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=13" title="Edit section: Footnotes">edit</a>]</span> <span class="mw-headline" id="Footnotes">Footnotes</span></h2>
+<div class="reflist references" style="">
+<ol class="references">
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> <a href="http://webofstories.com/person.html?cat=3&amp;pers=1038&amp;st=17155" class="external text" rel="nofollow">Web of stories</a></li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> <span class="citation Journal"><a href="/wiki/Philip_Morrison" title="Philip Morrison">Morrison, Philip</a>; Morrison, Phylis (November–December 1999). <a href="http://www.americanscientist.org/bookshelf/pub/100-or-so-books-that-shaped-a-century-of-science" class="external text" rel="nofollow">"100 or so Books that shaped a Century of Science"</a>. <i>American Scientist</i> (Sigma Xi, The Scientific Research Society) <b>87</b> (6)<span class="printonly">. <a href="http://www.americanscientist.org/bookshelf/pub/100-or-so-books-that-shaped-a-century-of-science" class="external free" rel="nofollow">http://www.americanscientist.org/bookshelf/pub/100-or-so-books-that-shaped-a-century-of-science</a></span><span class="reference-accessdate">. Retrieved 2008-01-11</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=100+or+so+Books+that+shaped+a+Century+of+Science&amp;rft.jtitle=American+Scientist&amp;rft.aulast=Morrison&amp;rft.aufirst=Philip&amp;rft.au=Morrison%2C%26%2332%3BPhilip&amp;rft.au=Morrison%2C%26%2332%3BPhylis&amp;rft.date=November%E2%80%93December+1999&amp;rft.volume=87&amp;rft.issue=6&amp;rft.pub=Sigma+Xi%2C+The+Scientific+Research+Society&amp;rft_id=http%3A%2F%2Fwww.americanscientist.org%2Fbookshelf%2Fpub%2F100-or-so-books-that-shaped-a-century-of-science&amp;rfr_id=info:sid/en.wikipedia.org:The_Art_of_Computer_Programming"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-lohr-4"><b><a href="#cite_ref-lohr_4-0">^</a></b> <span class="citation Journal">Lohr, Steve (2001-12-17). <a href="http://www.nytimes.com/2001/12/17/business/17HOLB.html" class="external text" rel="nofollow">"Frances E. Holberton, 84, Early Computer Programmer"</a>. <i>The New York Times</i><span class="printonly">. <a href="http://www.nytimes.com/2001/12/17/business/17HOLB.html" class="external free" rel="nofollow">http://www.nytimes.com/2001/12/17/business/17HOLB.html</a></span><span class="reference-accessdate">. Retrieved 2010-05-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Frances+E.+Holberton%2C+84%2C+Early+Computer+Programmer&amp;rft.jtitle=The+New+York+Times&amp;rft.aulast=Lohr&amp;rft.aufirst=Steve&amp;rft.au=Lohr%2C%26%2332%3BSteve&amp;rft.date=2001-12-17&amp;rft_id=http%3A%2F%2Fwww.nytimes.com%2F2001%2F12%2F17%2Fbusiness%2F17HOLB.html&amp;rfr_id=info:sid/en.wikipedia.org:The_Art_of_Computer_Programming"><span style="display: none;">&#160;</span></span></li>
+</ol>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=14" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="refbegin references" style="">
+<ul>
+<li><span class="citation book">Slater, Robert (1987). <i>Portraits in Silicon</i>. MIT Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-262-19262-4" title="Special:BookSources/0-262-19262-4">0-262-19262-4</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Portraits+in+Silicon&amp;rft.aulast=Slater&amp;rft.aufirst=Robert&amp;rft.au=Slater%2C%26%2332%3BRobert&amp;rft.date=1987&amp;rft.pub=MIT+Press&amp;rft.isbn=0-262-19262-4&amp;rfr_id=info:sid/en.wikipedia.org:The_Art_of_Computer_Programming"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation book">Shasha, Dennis; Cathy Lazere (1995). <i>Out of Their Minds: The Lives and Discoveries of 15 Great Computer Scientists</i>. Copernicus. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-97992-1" title="Special:BookSources/0-387-97992-1">0-387-97992-1</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Out+of+Their+Minds%3A+The+Lives+and+Discoveries+of+15+Great+Computer+Scientists&amp;rft.aulast=Shasha&amp;rft.aufirst=Dennis&amp;rft.au=Shasha%2C%26%2332%3BDennis&amp;rft.date=1995&amp;rft.pub=Copernicus&amp;rft.isbn=0-387-97992-1&amp;rfr_id=info:sid/en.wikipedia.org:The_Art_of_Computer_Programming"><span style="display: none;">&#160;</span></span></li>
+</ul>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a href="http://www-cs-faculty.stanford.edu/~knuth/taocp.html" class="external text" rel="nofollow">Overview of topics</a> (Knuth's personal homepage)</li>
+<li><a href="http://www.cbi.umn.edu/oh/display.phtml?id=319" class="external text" rel="nofollow">Oral history interview with Donald E. Knuth</a> at <a href="/wiki/Charles_Babbage_Institute" title="Charles Babbage Institute">Charles Babbage Institute</a>, University of Minnesota, Minneapolis. Knuth discusses software patenting, <a href="/wiki/Structured_programming" title="Structured programming">structured programming</a>, collaboration and his development of <a href="/wiki/TeX" title="TeX">TeX</a>. The oral history discusses the writing of <i>The Art of Computer Programming</i>.</li>
+<li><a href="http://sigact.acm.org/floyd/" class="external text" rel="nofollow">"Robert W Floyd, In Memoriam", by Donald E. Knuth</a> -(on the influence of <a href="/wiki/Robert_Floyd" title="Robert Floyd">Bob Floyd</a>)</li>
+<li><a href="http://tal.forum2.org/injokes/art" class="external text" rel="nofollow">Injokes in the books</a></li>
+<li><a href="http://gosper.org/bill.html" class="external text" rel="nofollow">Who is Bill Gosper?</a> (on the influence of <a href="/wiki/Bill_Gosper" title="Bill Gosper">Bill Gosper</a> on the 2nd Edition of Volume 2.)</li>
+<li><a href="http://www.softpanorama.org/People/Knuth/taocp.shtml" class="external text" rel="nofollow">TAoCP and its Influence of Computer Science(Softpanorama)</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 6042/1000000
+Post-expand include size: 36002/2048000 bytes
+Template argument size: 15517/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:31358-0!1!0!default!!en!4 and timestamp 20101221180952 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">http://en.wikipedia.org/wiki/The_Art_of_Computer_Programming</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:1968_books" title="Category:1968 books">1968 books</a></span> | <span dir='ltr'><a href="/wiki/Category:1969_books" title="Category:1969 books">1969 books</a></span> | <span dir='ltr'><a href="/wiki/Category:1973_books" title="Category:1973 books">1973 books</a></span> | <span dir='ltr'><a href="/wiki/Category:1981_books" title="Category:1981 books">1981 books</a></span> | <span dir='ltr'><a href="/wiki/Category:Computer_books" title="Category:Computer books">Computer books</a></span> | <span dir='ltr'><a href="/wiki/Category:Computer_programming" title="Category:Computer programming">Computer programming</a></span> | <span dir='ltr'><a href="/wiki/Category:Computer_science_books" title="Category:Computer science books">Computer science books</a></span> | <span dir='ltr'><a href="/wiki/Category:Algorithms" title="Category:Algorithms">Algorithms</a></span> | <span dir='ltr'><a href="/wiki/Category:Analysis_of_algorithms" title="Category:Analysis of algorithms">Analysis of algorithms</a></span> | <span dir='ltr'><a href="/wiki/Category:Monographs" title="Category:Monographs">Monographs</a></span> | <span dir='ltr'><a href="/wiki/Category:Books_by_Donald_Knuth" title="Category:Books by Donald Knuth">Books by Donald Knuth</a></span> | <span dir='ltr'><a href="/wiki/Category:Addison-Wesley_books" title="Category:Addison-Wesley books">Addison-Wesley books</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=The_Art_of_Computer_Programming" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/The_Art_of_Computer_Programming"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:The_Art_of_Computer_Programming"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/The_Art_of_Computer_Programming" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/The_Art_of_Computer_Programming" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/The_Art_of_Computer_Programming" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;oldid=403250470" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=The_Art_of_Computer_Programming&amp;id=403250470" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=The+Art+of+Computer+Programming" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=The+Art+of+Computer+Programming&amp;oldid=403250470&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=The_Art_of_Computer_Programming&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D9%81%D9%86_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8" title="فن برمجة الحاسوب">العربية</a></li>
+					<li class="interwiki-ca"><a href="http://ca.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Català</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Um%C4%9Bn%C3%AD_programov%C3%A1n%C3%AD" title="Umění programování">Česky</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Deutsch</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Français</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98_%EC%98%88%EC%88%A0" title="컴퓨터 프로그래밍의 예술">한국어</a></li>
+					<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Hrvatski</a></li>
+					<li class="interwiki-id"><a href="http://id.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Bahasa Indonesia</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">日本語</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Sztuka_programowania" title="Sztuka programowania">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Arta_program%C4%83rii_calculatoarelor" title="Arta programării calculatoarelor">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" title="Искусство программирования">Русский</a></li>
+					<li class="interwiki-sk"><a href="http://sk.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Slovenčina</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Svenska</a></li>
+					<li class="interwiki-tr"><a href="http://tr.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Türkçe</a></li>
+					<li class="interwiki-vi"><a href="http://vi.wikipedia.org/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">Tiếng Việt</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%89%BA%E6%9C%AF" title="计算机程序设计艺术">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 19 December 2010 at 22:58.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv229 in 1.034 secs. -->			</body>
+</html>

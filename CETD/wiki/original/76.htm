@@ -1,0 +1,680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>Internet Protocol Suite - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="canonical" href="/wiki/Internet_Protocol_Suite" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Internet_Protocol_Suite",
+wgTitle="Internet Protocol Suite",
+wgAction="view",
+wgArticleId=15476,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=399511015,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["Articles to be merged from December 2009", "All articles to be merged", "All articles with unsourced statements", "Articles with unsourced statements from September 2009", "Articles with unsourced statements from April 2009", "Internet protocols", "TCP/IP", "History of the Internet"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Internet_Protocol_Suite skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Internet Protocol Suite</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub">  (Redirected from <a href="/w/index.php?title=TCP/IP&amp;redirect=no" title="TCP/IP">TCP/IP</a>)</div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<table class="metadata plainlinks ambox ambox-move" style="">
+<tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="/wiki/File:Merge-arrows.svg" class="image"><img alt="Merge-arrows.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Merge-arrows.svg/50px-Merge-arrows.svg.png" width="50" height="20" /></a></div>
+</td>
+<td class="mbox-text" style="">It has been suggested that this article or section be <a href="/wiki/Wikipedia:Merging" title="Wikipedia:Merging">merged</a> with <i><a href="/wiki/TCP/IP_model" title="TCP/IP model">TCP/IP model</a></i>. (<a href="/wiki/Talk:TCP/IP_model#Proposed_merge" title="Talk:TCP/IP model">Discuss</a>)</td>
+</tr>
+</table>
+<table class="infobox" cellspacing="5" style="width:22em; text-align:left; font-size:88%; line-height:1.5em; width:20em; font-size:90%;">
+<tr>
+<th colspan="2" class="" style="text-align:center; text-align:center; font-size:125%; font-weight:bold; background-color: #adb;"><strong class="selflink">Internet Protocol Suite</strong></th>
+</tr>
+<tr>
+<th colspan="2" class="" style="text-align:center; background-color: #cfc;"><a href="/wiki/Application_Layer" title="Application Layer">Application Layer</a></th>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<p><a href="/wiki/Border_Gateway_Protocol" title="Border Gateway Protocol">BGP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Dynamic_Host_Configuration_Protocol" title="Dynamic Host Configuration Protocol">DHCP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Domain_Name_System" title="Domain Name System">DNS</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Hypertext_Transfer_Protocol" title="Hypertext Transfer Protocol">HTTP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Internet_Message_Access_Protocol" title="Internet Message Access Protocol">IMAP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">IRC</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/LDAP" title="LDAP">LDAP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Media_Gateway_Control_Protocol_(MGCP)" title="Media Gateway Control Protocol (MGCP)">MGCP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Network_News_Transfer_Protocol" title="Network News Transfer Protocol">NNTP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Network_Time_Protocol" title="Network Time Protocol">NTP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Post_Office_Protocol" title="Post Office Protocol">POP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Routing_Information_Protocol" title="Routing Information Protocol">RIP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Remote_procedure_call" title="Remote procedure call">RPC</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Real-time_Transport_Protocol" title="Real-time Transport Protocol">RTP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Session_Initiation_Protocol" title="Session Initiation Protocol">SIP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Simple_Network_Management_Protocol" title="Simple Network Management Protocol">SNMP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Secure_Shell" title="Secure Shell">SSH</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Telnet" title="Telnet">Telnet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Extensible_Messaging_and_Presence_Protocol" title="Extensible Messaging and Presence Protocol">XMPP</a><span style="font-weight:bold;">&#160;·</span></p>
+<a href="/wiki/Category:Application_layer_protocols" title="Category:Application layer protocols">(more)</a></td>
+</tr>
+<tr>
+<th colspan="2" class="" style="text-align:center; background-color: #cfc;"><a href="/wiki/Transport_Layer" title="Transport Layer">Transport Layer</a></th>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<p><a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">UDP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Datagram_Congestion_Control_Protocol" title="Datagram Congestion Control Protocol">DCCP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Stream_Control_Transmission_Protocol" title="Stream Control Transmission Protocol">SCTP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Resource_reservation_protocol" title="Resource reservation protocol">RSVP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Explicit_Congestion_Notification" title="Explicit Congestion Notification">ECN</a><span style="font-weight:bold;">&#160;·</span></p>
+<a href="/wiki/Category:Transport_layer_protocols" title="Category:Transport layer protocols">(more)</a></td>
+</tr>
+<tr>
+<th colspan="2" class="" style="text-align:center; background-color: #cfc;"><a href="/wiki/Internet_Layer" title="Internet Layer">Internet Layer</a></th>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<p><a href="/wiki/Internet_Protocol" title="Internet Protocol">IP</a> (<a href="/wiki/IPv4" title="IPv4">IPv4</a>, <a href="/wiki/IPv6" title="IPv6">IPv6</a>)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Internet_Control_Message_Protocol" title="Internet Control Message Protocol">ICMP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/ICMPv6" title="ICMPv6">ICMPv6</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Internet_Group_Management_Protocol" title="Internet Group Management Protocol">IGMP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/IPsec" title="IPsec">IPsec</a><span style="font-weight:bold;">&#160;·</span></p>
+<a href="/wiki/Category:Internet_Layer_protocols" title="Category:Internet Layer protocols">(more)</a></td>
+</tr>
+<tr>
+<th colspan="2" class="" style="text-align:center; background-color: #cfc;"><a href="/wiki/Link_Layer" title="Link Layer">Link Layer</a></th>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="/wiki/Address_Resolution_Protocol" title="Address Resolution Protocol">ARP/InARP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Neighbor_Discovery_Protocol" title="Neighbor Discovery Protocol">NDP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Open_Shortest_Path_First" title="Open Shortest Path First">OSPF</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Tunneling_protocol" title="Tunneling protocol">Tunnels</a>&#160;(<a href="/wiki/Layer_2_Tunneling_Protocol" title="Layer 2 Tunneling Protocol">L2TP</a>)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Point-to-Point_Protocol" title="Point-to-Point Protocol">PPP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Media_Access_Control" title="Media Access Control">Media Access Control</a>&#160;(<a href="/wiki/Ethernet" title="Ethernet">Ethernet</a>, <a href="/wiki/DSL" title="DSL" class="mw-redirect">DSL</a>, <a href="/wiki/ISDN" title="ISDN" class="mw-redirect">ISDN</a>, <a href="/wiki/FDDI" title="FDDI" class="mw-redirect">FDDI</a>)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Category:Link_protocols" title="Category:Link protocols">(more)</a></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:right">
+<div class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:IPstack" title="Template:IPstack"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/wiki/Template_talk:IPstack" title="Template talk:IPstack"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="http://en.wikipedia.org/w/index.php?title=Template:IPstack&amp;action=edit" class="external text" rel="nofollow"><span title="Edit this template" style=";">e</span></a></div>
+</td>
+</tr>
+</table>
+<p>The <b>Internet Protocol Suite</b> is the set of <a href="/wiki/Communications_protocol" title="Communications protocol">communications protocols</a> used for the <a href="/wiki/Internet" title="Internet">Internet</a> and other similar networks. It is commonly also known as <b>TCP/IP</b>, named from two of the most important protocols in it: the <a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">Transmission Control Protocol</a> (TCP) and the <a href="/wiki/Internet_Protocol" title="Internet Protocol">Internet Protocol</a> (IP), which were the first two networking protocols defined in this standard. Modern IP networking represents a synthesis of several developments that began to evolve in the 1960s and 1970s, namely the <a href="/wiki/Internet" title="Internet">Internet</a> and <a href="/wiki/Local_area_network" title="Local area network">local area networks</a>, which emerged during the 1980s, together with the advent of the <a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a> in the early 1990s.</p>
+<p>The Internet Protocol Suite, like many protocol suites, is constructed as a set of layers. Each layer solves a set of problems involving the transmission of data. In particular, the layers define the operational scope of the protocols within.</p>
+<p>Often a component of a layer provides a well-defined service to the <a href="/wiki/Upper_layer_protocol" title="Upper layer protocol">upper layer protocols</a> and may be using services from the lower layers. Upper layers are logically closer to the user and deal with more abstract data, relying on <a href="/wiki/Lower_layer_protocol" title="Lower layer protocol">lower layer protocols</a> to translate data into forms that can eventually be physically transmitted.</p>
+<p>The <a href="/wiki/TCP/IP_model" title="TCP/IP model">TCP/IP model</a> consists of 4 layers (<a href="http://tools.ietf.org/html/rfc1122" class="external mw-magiclink-rfc">RFC 1122</a>)<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>2<span>]</span></a></sup>. From lowest to highest, these are the <a href="/wiki/Link_Layer" title="Link Layer">Link Layer</a>, the <a href="/wiki/Internet_Layer" title="Internet Layer">Internet Layer</a>, the <a href="/wiki/Transport_Layer" title="Transport Layer">Transport Layer</a>, and the <a href="/wiki/Application_Layer" title="Application Layer">Application Layer</a>.</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Layers_in_the_Internet_Protocol_Suite"><span class="tocnumber">2</span> <span class="toctext">Layers in the Internet Protocol Suite</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#The_concept_of_layers"><span class="tocnumber">2.1</span> <span class="toctext">The concept of layers</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Layer_names_and_number_of_layers_in_the_literature"><span class="tocnumber">2.2</span> <span class="toctext">Layer names and number of layers in the literature</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Implementations"><span class="tocnumber">3</span> <span class="toctext">Implementations</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit&amp;section=1" title="Edit section: History">edit</a>]</span> <span class="mw-headline" id="History">History</span></h2>
+<p>The Internet Protocol Suite resulted from research and development conducted by the Defense Advanced Research Projects Agency (<a href="/wiki/DARPA" title="DARPA">DARPA</a>) in the early 1970s. After initiating the pioneering <a href="/wiki/ARPANET" title="ARPANET">ARPANET</a> in 1969, DARPA started work on a number of other data transmission technologies. In 1972, <a href="/wiki/Robert_E._Kahn" title="Robert E. Kahn" class="mw-redirect">Robert E. Kahn</a> joined the DARPA <a href="/wiki/Information_Processing_Technology_Office" title="Information Processing Technology Office" class="mw-redirect">Information Processing Technology Office</a>, where he worked on both satellite packet networks and ground-based radio packet networks, and recognized the value of being able to communicate across both. In the spring of 1973, <a href="/wiki/Vinton_Cerf" title="Vinton Cerf" class="mw-redirect">Vinton Cerf</a>, the developer of the existing ARPANET <a href="/wiki/Network_Control_Program" title="Network Control Program">Network Control Program</a> (NCP) protocol, joined Kahn to work on open-architecture interconnection models with the goal of designing the next protocol generation for the ARPANET.</p>
+<p>By the summer of 1973, Kahn and Cerf had worked out a fundamental reformulation, where the differences between network protocols were hidden by using a common <a href="/wiki/Internetwork_protocol" title="Internetwork protocol">internetwork protocol</a>, and, instead of the network being responsible for reliability, as in the ARPANET, the hosts became responsible. Cerf credits <a href="/wiki/Hubert_Zimmerman" title="Hubert Zimmerman">Hubert Zimmerman</a> and <a href="/wiki/Louis_Pouzin" title="Louis Pouzin">Louis Pouzin</a>, designer of the <a href="/wiki/CYCLADES" title="CYCLADES">CYCLADES</a> network, with important influences on this design.</p>
+<p>The design of the network included the recognition that it should provide only the functions of efficiently transmitting and routing traffic between end nodes and that all other intelligence should be located at the edge of the network, in the end nodes. Using a simple design, it became possible to connect almost any network to the ARPANET, irrespective of their local characteristics, thereby solving Kahn's initial problem. One popular expression is that TCP/IP, the eventual product of Cerf and Kahn's work, will run over "<i>two tin cans and a string.</i>"</p>
+<p>A computer called a <i><a href="/wiki/Router" title="Router">router</a></i> (a name changed from <i>gateway</i> to avoid confusion with <a href="/wiki/Gateway_(computer_networking)" title="Gateway (computer networking)" class="mw-redirect">other types of <i>gateway</i>s</a>) is provided with an interface to each network, and forwards <a href="/wiki/Packet_(information_technology)" title="Packet (information technology)">packets</a> back and forth between them. Requirements for routers are defined in (<a href="#CITEREF_Request_for_Comments_1812">Request for Comments 1812</a>).<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>3<span>]</span></a></sup></p>
+<p>The idea was worked out in more detailed form by Cerf's networking research group at Stanford in the 1973–74 period, resulting in the first TCP specification.(<a href="#CITEREF_Request_for_Comments_675">Request for Comments 675</a>) <sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>4<span>]</span></a></sup> (The early networking work at <a href="/wiki/Xerox_PARC" title="Xerox PARC" class="mw-redirect">Xerox PARC</a>, which produced the <a href="/wiki/PARC_Universal_Packet" title="PARC Universal Packet">PARC Universal Packet</a> protocol suite, much of which existed around the same period of time, was also a significant technical influence; people moved between the two.)</p>
+<p>DARPA then contracted with <a href="/wiki/BBN_Technologies" title="BBN Technologies">BBN Technologies</a>, <a href="/wiki/Stanford_University" title="Stanford University">Stanford University</a>, and the <a href="/wiki/University_College_London" title="University College London">University College London</a> to develop operational versions of the protocol on different hardware platforms. Four versions were developed: TCP v1, TCP v2, a split into TCP v3 and IP v3 in the spring of 1978, and then stability with TCP/IP v4 — the standard protocol still in use on the Internet today.</p>
+<p>In 1975, a two-network TCP/IP communications test was performed between Stanford and University College London (UCL). In November, 1977, a three-network TCP/IP test was conducted between sites in the US, UK, and Norway. Several other TCP/IP prototypes were developed at multiple research centres between 1978 and 1983. The migration of the ARPANET to TCP/IP was officially completed on <a href="/wiki/Flag_day_(software)" title="Flag day (software)">flag day</a> January 1, 1983, when the new protocols were permanently activated.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup></p>
+<p>In March 1982, the US Department of Defense declared TCP/IP as the standard for all military computer networking.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>6<span>]</span></a></sup> In 1985, the <a href="/wiki/Internet_Architecture_Board" title="Internet Architecture Board">Internet Architecture Board</a> held a three day workshop on TCP/IP for the computer industry, attended by 250 vendor representatives, promoting the protocol and leading to its increasing commercial use.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit&amp;section=2" title="Edit section: Layers in the Internet Protocol Suite">edit</a>]</span> <span class="mw-headline" id="Layers_in_the_Internet_Protocol_Suite">Layers in the Internet Protocol Suite</span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit&amp;section=3" title="Edit section: The concept of layers">edit</a>]</span> <span class="mw-headline" id="The_concept_of_layers">The concept of layers</span></h3>
+<p>The TCP/IP suite uses <a href="/wiki/Encapsulation_(networking)" title="Encapsulation (networking)">encapsulation</a> to provide abstraction of protocols and services. Such encapsulation usually is aligned with the division of the protocol suite into layers of general functionality. In general, an application (the highest level of the model) uses a set of protocols to send its data down the layers, being further encapsulated at each level.</p>
+<p>This may be illustrated by an example network scenario, in which two Internet host computers communicate across local network boundaries constituted by their <a href="/wiki/Internetworking" title="Internetworking">internetworking</a> gateways (<a href="/wiki/Router" title="Router">routers</a>).</p>
+<table>
+<tr valign="bottom">
+<td>
+<div class="thumb tnone">
+<div class="thumbinner" style="width:252px;"><a href="/wiki/File:IP_stack_connections.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/IP_stack_connections.svg/250px-IP_stack_connections.svg.png" width="250" height="296" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:IP_stack_connections.svg" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+TCP/IP stack operating on two hosts connected via two routers and the corresponding layers used at each hop</div>
+</div>
+</div>
+</td>
+<td>
+<div class="thumb tnone">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:UDP_encapsulation.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP_encapsulation.svg/300px-UDP_encapsulation.svg.png" width="300" height="188" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:UDP_encapsulation.svg" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Encapsulation of application data descending through the protocol stack.</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p>The functional groups of protocols and methods are the <a href="/wiki/Application_Layer" title="Application Layer">Application Layer</a>, the <a href="/wiki/Transport_Layer" title="Transport Layer">Transport Layer</a>, the <a href="/wiki/Internet_Layer" title="Internet Layer">Internet Layer</a>, and the <a href="/wiki/Link_Layer" title="Link Layer">Link Layer</a> (<a href="http://tools.ietf.org/html/rfc1122" class="external mw-magiclink-rfc">RFC 1122</a>). This model was not intended to be a rigid reference model into which new protocols have to fit in order to be accepted as a standard.</p>
+<p>The following table provides some examples of the protocols grouped in their respective layers.</p>
+<table class="wikitable">
+<tr>
+<th rowspan="2" style="width: 10em;"><a href="/wiki/Application_layer" title="Application layer" class="mw-redirect">Application</a></th>
+<td><a href="/wiki/Domain_Name_System" title="Domain Name System">DNS</a>, <a href="/wiki/Trivial_File_Transfer_Protocol" title="Trivial File Transfer Protocol">TFTP</a>, <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a>, <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a>, <a href="/wiki/Gopher_(protocol)" title="Gopher (protocol)">Gopher</a>, <a href="/wiki/HyperText_Transfer_Protocol" title="HyperText Transfer Protocol" class="mw-redirect">HTTP</a>, <a href="/wiki/Internet_Message_Access_Protocol" title="Internet Message Access Protocol">IMAP</a>, <a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">IRC</a>, <a href="/wiki/Network_News_Transfer_Protocol" title="Network News Transfer Protocol">NNTP</a>, <a href="/wiki/Post_Office_Protocol" title="Post Office Protocol">POP3</a>, <a href="/wiki/Session_Initiation_Protocol" title="Session Initiation Protocol">SIP</a>, <a href="/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a>, <a href="/wiki/Short_message_peer-to-peer_protocol" title="Short message peer-to-peer protocol">SMPP</a>, <a href="/wiki/Simple_Network_Management_Protocol" title="Simple Network Management Protocol">SNMP</a>, <a href="/wiki/Secure_Shell" title="Secure Shell">SSH</a>, <a href="/wiki/Telnet" title="Telnet">Telnet</a>, <a href="/wiki/Echo_protocol" title="Echo protocol" class="mw-redirect">Echo</a>, <a href="/wiki/Real-time_Transport_Protocol" title="Real-time Transport Protocol">RTP</a>, <a href="/wiki/Peer_Name_Resolution_Protocol" title="Peer Name Resolution Protocol">PNRP</a>, <a href="/wiki/Rlogin" title="Rlogin">rlogin</a>, <a href="/wiki/Endpoint_Handlespace_Redundancy_Protocol" title="Endpoint Handlespace Redundancy Protocol">ENRP</a></td>
+</tr>
+<tr>
+<td>Routing protocols like <a href="/wiki/Border_Gateway_Protocol" title="Border Gateway Protocol">BGP</a> and <a href="/wiki/Routing_Information_Protocol" title="Routing Information Protocol">RIP</a> which run over TCP/UDP, may also be considered part of the Internet Layer.</td>
+</tr>
+<tr>
+<th rowspan="1"><a href="/wiki/Transport_layer" title="Transport layer" class="mw-redirect">Transport</a></th>
+<td><a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a>, <a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">UDP</a>, <a href="/wiki/Datagram_Congestion_Control_Protocol" title="Datagram Congestion Control Protocol">DCCP</a>, <a href="/wiki/Stream_Control_Transmission_Protocol" title="Stream Control Transmission Protocol">SCTP</a>, <a href="/wiki/IL_Protocol" title="IL Protocol" class="mw-redirect">IL</a>, <a href="/wiki/Reliable_User_Datagram_Protocol" title="Reliable User Datagram Protocol">RUDP</a>, <a href="/wiki/Resource_reservation_protocol" title="Resource reservation protocol">RSVP</a></td>
+</tr>
+<tr>
+<th rowspan="2"><a href="/wiki/Internet_Layer" title="Internet Layer">Internet</a></th>
+<td><a href="/wiki/Internet_Protocol" title="Internet Protocol">IP</a> (<a href="/wiki/IPv4" title="IPv4">IPv4</a>, <a href="/wiki/IPv6" title="IPv6">IPv6</a>), <a href="/wiki/Internet_Control_Message_Protocol" title="Internet Control Message Protocol">ICMP</a>, <a href="/wiki/Internet_Group_Management_Protocol" title="Internet Group Management Protocol">IGMP</a>, and <a href="/wiki/ICMPv6" title="ICMPv6">ICMPv6</a></td>
+</tr>
+<tr>
+<td><a href="/wiki/Open_shortest_path_first" title="Open shortest path first" class="mw-redirect">OSPF for IPv4</a> was initially considered IP layer protocol since it runs per IP-subnet, but has been placed on the Link since <a href="http://tools.ietf.org/html/rfc2740" class="external mw-magiclink-rfc">RFC 2740</a>.</td>
+</tr>
+<tr>
+<th rowspan="1"><a href="/wiki/Link_Layer" title="Link Layer">Link</a></th>
+<td><a href="/wiki/Address_Resolution_Protocol" title="Address Resolution Protocol">ARP</a>, <a href="/wiki/Reverse_Address_Resolution_Protocol" title="Reverse Address Resolution Protocol">RARP</a>, <a href="/wiki/Open_shortest_path_first" title="Open shortest path first" class="mw-redirect">OSPF</a> (IPv4/IPv6), <a href="/wiki/IS-IS" title="IS-IS">IS-IS</a>, <a href="/wiki/Neighbor_Discovery_Protocol" title="Neighbor Discovery Protocol">NDP</a></td>
+</tr>
+</table>
+<h3><span class="editsection">[<a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit&amp;section=4" title="Edit section: Layer names and number of layers in the literature">edit</a>]</span> <span class="mw-headline" id="Layer_names_and_number_of_layers_in_the_literature">Layer names and number of layers in the literature</span></h3>
+<p>The following table shows the layer names and the number of layers of networking models presented in <a href="/wiki/Request_for_comments" title="Request for comments" class="mw-redirect">RFCs</a> and textbooks in widespread use in today's university computer networking courses.</p>
+<table class="wikitable">
+<tr>
+<th style="background:#adb"><a href="http://tools.ietf.org/html/rfc1122" class="external mw-magiclink-rfc">RFC 1122</a> <sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>7<span>]</span></a></sup></th>
+<th style="background:#adb">Tanenbaum</th>
+<th style="background:#adb">Cisco Academy<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup></th>
+<th style="background:#adb">Kurose<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup> Forouzan <sup id="cite_ref-Forouzan_9-0" class="reference"><a href="#cite_note-Forouzan-9"><span>[</span>10<span>]</span></a></sup></th>
+<th style="background:#adb">Comer<sup id="cite_ref-Comer_10-0" class="reference"><a href="#cite_note-Comer-10"><span>[</span>11<span>]</span></a></sup> Kozierok<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>12<span>]</span></a></sup></th>
+<th style="background:#adb">Stallings<sup id="cite_ref-Stallings_12-0" class="reference"><a href="#cite_note-Stallings-12"><span>[</span>13<span>]</span></a></sup></th>
+<th style="background:#adb">Arpanet Reference Model 1982 (<a href="http://tools.ietf.org/html/rfc871" class="external mw-magiclink-rfc">RFC 871</a>)</th>
+</tr>
+<tr>
+<td style="background:#cfc"><i>Four layers</i> <sup id="cite_ref-RFC1122Layers_13-0" class="reference"><a href="#cite_note-RFC1122Layers-13"><span>[</span>14<span>]</span></a></sup></td>
+<td style="background:#cfc"><i>Four layers</i> <sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>15<span>]</span></a></sup></td>
+<td style="background:#cfc"><i>Four layers</i></td>
+<td style="background:#cfc"><i>Five layers</i></td>
+<td style="background:#cfc"><i>Four+one layers</i></td>
+<td style="background:#cfc"><i>Five layers</i></td>
+<td style="background:#cfc"><i>Three layers</i></td>
+</tr>
+<tr>
+<td style="background:#cfc">"Internet model"<sup class="Template-Fact" title="This claim needs references to reliable sources from September 2009" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</sup></td>
+<td style="background:#cfc">"TCP/IP reference model"<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>16<span>]</span></a></sup></td>
+<td style="background:#cfc">"Internet model"</td>
+<td style="background:#cfc">"Five-layer Internet model" or "TCP/IP protocol suite"</td>
+<td style="background:#cfc">"TCP/IP 5-layer reference model"</td>
+<td style="background:#cfc">"TCP/IP model"</td>
+<td style="background:#cfc">"Arpanet reference model"</td>
+</tr>
+<tr>
+<td>Application <sup id="cite_ref-RFC1122Layers_13-1" class="reference"><a href="#cite_note-RFC1122Layers-13"><span>[</span>14<span>]</span></a></sup><sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>17<span>]</span></a></sup></td>
+<td>Application</td>
+<td>Application</td>
+<td>Application</td>
+<td>Application</td>
+<td>Application</td>
+<td>Application/Process</td>
+</tr>
+<tr>
+<td>Transport <sup id="cite_ref-RFC1122Layers_13-2" class="reference"><a href="#cite_note-RFC1122Layers-13"><span>[</span>14<span>]</span></a></sup></td>
+<td>Transport</td>
+<td>Transport</td>
+<td>Transport</td>
+<td>Transport</td>
+<td>Host-to-host or transport</td>
+<td rowspan="2">Host-to-host</td>
+</tr>
+<tr>
+<td>Internet <sup id="cite_ref-RFC1122Layers_13-3" class="reference"><a href="#cite_note-RFC1122Layers-13"><span>[</span>14<span>]</span></a></sup></td>
+<td>Internet</td>
+<td>Internetwork</td>
+<td>Network</td>
+<td>Internet</td>
+<td>Internet</td>
+</tr>
+<tr>
+<td>Link <sup id="cite_ref-RFC1122Layers_13-4" class="reference"><a href="#cite_note-RFC1122Layers-13"><span>[</span>14<span>]</span></a></sup></td>
+<td>Host-to-network</td>
+<td>Network interface</td>
+<td>Data link</td>
+<td>Data link (Network interface)</td>
+<td>Network access</td>
+<td>Network interface</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Physical</td>
+<td>(Hardware)</td>
+<td>Physical</td>
+<td></td>
+</tr>
+</table>
+<p>These textbooks are secondary sources that may contravene the intent of <a href="http://tools.ietf.org/html/rfc1122" class="external mw-magiclink-rfc">RFC 1122</a> and other IETF primary sources.<sup id="cite_ref-R3439_17-0" class="reference"><a href="#cite_note-R3439-17"><span>[</span>18<span>]</span></a></sup></p>
+<p>Different authors have interpreted the RFCs differently regarding the question whether the Link Layer (and the TCP/IP model) covers <a href="/wiki/Physical_Layer" title="Physical Layer">Physical Layer</a> issues, or if a hardware layer is assumed below the Link Layer. Some authors have tried to use other names for the Link Layer, such as <i>network interface layer</i>, in view to avoid confusion with the <a href="/wiki/Data_Link_Layer" title="Data Link Layer">Data Link Layer</a> of the seven layer <a href="/wiki/OSI_model" title="OSI model">OSI model</a>. Others have attempted to map the Internet Protocol model onto the OSI Model. The mapping often results in a model with five layers where the Link Layer is split into a Data Link Layer on top of a Physical Layer. In literature with a bottom-up approach to Internet communication,<sup id="cite_ref-Forouzan_9-1" class="reference"><a href="#cite_note-Forouzan-9"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-Comer_10-1" class="reference"><a href="#cite_note-Comer-10"><span>[</span>11<span>]</span></a></sup><sup id="cite_ref-Stallings_12-1" class="reference"><a href="#cite_note-Stallings-12"><span>[</span>13<span>]</span></a></sup> in which hardware issues are emphasized, those are often discussed in terms of Physical Layer and Data Link Layer.</p>
+<p>The Internet Layer is usually directly mapped into the OSI Model's <a href="/wiki/Network_Layer" title="Network Layer">Network Layer</a>, a more general concept of network functionality. The Transport Layer of the TCP/IP model, sometimes also described as the host-to-host layer, is mapped to OSI Layer 4 (Transport Layer), sometimes also including aspects of OSI Layer 5 (<a href="/wiki/Session_Layer" title="Session Layer">Session Layer</a>) functionality. OSI's <a href="/wiki/Application_Layer" title="Application Layer">Application Layer</a>, <a href="/wiki/Presentation_Layer" title="Presentation Layer">Presentation Layer</a>, and the remaining functionality of the Session Layer are collapsed into TCP/IP's Application Layer. The argument is that these OSI layers do usually not exist as separate processes and protocols in Internet applications.<sup class="Template-Fact" title="This claim needs references to reliable sources from April 2009" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</sup></p>
+<p>However, the Internet protocol stack has never been altered by the Internet Engineering Task Force from the four layers defined in <a href="http://tools.ietf.org/html/rfc1122" class="external mw-magiclink-rfc">RFC 1122</a>. The IETF makes no effort to follow the OSI model although RFCs sometimes refer to it. The IETF has repeatedly stated<sup class="Template-Fact" title="This claim needs references to reliable sources from April 2009" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</sup> that Internet protocol and architecture development is not intended to be OSI-compliant.</p>
+<p><a href="http://tools.ietf.org/html/rfc3439" class="external mw-magiclink-rfc">RFC 3439</a>, addressing Internet architecture, contains a section entitled: "Layering Considered Harmful".<sup id="cite_ref-R3439_17-1" class="reference"><a href="#cite_note-R3439-17"><span>[</span>18<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit&amp;section=5" title="Edit section: Implementations">edit</a>]</span> <span class="mw-headline" id="Implementations">Implementations</span></h2>
+<p>Most computer operating systems in use today, including all consumer-targeted systems, include a TCP/IP implementation.</p>
+<p>Minimally acceptable implementation includes implementation for (from most essential to the less essential) IP, ARP, <a href="/wiki/Internet_Control_Message_Protocol" title="Internet Control Message Protocol">ICMP</a>, <a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">UDP</a>, <a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a> and sometime <a href="/wiki/IGMP" title="IGMP" class="mw-redirect">IGMP</a>. It is in principle possible to support only one of transport protocols (i.e. simple UDP), but it is rarely done, as it limits usage of the whole implementation. IPv6, beyond own version of ARP (NBP), and ICMP (ICMPv6), and IGMP (IGMPv6) have some additional required functionalities, and often is accompanied with integrated <a href="/wiki/IPSec" title="IPSec" class="mw-redirect">IPSec</a> security layer. Other protocols could be easily added later (often they can be implemented entirely in the <a href="/wiki/Userspace" title="Userspace" class="mw-redirect">userspace</a>), for example <a href="/wiki/Domain_Name_System" title="Domain Name System">DNS</a> for resolving domain names to IP addresses or <a href="/wiki/DHCP" title="DHCP" class="mw-redirect">DHCP</a> client for automatic configuration of network interfaces.</p>
+<p>Most of the IP implementations are accessible to the programmers using <a href="/wiki/Internet_socket" title="Internet socket">socket</a> abstraction (usable also with other protocols) and proper API for most of the operations. This interface is known as <a href="/wiki/Berkeley_Sockets" title="Berkeley Sockets" class="mw-redirect">BSD sockets</a> and was used initially in C.</p>
+<p>Unique implementations include <a href="/wiki/LwIP" title="LwIP">Lightweight TCP/IP</a>, an <a href="/wiki/Open_source" title="Open source">open source</a> stack designed for <a href="/wiki/Embedded_system" title="Embedded system">embedded systems</a> and <a href="/wiki/KA9Q" title="KA9Q">KA9Q NOS</a>, a stack and associated protocols for amateur <a href="/wiki/Packet_radio" title="Packet radio">packet radio</a> systems and <a href="/wiki/Personal_computer" title="Personal computer">personal computers</a> connected via serial lines.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 0.5em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;">
+<tr>
+<td><a href="/wiki/File:Internet_map_1024.jpg" class="image"><img alt="Internet map 1024.jpg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" /></a></td>
+<td style="padding:0 0.2em;"><i><b><a href="/wiki/Portal:Computer_Science" title="Portal:Computer Science" class="mw-redirect">Computer Science portal</a></b></i></td>
+</tr>
+</table>
+</div>
+<ul>
+<li><a href="/wiki/List_of_network_protocols" title="List of network protocols">List of network protocols</a></li>
+<li><a href="/wiki/List_of_automation_protocols" title="List of automation protocols">List of automation protocols</a></li>
+<li><a href="/wiki/List_of_TCP_and_UDP_port_numbers" title="List of TCP and UDP port numbers">List of TCP and UDP port numbers</a></li>
+<li><a href="/wiki/FLIP_(Fast-Local-Internet-Protocol)" title="FLIP (Fast-Local-Internet-Protocol)">FLIP (Fast-Local-Internet-Protocol)</a> another stack</li>
+<li><a href="/wiki/List_of_information_technology_acronyms" title="List of information technology acronyms">List of information technology acronyms</a></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit&amp;section=7" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="references-small references-column-count references-column-count-2" style="column-count: 2; -moz-column-count: 2; -webkit-column-count: 2;">
+<ol class="references">
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> <a href="http://tools.ietf.org/html/rfc1122" class="external mw-magiclink-rfc">RFC 1122</a>, Requirements for Internet Hosts -- Communication Layers, R. Braden (ed.), October 1989</li>
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> <a href="http://tools.ietf.org/html/rfc1123" class="external mw-magiclink-rfc">RFC 1123</a>, Requirements for Internet Hosts -- Application and Support, R. Braden (ed.), October 1989</li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> <span class="citation book" id="CITEREFBaker1995">Baker, Fred, ed (June 1995). <a href="http://tools.ietf.org/html/rfc1812" class="external text" rel="nofollow"><i>Requirements for IP Version 4 Routers</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">Internet Engineering Task Force</a>, Network Working Group. Request for Comments 1812<span class="printonly">. <a href="http://tools.ietf.org/html/rfc1812" class="external free" rel="nofollow">http://tools.ietf.org/html/rfc1812</a></span><span class="reference-accessdate">. Retrieved 2009-09-22</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Requirements+for+IP+Version+4+Routers&amp;rft.date=June+1995&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%5D%5D%2C+Network+Working+Group&amp;rft_id=http%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc1812&amp;rfr_id=info:sid/en.wikipedia.org:Internet_Protocol_Suite"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-3"><b><a href="#cite_ref-3">^</a></b> <span class="citation web">V.Cerf <i>et al.</i> (December 1974). <a href="http://www.ietf.org/rfc/rfc0675.txt" class="external text" rel="nofollow">"Specification of Internet Transmission Control Protocol"</a><span class="printonly">. <a href="http://www.ietf.org/rfc/rfc0675.txt" class="external free" rel="nofollow">http://www.ietf.org/rfc/rfc0675.txt</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Specification+of+Internet+Transmission+Control+Protocol&amp;rft.atitle=&amp;rft.aulast=V.Cerf+%27%27et+al.%27%27&amp;rft.au=V.Cerf+%27%27et+al.%27%27&amp;rft.date=December+1974&amp;rft_id=http%3A%2F%2Fwww.ietf.org%2Frfc%2Frfc0675.txt&amp;rfr_id=info:sid/en.wikipedia.org:Internet_Protocol_Suite"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <a href="http://www.livinginternet.com/i/ii.htm" class="external text" rel="nofollow">Internet History</a></li>
+<li id="cite_note-5"><b><a href="#cite_ref-5">^</a></b> <span class="citation web">Ronda Hauben. <a href="http://www.columbia.edu/~rh120/other/tcpdigest_paper.txt" class="external text" rel="nofollow">"From the ARPANET to the Internet"</a>. TCP Digest (UUCP)<span class="printonly">. <a href="http://www.columbia.edu/~rh120/other/tcpdigest_paper.txt" class="external free" rel="nofollow">http://www.columbia.edu/~rh120/other/tcpdigest_paper.txt</a></span><span class="reference-accessdate">. Retrieved 2007-07-05</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=From+the+ARPANET+to+the+Internet&amp;rft.atitle=&amp;rft.aulast=Ronda+Hauben&amp;rft.au=Ronda+Hauben&amp;rft.pub=TCP+Digest+%28UUCP%29&amp;rft_id=http%3A%2F%2Fwww.columbia.edu%2F%7Erh120%2Fother%2Ftcpdigest_paper.txt&amp;rfr_id=info:sid/en.wikipedia.org:Internet_Protocol_Suite"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> IETF, <a href="http://tools.ietf.org/html/rfc1122" class="external mw-magiclink-rfc">RFC 1122</a>, p.7, "To communicate using the Internet system, a host must implement the layered set of protocols comprising the Internet protocol suite. A host typically must implement at least one protocol from each layer."</li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> Mark Dye, Mark A. Dye, Wendell, Network Fundamentals: CCNA Exploration Companion Guide, 2007, <a href="/wiki/Special:BookSources/1587132087" class="internal mw-magiclink-isbn">ISBN 1-58713-208-7</a></li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> <a href="http://www.pearsonhighered.com/educator/academic/product/0,,0321497708,00%2ben-USS_01DBC.html" class="external text" rel="nofollow">James F. Kurose, Keith W. Ross, Computer Networking: A Top-Down Approach, 2008, ISBN 0-321-49770-8</a></li>
+<li id="cite_note-Forouzan-9">^ <a href="#cite_ref-Forouzan_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Forouzan_9-1"><sup><i><b>b</b></i></sup></a> <a href="http://books.google.com/books?id=U3Gcf65Pu9IC&amp;printsec=frontcover&amp;dq=forouzan+%22computer+networks%22&amp;ei=RPZ9SOCvMofctAO02di0AQ&amp;hl=en&amp;sig=ACfU3U2Hh_n83pPtf5uCreCih0HnWvNcxg#PPA29,M1" class="external text" rel="nofollow">Behrouz A. Forouzan, Data Communications and Networking</a></li>
+<li id="cite_note-Comer-10">^ <a href="#cite_ref-Comer_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Comer_10-1"><sup><i><b>b</b></i></sup></a> <a href="http://books.google.com/books?id=jonyuTASbWAC&amp;pg=PA155&amp;hl=sv&amp;source=gbs_toc_r&amp;cad=0_0&amp;sig=ACfU3U18gHAia1pU_Pxn-rhkCnH1v70M6Q#PPA161,M1" class="external text" rel="nofollow">Douglas E. Comer, Internetworking with TCP/IP: Principles, Protocols and Architecture, Pearson Prentice Hall 2005, ISBN 0-13-187671-6</a></li>
+<li id="cite_note-11"><b><a href="#cite_ref-11">^</a></b> <a href="http://books.google.com/books?id=Pm4RgYV2w4YC&amp;pg=PA131&amp;dq=%22TCP/IP+model+layers%22&amp;lr=&amp;hl=sv&amp;sig=ACfU3U3ofMwYAbZfGz1BmAXc2oNNFC2b8A#PPA129,M1" class="external text" rel="nofollow">Charles M. Kozierok, "The TCP/IP Guide", No Starch Press 2005</a></li>
+<li id="cite_note-Stallings-12">^ <a href="#cite_ref-Stallings_12-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Stallings_12-1"><sup><i><b>b</b></i></sup></a> <a href="http://books.google.com/books?id=c_AWmhkovR0C&amp;pg=PA35&amp;dq=%22internet+layer%22+%22network+access+layer%22&amp;ei=-O99SI3EJo32sgOQpPThDw&amp;hl=en&amp;sig=ACfU3U38aXznzeAnQdbLcPFXfCgxAd4lFg" class="external text" rel="nofollow">William Stallings, Data and Computer Communications, Prentice Hall 2006, ISBN 0-13-243310-9</a></li>
+<li id="cite_note-RFC1122Layers-13">^ <a href="#cite_ref-RFC1122Layers_13-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-RFC1122Layers_13-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-RFC1122Layers_13-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-RFC1122Layers_13-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-RFC1122Layers_13-4"><sup><i><b>e</b></i></sup></a> IETF, <a href="http://tools.ietf.org/html/rfc1122" class="external mw-magiclink-rfc">RFC 1122</a>, p.7-8, "The protocol layers [...] are as follows [...]:[...] Application Layer [...] Transport Layer [...] Internet Layer [...] Link Layer"</li>
+<li id="cite_note-14"><b><a href="#cite_ref-14">^</a></b> Andrew Tanenbaum, Computer Networks, section 1.4.3, "[...] the OSI model has seven layers and the TCP/IP has four layers."</li>
+<li id="cite_note-15"><b><a href="#cite_ref-15">^</a></b> <span class="citation book"><a href="/wiki/Andrew_S._Tanenbaum" title="Andrew S. Tanenbaum">Tanenbaum, Andrew S.</a> (2002). <i>Computer Networks</i>. <a href="/wiki/Prentice_Hall" title="Prentice Hall">Prentice Hall</a>. p.&#160;41. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0130661023" title="Special:BookSources/0130661023">0130661023</a>. "1.4.2 The TCP/IP Reference Model"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Computer+Networks&amp;rft.aulast=Tanenbaum&amp;rft.aufirst=Andrew+S.&amp;rft.au=Tanenbaum%2C%26%2332%3BAndrew+S.&amp;rft.date=2002&amp;rft.pages=p.%26nbsp%3B41&amp;rft.pub=%5B%5BPrentice+Hall%5D%5D&amp;rft.isbn=0130661023&amp;rfr_id=info:sid/en.wikipedia.org:Internet_Protocol_Suite"><span style="display: none;">&#160;</span></span> <a href="http://books.google.com/books?id=Pd-z64SJRBAC&amp;pg=PA42&amp;vq=internet+layer&amp;dq=networks&amp;hl=sv&amp;source=gbs_search_s&amp;sig=ACfU3U3DHANeIz0sOsd5NK4VXSrgNFYVAw#PPA42,M1" class="external text" rel="nofollow">Excerpt at Google Books</a></li>
+<li id="cite_note-16"><b><a href="#cite_ref-16">^</a></b> IETF, <a href="http://tools.ietf.org/html/rfc1122" class="external mw-magiclink-rfc">RFC 1122</a>, p.8, "The application layer is the top layer of the Internet protocol suite."</li>
+<li id="cite_note-R3439-17">^ <a href="#cite_ref-R3439_17-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-R3439_17-1"><sup><i><b>b</b></i></sup></a> <span class="citation Journal" id="CITEREFR._Bush2002">R. Bush; D. Meyer (December 2002). <a href="http://www.isi.edu/in-notes/rfc3439.txt" class="external text" rel="nofollow"><i>Some Internet Architectural Guidelines and Philosophy</i></a>. Internet Engineering Task Force<span class="printonly">. <a href="http://www.isi.edu/in-notes/rfc3439.txt" class="external free" rel="nofollow">http://www.isi.edu/in-notes/rfc3439.txt</a></span><span class="reference-accessdate">. Retrieved 2007-11-20</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Some+Internet+Architectural+Guidelines+and+Philosophy&amp;rft.aulast=R.+Bush&amp;rft.au=R.+Bush&amp;rft.date=December+2002&amp;rft.pub=Internet+Engineering+Task+Force&amp;rft_id=http%3A%2F%2Fwww.isi.edu%2Fin-notes%2Frfc3439.txt&amp;rfr_id=info:sid/en.wikipedia.org:Internet_Protocol_Suite"><span style="display: none;">&#160;</span></span></li>
+</ol>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit&amp;section=8" title="Edit section: Further reading">edit</a>]</span> <span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<ul>
+<li><a href="/wiki/Douglas_E._Comer" title="Douglas E. Comer" class="mw-redirect">Douglas E. Comer</a>. <i>Internetworking with TCP/IP - Principles, Protocols and Architecture</i>. <a href="/wiki/Special:BookSources/8679911429" class="internal mw-magiclink-isbn">ISBN 86-7991-142-9</a></li>
+<li><a href="/wiki/Joseph_G._Davies" title="Joseph G. Davies">Joseph G. Davies</a> and <a href="/w/index.php?title=Thomas_F._Lee&amp;action=edit&amp;redlink=1" class="new" title="Thomas F. Lee (page does not exist)">Thomas F. Lee</a>. <i>Microsoft Windows Server 2003 TCP/IP Protocols and Services</i>. <a href="/wiki/Special:BookSources/0735612919" class="internal mw-magiclink-isbn">ISBN 0-7356-1291-9</a></li>
+<li><span class="citation book">Forouzan, Behrouz A. (2003). <i>TCP/IP Protocol Suite</i> (2nd ed.). McGraw-Hill. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-246060-1" title="Special:BookSources/0-07-246060-1">0-07-246060-1</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=TCP%2FIP+Protocol+Suite&amp;rft.aulast=Forouzan&amp;rft.aufirst=Behrouz+A.&amp;rft.au=Forouzan%2C%26%2332%3BBehrouz+A.&amp;rft.date=2003&amp;rft.edition=2nd&amp;rft.pub=McGraw-Hill&amp;rft.isbn=0-07-246060-1&amp;rfr_id=info:sid/en.wikipedia.org:Internet_Protocol_Suite"><span style="display: none;">&#160;</span></span></li>
+<li><a href="/w/index.php?title=Craig_Hunt&amp;action=edit&amp;redlink=1" class="new" title="Craig Hunt (page does not exist)">Craig Hunt</a> <i>TCP/IP Network Administration</i>. O'Reilly (1998) <a href="/wiki/Special:BookSources/1565923227" class="internal mw-magiclink-isbn">ISBN 1-56592-322-7</a></li>
+<li><span class="citation book">Maufer, Thomas A. (1999). <i>IP Fundamentals</i>. Prentice Hall. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-975483-0" title="Special:BookSources/0-13-975483-0">0-13-975483-0</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=IP+Fundamentals&amp;rft.aulast=Maufer&amp;rft.aufirst=Thomas+A.&amp;rft.au=Maufer%2C%26%2332%3BThomas+A.&amp;rft.date=1999&amp;rft.pub=Prentice+Hall&amp;rft.isbn=0-13-975483-0&amp;rfr_id=info:sid/en.wikipedia.org:Internet_Protocol_Suite"><span style="display: none;">&#160;</span></span></li>
+<li><a href="/wiki/Ian_McLean" title="Ian McLean">Ian McLean</a>. <i>Windows(R) 2000 TCP/IP Black Book</i>. <a href="/wiki/Special:BookSources/157610687X" class="internal mw-magiclink-isbn">ISBN 1-57610-687-X</a></li>
+<li><a href="/w/index.php?title=Ajit_Mungale&amp;action=edit&amp;redlink=1" class="new" title="Ajit Mungale (page does not exist)">Ajit Mungale</a> <i>Pro .NET 1.1 Network Programming</i>. <a href="/wiki/Special:BookSources/1590593456" class="internal mw-magiclink-isbn">ISBN 1-59059-345-6</a></li>
+<li><a href="/wiki/W._Richard_Stevens" title="W. Richard Stevens">W. Richard Stevens</a>. <i>TCP/IP Illustrated, Volume 1: The Protocols</i>. <a href="/wiki/Special:BookSources/0201633469" class="internal mw-magiclink-isbn">ISBN 0-201-63346-9</a></li>
+<li><a href="/wiki/W._Richard_Stevens" title="W. Richard Stevens">W. Richard Stevens</a> and <a href="/w/index.php?title=Gary_R._Wright&amp;action=edit&amp;redlink=1" class="new" title="Gary R. Wright (page does not exist)">Gary R. Wright</a>. <i>TCP/IP Illustrated, Volume 2: The Implementation</i>. <a href="/wiki/Special:BookSources/020163354X" class="internal mw-magiclink-isbn">ISBN 0-201-63354-X</a></li>
+<li><a href="/wiki/W._Richard_Stevens" title="W. Richard Stevens">W. Richard Stevens</a>. <i>TCP/IP Illustrated, Volume 3: <a href="/wiki/T/TCP" title="T/TCP">TCP for Transactions</a>, <a href="/wiki/HTTP" title="HTTP" class="mw-redirect">HTTP</a>, <a href="/wiki/Network_News_Transfer_Protocol" title="Network News Transfer Protocol">NNTP</a>, and the <a href="/wiki/Unix_domain_sockets" title="Unix domain sockets" class="mw-redirect">UNIX Domain</a> Protocols</i>. <a href="/wiki/Special:BookSources/0201634953" class="internal mw-magiclink-isbn">ISBN 0-201-63495-3</a></li>
+<li><a href="/wiki/Andrew_S._Tanenbaum" title="Andrew S. Tanenbaum">Andrew S. Tanenbaum</a>. <i>Computer Networks</i>. <a href="/wiki/Special:BookSources/0130661023" class="internal mw-magiclink-isbn">ISBN 0-13-066102-3</a></li>
+<li><a href="/wiki/David_D._Clark" title="David D. Clark">David D. Clark</a>, <a href="http://groups.csail.mit.edu/ana/Publications/PubPDFs/The%20design%20philosophy%20of%20the%20DARPA%20internet%20protocols.pdf" class="external text" rel="nofollow">"The Design Philosophy of the DARPA Internet Protocols"</a>, Computer Communications Review 18:4, August 1988, pp.&#160;106–114</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a href="http://www.livinginternet.com/i/ii.htm" class="external text" rel="nofollow">Internet History</a> -- Pages on Robert Kahn, Vinton Cerf, and TCP/IP (reviewed by Cerf and Kahn).</li>
+<li><a href="http://www.ietf.org/rfc/rfc0675.txt" class="external text" rel="nofollow">RFC 675</a> - Specification of Internet Transmission Control Program, December 1974 Version</li>
+<li><a href="http://www.night-ray.com/TCPIP_State_Transition_Diagram.pdf" class="external text" rel="nofollow">TCP/IP State Transition Diagram</a> (<a href="/wiki/PDF" title="PDF" class="mw-redirect">PDF</a>)</li>
+<li><a href="http://tools.ietf.org/html/rfc1180" class="external mw-magiclink-rfc">RFC 1180</a> A TCP/IP Tutorial - from the Internet Engineering Task Force (January 1991)</li>
+<li><a href="http://www.itprc.com/tcpipfaq/" class="external text" rel="nofollow">TCP/IP FAQ</a></li>
+<li><a href="http://www.private.org.il/tcpip_rl.html" class="external text" rel="nofollow">TCP/IP Resources List</a></li>
+<li><a href="http://www.tcpipguide.com/free/" class="external text" rel="nofollow">The TCP/IP Guide</a> - A comprehensive look at the protocols and the procedures/processes involved</li>
+<li><a href="http://www.columbia.edu/~rh120/other/tcpdigest_paper.txt" class="external text" rel="nofollow">A Study of the ARPANET TCP/IP Digest</a></li>
+<li><a href="http://www.eventhelix.com/RealtimeMantra/Networking/" class="external text" rel="nofollow">TCP/IP Sequence Diagrams</a></li>
+<li><a href="http://www.searchandgo.com/articles/internet/internet-practice-4.php" class="external text" rel="nofollow">The Internet in Practice</a></li>
+<li><a href="http://softtechinfo.com/network/tcpip.html" class="external text" rel="nofollow">TCP/IP - Directory &amp; Informational Resource</a></li>
+<li><a href="http://www.ipprimer.com" class="external text" rel="nofollow">Daryl's TCP/IP Primer</a> - Intro to TCP/IP LAN administration, conversational style</li>
+<li><a href="http://www.linux-tutorial.info/MContent-142" class="external text" rel="nofollow">Introduction to TCP/IP</a></li>
+<li><a href="http://blog.webgk.com/2007/10/dns-tcpip-commands-from-command-prompt.html" class="external text" rel="nofollow">TCP/IP commands from command prompt</a></li>
+<li><a href="http://sourceforge.net/projects/cipsuite/" class="external text" rel="nofollow">cIPS</a> — Robust TCP/IP stack for embedded devices without an Operating System</li>
+<li><a href="http://pal-subbiah.spaces.live.com/blog/" class="external text" rel="nofollow">TCP Server Client Program using Python</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 7335/1000000
+Post-expand include size: 62159/2048000 bytes
+Template argument size: 22220/2048000 bytes
+Expensive parser function count: 5/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:15476-0!1!0!default!!en!4 and timestamp 20101219064632 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Internet_Protocol_Suite">http://en.wikipedia.org/wiki/Internet_Protocol_Suite</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:Internet_protocols" title="Category:Internet protocols">Internet protocols</a></span> | <span dir='ltr'><a href="/wiki/Category:TCP/IP" title="Category:TCP/IP">TCP/IP</a></span> | <span dir='ltr'><a href="/wiki/Category:History_of_the_Internet" title="Category:History of the Internet">History of the Internet</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories: <span dir='ltr'><a href="/wiki/Category:Articles_to_be_merged_from_December_2009" title="Category:Articles to be merged from December 2009">Articles to be merged from December 2009</a></span> | <span dir='ltr'><a href="/wiki/Category:All_articles_to_be_merged" title="Category:All articles to be merged">All articles to be merged</a></span> | <span dir='ltr'><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_with_unsourced_statements_from_September_2009" title="Category:Articles with unsourced statements from September 2009">Articles with unsourced statements from September 2009</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_with_unsourced_statements_from_April_2009" title="Category:Articles with unsourced statements from April 2009">Articles with unsourced statements from April 2009</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Internet_Protocol_Suite" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/Internet_Protocol_Suite"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:Internet_Protocol_Suite"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/Internet_Protocol_Suite" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=Internet_Protocol_Suite&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Internet_Protocol_Suite" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Internet_Protocol_Suite" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=Internet_Protocol_Suite&amp;oldid=399511015" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Internet_Protocol_Suite&amp;id=399511015" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Internet+Protocol+Suite" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Internet+Protocol+Suite&amp;oldid=399511015&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Internet_Protocol_Suite&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D8%AD%D8%B2%D9%85%D8%A9_%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA_%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA" title="حزمة بروتوكولات الإنترنت">العربية</a></li>
+					<li class="interwiki-az"><a href="http://az.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Azərbaycanca</a></li>
+					<li class="interwiki-bs"><a href="http://bs.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Bosanski</a></li>
+					<li class="interwiki-br"><a href="http://br.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Brezhoneg</a></li>
+					<li class="interwiki-bg"><a href="http://bg.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Български</a></li>
+					<li class="interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Pila_TCP/IP" title="Pila TCP/IP">Català</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Česky</a></li>
+					<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/Internetprotokol_(protokolfamilie)" title="Internetprotokol (protokolfamilie)">Dansk</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Internetprotokollfamilie" title="Internetprotokollfamilie">Deutsch</a></li>
+					<li class="interwiki-et"><a href="http://et.wikipedia.org/wiki/Internetiprotokollistik" title="Internetiprotokollistik">Eesti</a></li>
+					<li class="interwiki-el"><a href="http://el.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Ελληνικά</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Familia_de_protocolos_de_Internet" title="Familia de protocolos de Internet">Español</a></li>
+					<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/TCP-IP" title="TCP-IP">Esperanto</a></li>
+					<li class="interwiki-eu"><a href="http://eu.wikipedia.org/wiki/TCP/IP_eredu" title="TCP/IP eredu">Euskara</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D9%87_%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84_%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA" title="مجموعه پروتکل اینترنت">فارسی</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Suite_des_protocoles_Internet" title="Suite des protocoles Internet">Français</a></li>
+					<li class="interwiki-ga"><a href="http://ga.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Gaeilge</a></li>
+					<li class="interwiki-gl"><a href="http://gl.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Galego</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C_%EC%8A%A4%EC%9C%84%ED%8A%B8" title="인터넷 프로토콜 스위트">한국어</a></li>
+					<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Hrvatski</a></li>
+					<li class="interwiki-id"><a href="http://id.wikipedia.org/wiki/Transmission_Control_Protocol/Internet_Protocol" title="Transmission Control Protocol/Internet Protocol">Bahasa Indonesia</a></li>
+					<li class="interwiki-is"><a href="http://is.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Íslenska</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Suite_di_protocolli_Internet" title="Suite di protocolli Internet">Italiano</a></li>
+					<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/TCP/IP" title="TCP/IP">עברית</a></li>
+					<li class="interwiki-ka"><a href="http://ka.wikipedia.org/wiki/TCP/IP" title="TCP/IP">ქართული</a></li>
+					<li class="interwiki-ku"><a href="http://ku.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Kurdî</a></li>
+					<li class="interwiki-lv"><a href="http://lv.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Latviešu</a></li>
+					<li class="interwiki-lb"><a href="http://lb.wikipedia.org/wiki/TCP/IP-Protokollstapel" title="TCP/IP-Protokollstapel">Lëtzebuergesch</a></li>
+					<li class="interwiki-lt"><a href="http://lt.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Lietuvių</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/TCPIP" title="TCPIP">Magyar</a></li>
+					<li class="interwiki-mk"><a href="http://mk.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Македонски</a></li>
+					<li class="interwiki-ml"><a href="http://ml.wikipedia.org/wiki/%E0%B4%9F%E0%B4%BF.%E0%B4%B8%E0%B4%BF.%E0%B4%AA%E0%B4%BF./%E0%B4%90.%E0%B4%AA%E0%B4%BF._%E0%B4%AE%E0%B4%BE%E0%B4%A4%E0%B5%83%E0%B4%95" title="ടി.സി.പി./ഐ.പി. മാതൃക">മലയാളം</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Nederlands</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E3%83%BB%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB%E3%83%BB%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%88" title="インターネット・プロトコル・スイート">日本語</a></li>
+					<li class="interwiki-no"><a href="http://no.wikipedia.org/wiki/TCP/IP" title="TCP/IP">‪Norsk (bokmål)‬</a></li>
+					<li class="interwiki-nn"><a href="http://nn.wikipedia.org/wiki/Internett-protokollfamilien" title="Internett-protokollfamilien">‪Norsk (nynorsk)‬</a></li>
+					<li class="interwiki-uz"><a href="http://uz.wikipedia.org/wiki/TCP/IP" title="TCP/IP">O'zbek</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Historia_Modelu_TCP/IP" title="Historia Modelu TCP/IP">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Русский</a></li>
+					<li class="interwiki-sq"><a href="http://sq.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Shqip</a></li>
+					<li class="interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Internet_protocol_suite" title="Internet protocol suite">Simple English</a></li>
+					<li class="interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Bal%C3%ADk_internetov%C3%BDch_protokolov" title="Balík internetových protokolov">Slovenčina</a></li>
+					<li class="interwiki-sl"><a href="http://sl.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Slovenščina</a></li>
+					<li class="interwiki-ckb"><a href="http://ckb.wikipedia.org/wiki/%DA%86%DB%95%D9%BE%DA%A9%DB%95_%D9%BE%D8%B1%DB%86%D8%AA%DB%86%DA%A9%DB%86%DA%B5%DB%8C_%D8%A6%DB%8C%D9%86%D8%AA%DB%95%D8%B1%D9%86%DB%8E%D8%AA" title="چەپکە پرۆتۆکۆڵی ئینتەرنێت">Soranî / کوردی</a></li>
+					<li class="interwiki-sh"><a href="http://sh.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Srpskohrvatski / Српскохрватски</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Suomi</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Svenska</a></li>
+					<li class="interwiki-th"><a href="http://th.wikipedia.org/wiki/Internet_protocol_suite" title="Internet protocol suite">ไทย</a></li>
+					<li class="interwiki-tr"><a href="http://tr.wikipedia.org/wiki/%C4%B0nternet_ileti%C5%9Fim_kurallar%C4%B1_dizisi" title="İnternet iletişim kuralları dizisi">Türkçe</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Українська</a></li>
+					<li class="interwiki-ur"><a href="http://ur.wikipedia.org/wiki/%D8%AD%D8%B2%D9%85%DB%82_%D8%AC%D8%A7%D9%84%D8%A8%DB%8C%D9%86%DB%8C_%D8%AF%D8%B3%D8%AA%D9%88%D8%B1" title="حزمۂ جالبینی دستور">اردو</a></li>
+					<li class="interwiki-vi"><a href="http://vi.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Tiếng Việt</a></li>
+					<li class="interwiki-yi"><a href="http://yi.wikipedia.org/wiki/TCP/IP" title="TCP/IP">ייִדיש</a></li>
+					<li class="interwiki-yo"><a href="http://yo.wikipedia.org/wiki/TCP/IP" title="TCP/IP">Yorùbá</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/TCP/IP%E5%8D%8F%E8%AE%AE" title="TCP/IP协议">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 29 November 2010 at 12:57.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv237 in 0.058 secs. -->			</body>
+</html>

@@ -1,0 +1,118 @@
+﻿
+Tree (data structure)
+  (Redirected from Tree data structure)
+
+It has been suggested that Leaf object be merged into this article or section. (Discuss)
+
+This article needs additional citations for verification.
+Please help improve this article by adding reliable references. Unsourced material may be challenged and removed. (August 2010)
+
+
+A simple unordered tree; in this diagram, the node labeled 7 has two children, labeled 2 and 6, and one parent, labeled 2. The root node, at the top, has no parent.
+In computer science, a tree is a widely-used data structure that emulates a hierarchical tree structure with a set of linked nodes.
+Mathematically, it is a tree, more specifically an arborescence: an acyclic connected graph where each node has zero or more children nodes and at most one parent node. Furthermore, the children of each node have a specific order.
+Contents [hide]
+1 Terminology
+2 Tree representations
+3 Trees and graphs
+4 Relationship with trees in graph theory
+5 Traversal methods
+6 Common operations
+7 Common uses
+8 See also
+8.1 Other trees
+9 References
+10 External links
+[edit]Terminology
+
+A node is a structure which may contain a value, a condition, or represent a separate data structure (which could be a tree of its own). Each node in a tree has zero or more child nodes, which are below it in the tree (by convention, trees are drawn growing downwards). A node that has a child is called the child's parent node (or ancestor node, or superior). A node has at most one parent.
+Nodes that do not have any children are called leaf nodes. They are also referred to as terminal nodes.
+A free tree is a tree that is not rooted.
+The height of a node is the length of the longest downward path to a leaf from that node. The height of the root is the height of the tree. The depth of a node is the length of the path to its root (i.e., its root path). This is commonly needed in the manipulation of the various self balancing trees, AVL Trees in particular. Conventionally, the value -1 corresponds to a subtree with no nodes, whereas zero corresponds to a subtree with one node.
+The topmost node in a tree is called the root node. Being the topmost node, the root node will not have parents. It is the node at which operations on the tree commonly begin (although some algorithms begin with the leaf nodes and work up ending at the root). All other nodes can be reached from it by following edges or links. (In the formal definition, each such path is also unique). In diagrams, it is typically drawn at the top. In some trees, such as heaps, the root node has special properties. Every node in a tree can be seen as the root node of the subtree rooted at that node.
+An internal node or inner node is any node of a tree that has child nodes and is thus not a leaf node.
+A subtree of a tree T is a tree consisting of a node in T and all of its descendants in T. (This is different from the formal definition of subtree used in graph theory.[1]) The subtree corresponding to the root node is the entire tree; the subtree corresponding to any other node is called a proper subtree (in analogy to the term proper subset).
+[edit]Tree representations
+
+There are many different ways to represent trees; common representations represent the nodes as records allocated on the heap (not to be confused with the heap data structure) with pointers to their children, their parents, or both, or as items in an array, with relationships between them determined by their positions in the array (e.g., binary heap).
+[edit]Trees and graphs
+
+The tree data structure can be generalized to represent directed graphs by removing the constraints that a node may have at most one parent, and that no cycles are allowed. Edges are still abstractly considered as pairs of nodes, however, the terms parent and child are usually replaced by different terminology (for example, source and target). Different implementation strategies exist, for example adjacency lists.
+[edit]Relationship with trees in graph theory
+
+In graph theory, a tree is a connected acyclic graph; unless stated otherwise, trees and graphs are undirected. There is no one-to-one correspondence between such trees and trees as data structure. We can take an arbitrary undirected tree, arbitrarily pick one of its vertices as the root, make all its edges directed by making them point away from the root node - producing an arborescence - and assign an order to all the nodes. The result corresponds to a tree data structure. Picking a different root or different ordering produces a different one.
+[edit]Traversal methods
+
+Main article: Tree traversal
+Stepping through the items of a tree, by means of the connections between parents and children, is called walking the tree, and the action is a walk of the tree. Often, an operation might be performed when a pointer arrives at a particular node. A walk in which each parent node is traversed before its children is called a pre-order walk; a walk in which the children are traversed before their respective parents are traversed is called a post-order walk; a walk in which a node's left subtree, then the node itself, and then finally its right subtree are traversed is a called an in-order traversal. (This last scenario, referring to exactly two subtrees, a left subtree and a right subtree, assumes specifically a binary tree.)
+[edit]Common operations
+
+Enumerating all the items
+Enumerating a section of a tree
+Searching for an item
+Adding a new item at a certain position on the tree
+Deleting an item
+Removing a whole section of a tree (called pruning)
+Adding a whole section to a tree (called grafting)
+Finding the root for any node
+[edit]Common uses
+
+Manipulate hierarchical data
+Make information easy to search (see tree traversal)
+Manipulate sorted lists of data
+As a workflow for compositing digital images for visual effects
+Router algorithms
+[edit]See also
+
+Tree structure -- general discussion of tree structures
+Tree (graph theory) -- In graph theory, a tree is a connected acyclic graph (or sometimes, a connected directed acyclic graph in which every vertex has indegree 0 or 1). An acyclic graph which is not necessarily connected is sometimes called a forest (because it consists of trees).
+Tree (set theory) -- In set theory, a tree is a partially ordered set (poset) (T, <) such that for each t ∈ T, the set {s ∈ T : s < t} is well-ordered by the relation <.
+Hierarchy (mathematics)
+[edit]Other trees
+DSW algorithm
+Enfilade
+Left child-right sibling binary tree
+[edit]References
+
+^ Eric W. Weisstein "Subtree." From MathWorld—A Wolfram Web Resource. http://mathworld.wolfram.com/Subtree.html
+Donald Knuth. The Art of Computer Programming: Fundamental Algorithms, Third Edition. Addison-Wesley, 1997. ISBN 0-201-89683-4 . Section 2.3: Trees, pp. 308–423.
+Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. Introduction to Algorithms, Second Edition. MIT Press and McGraw-Hill, 2001. ISBN 0-262-03293-7 . Section 10.4: Representing rooted trees, pp. 214–217. Chapters 12–14 (Binary Search Trees, Red-Black Trees, Augmenting Data Structures), pp. 253–320.
+[edit]External links
+
+	Wikimedia Commons has media related to: Tree structures
+Description from the Dictionary of Algorithms and Data Structures
+STL-like C++ tree class
+Description of tree data structures from ideainfo.8m.com
+flash actionscript 3 opensource implementation of tree and binary tree — opensource library
+v • d • e
+Trees in computer science
+Binary trees	
+Binary search tree (BST) · Van Emde Boas tree · Cartesian tree · Top Tree · T-tree
+Self-balancing binary search trees	
+Red-black tree · AVL tree · AA tree · Splay tree · Scapegoat tree · Treap
+B-trees	
+B+ tree · B*-tree · UB-tree · 2-3 tree · 2-3-4 tree · (a,b)-tree · Dancing tree · Htree · Bx-tree
+Tries	
+Suffix tree · Radix tree · Ternary search tree
+Binary space partitioning (BSP) trees	
+Quadtree · Octree · kd-tree (implicit) · VP-tree
+Non-binary trees	
+Exponential tree · Fusion tree · Interval tree · PQ tree · Range tree · SPQR tree
+Spatial data partitioning trees	
+R-tree · R+ tree · R* tree · X-tree · M-tree · Segment tree · Fenwick tree · Hilbert R-tree
+Other trees	
+Heap · Hash tree · Finger tree · Metric tree · Cover tree · BK-tree · Doubly-chained tree · iDistance
+v • d • e
+Data structures
+Types	
+Collection · Container
+Arrays	
+Associative array · Multimap · Set · Multiset · Hash table
+Lists	
+Double-ended queue · Linked list · Queue · Stack · Circular Queue/Buffer  · Skip list
+Trees	
+B-tree · Binary search tree · Heap
+Graphs	
+Directed graph · Directed acyclic graph · Binary decision diagram
+List of data structures
+Categories: Trees (structure) | Knowledge representation

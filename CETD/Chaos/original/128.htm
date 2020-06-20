@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>APIv2. You&#8217;re going to like the way it looks. I guarantee it. | Foursquare Blog</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://blog.foursquare.com/wp-content/themes/foursquare/style.css" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="pingback" href="http://blog.foursquare.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Foursquare Blog &raquo; Feed" href="http://blog.foursquare.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Foursquare Blog &raquo; Comments Feed" href="http://blog.foursquare.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Foursquare Blog &raquo; APIv2. You&#8217;re going to like the way it looks. I guarantee it. Comments Feed" href="http://blog.foursquare.com/2010/12/09/apiv2-youre-going-to-like-the-way-it-looks-i-guarantee-it/feed/" />
+<script type='text/javascript' src='http://blog.foursquare.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.foursquare.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.foursquare.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Foursquare Blog' href='http://blog.foursquare.com/' />
+<link rel='start' title='Hi!' href='http://blog.foursquare.com/2009/03/19/87938180/' />
+<link rel='prev' title='Badges badges badges!' href='http://blog.foursquare.com/2010/12/02/badges-badges-badges/' />
+<link rel='next' title='Happy holidays to you: photos and comments are here!' href='http://blog.foursquare.com/2010/12/20/photos-and-comments/' />
+<meta name="generator" content="WordPress 3.0.4" />
+<link rel='canonical' href='http://blog.foursquare.com/2010/12/09/apiv2-youre-going-to-like-the-way-it-looks-i-guarantee-it/' />
+<link rel='shortlink' href='http://blog.foursquare.com/?p=1173912918' />
+<link rel="stylesheet" href="http://disqus.com/stylesheets/playfoursquare/disqus.css?v=2.0" type="text/css" media="screen" /><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2322480-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="single single-post postid-1173912918">
+
+<div id="wrap">
+
+  <div id="header">
+    <h1><a href="http://blog.foursquare.com/" title="Foursquare Blog" rel="home">Foursquare Blog</a></h1>
+
+    <form id="search" role="search" method="get" action="/" > 
+      <input type="text" value="" name="s" id="s" /><button>Search</button>
+    </form><!-- end #search -->
+
+    <div id="menu" role="navigation">
+      <a class="access" href="#content" title="Skip to content">Skip to content</a>
+      <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-1016230767" class="menu-item menu-item-type-custom menu-item-1016230767"><a href="http://foursquare.com">Home</a></li>
+<li id="menu-item-1016230768" class="menu-item menu-item-type-custom menu-item-1016230768"><a href="http://support.foursquare.com">Support</a></li>
+<li id="menu-item-1016230769" class="menu-item menu-item-type-custom menu-item-1016230769"><a href="http://foursquare.com/about">Team</a></li>
+<li id="menu-item-1016230770" class="menu-item menu-item-type-custom menu-item-1016230770"><a href="http://foursquare.com/contact">Contact</a></li>
+</ul></div>    </div><!-- #menu -->
+    
+    <div class="clear"></div>
+  
+  </div><!-- end #header --><div id="content">
+
+<div class="post-1173912918 post type-post hentry category-blog category-engineering tag-api tag-apiv2 tag-foursquare-tag">
+	<h1>APIv2. You&#8217;re going to like the way it looks. I guarantee it.</h1>
+	<div class="post-date">Dec 09th</div>
+
+	<p>Good news, developers: version 2 of the foursquare API is now ready for you to play with. We’ve been working on this for almost a year, and, while it’s still in beta, it&#8217;s looking awesome. Trusted testers have been using it for a while and it passed a significant milestone with this week&#8217;s <a href="http://foursquare.com/devices/android" target="_blank">hot new Android client</a>, the first app built entirely on the new API.</p>
+<p>You’ll find APIv2 better in lots of subtle ways:</p>
+<ul>
+<li>OAuth2 is much easier to use, more secure for users, and can even be used entirely from client-side Javascript.</li>
+<li>By dropping XML support, we’ve been able to make the server more responsive (but not <a href="http://techcrunch.com/2010/11/29/foursquare-new-api/" target="_blank">1000x faster</a>; sorry).</li>
+<li>There’s extensive documentation that includes sample applications and an API explorer.</li>
+<li>A lot of work was put into consistency and clarity.</li>
+<li>And last but not least, we’ve added oft-requested new endpoints for fetching user’s badges, user’s venue histories, and venue popularity.</li>
+</ul>
+<p>We’re well aware that there are many other things you want from our API (push notifications, venue management, and better venue search and trending information, among others), and we’re working on adding those features. But we believe this is a step in the right direction, making it even easier to build <a href="http://foursquare.com/apps/" target="_blank">cool applications</a> for our five million enthusiastic users and giving you incomparable access to our repository of millions of curated venues and user-created tips and hundreds of millions of check-ins.</p>
+<p>You can learn more at our new developer homepage, <a href="http://developer.foursquare.com/" target="_blank">developer.foursquare.com</a>. Be sure to send any feedback or questions along to our <a href="https://groups.google.com/group/foursquare-api" target="_blank">developer mailing list</a>.</p>
+<p>P.S. We don&#8217;t have a concrete timeline for deprecating APIv1 (it will be a few months), but we&#8217;re encouraging all developers to use APIv2 going forward.</p>
+<p class="meta-author"><strong>&ndash; Kushal Dave, Software Engineer</strong></p>	
+	<div class="meta">
+		<div class="meta-category">
+			<p>Posted in <a href="http://blog.foursquare.com/category/foursquare/blog/" title="View all posts in Blog" rel="category tag">Blog</a> <a href="http://blog.foursquare.com/category/engineering/" title="View all posts in Engineering" rel="category tag">Engineering</a></p>
+		</div><!-- end .meta-author -->
+		<div class="meta-comments">
+			<p><a href="http://blog.foursquare.com/2010/12/09/apiv2-youre-going-to-like-the-way-it-looks-i-guarantee-it/#respond" title="Comment on APIv2. You&#8217;re going to like the way it looks. I guarantee it."><span class="dsq-postid" rel="1173912918 http://blog.foursquare.com/?p=1173912918">View Comments</span></a></p>
+		</div><!-- end .meta-comments -->
+		<div class="clear"></div>
+	</div><!-- end .meta -->
+						
+</div><!-- end .post -->
+
+	<div id="comments-disqus">
+		
+<div id="disqus_thread">
+					<div id="dsq-content">
+			<ul id="dsq-comments">
+					<li id="dsq-comment-2153">
+					<div id="dsq-comment-header-2153" class="dsq-comment-header">
+						<cite id="dsq-cite-2153">
+	http://twitter.com/xPatriicK							<span id="dsq-author-user-2153">Patrick K. / xPatriicK</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2153" class="dsq-comment-body">
+						<div id="dsq-comment-message-2153" class="dsq-comment-message"><p>Great!</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2155">
+					<div id="dsq-comment-header-2155" class="dsq-comment-header">
+						<cite id="dsq-cite-2155">
+	http://twitter.com/hungtruong							<span id="dsq-author-user-2155">Hung Truong</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2155" class="dsq-comment-body">
+						<div id="dsq-comment-message-2155" class="dsq-comment-message"><p>Cool, I&#8217;m excited to start exploring the new features!</p>
+<p>Also, Men&#8217;s Warehouse reference? You guys are weird.</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2156">
+					<div id="dsq-comment-header-2156" class="dsq-comment-header">
+						<cite id="dsq-cite-2156">
+	http://twitter.com/dannypier							<span id="dsq-author-user-2156">Danny Pier</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2156" class="dsq-comment-body">
+						<div id="dsq-comment-message-2156" class="dsq-comment-message"><p>Glad to hear it passed the stability test via the android app!  Looks like I can commit to make the switch now.</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2157">
+					<div id="dsq-comment-header-2157" class="dsq-comment-header">
+						<cite id="dsq-cite-2157">
+	http://twitter.com/dbbradle							<span id="dsq-author-user-2157">Derrick Bradley</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2157" class="dsq-comment-body">
+						<div id="dsq-comment-message-2157" class="dsq-comment-message"><p>Looking forward to checking it out. Great work, guys.</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2158">
+					<div id="dsq-comment-header-2158" class="dsq-comment-header">
+						<cite id="dsq-cite-2158">
+	http://twitter.com/GordonWerner							<span id="dsq-author-user-2158">Gordon Werner</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2158" class="dsq-comment-body">
+						<div id="dsq-comment-message-2158" class="dsq-comment-message"><p>so with the modifications to some of the earlier badge images &#8230; have you given Socialite and/or Gossip Girl their own unique badge (or are they still the same image?)</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2159">
+					<div id="dsq-comment-header-2159" class="dsq-comment-header">
+						<cite id="dsq-cite-2159">
+	http://twitter.com/panggi							<span id="dsq-author-user-2159">Panggi Libersa</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2159" class="dsq-comment-body">
+						<div id="dsq-comment-message-2159" class="dsq-comment-message"><p>nice!! gonna think to make a mashup using the new API <img src='http://blog.foursquare.com/wp-includes/images/smilies/icon_biggrin.gif' alt=':-D' class='wp-smiley' /> </p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2164">
+					<div id="dsq-comment-header-2164" class="dsq-comment-header">
+						<cite id="dsq-cite-2164">
+								<span id="dsq-author-user-2164">Diego Rodrigue</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2164" class="dsq-comment-body">
+						<div id="dsq-comment-message-2164" class="dsq-comment-message"><p>Cool!</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2167">
+					<div id="dsq-comment-header-2167" class="dsq-comment-header">
+						<cite id="dsq-cite-2167">
+	http://twitter.com/jdandrea							<span id="dsq-author-user-2167">Joe D&#8217;Andrea</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2167" class="dsq-comment-body">
+						<div id="dsq-comment-message-2167" class="dsq-comment-message"><p>Happy! <img src='http://blog.foursquare.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2174">
+					<div id="dsq-comment-header-2174" class="dsq-comment-header">
+						<cite id="dsq-cite-2174">
+								<span id="dsq-author-user-2174">Karl</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2174" class="dsq-comment-body">
+						<div id="dsq-comment-message-2174" class="dsq-comment-message"><p>Well admitted off topic: Welcome to San Francisco but we so don&#8217;t dig chain stores and in particular the indignity to set foot in places like Men&#8217;s Warehouse. Pass that and just go down a couple of blocks on 2nd Street and have Harry O. himself fit you a suit.</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2184">
+					<div id="dsq-comment-header-2184" class="dsq-comment-header">
+						<cite id="dsq-cite-2184">
+	http://twitter.com/mxcl							<span id="dsq-author-user-2184">Max Howell</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2184" class="dsq-comment-body">
+						<div id="dsq-comment-message-2184" class="dsq-comment-message"><p>All everybody actually wants is checkins to return all checkins since a time and not just the LAST one per user. PLEASE!</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2200">
+					<div id="dsq-comment-header-2200" class="dsq-comment-header">
+						<cite id="dsq-cite-2200">
+	http://twitter.com/natemup							<span id="dsq-author-user-2200">Nate Tinner</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2200" class="dsq-comment-body">
+						<div id="dsq-comment-message-2200" class="dsq-comment-message"><p>is this even a change that can be noticed visually?</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2206">
+					<div id="dsq-comment-header-2206" class="dsq-comment-header">
+						<cite id="dsq-cite-2206">
+								<span id="dsq-author-user-2206">Romanticnet</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2206" class="dsq-comment-body">
+						<div id="dsq-comment-message-2206" class="dsq-comment-message"><p>nice info, thanks&#8230;..</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2210">
+					<div id="dsq-comment-header-2210" class="dsq-comment-header">
+						<cite id="dsq-cite-2210">
+	http://twitter.com/michuk							<span id="dsq-author-user-2210">Borys Musielak</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2210" class="dsq-comment-body">
+						<div id="dsq-comment-message-2210" class="dsq-comment-message"><p>Tom Henriksson of Nokia presented on last Europen Venture Summit a concept od a LOCAL portal that does all the personal recommendation stuff in many areas like bars, clubs, music stores, cinemas, gyms, all the leisure activity in general, being one&#8217;s personal assistant and city guide.</p>
+<p>Nokia probably would like to create such a system, but I think only Google and Facebook have the capability of *becoming* such systems in the future. Not Foursquare.</p>
+<p>I actually hope and believe more in an interconnected network of niche services that do one type of personal local recommendations and they do it well. This way specialized check-in &amp; recommendations services like Nuji (products), Foodspotting (food) or Filmaster (movies) will become the future of mobile (and Internet because all internet is going to be mobile soon). If Foursquare can play nice with such systems (and it seems the new API is a step in the right direction) then perhaps Henriksson&#8217;s vision may come true. But not in a way he envisioned it. And not on a Nokia phone <img src='http://blog.foursquare.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-2285">
+					<div id="dsq-comment-header-2285" class="dsq-comment-header">
+						<cite id="dsq-cite-2285">
+	http://youngfinanceguy-benweb.blogspot.com							<span id="dsq-author-user-2285">Finance Guy</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-2285" class="dsq-comment-body">
+						<div id="dsq-comment-message-2285" class="dsq-comment-message"><p>Awesome! I can&#8217;t wait to check it out.</p>
+<p>You know I just love this new and growing focus on &#8220;local&#8221; that is taking a hold of the internet and 2.0 users.</p>
+<p>This is the first exposure I have had to foursquare and I am very intrigued.</p>
+</div>
+					</div>
+				</li>
+				</ul>
+		</div>
+	</div>
+
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+	var disqus_url = 'http://blog.foursquare.com/2010/12/09/apiv2-youre-going-to-like-the-way-it-looks-i-guarantee-it/ ';
+	var disqus_identifier = '1173912918 http://blog.foursquare.com/?p=1173912918';
+	var disqus_container_id = 'disqus_thread';
+	var disqus_domain = 'disqus.com';
+	var disqus_shortname = 'playfoursquare';
+	var disqus_title = "APIv2. You&#8217;re going to like the way it looks. I guarantee it.";
+		var disqus_config = function () {
+	    var config = this; // Access to the config object
+
+	    /* 
+	       All currently supported events:
+	        * preData — fires just before we request for initial data
+	        * preInit - fires after we get initial data but before we load any dependencies
+	        * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+	        * afterRender - fires when template is rendered but before we show it
+	        * onReady - everything is done
+	     */
+
+		config.callbacks.preData.push(function() {
+			// clear out the container (its filled for SEO/legacy purposes)
+			document.getElementById(disqus_container_id).innerHTML = '';
+		});
+				config.callbacks.onReady.push(function() {
+			// sync comments in the background so we don't block the page
+			DISQUS.request.get('?cf_action=sync_comments&post_id=1173912918');
+		});
+					};
+	var facebookXdReceiverPath = 'http://blog.foursquare.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+	var DsqLocal = {
+		'trackbacks': [
+		],
+		'trackback_url': "http:\/\/blog.foursquare.com\/2010\/12\/09\/apiv2-youre-going-to-like-the-way-it-looks-i-guarantee-it\/trackback\/"	};
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = 'http://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.61';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+	</div><!-- end #comments-disqus -->
+
+</div><!-- end #content -->
+<div id="sidebar">
+
+  <ul id="primary-widgets">
+
+  <li id="text-3" class="widget-container widget_text">			<div class="textwidget"><p id="about">Everything you ever wanted to know about your favorite, er, mobile + social + friend finder + social city guide + nightlife game thing.</p></div>
+		</li><li id="text-4" class="widget-container widget_text"><h3 class="widget-title">foursquare on</h3>			<div class="textwidget"><ul id="findus">
+  <li class="icon-facebook"><a href="http://www.facebook.com/playfoursquare">Facebook</a></li>
+  <li class="icon-meetup"><a href="http://www.meetup.com/foursquare/">Meetup</a></li>
+  <li class="icon-twitter"><a href="http://twitter.com/foursquare">Twitter</a></li>
+  <li class="icon-youtube"><a href="http://www.youtube.com/foursquarehq">YouTube</a></li>
+  <li class="icon-rss"><a href="http://feeds.feedburner.com/thefoursquareblog">RSS Feed</a></li>
+</ul></div>
+		</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-63"><a href="http://blog.foursquare.com/category/business/" title="View all posts filed under Business">Business</a>
+<ul class='children'>
+	<li class="cat-item cat-item-71"><a href="http://blog.foursquare.com/category/business/partnerships/" title="View all posts filed under Partnerships">Partnerships</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="http://blog.foursquare.com/category/business/specials/" title="View all posts filed under Specials">Specials</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-62"><a href="http://blog.foursquare.com/category/community/" title="View all posts filed under Community">Community</a>
+<ul class='children'>
+	<li class="cat-item cat-item-64"><a href="http://blog.foursquare.com/category/community/support/" title="View all posts filed under Support">Support</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-127"><a href="http://blog.foursquare.com/category/engineering/" title="View all posts filed under Engineering">Engineering</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="http://blog.foursquare.com/category/foursquare/" title="View all posts filed under Foursquare">Foursquare</a>
+<ul class='children'>
+	<li class="cat-item cat-item-99"><a href="http://blog.foursquare.com/category/foursquare/android/" title="View all posts filed under Android">Android</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="http://blog.foursquare.com/category/foursquare/badges/" title="View all posts filed under Badges">Badges</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="http://blog.foursquare.com/category/foursquare/blackberry/" title="View all posts filed under Blackberry">Blackberry</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://blog.foursquare.com/category/foursquare/blog/" title="View all posts filed under Blog">Blog</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="http://blog.foursquare.com/category/foursquare/events/" title="View all posts filed under Events">Events</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="http://blog.foursquare.com/category/foursquare/iphone/" title="View all posts filed under iPhone">iPhone</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="http://blog.foursquare.com/category/foursquare/product/" title="View all posts filed under Product">Product</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="http://blog.foursquare.com/category/foursquare/random/" title="View all posts filed under Random">Random</a>
+</li>
+	<li class="cat-item cat-item-106"><a href="http://blog.foursquare.com/category/foursquare/symbian/" title="View all posts filed under Symbian">Symbian</a>
+</li>
+</ul>
+</li>
+		</ul>
+</li><li id="archives-3" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://blog.foursquare.com/2010/12/'> December 2010 </option>
+	<option value='http://blog.foursquare.com/2010/11/'> November 2010 </option>
+	<option value='http://blog.foursquare.com/2010/10/'> October 2010 </option>
+	<option value='http://blog.foursquare.com/2010/09/'> September 2010 </option>
+	<option value='http://blog.foursquare.com/2010/08/'> August 2010 </option>
+	<option value='http://blog.foursquare.com/2010/07/'> July 2010 </option>
+	<option value='http://blog.foursquare.com/2010/06/'> June 2010 </option>
+	<option value='http://blog.foursquare.com/2010/05/'> May 2010 </option>
+	<option value='http://blog.foursquare.com/2010/04/'> April 2010 </option>
+	<option value='http://blog.foursquare.com/2010/03/'> March 2010 </option>
+	<option value='http://blog.foursquare.com/2010/02/'> February 2010 </option>
+	<option value='http://blog.foursquare.com/2010/01/'> January 2010 </option>
+	<option value='http://blog.foursquare.com/2009/12/'> December 2009 </option>
+	<option value='http://blog.foursquare.com/2009/11/'> November 2009 </option>
+	<option value='http://blog.foursquare.com/2009/10/'> October 2009 </option>
+	<option value='http://blog.foursquare.com/2009/09/'> September 2009 </option>
+	<option value='http://blog.foursquare.com/2009/08/'> August 2009 </option>
+	<option value='http://blog.foursquare.com/2009/07/'> July 2009 </option>
+	<option value='http://blog.foursquare.com/2009/06/'> June 2009 </option>
+	<option value='http://blog.foursquare.com/2009/05/'> May 2009 </option>
+	<option value='http://blog.foursquare.com/2009/04/'> April 2009 </option>
+	<option value='http://blog.foursquare.com/2009/03/'> March 2009 </option>
+ </select>
+</li>
+  </ul><!-- end #primary-widgets -->
+
+</div><!-- end #sidebar --><div id="footer">
+	<p>Copyright &copy; 2009-2010 foursquare. All rights reserved.</p>
+</div><!-- end #footer -->
+
+
+</div><!-- end #wrap -->
+
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk (enhanced)
+
+Served from: blog.foursquare.com @ 2010-12-31 05:49:47 -->

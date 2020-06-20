@@ -1,0 +1,40 @@
+﻿
+Turgor pressure
+
+This article needs additional citations for verification.
+Please help improve this article by adding reliable references. Unsourced material may be challenged and removed. (July 2006)
+Turgor Pressure or turgidity is the main pressure of the cell contents against the cell wall in plant cells and bacteria cells, determined by the water content of the vacuole, resulting from osmotic pressure, i.e. the hydrostatic pressure produced by a solution in a space divided by a semipermeable membrane due to a differential in the concentration of solute.
+Turgor Pressure is a force per unit area exerted outward on a plant cell wall by the water contained in the cell vacuole. In terms of plant water potential, turgor pressure is usually expressed as the pressure component (Ψp). This force gives the plant rigidity, and keeps it erect.
+Contents [hide]
+1 Wilting
+2 See also
+3 References
+4 Further reading
+5 External links
+[edit]Wilting
+
+Main article: Wilting
+Plants that lose turgidity (lose water from their cells) undergo plasmolysis. When this happens, cells are no longer rigid and the plant loses structure, giving the "wilty" appearance. Wilting might not always be caused by a lack of water, but might be an expression of plants under salt (salinity) stress or can be caused by ethylene (a plant hormone).
+"Plants wilt, not only when they lose water through evaporation, but also when they are surrounded by an aqueous solution of common salt, potassium chloride, magnesium chloride, sugar or other substance, if the solution is of higher osmotic pressure, whereas they do not wilt if the osmotic pressure is lower."[1]
+[edit]See also
+
+Cell wall
+Osmotic pressure
+Osmosis
+Bulliform cell
+[edit]References
+
+^ Plants wither due to salts or will they? (pdf)
+[edit]Further reading
+
+Campbell, N. A., Reece, J. B. Biology: Sixth Edition; Benjamin Cummings: New York, NY, 2002; Vol. 1.
+[edit]External links
+
+Osmotic pressure
+How do non woody plants stay upright?
+NetLogo Turgor simulation for educational use (Java Applet for fast PCs)
+NetLogo Turgor simulation for educational use (Java Applet, runs fast also on slow PCs)
+‹ The template below (Expand) is being considered for deletion. See templates for discussion to help reach a consensus.›
+
+Please help improve this article by expanding it. Further information might be found on the talk page. (December 2009)
+Categories: Cell biology | Membrane biology

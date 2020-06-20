@@ -1,0 +1,348 @@
+﻿
+Mac OS X
+"OSX" redirects here. For other uses, see OSX (disambiguation).
+Mac OS X
+
+
+Screenshot of Mac OS X v10.6 "Snow Leopard"
+Company / developer	Apple Inc.
+Programmed in	C, C++, Objective-C[1][2]
+OS family	Mac OS, Unix[3][4][5]
+Working state	Current
+Source model	Closed source (with open source components)
+Initial release	24 March 2001; 9 years ago
+Latest stable release	10.6.5 / 10 November 2010; 41 days ago
+Marketing target	Personal computing
+Available language(s)	Multi-lingual
+Update method	Apple Software Update
+Supported platforms	
+IA-32 and x86-64: from version 10.4
+PowerPC: 32-bit & 64-bit up through version 10.5
+Kernel type	Hybrid based on the Mach microkernel
+Default user interface	Graphical (Aqua)
+License	Proprietary EULA
+Preceded by	Mac OS 9
+Official website	Official website
+Mac OS X (pronounced /ˈmæk ˌoʊ ˌɛs ˈtɛn/ mak oh es ten)[6] is a series of Unix-based operating systems and graphical user interfaces developed, marketed, and sold by Apple Inc. Since 2002, Mac OS X has been included with all new Macintosh computer systems. It is the successor to Mac OS 9, released in 1999, the final release of the "classic" Mac OS, which had been Apple's primary operating system since 1984.
+Mac OS X, whose X is the Roman numeral for 10 and is a prominent part of its brand identity, is a Unix-based graphical operating system,[7] built on technologies developed at NeXT between the second half of the 1980s and Apple's purchase of the company in late 1996. From its sixth release Mac OS X v10.5 "Leopard" and onwards, every release of Mac OS X gained UNIX 03 certification while running on Intel processors.[3][4]
+The first version released was Mac OS X Server 1.0 in 1999, and a desktop-oriented version, Mac OS X v10.0 "Cheetah" followed on March 24, 2001. Releases of Mac OS X are named after big cats: for example, Mac OS X v10.6 is usually referred to by Apple and users as "Snow Leopard". The server edition, Mac OS X Server, is architecturally identical to its desktop counterpart, and includes tools to facilitate management of workgroups of Mac OS X machines, and to provide access to network services. These tools include a mail transfer agent, a Samba server, an LDAP server, a domain name server, and others. It is pre-loaded on Apple's Xserve server hardware, but can be run on almost all of Apple's current selling computer models.[8]
+Apple also produces specialized versions of Mac OS X for use on its consumer devices. iOS, which is based on Mac OS X, runs on the iPhone, iPod Touch,[9] iPad, and the 2nd generation Apple TV[10]. An unnamed variant of Mac OS X powered the 1st generation Apple TV.[11]
+Contents [hide]
+1 History
+2 Description
+3 Compatibility
+3.1 Software
+3.2 Hardware
+3.3 Apple–Intel transition
+4 Features
+5 Versions
+5.1 Public Beta: "Kodiak"
+5.2 Version 10.0: "Cheetah"
+5.3 Version 10.1: "Puma"
+5.4 Version 10.2: "Jaguar"
+5.5 Version 10.3: "Panther"
+5.6 Version 10.4: "Tiger"
+5.7 Version 10.5: "Leopard"
+5.8 Version 10.6: "Snow Leopard"
+5.9 Version 10.7: "Lion"
+6 See also
+7 References
+8 External links
+History
+
+Main article: History of Mac OS X
+Mac OS X is based upon the Mach kernel.[12] Certain parts from FreeBSD's and NetBSD's implementation of Unix were incorporated in NeXTSTEP, the core of Mac OS X. NeXTSTEP was the object-oriented operating system developed by Steve Jobs' company NeXT after he left Apple in 1985.[13] While Jobs was away from Apple, Apple tried to create a "next-generation" OS through the Taligent, Copland and Gershwin projects, with little success.[14]
+Eventually, NeXT's OS, then called OPENSTEP, was selected to be the basis for Apple's next OS, and Apple purchased NeXT outright.[15] Steve Jobs returned to Apple as interim CEO, and later became CEO, shepherding the transformation of the programmer-friendly OPENSTEP into a system that would be adopted by Apple's primary market of home users and creative professionals. The project was first known as Rhapsody and was later renamed to Mac OS X.[16]
+Mac OS X Server 1.x, was incompatible with software designed for the original Mac OS and had no support for Apple's own IEEE 1394 interface (FireWire). Mac OS X 10.x included more backward compatibility and functionality by including the Carbon API as well as FireWire support. As the operating system evolved, it moved away from the legacy Mac OS to an emphasis on new "digital lifestyle" applications such as the iLife suite, enhanced business applications (iWork), and integrated home entertainment (the Front Row media center).[17] Each version also included modifications to the general interface, such as the brushed metal appearance added in version 10.3, the non-pinstriped titlebar appearance in version 10.4, and in 10.5 the removal of the previous brushed metal styles in favor of the "Unified" gradient window style.[18][19]
+Description
+
+ 
+
+Box artwork for Mac OS X. Left to right: Cheetah/Puma (1), Jaguar (2), Panther (3), Tiger (4), Leopard (5), and Snow Leopard (6).
+Mac OS X is the tenth major version of Apple's operating system for Macintosh computers. Previous Macintosh operating systems were named using Arabic numerals, e.g. Mac OS 8 and Mac OS 9. The letter X in Mac OS X's name refers to the number 10, a Roman numeral. It is therefore correctly pronounced "ten" (/ˈtɛn/) in this context, though "X" (/ˈɛks/) is also a common pronunciation.[6][20]
+Mac OS X's core is a POSIX compliant operating system (OS) built on top of the XNU kernel, with standard Unix facilities available from the command line interface. Apple has released this family of software as a free and open source operating system named Darwin. On top of Darwin, Apple layered a number of components, including the Aqua interface and the Finder, to complete the GUI-based operating system which is Mac OS X.[7]
+Mac OS X introduced a number of new capabilities to provide a more stable and reliable platform than its predecessor, Mac OS 9. For example, pre-emptive multitasking and memory protection improved the system's ability to run multiple applications simultaneously without them interrupting or corrupting each other.[21] Many aspects of Mac OS X's architecture are derived from Openstep, which was designed to be portable, to ease the transition from one platform to another. For example, Nextstep was ported from the original 68k-based NeXT workstations to x86 and other architectures before NeXT was purchased by Apple,[22] and OpenStep was later ported to the PowerPC architecture as part of the Rhapsody project.
+The most visible change was the Aqua theme. The use of soft edges, translucent colors, and pinstripes – similar to the hardware design of the first iMacs – brought more texture and color to the user interface when compared to what OS 9 and OS X Server 1.0's "Platinum" appearance had offered. According to John Siracusa, an editor of Ars Technica, the introduction of Aqua and its departure from the then conventional look "hit like a ton of bricks."[23] Bruce Tognazzini (who founded the original Apple Human Interface Group) said that the Aqua interface in Mac OS X v10.0 represented a step backwards in usability compared with the original Mac OS interface.[24][25] Third-party developers started producing skins for customizable applications for Mac and other operating systems which mimicked the Aqua appearance. To some extent, Apple has used the successful transition to this new design as leverage, at various times threatening legal action against people who make or distribute software with an interface the company claims is derived from its copyrighted design.[26]
+Mac OS X Architecture implements a layered framework.[27] The layered framework aids rapid development of applications by providing existing code for common tasks.
+Mac OS X includes its own software development tools, most prominently an integrated development environment called Xcode. Xcode provides interfaces to compilers that support several programming languages including C, C++, Objective-C, and Java. For the Apple–Intel transition, it was modified so that developers could build their applications as a universal binary, which provides compatibility with both the Intel-based and PowerPC-based Macintosh lines.[28]
+The Darwin sub-system in Mac OS X is in charge of managing the filesystem, which includes the Unix permissions layer. In 2003 and 2005, two Macworld editors expressed criticism of the permission scheme; Ted Landau called misconfigured permissions "the most common frustration" in Mac OS X,[29] while Rob Griffiths suggested that some users may even have to reset permissions every day, a process which can take up to 15 minutes.[30] More recently, another Macworld editor, Dan Frakes, called the procedure of repairing permissions vastly overused.[31] He argues that Mac OS X typically handles permissions properly without user interference, and resetting permissions should just be tried when problems emerge.[32]
+As of September 2010, Mac OS X is the second most active general-purpose operating system in use on the World Wide Web, after Microsoft Windows, with an 8.3% usage share according to statistics compiled by W3Counter.[33] It is the most successful UNIX-like desktop operating system on the web, estimated at over 5 times the usage of Linux with 1.5%.[33] See also Usage share of operating systems. Eighteen languages are available as the "base" language (that which is used for sub-user environments, such as the user login screen) at the first screen of the installation DVD. All of the eighteen user languages for the system menus, messages, and other functions are installed by default and can be chosen from the System Preferences. As of OS 10.6, the languages are English, Japanese, French, German, Spanish, Italian, Dutch, Swedish, Danish, Norwegian, Finnish, Traditional Chinese, Simplified Chinese, Korean, Brazilian Portuguese, European Portuguese, Russian, and Polish. Input methods for typing in dozens of scripts can be chosen independently of the system language.[34]
+Compatibility
+
+Software
+The APIs that Mac OS X inherited from OpenStep are not backward compatible with earlier versions of Mac OS. These APIs were created as the result of a 1993 collaboration between NeXT Computer and Sun Microsystems and are now referred to by Apple as Cocoa. This heritage is highly visible for Cocoa developers, since the "NS" prefix is ubiquitous in the framework, standing variously for Nextstep or NeXT/Sun. The official OpenStep API, published in September 1994, was the first to split the API between Foundation and Application Kit and the first to use the "NS" prefix.[22] Apple's Rhapsody project would have required all new development to use these APIs, causing much outcry among existing Mac developers. All Mac software that did not receive a complete rewrite to the new framework would run in the equivalent of the Classic environment. To permit a smooth transition from Mac OS 9 to Mac OS X, the Carbon Application Programming Interface (API) was created. Applications written with Carbon can be executed natively on both systems. Carbon was not included in the first product sold as Mac OS X, Mac OS X Server (now known as Mac OS X Server 1.x).
+Mac OS X also used to support the Java Platform as a "preferred software package"  – in practice this means that applications written in Java fit as neatly into the operating system as possible while still being cross-platform compatible, and that graphical user interfaces written in Swing look almost exactly like native Cocoa interfaces. Traditionally, Cocoa programs have been mostly written in Objective-C, with Java as an alternative. However, on July 11, 2005, Apple announced that "features added to Cocoa in Mac OS X versions later than 10.4 will not be added to the Cocoa-Java programming interface."[35]
+Since Mac OS X is POSIX compliant, many software packages written for the * BSDs or Linux can be recompiled to run on it. Projects such as Fink, MacPorts and pkgsrc provide pre-compiled or pre-formatted packages. Since version 10.3, Mac OS X has included X11.app, Apple's version of the X Window System graphical interface for Unix applications, as an optional component during installation.[36] Up to and including Mac OS X v10.4 (Tiger), Apple's implementation was based on the X11 Licensed XFree86 4.3 and X11R6.6. All bundled versions of X11 feature a window manager which is similar to the Mac OS X look-and-feel and has fairly good integration with Mac OS X, also using the native Quartz rendering system. Earlier versions of Mac OS X (in which X11 has not been bundled) can also run X11 applications using XDarwin. With the introduction of version 10.5 Apple switched to the X.org variant of X11.[37]
+Hardware
+For the early releases of Mac OS X, the standard hardware platform supported was the full line of Macintosh computers (laptop, desktop, or server) based on PowerPC G3, G4, and G5 processors. Later versions discontinued support for some older hardware; for example, Panther does not support "beige" G3s,[38] and Tiger does not support systems that pre-date Apple's introduction of integrated FireWire ports (the ports themselves are not a functional requirement). Mac OS X v10.5 "Leopard", introduced October 2007, has dropped support for all PowerPC G3 processors and for PowerPC G4 processors with clock rates below 867 MHz. Mac OS X v10.6 "Snow Leopard" supports Macs with Intel processors, not PowerPC.
+Tools such as XPostFacto and patches applied to the installation disc have been developed by third parties to enable installation of newer versions of Mac OS X on systems not officially supported by Apple. This includes a number of pre-G3 Power Macintosh systems that can be made to run up to and including Mac OS X 10.2 Jaguar, all G3-based Macs which can run up to and including Tiger, and sub-867 MHz G4 Macs can run Leopard by removing the restriction from the installation DVD or entering a command in the Mac's Open Firmware interface to tell the Leopard Installer that it has a clock rate of 867 MHz or greater. Except for features requiring specific hardware (e.g. graphics acceleration, DVD writing), the operating system offers the same functionality on all supported hardware.
+PowerPC versions of Mac OS X prior to Leopard retain compatibility with older Mac OS applications by providing an emulation environment called Classic, which allows users to run Mac OS 9 as a process within Mac OS X, so that most older applications run as they would under the older operating system. Classic is not supported on Intel-based Macs or in Mac OS X v10.5 "Leopard", but users still requiring Classic applications on Intel Macs can use the SheepShaver emulator to run Mac OS 9 on top of Leopard.
+Apple–Intel transition
+Main article: Apple–Intel transition
+In April 2002, eWeek announced a rumor that Apple had a version of Mac OS X code-named Marklar, which ran on Intel x86 processors. The idea behind Marklar was to keep Mac OS X running on an alternative platform should Apple become dissatisfied with the progress of the PowerPC platform.[39] These rumors subsided until late in May 2005, when various media outlets, such as the Wall Street Journal[40] and CNET,[41] announced that Apple would unveil Marklar in the coming months.
+On June 6, 2005, Steve Jobs confirmed these rumors when he announced in his keynote address at the annual Apple Worldwide Developers Conference that Apple would be making the transition from PowerPC to Intel processors over the following two years, and that Mac OS X would support both platforms during the transition. Jobs also confirmed rumors that Apple had versions of Mac OS X running on Intel processors for most of its developmental life. The last time that Apple switched CPU families—from the Motorola 68K CPU to the IBM/Motorola PowerPC—Apple included a Motorola 68K emulator in the new OS that made almost all 68K software work automatically on the new hardware. Apple had supported the 68K emulator for 11 years, but stopped supporting it during the transition to Intel CPUs. Included in the new OS for the Intel-based Macs is Rosetta, a binary translation layer which enables software compiled for PowerPC Mac OS X to run on Intel Mac OS X machines. Apple dropped support for Classic mode on the new Intel Macs. Third party emulation software such as Mini vMac, Basilisk II and SheepShaver provides support for some early versions of Mac OS. A new version of Xcode and the underlying command-line compilers support building universal binaries that will run on either architecture.[42]
+PowerPC-only software is supported with Rosetta, though applications may have to be rewritten to run properly on the newer OS X for Intel. Apple initially encouraged developers to produce universal binaries with support for both PowerPC and x86.[43] There is a performance penalty when PowerPC binaries run on Intel Macs through Rosetta. Moreover, some PowerPC software, such as kernel extensions and System Preferences plugins, are not supported on Intel Macs. Some PowerPC applications would not run on Intel OS X at all. Plugins for Safari need to be compiled for the same platform as Safari, so when Safari is running on Intel it requires plug-ins that have been compiled as Intel-only or universal binaries, so PowerPC-only plug-ins will not work.[44] While Intel Macs are able to run PowerPC, x86, and universal binaries, PowerPC Macs support only universal and PowerPC builds.
+Support for the PowerPC platform was dropped after Mac OS X 10.5. Such cross-platform capability already existed in Mac OS X's lineage; Openstep was ported to many architectures, including x86, and Darwin included support for both PowerPC and x86. Apple stated that Mac OS X would not run on Intel-based personal computers aside from its own, but a hacked version of the OS compatible with conventional x86 hardware was developed by the OSx86 community.
+On June 8, 2009, Apple announced at its Worldwide Developers Conference that Snow Leopard (version 10.6) would drop support for PowerPC processors and be Intel-only.[45] However, Rosetta is still supported. In Snow Leopard, Rosetta is not installed by default, but it is available on the installation DVD as an installable add-on and is installed automatically via the Internet when first attempting to run a PowerPC-based application.
+Features
+
+
+
+When a widget is added to the dashboard, it appears with a ripple effect.
+One of the major differences between the previous versions of Mac OS and OS X was the addition of the Aqua GUI, a graphical user interface with water-like elements. Every window element, text, graphic, or widget is drawn on-screen using anti-aliasing technology.[46] ColorSync, a technology introduced many years before, was improved and built into the core drawing engine, to provide color matching for printing and multimedia professionals.[47] Also, drop shadows were added around windows and isolated text elements to provide a sense of depth. New interface elements were integrated, including sheets (document modal dialog boxes attached to specific windows) and drawers.
+Apple has continued to change aspects of the OS X appearance and design, particularly with tweaks to the appearance of windows and the menu bar. One example of a UI behavioral change is that previewed video and audio files no longer have progress bars in column view; instead, they have mouse-over start and stop buttons as of 10.5.
+The human interface guidelines published by Apple for Mac OS X are followed by many applications, giving them consistent user interface and keyboard shortcuts.[48] In addition, new services for applications are included, which include spelling and grammar checkers, special characters palette, color picker, font chooser and dictionary; these global features are present in every Cocoa application, adding consistency. The graphics system OpenGL composites windows onto the screen to allow hardware-accelerated drawing. This technology, introduced in version 10.2, is called Quartz Extreme, a component of Quartz. Quartz's internal imaging model correlates well with the Portable Document Format (PDF) imaging model, making it easy to output PDF to multiple devices.[47] As a side result, PDF viewing is a built-in feature.
+In version 10.3, Apple added Exposé, a feature which includes three functions to help accessibility between windows and desktop. Its functions are to instantly display all open windows as thumbnails for easy navigation to different tasks, display all open windows as thumbnails from the current application, and hide all windows to access the desktop.[49] Also, FileVault was introduced, which is an optional encryption of the user's files with Advanced Encryption Standard (AES-128).[50]
+Features introduced in version 10.4 include Automator, an application designed to create an automatic workflow for different tasks;[51] Dashboard, a full-screen group of small applications called desktop widgets that can be called up and dismissed in one keystroke;[52] and Front Row, a media viewer interface accessed by the Apple Remote.[53] Moreover, the Sync Services were included, which is a system that allows applications to access a centralized extensible database for various elements of user data, including calendar and contact items. The operating system then managed conflicting edits and data consistency.[54]
+As of version 10.5, all system icons are scalable up to 512×512 pixels, to accommodate various places where they appear in larger size, including for example the Cover Flow view, a three-dimensional graphical user interface included with iTunes, the Finder, and other Apple products for visually skimming through files and digital media libraries via cover artwork.[55] This version includes Spaces, a virtual desktop implementation which enables the user to have more than one desktop and display them in an Exposé-like interface.[56] Mac OS X v10.5 includes an automatic backup technology called Time Machine, which provides the ability to view and restore previous versions of files and application data;[57] and Screen Sharing was built in for the first time.[58]
+Finder is a file browser allowing quick access to all areas of the computer, which has been modified throughout subsequent releases of Mac OS X.[59][60] Quick Look is part of Mac OS X Leopard's Finder. It allows for dynamic previews of files, including videos and multi-page documents, without opening their parent applications. Spotlight search technology, which is integrated into the Finder since Mac OS X Tiger, allows rapid real-time searches of data files; mail messages; photos; and other information based on item properties (meta data) and/or content.[61][62] Mac OS X makes use of a Dock, which holds file and folder shortcuts as well as minimized windows. Mac OS X Architecture implements a layered framework.[63] The layered framework aids rapid development of applications by providing existing code for common tasks.[64]
+Versions
+
+Mac OS X Version Information
+Version	Codename	Date Announced	Release Date	Most Recent Version
+Mac OS X Server 1.0	Hera		March 16, 1999	1.2v3 (October 27, 2000)
+Public Beta	Kodiak		September 13, 2000	
+10.0	Cheetah		March 24, 2001	10.0.4 (June 22, 2001)
+10.1	Puma	July 18, 2001[65]	September 25, 2001	10.1.5 (June 6, 2002)
+10.2	Jaguar	May 6, 2002[66]	August 24, 2002	10.2.8 (October 3, 2003)
+10.3	Panther	June 23, 2003[67]	October 24, 2003	10.3.9 (April 15, 2005)
+10.4	Tiger	May 4, 2004[68]	April 29, 2005	10.4.11 (November 14, 2007)
+10.5	Leopard	June 26, 2006[69]	October 26, 2007	10.5.8 (August 5, 2009)
+10.6	Snow Leopard	June 9, 2008[70]	August 28, 2009	10.6.5 (November 10, 2010)
+10.7	Lion	October 20, 2010[71]	Expected Q2 2011	
+With the exception of Mac OS X Server 1.0 and the original public beta, Mac OS X versions are named after big cats. Prior to its release, version 10.0 was code named "Cheetah" internally at Apple, and version 10.1 was code named internally as "Puma". After the immense buzz surrounding version 10.2, codenamed "Jaguar", Apple's product marketing began openly using the code names to promote the operating system. 10.3 was marketed as "Panther", 10.4 as "Tiger", and 10.5 as "Leopard". "Snow Leopard" is the name for the current release, version 10.6. "Panther", "Tiger" and "Leopard" are registered as trademarks of Apple, but "Cheetah", "Puma" and "Jaguar" have never been registered. Apple has also registered "Lynx" and "Cougar" as trademarks, though these were allowed to lapse.[72] Computer retailer Tiger Direct sued Apple for its use of the name "Tiger". On May 16, 2005 a US federal court in the Southern District of Florida ruled that Apple's use does not infringe on Tiger Direct's trademark.[73]
+Public Beta: "Kodiak"
+Main article: Mac OS X Public Beta
+Apple released to the public, on September 13, 2000, a "preview" version of Mac OS X (internally codenamed Kodiak) in order to gain feedback from users,[74] which cost $29.95.[75] The "PB" as it was known marked the first public availability of the Aqua interface and Apple made many changes to the UI based on customer feedback. Mac OS X Public Beta expired and ceased to function in Spring 2001.[76]
+Version 10.0: "Cheetah"
+Main article: Mac OS X v10.0
+On March 24, 2001, Apple released Mac OS X v10.0 (internally codenamed Cheetah).[77] The initial version was slow, incomplete, and had very few applications available at the time of its launch, mostly from independent developers. While many critics suggested that the operating system was not ready for mainstream adoption, they recognized the importance of its initial launch as a base on which to improve. Simply releasing Mac OS X was received by the Macintosh community as a great accomplishment, for attempts to completely overhaul the Mac OS had been underway since 1996, and delayed by countless setbacks. Following some bug fixes, kernel panics became much less frequent.
+Version 10.1: "Puma"
+Main article: Mac OS X v10.1
+Later that year on September 25, 2001, Mac OS X v10.1 (internally codenamed Puma) was released.[78] It had better performance and provided missing features, such as DVD playback. Apple released 10.1 as a free upgrade CD for 10.0 users, in addition to the US$129 boxed version for people running Mac OS 9. It was discovered that the upgrade CDs were full install CDs that could be used with Mac OS 9 systems by removing a specific file; Apple later re-released the CDs in an actual stripped-down format that did not facilitate installation on such systems.[79] On January 7, 2002, Apple announced that Mac OS X was to be the default operating system for all Macintosh products by the end of that month.[80]
+Version 10.2: "Jaguar"
+Main article: Mac OS X v10.2
+On August 23, 2002,[81] Apple followed up with Mac OS X v10.2 "Jaguar", the first release to use its code name as part of the branding.[82] It brought great performance enhancements, a sleeker look, and many powerful enhancements (over 150, according to Apple[83] ), including Quartz Extreme for compositing graphics directly on an ATI Radeon or Nvidia GeForce2 MX AGP-based video card with at least 16 MB of VRAM, a system-wide repository for contact information in the new Address Book, and an instant messaging client named iChat.[84] The Happy Mac which had appeared during the Mac OS startup sequence for almost 18 years was replaced with a large grey Apple logo with the introduction of Mac OS X v10.2.
+Version 10.3: "Panther"
+Main article: Mac OS X Panther
+Mac OS X v10.3 "Panther" was released on October 24, 2003. In addition to providing much improved performance, it also incorporated the most extensive update yet to the user interface. Panther included as many or more new features as Jaguar had the year before, including an updated Finder, incorporating a brushed-metal interface, Fast user switching, Exposé (Window manager), FileVault, Safari, iChat AV (which added videoconferencing features to iChat), improved Portable Document Format (PDF) rendering and much greater Microsoft Windows interoperability.[85] Support for some early G3 computers such as "beige" Power Macs and "WallStreet" PowerBooks was discontinued.
+Version 10.4: "Tiger"
+Main article: Mac OS X Tiger
+Mac OS X v10.4 "Tiger" was released on April 29, 2005. Apple stated that Tiger contained more than 150+ new features.[86] As with Panther, certain older machines were no longer supported; Tiger requires a Mac with a built-in FireWire port.[38] Among the new features, Tiger introduced Spotlight, Dashboard, Smart Folders, updated Mail program with Smart Mailboxes, QuickTime 7, Safari 2, Automator, VoiceOver, Core Image and Core Video. The initial release of the Apple TV used a modified version of Tiger with a different graphical interface and fewer applications and services. On January 10, 2006, Apple released the first Intel-based Macs along with the 10.4.4 update to Tiger. This operating system functioned identically on the PowerPC-based Macs and the new Intel-based machines, with the exception of the Intel release dropping support for the Classic environment.[87] Only PowerPC Macs can be booted from retail copies of the Tiger client DVD, but there is a Universal DVD of Tiger Server 10.4.7 (8K1079) that can boot both PowerPC and Intel Macs.
+Version 10.5: "Leopard"
+Main article: Mac OS X Leopard
+Mac OS X v10.5 "Leopard" was released on October 26, 2007. It was called by Apple "the largest update of Mac OS X". It brought more than 300 new features.[88] Leopard supports both PowerPC- and Intel x86-based Macintosh computers; support for the G3 processor was dropped and the G4 processor required a minimum clock rate of 867 MHz, and at least 512 MB of RAM to be installed. The single DVD works for all supported Macs (including 64-bit machines). New features include a new look, an updated Finder, Time Machine, Spaces, Boot Camp pre-installed,[89] full support for 64-bit applications (including graphical applications), new features in Mail and iChat, and a number of new security features. Leopard is an Open Brand UNIX 03 registered product on the Intel platform. It was also the first BSD-based OS to receive UNIX 03 certification.[3][90] Leopard dropped support for the Classic Environment and all Classic applications.[91]
+It was the final version of Mac OS X to support the PowerPC architecture.
+Version 10.6: "Snow Leopard"
+Main article: Mac OS X Snow Leopard
+Mac OS X v10.6 "Snow Leopard" was released on August 28, 2009. Rather than delivering big changes to the appearance and end user functionality like the previous releases of Mac OS X, Snow Leopard focuses on "under the hood" changes, increasing the performance, efficiency, and stability of the operating system. For most users, the most noticeable changes are: the disk space that the operating system frees up after a clean install compared to Mac OS X 10.5 Leopard, a more responsive Finder rewritten in Cocoa, faster Time Machine backups, more reliable and user friendly disk ejects, a more powerful version of the Preview application, as well as a faster Safari web browser.
+The rewrite of Finder in Apple's native Cocoa API allows the Finder to take advantage of the new technologies introduced in Snow Leopard. An update of the web browser, Safari 4, includes a boost in JavaScript and HTML performance, which results in faster web browsing. The majority of this performance boost is enabled by the new SquirrelFish JavaScript interpreter, improving the JavaScript rendering performance of Safari by over 50%.[92] The new Top Sites also displays the most frequently visited and/or bookmarked sites in a panorama view, allowing the user to easily access their favorite sites along with a new Cover Flow view for the user's browsing history. Safari 4 is now also more crash resistant, being able to isolate plug-ins which are the main cause of web browser crashes.[93]
+Mac OS X v10.6 also features Microsoft Exchange Server support for Mail, iCal, and Address Book, new 64-bit technology capable of supporting greater amounts of RAM, an all new QuickTime X with a refreshed user interface and more functionality that used to be only available to QuickTime Pro owners.
+Back-end platform changes include improved support for multi-core processors through Grand Central Dispatch which attempts to ease the development of applications with multi-core support, and thus improve their CPU utilization. It used to be that developers needed to code their programs in such a way that their software would explicitly take advantage of the multiple cores, which could easily become a tedious and troublesome task, especially in complex software. It also includes advanced GPU performance with OpenCL (a cross platform open standard for GPGPU distinct from CUDA, Dx11 Compute Shader or STREAM) by providing support to offload work normally only destined for a CPU to the graphic card's GPU. This can be especially useful in tasks that can be heavily parallelized.
+Snow Leopard only supports machines with Intel CPUs, requires at least 1 GB of RAM, and drops default support for applications built for the PowerPC architecture (Rosetta can be installed as an additional component to retain support for PowerPC-only applications).[94]
+Version 10.7: "Lion"
+Main article: Mac OS X Lion
+	Wikinews has related news: Apple unveils new MacBook Air laptops, iLife '11 software suite
+Mac OS X v10.7 "Lion" was announced October 20, 2010 at Apple's "Back to the Mac" event. Lion will take elements of Apple's iOS features on the iPad such as multi-touch gestures, full-screen applications and a Mac App Store.[95] New features also include a Launchpad (similar to the home screen of iOS devices) and Mission Control, unifying Exposé, Spaces, Dashboard, and full-screen applications within a single interface.[96]
+See also
+
+Comparison of BSD operating systems
+Comparison of operating systems
+List of Mac OS X technologies
+List of Macintosh software
+List of operating systems
+Market share of operating systems
+References
+
+^ "Apple Developer: Cocoa Overview". Apple Inc. http://developer.apple.com/Cocoa/overview.html. Retrieved April 9, 2010.
+^ "Apple Developer: Mac OS X Technology Overview". Apple Inc. http://developer.apple.com/mac/library/documentation/MacOSX/Conceptual/OSX_Technology_Overview/OSX_Technology_Overview.pdf. Retrieved April 9, 2010.
+^ a b c "Mac OS X 10.5 on Intel-based Macintosh computers". The Open Group. http://www.opengroup.org/openbrand/register/brand3555.htm. Retrieved November 22, 2009.
+^ a b "Mac OS X 10.6 on Intel-based Macintosh computers". The Open Group. http://www.opengroup.org/openbrand/register/brand3581.htm. Retrieved April 7, 2010.
+^ "Apple page on UNIX". Apple Inc. http://www.apple.com/server/macosx/technology/unix.html. Retrieved November 5, 2008.
+^ a b "What is an operating system (OS)?". Apple Inc. July 15, 2004. http://support.apple.com/kb/TA22541. Retrieved December 20, 2006. "The current version of Mac OS is Mac OS X (pronounced "Mac O-S ten")."
+^ a b "Mac OS X for UNIX Users" (PDF). Apple Inc. March 19. http://images.apple.com/macosx/pdf/L355785A_UNIX_TB.pdf. Retrieved September 14, 2009.
+^ "Apple — Mac OS X Server Snow Leopard — Technical Specifications". http://www.apple.com/server/macosx/specs.html. Retrieved 2009-11-22.
+^ Haslam, Karen (January 2007). "Macworld Expo: Optimised OS X sits on 'versatile' flash". Macworld. http://www.macworld.co.uk/ipod-itunes/news/index.cfm?newsid=16927. Retrieved January 13, 2007.
+^ Foresman, Chris (September 2010). "Apple TV definitely running iOS, could be jailbreak target". Ars Technica. http://arstechnica.com/apple/news/2010/09/apple-tv-definitely-running-ios-could-be-jailbreak-target.ars. Retrieved Nov 16, 2010.
+^ Mossberg, Walter S. (March 21, 2007). "From PC to TV — via Apple". All Things Digital. http://solution.allthingsd.com/20070321/pc-tv-via-apple/. Retrieved May 18, 2008.
+^ "Leopard OS Foundations Overview". Apple Inc. October 26, 2007. http://developer.apple.com/leopard/overview/osfoundations.html. Retrieved December 15, 2008.
+^ Singh, Amit. "Architecture of Mac OS X". What is Mac OS X?. http://www.kernelthread.com/mac/osx/arch.html. Retrieved April 7, 2006.
+^ "Apple Facts". The Apple Museum. http://www.theapplemuseum.com/index.php?id=44. Retrieved December 15, 2008. "a joint venture with IBM, called Taligent, but was discontinued soon thereafter"
+^ Markoff, John (December 23, 1996). "Why Apple Sees Next as a Match Made in Heaven". The New York Times. p. D1. http://query.nytimes.com/gst/fullpage.html?res=9F06E1D71331F930A15751C1A960958260.
+^ Anguish, Scott (July 9, 1998). "Apple Renames Rhapsody, now Mac OS X Server". http://www.stepwise.com/Articles/Business/RhapsodyRenamed.html. Retrieved December 20, 2006.[dead link]
+^ Spolsky, Joel (June 13, 2004). "How Microsoft Lost the API War". http://www.joelonsoftware.com/articles/APIWar.html. Retrieved April 15, 2009. "The developers of the Macintosh OS at Apple have always been in this camp [i.e. not trying to be backwards compatible no matter what]. It's why so few applications from the early days of the Macintosh still work..."
+^ W., Jeff (May 27, 2008). "Mac OS X (10.5) – User Interface Changes". University of Wisconsin. http://helpdesk.wisc.edu/page.php?id=6609. Retrieved April 15, 2009.
+^ Rizzo, John (November 12, 2003). "Mac OS X 10.3 Panther". http://www.builderau.com.au/news/soa/Mac-OS-X-10-3-Panther/0,339028227,320280883,00.htm. Retrieved April 15, 2009. "Once you reboot, you'll notice that Apple has abandoned the light and airy Aqua interface for the darker, heavier brushed-metal look of iTunes."
+^ Siracusa, John (March 24, 2006). "Five years of Mac OS X". Ars Technica. http://arstechnica.com/apple/reviews/2006/03/osx-fiveyears.ars. Retrieved April 15, 2009. "Even Steve Jobs still says "ecks" instead of "ten" sometimes."
+^ Raymond, Eric Steven. "The Elements of Operating-System Style". http://www.faqs.org/docs/artu/ch03s01.html#id2892085. Retrieved November 5, 2008.
+^ a b "Cocoa Fundamentals Guide: A Bit of History". ADC Reference Library. Apple Developer Connection. http://developer.apple.com/documentation/Cocoa/Conceptual/CocoaFundamentals/WhatIsCocoa/chapter_2_section_6.html#//apple_ref/doc/uid/TP40002974-CH3-SW12. Retrieved December 15, 2008.[dead link]
+^ Siracusa, John (October 28, 2007). "Mac OS X 10.5 Leopard: the Ars Technica review". Ars Technica. http://arstechnica.com/reviews/os/mac-os-x-10-5.ars/3. Retrieved December 16, 2008.
+^ Tognazzini, Bruce (February 2000). "OS X: A First Look". http://www.asktog.com/columns/034OSX-FirstLook.html. Retrieved November 5, 2008.
+^ Thomas, Matthew Paul (February 16, 2004). "My first 48 hours enduring Mac OS X". http://mpt.net.nz/archive/2004/02/16/os-x. Retrieved November 5, 2008.
+^ "Apple lowers boom on Aqua 'skins'". ZDNet (mirrored from web.archive.org). February 2, 2001. Archived from the original on 2001-10-31. http://web.archive.org/web/20011031104835/http://www.zdnet.com/zdnn/stories/newsbursts/0,7407,2681914,00.html?chkpt=p1bn. Retrieved May 22, 2006.
+^ Apple.com
+^ "Adopting Universal Binaries on Mac OS X". Apple Inc. February 22, 2007. http://developer.apple.com/macosx/adoptinguniversalbinaries.html. Retrieved December 15, 2008.
+^ Landau, Ted (February 2003). "Exterminate OS X Troubles". Macworld. http://www.accessmylibrary.com/coms2/summary_0286-23097965_ITM. Retrieved February 8, 2009.
+^ Griffiths, Rob (February 2005). "Prevent Mac Disasters". Macworld. http://www.macworld.com/article/42286/2005/01/preventmacdisasters.html. Retrieved February 8, 2009.
+^ Frakes, Dan (August 2006). "Repairing permissions: what you need to know". Macworld. http://www.macworld.com/article/52220/2006/08/repairpermissions.html. Retrieved February 8, 2009.
+^ Frakes, Dan (June 2008). "Five Mac maintenance myths". Macworld. http://www.macworld.com/article/133684/2008/06/maintenance_intro.html. Retrieved February 8, 2009.
+^ a b "Global Web Stats". Operating System Market Share. W3Counter. September 2010. http://w3counter.com/globalstats.php. Retrieved October 9, 2010.
+^ "Mac OS X Leopard". Apple Inc. http://www.apple.com/macosx/techspecs/. Retrieved November 6, 2008.
+^ "Introduction to Cocoa-Java Integration Guide". ADC Reference Library. Apple Developer Connection. http://developer.apple.com/documentation/Cocoa/Conceptual/LanguageIntegration/index.html. Retrieved April 8, 2006.
+^ "X11 for Mac OS X 1.0". Apple Inc. October 28, 2003. http://support.apple.com/downloads/X11_for_Mac_OS_X_1_0. Retrieved December 15, 2008.
+^ Ben Byer (October 27, 2007). "Re: X11 in Leopard: xterm on start-up". Apple's x11-users mailing list. http://lists.apple.com/archives/x11-users/2007/Oct/msg00065.html. Retrieved 2008-01-18.
+^ a b "Mac OS X: System Requirements". Apple Inc. April 28, 2005. http://docs.info.apple.com/article.html?artnum=106163. Retrieved December 20, 2006.
+^ Rothenbourg, Matthew; dePlume, Nick (August 30, 2002). "Apple Keeps x86 Torch Lit with 'Marklar'". eWeek.com. http://www.eweek.com/c/a/Past-News/Apple-Keeps-x86-Torch-Lit-with-Marklar. Retrieved October 3, 2005.
+^ Clark, Don; Wingfield, Nick (May 23, 2005). "Apple Explores Use Of Chips From Intel For Macintosh Line". Wall Street Journal. http://online.wsj.com/article/SB111680203134440188.html. Retrieved February 8, 2009.
+^ Kanellos, Michael (May 23, 2005). "Apple to Intel: Some advantage, lots of risk". CNet. http://www.news.com/2100-1006_3-5716696.html. Retrieved April 28, 2006.
+^ "Apple to Use Intel Microprocessors Beginning in 2006". Apple Inc. June 6, 2005. http://www.apple.com/pr/library/2005/jun/06intel.html. Retrieved April 8, 2006.
+^ "Adopting Universal Binaries". Apple Inc. January 2006. http://developer.apple.com/macosx/adoptinguniversalbinaries.html. Retrieved December 20, 2006.
+^ Landau, Ted (May 2006). "OS X First Aid". Macworld. http://www.macworld.com/article/50339/2006/04/firstaidintel.html. Retrieved February 8, 2009.
+^ Stevens, Tim (June 10, 2009). "Snow Leopard officially puts PowerPC Macs on endangered species list". Engadget. http://www.engadget.com/2009/06/10/snow-leopard-officially-puts-powerpc-macs-on-endangered-species/. Retrieved June 15, 2009.
+^ "The Aqua Interface". Apple Human Interface Guidelines. Apple Inc. June 9, 2008. http://developer.apple.com/documentation/UserExperience/Conceptual/AppleHIGuidelines/XHIGPartIII/chapter_11_section_1.html. Retrieved December 16, 2008.[dead link]
+^ a b Davidson, James Duncan (2002). Learning Cocoa With Objective-C. O'Reilly. p. 6. ISBN 0596003013.
+^ O'Malley, Kevin (2003). Programming Mac OS X: A Guide for Unix Developers. Manning. p. 7. ISBN 1930110855.
+^ "Mac 101: Exposé". Apple Inc. October 31, 2008. http://support.apple.com/kb/HT2503. Retrieved December 16, 2008.
+^ "About FileVault". Mac OS X 10.5 Help. Apple Inc. http://docs.info.apple.com/article.html?path=Mac/10.5/en/8727.html. Retrieved December 16, 2008.
+^ "Mac 101: Automator". Apple Inc. November 6, 2008. http://support.apple.com/kb/HT2488. Retrieved December 16, 2008.
+^ "Mac 101: Dashboard". Apple Inc. November 11, 2008. http://support.apple.com/kb/HT2492. Retrieved December 16, 2008.
+^ "Front Row". Apple Inc. http://www.apple.com/macosx/features/300.html#frontrow. Retrieved December 16, 2008.
+^ "Why Use Sync Services?". Apple Inc. October 31, 2007. http://developer.apple.com/documentation/Cocoa/Conceptual/SyncServices/Articles/WhySyncServices.html. Retrieved December 16, 2008.
+^ "Creating Icons". Apple Human Interface Guidelines. Apple Inc. June 9, 2008. http://developer.apple.com/documentation/UserExperience/Conceptual/AppleHIGuidelines/XHIGIcons/chapter_15_section_8.html. Retrieved December 16, 2008.[dead link]
+^ "Spaces. Room for everything.". Apple Inc. http://www.apple.com/macosx/features/spaces.html. Retrieved December 16, 2008.
+^ "Time Machine. A giant leap backward.". Apple Inc. http://www.apple.com/macosx/features/timemachine.html. Retrieved December 16, 2008.
+^ "Finder". Apple Inc. http://www.apple.com/macosx/features/300.html#finder. Retrieved December 16, 2008.
+^ Holwerda, Thom (December 6, 2007). "Review: Mac OS X 10.5 Leopard". OS News. http://www.osnews.com/story/18992/Review_Mac_OS_X_10_5_Leopard/page2/. Retrieved April 15, 2009. "The next area where Apple claims to have made major improvements is the Finder."
+^ Siracusa, John (January 26, 2006). "Finding Leopard". Ars Technica. http://arstechnica.com/staff/fatbits/2006/01/2673.ars. Retrieved April 15, 2009. "Unsurprisingly, each new Mac OS X release has been the vehicle for a parade of Finder fantasies."
+^ Siracusa, John (April 28, 2005). "Mac OS X 10.4 Tiger". Ars Technica. http://arstechnica.com/apple/reviews/2005/04/macosx-10-4.ars/9. Retrieved April 15, 2009.
+^ "Mac 101: Spotlight". Apple Inc. November 6, 2008. http://support.apple.com/kb/HT2531. Retrieved April 15, 2009.
+^ "A Layered Approach". Apple Inc. October 15, 2008. http://developer.apple.com/documentation/MacOSX/Conceptual/OSX_Technology_Overview/MacOSXOverview/chapter_2_section_2.html. Retrieved February 8, 2009.[dead link]
+^ Zepko, Tom (November 6, 2003). "Why Cocoa?". http://homepage.mac.com/tom_zepko/cocoa/why-cocoa.html. Retrieved April 15, 2009.
+^ "Apple Previews Next Version of Mac OS X". Apple Inc.. 2001-07-18. http://www.apple.com/pr/library/2001/jul/18macosx.html. Retrieved 2010-03-11.
+^ "Apple Previews “Jaguar,” the Next Major Release of Mac OS X". Apple Inc.. 2002-05-06. http://www.apple.com/pr/library/2002/may/06jaguar.html. Retrieved 2010-03-11.
+^ "Apple Previews Mac OS X “Panther”". Apple Inc.. 2003-06-23. http://www.apple.com/pr/library/2003/jun/23panther.html. Retrieved 2010-03-11.
+^ "Steve Jobs to Kick Off Apple’s Worldwide Developers Conference 2004 with Preview of Mac OS X "Tiger"". Apple Inc.. http://www.apple.com/pr/library/2004/may/04wwdc.html. Retrieved 2010-03-11.
+^ "Apple Executives to Preview Mac OS X “Leopard” at WWDC 2006 Keynote". Apple Inc.. http://www.apple.com/pr/library/2006/jun/26wwdc.html. Retrieved 2010-03-11.
+^ "Apple Previews Mac OS X Snow Leopard to Developers". Apple Inc.. 2008-06-09. http://www.apple.com/pr/library/2008/06/09snowleopard.html. Retrieved 2010-03-11.
+^ "Apple Gives Sneak Peek of Mac OS X Lion". Apple Inc.. 2010-10-20. http://www.apple.com/pr/library/2010/10/20lion.html. Retrieved 2010-10-20.
+^ Trademark #78257226 for Panther, #78269988 for Tiger, #78270003 for Leopard, #78271630 for Cougar and #78271639 for Lynx, all registered in 2004 by Apple Computer, Inc. "United States Patent and Trademark Office". http://www.uspto.gov/index.html. Retrieved December 20, 2006.
+^ Kasper, Jade. "Court sides with Apple over "Tiger" trademark dispute". AppleInsider. http://www.appleinsider.com/articles/05/05/13/court_sides_with_apple_over_tiger_trademark_dispute.html. Retrieved April 25, 2006.
+^ "Makefile". Apple Inc. June 2005. http://www.opensource.apple.com/darwinsource/DevToolsJun2005/gas-590/Makefile. Retrieved December 15, 2008. "RC Release is Kodiak (Public Beta)"[dead link]
+^ John Siracusa. "Mac OS X Beta — Page 1 - (10/2000)". Ars Technica. http://arstechnica.com/reviews/4q00/macosx-pb1/macos-x-beta-1.html. Retrieved 2010-03-11.
+^ "Mac OS X Public Beta Expires Today | News". The Mac Observer. http://www.macobserver.com/tmo/article/Mac_OS_X_Public_Beta_Expires_Today/. Retrieved 2010-03-11.
+^ Although the version is now called Cheetah by users, rare evidences can be found to prove that it was called so internally. For instance, a Q&A was created in 2005 which mentions it "Technical Q&A". Apple Inc. October 4, 2005. http://developer.apple.com/qa/qa2004/qa1378.html. Retrieved December 20, 2006.
+^ The name Puma can be found here "Cross-Development". Apple Inc. November 11, 2006. http://developer.apple.com/documentation/DeveloperTools/Conceptual/cross_development/Using/chapter_3_section_4.html. Retrieved December 20, 2006.[dead link]
+^ "Apple Cease-And-Desists Stupidity Leak". Slashdot. 2001. http://apple.slashdot.org/article.pl?sid=01/11/29/1522209. Retrieved November 5, 2008.
+^ "Apple Makes Mac OS X the Default Operating System on All Macs". Apple Inc. January 2002. http://www.apple.com/pr/library/2002/jan/07macosx.html. Retrieved December 3, 2006.
+^ "Jaguar "Unleashed" at 10:20 p.m. Tonight". Apple Inc. August 23, 2002. http://www.apple.com/pr/library/2002/aug/23jaguar.html. Retrieved December 15, 2008.
+^ The headline of the press release mention "Jaguar", while the codename was not mentioned for earlier versions. See Apple.com, "Jaguar" press release, compared to Mac OS X v10.0 press release and Mac OS X v10.1 press release
+^ "Wayback Machine's Cache of the OS X 10.2 Product Information Page". Apple Inc. August 29, 2002. http://web.archive.org/web/20020829042532/www.apple.com/macosx/. Retrieved June 12, 2008.
+^ "Apple Previews "Jaguar," the Next Major Release of Mac OS X". Apple Inc. May 6, 2002. http://www.apple.com/pr/library/2002/may/06jaguar.html. Retrieved December 20, 2006.
+^ "Apple Announces Mac OS X "Panther"". Apple Inc. October 8, 2003. http://www.apple.com/pr/library/2003/oct/08panther.html. Retrieved January 11, 2007.
+^ "Apple Unleashes "Tiger Friday at 6:00 p.m.". Apple Inc. April 28, 2005. http://www.apple.com/pr/library/2005/apr/28tiger.html. Retrieved January 11, 2007.
+^ "Apple unveils Intel iMacs". AppleInsider. January 2006. http://www.appleinsider.com/articles/06/01/10/apple_unveils_intel_imacs.html. Retrieved December 15, 2008.
+^ "Apple — Mac OS X Leopard — Features – 300+ New Features". Apple Inc. 2008. http://www.apple.com/macosx/features/300.html. Retrieved June 13, 2008.
+^ "Apple — BootCamp". Apple Inc. 2006. Archived from the original on June 2, 2006. http://web.archive.org/web/20060602044022/http://www.apple.com/macosx/bootcamp/. Retrieved June 5, 2006.
+^ "Mac OS X Leopard — Technology — UNIX". Leopard Technology Overview. Apple Inc. http://www.apple.com/server/macosx/technology/unix.html. Retrieved October 26, 2007. "Leopard is now an Open Brand UNIX 03 Registered Product, conforming to the SUSv3 and POSIX 1003.1 specifications for the C API, Shell Utilities, and Threads."
+^ "Do Classic applications work with Mac OS X 10.5 or Intel-based Macs?". Knowledge Base. Apple Inc.. January 13, 2006. http://docs.info.apple.com/article.html?artnum=303137. Retrieved 2007-10-25.
+^ "OS X Snow Leopard Hot News". Apple Inc. June 9, 2008. http://www.apple.com/macosx/snowleopard/?sr=hotnews. Retrieved June 10, 2008.
+^ "Apple — Mac OS X — What is Mac OS X — Safari". Apple Inc. October 22, 2009. http://www.apple.com/macosx/what-is-macosx/safari.html. Retrieved October 22, 2009.
+^ Lynch, Steven (June 12, 2008). "Mac OS X Snow Leopard Drops PowerPC Support". HardOCP. http://www.hardocp.com/news/2008/06/11/snow_leopard_will_support_powerpcs. Retrieved October 20, 2010.
+^ Topolsky, Joshua (October 20, 2010). "Live from Apple's 'Back to the Mac' event". Engadget. http://www.engadget.com/2010/10/20/live-from-apples-back-to-the-mac-event/. Retrieved October 20, 2010.
+^ "Apple - Mac OS X Lion (Sneak Peek)". Apple Inc. October 20, 2010. http://www.apple.com/macosx/lion/. Retrieved October 20, 2010.
+External links
+
+Official website
+Apple's listings of 3rd party software for MacOS X
+v • d • e
+Macintosh operating systems
+Classic Mac OS (history)	
+System 1, 2, 3, 4, 5 · System 6 · System 7 · Mac OS 7.6 · Mac OS 8 · Mac OS 9
+Mac OS X (history)	
+NeXTSTEP · Darwin · Public Beta · v10.0 · v10.1 · v10.2 · v10.3 · v10.4 · v10.5 · v10.6 · v10.7
+Server	
+OpenStep · Rhapsody · Mac OS X Server (Mac OS X Server 1.0)
+Other OS projects	
+A/UX · Taligent · Newton OS · Copland · MkLinux · Darwin · iOS
+v • d • e
+Mac OS X
+Versions	
+Public Beta · 10.0 "Cheetah" · 10.1 "Puma" · 10.2 "Jaguar" · 10.3 "Panther" · 10.4 "Tiger" · 10.5 "Leopard" · 10.6 "Snow Leopard" · 10.7 "Lion"
+Applications	
+Address Book · Automator · Calculator · Chess · Dashboard · Dictionary · DVD Player · FaceTime · Finder · Front Row · Grapher · iCal · iChat · iSync · iTunes (version history) · Mac App Store · Mail · Photo Booth · Preview · QuickTime · Safari (version history) · Stickies · TextEdit
+Utilities	
+Activity Monitor · AirPort Utility · Archive Utility · Audio MIDI Setup · Bluetooth File Exchange · ColorSync · Console · Crash Reporter · DigitalColor Meter · Directory Utility · DiskImageMounter · Disk Utility · Font Book · Grab · Help Viewer · Image Capture · Installer · Keychain Access · Migration Assistant · Network Utility · ODBC Administrator · Remote Install Mac OS X · Screen Sharing · Software Update · System Preferences · System Profiler · Terminal · Universal Access · VoiceOver · X11
+Technology and
+user interface	
+Command key · Option key · Apple menu · AppleScript · Aqua · Audio Units · Bonjour · Boot Camp · BootX · Brushed metal · Carbon · Cocoa · ColorSync · Core Animation · Core Audio · Core Data · Core Foundation · Core Image · Core OpenGL · Core Text · Core Video · CUPS · Cover Flow · Darwin · Dock · Exposé · FileVault · Grand Central Dispatch · icns · Inkwell · I/O Kit · Kernel panic · Keychain · Mach-O · MacRuby · Menu extra · OpenCL · Preference Pane · Property list · Quartz · QuickTime · Quick Look · Rosetta · Smart Folders · Spaces · Speakable items · Spotlight · Stacks · Time Machine · Uniform Type Identifier · Universal binary · WebKit · Xgrid · XNU
+v • d • e
+Operating systems by Apple Inc.
+Current: iOS · Mac OS X · Mac OS X Server · Darwin
+Historic: A/ROSE · A/UX · Apple DOS · Copland · GS/OS · Lisa OS · Mac OS · MkLinux · Newton OS · ProDOS · Rhapsody · SOS · Taligent
+v • d • e
+Apple Inc. software
+OS	
+Darwin · Mac OS X (Public Beta · "Cheetah" · "Puma" · "Jaguar" · "Panther" · "Tiger" · "Leopard" · "Snow Leopard" · "Lion") · iOS (version history)
+Consumer	
+Bento · MobileMe · iLife (iMovie · iDVD · iPhoto · GarageBand · iWeb) · iWork (Keynote · Pages · Numbers · iWork.com)
+Prosumer	
+Final Cut Express · Logic Express
+Professional	
+Aperture · FileMaker Pro · Final Cut Studio (Final Cut Pro · DVD Studio Pro · Motion · Soundtrack Pro · Color · Compressor) · Logic Studio  (Logic Pro · Mainstage · Soundtrack Pro)
+Bundled	
+Front Row · iChat · iTunes (version history) · Mail · Photo Booth · QuickTime · Safari (version history) · TextEdit
+Server	
+Apple Remote Desktop · Mac OS X Server · WebObjects · Xsan
+Developer	
+Dashcode · Instruments · Interface Builder · Quartz Composer · Xcode
+Discontinued	
+.Mac · AppleWorks · HyperCard · Mac OS (System 6, 7 · Mac OS 8, 9) · MacDraw · MacPaint · MacProject · MacTerminal · MacWrite · ResEdit · Shake
+v • d • e
+Unix and Unix-like operating systems
+AIX · BSD · DragonFly BSD · FreeBSD · GNU · HP-UX · IRIX · Linux · LynxOS · Mac OS X · MINIX · NetBSD · OpenBSD · Plan 9 · QNX · Research Unix · SCO OpenServer · Solaris · System V · Tru64 · UnixWare · VxWorks · Xenix · more
+v • d • e
+Apple Inc.
+Annual revenue:  $65.23 billion (2010) · Employees: 49,400 · Stock symbol: NASDAQ: AAPL, LSE: ACP, FWB: APC · Website: www.apple.com
+Board of directors	
+Bill Campbell · Millard Drexler · Al Gore · Steve Jobs · Andrea Jung · Arthur D. Levinson
+Hardware products	
+Apple TV · iPad (2) · iPhone (3GS, 4) · iPod (Classic, Nano, Shuffle, Touch) · Mac (iMac, MacBook (Air, MacBook, Pro), Mini, Pro, Xserve) · Discontinued products
+Accessories	
+AirPort · Cinema Display · iPod accessories · Mighty Mouse · Magic Mouse  · Magic Trackpad  · Keyboard  · Time Capsule
+Software products	
+Aperture · Bento · FileMaker Pro · Final Cut Studio · Garageband · iLife · iOS · iTunes · iWork · Logic Studio · Mac OS X (Server) · QuickTime · Safari · Xsan
+Stores and services	
+ADC · AppleCare · Apple Specialist · Apple Store (online) · App Store · Certifications · Game Center · iAd · Genius Bar · iBookstore · iTunes Store · iWork.com · MobileMe · One to One · ProCare
+Executives	
+Steve Jobs · Tim Cook · Peter Oppenheimer · Phil Schiller · Jonathan Ive · Ron Johnson · Sina Tamaddon · Bertrand Serlet · Scott Forstall · Bob Mansfield
+Acquisitions	
+Emagic · FingerWorks · Intrinsity · Lala · NeXT · Nothing Real · P.A. Semi · Silicon Color · Siri · Spruce Technologies
+Related	
+Ads (1984, Get a Mac, iPods, Slogans, Motifs) · Braeburn Capital · FileMaker Inc. · History (Criticism, Discontinued products, Litigation, Typography)
+ Book ·   Category ·   Portal ·   Project ·   Commons ·   Template
+v • d • e
+Operating system
+General	
+History · Timeline · List · Comparison · Usage share · Development · Advocacy
+Kernel	
+Architectures
+General
+Monolithic kernel · Microkernel
+Subtypes
+Exokernel · Nanokernel · Hybrid
+Components
+User/Kernel space · Server · Loadable kernel module · Device driver
+Process management	
+Concepts
+Process · Process control block · Interrupt · Thread · Context switch · Scheduling
+CPU modes
+Protected mode · Supervisor mode
+Scheduling algorithm
+Cooperative multitasking · Preemptive multitasking · Round-robin scheduling · Fixed priority pre-emptive scheduling · Multilevel feedback queue · Shortest job next
+Memory management	
+Memory protection · Segmentation · Paging · Segmentation fault · General protection fault · Bus error
+Examples	
+UNIX · OpenSolaris · GNU · Linux · BSD · Windows · Mac OS X · AmigaOS 4 · MorphOS · BeOS · IBM OS/2 · ReactOS · MS-DOS · more...
+Miscellaneous concepts	
+Boot loader · PXE · API · Virtual file system · Virtual tape library · Computer network · CLI · TUI · GUI · VUI · HAL
+Categories: 1999 software | Apple Inc. software | Apple Inc. operating systems | Mac OS X | Mach

@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>Wolfram Blog : The Free-Form Linguistics Revolution in Mathematica</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="http://blog.wolfram.com/wp-content/themes/WRI_2_0/style.css" type="text/css" media="all" />
+   <meta name="generator" content="WordPress 2.8.4" /> <!-- leave this for stats please -->
+   <meta name="Description" content="Dramatic change in Mathematica 8. Option to input and program in free-form English instead of
+precise Mathematica syntax. Wolfram|Alpha used to interpret input" />
+      <link rel="shortcut icon" href="http://blog.wolfram.com/favicon.ico" type="image/vnd.microsoft.icon" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.wolfram.com/feed/" />
+   <link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.wolfram.com/feed/rss/" />
+   <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://blog.wolfram.com/feed/atom/" />
+   <link rel="pingback" href="http://blog.wolfram.com/xmlrpc.php" />
+         <link rel="alternate" type="application/rss+xml" title="Wolfram Blog &raquo; The Free-Form Linguistics Revolution in &lt;em&gt;Mathematica&lt;/em&gt; Comments Feed" href="http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/feed/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.wolfram.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.wolfram.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Wolfram Blog' href='http://blog.wolfram.com' />
+<link rel='start' title='Welcome to the Wolfram Blog' href='http://blog.wolfram.com/2007/05/01/welcome-to-the-wolfram-blog/' />
+<link rel='prev' title='&lt;em&gt;Mathematica&lt;/em&gt; 8!' href='http://blog.wolfram.com/2010/11/15/mathematica-8/' />
+<link rel='next' title='Programming with Natural Language Is Actually Going to Work' href='http://blog.wolfram.com/2010/11/16/programming-with-natural-language-is-actually-going-to-work/' />
+<meta name="generator" content="WordPress 2.8.4" />
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5677369-3']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!-- WP-SWFObject 2.3 by unijimpe -->
+<script src="/wp-content/plugins/wp-swfobject/2.0/swfobject.js" type="text/javascript"></script>
+</head>
+<body>
+   <div id="banner"><img src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/bannerandlogo_print.gif" border="0"></div>
+   <a id="logo_left" href="http://blog.wolfram.com" title="Wolfram Blog--News, views, &amp; ideas from the front lines at Wolfram Research"></a>
+   <a id="logo_right" href="http://www.wolfram.com/" title="Wolfram Research"></a>
+
+   <div id="content">
+   
+               <div id="banner_more_posts">
+      <a href="http://blog.wolfram.com/2010/11/15/mathematica-8/">Previous</a> |       November 15, 2010       | <a href="http://blog.wolfram.com/2010/11/16/programming-with-natural-language-is-actually-going-to-work/">Next</a>      </div>
+      <div class="post">
+         <img class="author" src="http://blog.wolfram.com/images/people/sw.jpg" alt="Stephen Wolfram" title="Stephen Wolfram" />
+         <div class="post_content">
+            <div class="post_title">
+               <a href="http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/" title="Permanent Link to The Free-Form Linguistics Revolution in Mathematica">The Free-Form Linguistics Revolution in <em>Mathematica</em></a>
+            </div>
+            <div class="post_time">
+               November 15, 2010            </div>
+            <div class="author_info">
+               Stephen Wolfram            </div>
+            <p>With the release of <a href="http://www.wolfram.com/mathematica"><em>Mathematica</em> 8</a> today, the single most <a href="http://www.wolfram.com/mathematica/new-in-8/combine-knowledge-and-computation/">dramatic change</a> is that you don&#8217;t have to communicate with <em>Mathematica</em> in the <em>Mathematica</em> language any more: you can just use free-form English instead.</p>
+<p><a href="http://www.wolframalpha.com/">Wolfram|Alpha</a> has pioneered the concept of specifying computations with <a href="http://www.wolfram.com/mathematica/new-in-8/free-form-linguistic-input/ ">free-form linguistic input</a>. And with <em>Mathematica</em> 8, the powerful methods of Wolfram|Alpha become available within the <em>Mathematica</em> environment.</p>
+<p>All one has to do is to type an = at the beginning of a line. Then what follows is taken as free-form linguistic input.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example1.jpg" alt="Example of free-form linguistic input" title="Example of free-form linguistic input" width="500" height="247" class="alignnone size-full wp-image-4244" /></p>
+<p>You don&#8217;t have to use precise <em>Mathematica</em> syntax. You can type things in just the way you think about them, in free-form English. But what happens is that <em>Mathematica</em> calls on Wolfram|Alpha to try to interpret your input, and turn it into precise <em>Mathematica</em> code.</p>
+<p><span id="more-4240"></span>In their native forms, Wolfram|Alpha and <em>Mathematica</em> operate in very different ways. Wolfram|Alpha takes free-form linguistic input, and lets you make quick, single, queries. <em>Mathematica</em> requires you to use its precise formal language, but lets you build up programs and computations of arbitrary complexity.</p>
+<p>The exciting thing that&#8217;s now happened with <em>Mathematica</em> 8 is that these very different approaches have been brought together&#8212;to produce the best of both worlds. One has the freedom and breadth of expression of Wolfram|Alpha. Yet one can build things up with the precision and structure of <em>Mathematica</em>.</p>
+<p>For <em>Mathematica</em> beginners, free-form linguistic input has an obvious and dramatic effect. You can just start typing, however you think about things, and <em>Mathematica</em> should automatically be able to understand you.</p>
+<p>By watching what it does, you&#8217;ll probably pretty soon get the hang of <em>Mathematica</em>&#8217;s own native language. And sometimes you&#8217;ll choose to enter your input in that; sometimes you&#8217;ll want to just use free-form linguistics.</p>
+<p>I consider myself a very expert user of <em>Mathematica</em>, and I know the <em>Mathematica</em> language very well. But I&#8217;ve been surprised to see that in all sorts of cases, I&#8217;m choosing to use free-form linguistic input.</p>
+<p>Sometimes it&#8217;s because I can&#8217;t quite remember how some particular <em>Mathematica</em> function works in some area that I don&#8217;t use very often. Sometimes it&#8217;s to pick up the standard <em>Mathematica</em> name of some data object, like a city or a country or a chemical.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example-city1.jpg" alt="City example" title="City example" width="500" height="92" class="alignnone size-full wp-image-4245" /></p>
+<p>And sometimes it&#8217;s just faster to enter sloppy free-form linguistics for something I want to do, and let Wolfram|Alpha figure out a reasonable choice of details to fill in.</p>
+<p>At first, I thought one might mostly just use free-form linguistics for one-shot computations: a little like just having access to the Wolfram|Alpha website from inside <em>Mathematica</em>.</p>
+<p>But what I quickly realized (after a very long and difficult process of designing the underlying functionality, I might add) is that that&#8217;s not correct. Instead, I routinely found myself using free-form linguistics as an integral part of longer computations&#8212;randomly interspersing <em>Mathematica</em> syntax and free-form linguistics on different lines in a <em>Mathematica</em> session, and just using whichever was most convenient for a particular input.</p>
+<p>And here&#8217;s an exciting part: in <em>Mathematica</em> 8 the free-form linguistics doesn&#8217;t just operate line-by-line. It knows the context in which it&#8217;s used in a notebook, so you can use it to build things up.</p>
+<p>You can start with a plot:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Examples-seq1.jpg" alt="Polar plot example" title="Polar plot example" width="500" height="275" class="alignnone size-full wp-image-4246" /></p>
+<p>Then you can add something to it.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Examples-seq2.jpg" alt="Polar plot example 2" title="Polar plot example 2" width="500" height="295" class="alignnone size-full wp-image-4247" /></p>
+<p>Or do image processing on the result.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Examples-seq3.jpg" alt="Example of image processing" title="Example of image processing" width="500" height="266" class="alignnone size-full wp-image-4248" /></p>
+<p>In each case, the Wolfram|Alpha engine will synthesize <em>Mathematica</em> code to do what you asked, then apply this code to the result you had before.</p>
+<p>Well, this is the beginning of something very remarkable: the ability to do programming with free-form linguistic input.</p>
+<p>We&#8217;re just at the beginning of this process. But already the Wolfram|Alpha engine can handle a wide variety of <em>Mathematica</em> concepts. Like list manipulation, image processing, string manipulation, import-export, and even user interface construction.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example-slider.jpg" alt="Make a slider" title="Make a slider" width="500" height="125" class="alignnone size-full wp-image-4249" /></p>
+<p>And the engine can also deal with variables that exist in your <em>Mathematica</em> session, so you can refer to them by name inside free-form linguistic inputs.</p>
+<p>I think this is all a pretty big deal. You see, in the past, if you wanted to do any serious programming, you really had no choice but to learn a precise formal programming language. But now you can just tell the computer what you want to do using plain English.</p>
+<p>And the big effect of this is going to be that the barrier between programmers and non-programmers will come down. Everyone is going to be able to be a programmer.</p>
+<p>Right now we&#8217;re just at the beginning of having the Wolfram|Alpha engine understand all the different things one might want to do with programs. But from what we can already see, it&#8217;s quite clear that the concept is going to be very general. Building on the big tower of technology that is Wolfram|Alpha, we&#8217;re going to progressively be able to make more and more of programming accessible through plain natural language.</p>
+<p>There are so many exciting things about this. To mention one: in the past one had to distinguish plain English &#8220;comments&#8221; from actual, active, code. But now, with free-form linguistics, one can have a plain English description that just automatically turns into active code.</p>
+<p>Of course, if you&#8217;ve given some vague free-form linguistic input, the Wolfram|Alpha engine may not be able to figure out precisely what you want to do. But the great thing is that you&#8217;ll always be able to see&#8212;and check&#8212;what the engine thought you wanted to do. Because you&#8217;ll see the precise <em>Mathematica</em> code it&#8217;s generated. And because <em>Mathematica</em> is such a succinct and readable language, it&#8217;ll usually be quite easy to tell what precisely that code will do.</p>
+<p>So how does free-form linguistic input really work in a <em>Mathematica</em> session?</p>
+<p>Anything you type after <tt>=</tt> is sent over the internet to a Wolfram|Alpha server, which tries to generate a <em>Mathematica</em> interpretation of it. Assuming it succeeds, that interpretation is sent back to <em>Mathematica</em>, and evaluated locally in your <em>Mathematica</em> session.</p>
+<p>When your input is sent to the server (unless you&#8217;ve set preferences to prevent this) some information on the local context in your <em>Mathematica</em> notebook is sent along as well&#8212;to let the Wolfram|Alpha engine know what you might mean by &#8220;the image&#8221; or the name of a variable that you&#8217;re using.</p>
+<p>Needless to say, to use the Wolfram|Alpha engine you have to have a connection to the network. For large secure facilities and the like, we&#8217;ve actually developed a <a href="http://www.wolframalpha.com/enterprise/">Wolfram|Alpha appliance</a> that operates as an onsite &#8220;private compute cloud&#8221;. But mostly we just assume that in the modern world most people are going to have access to the internet from their computers most of the time.</p>
+<p>Well, here&#8217;s another issue: what if the input you give just doesn&#8217;t have any reasonable interpretation in <em>Mathematica</em>, or can&#8217;t give any reasonable output in <em>Mathematica</em>? Here&#8217;s what happens then:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example-Blob.jpg" alt="Alpha blob" title="Alpha blob" width="500" height="250" class="alignnone size-full wp-image-4251" /></p>
+<p>The output you get is what we affectionately call an &#8220;Alpha blob&#8221;&#8212;an inert object that represents the result of your computation as generated by Wolfram|Alpha. Inside the <em>Mathematica</em> notebook, you can copy and paste from inside this &#8220;blob&#8221;, or you can use standard <em>Mathematica</em> functions to extract pieces of it. You can also often feed it back as part of a piece of free-form linguistic input.</p>
+<p>Most of the time, you&#8217;ll be able to use <tt>=</tt> without thinking much about Wolfram|Alpha. But sometimes it&#8217;ll be useful to see the Wolfram|Alpha perspective.</p>
+<p>One important difference between <em>Mathematica</em> and Wolfram|Alpha is that while <em>Mathematica</em> always gives a single output result from a particular input, Wolfram|Alpha typically gives many different output pods.</p>
+<p>Within <em>Mathematica</em>, you can see the complete collection&#8212;pretty much as they would appear on the website&#8212;by clicking the orange +.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example-Opened.jpg" alt="Opened output pods" title="Opened output pods" width="500" height="390" class="alignnone size-full wp-image-4252" /></p>
+<p>By default, <em>Mathematica</em> will automatically pick a pod to return&#8212;typically either the &#8220;Input interpretation&#8221; pod, or the &#8220;Result&#8221;, if there is one. And the pod that <em>Mathematica</em> chooses is indicated by an orange arrow.</p>
+<p>But you choose another pod by clicking it. Then you can actually use that pod by re-evaluating the input using Shift-Enter.</p>
+<p>Another reason to expose the whole Wolfram|Alpha-style output is to handle disambiguation of inputs. Let&#8217;s say you enter &#8220;springfield&#8221; as your input. On the Wolfram|Alpha website, you&#8217;ll see something that tells you which Springfield Wolfram|Alpha is assuming you mean, then gives you a way to choose a different Springfield.</p>
+<p>If you need to choose a different Springfield inside <em>Mathematica</em>, you can do this by exposing the pods using the +, then clicking the appropriate assumption.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example-springfield.jpg" alt="Select a different Springfield" title="Select a different Springfield" width="500" height="272" class="alignnone size-full wp-image-4253" /></p>
+<p>In addition to <tt>=</tt>, <em>Mathematica</em> 8 lets you type <tt>==</tt> at the beginning of a line. When you do this, you&#8217;ll see the icon change from an orange square, to an orange &#8220;Spikey&#8221;. And what happens in this case is that instead of getting a single <em>Mathematica</em>-style result, you&#8217;ll immediately get a whole Wolfram|Alpha result, with its complete sequence of pods.</p>
+<p>In this form, there are little gray + icons in each pod. Clicking these gives a menu specifying each of the possible forms in which the contents of the pod can be interpreted.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example-idaho.jpg" alt="Population of Idaho" title="Population of Idaho" width="500" height="282" class="alignnone size-full wp-image-4254" /></p>
+<p>Underlying the whole <tt>=</tt> and <tt>==</tt> mechanism is the <a href="http://reference.wolfram.com/mathematica/ref/WolframAlpha.html "><tt>WolframAlpha</tt> function</a> in <em>Mathematica</em>, which is a programmatic way to interface to Wolfram|Alpha, based on the <a href="http://products.wolframalpha.com/api/webserviceapi.html">Wolfram|Alpha API</a>. You can use the Wolfram|Alpha function not only to handle linguistics, but also to do things like get data from Wolfram|Alpha.</p>
+<p>It&#8217;s worth realizing that when you use <tt>==</tt> inside <em>Mathematica</em>, you&#8217;re getting much richer results than you do on a website. Because everything is represented symbolically inside a <em>Mathematica</em> notebook, you can readily manipulate graphics&#8212;for example rotating 3D objects&#8212;and copy and paste any piece of output.</p>
+<p>When used inside <em>Mathematica</em>, Wolfram|Alpha also sometimes generates <tt>Manipulate[ ]</tt> constructs, allowing immediate dynamic interactivity&#8212;that is efficiently executed on your computer rather than the Wolfram|Alpha servers.</p>
+<p>When you open a notebook in <em>Mathematica</em> 8, there&#8217;s an immediate visual clue that something new is possible:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example-tongue.jpg" alt="Tongue example" title="Tongue example" width="500" height="42" class="alignnone size-full wp-image-4256" /></p>
+<p>Clicking this gives a menu:</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example-tongueopen1.jpg" alt="Open tongue example" title="Open tongue example" width="500" height="247" class="alignnone size-full wp-image-4257" /></p>
+<p>And from the menu you can select ordinary <em>Mathematica</em> language input, or free-form linguistics&#8212;or plain text.</p>
+<p>There&#8217;s one more case that&#8217;s really convenient in writing programs in <em>Mathematica</em>&#8212;control-=.</p>
+<p>The idea of control-= is to provide an inline linguistic assistant. It only handles linguistics that&#8217;s directly translatable to <em>Mathematica</em> syntax (since it has no place to put anything else). But assuming that there is a <em>Mathematica</em> translation, within a control-= region you just have to type Return to get it.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/11/Example-control.jpg" alt="Control-= example" title="Control-= example" width="500" height="82" class="alignnone size-full wp-image-4258" /></p>
+<p>Typically control-= will produce a &#8220;double-decker&#8221; form, containing both the free-form linguistic input, and the <em>Mathematica</em> language form. You can leave this double-decker form&#8212;as a kind of &#8220;self documenting object&#8221;&#8212;and <em>Mathematica</em> will interpret it by looking only at the <em>Mathematica</em> language form. Or you can click the upper or lower &#8220;decks&#8221; to show only one &#8220;deck&#8221;.</p>
+<p>After working on <em>Mathematica </em>for a couple of decades, it was a strange experience to be working on Wolfram|Alpha. For its design criteria were almost the exact opposite of <em>Mathematica</em>. In <em>Mathematica</em>, there is a precise language, which I have gone to great effort to keep as clean and simple as possible. But in Wolfram|Alpha the whole point is to deal with all the arbitrary messiness of actual human expression, effectively throwing in as much complexity as possible.</p>
+<p>At first in working on Wolfram|Alpha I consciously tried to avoid thinking about how it might fit with <em>Mathematica</em>&#8212;to give it in a sense room to grow on its own. But once the character of Wolfram|Alpha was established, I began to think very hard about how it could be connected&#8212;and unified&#8212;with <em>Mathematica</em>.</p>
+<p>There were many issues. What to do about the fact that Wolfram|Alpha gives many results, but <em>Mathematica </em>sessions have one result for each input. How to deal with ambiguities in Wolfram|Alpha inputs. What to do when Wolfram|Alpha does computations that are not built in to <em>Mathematica</em>. And so on.</p>
+<p>But gradually as we worked through these issues, we began to see that a wonderful unification could be achieved&#8212;in which in a sense the power of both <em>Mathematica </em>and Wolfram|Alpha would be greatly amplified.</p>
+<p>I have to say that I was somewhat skeptical about our ability to make Wolfram|Alpha understand not just what amount to queries for knowledge, but also programs and commands. And certainly we are just at the beginning of being able to do this&#8212;and over the weeks and months and years to come we will continuously try to update and improve it.</p>
+<p>But I have been most encouraged by how far we have already been able to get. And indeed I have noticed that I myself have now routinely started to rely on free-form linguistics whenever I use <em>Mathematica</em>.</p>
+<p>The arrival of free-form linguistics will surely forever change how <em>Mathematica </em>is used, and learned. After nearly a quarter of a century, we have today a fundamentally new way to communicate with <em>Mathematica</em>. We cannot yet foresee all the consequences, but it is already clear that this is something tremendously important.</p>
+            <div class="post_footer">
+               <div class="post_footer_left">
+                  <a href="http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/" title="Permanent Link to The Free-Form Linguistics Revolution in Mathematica">Permalink</a> 
+               </div>
+               <div class="post_footer_right">
+                  <a href="http://www.addthis.com/bookmark.php?pub=L4DJFTEHPAW2JE1G&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F15%2Fthe-free-form-linguistics-revolution-in-mathematica%2F&amp;title=The+Free-Form+Linguistics+Revolution+in+Mathematica" title="Bookmark using any bookmark manager">add this</a> 
+                  | <a href="http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F15%2Fthe-free-form-linguistics-revolution-in-mathematica%2F&amp;title=The+Free-Form+Linguistics+Revolution+in+Mathematica" title="Submit to del.icio.us">del.icio.us</a>
+                  | <a href="http://digg.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F15%2Fthe-free-form-linguistics-revolution-in-mathematica%2F&amp;title=The+Free-Form+Linguistics+Revolution+in+Mathematica" title="Submit to Digg">digg</a> 
+                  | <a href="http://reddit.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F15%2Fthe-free-form-linguistics-revolution-in-mathematica%2F&amp;title=The+Free-Form+Linguistics+Revolution+in+Mathematica" title="Submit to Reddit">reddit</a> 
+                  | <a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F11%2F15%2Fthe-free-form-linguistics-revolution-in-mathematica%2F&amp;title=The+Free-Form+Linguistics+Revolution+in+Mathematica" title="Submit to Slashdot">slashdot</a>
+               </div>
+               <div class="single_post_separator"></div>
+            </div>            
+
+
+<div id="comments">
+
+<h2>Comments</h2>
+<ol class="commentlist">
+        <li class="alt" id="comment-3922"  >
+	<p>absolutely amazing, I can&#8217;t wait to try it.<br />
+especially how it affects doing simulations and demonstrations,</p>
+<p>Thanks.</p>
+	<cite><span class="comment_auth">Posted by <a href='http://fermion.website.org' rel='external nofollow' class='url'>mark</a></span><span class="comment_time"><a href="#comment-3922" title="">November 15, 2010 at 5:56 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-3924"  >
+	<p>What a marvellous! Cheers.</p>
+	<cite><span class="comment_auth">Posted by yuki fujimura</span><span class="comment_time"><a href="#comment-3924" title="">November 15, 2010 at 6:56 pm</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-3927"  >
+	<p>that&#8217;s truly fantastic!</p>
+	<cite><span class="comment_auth">Posted by <a href='http://xahlee.org/' rel='external nofollow' class='url'>Xah Lee</a></span><span class="comment_time"><a href="#comment-3927" title="">November 15, 2010 at 7:44 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-3928"  >
+	<p>Fantastic!  Keep up the good work.</p>
+<p>One question:  Is speed compromised at all in later versions of Mathematica?  With all of this functionality are we losing anything?</p>
+	<cite><span class="comment_auth">Posted by Nicholas Mecholsky</span><span class="comment_time"><a href="#comment-3928" title="">November 15, 2010 at 7:46 pm</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-3932"  >
+	<p>Good step forward &#8211; however! No upgrade and rollout of TableView &#8211; which is an undocumented spreadsheet-lite? And no new graphics primitives, especially for solids modeling?</p>
+<p>And does CUDA run on ATI cards which are now standard on new Macs?</p>
+	<cite><span class="comment_auth">Posted by Robert Prince-Wright</span><span class="comment_time"><a href="#comment-3932" title="">November 16, 2010 at 12:11 am</a></span></cite>
+	</li>
+
+
+        <li id="comment-3934"  >
+	<p>Nous étions plusieurs, parmi les utilisateurs réguliers, à craindre que le développement de Mathematica ne souffre de l&#8217;investissement de Wolfram Research dans Wolfram Alpha. Nous voilà pleinement rassurés autant qu&#8217;émerveillés. Quel bond en avant ! À l&#8217;heure où les politiques, les responsables de l&#8217;éducation et les enseignants s&#8217;inquiètent de l&#8217;image et de l&#8217;avenir de l&#8217;enseignement scientifique, Wolfram Research montre la voie. Encore faudrait-il que les décideurs connaissent les fantastiques possibilités de Mathematica et prennent conscience du rôle qu&#8217;il peut jouer dans la promotion des sciences.<br />
+Congratulations Wolfram Research</p>
+	<cite><span class="comment_auth">Posted by <a href='http://www.math-lms.ch/moodle/' rel='external nofollow' class='url'>Bernard Vuilleumier</a></span><span class="comment_time"><a href="#comment-3934" title="">November 16, 2010 at 2:41 am</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-3936"  >
+	<p>Wow!! Thats What I call a revolution in mathematical Software.Please keep up your good work.</p>
+	<cite><span class="comment_auth">Posted by Partha Sinha</span><span class="comment_time"><a href="#comment-3936" title="">November 16, 2010 at 7:17 am</a></span></cite>
+	</li>
+
+
+        <li id="comment-3937"  >
+	<p>The free-English interface is powerful for another reason as well: it provides people with little experience with Mathematica an interactive way to learn the language. In my opinion this is huge, as you don&#8217;t have to dig help menus and tutorials, thus cutting the workflow because of an unknown command.</p>
+	<cite><span class="comment_auth">Posted by Georgi</span><span class="comment_time"><a href="#comment-3937" title="">November 16, 2010 at 8:25 am</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-3941"  >
+	<p>Very cool. By the way, a detail: I think that Mathematica should use a prettier default stylesheet.</p>
+	<cite><span class="comment_auth">Posted by <a href='http://motls.blogspot.com/' rel='external nofollow' class='url'>Luboš Motl</a></span><span class="comment_time"><a href="#comment-3941" title="">November 16, 2010 at 12:13 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-3947"  >
+	<p>@Nicholas Mecholsky:<br />
+Not to worry. Many functions in Mathematica 8, in particular numerical functions and image processing functions, got multi-threading treatment, which means it is actually faster than ever (of course when you have multi-core system, which is highly likely).</p>
+	<cite><span class="comment_auth">Posted by <a href='http://wolfram.com' rel='external nofollow' class='url'>Yu-Sung Chang</a></span><span class="comment_time"><a href="#comment-3947" title="">November 16, 2010 at 6:17 pm</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-3948"  >
+	<p>@Robert Prince-Wright:<br />
+TableView is not fully integrated with Mathematica 8. Probably available in very next version. No solid modeling related primitives, but new primitives include curve constructors (JoinedCurve and FilledCurve) and their variations. And there is of course Texture.</p>
+<p>CUDA is NVIDIA&#8217;s proprietary technology, thus not available on ATI hardware. But, Mathematica 8 does support OpenCL, which is standard GPU computing architecture for both, and Mathematica 8 provides easy transition between two standards.</p>
+	<cite><span class="comment_auth">Posted by <a href='http://wolfram.com' rel='external nofollow' class='url'>Yu-Sung Chang</a></span><span class="comment_time"><a href="#comment-3948" title="">November 16, 2010 at 6:23 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-3949"  >
+	<p>One of these days, Mathematica will pass the Turing test.</p>
+	<cite><span class="comment_auth">Posted by Frank Kampas</span><span class="comment_time"><a href="#comment-3949" title="">November 16, 2010 at 8:21 pm</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-3950"  >
+	<p>Hi,</p>
+<p>I know this is a little bit off topic, but Mmta 8 is said to have code conversion capability. How tight would it be? I mean in terms of memory usage? Would it generate code that could be further shortened?<br />
+Mmta 8 seems to be the most awesome software ever. Thank you Stephen!</p>
+	<cite><span class="comment_auth">Posted by Kevin</span><span class="comment_time"><a href="#comment-3950" title="">November 16, 2010 at 9:38 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-3954"  >
+	<p>It sounds very impressive, though I wonder how it will end up in my workflow. I&#8217;m a bit worried about the internet connectivity requirement. At my office I&#8217;m not able to get through our firewall completely (strangely, only about half of the computable data gets through), and on the road, or on visits not being able to evaluate your notebook when required sounds like a problem. Is there a way to pre-cache the necessary data, as there was for the computable data paclets?</p>
+	<cite><span class="comment_auth">Posted by Sjoerd de Vries</span><span class="comment_time"><a href="#comment-3954" title="">November 17, 2010 at 9:42 am</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-3970"  >
+	<p>Stephen, this is very impressive stuff.<br />
+However I am disappointed to see, on looking through the list of changes, that once again attention to parallelization is not on the list.</p>
+<p>As I have stated before, the 90s are gone and aren&#8217;t ever coming back &#8212; the future of computing is parallel. In spite of that fact, however, Mathematica continues to ignore this year after year.<br />
+Sure, we have (machine precision) FFTs and linear algebra that use our 4 or 6 or 12 core machines (eg the latest Mac Pro), but strange as it may seem, some of us use Mathematica for purposes other than (machine precision) FFTs and linear algebra. </p>
+<p>At the very least, can we have the low-lying parallel fruit integrated into Mathematica ASAP? This would be things like<br />
+- Ideally Map, Sum, Table, etc would automatically preprocess their code, determine it&#8217;s parallelizable, and auto-parallelize it. In the absence of that, at least have a single local (same-machine) kernel that handles ParallelMap, ParallelSum etc so that we don&#8217;t have to export definitions before we use them.</p>
+<p>- Plenty of Mathematica functions (eg numerical integration or plotting functions or much discrete optimization) perform many many repeated evaluations of the same function at different points, a trivially parallelizable problem. Sure, there are a .1% of weird functions that somehow rely on the order in which they are called when being plotted &#8212; let the people who want such things tag their functions as Volatile or whatever and let the rest of us with normal functions get a speedup.</p>
+<p>- Entropy Engine. If you&#8217;re a heavy user of random numbers (eg simulations or monte carlo integration) you can spend most of your time generating the random bits. Surely it is possible to<br />
+(a) Have a random number generator that utilizes the full width of SSE registers (and on SandyBridge CPUs, the AVX registers) to generate more bits at once and<br />
+(b) generate bits across multiple CPUs (and even a networked cluster) at once?<br />
+What I have in mind is a block of code that generates a &#8220;block&#8221; of random bits fast, say of order 1KB or 4KB, and that can be spawned to run anywhere. These can be launched as needed, and their results will be stored in a warehouse, so that there is, generally, about 32KB of randomness available for easy access, and when it runs low, new randomness can rapidly be generated by having ALL the various entropy engines running, both locally and across the network.</p>
+<p>Continuing to work on input methods (and likewise on output, as we saw in 6 and 7) is very cool, but is completely orthogonal to the issue of taking advantage of parallelism. There seems no reason why both cannot happen simultaneously as Mathematica moves forward.</p>
+	<cite><span class="comment_auth">Posted by Maynard Handley</span><span class="comment_time"><a href="#comment-3970" title="">November 19, 2010 at 12:25 am</a></span></cite>
+	</li>
+
+
+        <li id="comment-3971"  >
+	<p>@Yu-Sung Chang<br />
+&#8220;Not to worry. Many functions in Mathematica 8, in particular numerical functions and image processing functions, got multi-threading treatment, which means it is actually faster than ever (of course when you have multi-core system, which is highly likely).&#8221;</p>
+<p>Where is this documented or discussed? I try to follow this carefully (see my above comment) and I&#8217;ve never seen anything on this issue.</p>
+	<cite><span class="comment_auth">Posted by Maynard Handley</span><span class="comment_time"><a href="#comment-3971" title="">November 19, 2010 at 12:27 am</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-3979"  >
+	<p>@Yu-Sung Chang</p>
+<p>In finance excel is ubiquitous therefore better excel integration would have been nice and given that TableView has been discussed on Mathgroup in the past it seems very strange that this function has been been made a documented function in V8. It is hard to understand the motivations sometimes. There are esoteric financial plots that a tiny number of users might like, but even then have severe limitations, but no widespread integration of things that are everywhere in finance.</p>
+	<cite><span class="comment_auth">Posted by Dudley Burns</span><span class="comment_time"><a href="#comment-3979" title="">November 19, 2010 at 6:18 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-4577" style="border: none" >
+	<p>Dr. Wolfram,</p>
+<p>Sounds very impressive &#8211; another &#8217;step&#8217; in the right direction.</p>
+<p>I do have an idea which I will send to your r&amp;d group which I believe would not only enhance mathematic considerably, but would also be an invaluable tool for investigators and researchers.</p>
+<p>Cool stuff.</p>
+<p>Kealey</p>
+	<cite><span class="comment_auth">Posted by Larry Kealey</span><span class="comment_time"><a href="#comment-4577" title="">December 19, 2010 at 7:00 am</a></span></cite>
+	</li>
+
+
+</ol>
+
+
+<h2 id="respond">Leave a Reply</h2>
+
+	
+<form action="http://blog.wolfram.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author">Name (required)</label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email">Mail (required, but will not be published)</label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url">Website</label></p>
+
+
+<p><textarea name="comment" id="comment" cols="50" rows="5" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit"  />
+<input type="hidden" name="comment_post_ID" value="4240" />
+</p>
+
+</form>
+
+
+</div>
+
+         </div>
+      </div>
+
+      <div id="single_footer_more_posts">
+      <a href="http://blog.wolfram.com/2010/11/15/mathematica-8/">Previous</a> |       November 15, 2010       | <a href="http://blog.wolfram.com/2010/11/16/programming-with-natural-language-is-actually-going-to-work/">Next</a>      </div>      
+      
+                
+      <div id="copyright">&copy; 2010 Wolfram Research, Inc.</div>
+   </div>
+   
+   <ul id="sidebar">
+   <li>
+      <div id="home_link">
+         <a href="http://blog.wolfram.com" title="Home">Home</a> 
+      </div>
+   </li>
+      <li id="search" class="widget wri_widget_search"><h2 class="widgettitle">Search This Blog</h2>
+<form method="get" action="http://blog.wolfram.com/" id="search_form">
+<input type="text" value="" name="s" id="search_text" />
+<input id="search_submit" type="image" src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/form_button.gif" name="submit" />
+</form>
+</li>
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+				<li><a href="http://blog.wolfram.com/2010/12/27/fixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution/" title="Fixing Bad Astrophotography Using &lt;em&gt;Mathematica&lt;/em&gt; 8 and Advanced Image Deconvolution">Fixing Bad Astrophotography Using <em>Mathematica</em> 8 and Advanced Image Deconvolution </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/21/the-battle-of-the-marlborough-maze-at-blenheim-palace-continues/" title="The Battle of the Marlborough Maze at Blenheim Palace Continues">The Battle of the Marlborough Maze at Blenheim Palace Continues </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/17/the-mathematica-one-liner-competition/" title="The &lt;em&gt;Mathematica&lt;/em&gt; One-Liner Competition">The <em>Mathematica</em> One-Liner Competition </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/14/the-legacy-of-tron/" title="The Legacy of &lt;em&gt;TRON&lt;/em&gt;">The Legacy of <em>TRON</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/" title="Automatic Physical Units in &lt;em&gt;Mathematica&lt;/em&gt;">Automatic Physical Units in <em>Mathematica</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/" title="Navigating the Blenheim Maze">Navigating the Blenheim Maze </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/" title="How to Win at Coin Flipping">How to Win at Coin Flipping </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/23/conrad-wolframs-ted-talk-stop-teaching-calculating-start-teaching-math/" title="Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221;">Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221; </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/16/programming-with-natural-language-is-actually-going-to-work/" title="Programming with Natural Language Is Actually Going to Work">Programming with Natural Language Is Actually Going to Work </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/" title="The Free-Form Linguistics Revolution in &lt;em&gt;Mathematica&lt;/em&gt;">The Free-Form Linguistics Revolution in <em>Mathematica</em> </a></li>
+				</ul>
+		</li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<ul>
+			<li><a href='http://blog.wolfram.com/2010/12/' title='December 2010'>December 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/11/' title='November 2010'>November 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/08/' title='August 2010'>August 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/07/' title='July 2010'>July 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/06/' title='June 2010'>June 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/02/' title='February 2010'>February 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/11/' title='November 2009'>November 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/10/' title='October 2009'>October 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/09/' title='September 2009'>September 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/08/' title='August 2009'>August 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/07/' title='July 2009'>July 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/06/' title='June 2009'>June 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/05/' title='May 2009'>May 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/04/' title='April 2009'>April 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/03/' title='March 2009'>March 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/02/' title='February 2009'>February 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/01/' title='January 2009'>January 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2008/12/' title='December 2008'>December 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/11/' title='November 2008'>November 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/10/' title='October 2008'>October 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/09/' title='September 2008'>September 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/08/' title='August 2008'>August 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/07/' title='July 2008'>July 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/06/' title='June 2008'>June 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/05/' title='May 2008'>May 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/04/' title='April 2008'>April 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/03/' title='March 2008'>March 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/02/' title='February 2008'>February 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/01/' title='January 2008'>January 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2007/12/' title='December 2007'>December 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/11/' title='November 2007'>November 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/10/' title='October 2007'>October 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/09/' title='September 2007'>September 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/08/' title='August 2007'>August 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/07/' title='July 2007'>July 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/06/' title='June 2007'>June 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/05/' title='May 2007'>May 2007</a></li>
+		</ul>
+</li>
+<li id="text-1" class="widget widget_text"><h2 class="widgettitle">Related Links</h2>
+			<div class="textwidget"><ul>
+<li><a href="http://www.wolfram.com">Wolfram Research</a></li>
+<li><a href="http://www.wolfram.com/products/mathematica"><i>Mathematica</i></a></li>
+<li><a href="http://demonstrations.wolfram.com">Demonstrations Project</a></li>
+<li><a href="http://mathworld.wolfram.com"><i>MathWorld</i></a></li>
+<li><a href="http://tones.wolfram.com">Wolfram<i>Tones</i></a></li>
+<li><a href="http://www.wolframscience.com">Wolfram Science</a></li>
+<li><a href="http://www.stephenwolfram.com">Stephen Wolfram</a></li>
+<li><a href="http://forums.wolfram.com/mathgroup/"><i>MathGroup</i></a></li>
+<li><a href="http://www.wolfram.com/webresources.html">More Wolfram sites...</a><br /><br /></li>
+<li><a href="/feed">Subscribe to this blog's feed</a></li>
+</ul></div>
+		</li>
+   </ul>
+
+</body>
+</html>

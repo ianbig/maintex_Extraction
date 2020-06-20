@@ -1,0 +1,1267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>Common Lisp - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Common_Lisp&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Common_Lisp&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Common_Lisp",
+wgTitle="Common Lisp",
+wgAction="view",
+wgArticleId=6068,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=402600249,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["Common Lisp", "Multi-paradigm programming languages", "Functional languages", "Dynamically typed programming languages", "Dynamic programming languages", "Object-oriented programming languages", "Class-based programming languages", "Procedural programming languages", "Extensible syntax programming languages", "Lisp programming language family", "Lisp programming language", "Articles with example Lisp code", "Cross-platform software", "Free cross-platform software"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+<style type="text/css">/*<![CDATA[*/
+.source-lisp {line-height: normal;}
+.source-lisp li, .source-lisp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for lisp
+ * CSS class: source-lisp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.lisp.source-lisp .de1, .lisp.source-lisp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.lisp.source-lisp  {font-family:monospace;}
+.lisp.source-lisp .imp {font-weight: bold; color: red;}
+.lisp.source-lisp li, .lisp.source-lisp .li1 {font-weight: normal; vertical-align:top;}
+.lisp.source-lisp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.lisp.source-lisp .li2 {font-weight: bold; vertical-align:top;}
+.lisp.source-lisp .kw1 {color: #b1b100;}
+.lisp.source-lisp .co1 {color: #808080; font-style: italic;}
+.lisp.source-lisp .coMULTI {color: #808080; font-style: italic;}
+.lisp.source-lisp .es0 {color: #000099; font-weight: bold;}
+.lisp.source-lisp .br0 {color: #66cc66;}
+.lisp.source-lisp .sy0 {color: #66cc66;}
+.lisp.source-lisp .st0 {color: #ff0000;}
+.lisp.source-lisp .nu0 {color: #cc66cc;}
+.lisp.source-lisp .me0 {color: #555;}
+.lisp.source-lisp .me1 {color: #555;}
+.lisp.source-lisp .ln-xtra, .lisp.source-lisp li.ln-xtra, .lisp.source-lisp div.ln-xtra {background-color: #ffc;}
+.lisp.source-lisp span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for text
+ * CSS class: source-text, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.text.source-text  {font-family:monospace;}
+.text.source-text .imp {font-weight: bold; color: red;}
+.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
+.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text.source-text .li2 {font-weight: bold; vertical-align:top;}
+.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
+.text.source-text span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+/*]]>*/
+</style></head>
+<body class="mediawiki ltr ns-0 ns-subject page-Common_Lisp skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Common Lisp</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<table class="infobox vevent" cellspacing="5" style="width:22em; text-align:left; font-size:88%; line-height:1.5em;">
+<caption class="summary" style="font-size:125%; font-weight:bold;">Common Lisp</caption>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td class="" style=""><a href="/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">Multi-paradigm</a>: <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="/wiki/Metaprogramming" title="Metaprogramming">meta</a>, <a href="/wiki/Reflective_programming" title="Reflective programming" class="mw-redirect">reflective</a>, <a href="/wiki/Generic_programming" title="Generic programming">generic</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">1984, 1994 for ANSI Common Lisp</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="" style="">ANSI <a href="/wiki/X3J13" title="X3J13">X3J13</a> committee</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style=""><a href="/wiki/Type_system#Dynamic_typing" title="Type system">dynamic</a>, <a href="/wiki/Strongly-typed_programming_language" title="Strongly-typed programming language" class="mw-redirect">strong</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Programming_language_implementation" title="Programming language implementation">Major implementations</a></th>
+<td class="" style=""><a href="/wiki/Allegro_Common_Lisp" title="Allegro Common Lisp">Allegro CL</a>, <a href="/wiki/Armed_Bear_Common_Lisp" title="Armed Bear Common Lisp" class="mw-redirect">ABCL</a>, <a href="/wiki/CLISP" title="CLISP">CLISP</a>, <a href="/wiki/Clozure_CL" title="Clozure CL">Clozure CL</a>, <a href="/wiki/CMUCL" title="CMUCL" class="mw-redirect">CMUCL</a>, <a href="/wiki/Corman_Common_Lisp" title="Corman Common Lisp">Corman Common Lisp</a>, <a href="/wiki/Embeddable_Common_Lisp" title="Embeddable Common Lisp">ECL</a>, <a href="/wiki/GNU_Common_Lisp" title="GNU Common Lisp">GCL</a>, <a href="/wiki/LispWorks" title="LispWorks">LispWorks</a>, <a href="/wiki/Movitz" title="Movitz">Movitz</a>, <a href="/wiki/Scieneer_Common_Lisp" title="Scieneer Common Lisp">Scieneer CL</a>, <a href="/wiki/SBCL" title="SBCL" class="mw-redirect">SBCL</a>, <a href="/wiki/Genera_(operating_system)" title="Genera (operating system)">Symbolics Common Lisp</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+<td class="" style="">CLtL1, CLtL2, ANSI Common Lisp</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style=""><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="/wiki/Lisp_Machine_Lisp" title="Lisp Machine Lisp">Lisp Machine Lisp</a>, <a href="/wiki/MacLisp" title="MacLisp" class="mw-redirect">MacLisp</a>, <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, <a href="/wiki/InterLisp" title="InterLisp" class="mw-redirect">InterLisp</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced</th>
+<td class="" style=""><a href="/wiki/Clojure" title="Clojure">Clojure</a>, <a href="/wiki/Dylan_(programming_language)" title="Dylan (programming language)">Dylan</a>, <a href="/wiki/Emacs_Lisp" title="Emacs Lisp">Emacs Lisp</a>, <a href="/wiki/EuLisp" title="EuLisp">EuLisp</a>, <a href="/wiki/ISLISP" title="ISLISP">ISLISP</a>, <a href="/wiki/Cadence_SKILL" title="Cadence SKILL">SKILL</a>, Stella, <a href="/wiki/SubL" title="SubL">SubL</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td class="" style=""><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Family</th>
+<td class="" style=""><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></td>
+</tr>
+</table>
+<p><b>Common Lisp</b>, commonly abbreviated <b>CL</b>, is a dialect of the <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a>, published in <a href="/wiki/American_National_Standards_Institute" title="American National Standards Institute">ANSI</a> standard document <i>ANSI INCITS 226-1994 (R2004)</i>, (formerly <i>X3.226-1994 (R1999))</i>.<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup> From the ANSI Common Lisp standard the <a href="/wiki/Common_Lisp_HyperSpec" title="Common Lisp HyperSpec">Common Lisp HyperSpec</a> has been derived<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>2<span>]</span></a></sup> for use with web browsers. Common Lisp was developed to standardize the divergent variants of Lisp (though mainly the MacLisp variants) which predated it, thus it is not an implementation but rather a language <a href="/wiki/Specification" title="Specification" class="mw-redirect">specification</a>. Several <a href="#Implementations">implementations</a> of the Common Lisp standard are available, including <a href="/wiki/Free_and_open_source_software" title="Free and open source software">free and open source software</a> and proprietary products.</p>
+<p>Common Lisp is a general-purpose, <a href="/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">multi-paradigm programming language</a>. It supports a combination of <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, and <a href="/wiki/Object-oriented" title="Object-oriented" class="mw-redirect">object-oriented</a> programming paradigms. As a <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic programming language</a>, it facilitates evolutionary and <a href="/wiki/Iterative_and_incremental_development" title="Iterative and incremental development">incremental software development</a>, with iterative <a href="/wiki/Compiler" title="Compiler">compilation</a> into efficient run-time programs.</p>
+<p>Common Lisp includes <a href="/wiki/Common_Lisp_Object_System" title="Common Lisp Object System">CLOS</a>, an <a href="/wiki/Object_system" title="Object system" class="mw-redirect">object system</a> that supports <a href="/wiki/Multimethods" title="Multimethods" class="mw-redirect">multimethods</a> and method combinations. It is extensible through standard features such as Lisp <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macros</a> (compile-time code rearrangement accomplished by the program itself) and reader macros (extension of syntax to give special meaning to characters reserved for users for this purpose).</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Data_types"><span class="tocnumber">2</span> <span class="toctext">Data types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Scalar_types"><span class="tocnumber">2.1</span> <span class="toctext">Scalar types</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Data_structures"><span class="tocnumber">2.2</span> <span class="toctext">Data structures</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Functions"><span class="tocnumber">2.3</span> <span class="toctext">Functions</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Defining_functions"><span class="tocnumber">2.3.1</span> <span class="toctext">Defining functions</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Defining_generic_functions_and_methods"><span class="tocnumber">2.3.2</span> <span class="toctext">Defining generic functions and methods</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#The_function_namespace"><span class="tocnumber">2.3.3</span> <span class="toctext">The function namespace</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Other_types"><span class="tocnumber">2.4</span> <span class="toctext">Other types</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Scope"><span class="tocnumber">3</span> <span class="toctext">Scope</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Determiners_of_scope"><span class="tocnumber">3.1</span> <span class="toctext">Determiners of scope</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Kinds_of_environment"><span class="tocnumber">3.2</span> <span class="toctext">Kinds of environment</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Global"><span class="tocnumber">3.2.1</span> <span class="toctext">Global</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Dynamic"><span class="tocnumber">3.2.2</span> <span class="toctext">Dynamic</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Lexical"><span class="tocnumber">3.2.3</span> <span class="toctext">Lexical</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Macros"><span class="tocnumber">4</span> <span class="toctext">Macros</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Example_using_a_Macro_to_define_a_new_control_structure"><span class="tocnumber">4.1</span> <span class="toctext">Example using a Macro to define a new control structure</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Variable_capture_and_shadowing"><span class="tocnumber">4.2</span> <span class="toctext">Variable capture and shadowing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#Condition_System"><span class="tocnumber">5</span> <span class="toctext">Condition System</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#Common_Lisp_Object_System"><span class="tocnumber">6</span> <span class="toctext">Common Lisp Object System</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#Compiler_and_Interpreter"><span class="tocnumber">7</span> <span class="toctext">Compiler and Interpreter</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Code_examples"><span class="tocnumber">8</span> <span class="toctext">Code examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-23"><a href="#Birthday_paradox"><span class="tocnumber">8.1</span> <span class="toctext">Birthday paradox</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Sorting_a_list_of_person_objects"><span class="tocnumber">8.2</span> <span class="toctext">Sorting a list of person objects</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Exponentiating_by_squaring"><span class="tocnumber">8.3</span> <span class="toctext">Exponentiating by squaring</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Find_the_list_of_available_shells"><span class="tocnumber">8.4</span> <span class="toctext">Find the list of available shells</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="#Comparison_with_other_Lisps"><span class="tocnumber">9</span> <span class="toctext">Comparison with other Lisps</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#Implementations"><span class="tocnumber">10</span> <span class="toctext">Implementations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-29"><a href="#List_of_implementations"><span class="tocnumber">10.1</span> <span class="toctext">List of implementations</span></a>
+<ul>
+<li class="toclevel-3 tocsection-30"><a href="#Commercial_implementations"><span class="tocnumber">10.1.1</span> <span class="toctext">Commercial implementations</span></a></li>
+<li class="toclevel-3 tocsection-31"><a href="#Freely_redistributable_implementations"><span class="tocnumber">10.1.2</span> <span class="toctext">Freely redistributable implementations</span></a></li>
+<li class="toclevel-3 tocsection-32"><a href="#Other_.28mostly_historical.29_implementations"><span class="tocnumber">10.1.3</span> <span class="toctext">Other (mostly historical) implementations</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-33"><a href="#Applications"><span class="tocnumber">11</span> <span class="toctext">Applications</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#See_also"><span class="tocnumber">12</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#References"><span class="tocnumber">13</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="#Books"><span class="tocnumber">14</span> <span class="toctext">Books</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#External_links"><span class="tocnumber">15</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h2>
+<p>Common Lisp is a dialect of Lisp; it uses <a href="/wiki/S-expression" title="S-expression">S-expressions</a> to denote both code and data structure. Function and macro calls are written as lists, with the name of the function first, as in these examples:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>+ <span class="nu0">2</span> <span class="nu0">2</span><span class="br0">)</span>           <span class="co1">; adds 2 and 2, yielding 4.</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>defvar *x*<span class="br0">)</span>      <span class="co1">; Ensures that a variable *x* exists,</span>
+                   <span class="co1">; without giving it a value. The asterisks are part of</span>
+                   <span class="co1">; the name. The symbol *x* is also hereby endowed with</span>
+                   <span class="co1">; the property that subsequent bindings of it are dynamic,</span>
+                   <span class="co1">; rather than lexical.</span>
+ <span class="br0">(</span><span class="kw1">setf</span> *x* <span class="nu0">42.1</span><span class="br0">)</span>   <span class="co1">; sets the variable *x* to the floating-point value 42.1</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="co1">;; Define a function that squares a number:</span>
+ <span class="br0">(</span><span class="kw1">defun</span> square <span class="br0">(</span>x<span class="br0">)</span> 
+   <span class="br0">(</span>* x x<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="co1">;; Execute the function:</span>
+ <span class="br0">(</span>square <span class="nu0">3</span><span class="br0">)</span>        <span class="co1">; Returns 9</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="co1">;; the 'let' construct creates a scope for local variables. Here</span>
+ <span class="co1">;; the variable 'a' is bound to 6 and the variable 'b' is bound</span>
+ <span class="co1">;; to 4. Inside the 'let' is a 'body', where the last computed value is returned.</span>
+ <span class="co1">;; Here the result of adding a and b is returned from the 'let' expression.</span>
+ <span class="co1">;; The variables a and b have lexical scope, unless the symbols have been</span>
+ <span class="co1">;; marked as special variables (for instance by a prior DEFVAR). </span>
+ <span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>a <span class="nu0">6</span><span class="br0">)</span>
+       <span class="br0">(</span>b <span class="nu0">4</span><span class="br0">)</span><span class="br0">)</span> 
+   <span class="br0">(</span>+ a b<span class="br0">)</span><span class="br0">)</span>        <span class="co1">; returns 10</span>
+</pre></div>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=2" title="Edit section: Data types">edit</a>]</span> <span class="mw-headline" id="Data_types">Data types</span></h2>
+<p>Common Lisp has many data types—more than many other languages.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=3" title="Edit section: Scalar types">edit</a>]</span> <span class="mw-headline" id="Scalar_types">Scalar types</span></h3>
+<p><i>Number</i> types include <a href="/wiki/Integer" title="Integer">integers</a>, <a href="/wiki/Ratio" title="Ratio">ratios</a>, <a href="/wiki/Floating_point" title="Floating point">floating-point numbers</a>, and <a href="/wiki/Complex_number" title="Complex number">complex numbers</a>.<sup id="cite_ref-reddy_2-0" class="reference"><a href="#cite_note-reddy-2"><span>[</span>3<span>]</span></a></sup> Common Lisp uses <a href="/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">bignums</a> to represent numerical values of arbitrary size and precision. The ratio type represents fractions exactly, a facility not available in many languages. Common Lisp automatically coerces numeric values among these types as appropriate.</p>
+<p>The Common Lisp <i><a href="/wiki/Character_(computing)" title="Character (computing)">character</a></i> type is not limited to <a href="/wiki/ASCII" title="ASCII">ASCII</a> characters. Most modern implementations allow <a href="/wiki/Unicode" title="Unicode">Unicode</a> characters.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>4<span>]</span></a></sup></p>
+<p>The <i><a href="/wiki/Symbol" title="Symbol">symbol</a></i> type is common to Lisp languages, but largely unknown outside them. A symbol is a unique, named data object with several parts: name, value, function, property list and package. Of these, <i>value cell</i> and <i>function cell</i> are the most important. Symbols in Lisp are often used similarly to identifiers in other languages: to hold value of a variable; however there are many other uses. Normally, when a symbol is evaluated, its value is returned. Some symbols evaluate to themselves, for example all symbols in keyword package are self-evaluating. Boolean values in Common Lisp are represented by the self-evaluating symbols T and NIL. Common Lisp has namespaces for symbols, called 'packages'.</p>
+<p>A number of functions are available for <a href="/wiki/Rounding" title="Rounding">rounding</a> scalar numeric values in various ways. The function <code>round</code> rounds the argument to the nearest integer, with halfway cases rounded to even The functions <code>truncate</code>, <code>floor</code>, and <code>ceiling</code> round towards zero, down, or up respectively. All these functions return the discarded fractional part as a secondary value. For example, <code>(floor -2.5)</code> yields -3, 0.5; <code>(ceiling -2.5)</code> yields -2, -0.5; <code>(round 2.5)</code> yields 2, 0.5; and <code>(round 3.5)</code> yields 4, -0.5.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=4" title="Edit section: Data structures">edit</a>]</span> <span class="mw-headline" id="Data_structures">Data structures</span></h3>
+<p><i>Sequence</i> types in Common Lisp include lists, vectors, bit-vectors, and strings. There are many operations which can work on any sequence type.</p>
+<p>As in almost all other Lisp dialects, <i>lists</i> in Common Lisp are composed of <i>conses</i>, sometimes called <i>cons cells</i> or <i>pairs</i>. A cons is a data structure with two slots, called its <i>car</i> and <i>cdr</i>. A list is a linked chain of conses. Each cons's car refers to a member of the list (possibly another list). Each cons's cdr refers to the next cons—except for the last cons, whose cdr refers to the <tt>nil</tt> value. Conses can also easily be used to implement trees and other complex data structures; though it is usually advised to use structure or class instances instead. It is also possible to create circular data structures with conses.</p>
+<p>Common Lisp supports multidimensional <i>arrays</i>, and can dynamically resize arrays if required. Multidimensional arrays can be used for matrix mathematics. A <i>vector</i> is a one-dimensional array. Arrays can carry any type as members (even mixed types in the same array) or can be specialized to contain a specific type of members, as in a vector of integers. Many implementations can optimize array functions when the array used is type-specialized. Two type-specialized array types are standard: a <i>string</i> is a vector of characters, while a <i>bit-vector</i> is a vector of <a href="/wiki/Bit" title="Bit">bits</a>.</p>
+<p><i><a href="/wiki/Hash_table" title="Hash table">Hash tables</a></i> store associations between data objects. Any object may be used as key or value. Hash tables, like arrays, are automatically resized as needed.</p>
+<p><i>Packages</i> are collections of symbols, used chiefly to separate the parts of a program into <a href="/wiki/Namespace_(computer_science)" title="Namespace (computer science)">namespaces</a>. A package may <i>export</i> some symbols, marking them as part of a public interface. Packages can use other packages.</p>
+<p><i>Structures</i>, similar in use to <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> structs and <a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> records, represent arbitrary complex data structures with any number and type of fields (called <i>slots</i>). Structures allow single-inheritance.</p>
+<p><i>Classes</i> are similar to structures, but offer more dynamic features and multiple-inheritance. (See <a href="/wiki/Common_Lisp_Object_System" title="Common Lisp Object System">CLOS</a>.) Classes have been added late to Common Lisp and there is some conceptual overlap with structures. Objects created of classes are called <i>Instances</i>. A special case are Generic Functions. Generic Functions are both functions and instances.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=5" title="Edit section: Functions">edit</a>]</span> <span class="mw-headline" id="Functions">Functions</span></h3>
+<p>Common Lisp supports <a href="/wiki/First-class_function" title="First-class function">first-class functions</a>. For instance, it is possible to write functions that take other functions as arguments or return functions as well. This makes it possible to describe very general operations.</p>
+<p>The Common Lisp library relies heavily on such higher-order functions. For example, the <code>sort</code> function takes a <a href="/wiki/Relational_operator" title="Relational operator">relational operator</a> as an argument and key function as an optional keyword argument. This can be used not only to sort any type of data, but also to sort data structures according to a key.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>sort <span class="br0">(</span><span class="kw1">list</span> <span class="nu0">5</span> <span class="nu0">2</span> <span class="nu0">6</span> <span class="nu0">3</span> <span class="nu0">1</span> <span class="nu0">4</span><span class="br0">)</span> #'<span class="sy0">&gt;</span><span class="br0">)</span>
+ <span class="co1">; Sorts the list using the &gt; function as the relational operator.</span>
+ <span class="co1">; Returns (6 5 4 3 2 1).</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>sort <span class="br0">(</span><span class="kw1">list</span> '<span class="br0">(</span><span class="nu0">9</span> A<span class="br0">)</span> '<span class="br0">(</span><span class="nu0">3</span> B<span class="br0">)</span> '<span class="br0">(</span><span class="nu0">4</span> C<span class="br0">)</span><span class="br0">)</span> #'<span class="sy0">&lt;</span> <span class="sy0">:</span><span class="me1">key</span> #'first<span class="br0">)</span>
+ <span class="co1">; Sorts the list according to the first element of each sub-list.</span>
+ <span class="co1">; Returns ((3 B) (4 C) (9 A)).</span>
+</pre></div>
+</div>
+<p>The evaluation model for functions is very simple. When the evaluator encounters a form <code>(F A1 A2...)</code> then it is to assume that the symbol named F is one of the following:</p>
+<ol>
+<li>A special operator (easily checked against a fixed list)</li>
+<li>A macro operator (must have been defined previously)</li>
+<li>The name of a function (default), which may either be a symbol, or a sub-form beginning with the symbol <code>lambda</code>.</li>
+</ol>
+<p>If F is the name of a function, then the arguments A1, A2, ..., An are evaluated in left-to-right order, and the function is found and invoked with those values supplied as parameters.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=6" title="Edit section: Defining functions">edit</a>]</span> <span class="mw-headline" id="Defining_functions">Defining functions</span></h4>
+<p>The macro <code><a href="/wiki/Defun" title="Defun">defun</a></code> defines functions. A function definition gives the name of the function, the names of any arguments, and a function body:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span><span class="kw1">defun</span> square <span class="br0">(</span>x<span class="br0">)</span>
+   <span class="br0">(</span>* x x<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Function definitions may include <i>declarations</i>, which provide hints to the compiler about optimization settings or the data types of arguments. They may also include <i>documentation strings</i> (docstrings), which the Lisp system may use to provide interactive documentation:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span><span class="kw1">defun</span> square <span class="br0">(</span>x<span class="br0">)</span>
+   <span class="st0">"Calculates the square of the single-float x."</span>
+   <span class="br0">(</span>declare <span class="br0">(</span>single-<span class="kw1">float</span> x<span class="br0">)</span> <span class="br0">(</span>optimize <span class="br0">(</span>speed 3<span class="br0">)</span> <span class="br0">(</span>debug 0<span class="br0">)</span> <span class="br0">(</span>safety 1<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+   <span class="br0">(</span>the single-<span class="kw1">float</span> <span class="br0">(</span>* x x<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Anonymous functions (<a href="/wiki/Function_literal" title="Function literal" class="mw-redirect">function literals</a>) are defined using <code>lambda</code> expressions, e.g. <code>(lambda&#160;(x)&#160;(*&#160;x&#160;x))</code> for a function that squares its argument. Lisp programming style frequently uses higher-order functions for which it is useful to provide anonymous functions as arguments.</p>
+<p>Local functions can be defined with <code>flet</code> and <code>labels</code>.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>flet <span class="br0">(</span><span class="br0">(</span>square <span class="br0">(</span>x<span class="br0">)</span>
+          <span class="br0">(</span>* x x<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+   <span class="br0">(</span>square <span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>There are a number of other operators related to the definition and manipulation of functions. For instance, a function may be recompiled with the <code>compile</code> operator. (Some Lisp systems run functions in an interpreter by default unless instructed to compile; others compile every entered function on the fly.)</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=7" title="Edit section: Defining generic functions and methods">edit</a>]</span> <span class="mw-headline" id="Defining_generic_functions_and_methods">Defining generic functions and methods</span></h4>
+<p>The macro <code>defgeneric</code> defines generic functions. The macro <code>defmethod</code> defines methods. Generic functions are a collection of methods.</p>
+<p>Methods can specialize their parameters over classes or objects.</p>
+<p>When a generic function is called, multiple-dispatch will determine the correct method to use.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>defgeneric add <span class="br0">(</span>a b<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>defmethod add <span class="br0">(</span><span class="br0">(</span>a number<span class="br0">)</span> <span class="br0">(</span>b number<span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">(</span>+ a b<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>defmethod add <span class="br0">(</span><span class="br0">(</span>a vector<span class="br0">)</span> <span class="br0">(</span>b number<span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">(</span>map 'vector <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>n<span class="br0">)</span> <span class="br0">(</span>+ n b<span class="br0">)</span><span class="br0">)</span> a<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>defmethod add <span class="br0">(</span><span class="br0">(</span>a vector<span class="br0">)</span> <span class="br0">(</span>b vector<span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">(</span>map 'vector #'+ a b<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="br0">(</span>add <span class="nu0">2</span> <span class="nu0">3</span><span class="br0">)</span>                   <span class="co1">; returns 5</span>
+ <span class="br0">(</span>add #<span class="br0">(</span><span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span><span class="br0">)</span> <span class="nu0">7</span><span class="br0">)</span>          <span class="co1">; returns #(8 9 10 11)</span>
+ <span class="br0">(</span>add #<span class="br0">(</span><span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span><span class="br0">)</span> #<span class="br0">(</span><span class="nu0">4</span> <span class="nu0">3</span> <span class="nu0">2</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span> <span class="co1">; returns #(5 5 5 5)</span>
+</pre></div>
+</div>
+<p>Generic Functions are also a first class data type. There are many more features to Generic Functions and Methods than described above.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=8" title="Edit section: The function namespace">edit</a>]</span> <span class="mw-headline" id="The_function_namespace">The function namespace</span></h4>
+<p>The namespace for function names is separate from the namespace for data variables. This is a key difference between Common Lisp and <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>. For Common Lisp, operators that define names in the function namespace include <code>defun</code>, <code>flet</code>, <code>labels</code>, <code>defmethod</code> and <code>defgeneric</code>.</p>
+<p>To pass a function by name as an argument to another function, one must use the <code>function</code> special operator, commonly abbreviated as <code>#'</code>. The first <code>sort</code> example above refers to the function named by the symbol <code>&gt;</code> in the function namespace, with the code <code>#'&gt;</code>.</p>
+<p><a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme's</a> evaluation model is simpler: there is only one namespace, and all positions in the form are evaluated (in any order) -- not just the arguments. Code written in one dialect is therefore sometimes confusing to programmers more experienced in the other. For instance, many Common Lisp programmers like to use descriptive variable names such as <i>list</i> or <i>string</i> which could cause problems in Scheme as they would locally shadow function names.</p>
+<p>Whether a separate namespace for functions is an advantage is a source of contention in the Lisp community. It is usually referred to as the <i>Lisp-1 vs. Lisp-2 debate</i>. Lisp-1 refers to Scheme's model and Lisp-2 refers to Common Lisp's model. These names were coined in a 1988 paper by <a href="/wiki/Richard_P._Gabriel" title="Richard P. Gabriel">Richard P. Gabriel</a> and <a href="/wiki/Kent_Pitman" title="Kent Pitman">Kent Pitman</a>, which extensively compares the two approaches.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=9" title="Edit section: Other types">edit</a>]</span> <span class="mw-headline" id="Other_types">Other types</span></h3>
+<p>Other data types in Common Lisp include:</p>
+<ul>
+<li><i>Pathnames</i> represent files and directories in the <a href="/wiki/Filesystem" title="Filesystem" class="mw-redirect">filesystem</a>. The Common Lisp pathname facility is more general than most operating systems' file naming conventions, making Lisp programs' access to files broadly portable across diverse systems.</li>
+<li>Input and output <i>streams</i> represent sources and sinks of binary or textual data, such as the terminal or open files.</li>
+<li>Common Lisp has a built-in <a href="/wiki/Pseudo-random_number_generator" title="Pseudo-random number generator" class="mw-redirect">pseudo-random number generator</a> (PRNG). <i>Random state</i> objects represent reusable sources of pseudo-random numbers, allowing the user to seed the PRNG or cause it to replay a sequence.</li>
+<li><i>Conditions</i> are a type used to represent errors, exceptions, and other "interesting" events to which a program may respond.</li>
+<li><i>Classes</i> are <a href="/wiki/First-class_object" title="First-class object">first-class objects</a>, and are themselves instances of classes called <a href="/wiki/Metaclasses" title="Metaclasses" class="mw-redirect">class metaobject classes</a>.</li>
+<li><i>Readtables</i> are a type of object which control how Common Lisp's reader parses the text of source code. By controlling which readtable is in use when code is read in, the programmer can change or extend the language's syntax.</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=10" title="Edit section: Scope">edit</a>]</span> <span class="mw-headline" id="Scope">Scope</span></h2>
+<p>Like programs in many other programming languages, Common Lisp programs make use of names to refer to variables, functions, and many other kinds of entities. Named references are subject to scope.</p>
+<p>The association between a name and the entity which the name refers to is called a binding.</p>
+<p>Scope refers to the set of circumstances in which a name is determined to have a particular binding.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=11" title="Edit section: Determiners of scope">edit</a>]</span> <span class="mw-headline" id="Determiners_of_scope">Determiners of scope</span></h3>
+<p>The circumstances which determine scope in Common Lisp include:</p>
+<ul>
+<li>the location of a reference within an expression. If it's the leftmost position of a compound, it refers to a special operator or a macro or function binding, otherwise to a variable binding or something else.</li>
+<li>the kind of expression in which the reference takes place. For instance, (GO X) means transfer control to label X, whereas (PRINT X) refers to the variable X. Both scopes of X can be active in the same region of program text, since tagbody labels are in a separate namespace from variable names. A special form or macro form has complete control over the meanings of all symbols in its syntax. For instance in (defclass x (a b) ()), a class definition, the (a b) is a list of base classes, so these names are looked up in the space of class names, and x isn't a reference to an existing binding, but the name of a new class being derived from a and b. These facts emerge purely from the semantics of defclass. The only generic fact about this expression is that defclass refers to a macro binding; everything else is up to defclass.</li>
+<li>the location of the reference within the program text. For instance, if a reference to variable X is enclosed in a binding construct such as a LET which defines a binding for X, then the reference is in the scope created by that binding.</li>
+<li>for a variable reference, whether or not a variable symbol has been, locally or globally, declared special. This determines whether the reference is resolved within a lexical environment, or within a dynamic environment.</li>
+<li>the specific instance of the environment in which the reference is resolved. An environment is a run-time dictionary which maps symbols to bindings. Each kind of reference uses its own kind of environment. References to lexical variables are resolved in a lexical environment, et cetera. More than one environment can be associated with the same reference. For instance, thanks to recursion or the use of multiple threads, multiple activations of the same function can exist at the same time. These activations share the same program text, but each has its own lexical environment instance.</li>
+</ul>
+<p>To understand what a symbol refers to, the Common Lisp programmer must know what kind of reference is being expressed, what kind of scope it uses if it is a variable reference (dynamic versus lexical scope), and also the run-time situation: in what environment is the reference resolved, where was the binding introduced into the environment, et cetera.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=12" title="Edit section: Kinds of environment">edit</a>]</span> <span class="mw-headline" id="Kinds_of_environment">Kinds of environment</span></h3>
+<h4><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=13" title="Edit section: Global">edit</a>]</span> <span class="mw-headline" id="Global">Global</span></h4>
+<p>Some environments in Lisp are globally pervasive. For instance, if a new type is defined, it is known everywhere thereafter. References to that type look it up in this global environment.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=14" title="Edit section: Dynamic">edit</a>]</span> <span class="mw-headline" id="Dynamic">Dynamic</span></h4>
+<p>One type of environment in Common Lisp is the dynamic environment. Bindings established in this environment have dynamic extent, which means that a binding is established at the start of the execution of some construct, such as a LET block, and disappears when that construct finishes executing: its lifetime is tied to the dynamic activation and deactivation of a block. However, a dynamic binding is not just visible within that block; it is also visible to all functions invoked from that block. This type of visibility is known as indefinite scope. Bindings which exhibit dynamic extent (lifetime tied to the activation and deactivation of a block) and indefinite scope (visible to all functions which are called from that block) are said to have dynamic scope. Common Lisp has support for dynamically scoped variables, which are also called special variables. Certain other kinds of bindings are necessarily dynamically scoped also, such as restarts and catch tags. Function bindings cannot be dynamically scoped (but, in recognition of the usefulness of dynamically scoped function bindings, a portable library exists now which provides them).</p>
+<p>Dynamic scope is extremely useful because it adds referential clarity and discipline to <a href="/wiki/Global_variable" title="Global variable">global variables</a>. Global variables are frowned upon in computer science as potential sources of error, because they can give rise to ad-hoc, covert channels of communication among modules that lead to unwanted, surprising interactions.</p>
+<p>In Common Lisp, a special variable which has only a top-level binding behaves just like a global variable in other programming languages. A new value can be stored into it, and that value simply replaces what is in the top-level binding. Careless replacement of the value of a global variable is at the heart of bugs caused by use of global variables. However, another way to work with a special variable is to give it a new, local binding within an expression. This is sometimes referred to as "rebinding" the variable. Binding a dynamically scoped variable temporarily creates a new memory location for that variable, and associates the name with that location. While that binding is in effect, all references to that variable refer to the new binding; the previous binding is hidden. When execution of the binding expression terminates, the temporary memory location is gone, and the old binding is revealed, with the original value intact. Of course, multiple dynamic bindings for the same variable can be nested.</p>
+<p>In Common Lisp implementations which support multithreading, dynamic scopes are specific to each thread of execution. Thus special variables serve as an abstraction for thread local storage. If one thread rebinds a special variable, this rebinding has no effect on that variable in other threads. The value stored in a binding can only be retrieved by the thread which created that binding. If each thread binds some special variable *X*, then *X* behaves like thread-local storage. Among threads which do not rebind *X*, it behaves like an ordinary global: all of these threads refer to the same top-level binding of *X*.</p>
+<p>Dynamic variables can be used to extend the execution context with additional context information which is implicitly passed from function to function without having to appear as an extra function parameter. This is especially useful when the control transfer has to pass through layers of unrelated code, which simply cannot be extended with extra parameters to pass the additional data. A situation like this usually calls for a global variable. That global variable must be saved and restored, so that the scheme doesn't break under recursion: dynamic variable rebinding takes care of this. And that variable must be made thread-local (or else a big mutex must be used) so the scheme doesn't break under threads: dynamic scope implementations can take care of this also.</p>
+<p>In the Common Lisp library, there are many standard special variables. For instance, the all standard I/O streams are stored in the top-level bindings of well-known special variables. The standard output stream is stored in *standard-output*.</p>
+<p>Suppose a function foo writes to standard output:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+  <span class="br0">(</span><span class="kw1">defun</span> foo <span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">(</span>format t <span class="st0">"Hello, world"</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>To capture its output in a character string, *standard-output* can be bound to a string stream and called:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+  <span class="br0">(</span>with-output-to-string <span class="br0">(</span>*standard-output*<span class="br0">)</span>
+    <span class="br0">(</span>foo<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<pre>
+ -&gt; "Hello, world" ; gathered output returned as a string
+</pre>
+<h4><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=15" title="Edit section: Lexical">edit</a>]</span> <span class="mw-headline" id="Lexical">Lexical</span></h4>
+<p>Common Lisp supports lexical environments. Formally, the bindings in a lexical environment have <a href="/wiki/Lexical_scope" title="Lexical scope" class="mw-redirect">lexical scope</a> and may have either indefinite extent or dynamic extent, depending on the type of namespace. <a href="/wiki/Lexical_scope" title="Lexical scope" class="mw-redirect">Lexical scope</a> means that visibility is physically restricted to the block in which the binding is established. References which are not textually (i.e. lexically) embedded in that block simply do not see that binding.</p>
+<p>The tags in a TAGBODY have lexical scope. The expression (GO X) is erroneous if it is not actually embedded in a TAGBODY which contains a label X. However, the label bindings disappear when the TAGBODY terminates its execution, because they have dynamic extent. If that block of code is re-entered by the invocation of a lexical closure, it is invalid for the body of that closure to try to transfer control to a tag via GO:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+  <span class="br0">(</span>defvar *stashed*<span class="br0">)</span> <span class="co1">;; will hold a function</span>
+ 
+  <span class="br0">(</span>tagbody
+    <span class="br0">(</span><span class="kw1">setf</span> *stashed* <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span><span class="br0">)</span> <span class="br0">(</span><span class="kw1">go</span> some-label<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">(</span><span class="kw1">go</span> end-label<span class="br0">)</span> <span class="co1">;; skip the (print "Hello")</span>
+   some-label
+    <span class="br0">(</span>print <span class="st0">"Hello"</span><span class="br0">)</span>
+   end-label<span class="br0">)</span>
+  -<span class="sy0">&gt;</span> <span class="kw1">NIL</span>
+</pre></div>
+</div>
+<p>When the TAGBODY is executed, it first evaluates the setf form which stores a function in the special variable *stashed*. Then the (go end-label) transfers control to end-label, skipping the code (print "Hello"). Since end-label is at the end of the tagbody, the tagbody terminates, yielding NIL. Suppose that the previously remembered function is now called:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+  <span class="br0">(</span><span class="kw1">funcall</span> *stashed*<span class="br0">)</span> <span class="co1">;; Error!</span>
+</pre></div>
+</div>
+<p>This situation is erroneous. One implementation's response is an error condition containing the message, "GO: tagbody for tag SOME-LABEL has already been left". The function tried to evaluate (go some-label), which is lexically embedded in the tagbody, and resolves to the label. However, the tagbody isn't executing (its extent has ended), and so the control transfer cannot take place.</p>
+<p>Local function bindings in Lisp have <a href="/wiki/Lexical_scope" title="Lexical scope" class="mw-redirect">lexical scope</a>, and variable bindings also have lexical scope by default. By contrast with GO labels, both of these have indefinite extent. When a lexical function or variable binding is established, that binding continues to exist for as long as references to it are possible, even after the construct which established that binding has terminated. References to a lexical variables and functions after the termination of their establishing construct are possible thanks to <a href="/wiki/Lexical_closure" title="Lexical closure" class="mw-redirect">lexical closures</a>.</p>
+<p>Lexical binding is the default binding mode for Common Lisp variables. For an individual symbol, it can be switched to dynamic scope, either by a local declaration, by a global declaration. The latter may occur implicitly through the use of a construct like DEFVAR or DEFPARAMETER. It is an important convention in Common Lisp programming that special (i.e. dynamically scoped) variables have names which begin and end with an asterisk. If adhered to, this convention effectively creates a separate namespace for special variables, so that variables intended to be lexical are not accidentally made special.</p>
+<p><a href="/wiki/Lexical_scope" title="Lexical scope" class="mw-redirect">Lexical scope</a> is useful for several reasons.</p>
+<p>Firstly, references to variables and functions can be compiled to efficient machine code, because the run-time environment structure is relatively simple. In many cases it can be optimized to stack storage, so opening and closing lexical scopes has minimal overhead. Even in cases where full closures must be generated, access to the closure's environment is still efficient; typically each variable becomes an offset into a vector of bindings, and so a variable reference becomes a simple load or store instruction with a base-plus-offset <a href="/wiki/Addressing_mode" title="Addressing mode">addressing mode</a>.</p>
+<p>Secondly, lexical scope (combined with indefinite extent) gives rise to the <a href="/wiki/Lexical_closure" title="Lexical closure" class="mw-redirect">lexical closure</a>, which in turn creates a whole paradigm of programming centered around the use of functions being first-class objects, which is at the root of functional programming.</p>
+<p>Thirdly, perhaps most importantly, even if lexical closures are not exploited, the use of lexical scope isolates program modules from unwanted interactions. Due to their restricted visibility, lexical variables are private. If one module A binds a lexical variable X, and calls another module B, references to X in B will not accidentally resolve to the X bound in A. B simply has no access to X. For situations in which disciplined interactions through a variable are desirable, Common Lisp provides special variables. Special variables allow for a module A to set up a binding for a variable X which is visible to another module B, called from A. Being able to do this is an advantage, and being able to prevent it from happening is also an advantage; consequently, Common Lisp supports both lexical and <a href="/wiki/Dynamic_scope" title="Dynamic scope" class="mw-redirect">dynamic scope</a>.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=16" title="Edit section: Macros">edit</a>]</span> <span class="mw-headline" id="Macros">Macros</span></h2>
+<p>A <i><a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macro</a></i> in Lisp superficially resembles a function in usage. However, rather than representing an expression which is evaluated, it represents a transformation of the program source code. The macro gets the source it surrounds as arguments, binds them to its parameters and computes a new source form. This new form can also use a macro. The macro expansion is repeated until the new source form does not use a macro. The final computed form is the source code executed at runtime.</p>
+<p>Typical uses of macros in Lisp:</p>
+<ul>
+<li>new control structures (example: looping constructs, branching constructs)</li>
+<li>scoping and binding constructs</li>
+<li>simplified syntax for complex and repeated source code</li>
+<li>top-level defining forms with compile-time side-effects</li>
+<li>data-driven programming</li>
+<li>embedded domain specific languages (examples: SQL, HTML, Prolog)</li>
+</ul>
+<p>Macros are defined by the <i>defmacro</i> macro. The special operator <i>macrolet</i> allows the definition of local macros. It is also possible to define macros for symbols using <i>define-symbol-macro</i> and <i>symbol-macrolet</i>.</p>
+<p><a href="/wiki/Paul_Graham_(computer_programmer)" title="Paul Graham (computer programmer)">Paul Graham</a>'s book <a href="/wiki/On_Lisp" title="On Lisp">On Lisp</a> describes the use of macros in Common Lisp in detail.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=17" title="Edit section: Example using a Macro to define a new control structure">edit</a>]</span> <span class="mw-headline" id="Example_using_a_Macro_to_define_a_new_control_structure">Example using a Macro to define a new control structure</span></h3>
+<p>Macros allow Lisp programmers to create new syntactic forms in the language. One typical use is to create new control structures. The example macro provides an <code>until</code> looping construct. The syntax is:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="text source-text" style="font-family:monospace;">
+<pre class="de1">
+(until test form*)
+</pre></div>
+</div>
+<p>The macro definition for <i>until</i>:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">defmacro</span> until <span class="br0">(</span>test <span class="sy0">&amp;</span>body body<span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>start-tag <span class="br0">(</span><span class="kw1">gensym</span> <span class="st0">"START"</span><span class="br0">)</span><span class="br0">)</span>
+        <span class="br0">(</span>end-tag   <span class="br0">(</span><span class="kw1">gensym</span> <span class="st0">"END"</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+    `<span class="br0">(</span>tagbody <span class="sy0">,</span>start-tag
+              <span class="br0">(</span><span class="kw1">when</span> <span class="sy0">,</span>test <span class="br0">(</span><span class="kw1">go</span> <span class="sy0">,</span>end-tag<span class="br0">)</span><span class="br0">)</span>
+              <span class="br0">(</span><span class="kw1">progn</span> <span class="sy0">,</span>@body<span class="br0">)</span>
+              <span class="br0">(</span><span class="kw1">go</span> <span class="sy0">,</span>start-tag<span class="br0">)</span>
+              <span class="sy0">,</span>end-tag<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p><i>tagbody</i> is a primitive Common Lisp special operator which provides the ability to name tags and use the <i>go</i> form to jump to those tags. The backquote <i>`</i> provides a notation that provides code templates, where the value of forms preceded with a comma are filled in. Forms preceded with comma and at-sign are <i>spliced</i> in. The tagbody form tests the end condition. If the condition is true, it jumps to the end tag. Otherwise the provided body code is executed and then it jumps to the start tag.</p>
+<p>An example form using above <i>until</i> macro:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span>until <span class="br0">(</span><span class="sy0">=</span> <span class="br0">(</span><span class="kw1">random</span> <span class="nu0">10</span><span class="br0">)</span> <span class="nu0">0</span><span class="br0">)</span> 
+  <span class="br0">(</span>write-line <span class="st0">"Hello"</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>The code can be expanded using the function <i>macroexpand</i>. The expansion for above example looks like this:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span>TAGBODY
+ #<span class="sy0">:</span><span class="me1">START1136</span>
+ <span class="br0">(</span><span class="kw1">WHEN</span> <span class="br0">(</span><span class="kw1">ZEROP</span> <span class="br0">(</span><span class="kw1">RANDOM</span> 10<span class="br0">)</span><span class="br0">)</span>
+   <span class="br0">(</span><span class="kw1">GO</span> #<span class="sy0">:</span><span class="me1">END1137</span><span class="br0">)</span><span class="br0">)</span>
+ <span class="br0">(</span><span class="kw1">PROGN</span> <span class="br0">(</span>WRITE-LINE <span class="st0">"hello"</span><span class="br0">)</span><span class="br0">)</span>
+ <span class="br0">(</span><span class="kw1">GO</span> #<span class="sy0">:</span><span class="me1">START1136</span><span class="br0">)</span>
+ #<span class="sy0">:</span><span class="me1">END1137</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>During macro expansion the value of the variable <i>test</i> is <i>(= (random 10) 0)</i> and the value of the variable <i>body</i> is <i>((write-line "Hello"))</i>. The body is a list of forms.</p>
+<p>Symbols are usually automatically upcased. The expansion uses the TAGBODY with two labels. The symbols for these labels are computed by GENSYM and are not interned in any package. Two <i>go</i> forms use these tags to jump to. Since <i>tagbody</i> is a primitive operator in Common Lisp (and not a macro), it will not be expanded into something else. The expanded form uses the <i>when</i> macro, which also will be expanded. Fully expanding a source form is called <i>code walking</i>.</p>
+<p>In the fully expanded (<i>walked</i>) form, the <i>when</i> form is replaced by the primitive <i>if</i>:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span>TAGBODY
+ #<span class="sy0">:</span><span class="me1">START1136</span>
+ <span class="br0">(</span><span class="kw1">IF</span> <span class="br0">(</span><span class="kw1">ZEROP</span> <span class="br0">(</span><span class="kw1">RANDOM</span> 10<span class="br0">)</span><span class="br0">)</span>
+     <span class="br0">(</span><span class="kw1">PROGN</span> <span class="br0">(</span><span class="kw1">GO</span> #<span class="sy0">:</span><span class="me1">END1137</span><span class="br0">)</span><span class="br0">)</span>
+   <span class="kw1">NIL</span><span class="br0">)</span>
+ <span class="br0">(</span><span class="kw1">PROGN</span> <span class="br0">(</span>WRITE-LINE <span class="st0">"hello"</span><span class="br0">)</span><span class="br0">)</span>
+ <span class="br0">(</span><span class="kw1">GO</span> #<span class="sy0">:</span><span class="me1">START1136</span><span class="br0">)</span><span class="br0">)</span>
+ #<span class="sy0">:</span><span class="me1">END1137</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>All macros must be expanded before the source code containing them can be evaluated or compiled normally. Macros can be considered functions that accept and return <a href="/wiki/Abstract_syntax_tree" title="Abstract syntax tree">abstract syntax trees</a> (Lisp S-expressions). These functions are invoked before the evaluator or compiler to produce the final source code. Macros are written in normal Common Lisp, and may use any Common Lisp (or third-party) operator available.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=18" title="Edit section: Variable capture and shadowing">edit</a>]</span> <span class="mw-headline" id="Variable_capture_and_shadowing">Variable capture and shadowing</span></h3>
+<p>Common Lisp macros are capable of what is commonly called <i>variable capture</i>, where symbols in the macro-expansion body coincide with those in the calling context, allowing the programmer to create macros wherein various symbols have special meaning. The term <i>variable capture</i> is somewhat misleading, because all namespaces are vulnerable to unwanted capture, including the operator and function namespace, the tagbody label namespace, catch tag, condition handler and restart namespaces.</p>
+<p><i>Variable capture</i> can introduce software defects. This happens in one of the following two ways:</p>
+<ul>
+<li>In the first way, a macro expansion can inadvertently make a symbolic reference which the macro writer assumed will resolve in a global namespace, but the code where the macro is expanded happens to provide a local, shadowing definition it which steals that reference. Let this be referred to as type 1 capture.</li>
+</ul>
+<ul>
+<li>The second way, type 2 capture, is just the opposite: some of the arguments of the macro are pieces of code supplied by the macro caller, and those pieces of code are written such that they make references to surrounding bindings. However, the macro inserts these pieces of code into an expansion which defines its own bindings that accidentally captures some of these references.</li>
+</ul>
+<p>The Scheme dialect of Lisp provides a macro-writing system which provides the referential transparency that eliminates both types of capture problem. This type of macro system is sometimes called "hygienic", in particular by its proponents (who regard macro systems which do not automatically solve this problem as unhygienic).</p>
+<p>In Common Lisp, macro hygiene is ensured one of two different ways.</p>
+<p>One approach is to use <a href="/w/index.php?title=Gensym&amp;action=edit&amp;redlink=1" class="new" title="Gensym (page does not exist)">gensyms</a>: guaranteed-unique symbols which can be used in a macro-expansion without threat of capture. The use of gensyms in a macro definition is a manual chore, but macros can be written which simplify the instantiation and use of gensyms. Gensyms solve type 2 capture easily, but they are not applicable to type 1 capture in the same way, because the macro expansion cannot rename the interfering symbols in the surrounding code which capture its references. Gensyms could be used to provide stable aliases for the global symbols which the macro expansion needs. The macro expansion would use these secret aliases rather than the well-known names, so redefinition of the well-known names would have no ill effect on the macro.</p>
+<p>Another approach is to use packages. A macro defined in its own package can simply use internal symbols in that package in its expansion. The use of packages deals with type 1 and type 2 capture.</p>
+<p>However, packages don't solve the type 1 capture of references to standard Common Lisp functions and operators. The reason is that the use of packages to solve capture problems revolves around the use of private symbols (symbols in one package, which are not imported into, or otherwise made visible in other packages). Whereas the Common Lisp library symbols are external, and frequently imported into or made visible in user-defined packages.</p>
+<p>The following is an example of unwanted capture in the operator namespace, occurring in the expansion of a macro:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+ <span class="co1">;; expansion of UNTIL makes liberal use of DO</span>
+ <span class="br0">(</span><span class="kw1">defmacro</span> until <span class="br0">(</span>expression <span class="sy0">&amp;</span>body body<span class="br0">)</span>
+   `<span class="br0">(</span><span class="kw1">do</span> <span class="br0">(</span><span class="br0">)</span> <span class="br0">(</span><span class="sy0">,</span>expression<span class="br0">)</span> <span class="sy0">,</span>@body<span class="br0">)</span><span class="br0">)</span>
+ 
+ <span class="co1">;; macrolet establishes lexical operator binding for DO</span>
+ <span class="br0">(</span>macrolet <span class="br0">(</span><span class="br0">(</span><span class="kw1">do</span> <span class="br0">(</span><span class="sy0">...</span><span class="br0">)</span> <span class="sy0">...</span> something else <span class="sy0">...</span><span class="br0">)</span><span class="br0">)</span>
+   <span class="br0">(</span>until <span class="br0">(</span><span class="sy0">=</span> <span class="br0">(</span><span class="kw1">random</span> <span class="nu0">10</span><span class="br0">)</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">(</span>write-line <span class="st0">"Hello"</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>The <code>UNTIL</code> macro will expand into a form which calls <code>DO</code> which is intended to refer to the standard Common Lisp macro <code>DO</code>. However, in this context, <code>DO</code> may have a completely different meaning, so <code>UNTIL</code> may not work properly.</p>
+<p>Common Lisp solves the problem of the shadowing of standard operators and functions by forbidding their redefinition. Because it redefines the standard operator <code>DO</code>, the preceding is actually a fragment of non-conforming Common Lisp, which allows implementations to diagnose and reject it.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=19" title="Edit section: Condition System">edit</a>]</span> <span class="mw-headline" id="Condition_System">Condition System</span></h2>
+<p>The <i>Condition System</i> is responsible for <a href="/wiki/Exception_handling" title="Exception handling">Exception handling</a> in Common Lisp. It provides <i>conditions</i>, <i>handler</i>s and <i>restart</i>s. <i>Condition</i>s are objects describing an exceptional situation (for example an error). If a <i>condition</i> is signaled, the Common Lisp system searches for a <i>handler</i> for this condition type and calls the handler. The <i>handler</i> can now search for restarts and use one of these restarts to repair the current problem. As part of a user interface (for example of a debugger), these restarts can also presented to the user, so that the user can select and invoke one of the available restarts. Since the condition handler is called in the context of the error (without unwinding the stack), full error recovery is possible in many cases, where other exception handling systems would have already terminated the current routine.</p>
+<p>In the following example (using <a href="/wiki/Symbolics_Genera" title="Symbolics Genera" class="mw-redirect">Symbolics Genera</a>) the user tries to open a file in a Lisp function <i>test</i> called from the Read-Eval-Print-LOOP (<a href="/wiki/REPL" title="REPL" class="mw-redirect">REPL</a>), when the file does not exist. The Lisp system presents four restarts. The user selects the <i>Retry OPEN using a different pathname</i> restart and enters a different pathname (lispm-init.lisp instead of lispm-int.lisp). The user code does not contain any error handling code. The whole error handling and restart code is provided by the Lisp system, which can handle and repair the error without terminating the user code.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="text source-text" style="font-family:monospace;">
+<pre class="de1">
+Command: (test "&gt;zippy&gt;lispm-int.lisp")
+ 
+Error: The file was not found.
+       For lispm:&gt;zippy&gt;lispm-int.lisp.newest
+ 
+LMFS:OPEN-LOCAL-LMFS-1
+   Arg 0: #P"lispm:&gt;zippy&gt;lispm-int.lisp.newest"
+ 
+s-A, &lt;Resume&gt;: Retry OPEN of lispm:&gt;zippy&gt;lispm-int.lisp.newest
+s-B:           Retry OPEN using a different pathname
+s-C, &lt;Abort&gt;:  Return to Lisp Top Level in a TELNET server
+s-D:           Restart process TELNET terminal
+ 
+-&gt; Retry OPEN using a different pathname
+Use what pathname instead [default lispm:&gt;zippy&gt;lispm-int.lisp.newest]:
+   lispm:&gt;zippy&gt;lispm-init.lisp.newest
+ 
+...the program continues
+</pre></div>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=20" title="Edit section: Common Lisp Object System">edit</a>]</span> <span class="mw-headline" id="Common_Lisp_Object_System">Common Lisp Object System</span></h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/Common_Lisp_Object_System" title="Common Lisp Object System">Common Lisp Object System</a></div>
+<p>Common Lisp includes a toolkit for <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a>, the Common Lisp Object System or <a href="/wiki/Common_Lisp_Object_System" title="Common Lisp Object System">CLOS</a>, which is one of the most powerful object systems available in any language. For example <a href="/wiki/Peter_Norvig" title="Peter Norvig">Peter Norvig</a> explains how many <a href="/wiki/Design_pattern_(computer_science)" title="Design pattern (computer science)">Design Patterns</a> are simpler to implement in a dynamic language with the features of CLOS (Multiple Inheritance, Mixins, Multimethods, Metaclasses, Method combinations, ...)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>6<span>]</span></a></sup>. Several extensions to Common Lisp for object-oriented programming have been proposed to be included into the ANSI Common Lisp standard, but eventually CLOS was adopted as the standard object-system for Common Lisp. CLOS is a <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic</a> object system with <a href="/wiki/Multiple_dispatch" title="Multiple dispatch">multiple dispatch</a> and <a href="/wiki/Multiple_inheritance" title="Multiple inheritance">multiple inheritance</a>, and differs radically from the OOP facilities found in static languages such as <a href="/wiki/C%2B%2B" title="C++">C++</a> or <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>. As a dynamic object system, CLOS allows changes at runtime to generic functions and classes. Methods can be added and removed, classes can be added and redefined, objects can be updated for class changes and the class of objects can be changed.</p>
+<p>CLOS has been integrated into ANSI Common Lisp. Generic Functions can be used like normal functions and are a first-class data type. Every CLOS class is integrated into the Common Lisp type system. Many Common Lisp types have a corresponding class. There is more potential use of CLOS for Common Lisp. The specification does not say whether conditions are implemented with CLOS. Pathnames and streams could be implemented with CLOS. These further usage possibilities of CLOS for ANSI Common Lisp are not part of the standard. Actual Common Lisp implementations are using CLOS for pathnames, streams, input/output, conditions, the implementation of CLOS itself and more.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=21" title="Edit section: Compiler and Interpreter">edit</a>]</span> <span class="mw-headline" id="Compiler_and_Interpreter">Compiler and Interpreter</span></h2>
+<p>Several implementations of earlier Lisp dialects provided both an interpreter and a compiler. Unfortunately often the semantics were different. These earlier Lisps implemented lexical scoping in the compiler and dynamic scoping in the interpreter. Common Lisp requires that both the interpreter and compiler use lexical scoping by default. The Common Lisp standard describes both the semantics of the interpreter and a compiler. The compiler can be called using the function <i>compile</i> for individual functions and using the function <i>compile-file</i> for files. Common Lisp allows type declarations and provides ways to influence the compiler code generation policy. For the latter various optimization qualities can be given values between 0 (not important) and 3 (most important): <i>speed</i>, <i>space</i>, <i>safety</i>, <i>debug</i> and <i>compilation-speed</i>.</p>
+<p>There is also a function to evaluate Lisp code: <i>eval</i>. <i>eval</i> takes code as pre-parsed s-expressions and not, like in some other languages, as text strings. This way code can be constructed with the usual Lisp functions for constructing lists and symbols and then this code can be evaluate with <i>eval</i>. Several Common Lisp implementations (like Clozure CL and SBCL) are implementing <i>eval</i> using their compiler. This way code is compiled, even though it is evaluated using the function <i>eval</i>.</p>
+<p>The file compiler is invoked using the function <i>compile-file</i>. The generated file with compiled code is called a <i>fasl</i> (from <i>fast load</i>) file. These <i>fasl</i> files and also source code files can be loaded with the function <i>load</i> into a running Common Lisp system. Depending on the implementation, the file compiler generates byte-code (for example for the <a href="/wiki/Java_Virtual_Machine" title="Java Virtual Machine">Java Virtual Machine</a>), <a href="/wiki/C_(programming_language)" title="C (programming language)">C language</a> code (which then is compiled with a C compiler) or, directly, native code.</p>
+<p>Common Lisp implementations can be used interactively, even though the code gets fully compiled. The idea of an <a href="/wiki/Interpreted_language" title="Interpreted language">Interpreted language</a> thus does not apply for interactive Common Lisp.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=22" title="Edit section: Code examples">edit</a>]</span> <span class="mw-headline" id="Code_examples">Code examples</span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=23" title="Edit section: Birthday paradox">edit</a>]</span> <span class="mw-headline" id="Birthday_paradox">Birthday paradox</span></h3>
+<p>The following program calculates the smallest number of people in a room for whom the probability of completely unique birthdays is less than 50% (the so-called <a href="/wiki/Birthday_paradox" title="Birthday paradox" class="mw-redirect">birthday paradox</a>, where for 1 person the probability is obviously 100%, for 2 it is 364/365, etc.) (answer = 23).</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span>defconstant +year-size+ 365<span class="br0">)</span>
+ 
+<span class="br0">(</span><span class="kw1">defun</span> birthday-paradox <span class="br0">(</span>probability number-of-people<span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>new-probability <span class="br0">(</span>* <span class="br0">(</span>/ <span class="br0">(</span>- +year-size+ number-of-people<span class="br0">)</span>
+                               +year-size+<span class="br0">)</span>
+                            probability<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="sy0">&lt;</span> new-probability <span class="nu0">0.5</span><span class="br0">)</span>
+        <span class="br0">(</span><span class="nu0">1</span>+ number-of-people<span class="br0">)</span>
+        <span class="br0">(</span>birthday-paradox new-probability <span class="br0">(</span><span class="nu0">1</span>+ number-of-people<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Calling the example function using the <a href="/wiki/REPL" title="REPL" class="mw-redirect">REPL</a> (Read Eval Print Loop):</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="text source-text" style="font-family:monospace;">
+<pre class="de1">
+CL-USER &gt; (birthday-paradox 1.0 1)
+23
+</pre></div>
+</div>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=24" title="Edit section: Sorting a list of person objects">edit</a>]</span> <span class="mw-headline" id="Sorting_a_list_of_person_objects">Sorting a list of person objects</span></h3>
+<p>We define a class PERSON and a method for displaying the name and age of a person. Next we define a group of persons as a list of PERSON objects. Then we iterate over the sorted list.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span>defclass person <span class="br0">(</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="br0">(</span><span class="kw1">name</span> <span class="sy0">:</span><span class="me1">initarg</span> <span class="sy0">:</span><span class="kw1">name</span> <span class="sy0">:</span><span class="me1">accessor</span> person-<span class="kw1">name</span><span class="br0">)</span>
+   <span class="br0">(</span>age  <span class="sy0">:</span><span class="me1">initarg</span> <span class="sy0">:</span><span class="me1">age</span>  <span class="sy0">:</span><span class="me1">accessor</span> person-age<span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span><span class="sy0">:</span><span class="me1">documentation</span> <span class="st0">"The class PERSON with slots NAME and AGE."</span><span class="br0">)</span><span class="br0">)</span>
+ 
+<span class="br0">(</span>defmethod display <span class="br0">(</span><span class="br0">(</span>object person<span class="br0">)</span> stream<span class="br0">)</span>
+  <span class="st0">"Displaying a PERSON object to an output stream."</span>
+  <span class="br0">(</span>with-slots <span class="br0">(</span><span class="kw1">name</span> age<span class="br0">)</span> object
+    <span class="br0">(</span>format stream <span class="st0">"~a (~a)"</span> <span class="kw1">name</span> age<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+ 
+<span class="br0">(</span>defparameter *group*
+  <span class="br0">(</span><span class="kw1">list</span> <span class="br0">(</span>make-instance 'person <span class="sy0">:</span><span class="kw1">name</span> <span class="st0">"Bob"</span>   <span class="sy0">:</span><span class="me1">age</span> 33<span class="br0">)</span>
+        <span class="br0">(</span>make-instance 'person <span class="sy0">:</span><span class="kw1">name</span> <span class="st0">"Chris"</span> <span class="sy0">:</span><span class="me1">age</span> 16<span class="br0">)</span>
+        <span class="br0">(</span>make-instance 'person <span class="sy0">:</span><span class="kw1">name</span> <span class="st0">"Ash"</span>   <span class="sy0">:</span><span class="me1">age</span> <span class="nu0">23</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="st0">"A list of PERSON objects."</span><span class="br0">)</span>
+ 
+<span class="br0">(</span><span class="kw1">dolist</span> <span class="br0">(</span>person <span class="br0">(</span>sort <span class="br0">(</span>copy-<span class="kw1">list</span> *group*<span class="br0">)</span>
+                      #'<span class="sy0">&gt;</span>
+                      <span class="sy0">:</span><span class="me1">key</span> #'person-age<span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span>display person *standard-output*<span class="br0">)</span>
+  <span class="br0">(</span>terpri<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>It prints the three names with descending age.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="text source-text" style="font-family:monospace;">
+<pre class="de1">
+Bob (33)
+Ash (23)
+Chris (16)
+</pre></div>
+</div>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=25" title="Edit section: Exponentiating by squaring">edit</a>]</span> <span class="mw-headline" id="Exponentiating_by_squaring">Exponentiating by squaring</span></h3>
+<p>Use of the LOOP macro is demonstrated:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">defun</span> power <span class="br0">(</span>x n<span class="br0">)</span>
+  <span class="br0">(</span>loop with result <span class="sy0">=</span> 1
+        while <span class="br0">(</span><span class="kw1">plusp</span> n<span class="br0">)</span>
+        <span class="kw1">when</span> <span class="br0">(</span><span class="kw1">oddp</span> n<span class="br0">)</span> <span class="kw1">do</span> <span class="br0">(</span><span class="kw1">setf</span> result <span class="br0">(</span>* result x<span class="br0">)</span><span class="br0">)</span>
+        <span class="kw1">do</span> <span class="br0">(</span><span class="kw1">setf</span> x <span class="br0">(</span>* x x<span class="br0">)</span>
+                 n <span class="br0">(</span><span class="kw1">truncate</span> n 2<span class="br0">)</span><span class="br0">)</span>
+        finally <span class="br0">(</span><span class="kw1">return</span> result<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Example use:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="text source-text" style="font-family:monospace;">
+<pre class="de1">
+CL-USER &gt; (power 2 200)
+1606938044258990275541962092341162602522202993782792835301376
+</pre></div>
+</div>
+<p>Compare with the built in exponentiation:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="text source-text" style="font-family:monospace;">
+<pre class="de1">
+CL-USER &gt; (= (expt 2 200) (power 2 200))
+T
+</pre></div>
+</div>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=26" title="Edit section: Find the list of available shells">edit</a>]</span> <span class="mw-headline" id="Find_the_list_of_available_shells">Find the list of available shells</span></h3>
+<p>WITH-OPEN-FILE is a macro that opens a file and provides a stream. When the form is returning, the file is automatically closed. FUNCALL calls a function object. The LOOP collects all lines that match the predicate.</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">defun</span> list-matching-lines <span class="br0">(</span>file predicate<span class="br0">)</span>
+  <span class="st0">"Returns a list of lines in file, for which the predicate applied to
+ the line returns T."</span>
+  <span class="br0">(</span>with-open-file <span class="br0">(</span>stream file<span class="br0">)</span>
+    <span class="br0">(</span>loop for line <span class="sy0">=</span> <span class="br0">(</span>read-line stream <span class="kw1">nil</span> <span class="kw1">nil</span><span class="br0">)</span>
+          while line
+          <span class="kw1">when</span> <span class="br0">(</span><span class="kw1">funcall</span> predicate line<span class="br0">)</span>
+          collect it<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>The function AVAILABLE-SHELLS calls above function LIST-MATCHING-LINES with a pathname and an anonymous function as the predicate. The predicate returns the pathname of a shell or NIL (if the string is not the filename of a shell).</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="lisp source-lisp" style="font-family:monospace;">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">defun</span> available-shells <span class="br0">(</span><span class="sy0">&amp;</span>optional <span class="br0">(</span>file #p<span class="st0">"/etc/shells"</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="br0">(</span>list-matching-lines
+   file
+   <span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>line<span class="br0">)</span>
+     <span class="br0">(</span><span class="kw1">and</span> <span class="br0">(</span><span class="kw1">plusp</span> <span class="br0">(</span><span class="kw1">length</span> line<span class="br0">)</span><span class="br0">)</span>
+          <span class="br0">(</span>char<span class="sy0">=</span> <span class="br0">(</span>char line <span class="nu0">0</span><span class="br0">)</span> #\/<span class="br0">)</span>
+          <span class="br0">(</span>pathname
+           <span class="br0">(</span>string-right-trim '<span class="br0">(</span>#\space #\tab<span class="br0">)</span> line<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>An example call using Mac OS X 10.6:</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;">
+<div class="text source-text" style="font-family:monospace;">
+<pre class="de1">
+CL-USER &gt; (available-shells)
+(#P"/bin/bash" #P"/bin/csh" #P"/bin/ksh" #P"/bin/sh" #P"/bin/tcsh" #P"/bin/zsh")
+</pre></div>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=27" title="Edit section: Comparison with other Lisps">edit</a>]</span> <span class="mw-headline" id="Comparison_with_other_Lisps">Comparison with other Lisps</span></h2>
+<p>Common Lisp is most frequently compared with, and contrasted to, <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>—if only because they are the two most popular Lisp dialects. Scheme predates CL, and comes not only from the same Lisp tradition but from some of the same engineers—<a href="/wiki/Guy_L._Steele,_Jr." title="Guy L. Steele, Jr.">Guy L. Steele</a>, with whom <a href="/wiki/Gerald_Jay_Sussman" title="Gerald Jay Sussman">Gerald Jay Sussman</a> designed Scheme, chaired the standards committee for Common Lisp.</p>
+<p>Common Lisp is a general-purpose programming language, in contrast to Lisp variants such as <a href="/wiki/Emacs_Lisp" title="Emacs Lisp">Emacs Lisp</a> and <a href="/wiki/AutoLISP" title="AutoLISP">AutoLISP</a> which are embedded extension languages in particular products. Unlike many earlier Lisps, Common Lisp (like <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>) uses lexical variable <a href="/wiki/Scope_(programming)" title="Scope (programming)">scope</a> by default for both interpreted and compiled code.</p>
+<p>Most of the Lisp systems whose designs contributed to Common Lisp—such as <a href="/wiki/ZetaLisp" title="ZetaLisp" class="mw-redirect">ZetaLisp</a> and Franz Lisp—used dynamically <a href="/wiki/Scope_(programming)" title="Scope (programming)">scoped</a> variables in their interpreters and lexically scoped variables in their compilers. Scheme introduced the sole use of lexically scoped variables to Lisp; an inspiration from <a href="/wiki/ALGOL_68" title="ALGOL 68">ALGOL 68</a> which was widely recognized as a good idea. CL supports dynamically scoped variables as well, but they must be explicitly declared as "special". There are no differences in scoping between ANSI CL interpreters and compilers.</p>
+<p>Common Lisp is sometimes termed a <i>Lisp-2</i> and Scheme a <i>Lisp-1</i>, referring to CL's use of separate namespaces for functions and variables. (In fact, CL has <i>many</i> namespaces, such as those for go tags, block names, and <code>loop</code> keywords.) There is a long-standing controversy between CL and Scheme advocates over the tradeoffs involved in multiple namespaces. In Scheme, it is (broadly) necessary to avoid giving variables names which clash with functions; Scheme functions frequently have arguments named <code>lis</code>, <code>lst</code>, or <code>lyst</code> so as not to conflict with the system function <code>list</code>. However, in CL it is necessary to explicitly refer to the function namespace when passing a function as an argument—which is also a common occurrence, as in the <code>sort</code> example above.</p>
+<p>CL also differs from Scheme in its handling of boolean values. Scheme uses the special values #t and #f to represent truth and falsity. CL follows the older Lisp convention of using the symbols T and NIL, with NIL standing also for the empty list. In CL, <i>any</i> non-NIL value is treated as true by conditionals, such as <code>if</code>, whereas in Scheme all non-#f values are treated as true. These conventions allow some operators in both languages to serve both as predicates (answering a boolean-valued question) and as returning a useful value for further computation, but in Scheme the value '() which is equivalent to NIL in Common Lisp evaluates to true in a boolean expression.</p>
+<p>Lastly, the Scheme standards documents require <a href="/wiki/Tail_recursion" title="Tail recursion" class="mw-redirect">tail-call optimization</a>, which the CL standard does not. Most CL implementations do offer tail-call optimization, although often only when the programmer uses an optimization directive. Nonetheless, common CL coding style does not favor the ubiquitous use of recursion that Scheme style prefers—what a Scheme programmer would express with tail recursion, a CL user would usually express with an iterative expression in <code>do</code>, <code>dolist</code>, <code>loop</code>, or (more recently) with the <code>iterate</code> package.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=28" title="Edit section: Implementations">edit</a>]</span> <span class="mw-headline" id="Implementations">Implementations</span></h2>
+<p>See the Category <a href="/wiki/Category:Common_Lisp_implementations" title="Category:Common Lisp implementations">Common Lisp implementations</a>.</p>
+<p>Common Lisp is defined by a specification (like <a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> and <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>) rather than by one implementation (like <a href="/wiki/Perl" title="Perl">Perl</a> before version 6). There are many implementations, and the standard details areas in which they may validly differ.</p>
+<p>In addition, implementations tend to come with library packages, which provide functionality not covered in the standard. <a href="/wiki/Free_and_open_source_software" title="Free and open source software">Free and open source software</a> libraries have been created to support such features in a portable way, most notably <a href="http://common-lisp.net/" class="external text" rel="nofollow">Common-Lisp.net</a> and the <a href="http://clocc.sourceforge.net/" class="external text" rel="nofollow">Common Lisp Open Code Collection</a> project.</p>
+<p>Common Lisp implementations may use any mix of native code compilation, byte code compilation or interpretion. Common Lisp has been designed to support <a href="/wiki/Incremental_compiler" title="Incremental compiler">incremental compilers</a>, file compilers and block compilers. Standard declarations to optimize compilation (such as function inlining) are proposed in the language specification. Most Common Lisp implementations compile source code to native <a href="/wiki/Machine_code" title="Machine code">machine code</a>. Some implementations can create (optimized) stand-alone applications. Others compile to <a href="/wiki/Bytecode" title="Bytecode">bytecode</a>, which reduces speed but eases binary-code portability. There are also compilers that compile Common Lisp code to C code. The misconception that Lisp is a purely interpreted language is most likely due to the fact that Lisp environments provide an interactive prompt and that code is compiled one-by-one, in an incremental way. With Common Lisp incremental compilation is widely used.</p>
+<p>Some <a href="/wiki/Unix" title="Unix">Unix</a>-based implementations (<a href="/wiki/CLISP" title="CLISP">CLISP</a>, <a href="/wiki/SBCL" title="SBCL" class="mw-redirect">SBCL</a>) can be used as a <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a>; that is, invoked by the system transparently in the way that a <a href="/wiki/Perl" title="Perl">Perl</a> or <a href="/wiki/Unix_shell" title="Unix shell">Unix shell</a> interpreter is<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>7<span>]</span></a></sup>.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=29" title="Edit section: List of implementations">edit</a>]</span> <span class="mw-headline" id="List_of_implementations">List of implementations</span></h3>
+<h4><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=30" title="Edit section: Commercial implementations">edit</a>]</span> <span class="mw-headline" id="Commercial_implementations">Commercial implementations</span></h4>
+<dl>
+<dt><a href="/wiki/Allegro_Common_Lisp" title="Allegro Common Lisp">Allegro Common Lisp</a>&#160;</dt>
+<dd>for Microsoft Windows, FreeBSD, Linux, Apple Mac OS X and various UNIX variants. Allegro CL provides an <a href="/wiki/Integrated_development_environment" title="Integrated development environment">Integrated Development Environment (IDE)</a> (for Windows and Linux) and extensive capabilities for application delivery.</dd>
+<dt><a href="/wiki/Corman_Common_Lisp" title="Corman Common Lisp">Corman Common Lisp</a>&#160;</dt>
+<dd>for Microsoft Windows.</dd>
+<dt><a href="/w/index.php?title=Liquid_Common_Lisp&amp;action=edit&amp;redlink=1" class="new" title="Liquid Common Lisp (page does not exist)">Liquid Common Lisp</a>&#160;</dt>
+<dd>formerly called <a href="/w/index.php?title=Lucid_Common_Lisp&amp;action=edit&amp;redlink=1" class="new" title="Lucid Common Lisp (page does not exist)">Lucid Common Lisp</a>. Only maintenance, no new releases.</dd>
+<dt><a href="/wiki/LispWorks" title="LispWorks">LispWorks</a>&#160;</dt>
+<dd>for Microsoft Windows, FreeBSD, Linux, Apple Mac OS X and various UNIX variants. LispWorks provides an <a href="/wiki/Integrated_development_environment" title="Integrated development environment">Integrated Development Environment (IDE)</a> (available for all platforms) and extensive capabilities for application delivery.</dd>
+<dt><a href="/wiki/Open_Genera" title="Open Genera" class="mw-redirect">Open Genera</a>&#160;</dt>
+<dd>for DEC Alpha.</dd>
+<dt><a href="/wiki/Scieneer_Common_Lisp" title="Scieneer Common Lisp">Scieneer Common Lisp</a>&#160;</dt>
+<dd>which is designed for high-performance scientific computing.</dd>
+</dl>
+<h4><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=31" title="Edit section: Freely redistributable implementations">edit</a>]</span> <span class="mw-headline" id="Freely_redistributable_implementations">Freely redistributable implementations</span></h4>
+<dl>
+<dt><a href="http://common-lisp.net/project/armedbear/" class="external text" rel="nofollow">Armed Bear Common Lisp</a>&#160;</dt>
+<dd>A CL implementation that runs on the <a href="/wiki/Java_Virtual_Machine" title="Java Virtual Machine">Java Virtual Machine</a>.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup> It includes a compiler to <a href="/wiki/Java_byte_code" title="Java byte code" class="mw-redirect">Java byte code</a>, and allows access to Java libraries from CL. It was formerly just a component of the <a href="http://sourceforge.net/projects/armedbear-j/" class="external text" rel="nofollow">Armed Bear J Editor</a>.</dd>
+<dt><a href="/wiki/CLISP" title="CLISP">CLISP</a>&#160;</dt>
+<dd>A bytecode-compiling implementation, portable and runs on a number of Unix and Unix-like systems (including <a href="/wiki/Mac_OS_X" title="Mac OS X">Mac OS X</a>), as well as Microsoft Windows and several other systems.</dd>
+<dt><a href="/wiki/Clozure_CL" title="Clozure CL">Clozure CL</a> (CCL)&#160;</dt>
+<dd>Originally a <a href="/wiki/Free_and_open_source_software" title="Free and open source software">free and open source</a> fork of Macintosh Common Lisp. As that history implies, CCL was written for the Macintosh, but Clozure CL now runs on <a href="/wiki/Mac_OS_X" title="Mac OS X">Mac OS X</a>, <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>, <a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> and <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>. 32 and 64 bit <a href="/wiki/X86" title="X86">x86</a> ports are supported on each platform. Additionally there are Power PC ports for Mac OS and Linux. CCL was previously known as OpenMCL, but that name is no longer used, to avoid confusion with the open source version of Macintosh Common Lisp.</dd>
+<dt><a href="/wiki/CMUCL" title="CMUCL" class="mw-redirect">CMUCL</a>&#160;</dt>
+<dd>Originally from <a href="/wiki/Carnegie_Mellon_University" title="Carnegie Mellon University">Carnegie Mellon University</a>, now maintained as <a href="/wiki/Free_and_open_source_software" title="Free and open source software">free and open source software</a> by a group of volunteers. CMUCL uses a fast native-code compiler. It is available on <a href="/wiki/Linux" title="Linux">Linux</a> and <a href="/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a> for Intel x86; <a href="/wiki/Linux" title="Linux">Linux</a> for Alpha; <a href="/wiki/Mac_OS_X" title="Mac OS X">Mac OS X</a> for Intel x86 and PowerPC; and Solaris, IRIX, and HP-UX on their native platforms.</dd>
+<dt><a href="/wiki/Embeddable_Common_Lisp" title="Embeddable Common Lisp">Embeddable Common Lisp</a> (ECL)&#160;</dt>
+<dd>ECL includes a bytecode interpreter and compiler. It can also compile Lisp code to machine code via a C compiler. ECL then compiles Lisp code to C, compiles the C code with a C compiler and can then load the resulting machine code. It is also possible to embed ECL in <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> programs.</dd>
+<dt><a href="/wiki/GNU_Common_Lisp" title="GNU Common Lisp">GNU Common Lisp</a> (GCL)&#160;</dt>
+<dd>The <a href="/wiki/GNU" title="GNU">GNU</a> Project's Lisp compiler. Not yet fully ANSI-compliant, GCL is however the implementation of choice for several large projects including the mathematical tools <a href="/wiki/Maxima_(software)" title="Maxima (software)">Maxima</a>, <a href="/wiki/AXIOM" title="AXIOM" class="mw-redirect">AXIOM</a> and <a href="/wiki/ACL2" title="ACL2">ACL2</a>. GCL runs on <a href="/wiki/Linux" title="Linux">Linux</a> under eleven different architectures, and also under Windows, Solaris, and <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>.</dd>
+<dt><a href="/wiki/Macintosh_Common_Lisp" title="Macintosh Common Lisp">Macintosh Common Lisp</a>&#160;</dt>
+<dd>Version 5.2 for Apple Macintosh computers with a PowerPC processor running Mac OS X is open source. RMCL (based on MCL 5.2) runs on Intel-based Apple Macintosh computers using the Rosetta binary translator from Apple.</dd>
+<dt><a href="/wiki/Movitz" title="Movitz">Movitz</a></dt>
+<dd>Implements a Lisp environment for <a href="/wiki/X86" title="X86">x86</a> computers without relying on any underlying OS.</dd>
+<dt><a href="/wiki/Poplog" title="Poplog">Poplog</a>&#160;</dt>
+<dd>Poplog implements a version of CL, with <a href="/wiki/POP-11" title="POP-11">POP-11</a>, and optionally <a href="/wiki/Prolog" title="Prolog">Prolog</a>, and <a href="/wiki/Standard_ML" title="Standard ML">Standard ML</a> (SML), allowing mixed language programming. For all, the implementation language is POP-11, which is compiled incrementally. It also has an integrated <a href="/wiki/Emacs" title="Emacs">Emacs</a>-like editor that communicates with the compiler.</dd>
+<dt><a href="/wiki/Steel_Bank_Common_Lisp" title="Steel Bank Common Lisp">Steel Bank Common Lisp</a> (SBCL)&#160;</dt>
+<dd>A branch from <a href="/wiki/CMUCL" title="CMUCL" class="mw-redirect">CMUCL</a>. "Broadly speaking, SBCL is distinguished from CMU CL by a greater emphasis on maintainability."<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup> SBCL runs on the platforms CMUCL does, except HP/UX; in addition, it runs on Linux for AMD64, PowerPC, SPARC, and MIPS<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>10<span>]</span></a></sup> , and has experimental support for running on Windows. SBCL does not use an interpreter by default; all expressions are compiled to native code unless the user switches the interpreter on. The SBCL compiler generates fast native code.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>11<span>]</span></a></sup></dd>
+<dt><a href="/w/index.php?title=Ufasoft_Common_Lisp&amp;action=edit&amp;redlink=1" class="new" title="Ufasoft Common Lisp (page does not exist)">Ufasoft Common Lisp</a>&#160;</dt>
+<dd>port of CLISP for windows platform with core written in C.</dd>
+</dl>
+<h4><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=32" title="Edit section: Other (mostly historical) implementations">edit</a>]</span> <span class="mw-headline" id="Other_.28mostly_historical.29_implementations">Other (mostly historical) implementations</span></h4>
+<dl>
+<dt>Austin Kyoto Common Lisp&#160;</dt>
+<dd>an evolution of Kyoto Common Lisp</dd>
+<dt>Butterfly Common Lisp&#160;</dt>
+<dd>an implementation written in Scheme for the <a href="/wiki/BBN_Butterfly" title="BBN Butterfly">BBN Butterfly</a> multi-processor computer</dd>
+<dt>CLICC&#160;</dt>
+<dd>a Common Lisp to C compiler</dd>
+<dt>CLOE&#160;</dt>
+<dd>Common Lisp for PCs by Symbolics</dd>
+<dt>Codemist Common Lisp&#160;</dt>
+<dd>used for the commercial version of the computer algebra system Axiom</dd>
+<dt>ExperCommon Lisp&#160;</dt>
+<dd>an early implementation for the Apple Macintosh by ExperTelligence</dd>
+<dt><a href="/w/index.php?title=Golden_Common_Lisp&amp;action=edit&amp;redlink=1" class="new" title="Golden Common Lisp (page does not exist)">Golden Common Lisp</a>&#160;</dt>
+<dd>an implementation for the PC by GoldHill Inc.</dd>
+<dt>Ibuki Common Lisp&#160;</dt>
+<dd>a commercialized version of Kyoto Common Lisp</dd>
+<dt><a href="/wiki/Kyoto_Common_Lisp" title="Kyoto Common Lisp">Kyoto Common Lisp</a>&#160;</dt>
+<dd>the first Common Lisp compiler that used C as a target language. GCL and ECL originate from this Common Lisp implementation.</dd>
+<dt>L&#160;</dt>
+<dd>a small version of Common Lisp for embedded systems</dd>
+<dt><a href="/w/index.php?title=Lucid_Common_Lisp&amp;action=edit&amp;redlink=1" class="new" title="Lucid Common Lisp (page does not exist)">Lucid Common Lisp</a>&#160;</dt>
+<dd>a once popular Common Lisp implementation for UNIX systems</dd>
+<dt>Procyon Common Lisp&#160;</dt>
+<dd>an implementation for Windows and Mac OS, used by Franz for their Windows port of Allegro CL</dd>
+<dt>Star Sapphire Common LISP&#160;</dt>
+<dd>an implementation for the PC</dd>
+<dt><a href="/wiki/SubL" title="SubL">SubL</a>&#160;</dt>
+<dd>a variant of Common Lisp used for the implementation of the <a href="/wiki/Cyc" title="Cyc">Cyc</a> knowledge-based system</dd>
+<dt>Top Level Common Lisp&#160;</dt>
+<dd>an early implementation for concurrent execution</dd>
+<dt>WCL&#160;</dt>
+<dd>a shared library implementation</dd>
+<dt><a href="/wiki/Vax_Common_Lisp" title="Vax Common Lisp">Vax Common Lisp</a>&#160;</dt>
+<dd><a href="/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">Digital Equipment Corporation</a>'s implementation that ran on <a href="/wiki/VAX" title="VAX">VAX</a> systems running <a href="/wiki/OpenVMS" title="OpenVMS">VMS</a> or <a href="/wiki/ULTRIX" title="ULTRIX" class="mw-redirect">ULTRIX</a></dd>
+</dl>
+<p><a href="/wiki/Lisp_Machine" title="Lisp Machine" class="mw-redirect">Lisp Machines</a> (from <a href="/wiki/Symbolics" title="Symbolics">Symbolics</a>, TI and Xerox) provided implementations of Common Lisp in addition to their native Lisp dialect (Lisp Machine Lisp or InterLisp). CLOS was also available. Symbolics provides a version of Common Lisp that is based on ANSI Common Lisp.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=33" title="Edit section: Applications">edit</a>]</span> <span class="mw-headline" id="Applications">Applications</span></h2>
+<p>See the Category <a href="/wiki/Category:Common_Lisp_software" title="Category:Common Lisp software">Common Lisp software</a>.</p>
+<p>Common Lisp is used to develop research applications (often in Artificial Intelligence), for rapid development of prototypes or for deployed applications.</p>
+<p>Common Lisp is used in many commercial applications, including the <a href="/wiki/Yahoo!" title="Yahoo!">Yahoo!</a> Store web-commerce site, which originally involved <a href="/wiki/Paul_Graham_(computer_programmer)" title="Paul Graham (computer programmer)">Paul Graham</a> and was later rewritten in C++ and Perl.<sup id="cite_ref-doubt-not-corporate-foolishness_11-0" class="reference"><a href="#cite_note-doubt-not-corporate-foolishness-11"><span>[</span>12<span>]</span></a></sup> Other notable examples include:</p>
+<ul>
+<li><a href="/wiki/ACT-R" title="ACT-R">ACT-R</a>, a cognitive architecture used in a large number of research projects.</li>
+<li>Authorizer's Assistant<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>13<span>]</span></a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>14<span>]</span></a></sup>, a large rule-based system used by American Express, analyzing credit requests.</li>
+<li><a href="/wiki/Cyc" title="Cyc">Cyc</a>, a long running project with the aim to create a knowledge-based system that provides a huge amount of common sense knowledge</li>
+<li>The <a href="/wiki/Dynamic_Analysis_and_Replanning_Tool" title="Dynamic Analysis and Replanning Tool">Dynamic Analysis and Replanning Tool</a> (DART), which is said to alone have paid back during the years from 1991 to 1995 for all thirty years of <a href="/wiki/DARPA" title="DARPA">DARPA</a> investments in AI research.</li>
+<li><a href="http://www.gensym.com/index.php?option=com_content&amp;view=article&amp;id=47&amp;Itemid=54" class="external text" rel="nofollow">G2</a> from Gensym, a real-time business rules engine (BRE)</li>
+<li>The development environment for the <a href="/wiki/Jak_and_Daxter" title="Jak and Daxter">Jak and Daxter</a> video game series, developed by <a href="/wiki/Naughty_Dog" title="Naughty Dog">Naughty Dog</a>.</li>
+<li><a href="/wiki/ITA_Software" title="ITA Software">ITA Software</a>'s low fare search engine, used by travel websites such as <a href="/wiki/Orbitz" title="Orbitz">Orbitz</a> and <a href="/wiki/Kayak.com" title="Kayak.com">Kayak.com</a> and airlines such as <a href="/wiki/American_Airlines" title="American Airlines">American Airlines</a>, <a href="/wiki/Continental_Airlines" title="Continental Airlines">Continental Airlines</a> and <a href="/wiki/US_Airways" title="US Airways">US Airways</a>.</li>
+<li><a href="/wiki/Mirai_(software)" title="Mirai (software)">Mirai</a>, a 3d graphics suite. It was used to animate the face of Gollum in the movie Lord of the Rings: The Two Towers.</li>
+<li><a href="/wiki/Prototype_Verification_System" title="Prototype Verification System">Prototype Verification System</a> (PVS), a mechanized environment for formal specification and verification.</li>
+<li><a href="http://www2.siba.fi/PWGL/" class="external text" rel="nofollow">PWGL</a> is a sophisticated visual programming environment based on Common Lisp, used in <a href="/wiki/Computer_assisted_composition" title="Computer assisted composition" class="mw-redirect">Computer assisted composition</a> and sound synthesis.</li>
+<li><a href="http://www.racer-systems.com/" class="external text" rel="nofollow">RacerPro</a>, a semantic web reasoning system and information repository.</li>
+<li><a href="http://www.stsci.edu/resources/software_hardware/spike/" class="external text" rel="nofollow">SPIKE</a>, a scheduling system for earth or space based observatories and satellites, notably the Hubble Space Telescope.</li>
+</ul>
+<p>There also exist open-source applications written in Common Lisp, such as:</p>
+<ul>
+<li><a href="/wiki/ACL2" title="ACL2">ACL2</a>, a full-featured <a href="/wiki/Theorem_prover" title="Theorem prover" class="mw-redirect">theorem prover</a> for an <a href="/wiki/Applicative_programming_language" title="Applicative programming language">applicative</a> variant of Common Lisp.</li>
+<li><a href="/wiki/Axiom_(computer_algebra_system)" title="Axiom (computer algebra system)">Axiom</a>, a sophisticated <a href="/wiki/Computer_algebra_system" title="Computer algebra system">computer algebra system</a>.</li>
+<li><a href="/wiki/Maxima_(software)" title="Maxima (software)">Maxima</a>, a sophisticated <a href="/wiki/Computer_algebra_system" title="Computer algebra system">computer algebra system</a>.</li>
+<li><a href="/wiki/OpenMusic" title="OpenMusic">OpenMusic</a> is an object-oriented visual programming environment based on Common Lisp, used in <a href="/wiki/Computer_assisted_composition" title="Computer assisted composition" class="mw-redirect">Computer assisted composition</a>.</li>
+<li><a href="/wiki/Stumpwm" title="Stumpwm" class="mw-redirect">Stumpwm</a>, a tiling, keyboard driven X11 Window Manager written entirely in Common Lisp.</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=34" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 0.5em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;">
+<tr>
+<td><a href="/wiki/File:Internet_map_1024.jpg" class="image"><img alt="Internet map 1024.jpg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" /></a></td>
+<td style="padding:0 0.2em;"><i><b><a href="/wiki/Portal:Computer_Science" title="Portal:Computer Science" class="mw-redirect">Computer Science portal</a></b></i></td>
+</tr>
+</table>
+</div>
+<ul>
+<li><i><a href="/wiki/Common_Lisp_the_Language" title="Common Lisp the Language">Common Lisp the Language</a></i></li>
+<li><i><a href="/wiki/On_Lisp" title="On Lisp">On Lisp</a></i></li>
+<li><i><a href="/wiki/Practical_Common_Lisp" title="Practical Common Lisp">Practical Common Lisp</a></i></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=35" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist references references-column-count references-column-count-2" style="column-count: 2; -moz-column-count: 2; -webkit-column-count: 2;">
+<ol class="references">
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> <a href="http://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+INCITS+226-1994+(R2004)" class="external text" rel="nofollow">Document page</a> at ANSI website</li>
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> <a href="http://www.lispworks.com/documentation/HyperSpec/Front/Help.htm#Authorship" class="external text" rel="nofollow">Authorship of the Common Lisp HyperSpec</a></li>
+<li id="cite_note-reddy-2"><b><a href="#cite_ref-reddy_2-0">^</a></b> <span class="citation web">Reddy, Abhishek (2008-08-22). <a href="http://abhishek.geek.nz/docs/features-of-common-lisp" class="external text" rel="nofollow">"Features of Common Lisp"</a><span class="printonly">. <a href="http://abhishek.geek.nz/docs/features-of-common-lisp" class="external free" rel="nofollow">http://abhishek.geek.nz/docs/features-of-common-lisp</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Features+of+Common+Lisp&amp;rft.atitle=&amp;rft.aulast=Reddy&amp;rft.aufirst=Abhishek&amp;rft.au=Reddy%2C%26%2332%3BAbhishek&amp;rft.date=2008-08-22&amp;rft_id=http%3A%2F%2Fabhishek.geek.nz%2Fdocs%2Ffeatures-of-common-lisp&amp;rfr_id=info:sid/en.wikipedia.org:Common_Lisp"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-3"><b><a href="#cite_ref-3">^</a></b> <span class="citation web"><a href="http://www.cliki.net/Unicode%20Support" class="external text" rel="nofollow">"Unicode support"</a>. <i>The Common Lisp Wiki</i><span class="printonly">. <a href="http://www.cliki.net/Unicode%20Support" class="external free" rel="nofollow">http://www.cliki.net/Unicode%20Support</a></span><span class="reference-accessdate">. Retrieved 2008-08-21</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Unicode+support&amp;rft.atitle=The+Common+Lisp+Wiki&amp;rft_id=http%3A%2F%2Fwww.cliki.net%2FUnicode%2520Support&amp;rfr_id=info:sid/en.wikipedia.org:Common_Lisp"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <span class="citation Journal">Richard P. Gabriel, Kent M. Pitman (June 1988). <a href="http://www.nhplace.com/kent/Papers/Technical-Issues.html" class="external text" rel="nofollow">"Technical Issues of Separation in Function Cells and Value Cells"</a>. <i>Lisp and Symbolic Computation</i> <b>1</b> (1): 81–101<span class="printonly">. <a href="http://www.nhplace.com/kent/Papers/Technical-Issues.html" class="external free" rel="nofollow">http://www.nhplace.com/kent/Papers/Technical-Issues.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Technical+Issues+of+Separation+in+Function+Cells+and+Value+Cells&amp;rft.jtitle=Lisp+and+Symbolic+Computation&amp;rft.aulast=Richard+P.+Gabriel%2C+Kent+M.+Pitman&amp;rft.au=Richard+P.+Gabriel%2C+Kent+M.+Pitman&amp;rft.date=June+1988&amp;rft.volume=1&amp;rft.issue=1&amp;rft.pages=81%E2%80%93101&amp;rft_id=http%3A%2F%2Fwww.nhplace.com%2Fkent%2FPapers%2FTechnical-Issues.html&amp;rfr_id=info:sid/en.wikipedia.org:Common_Lisp"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-5"><b><a href="#cite_ref-5">^</a></b> <a href="http://norvig.com/design-patterns/ppframe.htm" class="external text" rel="nofollow">Peter Norvig, Design Patterns in Dynamic Programming</a></li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> <a href="http://clisp.cons.org/impnotes/quickstart.html#quickstart-unix" class="external text" rel="nofollow">CLISP as a scripting language under Unix</a></li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> <span class="citation web"><a href="http://common-lisp.net/project/armedbear/" class="external text" rel="nofollow">"Armed Bear Common Lisp"</a><span class="printonly">. <a href="http://common-lisp.net/project/armedbear/" class="external free" rel="nofollow">http://common-lisp.net/project/armedbear/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Armed+Bear+Common+Lisp&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fcommon-lisp.net%2Fproject%2Farmedbear%2F&amp;rfr_id=info:sid/en.wikipedia.org:Common_Lisp"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> <span class="citation web"><a href="http://sbcl.sourceforge.net/history.html" class="external text" rel="nofollow">"History and Copyright"</a>. <i>Steel Bank Common Lisp</i><span class="printonly">. <a href="http://sbcl.sourceforge.net/history.html" class="external free" rel="nofollow">http://sbcl.sourceforge.net/history.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=History+and+Copyright&amp;rft.atitle=Steel+Bank+Common+Lisp&amp;rft_id=http%3A%2F%2Fsbcl.sourceforge.net%2Fhistory.html&amp;rfr_id=info:sid/en.wikipedia.org:Common_Lisp"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-9"><b><a href="#cite_ref-9">^</a></b> <span class="citation web"><a href="http://www.sbcl.org/platform-table.html" class="external text" rel="nofollow">"Platform Table"</a>. <i>Steel Bank Common Lisp</i><span class="printonly">. <a href="http://www.sbcl.org/platform-table.html" class="external free" rel="nofollow">http://www.sbcl.org/platform-table.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Platform+Table&amp;rft.atitle=Steel+Bank+Common+Lisp&amp;rft_id=http%3A%2F%2Fwww.sbcl.org%2Fplatform-table.html&amp;rfr_id=info:sid/en.wikipedia.org:Common_Lisp"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-10"><b><a href="#cite_ref-10">^</a></b> <a href="http://shootout.alioth.debian.org/u32q/benchmark.php?test=all&amp;lang=all" class="external text" rel="nofollow">SBCL ranks above other dynamic language implementations in the 'Computer Language Benchmark Game'</a></li>
+<li id="cite_note-doubt-not-corporate-foolishness-11"><b><a href="#cite_ref-doubt-not-corporate-foolishness_11-0">^</a></b> "In January 2003, Yahoo released a new version of the editor written in C++ and Perl. It's hard to say whether the program is no longer written in Lisp, though, because to translate this program into C++ they literally had to write a Lisp interpreter: the source files of all the page-generating templates are still, as far as I know, Lisp code." <a href="/wiki/Paul_Graham_(computer_programmer)" title="Paul Graham (computer programmer)">Paul Graham</a>, <a href="http://www.paulgraham.com/avg.html" class="external text" rel="nofollow">Beating the Averages</a></li>
+<li id="cite_note-12"><b><a href="#cite_ref-12">^</a></b> <a href="http://www.aaai.org/Papers/IAAI/1989/IAAI89-031.pdf" class="external text" rel="nofollow">Authorizer's Assistant</a></li>
+<li id="cite_note-13"><b><a href="#cite_ref-13">^</a></b> <a href="http://www.prenhall.com/divisions/bp/app/alter/student/useful/ch9amex.html" class="external text" rel="nofollow">American Express Authorizer's Assistant</a></li>
+</ol>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=36" title="Edit section: Books">edit</a>]</span> <span class="mw-headline" id="Books">Books</span></h2>
+<p>A chronological list of books published (or about to be published) about Common Lisp (the language) or about programming with Common Lisp (especially AI programming).</p>
+<div class="refbegin references references-column-count references-column-count-2" style="column-count: 2; -moz-column-count: 2; -webkit-column-count: 2;">
+<ul>
+<li><a href="/wiki/Guy_L._Steele" title="Guy L. Steele" class="mw-redirect">Guy L. Steele</a>: <i>Common Lisp the Language, 1st Edition</i>, Digital Press, 1984, <a href="/wiki/Special:BookSources/093237641X" class="internal mw-magiclink-isbn">ISBN 0-932376-41-X</a></li>
+<li><a href="/wiki/Rodney_Allen_Brooks" title="Rodney Allen Brooks" class="mw-redirect">Rodney Allen Brooks</a>: <i>Programming in Common Lisp</i>, John Wiley and Sons Inc, 1985, <a href="/wiki/Special:BookSources/0471818887" class="internal mw-magiclink-isbn">ISBN 0-471-81888-7</a></li>
+<li><a href="/wiki/Richard_P._Gabriel" title="Richard P. Gabriel">Richard P. Gabriel</a>: <i>Performance and Evaluation of Lisp Systems</i>, The MIT Press, 1985, <a href="/wiki/Special:BookSources/0262571935" class="internal mw-magiclink-isbn">ISBN 0-262-57193-5</a>, <a href="http://www.dreamsongs.com/Files/Timrep.pdf" class="external text" rel="nofollow">PDF</a></li>
+<li><a href="/w/index.php?title=Robert_Wilensky&amp;action=edit&amp;redlink=1" class="new" title="Robert Wilensky (page does not exist)">Robert Wilensky</a>: <i>Common LISPcraft</i>, W.W. Norton &amp; Co., 1986, <a href="/wiki/Special:BookSources/0393955443" class="internal mw-magiclink-isbn">ISBN 0-393-95544-3</a></li>
+<li><a href="/wiki/Eugene_Charniak" title="Eugene Charniak">Eugene Charniak</a>, <a href="/w/index.php?title=Christopher_K._Riesbeck&amp;action=edit&amp;redlink=1" class="new" title="Christopher K. Riesbeck (page does not exist)">Christopher K. Riesbeck</a>, <a href="/w/index.php?title=Drew_V._McDermott&amp;action=edit&amp;redlink=1" class="new" title="Drew V. McDermott (page does not exist)">Drew V. McDermott</a>, <a href="/w/index.php?title=James_R._Meehan&amp;action=edit&amp;redlink=1" class="new" title="James R. Meehan (page does not exist)">James R. Meehan</a>: <i>Artificial Intelligence Programming, 2nd Edition</i>, Lawrence Erlbaum, 1987, <a href="/wiki/Special:BookSources/0898596092" class="internal mw-magiclink-isbn">ISBN 0-89859-609-2</a></li>
+<li><a href="/w/index.php?title=Wendy_L._Milner&amp;action=edit&amp;redlink=1" class="new" title="Wendy L. Milner (page does not exist)">Wendy L. Milner</a>: <i>Common Lisp: A Tutorial</i>, Prentice Hall, 1987, <a href="/wiki/Special:BookSources/0131528440" class="internal mw-magiclink-isbn">ISBN 0-13-152844-0</a></li>
+<li><a href="/w/index.php?title=Deborah_G._Tatar&amp;action=edit&amp;redlink=1" class="new" title="Deborah G. Tatar (page does not exist)">Deborah G. Tatar</a>: <i>A Programmer's Guide to Common Lisp</i>, Longman Higher Education, 1987, <a href="/wiki/Special:BookSources/0137289405" class="internal mw-magiclink-isbn">ISBN 0-13-728940-5</a></li>
+<li><a href="/w/index.php?title=Taiichi_Yuasa&amp;action=edit&amp;redlink=1" class="new" title="Taiichi Yuasa (page does not exist)">Taiichi Yuasa</a>, <a href="/w/index.php?title=Masami_Hagiya&amp;action=edit&amp;redlink=1" class="new" title="Masami Hagiya (page does not exist)">Masami Hagiya</a>: <i>Introduction to Common Lisp</i>, Elsevier Ltd, 1987, <a href="/wiki/Special:BookSources/0127748601" class="internal mw-magiclink-isbn">ISBN 0-12-774860-1</a></li>
+<li><a href="/w/index.php?title=Christian_Queinnec&amp;action=edit&amp;redlink=1" class="new" title="Christian Queinnec (page does not exist)">Christian Queinnec</a>, <a href="/w/index.php?title=Jerome_Chailloux&amp;action=edit&amp;redlink=1" class="new" title="Jerome Chailloux (page does not exist)">Jerome Chailloux</a>: <i>Lisp Evolution and Standardization</i>, Ios Pr Inc., 1988, <a href="/wiki/Special:BookSources/9051990081" class="internal mw-magiclink-isbn">ISBN 90-5199-008-1</a></li>
+<li><a href="/w/index.php?title=Taiichi_Yuasa&amp;action=edit&amp;redlink=1" class="new" title="Taiichi Yuasa (page does not exist)">Taiichi Yuasa</a>, <a href="/w/index.php?title=Richard_Weyhrauch&amp;action=edit&amp;redlink=1" class="new" title="Richard Weyhrauch (page does not exist)">Richard Weyhrauch</a>, <a href="/w/index.php?title=Yasuko_Kitajima&amp;action=edit&amp;redlink=1" class="new" title="Yasuko Kitajima (page does not exist)">Yasuko Kitajima</a>: <i>Common Lisp Drill</i>, Academic Press Inc, 1988, <a href="/wiki/Special:BookSources/012774861X" class="internal mw-magiclink-isbn">ISBN 0-12-774861-X</a></li>
+<li><a href="/w/index.php?title=Wade_L._Hennessey&amp;action=edit&amp;redlink=1" class="new" title="Wade L. Hennessey (page does not exist)">Wade L. Hennessey</a>: <i>Common Lisp</i>, McGraw-Hill Inc., 1989, <a href="/wiki/Special:BookSources/0070281777" class="internal mw-magiclink-isbn">ISBN 0-07-028177-7</a></li>
+<li><a href="/w/index.php?title=Tony_Hasemer&amp;action=edit&amp;redlink=1" class="new" title="Tony Hasemer (page does not exist)">Tony Hasemer</a>, <a href="/w/index.php?title=John_Dominque&amp;action=edit&amp;redlink=1" class="new" title="John Dominque (page does not exist)">John Dominque</a>: <i>Common Lisp Programming for Artificial Intelligence</i>, Addison-Wesley Educational Publishers Inc, 1989, <a href="/wiki/Special:BookSources/0201175797" class="internal mw-magiclink-isbn">ISBN 0-201-17579-7</a></li>
+<li><a href="/w/index.php?title=Sonya_E._Keene&amp;action=edit&amp;redlink=1" class="new" title="Sonya E. Keene (page does not exist)">Sonya E. Keene</a>: <i>Object-Oriented Programming in Common Lisp: A Programmer's Guide to CLOS</i>, Addison-Wesley, 1989, <a href="/wiki/Special:BookSources/0201175894" class="internal mw-magiclink-isbn">ISBN 0-201-17589-4</a></li>
+<li><a href="/w/index.php?title=David_Jay_Steele&amp;action=edit&amp;redlink=1" class="new" title="David Jay Steele (page does not exist)">David Jay Steele</a>: <i>Golden Common Lisp: A Hands-On Approach</i>, Addison Wesley, 1989, <a href="/wiki/Special:BookSources/0201416530" class="internal mw-magiclink-isbn">ISBN 0-201-41653-0</a></li>
+<li><a href="/wiki/David_S._Touretzky" title="David S. Touretzky">David S. Touretzky</a>: <i>Common Lisp: A Gentle Introduction to Symbolic Computation</i>, Benjamin-Cummings, 1989, <a href="/wiki/Special:BookSources/0805304924" class="internal mw-magiclink-isbn">ISBN 0-8053-0492-4</a>. <a href="http://www.cs.cmu.edu/~dst/LispBook/" class="external text" rel="nofollow">Web/PDF</a></li>
+<li><a href="/w/index.php?title=Christopher_K._Riesbeck&amp;action=edit&amp;redlink=1" class="new" title="Christopher K. Riesbeck (page does not exist)">Christopher K. Riesbeck</a>, <a href="/wiki/Roger_C._Schank" title="Roger C. Schank" class="mw-redirect">Roger C. Schank</a>: <i>Inside Case-Based Reasoning</i>, Lawrence Erlbaum, 1989, <a href="/wiki/Special:BookSources/0898597676" class="internal mw-magiclink-isbn">ISBN 0-89859-767-6</a></li>
+<li><a href="/wiki/Patrick_Winston" title="Patrick Winston">Patrick Winston</a>, <a href="/w/index.php?title=Berthold_Horn&amp;action=edit&amp;redlink=1" class="new" title="Berthold Horn (page does not exist)">Berthold Horn</a>: <i>Lisp, 3rd Edition</i>, Addison-Wesley, 1989, <a href="/wiki/Special:BookSources/0201083191" class="internal mw-magiclink-isbn">ISBN 0-201-08319-1</a>, <a href="http://people.csail.mit.edu/phw/Books/LISPBACK.HTML" class="external text" rel="nofollow">Web</a></li>
+<li><a href="/w/index.php?title=Gerard_Gazdar&amp;action=edit&amp;redlink=1" class="new" title="Gerard Gazdar (page does not exist)">Gerard Gazdar</a>, <a href="/w/index.php?title=Chris_Mellish&amp;action=edit&amp;redlink=1" class="new" title="Chris Mellish (page does not exist)">Chris Mellish</a>: <i>Natural Language Processing in LISP: An Introduction to Computational Linguistics</i>, Addison-Wesley Longman Publishing Co., 1990, <a href="/wiki/Special:BookSources/0201178257" class="internal mw-magiclink-isbn">ISBN 0-201-17825-7</a></li>
+<li><a href="/w/index.php?title=Patrick_R._Harrison&amp;action=edit&amp;redlink=1" class="new" title="Patrick R. Harrison (page does not exist)">Patrick R. Harrison</a>: <i>The Common Lisp and Artificial Intelligence</i>, Prentice Hall PTR, 1990, <a href="/wiki/Special:BookSources/0131552430" class="internal mw-magiclink-isbn">ISBN 0-13-155243-0</a></li>
+<li><a href="/w/index.php?title=Timothy_Koschmann&amp;action=edit&amp;redlink=1" class="new" title="Timothy Koschmann (page does not exist)">Timothy Koschmann</a>: <i>The Common Lisp Companion</i>, John Wiley &amp; Sons, 1990, <a href="/wiki/Special:BookSources/0471503088" class="internal mw-magiclink-isbn">ISBN 0-471-50308-8</a></li>
+<li><a href="/w/index.php?title=Molly_M._Miller&amp;action=edit&amp;redlink=1" class="new" title="Molly M. Miller (page does not exist)">Molly M. Miller</a>, <a href="/w/index.php?title=Eric_Benson&amp;action=edit&amp;redlink=1" class="new" title="Eric Benson (page does not exist)">Eric Benson</a>: <i>Lisp Style &amp; Design</i>, Digital Press, 1990, <a href="/wiki/Special:BookSources/1555580440" class="internal mw-magiclink-isbn">ISBN 1-55558-044-0</a></li>
+<li><a href="/wiki/Guy_L._Steele" title="Guy L. Steele" class="mw-redirect">Guy L. Steele</a>: <i><a href="/wiki/Common_Lisp_the_Language" title="Common Lisp the Language">Common Lisp the Language</a>, 2nd Edition</i>, Digital Press, 1990, <a href="/wiki/Special:BookSources/1555580416" class="internal mw-magiclink-isbn">ISBN 1-55558-041-6</a>, <a href="http://www.cs.cmu.edu/Groups/AI/html/cltl/cltl2.html" class="external text" rel="nofollow">Web</a></li>
+<li><a href="/w/index.php?title=Steven_L._Tanimoto&amp;action=edit&amp;redlink=1" class="new" title="Steven L. Tanimoto (page does not exist)">Steven L. Tanimoto</a>: <i>The Elements of Artificial Intelligence Using Common Lisp</i>, Computer Science Press, 1990, <a href="/wiki/Special:BookSources/0716782308" class="internal mw-magiclink-isbn">ISBN 0-7167-8230-8</a></li>
+<li><a href="/wiki/Peter_Lee" title="Peter Lee">Peter Lee</a>: <i>Topics in Advanced Language Implementation</i>, The MIT Press, 1991, <a href="/wiki/Special:BookSources/0262121514" class="internal mw-magiclink-isbn">ISBN 0-262-12151-4</a></li>
+<li><a href="/wiki/John_H._Riley" title="John H. Riley">John H. Riley</a>: <i>A Common Lisp Workbook</i>, Prentice Hall, 1991, <a href="/wiki/Special:BookSources/0131557971" class="internal mw-magiclink-isbn">ISBN 0-13-155797-1</a></li>
+<li><a href="/wiki/Peter_Norvig" title="Peter Norvig">Peter Norvig</a>: <i>Paradigms of Artificial Intelligence Programming: Case Studies in Common Lisp</i>, Morgan Kaufmann, 1991, <a href="/wiki/Special:BookSources/1558601910" class="internal mw-magiclink-isbn">ISBN 1-55860-191-0</a>, <a href="http://norvig.com/paip.html" class="external text" rel="nofollow">Web</a></li>
+<li><a href="/wiki/Gregor_Kiczales" title="Gregor Kiczales">Gregor Kiczales</a>, <a href="/w/index.php?title=Jim_des_Rivieres&amp;action=edit&amp;redlink=1" class="new" title="Jim des Rivieres (page does not exist)">Jim des Rivieres</a>, <a href="/wiki/Daniel_G._Bobrow" title="Daniel G. Bobrow">Daniel G. Bobrow</a>: <i>The Art of the Metaobject Protocol</i>, The MIT Press, 1991, <a href="/wiki/Special:BookSources/0262610744" class="internal mw-magiclink-isbn">ISBN 0-262-61074-4</a></li>
+<li><a href="/w/index.php?title=Jo_A._Lawless&amp;action=edit&amp;redlink=1" class="new" title="Jo A. Lawless (page does not exist)">Jo A. Lawless</a>, <a href="/w/index.php?title=Molly_M._Miller&amp;action=edit&amp;redlink=1" class="new" title="Molly M. Miller (page does not exist)">Molly M. Miller</a>: <i>Understanding CLOS: The Common Lisp Object System</i>, Digital Press, 1991, <a href="/wiki/Special:BookSources/013717232X" class="internal mw-magiclink-isbn">ISBN 0-13-717232-X</a></li>
+<li><a href="/wiki/Mark_Watson" title="Mark Watson">Mark Watson</a>: <i>Common Lisp Modules: Artificial Intelligence in the Era of Neural Networks and Chaos Theory</i>, Springer Verlag New York Inc., 1991, <a href="/wiki/Special:BookSources/0387976140" class="internal mw-magiclink-isbn">ISBN 0-387-97614-0</a></li>
+<li><a href="/w/index.php?title=James_L._Noyes&amp;action=edit&amp;redlink=1" class="new" title="James L. Noyes (page does not exist)">James L. Noyes</a>: <i>Artificial Intelligence with Common Lisp: Fundamentals of Symbolic and Numeric Processing</i>, Jones &amp; Bartlett Pub, 1992, <a href="/wiki/Special:BookSources/0669194735" class="internal mw-magiclink-isbn">ISBN 0-669-19473-5</a></li>
+<li><a href="/w/index.php?title=Stuart_C._Shapiro&amp;action=edit&amp;redlink=1" class="new" title="Stuart C. Shapiro (page does not exist)">Stuart C. Shapiro</a>: <i>COMMON LISP: An Interactive Approach</i>, Computer Science Press, 1992, <a href="/wiki/Special:BookSources/0716782189" class="internal mw-magiclink-isbn">ISBN 0-7167-8218-9</a>, <a href="http://www.cse.buffalo.edu/pub/WWW/faculty/shapiro/Commonlisp/" class="external text" rel="nofollow">Web/PDF</a></li>
+<li><a href="/w/index.php?title=Kenneth_D._Forbus&amp;action=edit&amp;redlink=1" class="new" title="Kenneth D. Forbus (page does not exist)">Kenneth D. Forbus</a>, <a href="/w/index.php?title=Johan_de_Kleer&amp;action=edit&amp;redlink=1" class="new" title="Johan de Kleer (page does not exist)">Johan de Kleer</a>: <i>Building Problem Solvers</i>, The MIT Press, 1993, <a href="/wiki/Special:BookSources/0262061570" class="internal mw-magiclink-isbn">ISBN 0-262-06157-0</a></li>
+<li><a href="/w/index.php?title=Andreas_Paepcke&amp;action=edit&amp;redlink=1" class="new" title="Andreas Paepcke (page does not exist)">Andreas Paepcke</a>: <i>Object-Oriented Programming: The CLOS Perspective</i>, The MIT Press, 1993, <a href="/wiki/Special:BookSources/0262161362" class="internal mw-magiclink-isbn">ISBN 0-262-16136-2</a></li>
+<li><a href="/wiki/Paul_Graham_(computer_programmer)" title="Paul Graham (computer programmer)">Paul Graham</a>: <i><a href="/wiki/On_Lisp" title="On Lisp">On Lisp</a></i>, Prentice Hall, 1993, <a href="/wiki/Special:BookSources/0130305529" class="internal mw-magiclink-isbn">ISBN 0-13-030552-9</a>, <a href="http://www.paulgraham.com/onlisp.html" class="external text" rel="nofollow">Web/PDF</a></li>
+<li><a href="/wiki/Paul_Graham_(computer_programmer)" title="Paul Graham (computer programmer)">Paul Graham</a>: <i>ANSI Common Lisp</i>, Prentice Hall, 1995, <a href="/wiki/Special:BookSources/0133708756" class="internal mw-magiclink-isbn">ISBN 0-13-370875-6</a></li>
+<li><a href="/w/index.php?title=Otto_Mayer&amp;action=edit&amp;redlink=1" class="new" title="Otto Mayer (page does not exist)">Otto Mayer</a>: <i>Programmieren in Common Lisp</i>, German, Spektrum Akademischer Verlag, 1995, <a href="/wiki/Special:BookSources/3860257102" class="internal mw-magiclink-isbn">ISBN 3-86025-710-2</a></li>
+<li><a href="/w/index.php?title=Stephen_Slade&amp;action=edit&amp;redlink=1" class="new" title="Stephen Slade (page does not exist)">Stephen Slade</a>: <i>Object-Oriented Common Lisp</i>, Prentice Hall, 1997, <a href="/wiki/Special:BookSources/0136059406" class="internal mw-magiclink-isbn">ISBN 0-13-605940-6</a></li>
+<li><a href="/wiki/Richard_P._Gabriel" title="Richard P. Gabriel">Richard P. Gabriel</a>: <i>Patterns of Software: Tales from the Software Community</i>, Oxford University Press, 1998, <a href="/wiki/Special:BookSources/0195121236" class="internal mw-magiclink-isbn">ISBN 0-19-512123-6</a>, <a href="http://www.dreamsongs.org/Files/PatternsOfSoftware.pdf" class="external text" rel="nofollow">PDF</a></li>
+<li><a href="/w/index.php?title=Taiichi_Yuasa&amp;action=edit&amp;redlink=1" class="new" title="Taiichi Yuasa (page does not exist)">Taiichi Yuasa</a>, <a href="/w/index.php?title=Hiroshi_G._Okuno&amp;action=edit&amp;redlink=1" class="new" title="Hiroshi G. Okuno (page does not exist)">Hiroshi G. Okuno</a>: <i>Advanced Lisp Technology</i>, CRC, 2002, <a href="/wiki/Special:BookSources/0415298199" class="internal mw-magiclink-isbn">ISBN 0-415-29819-9</a></li>
+<li><a href="/w/index.php?title=David_B._Lamkins&amp;action=edit&amp;redlink=1" class="new" title="David B. Lamkins (page does not exist)">David B. Lamkins</a>: <i>Successful Lisp: How to Understand and Use Common Lisp</i>, bookfix.com, 2004. <a href="/wiki/Special:BookSources/3937526005" class="internal mw-magiclink-isbn">ISBN 3-937526-00-5</a>, <a href="http://www.psg.com/~dlamkins/sl/contents.html" class="external text" rel="nofollow">Web</a></li>
+<li><a href="/w/index.php?title=Peter_Seibel&amp;action=edit&amp;redlink=1" class="new" title="Peter Seibel (page does not exist)">Peter Seibel</a>: <i><a href="/wiki/Practical_Common_Lisp" title="Practical Common Lisp">Practical Common Lisp</a></i>, Apress, 2005. <a href="/wiki/Special:BookSources/1590592395" class="internal mw-magiclink-isbn">ISBN 1-59059-239-5</a>, <a href="http://www.gigamonkeys.com/book/" class="external text" rel="nofollow">Web</a></li>
+<li><a href="/w/index.php?title=Doug_Hoyte&amp;action=edit&amp;redlink=1" class="new" title="Doug Hoyte (page does not exist)">Doug Hoyte</a>: <i>Let Over Lambda</i>, Lulu.com, 2008, <a href="/wiki/Special:BookSources/1435712757" class="internal mw-magiclink-isbn">ISBN 1-4357-1275-7</a>, <a href="http://letoverlambda.com/" class="external text" rel="nofollow">Web</a></li>
+<li><a href="/w/index.php?title=George_F._Luger&amp;action=edit&amp;redlink=1" class="new" title="George F. Luger (page does not exist)">George F. Luger</a>, <a href="/w/index.php?title=William_A._Stubblefield&amp;action=edit&amp;redlink=1" class="new" title="William A. Stubblefield (page does not exist)">William A. Stubblefield</a>: <i>AI Algorithms, Data Structures, and Idioms in Prolog, Lisp and Java</i>, Addison Wesley, 2008, <a href="/wiki/Special:BookSources/0136070477" class="internal mw-magiclink-isbn">ISBN 0-13-607047-7</a>, <a href="http://wps.aw.com/wps/media/objects/5771/5909832/PDF/Luger_0136070477_1.pdf" class="external text" rel="nofollow">PDF</a></li>
+<li><a href="/w/index.php?title=Conrad_Barski&amp;action=edit&amp;redlink=1" class="new" title="Conrad Barski (page does not exist)">Conrad Barski</a>: <i>Land of Lisp: Learn to program in Lisp, one game at a time!</i>, No Starch Press, 2010, <a href="/wiki/Special:BookSources/1593272006" class="internal mw-magiclink-isbn">ISBN 1-59327-200-6</a>, <a href="http://www.lisperati.com/landoflisp/" class="external text" rel="nofollow">Web</a></li>
+<li><a href="/w/index.php?title=Nick_Levine&amp;action=edit&amp;redlink=1" class="new" title="Nick Levine (page does not exist)">Nick Levine</a>: <i>Lisp Outside the Box</i>, O'Reilly, 2010, <a href="/wiki/Special:BookSources/9780596804640" class="internal mw-magiclink-isbn">ISBN 978-0-596-80464-0</a>, <a href="http://lisp-book.org/" class="external text" rel="nofollow">Web</a></li>
+</ul>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Common_Lisp&amp;action=edit&amp;section=37" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;">
+<tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" /></td>
+<td class="mbox-text" style="">Wikibooks has more on the topic of
+<div style="margin-left:10px;"><i><b><a href="http://en.wikibooks.org/wiki/Special:Search/Common_Lisp" class="extiw" title="wikibooks:Special:Search/Common Lisp">Common Lisp</a></b></i></div>
+</td>
+</tr>
+</table>
+<ul>
+<li>The <a href="http://www.cliki.net/" class="external text" rel="nofollow">CLiki</a>, a Wiki for <a href="/wiki/Free_and_open_source_software" title="Free and open source software">free and open source</a> Common Lisp systems running on Unix-like systems.</li>
+<li><a href="http://www.common-lisp.net/" class="external text" rel="nofollow">Common Lisp software repository</a>.</li>
+<li><a href="http://www.cl-user.net/" class="external text" rel="nofollow">The Common Lisp directory - information repository for all things Common Lisp</a>.</li>
+<li><span class="citation web"><a href="http://www.lispworks.com/documentation/HyperSpec/Body/01_ab.htm" class="external text" rel="nofollow">"History"</a>. <i><a href="/wiki/Common_Lisp_HyperSpec" title="Common Lisp HyperSpec">Common Lisp HyperSpec</a></i><span class="printonly">. <a href="http://www.lispworks.com/documentation/HyperSpec/Body/01_ab.htm" class="external free" rel="nofollow">http://www.lispworks.com/documentation/HyperSpec/Body/01_ab.htm</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=History&amp;rft.atitle=%5B%5BCommon+Lisp+HyperSpec%5D%5D&amp;rft_id=http%3A%2F%2Fwww.lispworks.com%2Fdocumentation%2FHyperSpec%2FBody%2F01_ab.htm&amp;rfr_id=info:sid/en.wikipedia.org:Common_Lisp"><span style="display: none;">&#160;</span></span></li>
+<li><a href="http://www.flownet.com/gat/jpl-lisp.html" class="external text" rel="nofollow">Lisping at JPL</a></li>
+<li><a href="http://www.defmacro.org/ramblings/lisp.html" class="external text" rel="nofollow">The Nature of Lisp</a> Essay that examines Lisp by comparison with XML.</li>
+<li><a href="http://common-lisp.net/~dlw/LispSurvey.html" class="external text" rel="nofollow">Common Lisp Implementations: A Survey</a> Survey of maintained Common Lisp implementations.</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 6132/1000000
+Post-expand include size: 37364/2048000 bytes
+Template argument size: 12557/2048000 bytes
+Expensive parser function count: 1/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:6068-0!1!0!default!!en!4 and timestamp 20101221172825 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Common_Lisp">http://en.wikipedia.org/wiki/Common_Lisp</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:Common_Lisp" title="Category:Common Lisp">Common Lisp</a></span> | <span dir='ltr'><a href="/wiki/Category:Multi-paradigm_programming_languages" title="Category:Multi-paradigm programming languages">Multi-paradigm programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Dynamic_programming_languages" title="Category:Dynamic programming languages">Dynamic programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Class-based_programming_languages" title="Category:Class-based programming languages">Class-based programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Procedural programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Extensible_syntax_programming_languages" title="Category:Extensible syntax programming languages">Extensible syntax programming languages</a></span> | <span dir='ltr'><a href="/wiki/Category:Lisp_programming_language_family" title="Category:Lisp programming language family">Lisp programming language family</a></span> | <span dir='ltr'><a href="/wiki/Category:Lisp_programming_language" title="Category:Lisp programming language">Lisp programming language</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_with_example_Lisp_code" title="Category:Articles with example Lisp code">Articles with example Lisp code</a></span> | <span dir='ltr'><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></span> | <span dir='ltr'><a href="/wiki/Category:Free_cross-platform_software" title="Category:Free cross-platform software">Free cross-platform software</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Common_Lisp" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/Common_Lisp"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:Common_Lisp"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/Common_Lisp" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=Common_Lisp&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=Common_Lisp&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Common_Lisp" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Common_Lisp" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=Common_Lisp&amp;oldid=402600249" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Common_Lisp&amp;id=402600249" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Common+Lisp" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Common+Lisp&amp;oldid=402600249&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Common_Lisp&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Česky</a></li>
+					<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Dansk</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Deutsch</a></li>
+					<li class="interwiki-et"><a href="http://et.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Eesti</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Español</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D9%84%DB%8C%D8%B3%D9%BE_%D9%85%D8%B9%D9%85%D9%88%D9%84%DB%8C" title="لیسپ معمولی">فارسی</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Français</a></li>
+					<li class="interwiki-gl"><a href="http://gl.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Galego</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EC%BB%A4%EB%A8%BC_%EB%A6%AC%EC%8A%A4%ED%94%84" title="커먼 리스프">한국어</a></li>
+					<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Hrvatski</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Common_LISP" title="Common LISP">Italiano</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">日本語</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Русский</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Suomi</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Svenska</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Українська</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 15 December 2010 at 23:09.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv182 in 0.100 secs. -->			</body>
+</html>

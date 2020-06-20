@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var a=window;function c(b){this.t={};this.tick=function(d,i,e){e=e?e:(new Date).getTime();this.t[d]=[e,i]};this.tick("start",null,b)}var f=new c;a.jstiming={Timer:c,load:f};try{var g=null;if(a.chrome&&a.chrome.csi)g=Math.floor(a.chrome.csi().pageT);if(g==null)if(a.gtbExternal)g=a.gtbExternal.pageT();if(g==null)if(a.external)g=a.external.pageT;if(g)a.jstiming.pt=g}catch(h){};a.tickAboveFold=function(b){b=b;var d=0;if(b.offsetParent){do d+=b.offsetTop;while(b=b.offsetParent)}b=d;b<=750&&a.jstiming.load.tick("aft")};var j=false;function k(){if(!j){j=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",k,false):a.attachEvent("onscroll",k);
+ })();</script>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='blogger' name='generator'/>
+<link href='http://www.blogger.com/favicon.ico' rel='icon' type='image/vnd.microsoft.icon'/>
+<link href='http://googlewavedev.blogspot.com/2010/09/wave-open-source-next-steps-wave-in-box.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Google Wave Developer Blog - Atom" href="http://googlewavedev.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Google Wave Developer Blog - RSS" href="http://googlewavedev.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Google Wave Developer Blog - Atom" href="http://www.blogger.com/feeds/7938035922388048219/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=7938035922388048219" />
+<link rel="alternate" type="application/atom+xml" title="Google Wave Developer Blog - Atom" href="http://googlewavedev.blogspot.com/feeds/5465656544619947203/comments/default" />
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } })(); </script> <![endif]-->
+<title>Google Wave Developer Blog: Wave open source next steps: "Wave in a Box"</title>
+<link href='http://www.google.com/css/gooey.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/googleblogs/css/template_styles.css' rel='stylesheet' type='text/css'/>
+<link type='text/css' rel='stylesheet' href='http://www.blogger.com/static/v1/widgets/1743847221-widget_css_bundle.css' />
+<link type='text/css' rel='stylesheet' href='http://www.google.com/uds/css/gsearch.css' />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=7938035922388048219&zx=2c485877-1fd9-43c1-b3b4-a6857423ee02"/>
+<style type="text/css">#navbar-iframe { display:block }
+</style>
+
+<style id='page-skin-1' type='text/css'><!--
+
+/* custom header */
+.template_white #header-graphic .content, .template_white #header-graphic .bottom { background-image:url(http://google.com/googleblogs/images/headers/wave_header_right.png);}
+.template_white #header-graphic h1.title{color:#4A82B5;}
+.template_white h2, .template_white .post h3 a {color:#4A82B5;}
+/*
+/*
+--></style>
+<script type='text/javascript'>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8569477-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=7938035922388048219&amp;blogName=Google+Wave+Developer+Blog&amp;publishMode=PUBLISH_MODE_BLOGSPOT&amp;navbarType=BLUE&amp;layoutType=LAYOUTS&amp;searchRoot=http%3A%2F%2Fgooglewavedev.blogspot.com%2Fsearch&amp;blogLocale=en&amp;homepageUrl=http%3A%2F%2Fgooglewavedev.blogspot.com%2F&amp;targetPostID=5465656544619947203" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe>
+<div></div></div></div>
+<div class='template_white' id='template_fixed'>
+<div id='main-wrapper'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div id='header-graphic' style='width:100%;'>
+<a href='http://googlewavedev.blogspot.com/2010/09/wave-open-source-next-steps-wave-in-box.html' style='text-decoration:none;'>
+<div class='content'>
+<div class='section' id='header_titles'><div class='widget HTML' id='HTML3'>
+<div class='widget-content'>
+<h1 class='title'>Google Wave Developer Blog</h1>
+</div>
+</div><div class='widget HTML' id='HTML4'>
+<div class='widget-content'>
+<h1 class='subheader'>Technical news & updates related to the APIs and protocol</h1>
+</div>
+</div></div>
+</div>
+<div class='bottom'><div></div></div>
+</a>
+</div>
+<br style='clear:both;'/>
+<div id='content-wrapper'>
+<div id='sidebar'>
+<div class='sidebar section' id='sidebar'><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+<a href="http://googlewavedev.blogspot.com/atom.xml"><img alt="Site Feed" src="http://www.google.com/images/feed-icon.gif"/></a> <a href="http://googlewavedev.blogspot.com/atom.xml">Site Feed</a><br/>
+<a href="http://fusion.google.com/add?feedurl=http%3A//googlewavedev.blogspot.com/atom.xml"><img border="0" alt="Add to Google" style="padding-top:5px;" width="104" src="http://buttons.googlesyndication.com/fusion/add.gif" height="17"/></a>
+<br/>
+<p><a href="http://feeds2.feedburner.com/GoogleWaveDeveloperBlog"><img width="88" style="border:0" alt="" src="http://feeds2.feedburner.com/~fc/GoogleWaveDeveloperBlog?bg=99CCFF&amp;fg=444444&amp;anim=1" height="26"/></a></p>
+<br/>
+<a href="http://www.twitter.com/googlewavedev">Follow us on Twitter</a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=7938035922388048219&widgetType=HTML&widgetId=HTML1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget CustomSearch' id='CustomSearch1'>
+<h2 class='title'>Search This Blog</h2>
+<div class='widget-content'>
+<div id='CustomSearch1_form'>
+<span class='cse-status'>Loading...</span>
+</div>
+</div>
+<style type='text/css'>
+      #uds-searchControl .gs-result .gs-title,
+      #uds-searchControl .gs-result .gs-title *,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results * {
+        color:#00c;
+      }
+
+      #uds-searchControl .gs-result .gs-title a:visited,
+      #uds-searchControl .gs-result .gs-title a:visited * {
+        color:#00c;
+      }
+
+      #uds-searchControl .gs-relativePublishedDate,
+      #uds-searchControl .gs-publishedDate {
+        color: #6f6f6f;
+      }
+
+      #uds-searchControl .gs-result a.gs-visibleUrl,
+      #uds-searchControl .gs-result .gs-visibleUrl {
+        color: #00c;
+      }
+
+      #uds-searchControl .gsc-results {
+        border-color: #6f6f6f;
+        background-color: #fff;
+      }
+
+      #uds-searchControl .gsc-tabhActive {
+        border-color: #6f6f6f;
+        border-top-color: #6f6f6f;
+        background-color: #fff;
+        color: #000;
+      }
+
+      #uds-searchControl .gsc-tabhInactive {
+        border-color: #6f6f6f;
+        background-color: transparent;
+        color: #00c;
+      }
+
+      #uds-searchClearResults {
+        border-color: #6f6f6f;
+      }
+
+      #uds-searchClearResults:hover {
+        border-color: #6f6f6f;
+      }
+
+      #uds-searchControl .gsc-cursor-page {
+        color: #00c;
+      }
+
+      #uds-searchControl .gsc-cursor-current-page {
+        color: #000;
+      }
+    </style>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=7938035922388048219&widgetType=CustomSearch&widgetId=CustomSearch1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("CustomSearch1"));' target='configCustomSearch1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2 class='small'>Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<select id='BlogArchive1_ArchiveMenu'>
+<option value='http://googlewavedev.blogspot.com/search?updated-min=2010-01-01T00%3A00%3A00-08%3A00&updated-max=2011-01-01T00%3A00%3A00-08%3A00&max-results=30'>2010 (30)</option>
+<option value='http://googlewavedev.blogspot.com/search?updated-min=2009-01-01T00%3A00%3A00-08%3A00&updated-max=2010-01-01T00%3A00%3A00-08%3A00&max-results=30'>2009 (30)</option>
+</select>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=7938035922388048219&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML2'>
+<h2 class='title'>More Blogs from Google</h2>
+<div class='widget-content'>
+Visit our <a href="http://www.google.com/press/blogs/directory.html#tab0"> directory</a> for more information about Google blogs.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=7938035922388048219&widgetType=HTML&widgetId=HTML2&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML23'>
+<div class='widget-content'>
+<a href='http://www.blogger.com'><img alt='Powered By Blogger' src='http://www.blogger.com/buttons/blogger-powerby-blue.gif'/></a>
+</div>
+</div></div>
+</div>
+<div id='main-content'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div id='post-wrapper'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start -->
+<div class='post'>
+<a name='5465656544619947203'></a>
+<h3>
+<a href='http://googlewavedev.blogspot.com/2010/09/wave-open-source-next-steps-wave-in-box.html'>Wave open source next steps: "Wave in a Box"</a>
+</h3>
+<p class='post-subhead'>
+Thursday, September 2, 2010 | 5:48 PM
+</p>
+<p class='post-subhead'>
+</p>
+<div class='post-body'>
+<p>Since the <a href="http://googleblog.blogspot.com/2010/08/update-on-google-wave.html">announcement that we will discontinue development</a> of Google Wave as a standalone product, many people have asked us about the future of the open source code and Wave federation protocol.  After spending some time on <a href="http://googlewave.blogspot.com/2010/08/quick-note-on-next-steps-for-google.html">figuring out our next steps</a>, we'd like to share the plan for our contributions over the coming months.<div><p>
+
+
+We will expand upon the 200K lines of code we've already open sourced (detailed at <a href="http://waveprotocol.org/">waveprotocol.org</a>) to flesh out the existing example Wave server and web client into a more complete application or "Wave in a Box." <p>
+
+
+This project will include:
+<ul><li>an application bundle including a server and web client supporting real-time collaboration using the same structured conversations as the Google Wave system</li><li>a fast and fully-featured wave panel in the web client with complete support for threaded conversations</li><li>a persistent wave store and search implementation for the server (building on contributed patches to implement a MongoDB store)</li><li>refinements to the client-server protocols</li><li>gadget, robot and data API support </li><li>support for importing wave data from <a href="http://wave.google.com/">wave.google.com</a></li><li>the ability to federate across other Wave in a Box instances, with some additional configuration</li></ul>This project will not have the full functionality of Google Wave as you know it today. However, we intend to give developers and enterprising users an opportunity to run wave servers and host waves on their own hardware. <p>
+
+
+Since the beginning, it has been our vision that the Google Wave protocols could support a new generation of communication and collaboration tools. The response from the developer community to date has been amazing and rewarding. Even more so now, we believe that developers and <a href="http://googlewavedev.blogspot.com/2010/06/wave-federation-keeps-growing-rich-text.html">other projects</a> are a critical part of this story. <p>
+
+
+While Wave in a Box will be a functional application, the future of Wave will be defined by your contributions. We hope this project will help the Wave developer community continue to grow and evolve. We'll discuss more technical details of our plan on the <a href="https://groups.google.com/group/wave-protocol?pli=1">Wave Protocol Forum</a>, which is the best place to keep up with the latest progress on the open source project and learn how you can contribute. <p>
+
+
+
+Wave on <p>
+
+
+<div>
+<span class="post-author">Posted by Alex North, Software Engineer, Google Wave team </span></div></div>
+</p>
+</div>
+<div class='post-footer'>
+<p>
+<span class='post-footer-link'>
+</span>
+<span class='post-footer-link'>
+</span>
+<span class='post-footer-link'>
+</span>
+</p>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+<a name='links'></a><h4>
+</h4>
+<p class='comment-footer'>
+<a class='comment-link' href='' id='Blog1_backlinks-create-link' target='_blank'>
+</a>
+</p>
+</div>
+</div>
+</div>
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'><p>
+<a class='blog-pager-newer-link' href='http://googlewavedev.blogspot.com/2010/10/wave-protocol-summit-november-8-12th.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+<a class='blog-pager-older-link' href='http://googlewavedev.blogspot.com/2010/08/upcoming-wave-api-talks-michigan.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+<a class='home-link' href='http://googlewavedev.blogspot.com/'>Home</a>
+</p>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<!-- end content-wrapper -->
+</div>
+<!-- end outer-wrapper -->
+<div id='footer-graphic'>
+<div class='footer section' id='footer'><div class='widget HTML' id='HTML25'>
+<p class='widget-content'>
+  &copy;2009 Google - <a href='http://google.com/intl/en/privacy.html'>Privacy Policy</a> - <a href='http://www.google.com/accounts/TOS?hl=en'>Terms of Service</a>
+</p>
+</div></div>
+</div></div>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="http://www.blogger.com/static/v1/widgets/512629240-widgets.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '7938035922388048219';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=7938035922388048219','http://googlewavedev.blogspot.com/2010/09/wave-open-source-next-steps-wave-in-box.html','7938035922388048219');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=7938035922388048219','f57ekSXoyXBkA-GOeI7WiR7Inl4:1293250974840','AOuZoY50mIvcZgj7f3yblf3HbOBKviVtXQ:1293250974840');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Google Wave Developer Blog', 'pageType': 'item', 'url': 'http://googlewavedev.blogspot.com/2010/09/wave-open-source-next-steps-wave-in-box.html', 'canonicalUrl': 'http://googlewavedev.blogspot.com/2010/09/wave-open-source-next-steps-wave-in-box.html', 'homepageUrl': 'http://googlewavedev.blogspot.com/', 'enabledCommentProfileImages': true, 'searchLabel': '', 'searchQuery': '', 'pageName': 'Wave open source next steps: \42Wave in a Box\042', 'pageTitle': 'Google Wave Developer Blog: Wave open source next steps: \42Wave in a Box\042', 'encoding': 'UTF-8', 'locale': 'en', 'isPrivate': false, 'isMobile': false, 'mobileClass': '', 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Google Wave Developer Blog - Atom\42 href\75\42http://googlewavedev.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Google Wave Developer Blog - RSS\42 href\75\42http://googlewavedev.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Google Wave Developer Blog - Atom\42 href\75\42http://www.blogger.com/feeds/7938035922388048219/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\0757938035922388048219\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Google Wave Developer Blog - Atom\42 href\75\42http://googlewavedev.blogspot.com/feeds/5465656544619947203/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function c(b){this.t\75{};this.tick\75function(d,i,e){e\75e?e:(new Date).getTime();this.t[d]\75[e,i]};this.tick(\42start\42,null,b)}var f\75new c;a.jstiming\75{Timer:c,load:f};try{var g\75null;if(a.chrome\46\46a.chrome.csi)g\75Math.floor(a.chrome.csi().pageT);if(g\75\75null)if(a.gtbExternal)g\75a.gtbExternal.pageT();if(g\75\75null)if(a.external)g\75a.external.pageT;if(g)a.jstiming.pt\75g}catch(h){};a.tickAboveFold\75function(b){b\75b;var d\0750;if(b.offsetParent){do d+\75b.offsetTop;while(b\75b.offsetParent)}b\75d;b\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var j\75false;function k(){if(!j){j\75true;a.jstiming.load.tick(\42firstScrollTime\42)}}a.addEventListener?a.addEventListener(\42scroll\42,k,false):a.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': ''}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML25', 'footer', null, document.getElementById('HTML25'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'header_titles', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'header_titles', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_CustomSearchView', new _WidgetInfo('CustomSearch1', 'sidebar', null, document.getElementById('CustomSearch1'), {'title': 'Search This Blog', 'includeBlog': true, 'includePostLinks': false, 'includeWeb': true, 'linkLists': [], 'blogUrl': 'http://googlewavedev.blogspot.com/', 'loadingMsg': 'Loading...', 'thisBlogMsg': 'This Blog', 'linkedFromHereMsg': 'Linked From Here', 'theWebMsg': 'The Web', 'backgroundColor': '#fff', 'textColor': '#000', 'dateColor': '#6f6f6f', 'linkColor': '#00c', 'urlColor': '#00c', 'visitedLinkColor': '#00c', 'borderColor': '#6f6f6f', 'activeBorderColor': '#6f6f6f'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML23', 'sidebar', null, document.getElementById('HTML23'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'commentInteractionIframeUrl': 'http://www.blogger.com/comment-interaction-iframe.g?blogId\0757938035922388048219', 'showBacklinks': true, 'postId': '5465656544619947203', 'mobile': false}, 'displayModeFull'));
+</script>
+</body>
+</html>

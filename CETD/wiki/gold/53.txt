@@ -1,0 +1,143 @@
+﻿
+Allen Newell
+
+This article should be divided into sections by topic, to make it more accessible. Please help by adding section headings in accordance with Wikipedia's style guidelines. (October 2009)
+Allen Newell
+Born	March 19, 1927
+Died	July 19, 1992 (aged 65)
+Fields	Computer Science
+Cognitive Psychology
+Institutions	Carnegie Mellon University
+Alma mater	Stanford University
+Princeton University
+Doctoral advisor	Herbert Simon
+Known for	Information Processing Language
+Soar
+Notable awards	A.M. Turing Award
+National Medal of Science (1992)
+Louis E. Levy Medal
+Allen Newell (March 19, 1927 - July 19, 1992) was a researcher in computer science and cognitive psychology at the RAND corporation and at Carnegie Mellon University’s School of Computer Science, Tepper School of Business, and Department of Psychology. He contributed to the Information Processing Language (1956) and two of the earliest AI programs, the Logic Theory Machine (1956) and the General Problem Solver (1957) (with Herbert Simon). He was awarded the ACM's A.M. Turing Award along with Herbert Simon in 1975 for their basic contributions to artificial intelligence and the psychology of human cognition.[1][2]
+
+Contents [hide]
+1 Life
+2 Honors
+3 References
+3.1 Notes
+3.2 Further reading
+4 See also
+[edit]Life
+
+Newell completed his Bachelor's degree from Stanford in 1949. He was a graduate student at Princeton University during 1949-1950 when he studied mathematics. Due to his early exposure to a new field known as game theory and the experiences from the study of mathematics, he was convinced that he would prefer "a combination of experimental and theoretical research to pure mathematics" (Simon). Soon after, he left Princeton and joined the RAND Corporation in Santa Monica where he worked for "a group that was studying logistics problems of the Air Force" (Simon). His work with Joseph Kruskal led to the creation of two theories: A Model for Organization Theory and Formulating Precise Concepts in Organization Theory. Newell eventually earned his PhD from the now Tepper School of Business at Carnegie Mellon with Herbert Simon serving as his advisor.
+Afterwards, Newell "turned to the design and conduct of laboratory experiments on decision making in small groups" (Simon). He was dissatisfied, however, with the accuracy and validity of their findings produced from small-scale laboratory experiments. He joined with fellow RAND teammates John Kennedy, Bob Chapman, and Bill Biel at an Air Force Early Warning Station to study organizational processes in flight crews. They received funding from the Air Force in 1952 to build a simulator that would enable them to examine and analyze the interactions in the cockpit related to decision-making and information-handling. From these studies, Newell came to believe that information processing is the central activity in organizations.
+In September 1954, Newell enrolled in a seminar where Oliver Selfridge "described a running computer program that learned to recognize letters and other patterns" (Simon). This was when Allen came to believe that systems may be created and contain intelligence and have the ability to adapt. With this in mind, Allen, after a couple months, wrote in 1955 The Chess Machine: An Example of Dealing with a Complex Task by Adaptation, which "outlined an imaginative design for a computer program to play chess in humanoid fashion" (Simon).
+His work came to the attention of economist (and future nobel laureate) Herbert Simon, and, together with programmer J. C. Shaw, they developed the first true artificial intelligence program, the Logic Theorist. Newell's work on the program laid the foundations of the field. His inventions included: list processing, the most important programming paradigm used by AI ever since; the application of means-ends analysis to general reasoning (or "reasoning as search"); and the use of heuristics to limit the search space.
+They presented the program at the Dartmouth conference of 1956, an informal gathering of researchers who were interested in simulating intelligence with machines. The conference, now widely considered the "birth of artificial intelligence",[3] was enormously influential and those who attended became the leaders of AI research for the next two decades, Newell included.
+Newell and Simon formed a lasting partnership. They founded an artificial intelligence laboratory at Carnegie Mellon University and produced a series of important programs and theoretical insights throughout the late fifties and sixties. This work included the General Problem Solver, a highly influential implementation of means-ends analysis, and the physical symbol systems hypothesis, the controversial philosophical assertion that all intelligent behavior could be reduced to the kind of symbol manipulation that Newell's programs demonstrated.
+Newell's work culminated in the development of a cognitive architecture known as Soar and his unified theory of cognition, published in 1990, but their improvement was the objective of his efforts up to his death (one of the last Newell's letters).
+[edit]Honors
+
+1971—John Danz Lecturer, University of Washington
+1971—Harry Goode Memorial Award, American Federation of Information Processing Societies
+1972—National Academy of Sciences
+1972—American Academy of Arts and Sciences
+1975—A. M. Turing Award (with H. A. Simon), Association for Computing Machinery
+1976-77—John Simon Guggenheim Fellow
+1979—Alexander C. Williams Jr. Award (with William C. Biel, Robert Chapman and John L. Kennedy), Human Factors Society
+1980 — National Academy of Engineering
+1980 — First President, American Association for Artificial Intelligence
+1982—Computer Pioneer Award, Charter Recipient, IEEE Computer Society
+1985—Distinguished Scientific Contribution Award, American Psychological Association
+1986—Doctor of Science (Honorary), University of Pennsylvania
+1987—William James Lectures, Harvard University
+1989—Award for Research Excellence, International Joint Conference on Artificial Intelligence
+1989—Doctor in the Behavioral and Social Sciences (Honorary), University of Groningen, The Netherlands
+1989—William James Fellow Award (charter recipient), American Psychological Society
+1990 — Emanuel R. Piore Award, Institute for Electrical and Electronic Engineers
+1990 — IEEE W.R.G. Baker Prize Paper Award[4]
+1992 — U.S. National Medal of Science[5]
+1992—Franklin Institute’s Louis E. Levy Medal
+The Award for Research Excellence of the Carnegie Mellon School of Computer Science was named in his honor.
+[edit]References
+
+[edit]Notes
+^ "Allen Newell, 65; Scientist Founded A Computing Field". The New York Times. July 20, 1992. http://www.nytimes.com/1992/07/20/us/allen-newell-65-scientist-founded-a-computing-field.html. Retrieved November 28, 2010.
+^ Herbert A. Simon. "Allen Newell, Biographical Memoirs". National Academy of Sciences. http://www.nap.edu/html/biomems/anewell.html. Retrieved November 28, 2010.
+^ Crevier 1993, pp. 49–51
+^ "IEEE W.R.G. Baker Prize Paper Award Recipients". IEEE. http://www.ieee.org/documents/baker_rl.pdf. Retrieved November 28, 2010.
+^ "The President's National Medal of Science: Recipient Details Allen Newell". US National Science Foundation. http://www.nsf.gov/od/nms/recip_details.cfm?recip_id=254. Retrieved November 28, 2010.
+[edit]Further reading
+Oral history interview with Allen Newell at Charles Babbage Institute, University of Minnesota, Minneapolis. Newell discusses his entry into computer science, funding for computer science departments and research, the development of the Computer Science Department at Carnegie Mellon University, including the work of Alan Perlis and Raj Reddy, and the growth of the computer science and artificial intelligence research communities. Compares computer science programs at Stanford, MIT, and Carnegie Mellon.
+Full-text digital archive of Allen Newell papers
+Biography
+Mind Models online Artificial Intelligence exhibit
+Publications by Allen Newell from Interaction-Design.org
+[1] Allen Newell by Gualtiero Piccinini in New Dictionary of Scientific Biography, Thomson Gale, ed.
+[edit]See also
+
+	Wikiquote has a collection of quotations related to: Allen Newell
+v • d • e
+A. M. Turing Award laureates
+Alan Perlis (1966) · Maurice Vincent Wilkes (1967) · Richard Hamming (1968) · Marvin Minsky (1969) · James H. Wilkinson (1970) · John McCarthy (1971) · Edsger W. Dijkstra (1972) · Charles Bachman (1973) · Donald Knuth (1974) · Allen Newell / Herbert Simon (1975) · Michael O. Rabin / Dana Scott (1976) · John Backus (1977) · Robert Floyd (1978) · Kenneth E. Iverson (1979) · C. A. R. Hoare (1980) · Edgar F. Codd (1981) · Stephen Cook (1982) · Ken Thompson / Dennis Ritchie (1983) · Niklaus Wirth (1984) · Richard Karp (1985) · John Hopcroft / Robert Tarjan (1986) · John Cocke (1987) · Ivan Sutherland (1988) · William Kahan (1989) · Fernando J. Corbató (1990) · Robin Milner (1991) · Butler Lampson (1992) · Juris Hartmanis / Richard Stearns (1993) · Edward Feigenbaum / Raj Reddy (1994) · Manuel Blum (1995) · Amir Pnueli (1996) · Douglas Engelbart (1997) · Jim Gray (1998) · Fred Brooks (1999) · Andrew Yao (2000) · Ole-Johan Dahl / Kristen Nygaard (2001) · Ron Rivest / Adi Shamir / Leonard Adleman (2002) · Alan Kay (2003) · Vint Cerf / Bob Kahn (2004) · Peter Naur (2005) · Frances E. Allen (2006) · Edmund M. Clarke / E. Allen Emerson / Joseph Sifakis (2007) · Barbara Liskov (2008) · Charles P. Thacker (2009)
+v • d • e
+United States National Medal of Science laureates
+ Behavioral and social science
+1960s
+1964: Roger Adams · Othmar H. Ammann · Theodosius Dobzhansky · Neal Elgar Miller
+1980s
+1986: Herbert A. Simon · 1987: Anne Anastasi · George J. Stigler · 1988: Milton Friedman
+1990s
+1990: Leonid Hurwicz · Patrick Suppes · 1991: Robert W. Kates · George A. Miller · 1992: Eleanor J. Gibson · 1994: Robert K. Merton · 1995: Roger N. Shepard · 1996: Paul Samuelson · 1997: William K. Estes · 1998: William Julius Wilson · 1999: Robert M. Solow
+2000s
+2000: Gary Becker · 2001: George Bass · 2003: R. Duncan Luce · 2004: Kenneth Arrow · 2005: Gordon H. Bower · 2008: Michael I. Posner
+ Biological sciences
+1960s
+1963: C. B. van Niel · 1964: Marshall W. Nirenberg · 1965: Francis P. Rous · George G. Simpson · Donald D. Van Slyke · 1966: Edward F. Knipling · Fritz Albert Lipmann · William C. Rose · Sewall Wright · 1967: Kenneth S. Cole · Harry F. Harlow · Michael Heidelberger · Alfred H. Sturtevant · 1968: Horace Barker · Bernard B. Brodie · Detlev W. Bronk · Jay Lush · Burrhus Frederic Skinner · 1969: Robert Huebner · Ernst Mayr
+1970s
+1970: Barbara McClintock · Albert B. Sabin · 1973: Daniel I. Arnon · Earl W. Sutherland, Jr. · 1974: Britton Chance · Erwin Chargaff · James V. Neel · James Augustine Hannon · 1975: Hallowell Davis · Paul Gyorgy · Sterling Brown Hendricks · Orville lvin Vogel · 1976: Roger C.L. Guillemin · Keith Roberts Porter · Efraim Racker · E. O. Wilson · 1979: Robert H. Burris · Elizabeth C. Crosby · Arthur Kornberg · Severo Ochoa · Earl Reece Stadtman · George Ledyard Stebbins · Paul Alfred Weiss
+1980s
+1981: Philip Handler · 1982: Seymour Benzer · Glenn W. Burton · Mildred Cohn · 1983: Howard L. Bachrach · Paul Berg · Wendell L. Roelofs · Berta Scharrer · 1986: Stanley Cohen · Donald A. Henderson · Vernon B. Mountcastle · George Emil Palade · Joan A. Steitz · 1987: Michael E. Debakey · Theodor O. Diener · Harry Eagle · Har Gobind Khorana · Rita Levi-Montalcini · 1988: Michael S. Brown · Stanley Norman Cohen · Joseph L. Goldstein · Maurice R. Hilleman · Eric R. Kandel · Rosalyn S. Yalow · 1989: Katherine Esau · Viktor Hamburger · Philip Leder · Joshua Lederberg · Roger W. Sperry · Harland G. Wood
+1990s
+1990: Baruj Benacerraf · Herbert W. Boyer · Daniel E. Koshland, Jr. · Edward B. Lewis · David G. Nathan · E. Donnall Thomas · 1991: Mary Ellen Avery · G. Evelyn Hutchinson · Elvin A. Kabat · Salvador Luria · Paul A. Marks · Folke K Skoog · Paul C. Zamecnik · 1992: Maxine Singer · Howard M. Temin · 1993: Daniel Nathans · Salome G. Waelsch · 1994: Thomas Eisner · Elizabeth F. Neufeld · 1995: Alexander Rich · 1996: Ruth Patrick · 1997: James D. Watson · Robert A. Weinberg · 1998: Bruce Ames · Janet Rowley · 1999: David Baltimore · Jared Diamond · Lynn Margulis
+2000s
+2000: Nancy C. Andreasen · Peter H. Raven · Carl Woese · 2001: Francisco J. Ayala · Mario R. Capecchi · Ann M. Graybiel · Gene E. Likens · Victor A. McKusick · Harold Varmus · 2002: James E. Darnell · Evelyn M. Witkin · 2003: J. Michael Bishop · Solomon H. Snyder · Charles Yanofsky · 2004: Norman E. Borlaug · Phillip A. Sharp · Thomas E. Starzl · 2005: Anthony Fauci · Torsten N. Wiesel · 2006: Rita R. Colwell · Nina Fedoroff · Lubert Stryer · 2007: Robert J. Lefkowitz · Bert W. O'Malley · 2008: Francis S. Collins · Elaine Fuchs · J. Craig Venter
+ Chemistry
+1980s
+1982: F. Albert Cotton · Gilbert Stork · 1983: Roald Hoffmann · George C. Pimentel · Richard N. Zare · 1986: Harry B. Gray · Yuan Tseh Lee · Carl S. Marvel · Frank H. Westheimer · 1987: William S. Johnson · Walter H. Stockmayer · Max Tishler · 1988: William O. Baker · Konrad E. Bloch · Elias J. Corey · 1989: Richard B. Bernstein · Melvin Calvin · Rudoph A. Marcus · Harden M. McConnell
+1990s
+1990: Elkan Blout · Karl Folkers · John D. Roberts · 1991: Ronald Breslow · Gertrude B. Elion · Dudley R. Herschbach · Glenn T. Seaborg · 1992: Howard E. Simmons, Jr. · 1993: Donald J. Cram · Norman Hackerman · 1994: George S. Hammond · 1995: Thomas Cech · Isabella L. Karle · 1996: Norman Davidson · 1997: Darleane C. Hoffman · Harold S. Johnston · 1998: John W. Cahn · George M. Whitesides · 1999: Stuart A. Rice · John Ross · Susan Solomon
+2000s
+2000: John D. Baldeschwieler · Ralph F. Hirschmann · 2001: Ernest R. Davidson · Gabor A. Somorjai · 2002: John I. Brauman · 2004: Stephen J. Lippard · 2006: Marvin H. Caruthers · Peter B. Dervan · 2007: Mostafa A. El-Sayed · 2008: Joanna S. Fowler · JoAnne Stubbe
+ Engineering sciences
+1960s
+1962: Theodore von Karman · 1963: Vannevar Bush · John Robinson Pierce · 1964: Charles S. Draper · 1965: Hugh L. Dryden · Clarence L. Johnson · Warren K. Lewis · 1966: Claude E. Shannon · 1967: Edwin H. Land · Igor I. Sikorsky · 1968: J. Presper Eckert · Nathan M. Newmark · 1969: Jack St. Clair Kilby
+1970s
+1970: George E. Mueller · 1973: Harold E. Edgerton · Richard T. Whitcomb · 1974: Rudolf Kompfner · Ralph Brazelton Peck · Abel Wolman · 1975: Manson Benedict · William Hayward Pickering · Frederick E. Terman · Wernher von Braun · 1976: Morris Cohen · Peter C. Goldmark · Erwin Wilhelm Müller · 1979: Emmett N. Leith · Raymond D. Mindlin · Robert N. Noyce · Earl R. Parker · Simon Ramo
+1980s
+1982: Edward H. Heinemann · Donald L. Katz · 1983: William R. Hewlett · George M. Low · John G. Trump · 1986: Hans Wolfgang Liepmann · T. Y. Lin · Bernard M. Oliver · 1987: R. Byron Bird · H. Bolton Seed · Ernst Weber · 1988: Daniel C. Drucker · Willis M. Hawkins · George W. Housner · 1989: Harry George Drickamer · Herbert E. Grier
+1990s
+1990: Mildred S. Dresselhaus · Nick Holonyak Jr. · 1991: George Heilmeier · Luna B. Leopold · H. Guyford Stever · 1992: Calvin F. Quate · John Roy Whinnery · 1993: Alfred Y. Cho · 1994: Ray W. Clough · 1995: Hermann A. Haus · 1996: James L. Flanagan · C. Kumar N. Patel · 1998: Eli Ruckenstein · 1999: Kenneth N. Stevens
+2000s
+2000: Yuan-Cheng B. Fung · 2001: Andreas Acrivos · 2002: Leo Beranek · 2003: John M. Prausnitz · 2004: Edwin N. Lightfoot · 2005: Jan D. Achenbach · Tobin J. Marks · 2006: Robert S. Langer · 2007: David J. Wineland · 2008: Rudolf E. Kalman
+ Mathematical, statistical, and computer sciences
+1960s
+1963: Norbert Wiener · 1964: Solomon Lefschetz · H. Marston Morse · 1965: Oscar Zariski · 1966: John Milnor · 1967: Paul Cohen · 1968: Jerzy Neyman · 1969: William Feller
+1970s
+1970: Richard Brauer · 1973: John Tukey · 1974: Kurt Gödel · 1975: John W. Backus · Shiing-Shen Chern · George Dantzig · 1976: Kurt Otto Friedrichs · Hassler Whitney · 1979: Joseph Leo Doob · Donald E. Knuth
+1980s
+1982: Marshall Harvey Stone · 1983: Herman Goldstine · Isadore Singer · 1986: Peter Lax · Antoni Zygmund · 1987: Raoul Bott · Michael Freedman · 1988: Ralph E. Gomory · Joseph B. Keller · 1989: Samuel Karlin · Saunders MacLane · Donald C. Spencer
+1990s
+1990: George F. Carrier · Stephen Cole Kleene · John McCarthy · 1991: Alberto Calderón · 1992: Allen Newell · 1993: Martin David Kruskal · 1994: John Cocke · 1995: Louis Nirenberg · 1996: Richard Karp · Stephen Smale · 1997: Shing-Tung Yau · 1998: Cathleen Synge Morawetz · 1999: Felix Browder · Ronald R. Coifman
+2000s
+2000: John Griggs Thompson · Karen K. Uhlenbeck · 2001: Calyampudi R. Rao · Elias M. Stein · 2002: James G. Glimm · 2003: Carl R. de Boor · 2004: Dennis P. Sullivan · 2005: Bradley Efron · 2006: Hyman Bass · 2007: Leonard Kleinrock · Andrew J. Viterbi ·
+ Physical sciences
+1960s
+1963: Luis W. Alvarez · 1964: Julian Schwinger · Harold Clayton Urey · Robert Burns Woodward · 1965: John Bardeen · Peter Debye · Leon M. Lederman · William Rubey · 1966: Jacob Bjerknes · Subrahmanyan Chandrasekhar · Henry Eyring · John H. Van Vleck · Vladimir K. Zworykin · 1967: Jesse Beams · Francis Birch · Gregory Breit · Louis Hammett · George Kistiakowsky · 1968: Paul Bartlett · Herbert Friedman · Lars Onsager · Eugene Wigner · 1969: Herbert C. Brown · Wolfgang Panofsky
+1970s
+1970: Robert H. Dicke · Allan R. Sandage · John C. Slater · John A. Wheeler · Saul Winstein · 1973: Carl Djerassi · Maurice Ewing · Arie Jan Haagen-Smit · Vladimir Haensel · Frederick Seitz · Robert Rathbun Wilson · 1974: Nicolaas Bloembergen · Paul Flory · William Alfred Fowler · Linus Carl Pauling · Kenneth Sanborn Pitzer · 1975: Hans A. Bethe · Joseph Hirschfelder · Lewis Sarett · E. Bright Wilson · Chien-Shiung Wu · 1976: Samuel Goudsmit · Herbert S. Gutowsky · Frederick Rossini · Verner Suomi · Henry Taube · George Uhlenbeck · 1979: Richard P. Feynman · Herman Mark · Edward M. Purcell · John Sinfelt · Lyman Spitzer · Victor F. Weisskopf
+1980s
+1982: Philip W. Anderson · Yoichiro Nambu · Edward Teller · Charles H. Townes · 1983: E. Margaret Burbidge · Maurice Goldhaber · Helmut Landsberg · Walter Munk · Frederick Reines · Bruno B. Rossi · J. Robert Schrieffer · 1986: Solomon Buchsbaum · Horace Crane · Herman Feshbach · Robert Hofstadter · Chen Ning Yang · 1987: Philip Abelson · Walter Elsasser · Paul C. Lauterbur · George Pake · James A. Van Allen · 1988: D. Allan Bromley · Paul Ching-Wu Chu · Walter Kohn · Norman F. Ramsey · Jack Steinberger · 1989: Arnold O. Beckman · Eugene Parker · Robert Sharp · Henry Stommel
+1990s
+1990: Allan M. Cormack · Edwin M. McMillan · Robert Pound · Roger Revelle · 1991: Arthur L. Schawlow · Ed Stone · Steven Weinberg · 1992: Eugene M. Shoemaker · 1993: Val Fitch · Vera Rubin · 1994: Albert Overhauser · Frank Press · 1995: Hans Dehmelt · Peter Goldreich · 1996: Wallace S. Broecker · 1997: Marshall Rosenbluth · Martin Schwarzschild · George Wetherill · 1998: Don L. Anderson · John N. Bahcall · 1999: James Cronin · Leo Kadanoff
+2000s
+2000: Willis E. Lamb · Jeremiah P. Ostriker · Gilbert F. White · 2001: Marvin L. Cohen · Raymond Davis Jr. · Charles Keeling · 2002: Richard Garwin · W. Jason Morgan · Edward Witten · 2003: G. Brent Dalrymple · Riccardo Giacconi · 2004: Robert N. Clayton · 2005: Ralph A. Alpher · Lonnie Thompson · 2006: Daniel Kleppner · 2007: Fay Ajzenberg-Selove · Charles P. Slichter · 2009: Berni Alder · James E. Gunn
+Categories: 1927 births | 1992 deaths | Carnegie Mellon University faculty | Cognitive scientists | National Medal of Science laureates | Turing Award laureates | History of artificial intelligence | Princeton University alumni | Carnegie Mellon University alumni | Consciousness researchers and theorists

@@ -1,0 +1,139 @@
+﻿
+MIT Computer Science and Artificial Intelligence Laboratory
+MIT Computer Science and Artificial Intelligence Laboratory
+
+Established	July 1, 2003
+July 1, 1963 (as Project MAC)
+Field of Research	Computer science
+Director	Victor Zue
+Address	The Stata Center, Building 32
+32 Vassar Street
+Cambridge, MA 02139
+USA
+Location	Cambridge, MA, USA
+Telephone	617-253-5851
+Nickname	CSAIL
+Operating Agency	Massachusetts Institute of Technology
+Website	http://www.csail.mit.edu/
+
+MIT Computer Science and Artificial Intelligence Laboratory (also CSAIL) is a research laboratory at the Massachusetts Institute of Technology formed by the 2003 merger of the Laboratory for Computer Science and Artificial Intelligence Laboratory. Housed within the Stata Center, CSAIL is the largest on-campus laboratory as measured by research scope and membership.
+Contents [hide]
+1 Research activities
+2 History
+2.1 Project MAC
+2.2 LCS and AI Lab
+2.3 CSAIL
+3 Outreach activities
+4 Notable researchers
+4.1 Notable alumni
+5 Directors
+6 References
+7 Further reading
+8 See also
+9 External links
+[edit]Research activities
+
+CSAIL's research activities are organized around a number of semi-autonomous research groups, each of which is headed by one or more professors or research scientists. These groups are divided up into seven general areas of research:
+Artificial Intelligence
+Computational biology
+Graphics and Vision
+Language and Learning
+Theory of computation
+Robotics
+Systems (includes computer architecture, databases, distributed systems, networks and networked systems, operating systems, programming methodology, and software engineering among others)
+In addition, CSAIL hosts the World Wide Web Consortium (W3C).
+[edit]History
+
+Computing research at MIT began with Vannevar Bush's research into a differential analyzer and Claude Shannon's electronic Boolean algebra in the 1930s, the wartime Radiation Laboratory, the post-war Project Whirlwind and Research Laboratory of Electronics (RLE), and Lincoln Laboratory's SAGE in the early 1950s.
+Research at MIT in the field of artificial intelligence began in 1959.[citation needed]
+[edit]Project MAC
+On July 1, 1963, Project MAC (the Project on Mathematics and Computation, later backronymed to Multiple Access Computer, Machine Aided Cognitions, or Man and Computer) was launched with a $2 million grant from the Defense Advanced Research Projects Agency (DARPA). Project MAC's original director was Robert Fano of MIT's Research Laboratory of Electronics (RLE). Fano decided to call MAC a "project" rather than a "laboratory" for reasons of internal MIT politics—if MAC had been called a laboratory, then it would have been more difficult to raid other MIT departments for research staff. The program manager responsible for the DARPA grant was J.C.R. Licklider, who had previously been at MIT conducting research in RLE, and would later succeed Fano as director of Project MAC.
+Project MAC would become famous for groundbreaking research in operating systems, artificial intelligence, and the theory of computation. Its contemporaries included Project Genie at Berkeley, the Stanford Artificial Intelligence Laboratory, and (somewhat later) University of Southern California's (USC's) Information Sciences Institute.
+An "AI Group" including Marvin Minsky (the director), John McCarthy (who invented Lisp) and a talented community of computer programmers was incorporated into the newly-formed Project MAC. It was interested principally in the problems of vision, mechanical motion and manipulation, and language, which they view as the keys to more intelligent machines. In the 1950s - 1970s the AI Group shared a computer room with a computer (initially a PDP-6, and later a PDP-10) for which they built a time-sharing operating system called ITS.[citation needed]
+The early Project MAC community included Fano, Minsky, Licklider, Fernando J. Corbató, and a community of computer programmers and enthusiasts among others who drew their inspiration from former colleague John McCarthy. These founders envisioned the creation of a computer utility whose computational power would be as reliable as an electric utility. To this end, Corbató brought the first computer time-sharing system, CTSS, with him from the MIT Computation Center, using the DARPA funding to purchase an IBM 7094 for research use. One of the early focuses of Project MAC would be the development of a successor to CTSS, Multics, which was to be the first high availability computer system, developed as a part of an industry consortium including General Electric and Bell Laboratories.
+In 1966, Scientific American featured Project MAC in the September thematic issue devoted computer science, which was later published in book form. At the time, the system was described as having approximately 100 TTY terminals, mostly on campus but with a few in private homes. Only 30 users could be logged in at the same time.
+[edit]LCS and AI Lab
+In the late 1960s, Minsky's artificial intelligence group was seeking more space, and was unable to get satisfaction from project director Licklider. University space-allocation politics being what it is, Minsky found that although Project MAC as a single entity could not get the additional space he wanted, he could split off to form his own lab and then be entitled to more office space. As a result, the MIT AI Lab was formed in 1970, and many of Minsky's AI colleagues left Project MAC to join him in the new lab, while most of the remaining members went on to form the Laboratory for Computer Science. Talented programmers such as Richard Stallman, who used TECO to write EMACS, flourished in the AI Lab during this time.
+Those researchers who did not join the smaller AI Lab formed the Laboratory for Computer Science and continued their research into operating systems, programming languages, distributed systems, and the theory of computation. Two professors, Hal Abelson and Gerald Jay Sussman, chose to remain neutral – their group was referred to variously as Switzerland and Project MAC for the next 30 years.[citation needed]
+[edit]CSAIL
+On the fortieth anniversary of Project MAC's establishment, July 1, 2003, LCS re-merged with the AI Lab to form the MIT Computer Science and Artificial Intelligence Laboratory, or CSAIL. This merger created the largest laboratory (over 600 personnel) on the MIT campus and was regarded as a reuniting of the diversified elements of Project MAC.
+[edit]Outreach activities
+
+The IMARA (from Swahili word for "power") group sponsors a variety of outreach programs which bridge the Global Digital Divide. Its aim is to find and implement long-term, sustainable solutions which will increase the availability of educational technology and resources to domestic and international communities. These projects are run under the aegis of CSAIL and staffed by MIT volunteers who give training, install and donate computer setups in greater Boston, Massachusetts, Kenya, Native American Indian tribal reservations in the American Southwest such as the Navajo Nation, the Middle East, and Fiji Islands. The CommuniTech project strives to empower under-served communities through sustainable technology and education and does this through the MIT Used Computer Factory (UCF), providing refurbished computers to under-served families, and through the Families Accessing Computer Technology (FACT) classes, it trains those families to become familiar and comfortable with computer technology.[1][2][3]
+[edit]Notable researchers
+
+(Including members and alumni of CSAIL's predecessor labs.)
+MacArthur Fellows Sir Tim Berners-Lee, Erik Demaine, Daniela L. Rus, Peter Shor and Richard Stallman
+Turing Award recipients Leonard M. Adleman, Fernando J. Corbato, Butler W. Lampson, John McCarthy, Marvin Minsky, Ronald L. Rivest, Adi Shamir, and Barbara Liskov
+Rolf Nevanlinna Prize recipients Madhu Sudan, Peter Shor
+Gödel Prize Recipients Shafi Goldwasser (two-time recipient), Silvio Micali, Charles Rackoff, Johan Håstad, Peter Shor, and Madhu Sudan
+Grace Murray Hopper Award recipients Robert Metcalfe, Shafi Goldwasser, Guy L. Steele, Richard Stallman, and W. Daniel Hillis
+Textbook authors Harold Abelson and Gerald Jay Sussman, Richard Stallman, Thomas H. Cormen, Charles E. Leiserson, Patrick Winston, Ronald L. Rivest and Clifford Stein
+David D. Clark, former chief protocol architect for the Internet; co-author with Jerome H. Saltzer (also a CSAIL member) and David P. Reed of the influential paper "End-to-End Arguments in Systems Design"
+Seymour Papert, inventor of the Logo programming language
+Joseph Weizenbaum, creator of the ELIZA computer-simulated therapist
+Bob Frankston, co-developer of VisiCalc, the first computer spreadsheet
+Richard Stallman, original inventor of Emacs and key agent in the free software movement and permanent resident at CSAIL
+[edit]Notable alumni
+Several Project MAC alumni went on to further revolutionize the computer industry.
+Bob Metcalfe, who later invented Ethernet at Xerox PARC and later founded 3COM
+[edit]Directors
+
+Directors of Project MAC
+Robert Fano, 1963–1968
+J.C.R. Licklider, 1968–1971
+Edward Fredkin, 1971–1974
+Michael Dertouzos, 1974–1975
+Directors of the AI Lab
+Marvin Minsky, 1970–1972
+Patrick Winston, 1972–1997
+Rodney Brooks, 1997–2003
+Directors of the Laboratory for Computer Science
+Michael Dertouzos, 1975–2001
+Victor Zue, 2001–2003
+Directors of CSAIL
+Rodney Brooks, 2003–2007
+Victor Zue, 2007—
+[edit]References
+
+^ Outreach activities at CSAIL - CSAIL homepage, MIT.
+^ IMARA Project at MIT
+^ Fizz, Robyn; Mansur, Karla (2008-06-04), "Helping MIT neighbors cross the 'digital divide'", MIT Tech Talk (Cambridge: MIT): 3, http://web.mit.edu/newsoffice/2008/techtalk52-28.pdf
+[edit]Further reading
+
+CSAIL's official Web page
+"A Marriage of Convenience: The Founding of the MIT Artificial Intelligence Laboratory", Chious et al. - includes important information on the Incompatible Timesharing System
+Documentary film with and about Joseph Weizenbaum ( "Weizenbaum. Rebel at Work.")
+Garfinkel, Simson; Hal Abelson, ed. (1999). Architects of the Information Society: Thirty-Five Years of the Laboratory for Computer Science at MIT. Cambridge, Massachusetts: MIT Press. ISBN 0-262-07196-7.
+Simson L. Garfinkel, Architects of the Information Society, Harold Abelson, ed. (Cambridge: MIT Press, 2001). ISBN 0-262-07196-7.
+[edit]See also
+
+Stanford Artificial Intelligence Laboratory
+History of operating systems
+Knight keyboard
+CERIAS
+CyLab
+[edit]External links
+
+The webpage for the successor of the AI Lab, CSAIL.
+Oral history interview with Robert M. Fano. Charles Babbage Institute, University of Minnesota, Minneapolis.
+Oral history interview with Lawrence G. Roberts. Charles Babbage Institute, University of Minnesota, Minneapolis.
+Oral history interview with J. C. R. Licklider. Charles Babbage Institute, University of Minnesota, Minneapolis.
+Oral history interview with Marvin L. Minsky. Charles Babbage Institute, University of Minnesota, Minneapolis.
+Oral history interview with Terry Allen Winograd. Charles Babbage Institute, University of Minnesota, Minneapolis.
+Oral history interview with Wesley Clark. Charles Babbage Institute, University of Minnesota, Minneapolis.
+"A Marriage of Convenience: The Founding of the MIT Artificial Intelligence Laboratory", Chious et al. - includes important information on the Incompatible Timesharing System.
+Oral history interviews with Project MAC participants, Charles Babbage Institute University of Minnesota, Minneapolis. Participants include Robert M. Fano and Fernando J. Corbató.
+v • d • e
+Massachusetts Institute of Technology
+Academics	
+Academics · School of Architecture and Planning · School of Engineering · School of Humanities, Arts, and Social Sciences · School of Science · Sloan School of Management · Division of Health Sciences and Technology · OpenCourseWare
+Research	
+Broad Institute · Center for Theoretical Physics · Computer Science and Artificial Intelligence Laboratory · Koch Institute · Laboratory for Information and Decision Systems · MIT Libraries · Lincoln Laboratory · McGovern Institute · Media Lab · Picower Institute · Plasma Science and Fusion Center · Research Laboratory of Electronics · MIT Senseable City Lab · MIT Nuclear Reactor Lab · Whitehead Institute · MIT Center for International Studies
+People	
+Alumni · Faculty · Presidents · Institute Professors
+Culture	
+History · Traditions and activities · MIT in popular culture · Technology Review · Athena · Brass Rat · Hacks · The Tech · MITOC · TMRC · Tech Squares · MIT $100K · Mystery Hunt · Smoot
+Campus	
+Campus · Chapel · Green Building · Infinite Corridor · Kresge Auditorium · MIT Museum · List Visual Arts Center · Stata Center · Wiesner building · Graduate Residences · Undergraduate Residences · Fraternities and Sororities
+Categories: 2003 establishments | Massachusetts Institute of Technology | Artificial intelligence laboratories | History of artificial intelligence | Research institutes in the United States | Robotics organizations

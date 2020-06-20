@@ -1,0 +1,232 @@
+﻿
+Old High German
+"Old German" redirects here. For other uses, see Old German (disambiguation).
+Old High German
+Spoken in	southern Germany (south of the Benrath line), parts of Austria and Switzerland, Southern Bohemia, Sporadic communities in Eastern Gaul
+Language extinction	developed into Middle High German from the 11th century
+Language family	Indo-European
+Germanic
+West Germanic
+Old High German
+Language codes
+ISO 639-1	None
+ISO 639-2	goh
+ISO 639-3	goh
+Linguasphere	
+Note: This page may contain IPA phonetic symbols in Unicode.
+
+
+The (Late Old High) German speaking area of the Holy Roman Empire around 950.
+The term Old High German (OHG, German: Althochdeutsch, German abbr. Ahd.) refers to the earliest stage of the German language and it conventionally covers the period from around 500 to 1050. Coherent written texts do not appear until the second half of the 8th century, and some treat the period before 750 as 'prehistoric' and date the start of Old High German proper to 750 for this reason. There are, however, a number of Elder Futhark inscriptions dating to the 6th century (notably the Pforzen buckle), as well as single words and many names found in Latin texts predating the 8th century.
+Contents [hide]
+1 Characteristics
+2 Dialects
+3 Phonology
+3.1 Vowels
+3.1.1 Short and long vowels
+3.2 Consonants
+4 Morphology
+4.1 Nouns
+4.2 Verbs
+5 History
+6 Texts
+7 Samples
+8 See also
+9 Notes
+10 References
+11 External links
+[edit]Characteristics
+
+Main article: High German consonant shift
+The main difference between Old High German and the West Germanic dialects from which it developed is that it underwent the Second Sound Shift or High German consonant shift. This is generally dated very approximately to the late 5th and early 6th centuries—hence dating its start to around 500. The result of this sound change is that the consonant system of German remains different from all other West Germanic languages, including English and Low German. Grammatically, however, Old High German remained very similar to Old English, Old Dutch, and Old Saxon.
+By the mid 11th century the many different vowels found in unstressed syllables had all been reduced to "e". Since these vowels were part of the grammatical endings in the nouns and verbs, their loss led to radical simplification of the inflectional grammar of German. For these reasons, 1050 is seen as the start of the Middle High German period, though in fact there are almost no texts in German for the next hundred years.
+Examples of vowel reduction in unstressed syllables:
+    Old High German	    Middle High German	    English
+    machôn	    machen	    to make, to do
+    taga	    tage	    days
+    demu	    dem(e)	    to the
+(The Modern German forms of these words are broadly the same as in Middle High German.)
+[edit]Dialects
+
+There was no standard or supra-regional variety of Old High German—every text is written in a particular dialect, or in some cases a mixture of dialects. Broadly speaking, the main dialect divisions of Old High German seem to have been similar to those of later periods—they are based on established territorial groupings and the effects of the Second Sound Shift, which have remained influential until the present day. But because the direct evidence for Old High German consists solely of manuscripts produced in a few major ecclesiastical centres, there is no isogloss information of the sort on which modern dialect maps are based. For this reason the dialects may be termed monastery dialects.
+The main dialects, with their bishoprics and monasteries:
+Central German
+Middle Franconian: Trier, Echternach, Cologne
+Rhine Franconian: Lorsch, Speyer, Worms, Mainz, Frankfurt
+South Rhine Franconian: Weissenburg im Elsaß
+East Franconian: Fulda, Bamberg, Würzburg
+Thuringian: (no texts)
+West Franconian: conjectural dialect of the Franks in Northern Gaul
+Upper German
+Alemannic: Murbach, Reichenau, Sankt Gallen. Strasbourg
+Bavarian: Freising, Passau, Regensburg, Augsburg, Ebersberg, Wessobrunn, Tegernsee, Salzburg, Mondsee
+Langobardic: (fragmentary, classification as OHG uncertain)
+There are some important differences between the geographical spread of the Old High German dialects and that of Modern German:
+no German dialects were spoken east of the Rivers Elbe and Saale—in the Old High German period this area was occupied by Slavic peoples since the Völkerwanderung and was not settled by German speakers until the late 10th and the early 11th century
+the Langobardic dialect of the Lombards who invaded Northern Italy in the 6th century is assumed to have been an Upper German dialect, though little evidence of it remains apart from names and individual words in Latin texts, and a few inscriptions
+the Old Frankish language is a special case among the old West Germanic languages. The Frankish tribes built their empire at the same time as the High German consonant shift took place. This meant that the dialects of Frankish in the north of their empire, the Low Countries, did not shift, while the dialects in the south did. The dialects in the south are part of Old High German; the ones in the north are part of Old Dutch (Low Franconian).
+[edit]Phonology
+
+The charts show the vowel and consonant systems of the East Franconian dialect in the 9th century. This is the dialect of the monastery of Fulda, and specifically of the Old High German Tatian. Dictionaries and grammars of OHG often use the spellings of the Tatian as a substitute for genuine standardised spellings, and these have the advantage of being recognizably close to the Middle High German forms of words, particularly with respect to the consonants.
+[edit]Vowels
+[edit]Short and long vowels
+Old High German had five phonemic long vowels and six phonemic short vowels. Both occurred in stressed and unstressed syllables.
+ 	front	central	back
+short	long	short	long	short	long
+close	i	î	 	u	û
+mid	e, ë	ê	 	o	ô
+open	 	a	â	 
+Notes:
+All back vowels likely had front-vowel allophones as a result of Umlaut. The front-vowel allophones likely became full phonemes in Middle High German. In the Old High German period, there existed [e] (possibly a mid-close vowel) from the Umlaut of /a/ and /e/ but it probably wasn't phonemicized until the end of the period. Manuscripts occasionally distinguish two /e/ sounds. Generally, modern grammars and dictionaries use ‹ë› for the mid vowel and ‹e› for the mid-close vowel.
+The short high and mid vowels may have been articulated lower than their long counterparts as in Modern German. This cannot be established from written sources.
+Short vowels followed later by long vowels tended to be reduced to ‹e› in unstressed syllables. The ‹e› may have represented [ɛ] or schwa [ə].
+Vowel length was indicated in the manuscripts inconsistently (though not in modern handbooks). A macron was generally used to indicate a long vowel.[dubious – discuss]
+Old High German diphthongs are indicated by the digraphs ‹ei›, ‹ie›, ‹io›, ‹iu›, ‹ou›, ‹uo›.
+[edit]Consonants
+ 	Bilabial	Labiodental	Dental	Alveolar	Postalveolar	Palatal/Velar	Glottal
+Plosive	p  b	 	 	t  d	 	c,k; g /k/; /ɡ/ 	
+Affricates	pf /pf͡/	 	 	z /ts͡/	 	 	
+Nasal	m	 	 	n	 	ng /ŋ/	 
+Fricative	 	f, v /f/, /v/	th /θ/	s, ȥ /s/, /z/	 	h, ch /x/	h
+Approximant	w, uu /w/	 	 	 	j, i /j/	 	
+Liquid	 	 	 	r, l	 	 	
+There is wide variation in the consonant systems of the Old High German dialects arising mainly from the differing extent to which they are affected by the High German Sound Shift. Precise information about the articulation of consonants is impossible to establish.
+In the plosive and fricative series, where there are two consonants in a cell, the first is fortis the second lenis. The voicing of lenis consonants varied between dialects.
+Old High German distinguished long and short consonants. Double-consonant spellings don't indicate a preceding short vowel as in Modern German but true consonant gemination. Double consonants found in Old High German include pp, bb, tt, dd, ck (for /kk/), gg, ff, ss, hh, zz, mm, nn, ll, rr.
+/θ/ changes to /d/ in all dialects during the 9th century. The status in the Old High German Tatian (c. 830), reflected in modern Old High German dictionaries and glossaries, is that th is found in initial position, d in other positions.
+It is not clear whether Old High German /k/ and /x/ had already acquired palatized allophones /c/ and /ç/, respectively, following front vowels as in Modern German.
+A curly-tailed z (ȥ) is sometimes used in modern grammars and dictionaries to indicate the dental fricative which arose from Common Germanic t in the High German consonant shift, to distinguish it from the dental affricate, represented as z. This distinction has no counterpart in the original manuscripts, except in the OHG Isidor, which uses tz for the affricate.
+[edit]Morphology
+
+[edit]Nouns
+Main article: Old High German declension
+[edit]Verbs
+The following is a sample paradigm of a strong verb, nëman "to take".
+Indicative	Optative	Imperative
+Present	1st sing	nimu	nëme	--
+2nd sing	nimis (-ist)	nëmēs (-ēst)	nim
+3rd sing	nimit	nëme	--
+1st plur	nëmemēs (-ēn)	nëmemēs (-ēn)	nëmamēs, -emēs (-ēn)
+2nd plur	nëmet	nëmēt	nëmet
+3rd plur	nëmant	nëmēn	--
+Past	1st sing	nam	nāmi	--
+2nd sing	nāmi	nāmīs (-īst)	--
+3rd sing	nam	nāmi	--
+1st plur	nāmumēs (-un)	nāmīmēs (-īn)	--
+2nd plur	nāmut	nāmīt	--
+3rd plur	nāmun	nāmīn	--
+Infinitive	nëman
+Gerund: Genitive	nëmannes
+Gerund: Dative	nëmanne
+Present Participle	nëmanti (-enti)
+Past Participle	ginoman
+[edit]History
+
+Further information: Francia, Carolingian Empire, Germanic Christianity, and Anglo-Saxon mission
+The Franks conquered Northern Gaul as far south as the Loire; the linguistic boundary later stabilised approximately along the course of the Maas and Moselle, with Frankish speakers further west being romanised.
+With Charlemagne's conquest of the Lombards in 776, nearly all continental Germanic speaking peoples had been incorporated into the Frankish Empire, thus also bringing all continental West Germanic speakers under Frankish rule. However, since the language of both the administration and the Church was Latin, this unification did not lead to any development of a supra-regional variety of Frankish nor a standardized Old High German.
+Old High German literacy is a product of the monasteries, notably at St. Gallen, Reichenau and Fulda. Its origins lie in the establishment of the German church by Boniface in the mid 8th century, and it was further encouraged during the Carolingian Renaissance in the 9th. The dedication to the preservation of Old High German epic poetry among the scholars of the Carolingian Renaissance was significantly greater than could be suspected from the meagre survivals we have today (less than 200 lines in total between the Lay of Hildebrand and the Muspilli). Einhard tells how Charlemagne himself ordered that the epic lays should be collected for posterity.[1] It was the neglect or religious zeal of later generations that led to the loss of these records. Thus, it was Charlemagne's weak successor, Louis the Pious, who destroyed his father's collection of epic poetry on account of its pagan content[citation needed].
+Hrabanus Maurus, a student of Alcuin's and abbot at Fulda from 822, was an important advocate of the cultivation of German literacy. Among his students were Walafrid Strabo and Otfrid of Weissenburg. Notker Labeo (d. 1022) towards the end of the Old High German period was among the greatest stylists in the language, and developed a systematic orthography.[2]
+[edit]Texts
+
+Further information: Medieval German literature
+The early part of the period saw considerable missionary activity, and by 800 the whole of the Frankish Empire had, in principle, been Christianized. All the manuscripts which contain Old High German texts were written in ecclesiastical scriptoria by scribes whose main task was writing in Latin rather than German. Consequently, the majority of Old High German texts are religious in nature and show strong influence of ecclesiastical Latin on the vocabulary. In fact, most surviving prose texts are translations of Latin originals. Even secular works such as the Hildebrandslied are often preserved only because they were written on spare sheets in religious codices.
+The earliest Old High German text is generally taken to be the Abrogans, a Latin-Old High German glossary variously dated between 750 and 780, probably from Reichenau. The 8th century Merseburg Incantations are the only remnant of pre-Christian German literature. The earliest texts not dependent on Latin originals would seem to be the Hildebrandslied and the Wessobrunn Prayer, both recorded in manuscripts of the early 9th century, though the texts are assumed to derive from earlier copies.
+The Bavarian Muspilli is the sole survivor of what must have been a vast oral tradition. Other important works are the Evangelienbuch (Gospel harmony) of Otfrid von Weissenburg, the short but splendid Ludwigslied and the 9th century Georgslied. The boundary to Early Middle High German (from ca. 1050) is not clear-cut. The most impressive example of EMHG literature is the Annolied.
+[edit]Samples
+
+The Lord's Prayer in four Old High German dialects. Because these are translations of a liturgical text, they are best not regarded as examples of idiomatic language, but they do show dialect variation very clearly.
+Alemannic, 8th Century	South Rhine Franconian, 9th Century	East Franconian, c. 830	Bavarian, early 9th century
+The St Gall Paternoster	Weissenburg Catechism	Old High German Tatian	Freisinger Paternoster
+Fater unseer, thu pist in himile,
+uuihi namun dinan,
+qhueme rihhi diin,
+uuerde uuillo diin,
+so in himile sosa in erdu.
+prooth unseer emezzihic kip uns hiutu,
+oblaz uns sculdi unsero,
+so uuir oblazem uns skuldikem,
+enti ni unsih firleiti in khorunka,
+uzzer losi unsih fona ubile.
+Fater unsēr, thu in himilom bist,
+giuuīhit sī namo thīn.
+quaeme rīchi thīn.
+uuerdhe uuilleo thīn,
+sama sō in himile endi in erthu.
+Brooth unseraz emezzīgaz gib uns hiutu.
+endi farlāz uns sculdhi unsero,
+sama sō uuir farlāzzēm scolōm unserēm.
+endi ni gileidi unsih in costunga.
+auh arlōsi unsih fona ubile.
+Fater unser, thū thār bist in himile,
+sī geheilagōt thīn namo,
+queme thīn rīhhi,
+sī thīn uuillo,
+sō her in himile ist, sō sī her in erdu,
+unsar brōt tagalīhhaz gib uns hiutu,
+inti furlāz uns unsara sculdi
+sō uuir furlāzemēs unsarēn sculdīgōn,
+inti ni gileitēst unsih in costunga,
+ūzouh arlōsi unsih fon ubile.
+Fater unser, du pist in himilum.
+Kauuihit si namo din.
+Piqhueme rihhi din,
+Uuesa din uuillo,
+sama so in himile est, sama in erdu.
+Pilipi unsraz emizzigaz kip uns eogauuanna.
+Enti flaz uns unsro sculdi,
+sama so uuir flazzames unsrem scolom.
+Enti ni princ unsih in chorunka.
+Uzzan kaneri unsih fona allem sunton.
+Source: Braune/Ebbinghaus, Althochdeutsches Lesebuch, 17th edn (Niemeyer, 1994)
+[edit]See also
+
+	Look up old high german in Wiktionary, the free dictionary.
+Middle High German
+Medieval German Literature
+[edit]Notes
+
+
+This article includes a list of references, but its sources remain unclear because it has insufficient inline citations.
+Please help to improve this article by introducing more precise citations where appropriate. (August 2009)
+^ Life of Charlemagne, 29: "He also had the old rude songs that celebrate the deeds and wars of the ancient kings written out for transmission to posterity."
+^ Rudolf von Raumer, Einwirkung des Christenthums auf die Althochdeutsche Sprache, Berlin, 1851, pp. 194-272.
+[edit]References
+
+Althochdeutches Lesebuch, ed. W.Braune, K.Helm, E.A.Ebbinghaus, 17th edn, Tübingen 1994. ISBN 3-484-10707-3
+J. Knight Bostock, A Handbook on Old High German Literature, 2nd edn, revised by K.C.King and D.R.McLintock, Oxford 1976. ISBN 0-19-815392-9
+R.E.Keller, The German Language, London 1978. ISBN 0-571-11159-9
+Lexikon der Germanistischen Linguistik, ed. Hans Peter Althaus, Helmut Henne, Herbert Ernst Weigand, 2nd revised edition, Tübingen 1980. ISBN 3-484-10396-5
+S.Sonderegger, Althochdeutsche Sprache und Literatur, de Gruyter 1974 ISBN 3-11-004559-1
+C.J.Wells, German. A Linguistic History to 1945, Oxford 1987. ISBN 0-19-815809-2
+Wright, Joseph (1906). An Old High German Primer (Second Edition). Oxford: Clarendon Press.
+[edit]External links
+
+
+Old High German test of Wikipedia at Wikimedia Incubator
+Joseph Wright, An Old High German Primer (1906)
+Althochdeutsche Texte im Internet (8.–10. Jahrhundert) - links to a range of online texts
+Modern English-Old High German dictionary
+v • d • e
+Germanic languages · Germanic philology
+Language subgroups	
+North · East · West
+North · East · Elbe · Weser-Rhine · North Sea
+Reconstructed	
+Proto-Germanic
+Historical languages	
+North
+Proto-Norse · Old Norse · Old Swedish · Old Gutnish · Norn · Greenlandic Norse · Old Norwegian
+East
+Gothic · Crimean Gothic · Vandalic · Burgundian
+West
+Old Saxon · Middle Low German · Old High German · Middle High German · Old Frankish · Old Dutch · Middle Dutch · Old Frisian · Middle Frisian · Old English · Middle English · Early Scots · Middle Scots · Lombardic · Yola
+Modern languages	
+Afrikaans · Alemannic · Danish · Dutch · English · Faroese · German · Gutnish · Icelandic · Limburgish · Low German · Luxembourgish · North Frisian · Norwegian · Saterland Frisian · Scots · Swedish · West Frisian · Yiddish
+Diachronic features	
+Grimm's law · Verner's law · Holtzmann's law · Sievers' law · Germanic substrate hypothesis · West Germanic gemination · High German consonant shift · Germanic a-mutation · Germanic umlaut · Germanic spirant law · Ingvaeonic nasal spirant law · Great vowel shift
+Synchronic features	
+Germanic verb · Germanic strong verb · Germanic weak verb · Preterite-present verb · Grammatischer Wechsel · Indo-European ablaut
+Language histories	
+English (phonology) · Scots (phonology) · German · Dutch · Danish · Icelandic · Swedish
+Categories: Old High German | German dialects | Languages of Germany

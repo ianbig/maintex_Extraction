@@ -1,0 +1,271 @@
+﻿
+Carl Friedrich Gauss
+  (Redirected from Gauss)
+For other uses, see Gauss (disambiguation).
+Carl Friedrich Gauss
+
+Carl Friedrich Gauss (1777–1855), painted by Christian Albrecht Jensen
+Born	30 April 1777
+Braunschweig, Electorate of Brunswick-Lüneburg, Holy Roman Empire
+Died	23 February 1855 (aged 77)
+Göttingen, Kingdom of Hanover
+Residence	Kingdom of Hanover
+Nationality	German
+Fields	Mathematician and physicist
+Institutions	University of Göttingen
+Alma mater	University of Helmstedt
+Doctoral advisor	Johann Friedrich Pfaff
+Other academic advisors	Johann Christian Martin Bartels
+Doctoral students	Friedrich Bessel
+Christoph Gudermann
+Christian Ludwig Gerling
+Richard Dedekind
+Johann Encke
+Johann Listing
+Bernhard Riemann
+Christian Peters
+Moritz Cantor
+Other notable students	Ferdinand Eisenstein
+Gustav Kirchhoff
+Ernst Kummer
+Johann Dirichlet
+August Ferdinand Möbius
+Julius Weisbach
+L. C. Schnürlein
+Known for	See full list
+Influenced	Sophie Germain
+Notable awards	Copley Medal (1838)
+Signature
+
+Johann Carl Friedrich Gauss (pronounced /ˈɡaʊs/; German: Gauß  listen (help·info), Latin: Carolus Fridericus Gauss) (30 April 1777 – 23 February 1855) was a German mathematician and scientist who contributed significantly to many fields, including number theory, statistics, analysis, differential geometry, geodesy, geophysics, electrostatics, astronomy and optics.
+Sometimes referred to as the Princeps mathematicorum[1] (Latin, "the Prince of Mathematicians" or "the foremost of mathematicians") and "greatest mathematician since antiquity," Gauss had a remarkable influence in many fields of mathematics and science and is ranked as one of history's most influential mathematicians.[2] He referred to mathematics as "the queen of sciences."[3]
+Gauss was a child prodigy. There are many anecdotes pertaining to his precocity while a toddler, and he made his first ground-breaking mathematical discoveries while still a teenager. He completed Disquisitiones Arithmeticae, his magnum opus, in 1798 at the age of 21, though it was not published until 1801. This work was fundamental in consolidating number theory as a discipline and has shaped the field to the present day.
+Contents [hide]
+1 Early years (1777–1798)
+2 Middle years (1799–1830)
+3 Later years and death (1831–1855)
+4 Religion
+5 Family
+6 Personality
+7 Mythology
+8 Commemorations
+9 Writings
+10 See also
+11 Notes
+12 Further reading
+13 External links
+[edit]Early years (1777–1798)
+
+
+
+Statue of Gauss at his birthplace, Braunschweig
+Carl Friedrich Gauss was born on April 30, 1777 in Braunschweig, in the duchy of Braunschweig-Wolfenbüttel, now part of Lower Saxony, Germany, as the son of poor working-class parents.[4] He was christened and confirmed in a church near the school he attended as a child.[5]
+Gauss was a child prodigy. There are many anecdotes pertaining to his precocity while a toddler, and he made his first ground-breaking mathematical discoveries while still a teenager. He completed Disquisitiones Arithmeticae, his magnum opus, in 1798 at the age of 21, though it was not published until 1801. This work was fundamental in consolidating number theory as a discipline and has shaped the field to the present day.
+Gauss's intellectual abilities attracted the attention of the Duke of Braunschweig,[2] who sent him to the Collegium Carolinum (now Technische Universität Braunschweig), which he attended from 1792 to 1795, and to the University of Göttingen from 1795 to 1798. While in university, Gauss independently rediscovered several important theorems;[citation needed] his breakthrough occurred in 1796 when he was able to show that any regular polygon with a number of sides which is a Fermat prime (and, consequently, those polygons with any number of sides which is the product of distinct Fermat primes and a power of 2) can be constructed by compass and straightedge. This was a major discovery in an important field of mathematics; construction problems had occupied mathematicians since the days of the Ancient Greeks, and the discovery ultimately led Gauss to choose mathematics instead of philology as a career. Gauss was so pleased by this result that he requested that a regular heptadecagon be inscribed on his tombstone. The stonemason declined, stating that the difficult construction would essentially look like a circle.[6]
+The year 1796 was most productive for both Gauss and number theory. He discovered a construction of the heptadecagon on March 30.[7] He invented modular arithmetic, greatly simplifying manipulations in number theory.[citation needed] He became the first to prove the quadratic reciprocity law on 8 April. This remarkably general law allows mathematicians to determine the solvability of any quadratic equation in modular arithmetic. The prime number theorem, conjectured on 31 May, gives a good understanding of how the prime numbers are distributed among the integers. Gauss also discovered that every positive integer is representable as a sum of at most three triangular numbers on 10 July and then jotted down in his diary the famous words, "Heureka! num = Δ + Δ + Δ." On October 1 he published a result on the number of solutions of polynomials with coefficients in finite fields, which ultimately led to the Weil conjectures 150 years later.
+[edit]Middle years (1799–1830)
+
+In his 1799 doctorate in absentia, A new proof of the theorem that every integral rational algebraic function of one variable can be resolved into real factors of the first or second degree, Gauss proved the fundamental theorem of algebra which states that every non-constant single-variable polynomial over the complex numbers has at least one root. Mathematicians including Jean le Rond d'Alembert had produced false proofs before him, and Gauss's dissertation contains a critique of d'Alembert's work. Ironically, by today's standard, Gauss's own attempt is not acceptable, owing to implicit use of the Jordan curve theorem. However, he subsequently produced three other proofs, the last one in 1849 being generally rigorous. His attempts clarified the concept of complex numbers considerably along the way.
+Gauss also made important contributions to number theory with his 1801 book Disquisitiones Arithmeticae (Latin, Arithmetical Investigations), which, among things, introduced the symbol ≡ for congruence and used it in a clean presentation of modular arithmetic, had the first two proofs of the law of quadratic reciprocity, developed the theories of binary and ternary quadratic forms, stated the class number problem for them, and showed that a regular heptadecagon (17-sided polygon) can be constructed with straightedge and compass.
+
+
+Title page of Gauss's Disquisitiones Arithmeticae
+In that same year, Italian astronomer Giuseppe Piazzi discovered the dwarf planet Ceres, but could only watch it for a few days. Gauss predicted correctly the position at which it could be found again, and it was rediscovered by Franz Xaver von Zach on 31 December 1801 in Gotha, and one day later by Heinrich Olbers in Bremen.
+Gauss's method involved determining a conic section in space, given one focus (the sun) and the conic's intersection with three given lines (lines of sight from the earth, which is itself moving on an ellipse, to the planet) and given the time it takes the planet to traverse the arcs determined by these lines (from which the lengths of the arcs can be calculated by Kepler's Second Law). This problem leads to an equation of the eighth degree, of which one solution, the Earth's orbit, is known. The solution sought is then separated from the remaining six based on physical conditions. In this work Gauss used comprehensive approximation methods which he created for that purpose.[8]
+Zach noted that "without the intelligent work and calculations of Doctor Gauss we might not have found Ceres again." Though Gauss had been up to that point supported by the stipend from the Duke, he doubted the security of this arrangement, and also did not believe pure mathematics to be important enough to deserve support. Thus he sought a position in astronomy, and in 1807 was appointed Professor of Astronomy and Director of the astronomical observatory in Göttingen, a post he held for the remainder of his life.
+The discovery of Ceres by Piazzi on 1 January 1801 led Gauss to his work on a theory of the motion of planetoids disturbed by large planets, eventually published in 1809 under the name Theoria motus corporum coelestium in sectionibus conicis solem ambientum (theory of motion of the celestial bodies moving in conic sections around the sun). Piazzi had only been able to track Ceres for a couple of months, following it for three degrees across the night sky. Then it disappeared temporarily behind the glare of the Sun. Several months later, when Ceres should have reappeared, Piazzi could not locate it: the mathematical tools of the time were not able to extrapolate a position from such a scant amount of data—three degrees represent less than 1% of the total orbit.
+Gauss, who was 23 at the time, heard about the problem and tackled it. After three months of intense work, he predicted a position for Ceres in December 1801—just about a year after its first sighting—and this turned out to be accurate within a half-degree. In the process, he so streamlined the cumbersome mathematics of 18th century orbital prediction that his work—published a few years later as Theory of Celestial Movement—remains a cornerstone of astronomical computation.[citation needed] It introduced the Gaussian gravitational constant, and contained an influential treatment of the method of least squares, a procedure used in all sciences to this day to minimize the impact of measurement error. Gauss was able to prove the method in 1809 under the assumption of normally distributed errors (see Gauss–Markov theorem; see also Gaussian). The method had been described earlier by Adrien-Marie Legendre in 1805, but Gauss claimed that he had been using it since 1795.[citation needed]
+
+
+Gauss' portrait published in Astronomische Nachrichten 1828
+Gauss was a prodigious mental calculator. Reputedly, when asked how he had been able to predict the trajectory of Ceres with such accuracy he replied, "I used logarithms." The questioner then wanted to know how he had been able to look up so many numbers from the tables so quickly. "Look them up?" Gauss responded. "Who needs to look them up? I just calculate them in my head!"[citation needed]
+In 1818 Gauss, putting his calculation skills to practical use, carried out a geodesic survey of the state of Hanover, linking up with previous Danish surveys. To aid in the survey, Gauss invented the heliotrope, an instrument that uses a mirror to reflect sunlight over great distances, to measure positions.
+In that same year, Italian astronomer Giuseppe Piazzi discovered the dwarf planet Ceres, but could only watch it for a few days. Gauss predicted correctly the position at which it could be found again, and it was rediscovered by Franz Xaver von Zach on 31 December 1801 in Gotha, and one day later by Heinrich Olbers in Bremen.
+Gauss also claimed to have discovered the possibility of non-Euclidean geometries but never published it. This discovery was a major paradigm shift in mathematics, as it freed mathematicians from the mistaken belief that Euclid's axioms were the only way to make geometry consistent and non-contradictory. Research on these geometries led to, among other things, Einstein's theory of general relativity, which describes the universe as non-Euclidean. His friend Farkas Wolfgang Bolyai with whom Gauss had sworn "brotherhood and the banner of truth" as a student had tried in vain for many years to prove the parallel postulate from Euclid's other axioms of geometry. Bolyai's son, János Bolyai, discovered non-Euclidean geometry in 1829; his work was published in 1832. After seeing it, Gauss wrote to Farkas Bolyai: "To praise it would amount to praising myself. For the entire content of the work... coincides almost exactly with my own meditations which have occupied my mind for the past thirty or thirty-five years."
+
+
+Four Gaussian distributions in statistics
+This unproved statement put a strain on his relationship with János Bolyai (who thought that Gauss was "stealing" his idea), but it is now generally taken at face value.[citation needed] Letters by Gauss years before 1829 reveal him obscurely discussing the problem of parallel lines. Waldo Dunnington, a life-long student of Gauss, successfully proves in Gauss, Titan of Science that Gauss was in fact in full possession of non-Euclidian geometry long before it was published by János Bolyai, but that he refused to publish any of it because of his fear of controversy.
+The survey of Hanover fueled Gauss's interest in differential geometry, a field of mathematics dealing with curves and surfaces. Among other things he came up with the notion of Gaussian curvature. This led in 1828 to an important theorem, the Theorema Egregium (remarkable theorem in Latin), establishing an important property of the notion of curvature. Informally, the theorem says that the curvature of a surface can be determined entirely by measuring angles and distances on the surface. That is, curvature does not depend on how the surface might be embedded in 3-dimensional space or 2-dimensional space.
+In 1821, he was made a foreign member of the Royal Swedish Academy of Sciences.
+[edit]Later years and death (1831–1855)
+
+
+
+Daguerreotype of Gauss on his deathbead, 1855.
+
+
+Grave of Gauss at Albanifriedhof in Göttingen, Germany.
+In 1831 Gauss developed a fruitful collaboration with the physics professor Wilhelm Weber, leading to new knowledge in magnetism (including finding a representation for the unit of magnetism in terms of mass, length and time) and the discovery of Kirchhoff's circuit laws in electricity. They constructed the first electromechanical telegraph in 1833, which connected the observatory with the institute for physics in Göttingen. Gauss ordered a magnetic observatory to be built in the garden of the observatory, and with Weber founded the magnetischer Verein (magnetic club in German), which supported measurements of earth's magnetic field in many regions of the world. He developed a method of measuring the horizontal intensity of the magnetic field which has been in use well into the second half of the 20th century and worked out the mathematical theory for separating the inner (core and crust) and outer (magnetospheric) sources of Earth's magnetic field.
+Gauss died in Göttingen, Hannover (now part of Lower Saxony, Germany) in 1855 and is interred in the cemetery Albanifriedhof there. Two individuals gave eulogies at his funeral, Gauss's son-in-law Heinrich Ewald and Wolfgang Sartorius von Waltershausen, who was Gauss's close friend and biographer. His brain was preserved and was studied by Rudolf Wagner who found its mass to be 1,492 grams and the cerebral area equal to 219,588 square millimeters[9] (340.362 square inches). Highly developed convolutions were also found, which in the early 20th century was suggested as the explanation of his genius.[2]
+[edit]Religion
+
+	This section requires expansion.
+According to Dunnington, Gauss's religion was based upon the search for truth. He believed in "the immortality of the spiritual individuality, in a personal permanence after death, in a last order of things, in an eternal, righteous, omniscient and omnipotent God." Gauss also upheld religious tolerance, believing it wrong to disturb others who were at peace with their own beliefs.[2]
+[edit]Family
+
+
+
+Gauss' daughter Therese (1816—1864)
+Gauss's personal life was overshadowed by the early death of his first wife, Johanna Osthoff, in 1809, soon followed by the death of one child, Louis. Gauss plunged into a depression from which he never fully recovered. He married again, to Johanna's best friend named Friederica Wilhelmine Waldeck but commonly known as Minna. When his second wife died in 1831 after a long illness,[10] one of his daughters, Therese, took over the household and cared for Gauss until the end of his life. His mother lived in his house from 1817 until her death in 1839.[2]
+Gauss had six children. With Johanna (1780–1809), his children were Joseph (1806–1873), Wilhelmina (1808–1846) and Louis (1809–1810). Of all of Gauss's children, Wilhelmina was said to have come closest to his talent, but she died young. With Minna Waldeck he also had three children: Eugene (1811–1896), Wilhelm (1813–1879) and Therese (1816–1864). Eugene emigrated to the United States about 1832 after a falling out with his father.[citation needed] Wilhelm also settled in Missouri, starting as a farmer and later becoming wealthy in the shoe business in St. Louis. Therese kept house for Gauss until his death, after which she married.
+Gauss eventually had conflicts with his sons, two of whom migrated to the United States. He did not want any of his sons to enter mathematics or science for "fear of sullying the family name".[citation needed] Gauss wanted Eugene to become a lawyer, but Eugene wanted to study languages. They had an argument over a party Eugene held, which Gauss refused to pay for. The son left in anger and emigrated to the United States, where he was quite successful. It took many years for Eugene's success to counteract his reputation among Gauss's friends and colleagues. See also the letter from Robert Gauss to Felix Klein on 3 September 1912.
+[edit]Personality
+
+Gauss was an ardent perfectionist and a hard worker. He was never a prolific writer, refusing to publish work which he did not consider complete and above criticism. This was in keeping with his personal motto pauca sed matura ("few, but ripe"). His personal diaries indicate that he had made several important mathematical discoveries years or decades before his contemporaries published them. Mathematical historian Eric Temple Bell estimated that had Gauss timely published all of his discoveries, Gauss would have advanced mathematics by fifty years.[11]
+Though he did take in a few students, Gauss was known to dislike teaching. It is said that he attended only a single scientific conference, which was in Berlin in 1828. However, several of his students became influential mathematicians, among them Richard Dedekind, Bernhard Riemann, and Friedrich Bessel. Before she died, Sophie Germain was recommended by Gauss to receive her honorary degree.
+Gauss usually declined to present the intuition behind his often very elegant proofs—he preferred them to appear "out of thin air" and erased all traces of how he discovered them.[citation needed] This is justified, if unsatisfactorily, by Gauss in his "Disquisitiones Arithmeticae", where he states that all analysis (i.e. the paths one travelled to reach the solution of a problem) must be suppressed for sake of brevity.
+Gauss supported monarchy and opposed Napoleon, whom he saw as an outgrowth of revolution.
+[edit]Mythology
+
+There are several stories of his early genius. According to one, his gifts became very apparent at the age of three when he corrected, mentally and without fault in his calculations, an error his father had made on paper while calculating finances.
+Another famous story has it that in primary school after the young Gauss misbehaved, his teacher, J.G. Büttner, gave him a task : add a list of integers in arithmetic progression; as the story is most often told, these were the numbers from 1 to 100. The young Gauss reputedly produced the correct answer within seconds, to the astonishment of his teacher and his assistant Martin Bartels.
+Gauss's presumed method was to realize that pairwise addition of terms from opposite ends of the list yielded identical intermediate sums: 1 + 100 = 101, 2 + 99 = 101, 3 + 98 = 101, and so on, for a total sum of 50 × 101 = 5050. However, the details of the story are at best uncertain (see [12] for discussion of the original Wolfgang Sartorius von Waltershausen source and the changes in other versions); some authors, such as Joseph Rotman in his book A first course in Abstract Algebra, question whether it ever happened.
+According to Isaac Asimov, Gauss was once interrupted in the middle of a problem and told that his wife was dying. He is purported to have said, "Tell her to wait a moment till I'm done."[13] This anecdote is briefly discussed in G. Waldo Dunnington's Gauss, Titan of Science where it is suggested that it is an apocryphal story.
+[edit]Commemorations
+
+
+
+A 10 Deutsche Mark banknote from Germany 1993 (discontinued) showing Gauss
+
+
+Gauss (about 26) on an East-German stamp produced in 1977. Heptadecagon, compass and straightedge are shown next to him.
+From 1989 until the end of 2001, his portrait and a normal distribution curve as well as some prominent buildings of Göttingen were featured on the German ten-mark banknote. The other side of the note features the heliotrope and a triangulation approach for Hannover. Germany has issued three stamps honouring Gauss, as well. A righteous stamp (no. 725), was issued in 1955 on the hundredth anniversary of his death; two other stamps, no. 1246 and 1811, were issued in 1977, the 200th anniversary of his birth.
+Daniel Kehlmann's 2005 novel Die Vermessung der Welt, translated into English as Measuring the World: a Novel in 2006, explores Gauss's life and work through a lens of historical fiction, contrasting it with the German explorer Alexander von Humboldt.
+In 2007, his bust was introduced to the Walhalla temple.[14]
+Things named in honour of Gauss include:
+The CGS unit for magnetic induction was named gauss in his honour.
+The crater Gauss on the Moon[15]
+Asteroid 1001 Gaussia.
+The ship Gauss, used in the Gauss expedition to the Antarctic.
+Gaussberg, an extinct volcano discovered by the above mentioned expedition
+Gauss Tower, an observation tower in Dransfeld, Germany.
+In Canadian junior high schools, an annual national mathematics competition administered by the Centre for Education in Mathematics and Computing is named in honour of Gauss.
+In University of California, Santa Cruz, in Crown College, a dormitory building is named after Gauss.
+The Gauss Haus, an NMR center at the University of Utah.
+The Carl-Friedrich-Gauß School for Mathematics, Computer Science, Business Administration, Economics, and Social Sciences of University of Braunschweig.
+The Gauss Building - University of Idaho (College of Engineering)
+[edit]Writings
+
+1799: Doctoral dissertation on the Fundamental theorem of algebra, with the title: Demonstratio nova theorematis omnem functionem algebraicam rationalem integram unius variabilis in factores reales primi vel secundi gradus resolvi posse ("New proof of the theorem that every integral algebraic function of one variable can be resolved into real factors [i.e. polynomials] of the first or second degree")
+1801: Disquisitiones Arithmeticae. German translation by H. Maser Untersuchungen über höhere Arithmetik (Disquisitiones Arithmeticae & other papers on number theory) (Second edition). New York: Chelsea. 1965. ISBN 0-8284-0191-8, pp. 1–453. English translation by Arthur A. Clarke Disquisitiones Arithemeticae (Second, corrected edition). New York: Springer. 1986. ISBN 0387962549.
+1808: Theorematis arithmetici demonstratio nova. Göttingen: Comment. Soc. regiae sci, Göttingen XVI. German translation by H. Maser Untersuchungen über höhere Arithmetik (Disquisitiones Arithmeticae & other papers on number theory) (Second edition). New York: Chelsea. 1965. ISBN 0-8284-0191-8, pp. 457–462 [Introduces Gauss's lemma, uses it in the third proof of quadratic reciprocity]
+1809: Theoria Motus Corporum Coelestium in sectionibus conicis solem ambientium (Theorie der Bewegung der Himmelskörper, die die Sonne in Kegelschnitten umkreisen), English translation by C. H. Davis, reprinted 1963, Dover, New York.
+1811: Summatio serierun quarundam singularium. Göttingen: Comment. Soc. regiae sci, Göttingen. German translation by H. Maser Untersuchungen über höhere Arithmetik (Disquisitiones Arithmeticae & other papers on number theory) (Second edition). New York: Chelsea. 1965. ISBN 0-8284-0191-8, pp. 463–495 [Determination of the sign of the quadratic Gauss sum, uses this to give the fourth proof of quadratic reciprocity]
+1812: Disquisitiones Generales Circa Seriem Infinitam 
+1818: Theorematis fundamentallis in doctrina de residuis quadraticis demonstrationes et amplicationes novae. Göttingen: Comment. Soc. regiae sci, Göttingen. German translation by H. Maser Untersuchungen über höhere Arithmetik (Disquisitiones Arithmeticae & other papers on number theory) (Second edition). New York: Chelsea. 1965. ISBN 0-8284-0191-8, pp. 496–510 [Fifth and sixth proofs of quadratic reciprocity]
+1821, 1823 und 1826: Theoria combinationis observationum erroribus minimis obnoxiae. Drei Abhandlungen betreffend die Wahrscheinlichkeitsrechnung als Grundlage des Gauß'schen Fehlerfortpflanzungsgesetzes. English translation by G. W. Stewart, 1987, Society for Industrial Mathematics.
+1827: Disquisitiones generales circa superficies curvas, Commentationes Societatis Regiae Scientiarum Gottingesis Recentiores. Volume VI, pp. 99–146. "General Investigations of Curved Surfaces" (published 1965) Raven Press, New York, translated by A.M.Hiltebeitel and J.C.Morehead.
+1828: Theoria residuorum biquadraticorum, Commentatio prima. Göttingen: Comment. Soc. regiae sci, Göttingen 6. German translation by H. Maser Untersuchungen über höhere Arithmetik (Disquisitiones Arithmeticae & other papers on number theory) (Second edition). New York: Chelsea. 1965. ISBN 0-8284-0191-8, pp. 511–533 [Elementary facts about biquadratic residues, proves one of the supplements of the law of biquadratic reciprocity (the biquadratic character of 2)]
+1832: Theoria residuorum biquadraticorum, Commentatio secunda. Göttingen: Comment. Soc. regiae sci, Göttingen 7. German translation by H. Maser Untersuchungen über höhere Arithmetik (Disquisitiones Arithmeticae & other papers on number theory) (Second edition). New York: Chelsea. 1965. ISBN 0-8284-0191-8, pp. 534–586 [Introduces the Gaussian integers, states (without proof) the law of biquadratic reciprocity, proves the supplementary law for 1 + i]
+1843/44: Untersuchungen über Gegenstände der Höheren Geodäsie. Erste Abhandlung, Abhandlungen der Königlichen Gesellschaft der Wissenschaften in Göttingen. Zweiter Band, pp. 3–46
+1846/47: Untersuchungen über Gegenstände der Höheren Geodäsie. Zweite Abhandlung, Abhandlungen der Königlichen Gesellschaft der Wissenschaften in Göttingen. Dritter Band, pp. 3–44
+Mathematisches Tagebuch 1796–1814, Ostwaldts Klassiker, Harri Deutsch Verlag 2005, mit Anmerkungen von Neumamn, ISBN 978-3-8171-3402-1 (English translation with annotations by Jeremy Gray: Expositiones Math. 1984)
+Gauss' collective works are online here This includes German translations of Latin texts and commentaries by various authorities
+[edit]See also
+
+Romanticism in science
+German inventors and discoverers
+List of topics named after Carl Friedrich Gauss
+Carl Friedrich Gauss Prize
+[edit]Notes
+
+^ Zeidler, Eberhard (2004). Oxford User's Guide to Mathematics. Oxford, UK: Oxford University Press. p. 1188. ISBN 0198507631.
+^ a b c d e Dunnington, G. Waldo. (May, 1927). "The Sesquicentennial of the Birth of Gauss". Scientific Monthly XXIV: 402–414. Retrieved on 29 June 2005. Comprehensive biographical article.
+^ Smith, S. A., et al. 2001. Algebra 1: California Edition. Prentice Hall, New Jersey. ISBN 0130442631
+^ "Carl Friedrich Gauss". Wichita State University. http://www.math.wichita.edu/history/men/gauss.html.
+^ Susan Chambless. "Author — Date". Homepages.rootsweb.ancestry.com. http://homepages.rootsweb.ancestry.com/~schmblss/home/Letters/Gauss/1911-07-26b.htm. Retrieved 2009-07-19.
+^ Pappas, Theoni: Mathematical Snippets, Page 42. Pgw 2008
+^ Carl Friedrich Gauss §§365–366 in Disquisitiones Arithmeticae. Leipzig, Germany, 1801. New Haven, CT: Yale University Press, 1965.
+^ Klein, Felix; Hermann, Robert (1979). Development of mathematics in the 19th century. Math Sci Press. ISBN 9780915692286.
+^ This reference from 1891 (Donaldson, Henry H. (1891). "Anatomical Observations on the Brain and Several Sense-Organs of the Blind Deaf-Mute, Laura Dewey Bridgman". The American Journal of Psychology (E. C. Sanford) 4 (2): 248–294. doi:10.2307/1411270. http://jstor.org/stable/1411270.) says: "Gauss, 1492 grm. 957 grm. 219588. sq. mm. ", i.e the unit is square mm. In the later reference: Dunnington (1927), the unit is erroneously reported as square cm, which gives an unreasonably large area, the 1891 reference is more reliable.
+^ "Gauss biography". Groups.dcs.st-and.ac.uk. http://www-groups.dcs.st-and.ac.uk/~history/Biographies/Gauss.html. Retrieved 2008-09-01.
+^ Bell, E. T. (2009). "Ch. 14: The Prince of Mathematicians: Gauss". Men of Mathematics: The Lives and Achievements of the Great Mathematicians from Zeno to Poincaré. New York: Simon and Schuster. pp. 218–269. ISBN 0-671-46400-0.
+^ http://www.americanscientist.org/issues/pub/gausss-day-of-reckoning/2
+^ Asimov, I. (1972). Biographical Encyclopedia of Science and Technology; the Lives and Achievements of 1195 Great Scientists from Ancient Times to the Present, Chronologically Arranged.. New York: Doubleday.
+^ "Bayerisches Staatsministerium für Wissenschaft, Forschung und Kunst: Startseite". Stmwfk.bayern.de. http://www.stmwfk.bayern.de/downloads/aviso/2004_1_aviso_48-49.pdf. Retrieved 2009-07-19.
+^ Andersson, L. E.; Whitaker, E. A., (1982). NASA Catalogue of Lunar Nomenclature. NASA RP-1097.
+[edit]Further reading
+
+Dunnington, G. Waldo. (2003). Carl Friedrich Gauss: Titan of Science. The Mathematical Association of America. ISBN 088385547X. OCLC 53933110.
+Gauss, Carl Friedrich (1965). Disquisitiones Arithmeticae. tr. Arthur A. Clarke. Yale University Press. ISBN 0300094736.
+Hall, Tord (1970). Carl Friedrich Gauss: A Biography. Cambridge, MA: MIT Press. ISBN 0262080400. OCLC 185662235.
+Kehlmann, Daniel (2005). Die Vermessung der Welt. Rowohlt. ISBN 3498035282. OCLC 144590801.
+Sartorius von Waltershausen, Wolfgang (1966). Gauss: A Memorial.
+Simmons, J. (1996). The Giant Book of Scientists: The 100 Greatest Minds of All Time. Sydney: The Book Company.
+Tent, Margaret (2006). The Prince of Mathematics: Carl Friedrich Gauss. A K Peters. ISBN 1568814550.
+[edit]External links
+
+Find more about Carl Friedrich Gauss on Wikipedia's sister projects:
+	Definitions from Wiktionary
+	Images and media from Commons
+	Learning resources from Wikiversity
+	News stories from Wikinews
+	Quotations from Wikiquote
+	Source texts from Wikisource
+	Textbooks from Wikibooks
+Carl Friedrich Gauss on PlanetMath
+Complete works
+Works by or about Carl Friedrich Gauss in libraries (WorldCat catalog)
+Gauss and his children
+Gauss biography
+Carl Friedrich Gauss at the Mathematics Genealogy Project
+Carl Friedrich Gauss, Biography at Fermat's Last Theorem Blog.
+Gauss: mathematician of the millennium, by Jürgen Schmidhuber
+English translation of Waltershausen's 1862 biography
+Gauss general website on Gauss
+MNRAS 16 (1856) 80 Obituary
+Carl Friedrich Gauss on the 10 Deutsche Mark banknote
+O'Connor, John J.; Robertson, Edmund F., "Carl Friedrich Gauss", MacTutor History of Mathematics archive, University of St Andrews, http://www-history.mcs.st-andrews.ac.uk/Biographies/Gauss.html.
+Carl Friedrich Gauss at Wikiquote
+Authority control: LCCN: n79038533
+v • d • e
+Copley Medallists
+Astley Cooper (1801) · William Hyde Wollaston (1802) · Richard Chenevix (1803) · Smithson Tennant (1804) · Humphry Davy (1805) · Thomas Andrew Knight (1806) · Everard Home (1807) · William Henry (1808) · Edward Troughton (1809) · Benjamin Collins Brodie (1811) · William Thomas Brande (1813) · James Ivory (1814) · David Brewster (1815) · Henry Kater (1817) · Robert Seppings (1818) · Hans Christian Ørsted (1820) · Edward Sabine / John Herschel (1821) · William Buckland (1822) · John Pond (1823) · John Brinkley (1824) · François Arago / Peter Barlow (1825) · James South (1826) · William Prout / Henry Foster (1827) · George Biddell Airy (1831) · Michael Faraday / Siméon Denis Poisson (1832) · Giovanni Antonio Amedeo Plana (1834) · William Snow Harris (1835) · Jöns Jacob Berzelius / Francis Kiernan (1836) · Antoine César Becquerel / John Frederic Daniell (1837) · Carl Friedrich Gauss / Michael Faraday (1838) · Robert Brown (1839) · Justus von Liebig / Jacques Charles François Sturm (1840) · Georg Ohm (1841) · James MacCullagh (1842) · Jean-Baptiste Dumas (1843) · Carlo Matteucci (1844) · Theodor Schwann (1845) · Urbain Le Verrier (1846) · John Herschel (1847) · John Couch Adams (1848) · Roderick Murchison (1849) · Peter Andreas Hansen (1850)
+Complete roster: 1731–1750 · 1751–1800 · 1801–1850 · 1851–1900 · 1901–1950 · 1951–2000 · 2001–present
+v • d • e
+Figures in the Age of Enlightenment by country or region
+ Notable figures
+America (English)	
+Benjamin Franklin · Thomas Jefferson · James Madison · Thomas Paine
+America (Latin)	
+Simón Bolívar  · Eugenio Espejo  · José Joaquín Fernández de Lizardi · Servando Teresa de Mier · Francisco de Miranda · Simón Rodríguez
+England	
+Edward Gibbon · Thomas Hobbes  · Samuel Johnson · Edmund Burke (Irish born)  · John Locke  · Isaac Newton  · Robert Walpole
+France	
+Montesquieu · François Quesnay · Voltaire · Buffon · Jean-Jacques Rousseau · Denis Diderot · Helvétius · Jean le Rond d'Alembert · Baron d'Holbach · Condorcet · Étienne Bonnot de Condillac
+Germany	
+Immanuel Kant · Gotthold Ephraim Lessing · Johann Gottfried von Herder · Johann Wolfgang von Goethe · Friedrich Schiller · Moses Mendelssohn
+Greece	
+Adamantios Korais · Rigas Feraios · Theophilos Kairis · Eugenios Voulgaris
+Hungary	
+Ferenc Kazinczy · József Kármán · János Batsányi · Mihály Fazekas
+Italy	
+Cesare Beccaria · Antonio Genovesi
+Low Countries	
+Hugo Grotius · Baruch Spinoza · Franciscus van den Enden
+Poland-Lithuania	
+Stanisław Konarski · Ignacy Krasicki · Hugo Kołłątaj · Stanisław Staszic · Jan Śniadecki · Julian Ursyn Niemcewicz · Jędrzej Śniadecki
+Portugal	
+Sebastião José de Carvalho e Melo, Marquis of Pombal
+Russia	
+Mikhail Lomonosov · Ivan Shuvalov · Ivan Betskoy · Ekaterina Dashkova · Nikolay Novikov · Mikhail Shcherbatov · Alexander Radishchev
+Scandinavia	
+Anders Chydenius · Peter Forsskål · Gustav III · Ludvig Holberg · Arvid Horn · Johan Henric Kellgren · Eggert Ólafsson  · Henrik Gabriel Porthan · Jens Schielderup Sneedorff · Johann Friedrich Struensee · Emanuel Swedenborg
+Scotland	
+Joseph Black · James Boswell · Robert Burns · Adam Ferguson · Francis Hutcheson · David Hume · James Hutton · Lord Kames · Lord Monboddo · James Macpherson · Thomas Reid · William Robertson · Adam Smith · Dugald Stewart · James Watt
+Serbia	
+Dositej Obradović
+Spain	
+Gaspar Melchor de Jovellanos · Benito Jerónimo Feijoo · Antonio de Ulloa
+Ukraine	
+Hryhorii Skovoroda · Ivan Kotlyarevsky
+ Related topics
+Atheism · Capitalism · Civil liberties · Counter-Enlightenment · Critical thinking · Deism · Democracy · Empiricism · Enlightened absolutism · Free markets · Haskalah · Humanism · Liberalism · Natural philosophy · Rationality · Reason · Sapere aude · Science · Socialism · Secularism · French Encyclopédistes · Weimar Classicism
+v • d • e
+List of scientists whose names are used as non SI units
+Non SI unit	
+William Gilbert • John Napier • Evangelista Torricelli • Galileo Galilei • René Antoine Ferchault de Réaumur • Daniel Gabriel Fahrenheit • Johann Heinrich Lambert • John Dalton • Hans Christian Ørsted • Johann Carl Friedrich Gauss • Jean Louis Marie Poiseuille • Anders Jonas Ångström • George Stokes • William John Macquorn Rankine  • James Clerk Maxwell • Samuel Pierpont Langley • Wilhelm Röntgen • Alexander Graham Bell • Loránd Eötvös • Heinrich Kayser  • Lord Rayleigh  • Pierre Curie • Marie Curie • Peter Debye • Joseph John Thomson
+SI unit	
+Scientists whose names are used as SI units
+Categories: 1777 births | 1855 deaths | People from Braunschweig | German Lutherans | 18th-century mathematicians | 19th-century mathematicians | Calculating prodigies | Differential geometers | German astronomers | German mathematicians | German physicists | German scientists | Number theorists | People from Brunswick | Recipients of the Copley Medal | Recipients of the Pour le Mérite (civil class) | Walhalla enshrinees | TU Braunschweig alumni | University of Helmstedt alumni | University of Göttingen alumni | University of Göttingen faculty | Members of the Royal Swedish Academy of Sciences | Fellows of the Royal Society

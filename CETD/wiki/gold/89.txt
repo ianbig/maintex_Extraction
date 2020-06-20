@@ -1,0 +1,47 @@
+﻿
+Disquisitiones Arithmeticae
+
+
+Title page of the first edition
+The Disquisitiones Arithmeticae (Latin for Number Research) is a textbook of number theory written in Latin[1] by Carl Friedrich Gauss in 1798 when Gauss was 21 and first published in 1801 when he was 24. In this book Gauss brings together results in number theory obtained by mathematicians such as Fermat, Euler, Lagrange and Legendre and adds important new results of his own.
+Contents [hide]
+1 Scope
+2 Contents
+3 Importance
+4 Notes
+5 References
+[edit]Scope
+
+The Disquisitiones covers both elementary number theory and parts of the area of mathematics that we now call algebraic number theory. However, Gauss did not explicitly recognize the concept of a group, which is central to modern algebra, so he did not use this term. His own title for his subject was Higher Arithmetic. In his Preface to the Disquisitiones Gauss describes the scope of the book as follows:
+The inquiries which this volume will investigate pertain to that part of Mathematics which concerns itself with integers.
+[edit]Contents
+
+The book is divided into seven sections, which are :
+Section I. Congruent Numbers in General
+Section II. Congruences of the First Degree
+Section III. Residues of Powers
+Section IV. Congruences of the Second Degree
+Section V. Forms and Indeterminate Equations of the Second Degree
+Section VI. Various Applications of the Preceding Discussions
+Section VII. Equations Defining Sections of a Circle.
+Sections I to III are essentially a review of previous results, including Fermat's little theorem, Wilson's theorem and the existence of primitive roots. Although few of the results in these first sections are original, Gauss was the first mathematician to bring this material together and treat it in a systematic way. He was also the first mathematician to realize the importance of the property of unique factorization (sometimes called the fundamental theorem of arithmetic), which he states and proves explicitly.
+From Section IV onwards, much of the work is original. Section IV itself develops a proof of quadratic reciprocity; Section V, which takes up over half of the book, is a comprehensive analysis of binary quadratic forms; and Section VI includes two different primality tests. Finally, Section VII is an analysis of cyclotomic polynomials, which concludes by giving the criteria that determine which regular polygons are constructible i.e. can be constructed with a compass and unmarked straight edge alone.
+Gauss started to write an eighth section on higher order congruences, but he did not complete this, and it was published separately after his death.
+The Disquisitiones was one of the last mathematical works to be written in scholarly Latin (an English translation was not published until 1965).
+See also: Modular arithmetic
+[edit]Importance
+
+Before the Disquisitiones was published, number theory consisted of a collection of isolated theorems and conjectures. Gauss brought the work of his predecessors together with his own original work into a systematic framework, filled in gaps, corrected unsound proofs, and extended the subject in numerous ways.
+The logical structure of the Disquisitiones (theorem statement followed by proof, followed by corollaries) set a standard for later texts. While recognising the primary importance of logical proof, Gauss also illustrates many theorems with numerical examples.
+The Disquisitiones was the starting point for the work of other nineteenth century European mathematicians including Ernst Kummer, J. P. G. Lejeune Dirichlet and Richard Dedekind. Many of the annotations given by Gauss are in effect announcements of further research of his own, some of which remained unpublished. They must have appeared particularly cryptic to his contemporaries; we can now read them as containing the germs of the theories of L-functions and complex multiplication, in particular.
+Gauss' Disquisitiones continued to exert influence in the 20th century. For example, in section V, article 303, Gauss summarized his calculations of class numbers of imaginary quadratic number fields, and conjectured that he had found all imaginary quadratic number fields of class numbers 1, 2, and 3. Sometimes referred to as the Class number problem, this was eventually confirmed in 1986.[2] In section VII, article 358, Gauss proved what can be interpreted as the first non-trivial case of the Riemann Hypothesis for curves over finite fields (the Hasse-Weil theorem).[3]
+[edit]Notes
+
+^ http://yalepress.yale.edu/yupbooks/book.asp?isbn=9780300094732
+^ Ireland, K.; Rosen, M. (1993), A Classical Introduction to Modern Number Theory, New York, New York: Springer-Verlag, pp. 358–361, ISBN 038797329X
+^ Silverman, J.; Tate, J. (1992), Rational Points on Elliptic Curves, New York, New York: Springer-Verlag, p. 110, ISBN 0387978259
+[edit]References
+
+Carl Friedrich Gauss tr. Arthur A. Clarke: Disquisitiones Aritmeticae, Yale University Press, 1965 ISBN 0-300-09473-6
+Disquisitiones Arithmeticae
+Categories: 1801 books | Latin texts | Mathematics books | Number theory | Euclidean plane geometry | 1801 in science

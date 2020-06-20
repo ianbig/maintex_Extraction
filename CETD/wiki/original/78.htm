@@ -1,0 +1,860 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>Lynx (web browser) - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Lynx_(web_browser)",
+wgTitle="Lynx (web browser)",
+wgAction="view",
+wgArticleId=18529,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=401909596,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["All articles with unsourced statements", "Articles with unsourced statements from June 2010", "OS/2 web browsers", "POSIX web browsers", "Mac OS X web browsers", "Web browsers for DOS", "Text-based web browsers", "Gopher clients", "Free web browsers", "FTP clients", "HTTP clients", "Portable software", "Embedded Linux", "University of Kansas", "1992 software", "Curses (programming library)", "S-Lang (programming library)", "Cross-platform software", "Command-line software"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Lynx_web_browser skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --><script type="text/javascript" language="JavaScript">
+/* <![CDATA[ */
+document.writeln("\x3cdiv id=\"localNotice\"\x3e\x3cp\x3e\x3c/p\x3e\n\x3c/div\x3e");
+/* ]]> */
+</script></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Lynx (web browser)</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<div class="dablink">Not to be confused with <a href="/wiki/Links_(web_browser)" title="Links (web browser)">Links (web browser)</a>.</div>
+<div class="dablink">Not to be confused with <a href="/wiki/LynxOS" title="LynxOS">LynxOS</a>.</div>
+<table class="infobox vevent" cellspacing="5" style="width:22em; text-align:left; font-size:88%; line-height:1.5em;">
+<caption class="summary" style="font-size:125%; font-weight:bold;">Lynx</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="/wiki/File:Lynx-wikipedia.png" class="image"><img alt="A text representation of the Wikipedia page &quot;Lynx (web browser)&quot; displayed using a monospace font mostly colored white and green on a black background." src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lynx-wikipedia.png/200px-Lynx-wikipedia.png" width="200" height="145" /></a><br />
+<span style="">Wikipedia Article displayed in Lynx</span></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Software_design" title="Software design">Original author(s)</a></th>
+<td class="" style="">Lou Montulli, Michael Grobe, Charles Rezac</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style="">Thomas Dickey</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap">Initial release</th>
+<td class="" style="">c. 1992</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style=""><span class="plainlinks"><a href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/Lynx&amp;action=edit" class="external text" rel="nofollow">2.8.7rel.2</a></span> &#160;<small>(June 21, 2010<span class="noprint">; 5 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2010-06-21</span>)</span>)</small> <sub class="plainlinks">[<a href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/Lynx&amp;action=edit&amp;preload=Template:LSR/syntax" class="external text" rel="nofollow">+/−</a>]</sub></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td class="" style=""><span class="plainlinks"><a href="http://en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/Lynx&amp;action=edit" class="external text" rel="nofollow">2.8.8dev.4</a></span> &#160;<small>(June 21, 2010<span class="noprint">; 5 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2010-06-21</span>)</span>)</small> <sub class="plainlinks">[<a href="http://en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/Lynx&amp;action=edit&amp;preload=Template:LSR/syntax" class="external text" rel="nofollow">+/−</a>]</sub></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Programming_language" title="Programming language">Written in</a></th>
+<td class="" style=""><a href="/wiki/C_(programming_language)#ANSI_C_and_ISO_C" title="C (programming language)">ISO C</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td class="" style=""><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Language" title="Language">Available in</a></th>
+<td class="" style=""><a href="/wiki/English_language" title="English language">English</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="/wiki/Web_browser" title="Web browser">web browser</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU GPL</a><sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap"><a href="/wiki/Website" title="Website">Website</a></th>
+<td class="" style=""><a href="http://lynx.isc.org/" class="external text" rel="nofollow">lynx.isc.org</a></td>
+</tr>
+</table>
+<p><b>Lynx</b> is a <a href="/wiki/Text-based_web_browser" title="Text-based web browser">text-based web browser</a> for use on cursor-addressable character cell <a href="/wiki/Computer_terminal" title="Computer terminal">terminals</a><sup id="cite_ref-net_fusion_1-0" class="reference"><a href="#cite_note-net_fusion-1"><span>[</span>2<span>]</span></a></sup> and is very configurable.<sup id="cite_ref-scoug_2-0" class="reference"><a href="#cite_note-scoug-2"><span>[</span>3<span>]</span></a></sup></p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Usage"><span class="tocnumber">1</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Privacy"><span class="tocnumber">2</span> <span class="toctext">Privacy</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Development_history"><span class="tocnumber">3</span> <span class="toctext">Development history</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Platforms_and_features"><span class="tocnumber">4</span> <span class="toctext">Platforms and features</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit&amp;section=1" title="Edit section: Usage">edit</a>]</span> <span class="mw-headline" id="Usage">Usage</span></h2>
+<p>Browsing in Lynx consists of highlighting the chosen link using cursor keys, or having all links on a page numbered and entering the chosen link's number. Current versions support <a href="/wiki/Secure_Sockets_Layer" title="Secure Sockets Layer" class="mw-redirect">SSL</a><sup id="cite_ref-scoug_2-1" class="reference"><a href="#cite_note-scoug-2"><span>[</span>3<span>]</span></a></sup> and many <a href="/wiki/HTML" title="HTML">HTML</a> features. Tables are formatted using spaces, while frames are identified by name and can be explored as if they were separate pages. Lynx cannot inherently display various types of non-text content on the web, such as images and video,<sup id="cite_ref-net_fusion_1-1" class="reference"><a href="#cite_note-net_fusion-1"><span>[</span>2<span>]</span></a></sup> but it can launch external programs to handle it, such as an image viewer or a video player.</p>
+<p>Because of its <a href="/wiki/Text-to-speech" title="Text-to-speech" class="mw-redirect">text-to-speech</a>–friendly interface,<sup id="cite_ref-linuxjournal_3-0" class="reference"><a href="#cite_note-linuxjournal-3"><span>[</span>4<span>]</span></a></sup> Lynx was once popular with visually impaired users, but better <a href="/wiki/Screen_reader" title="Screen reader">screen readers</a> have reduced the appeal of this application.<sup id="cite_ref-linuxjournal_3-1" class="reference"><a href="#cite_note-linuxjournal-3"><span>[</span>4<span>]</span></a></sup> Lynx is also used to check for usability of websites in older browsers. It is still included in a number of Unix products and Linux distributions,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup> and is particularly useful for reading documentation or downloading files<sup id="cite_ref-infoworld_5-0" class="reference"><a href="#cite_note-infoworld-5"><span>[</span>6<span>]</span></a></sup> when only a text-based environment is available. It is also useful for accessing websites from a remotely connected system in which no graphical display is available.<sup id="cite_ref-infoworld_5-1" class="reference"><a href="#cite_note-infoworld-5"><span>[</span>6<span>]</span></a></sup> Despite its text-only nature and age, it can still be used to effectively browse much of the modern web, including performing interactive tasks such as editing <a href="/wiki/Wikipedia" title="Wikipedia">Wikipedia</a>. The speed benefits of text-only browsing are most apparent when using low bandwidth internet connections, or older computer hardware that may be slow to render image-heavy content.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit&amp;section=2" title="Edit section: Privacy">edit</a>]</span> <span class="mw-headline" id="Privacy">Privacy</span></h2>
+<p>Because Lynx does not support graphics, <a href="/wiki/Web_bug" title="Web bug">web bugs</a> that track user information are not fetched, and emails can be read without the privacy concerns of graphic web browsers<sup id="cite_ref-scoug-p1_6-0" class="reference"><a href="#cite_note-scoug-p1-6"><span>[</span>7<span>]</span></a></sup>—though many <a href="/wiki/Webmail" title="Webmail">webmail</a> services today disable images in emails by default, and most graphic web browsers allow images to be disabled as well.<sup class="Template-Fact" title="This claim needs references to reliable sources from June 2010" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</sup></p>
+<p>Lynx does support <a href="/wiki/HTTP_cookie" title="HTTP cookie">HTTP cookies</a>,<sup id="cite_ref-net_fusion_1-2" class="reference"><a href="#cite_note-net_fusion-1"><span>[</span>2<span>]</span></a></sup> which can also be used to track user information, but it does not support <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> and thus JavaScript cookies, which some websites require to work correctly. However, like most web browsers, cookie support can be disabled in Lynx. Similarly, Lynx also supports browsing histories and page caching, both of which can raise privacy concerns.<sup class="Template-Fact" title="This claim needs references to reliable sources from June 2010" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit&amp;section=3" title="Edit section: Development history">edit</a>]</span> <span class="mw-headline" id="Development_history">Development history</span></h2>
+<p>Lynx was a product of the Distributed Computing Group within Academic Computing Services of the <a href="/wiki/University_of_Kansas" title="University of Kansas">University of Kansas</a>,<sup id="cite_ref-scoug-p1_6-1" class="reference"><a href="#cite_note-scoug-p1-6"><span>[</span>7<span>]</span></a></sup> and was initially developed in 1992 by a team of students at the university (<a href="/wiki/Lou_Montulli" title="Lou Montulli">Lou Montulli</a>, Michael Grobe and Charles Rezac) as a <a href="/wiki/Hypertext" title="Hypertext">hypertext</a> browser used solely to distribute campus information as part of a <i>Campus-Wide Information Server</i> and for browsing the <a href="/wiki/Gopher_(protocol)" title="Gopher (protocol)">Gopher space</a>.<sup id="cite_ref-linuxjournal_3-2" class="reference"><a href="#cite_note-linuxjournal-3"><span>[</span>4<span>]</span></a></sup> Beta availability was announced to <a href="/wiki/Usenet" title="Usenet">Usenet</a> on 22 July 1992.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup> In 1993 Montulli added an Internet interface and released a new version (2.0) of the browser.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>10<span>]</span></a></sup></p>
+<p>Garrett Blythe created <b>DosLynx</b> in April 1994 <sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>11<span>]</span></a></sup> and later joined the Lynx effort as well. Foteos Macrides ported much of Lynx to <a href="/wiki/OpenVMS" title="OpenVMS">VMS</a> and maintained it for a time. In 1995, Lynx was released under the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>, and is now maintained by a group of volunteers led by Thomas Dickey.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit&amp;section=4" title="Edit section: Platforms and features">edit</a>]</span> <span class="mw-headline" id="Platforms_and_features">Platforms and features</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:42px;"><a href="/wiki/File:Lynx2.gif" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/6/64/Lynx2.gif" width="40" height="40" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Lynx2.gif" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+The Logo of the OS/2 port: Lynx/2.</div>
+</div>
+</div>
+<p>Lynx was originally designed for <a href="/wiki/Unix" title="Unix">Unix</a> and <a href="/wiki/OpenVMS" title="OpenVMS">VMS</a> and is a popular console browser on <a href="/wiki/Linux" title="Linux">Linux</a>. Versions are also available for <a href="/wiki/DOS" title="DOS">DOS</a>, recent versions run on all <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> releases, and <a href="/wiki/Mac_OS_X" title="Mac OS X">Mac OS X</a>.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>12<span>]</span></a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>13<span>]</span></a></sup> There was also an early port to <a href="/wiki/Mac_OS_history" title="Mac OS history" class="mw-redirect">"Classic" Macintosh</a> version called <b>MacLynx</b> "for System 7 and later".<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>14<span>]</span></a></sup> Ports to <a href="/wiki/BeOS" title="BeOS">BeOS</a>, <a href="/wiki/MINIX" title="MINIX">MINIX</a>, <a href="/wiki/QNX" title="QNX">QNX</a>, <a href="/wiki/AmigaOS" title="AmigaOS">AmigaOS</a> (called <a href="/wiki/ALynx" title="ALynx">ALynx</a>)<sup id="cite_ref-scoug-p1_6-2" class="reference"><a href="#cite_note-scoug-p1-6"><span>[</span>7<span>]</span></a></sup> and <a href="/wiki/OS/2" title="OS/2">OS/2</a> (called <b>Lynx/2</b>)<sup id="cite_ref-scoug-p1_6-3" class="reference"><a href="#cite_note-scoug-p1-6"><span>[</span>7<span>]</span></a></sup> are also available.</p>
+<p>Lynx is based on the <a href="/wiki/Libwww" title="Libwww">libwww</a><sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>15<span>]</span></a></sup><sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>16<span>]</span></a></sup> and thus supports many <a href="/wiki/Communications_protocol" title="Communications protocol">computer protocols</a>: <a href="/wiki/Gopher_(protocol)" title="Gopher (protocol)">Gopher</a>, <a href="/wiki/HTTP" title="HTTP" class="mw-redirect">HTTP</a>, <a href="/wiki/HTTPS" title="HTTPS" class="mw-redirect">HTTPS</a>,<sup id="cite_ref-scoug_2-2" class="reference"><a href="#cite_note-scoug-2"><span>[</span>3<span>]</span></a></sup> <a href="/wiki/FTP" title="FTP" class="mw-redirect">FTP</a>, <a href="/wiki/Wide_area_information_server" title="Wide area information server">WAIS</a>, and <a href="/wiki/NNTP" title="NNTP" class="mw-redirect">NNTP</a>.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;">
+<tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" /></td>
+<td class="mbox-text" style="">Wikimedia Commons has media related to: <i><b><a href="http://commons.wikimedia.org/wiki/Category:Lynx_web_browser" class="extiw" title="commons:Category:Lynx web browser">Lynx web browser</a></b></i></td>
+</tr>
+</table>
+<div class="noprint tright portal" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 0.5em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;">
+<tr>
+<td><a href="/wiki/File:Portal-puzzle.svg" class="image"><img alt="Portal-puzzle.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png" width="32" height="28" /></a></td>
+<td style="padding:0 0.2em;"><i><b><a href="/wiki/Portal:Free_software" title="Portal:Free software">Free software portal</a></b></i></td>
+</tr>
+</table>
+</div>
+<ul>
+<li><a href="/wiki/Computer_accessibility" title="Computer accessibility">Computer accessibility</a></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit&amp;section=6" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist references-small" style="">
+<div class="references">
+<ol>
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> <span class="citation web"><a href="http://lynx.isc.org/lynx2.8.7/lynx2-8-7/COPYHEADER" class="external text" rel="nofollow">"COPYHEADER for Lynx 2.8.7"</a>. October 2, 2006<span class="printonly">. <a href="http://lynx.isc.org/lynx2.8.7/lynx2-8-7/COPYHEADER" class="external free" rel="nofollow">http://lynx.isc.org/lynx2.8.7/lynx2-8-7/COPYHEADER</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=COPYHEADER+for+Lynx+2.8.7&amp;rft.atitle=&amp;rft.date=October+2%2C+2006&amp;rft_id=http%3A%2F%2Flynx.isc.org%2Flynx2.8.7%2Flynx2-8-7%2FCOPYHEADER&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-net_fusion-1">^ <a href="#cite_ref-net_fusion_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-net_fusion_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-net_fusion_1-2"><sup><i><b>c</b></i></sup></a> <span class="citation web">Rakitin, Jason (27 Oktober 1997). <a href="http://web.archive.org/web/20011005005015/www.nwfusion.com/news/1997/1027browser2.html" class="external text" rel="nofollow">"Review: Alternative Web browsers"</a>. Network World Fusion. Archived from <a href="http://www.nwfusion.com/news/1997/1027browser2.html" class="external text" rel="nofollow">the original</a> on 5October 2001<span class="printonly">. <a href="http://web.archive.org/web/20011005005015/www.nwfusion.com/news/1997/1027browser2.html" class="external free" rel="nofollow">http://web.archive.org/web/20011005005015/www.nwfusion.com/news/1997/1027browser2.html</a></span><span class="reference-accessdate">. Retrieved 26 July 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Review%3A+Alternative+Web+browsers&amp;rft.atitle=&amp;rft.aulast=Rakitin&amp;rft.aufirst=Jason&amp;rft.au=Rakitin%2C%26%2332%3BJason&amp;rft.date=27+Oktober+1997&amp;rft.pub=Network+World+Fusion&amp;rft_id=http%3A%2F%2Fweb.archive.org%2Fweb%2F20011005005015%2Fwww.nwfusion.com%2Fnews%2F1997%2F1027browser2.html&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-scoug-2">^ <a href="#cite_ref-scoug_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-scoug_2-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-scoug_2-2"><sup><i><b>c</b></i></sup></a> <span class="citation web">Legan, Dallas (September 2001). <a href="http://www.scoug.com/os24u/2001/scoug009.textbrowsers.html" class="external text" rel="nofollow">"Text-Mode Web Browsers for OS/2"</a>. The Southern California OS/2 User Group<span class="printonly">. <a href="http://www.scoug.com/os24u/2001/scoug009.textbrowsers.html" class="external free" rel="nofollow">http://www.scoug.com/os24u/2001/scoug009.textbrowsers.html</a></span><span class="reference-accessdate">. Retrieved 16 August 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Text-Mode+Web+Browsers+for+OS%2F2&amp;rft.atitle=&amp;rft.aulast=Legan&amp;rft.aufirst=Dallas&amp;rft.au=Legan%2C%26%2332%3BDallas&amp;rft.date=September+2001&amp;rft.pub=The+Southern+California+OS%2F2+User+Group&amp;rft_id=http%3A%2F%2Fwww.scoug.com%2Fos24u%2F2001%2Fscoug009.textbrowsers.html&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-linuxjournal-3">^ <a href="#cite_ref-linuxjournal_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-linuxjournal_3-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-linuxjournal_3-2"><sup><i><b>c</b></i></sup></a> <span class="citation web">Bolso, Erik Inge (8 March 2005). <a href="http://www.linuxjournal.com/article/8148" class="external text" rel="nofollow">"2005 Text Mode Browser Roundup"</a>. <a href="/wiki/Linux_Journal" title="Linux Journal">Linux Journal</a><span class="printonly">. <a href="http://www.linuxjournal.com/article/8148" class="external free" rel="nofollow">http://www.linuxjournal.com/article/8148</a></span><span class="reference-accessdate">. Retrieved 5 August 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=2005+Text+Mode+Browser+Roundup&amp;rft.atitle=&amp;rft.aulast=Bolso&amp;rft.aufirst=Erik+Inge&amp;rft.au=Bolso%2C%26%2332%3BErik+Inge&amp;rft.date=8+March+2005&amp;rft.pub=%5B%5BLinux+Journal%5D%5D&amp;rft_id=http%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F8148&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <span class="citation web"><a href="http://www.openbsd.org/48.html#new" class="external text" rel="nofollow">"OpenBSD 4.8 release notes"</a>. 1 November 2010<span class="printonly">. <a href="http://www.openbsd.org/48.html#new" class="external free" rel="nofollow">http://www.openbsd.org/48.html#new</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=OpenBSD+4.8+release+notes&amp;rft.atitle=&amp;rft.date=1+November+2010&amp;rft_id=http%3A%2F%2Fwww.openbsd.org%2F48.html%23new&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-infoworld-5">^ <a href="#cite_ref-infoworld_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-infoworld_5-1"><sup><i><b>b</b></i></sup></a> <span class="citation web">Wayner, Peter (19 October 2010). <a href="http://www.infoworld.com/d/applications/top-10-specialty-web-browsers-you-may-have-missed-026?page=0,3#dillo" class="external text" rel="nofollow">"Top 10 specialty Web browsers you may have missed"</a>. <a href="/wiki/InfoWorld" title="InfoWorld">InfoWorld</a>. p. 3<span class="printonly">. <a href="http://www.infoworld.com/d/applications/top-10-specialty-web-browsers-you-may-have-missed-026?page=0,3#dillo" class="external free" rel="nofollow">http://www.infoworld.com/d/applications/top-10-specialty-web-browsers-you-may-have-missed-026?page=0,3#dillo</a></span><span class="reference-accessdate">. Retrieved 28 October 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Top+10+specialty+Web+browsers+you+may+have+missed&amp;rft.atitle=&amp;rft.aulast=Wayner&amp;rft.aufirst=Peter&amp;rft.au=Wayner%2C%26%2332%3BPeter&amp;rft.date=19+October+2010&amp;rft.pages=p.+3&amp;rft.pub=%5B%5BInfoWorld%5D%5D&amp;rft_id=http%3A%2F%2Fwww.infoworld.com%2Fd%2Fapplications%2Ftop-10-specialty-web-browsers-you-may-have-missed-026%3Fpage%3D0%2C3%23dillo&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-scoug-p1-6">^ <a href="#cite_ref-scoug-p1_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-scoug-p1_6-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-scoug-p1_6-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-scoug-p1_6-3"><sup><i><b>d</b></i></sup></a> <span class="citation web">Legan, Dallas E. (October 2002). <a href="http://www.scoug.com/os24u/2002/scoug210.lynx1.html" class="external text" rel="nofollow">"Lynx on OS/2: Straight Answers and Keen Tricks - Part 1 - Start Using the Lynx Browser"</a>. The Southern California OS/2 User Group<span class="printonly">. <a href="http://www.scoug.com/os24u/2002/scoug210.lynx1.html" class="external free" rel="nofollow">http://www.scoug.com/os24u/2002/scoug210.lynx1.html</a></span><span class="reference-accessdate">. Retrieved 16 August 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Lynx+on+OS%2F2%3A+Straight+Answers+and+Keen+Tricks+-+Part+1+-+Start+Using+the+Lynx+Browser&amp;rft.atitle=&amp;rft.aulast=Legan&amp;rft.aufirst=Dallas+E.&amp;rft.au=Legan%2C%26%2332%3BDallas+E.&amp;rft.date=October+2002&amp;rft.pub=The+Southern+California+OS%2F2+User+Group&amp;rft_id=http%3A%2F%2Fwww.scoug.com%2Fos24u%2F2002%2Fscoug210.lynx1.html&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> <a href="http://groups.google.com/group/alt.hypertext/msg/de730e3e5c2b2e54" class="external free" rel="nofollow">http://groups.google.com/group/alt.hypertext/msg/de730e3e5c2b2e54</a></li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> <span class="citation web"><a href="http://www.livinginternet.com/w/wi_browse.htm" class="external text" rel="nofollow">"Web Browser History"</a>. Living Internet<span class="printonly">. <a href="http://www.livinginternet.com/w/wi_browse.htm" class="external free" rel="nofollow">http://www.livinginternet.com/w/wi_browse.htm</a></span><span class="reference-accessdate">. Retrieved 2008-02-03</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Web+Browser+History&amp;rft.atitle=&amp;rft.pub=Living+Internet&amp;rft_id=http%3A%2F%2Fwww.livinginternet.com%2Fw%2Fwi_browse.htm&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-9"><b><a href="#cite_ref-9">^</a></b> <span class="citation web">Lynn H. Nelson (2000-11-07). <a href="http://chnm.gmu.edu/digitalhistory/links/pdf/chapter1/1.2b.pdf" class="external text" rel="nofollow">"Before the Web: the early development of History on-line"</a><span class="printonly">. <a href="http://chnm.gmu.edu/digitalhistory/links/pdf/chapter1/1.2b.pdf" class="external free" rel="nofollow">http://chnm.gmu.edu/digitalhistory/links/pdf/chapter1/1.2b.pdf</a></span><span class="reference-accessdate">. Retrieved 2008-02-03</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Before+the+Web%3A+the+early+development+of+History+on-line&amp;rft.atitle=&amp;rft.aulast=Lynn+H.+Nelson&amp;rft.au=Lynn+H.+Nelson&amp;rft.date=2000-11-07&amp;rft_id=http%3A%2F%2Fchnm.gmu.edu%2Fdigitalhistory%2Flinks%2Fpdf%2Fchapter1%2F1.2b.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-10"><b><a href="#cite_ref-10">^</a></b> <a href="http://www.fdisk.com/doslynx/BETAHYPE.HTM" class="external free" rel="nofollow">http://www.fdisk.com/doslynx/BETAHYPE.HTM</a></li>
+<li id="cite_note-11"><b><a href="#cite_ref-11">^</a></b> <span class="citation web"><a href="http://www.fdisk.com/doslynx/lynxport.htm" class="external text" rel="nofollow">"Lynx for DOS 386+ or Win32"</a><span class="printonly">. <a href="http://www.fdisk.com/doslynx/lynxport.htm" class="external free" rel="nofollow">http://www.fdisk.com/doslynx/lynxport.htm</a></span><span class="reference-accessdate">. Retrieved 2008-01-03</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Lynx+for+DOS+386%2B+or+Win32&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.fdisk.com%2Fdoslynx%2Flynxport.htm&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-12"><b><a href="#cite_ref-12">^</a></b> <span class="citation web"><a href="http://www.apple.com/downloads/macosx/unix_open_source/lynxtextwebbrowser.html" class="external text" rel="nofollow">"Lynx text web browser 2.8.7d9u"</a>. <a href="/wiki/Apple_Inc." title="Apple Inc.">Apple Inc.</a>. 2008-01-28<span class="printonly">. <a href="http://www.apple.com/downloads/macosx/unix_open_source/lynxtextwebbrowser.html" class="external free" rel="nofollow">http://www.apple.com/downloads/macosx/unix_open_source/lynxtextwebbrowser.html</a></span><span class="reference-accessdate">. Retrieved 2009-01-03</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Lynx+text+web+browser+2.8.7d9u&amp;rft.atitle=&amp;rft.date=2008-01-28&amp;rft.pub=%5B%5BApple+Inc.%5D%5D&amp;rft_id=http%3A%2F%2Fwww.apple.com%2Fdownloads%2Fmacosx%2Funix_open_source%2Flynxtextwebbrowser.html&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-13"><b><a href="#cite_ref-13">^</a></b> <span class="citation web">Adams, Chris. <a href="http://ccadams.org/se/lynx.html" class="external text" rel="nofollow">"MacLynx, a text-only browser"</a><span class="printonly">. <a href="http://ccadams.org/se/lynx.html" class="external free" rel="nofollow">http://ccadams.org/se/lynx.html</a></span><span class="reference-accessdate">. Retrieved 2008-01-03</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MacLynx%2C+a+text-only+browser&amp;rft.atitle=&amp;rft.aulast=Adams&amp;rft.aufirst=Chris&amp;rft.au=Adams%2C%26%2332%3BChris&amp;rft_id=http%3A%2F%2Fccadams.org%2Fse%2Flynx.html&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-14"><b><a href="#cite_ref-14">^</a></b> <span class="citation web">Kahan, José (7 June 2002). <a href="http://www.w3.org/Library/User/History.html" class="external text" rel="nofollow">"Change History of libwww"</a>. <a href="/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">World Wide Web Consortium</a><span class="printonly">. <a href="http://www.w3.org/Library/User/History.html" class="external free" rel="nofollow">http://www.w3.org/Library/User/History.html</a></span><span class="reference-accessdate">. Retrieved 30 May 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Change+History+of+libwww&amp;rft.atitle=&amp;rft.aulast=Kahan&amp;rft.aufirst=Jos%C3%A9&amp;rft.au=Kahan%2C%26%2332%3BJos%C3%A9&amp;rft.date=7+June+2002&amp;rft.pub=%5B%5BWorld+Wide+Web+Consortium%5D%5D&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FLibrary%2FUser%2FHistory.html&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-15"><b><a href="#cite_ref-15">^</a></b> <span class="citation web">Kahan, José (5 August 1999). <a href="http://www.w3.org/Library/Activity.html" class="external text" rel="nofollow">"Why Libwww?"</a>. <a href="/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">World Wide Web Consortium</a><span class="printonly">. <a href="http://www.w3.org/Library/Activity.html" class="external free" rel="nofollow">http://www.w3.org/Library/Activity.html</a></span><span class="reference-accessdate">. Retrieved 15 June 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Why+Libwww%3F&amp;rft.atitle=&amp;rft.aulast=Kahan&amp;rft.aufirst=Jos%C3%A9&amp;rft.au=Kahan%2C%26%2332%3BJos%C3%A9&amp;rft.date=5+August+1999&amp;rft.pub=%5B%5BWorld+Wide+Web+Consortium%5D%5D&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FLibrary%2FActivity.html&amp;rfr_id=info:sid/en.wikipedia.org:Lynx_(web_browser)"><span style="display: none;">&#160;</span></span></li>
+</ol>
+</div>
+</div>
+<ul>
+<li><a href="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?Lynx" class="external text" rel="nofollow">Lynx from FOLDOC</a></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a href="http://lynx.isc.org/" class="external text" rel="nofollow">Lynx homepage</a> (old but still cited: <a href="http://www.fdisk.com/doslynx/" class="external text" rel="nofollow">doslynx</a>, <a href="http://www.subir.com/lynx.html" class="external text" rel="nofollow">Lynx links</a> and <a href="http://lynx.browser.org" class="external text" rel="nofollow">original</a>)</li>
+<li><a href="http://people.cc.ku.edu/~grobe/early-lynx.html" class="external text" rel="nofollow">Michael Grobe's personal recollections of Lynx development</a></li>
+<li><a href="http://linux4u.jinr.ru/usoft/WWW/www_crl.com/subir/lynx.html" class="external text" rel="nofollow"><i>Extremely Lynx</i> resource page</a> from version 2.7</li>
+<li><a href="http://ccadams.org/se/lynx.html" class="external text" rel="nofollow">MacLynx</a></li>
+<li><a href="http://www.apple.com/downloads/macosx/unix_open_source/lynxtextwebbrowser.html" class="external text" rel="nofollow">Lynx for Mac OS X 2.8.7d13u</a></li>
+<li><a href="http://csant.info/lynx" class="external text" rel="nofollow">Lynx for Windows 2.8.5rel1 installer</a></li>
+<li><a href="http://www.scoug.com/os24u/2002/scoug210.lynx1.html" class="external text" rel="nofollow">Lynx on OS/2</a></li>
+<li><a href="http://sucuri.net/?page=docs&amp;title=text-browser" class="external text" rel="nofollow">Test how your site looks like on Lynx</a></li>
+<li><a href="http://www.prashanthpai.com/blog/lynx-the-text-browser/" class="external text" rel="nofollow">Learn how to use Lynx</a></li>
+</ul>
+<table class="navbox" cellspacing="0" style=";">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse" style="width:100%;background:transparent;color:inherit;;">
+<tr>
+<th style=";" colspan="2" class="navbox-title">
+<div style="float:left; width:6em;text-align:left;">
+<div class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;;;border:none;; font-size:xx-small;"><a href="/wiki/Template:Mac_OS_X_web_browsers" title="Template:Mac OS X web browsers"><span title="View this template" style=";;border:none;">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/wiki/Template_talk:Mac_OS_X_web_browsers" title="Template talk:Mac OS X web browsers"><span title="Discuss this template" style=";;border:none;">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="http://en.wikipedia.org/w/index.php?title=Template:Mac_OS_X_web_browsers&amp;action=edit" class="external text" rel="nofollow"><span title="Edit this template" style=";;border:none;;">e</span></a></div>
+</div>
+<span class="" style="font-size:110%;"><a href="/wiki/Mac_OS_X" title="Mac OS X">Mac OS X</a> <a href="/wiki/Web_browser" title="Web browser">web browsers</a></span></th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Mac OS exclusive</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Camino" title="Camino">Camino</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Cyberdog" title="Cyberdog">Cyberdog</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/ICab" title="ICab">iCab</a><span style="font-weight:bold;">&#160;·</span>  <i><a href="/wiki/Internet_Explorer_for_Mac" title="Internet Explorer for Mac">Internet Explorer for Mac</a></i><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/OmniWeb" title="OmniWeb">OmniWeb</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Shiira" title="Shiira">Shiira</a><span style="font-weight:bold;">&#160;·</span>  <a href="/w/index.php?title=Stainless_(web_browser)&amp;action=edit&amp;redlink=1" class="new" title="Stainless (web browser) (page does not exist)">Stainless</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Cross-platform</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Amaya_(web_browser)" title="Amaya (web browser)">Amaya</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Arora_(browser)" title="Arora (browser)">Arora</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Dillo" title="Dillo">Dillo</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/ELinks" title="ELinks">ELinks</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Epiphany_(web_browser)" title="Epiphany (web browser)">Epiphany</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Google_Chrome" title="Google Chrome">Google Chrome</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Mozilla_Firefox" title="Mozilla Firefox">Firefox</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Flock_(web_browser)" title="Flock (web browser)">Flock</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Galeon" title="Galeon">Galeon</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Konqueror" title="Konqueror">Konqueror</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Links_(web_browser)" title="Links (web browser)">Links</a><span style="font-weight:bold;">&#160;·</span>  <strong class="selflink">Lynx</strong><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Netscape_Navigator_9" title="Netscape Navigator 9"><i>Netscape</i></a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Opera_(web_browser)" title="Opera (web browser)">Opera</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Safari_(web_browser)" title="Safari (web browser)">Safari</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/SeaMonkey" title="SeaMonkey">SeaMonkey</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/W3m" title="W3m">w3m</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Related</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Browser_wars" title="Browser wars">Browser wars</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/HyperCard" title="HyperCard">HyperCard</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Gopher_(protocol)" title="Gopher (protocol)">Gopher</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/E-mail" title="E-mail" class="mw-redirect">E-mail</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Elm_(e-mail_client)" title="Elm (e-mail client)">Elm</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Web_page" title="Web page">Web page</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Viewdata" title="Viewdata">Viewdata</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Teletext" title="Teletext">Teletext</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Videotex" title="Videotex">Videotex</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/X.25" title="X.25">X.25</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Aliweb" title="Aliweb">Aliweb</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/ASCII" title="ASCII">ASCII</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/HTML" title="HTML">HyperText Markup Language</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/HyTelnet" title="HyTelnet">HyTelnet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/VRML" title="VRML">Virtual Reality Markup Language</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">File Transfer Protocol</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Telnet" title="Telnet">Telnet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/NLS_(computer_system)" title="NLS (computer system)">NLS</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/NCSA_Telnet" title="NCSA Telnet">NCSA Telnet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/UUCP" title="UUCP">UUCP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Usenet" title="Usenet">Usenet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/ARPANET" title="ARPANET">ARPANET</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/BITNET" title="BITNET">BITNET</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Prodigy_(online_service)" title="Prodigy (online service)">Prodigy</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/CompuServe" title="CompuServe">CompuServe</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Whole_Internet_User%27s_Guide_and_Catalog" title="Whole Internet User's Guide and Catalog">Whole Internet User's Guide and Catalog</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" cellspacing="0" style=";">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse" style="width:100%;background:transparent;color:inherit;;">
+<tr>
+<th style=";" colspan="2" class="navbox-title">
+<div style="float:left; width:6em;text-align:left;">
+<div class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;;;border:none;; font-size:xx-small;"><a href="/wiki/Template:Gopher_clients" title="Template:Gopher clients"><span title="View this template" style=";;border:none;">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/wiki/Template_talk:Gopher_clients" title="Template talk:Gopher clients"><span title="Discuss this template" style=";;border:none;">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="http://en.wikipedia.org/w/index.php?title=Template:Gopher_clients&amp;action=edit" class="external text" rel="nofollow"><span title="Edit this template" style=";;border:none;;">e</span></a></div>
+</div>
+<span class="" style="font-size:110%;"><a href="/wiki/Gopher_(protocol)" title="Gopher (protocol)">Gopher</a></span></th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Active clients</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Amaya_(web_browser)" title="Amaya (web browser)">Amaya</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Arachne_(web_browser)" title="Arachne (web browser)">Arachne</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Camino" title="Camino">Camino</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Classilla" title="Classilla">Classilla</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Conkeror" title="Conkeror">Conkeror</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/ELinks" title="ELinks">ELinks</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Epiphany_(web_browser)" title="Epiphany (web browser)">Epiphany</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Firefox_for_mobile" title="Firefox for mobile">Firefox for mobile</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Flock_(web_browser)" title="Flock (web browser)">Flock</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Galeon" title="Galeon">Galeon</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Gnuzilla" title="Gnuzilla">Gnuzilla</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/K-Meleon" title="K-Meleon">K-Meleon</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/K-Meleon#K-Ninja" title="K-Meleon">K-Ninja</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Kazehakase" title="Kazehakase">Kazehakase</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Line_Mode_Browser" title="Line Mode Browser">Line Mode Browser</a><span style="font-weight:bold;">&#160;·</span>  <strong class="selflink">Lynx</strong><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Mosaic-CK" title="Mosaic-CK">Mosaic-CK</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Mothra_(web_browser)" title="Mothra (web browser)">Mothra</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Mozilla_Firefox" title="Mozilla Firefox">Mozilla Firefox</a> <a href="/wiki/Mozilla_Firefox_3" title="Mozilla Firefox 3">3</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/OmniWeb" title="OmniWeb">OmniWeb</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/SeaMonkey" title="SeaMonkey">SeaMonkey</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Sleipnir_(web_browser)" title="Sleipnir (web browser)">Sleipnir</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Songbird_(software)" title="Songbird (software)">Songbird</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/VMS_Mosaic" title="VMS Mosaic">VMS Mosaic</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/W3m" title="W3m">W3m</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/XeroBank_Browser" title="XeroBank Browser">XeroBank Browser</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Discontinued clients</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Agora_(web_browser)" title="Agora (web browser)">Agora</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Arena_(web_browser)" title="Arena (web browser)">Arena</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/AT%26T_Pogo" title="AT&amp;T Pogo">AT&amp;T Pogo</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Beonex_Communicator" title="Beonex Communicator">Beonex Communicator</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Cello_(web_browser)" title="Cello (web browser)">Cello</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Cyberjack" title="Cyberjack">Cyberjack</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/IBrowse" title="IBrowse">IBrowse</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Internet_Explorer" title="Internet Explorer">Internet Explorer</a> <a href="/wiki/Internet_Explorer_2" title="Internet Explorer 2">2</a>, <a href="/wiki/Internet_Explorer_3" title="Internet Explorer 3">3</a>, <a href="/wiki/Internet_Explorer_4" title="Internet Explorer 4">4</a>, <a href="/wiki/Internet_Explorer_5" title="Internet Explorer 5">5</a>, <a href="/wiki/Internet_Explorer_for_Mac" title="Internet Explorer for Mac">for Mac</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Minimo" title="Minimo">Minimo</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Minnesota_Internet_Users_Essential_Tool" title="Minnesota Internet Users Essential Tool">Minuet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Mosaic_(web_browser)" title="Mosaic (web browser)">Mosaic</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Mozilla_Application_Suite" title="Mozilla Application Suite">Mozilla Application Suite</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Netscape_Browser" title="Netscape Browser">Netscape Browser</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Netscape_Communicator" title="Netscape Communicator">Netscape Communicator</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Netscape_Navigator" title="Netscape Navigator">Netscape Navigator</a> <a href="/wiki/Netscape_Navigator_9" title="Netscape Navigator 9">9</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/SlipKnot_(web_browser)" title="SlipKnot (web browser)">SlipKnot</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/TkWWW" title="TkWWW">tkWWW</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/UdiWWW" title="UdiWWW">UdiWWW</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Server software</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Bucktooth" title="Bucktooth">Bucktooth</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/PyGopherd" title="PyGopherd">PyGopherd</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Squid_(software)" title="Squid (software)">Squid</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Persons</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Mark_P._McCahill" title="Mark P. McCahill">Mark P. McCahill</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">See also</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Gopher%2B" title="Gopher+">Gopher+</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/GopherVR" title="GopherVR">GopherVR</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Jughead_(search_engine)" title="Jughead (search engine)">Jughead</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Libwww" title="Libwww">Libwww</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Phlog" title="Phlog">Phlog</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/SDF_Public_Access_Unix_System" title="SDF Public Access Unix System">SDF Public Access Unix System</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Veronica_(computer)" title="Veronica (computer)" class="mw-redirect">Veronica</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/CCSO_Nameserver" title="CCSO Nameserver">CCSO Nameserver</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Wide_area_information_server" title="Wide area information server">Wide area information server</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" cellspacing="0" style=";">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse" style="width:100%;background:transparent;color:inherit;;">
+<tr>
+<th style=";" colspan="2" class="navbox-title">
+<div style="float:left; width:6em;text-align:left;">
+<div class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;;;border:none;; font-size:xx-small;"><a href="/wiki/Template:Web_browsers" title="Template:Web browsers"><span title="View this template" style=";;border:none;">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/wiki/Template_talk:Web_browsers" title="Template talk:Web browsers"><span title="Discuss this template" style=";;border:none;">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="http://en.wikipedia.org/w/index.php?title=Template:Web_browsers&amp;action=edit" class="external text" rel="nofollow"><span title="Edit this template" style=";;border:none;;">e</span></a></div>
+</div>
+<span class="" style="font-size:110%;"><a href="/wiki/Web_browser" title="Web browser">Web browsers</a></span></th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2"><a href="/wiki/Comparison_of_web_browsers" title="Comparison of web browsers">Comparison</a><span style="font-weight:bold;">&#160;·</span> <a href="/wiki/History_of_the_web_browser" title="History of the web browser">History</a><span style="font-weight:bold;">&#160;·</span> <a href="/wiki/List_of_web_browsers" title="List of web browsers">List</a> (<a href="/wiki/List_of_web_browsers_for_Unix_and_Unix-like_operating_systems" title="List of web browsers for Unix and Unix-like operating systems">for Unix</a>)<span style="font-weight:bold;">&#160;·</span> <a href="/wiki/Timeline_of_web_browsers" title="Timeline of web browsers">Timeline</a><span style="font-weight:bold;">&#160;·</span> <a href="/wiki/Usage_share_of_web_browsers" title="Usage share of web browsers">Usage share</a></td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/Trident_(layout_engine)" title="Trident (layout engine)">Trident</a>-<a href="/wiki/Internet_Explorer_shell" title="Internet Explorer shell">shells</a></td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><i><a href="/wiki/AOL_Explorer" title="AOL Explorer">AOL Explorer</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Avant_Browser" title="Avant Browser">Avant</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Deepnet_Explorer" title="Deepnet Explorer">Deepnet Explorer</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Enigma_Browser" title="Enigma Browser">Enigma</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/GreenBrowser" title="GreenBrowser">GreenBrowser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/IEs4Linux" title="IEs4Linux">IEs4Linux</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Maxthon" title="Maxthon">Maxthon</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/MenuBox" title="MenuBox">MenuBox</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/NeoPlanet" title="NeoPlanet">NeoPlanet</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/NetCaptor" title="NetCaptor">NetCaptor</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Netscape_Browser" title="Netscape Browser">Netscape 8</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Internet_Explorer" title="Internet Explorer">Internet Explorer</a> (<i><a href="/wiki/Internet_Explorer_1" title="Internet Explorer 1">1</a></i>, <i><a href="/wiki/Internet_Explorer_2" title="Internet Explorer 2">2</a></i>, <i><a href="/wiki/Internet_Explorer_3" title="Internet Explorer 3">3</a></i>, <i><a href="/wiki/Internet_Explorer_4" title="Internet Explorer 4">4</a></i>, <i><a href="/wiki/Internet_Explorer_5" title="Internet Explorer 5">5</a></i>, <i><a href="/wiki/Internet_Explorer_6" title="Internet Explorer 6">6</a></i>, <a href="/wiki/Internet_Explorer_7" title="Internet Explorer 7">7</a>, <a href="/wiki/Internet_Explorer_8" title="Internet Explorer 8">8</a>; <a href="/wiki/Internet_Explorer_9" title="Internet Explorer 9">9</a>; <i><a href="/wiki/Internet_Explorer_for_UNIX" title="Internet Explorer for UNIX">for UNIX</a></i>; <a href="/wiki/Internet_Explorer_Mobile" title="Internet Explorer Mobile">Mobile</a>)&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/IRider" title="IRider">iRider</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/MediaBrowser" title="MediaBrowser">MediaBrowser</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Sleipnir_(web_browser)" title="Sleipnir (web browser)">Sleipnir</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/SlimBrowser" title="SlimBrowser">SlimBrowser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/SpaceTime_(software)#SpaceTime_Browser" title="SpaceTime (software)">SpaceTime</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Timberwolf_(web_browser)" title="Timberwolf (web browser)">Timberwolf</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/TheWorld_Browser" title="TheWorld Browser">TheWorld</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/UltraBrowser" title="UltraBrowser">UltraBrowser</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/WebbIE" title="WebbIE">WebbIE</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/ZAC_Browser" title="ZAC Browser">ZAC Browser</a></span></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/Gecko_(layout_engine)" title="Gecko (layout engine)">Gecko</a>-based</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><i><a href="/wiki/AmiZilla" title="AmiZilla">AmiZilla</a>&#160;<b>·</b></i></span> <i><span style="white-space:nowrap"><a href="/wiki/AT%26T_Pogo" title="AT&amp;T Pogo">AT&amp;T Pogo</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Beonex_Communicator" title="Beonex Communicator">Beonex Communicator</a></span></i><span style="white-space:nowrap">&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Camino" title="Camino">Camino</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Classilla" title="Classilla">Classilla</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Conkeror" title="Conkeror">Conkeror</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Epiphany_(web_browser)" title="Epiphany (web browser)">Epiphany</a> (2.26.3 and below)&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Flock_(web_browser)" title="Flock (web browser)">Flock</a> (versions before 3.0)&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Galeon" title="Galeon">Galeon</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Ghostzilla" title="Ghostzilla">Ghostzilla</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/GNU_IceCat" title="GNU IceCat">GNU IceCat</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Gnuzilla" title="Gnuzilla">Gnuzilla</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Gollum_browser" title="Gollum browser">Gollum browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/K-Meleon" title="K-Meleon">K-Meleon</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Kazehakase" title="Kazehakase">Kazehakase</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Kirix_Strata" title="Kirix Strata">Kirix Strata</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/MicroB" title="MicroB">MicroB</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Minimo" title="Minimo">Minimo</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Mozilla_Application_Suite" title="Mozilla Application Suite">Mozilla</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Mozilla_Firefox" title="Mozilla Firefox">Mozilla Firefox</a> (<i><a href="/wiki/Mozilla_Firefox_2" title="Mozilla Firefox 2">2</a></i>, <i><a href="/wiki/Mozilla_Firefox_3" title="Mozilla Firefox 3">3</a></i>, <a href="/wiki/Mozilla_Firefox_3.5" title="Mozilla Firefox 3.5">3.5</a>, <a href="/wiki/Mozilla_Firefox_3.6" title="Mozilla Firefox 3.6">3.6</a>, <a href="/wiki/Mozilla_Firefox_4" title="Mozilla Firefox 4">4</a>, <a href="/wiki/Firefox_for_mobile" title="Firefox for mobile">for mobile</a>)&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Netscape_(web_browser)" title="Netscape (web browser)">Netscape</a></i> (<i><a href="/wiki/Netscape_6" title="Netscape 6">6</a></i>, <i><a href="/wiki/Netscape_(version_7)" title="Netscape (version 7)">7</a></i>, <i><a href="/wiki/Netscape_Browser" title="Netscape Browser">8</a></i>, <i><a href="/wiki/Netscape_Navigator_9" title="Netscape Navigator 9">9</a></i>)&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/SeaMonkey" title="SeaMonkey">SeaMonkey</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Skyfire_(web_browser)" title="Skyfire (web browser)">Skyfire</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Sleipnir_(web_browser)" title="Sleipnir (web browser)">Sleipnir</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Swiftfox" title="Swiftfox">Swiftfox</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Swiftweasel" title="Swiftweasel">Swiftweasel</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Timberwolf_(web_browser)" title="Timberwolf (web browser)">Timberwolf</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Wyzo" title="Wyzo">Wyzo</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/XeroBank_Browser" title="XeroBank Browser">XeroBank Browser</a></span></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/WebKit" title="WebKit">WebKit</a>-based</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><a href="/wiki/Arora_(browser)" title="Arora (browser)">Arora</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Google_Chrome" title="Google Chrome">Chrome</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Chromium_(web_browser)" title="Chromium (web browser)">Chromium</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Epiphany_(web_browser)" title="Epiphany (web browser)">Epiphany</a> (2.28+)&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Flock_(web_browser)" title="Flock (web browser)">Flock</a> (3.0+)&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/ICab" title="ICab">iCab</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Iris_Browser" title="Iris Browser">Iris Browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Midori_(web_browser)" title="Midori (web browser)">Midori</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/OmniWeb" title="OmniWeb">OmniWeb</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Origyn_Web_Browser" title="Origyn Web Browser">Origyn Web Browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Rekonq" title="Rekonq">Rekonq</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/RockMelt" title="RockMelt">RockMelt</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Web_Browser_for_S60" title="Web Browser for S60">S60 web browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Safari_(web_browser)" title="Safari (web browser)">Safari</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Shiira" title="Shiira">Shiira</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/SRWare_Iron" title="SRWare Iron">SRWare Iron</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Steam_(software)#Steam_Community" title="Steam (software)">Steam overlay</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Steel_(web_browser)" title="Steel (web browser)">Steel</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Teashark" title="Teashark">Teashark</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/WebPositive" title="WebPositive">WebPositive</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Uzbl" title="Uzbl">Uzbl</a></span></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/Presto_(layout_engine)" title="Presto (layout engine)">Presto</a>-based</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><a href="/wiki/Opera_(web_browser)" title="Opera (web browser)">Opera</a> <small>(<a href="/wiki/Opera_10" title="Opera 10">10</a>)</small>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Nintendo_DS_%26_DSi_Browser" title="Nintendo DS &amp; DSi Browser">Nintendo DS &amp; DSi Browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Internet_Channel" title="Internet Channel">Internet Channel</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Opera_Mini" title="Opera Mini">Opera Mini</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Opera_Mobile" title="Opera Mobile">Opera Mobile</a></span></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/Java_(software_platform)" title="Java (software platform)">Java</a>-based</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><i><a href="/wiki/HotJava" title="HotJava">HotJava</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Lobo_(web_browser)" title="Lobo (web browser)">Lobo</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Opera_Mini" title="Opera Mini">Opera Mini</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Teashark" title="Teashark">Teashark</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/UZard_Web" title="UZard Web">uZard Web</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/X-Smiles" title="X-Smiles">X-Smiles</a></span></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/KHTML" title="KHTML">KHTML</a>-based</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Konqueror" title="Konqueror">Konqueror</a><span style="font-weight:bold;">&#160;·</span> <a href="/wiki/Konqueror_Embedded" title="Konqueror Embedded">Konqueror Embedded</a><span style="font-weight:bold;">&#160;·</span> <a href="/wiki/Sputnik_(web_browser)" title="Sputnik (web browser)">Sputnik</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/Tasman_(layout_engine)" title="Tasman (layout engine)">Tasman</a>-based</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><i><a href="/wiki/Internet_Explorer_for_Mac" title="Internet Explorer for Mac">Internet Explorer for Mac</a></i><span style="font-weight:bold;">&#160;·</span> <i><a href="/wiki/MSN_for_Mac_OS_X" title="MSN for Mac OS X">MSN for Mac OS X</a></i></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/Text-based_web_browser" title="Text-based web browser">Command-/Text-based</a></td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><a href="/wiki/ELinks" title="ELinks">ELinks</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Emacs/W3" title="Emacs/W3">Emacs/W3</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Line_Mode_Browser" title="Line Mode Browser">Line Mode Browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Links_(web_browser)" title="Links (web browser)">Links</a> (<a href="/wiki/ALynx" title="ALynx">ALynx</a>)&#160;<b>·</b></span> <span style="white-space:nowrap"><strong class="selflink">Lynx</strong>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Net-Tamer" title="Net-Tamer">Net-Tamer</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/W3m" title="W3m">w3m</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/WebbIE" title="WebbIE">WebbIE</a></span></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/Mobile_browser" title="Mobile browser">Mobile browsers</a></td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<p><span style="white-space:nowrap"><a href="/wiki/Blazer_(web_browser)" title="Blazer (web browser)">Blazer</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Bolt_browser" title="Bolt browser" class="mw-redirect">Bolt browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Firefox_for_mobile" title="Firefox for mobile">Firefox for mobile</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Galio" title="Galio">Galio</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/IbisBrowser" title="IbisBrowser">IbisBrowser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Internet_Explorer_Mobile" title="Internet Explorer Mobile">Internet Explorer Mobile</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Iris_Browser" title="Iris Browser">Iris Browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Konqueror_Embedded" title="Konqueror Embedded">Konqueror Embedded</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/MicroB" title="MicroB">MicroB</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Minimo" title="Minimo">Minimo</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/NetFront" title="NetFront">NetFront</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Obigo_Browser" title="Obigo Browser">Obigo Browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Opera_Mobile" title="Opera Mobile">Opera Mobile</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Pixo" title="Pixo">Pixo</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Web_Browser_for_S60" title="Web Browser for S60">S60 web browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Safari_(web_browser)" title="Safari (web browser)">Safari</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Steel_(web_browser)" title="Steel (web browser)">Steel</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/ThunderHawk_(web_browser)" title="ThunderHawk (web browser)">ThunderHawk</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/UC_Browser" title="UC Browser">UC Browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/WinWAP" title="WinWAP">WinWAP</a></span></p>
+</div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;">
+<tr>
+<td class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Mobile_browser#Mobile_HTML_transcoders" title="Mobile browser">HTML transcoders</a></div>
+</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><i><a href="/wiki/Microsoft_Live_Labs_Deepfish" title="Microsoft Live Labs Deepfish">Deepfish</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/JOCA" title="JOCA">JOCA</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Opera_Mini" title="Opera Mini">Opera Mini</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Skyfire_(web_browser)" title="Skyfire (web browser)">Skyfire</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Skweezer" title="Skweezer">Skweezer</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Teashark" title="Teashark">Teashark</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/UZard_Web" title="UZard Web">uZard Web</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Vision_Mobile_Browser" title="Vision Mobile Browser">Vision</a></span></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Other</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><a href="/wiki/3B_(web_browser)" title="3B (web browser)">3B</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Abaco_(web_browser)" title="Abaco (web browser)">abaco</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Amaya_(web_browser)" title="Amaya (web browser)">Amaya</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Arachne_(web_browser)" title="Arachne (web browser)">Arachne</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Arena_(web_browser)" title="Arena (web browser)">Arena</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Charon_(web_browser)" title="Charon (web browser)">Charon</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Dillo" title="Dillo">Dillo</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/EGBrowser" title="EGBrowser">EGBrowser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Gazelle_(web_browser)" title="Gazelle (web browser)">Gazelle</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/IBM_Home_Page_Reader" title="IBM Home Page Reader">IBM Home Page Reader</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/IBrowse" title="IBrowse">IBrowse</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/KidZui" title="KidZui">KidZui</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Lunascape_(web_browser)" title="Lunascape (web browser)">Lunascape</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Mosaic-CK" title="Mosaic-CK">Mosaic-CK</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Mothra_(web_browser)" title="Mothra (web browser)">Mothra</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/NetPositive" title="NetPositive">NetPositive</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Netscape_Communicator" title="Netscape Communicator">Netscape Communicator</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/NetSurf" title="NetSurf">NetSurf</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><i><a href="/wiki/Oregano_(web_browser)" title="Oregano (web browser)">Oregano</a></i>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/VMS_Mosaic" title="VMS Mosaic">VMS Mosaic</a></span></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><a href="/wiki/Offline_reader" title="Offline reader">Offline reader‎</a></td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/HTTrack" title="HTTrack">HTTrack</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Features</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><a href="/wiki/Ad_filtering" title="Ad filtering">Ad filtering</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Augmented_browsing" title="Augmented browsing">Augmented browsing</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Download_manager" title="Download manager">Download manager</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/HTTP_cookie" title="HTTP cookie">Cookies</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Favicon" title="Favicon">Favicon</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Incremental_search" title="Incremental search">Incremental search</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Bookmark_(World_Wide_Web)" title="Bookmark (World Wide Web)">bookmarks</a> (<a href="/wiki/Bookmarklet" title="Bookmarklet">Bookmarklet</a>, <a href="/wiki/Live_bookmark" title="Live bookmark" class="mw-redirect">Live bookmark</a>, <a href="/wiki/Smart_Bookmark" title="Smart Bookmark" class="mw-redirect">Smart Bookmark</a>)&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Privacy_mode" title="Privacy mode">Privacy mode</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Tab_(GUI)" title="Tab (GUI)">Tabbed browsing</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Universal_Edit_Button" title="Universal Edit Button">Universal Edit Button</a></span></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Web standards</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><a href="/wiki/Web_Standards_Project" title="Web Standards Project">Acid tests</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">Cascading Style Sheets</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/HTML" title="HTML">HTML</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/HTML5" title="HTML5">HTML5</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Online_Certificate_Status_Protocol" title="Online Certificate Status Protocol">OCSP</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Scalable_Vector_Graphics" title="Scalable Vector Graphics">SVG</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/XHTML" title="XHTML">XHTML</a></span></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Related articles</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><span style="white-space:nowrap"><a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/GUI_widget" title="GUI widget">Widget</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Rich_Internet_application" title="Rich Internet application">Rich Internet application</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Site-specific_browser" title="Site-specific browser">Site-specific browser</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Internet_suite" title="Internet suite">Internet suite</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Mobile_Web" title="Mobile Web">Mobile Web</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Net_Applications" title="Net Applications">Net Applications</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/BrowserChoice.eu" title="BrowserChoice.eu">BrowserChoice.eu</a>&#160;<b>·</b></span> <span style="white-space:nowrap"><a href="/wiki/Pwn2Own" title="Pwn2Own">Pwn2Own</a></span></div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2"><i>italics</i> = No longer in development</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" cellspacing="0" style=";">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse" style="width:100%;background:transparent;color:inherit;;">
+<tr>
+<th style=";" colspan="2" class="navbox-title">
+<div style="float:left; width:6em;text-align:left;">
+<div class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;;;border:none;; font-size:xx-small;"><a href="/wiki/Template:Early_web_browsers" title="Template:Early web browsers"><span title="View this template" style=";;border:none;">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/wiki/Template_talk:Early_web_browsers" title="Template talk:Early web browsers"><span title="Discuss this template" style=";;border:none;">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="http://en.wikipedia.org/w/index.php?title=Template:Early_web_browsers&amp;action=edit" class="external text" rel="nofollow"><span title="Edit this template" style=";;border:none;;">e</span></a></div>
+</div>
+<span class="" style="font-size:110%;">Early <a href="/wiki/Web_browser" title="Web browser">web browsers</a> (up to 1996)</span></th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2"><a href="/wiki/Comparison_of_web_browsers" title="Comparison of web browsers">Comparison</a> <span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/History_of_the_web_browser" title="History of the web browser">History</a> <span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/List_of_web_browsers" title="List of web browsers">List</a> (<a href="/wiki/List_of_web_browsers_for_Unix_and_Unix-like_operating_systems" title="List of web browsers for Unix and Unix-like operating systems">for Unix</a>) <span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Timeline_of_web_browsers" title="Timeline of web browsers">Timeline</a> <span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Usage_share_of_web_browsers" title="Usage share of web browsers">Usage share</a></td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">1991</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/WorldWideWeb" title="WorldWideWeb">WorldWideWeb</a> (Nexus)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Line_Mode_Browser" title="Line Mode Browser">Line Mode Browser</a> (libwww)</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">1992</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/ViolaWWW" title="ViolaWWW">ViolaWWW</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Erwise" title="Erwise">Erwise</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/MidasWWW" title="MidasWWW">MidasWWW</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/MacWWW" title="MacWWW">MacWWW</a> (Samba)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/TkWWW" title="TkWWW">tkWWW</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">1993</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Mosaic_(web_browser)" title="Mosaic (web browser)">NCSA Mosaic</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/AMosaic" title="AMosaic">AMosaic</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/VMS_Mosaic" title="VMS Mosaic">VMS Mosaic</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Cello_(web_browser)" title="Cello (web browser)">Cello</a><span style="font-weight:bold;">&#160;·</span>  <strong class="selflink">Lynx</strong> (2.0)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Arena_(web_browser)" title="Arena (web browser)">Arena</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">1994</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/IBM_WebExplorer" title="IBM WebExplorer">IBM WebExplorer</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Netscape_Navigator" title="Netscape Navigator">Netscape Navigator</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/SlipKnot_(web_browser)" title="SlipKnot (web browser)">MicroMind SlipKnot</a> (1.0)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/MacWeb" title="MacWeb">TradeWave MacWeb</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/IBrowse" title="IBrowse">IBrowse</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/AOLpress" title="AOLpress">Navipress</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Argo_(web_browser)" title="Argo (web browser)">Argo</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Minnesota_Internet_Users_Essential_Tool" title="Minnesota Internet Users Essential Tool">Minuet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/AIR_Mosaic" title="AIR Mosaic">AIR Mosaic</a>(<a href="/wiki/Internet_in_a_Box" title="Internet in a Box">Internet in a Box</a>)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Spyglass,_Inc." title="Spyglass, Inc.">Spyglass Mosaic</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/InterCon_Systems_Corporation" title="InterCon Systems Corporation">TCP/Connect II</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Fresco_(web_browser)" title="Fresco (web browser)">ANT Fresco</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">1995</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Internet_Explorer_1" title="Internet Explorer 1">Internet Explorer 1</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Netscape_Navigator" title="Netscape Navigator">Netscape Navigator 2.0</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/OmniWeb" title="OmniWeb">OmniWeb</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/WebRouser" title="WebRouser">WebRouser</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/HotJava" title="HotJava">Sun WebRunner</a> (HotJava)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Grail_(web_browser)" title="Grail (web browser)">Grail</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Internet_Explorer_2" title="Internet Explorer 2">Internet Explorer 2</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Delrina" title="Delrina">Delrina</a> <a href="/wiki/Cyberjack" title="Cyberjack">Cyberjack</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/InterCon_Systems_Corporation" title="InterCon Systems Corporation">AOL Web Browser for Macintosh</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/InterCon_Systems_Corporation" title="InterCon Systems Corporation">eWorld Web Browser for Macintosh</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/InterCon_Systems_Corporation" title="InterCon Systems Corporation">NetShark</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/InterCon_Systems_Corporation" title="InterCon Systems Corporation">WebShark</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Opera_(web_browser)" title="Opera (web browser)">Opera</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/AMSD_Ariadna" title="AMSD Ariadna">AMSD Ariadna</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/UdiWWW" title="UdiWWW">UdiWWW</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/ALynx" title="ALynx">ALynx</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">1996</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Arachne_(web_browser)" title="Arachne (web browser)">Arachne 1.0</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Internet_Explorer_3" title="Internet Explorer 3">Internet Explorer 3</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Netscape_Navigator" title="Netscape Navigator">Netscape Navigator 3.0</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle</a> <a href="/wiki/Oracle_PowerBrowser" title="Oracle PowerBrowser">PowerBrowser</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Cyberdog" title="Cyberdog">Apple Cyberdog</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Amaya_(web_browser)" title="Amaya (web browser)">INRIA Amaya</a> (.9)<span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/AWeb" title="AWeb">AWeb</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Voyager_(web_browser)" title="Voyager (web browser)">VaporWare Voyager</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/InterCon_Systems_Corporation" title="InterCon Systems Corporation">tcpCONNECT4</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;">Related technologies<br />
+and concepts</td>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/3DMLW" title="3DMLW">3D Markup Language for Web</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Aliweb" title="Aliweb">Aliweb</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/ARPANET" title="ARPANET">ARPANET</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/ASCII" title="ASCII">ASCII</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/BITNET" title="BITNET">BITNET</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Browser_wars" title="Browser wars">Browser wars</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/CompuServe" title="CompuServe">CompuServe</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Email" title="Email">Email</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Elm_(e-mail_client)" title="Elm (e-mail client)">Elm</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">File Transfer Protocol</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Gopher_(protocol)" title="Gopher (protocol)">Gopher</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/HyperCard" title="HyperCard">HyperCard</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/HTML" title="HTML">HTML</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/HyTelnet" title="HyTelnet">HyTelnet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Libwww" title="Libwww">libwww</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/NCSA_Telnet" title="NCSA Telnet">NCSA Telnet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/NLS_(computer_system)" title="NLS (computer system)">NLS</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Prodigy_(online_service)" title="Prodigy (online service)">Prodigy</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Teletext" title="Teletext">Teletext</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Telnet" title="Telnet">Telnet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Usenet" title="Usenet">Usenet</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/UUCP" title="UUCP">UUCP</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Videotex" title="Videotex">Videotex</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Viewdata" title="Viewdata">Viewdata</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/VRML" title="VRML">Virtual Reality Markup Language</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Web_page" title="Web page">Web page</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/Whole_Internet_User%27s_Guide_and_Catalog" title="Whole Internet User's Guide and Catalog">Whole Internet User's Guide and Catalog</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a><span style="font-weight:bold;">&#160;·</span>  <a href="/wiki/X.25" title="X.25">X.25</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 13094/1000000
+Post-expand include size: 234123/2048000 bytes
+Template argument size: 112701/2048000 bytes
+Expensive parser function count: 5/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:18529-0!1!0!default!!en!4 and timestamp 20101222044418 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Lynx_(web_browser)">http://en.wikipedia.org/wiki/Lynx_(web_browser)</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:OS/2_web_browsers" title="Category:OS/2 web browsers">OS/2 web browsers</a></span> | <span dir='ltr'><a href="/wiki/Category:POSIX_web_browsers" title="Category:POSIX web browsers">POSIX web browsers</a></span> | <span dir='ltr'><a href="/wiki/Category:Mac_OS_X_web_browsers" title="Category:Mac OS X web browsers">Mac OS X web browsers</a></span> | <span dir='ltr'><a href="/wiki/Category:Web_browsers_for_DOS" title="Category:Web browsers for DOS">Web browsers for DOS</a></span> | <span dir='ltr'><a href="/wiki/Category:Text-based_web_browsers" title="Category:Text-based web browsers">Text-based web browsers</a></span> | <span dir='ltr'><a href="/wiki/Category:Gopher_clients" title="Category:Gopher clients">Gopher clients</a></span> | <span dir='ltr'><a href="/wiki/Category:Free_web_browsers" title="Category:Free web browsers">Free web browsers</a></span> | <span dir='ltr'><a href="/wiki/Category:FTP_clients" title="Category:FTP clients">FTP clients</a></span> | <span dir='ltr'><a href="/wiki/Category:HTTP_clients" title="Category:HTTP clients">HTTP clients</a></span> | <span dir='ltr'><a href="/wiki/Category:Portable_software" title="Category:Portable software">Portable software</a></span> | <span dir='ltr'><a href="/wiki/Category:Embedded_Linux" title="Category:Embedded Linux">Embedded Linux</a></span> | <span dir='ltr'><a href="/wiki/Category:University_of_Kansas" title="Category:University of Kansas">University of Kansas</a></span> | <span dir='ltr'><a href="/wiki/Category:1992_software" title="Category:1992 software">1992 software</a></span> | <span dir='ltr'><a href="/wiki/Category:Curses_(programming_library)" title="Category:Curses (programming library)">Curses (programming library)</a></span> | <span dir='ltr'><a href="/wiki/Category:S-Lang_(programming_library)" title="Category:S-Lang (programming library)">S-Lang (programming library)</a></span> | <span dir='ltr'><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></span> | <span dir='ltr'><a href="/wiki/Category:Command-line_software" title="Category:Command-line software">Command-line software</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories: <span dir='ltr'><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_with_unsourced_statements_from_June_2010" title="Category:Articles with unsourced statements from June 2010">Articles with unsourced statements from June 2010</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Lynx_(web_browser)" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/Lynx_(web_browser)"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:Lynx_(web_browser)"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/Lynx_(web_browser)" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=Lynx_(web_browser)&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=Lynx_(web_browser)&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Lynx_(web_browser)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Lynx_(web_browser)" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=Lynx_(web_browser)&amp;oldid=401909596" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Lynx_(web_browser)&amp;id=401909596" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Lynx+%28web+browser%29" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Lynx+%28web+browser%29&amp;oldid=401909596&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Lynx_(web_browser)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D9%84%D9%86%D9%83%D8%B3" title="لنكس">العربية</a></li>
+					<li class="interwiki-bs"><a href="http://bs.wikipedia.org/wiki/Lynx_internet_pregleda%C4%8D" title="Lynx internet pregledač">Bosanski</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Lynx" title="Lynx">Česky</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Lynx_(Browser)" title="Lynx (Browser)">Deutsch</a></li>
+					<li class="interwiki-et"><a href="http://et.wikipedia.org/wiki/Lynx_(brauser)" title="Lynx (brauser)">Eesti</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Lynx_(navegador)" title="Lynx (navegador)">Español</a></li>
+					<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Linko_(retumilo)" title="Linko (retumilo)">Esperanto</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D9%84%DB%8C%D9%86%DA%A9%D8%B3" title="لینکس">فارسی</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Lynx_(navigateur)" title="Lynx (navigateur)">Français</a></li>
+					<li class="interwiki-gl"><a href="http://gl.wikipedia.org/wiki/Lynx" title="Lynx">Galego</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EB%A7%81%ED%81%AC%EC%8A%A4_(%EC%9B%B9_%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80)" title="링크스 (웹 브라우저)">한국어</a></li>
+					<li class="interwiki-ia"><a href="http://ia.wikipedia.org/wiki/Lynx" title="Lynx">Interlingua</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Lynx_(software)" title="Lynx (software)">Italiano</a></li>
+					<li class="interwiki-csb"><a href="http://csb.wikipedia.org/wiki/Lynx" title="Lynx">Kaszëbsczi</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Lynx_(webb%C3%B6ng%C3%A9sz%C5%91)" title="Lynx (webböngésző)">Magyar</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Lynx_(webbrowser)" title="Lynx (webbrowser)">Nederlands</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/Lynx_(%E3%82%A6%E3%82%A7%E3%83%96%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6)" title="Lynx (ウェブブラウザ)">日本語</a></li>
+					<li class="interwiki-no"><a href="http://no.wikipedia.org/wiki/Lynx_(nettleser)" title="Lynx (nettleser)">‪Norsk (bokmål)‬</a></li>
+					<li class="interwiki-nn"><a href="http://nn.wikipedia.org/wiki/Nettlesaren_Lynx" title="Nettlesaren Lynx">‪Norsk (nynorsk)‬</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Lynx_(przegl%C4%85darka)" title="Lynx (przeglądarka)">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Lynx_(navegador)" title="Lynx (navegador)">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Lynx" title="Lynx">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/Lynx" title="Lynx">Русский</a></li>
+					<li class="interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Lynx_(prehliada%C4%8D)" title="Lynx (prehliadač)">Slovenčina</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Lynx_(selain)" title="Lynx (selain)">Suomi</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Lynx_(webbl%C3%A4sare)" title="Lynx (webbläsare)">Svenska</a></li>
+					<li class="interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Lynx_(Web_taray%C4%B1c%C4%B1s%C4%B1)" title="Lynx (Web tarayıcısı)">Türkçe</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/Lynx_(%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80)" title="Lynx (браузер)">Українська</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/Lynx" title="Lynx">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 12 December 2010 at 06:11.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv283 in 0.046 secs. -->			</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>Wolfram Blog : Navigating the Blenheim Maze</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="http://blog.wolfram.com/wp-content/themes/WRI_2_0/style.css" type="text/css" media="all" />
+   <meta name="generator" content="WordPress 2.8.4" /> <!-- leave this for stats please -->
+   <meta name="Description" content="How to use Mathematica to find the shortest path by tracking a moving front -- building on the recent post aMazeing Image Processing in Mathematica." />
+      <link rel="shortcut icon" href="http://blog.wolfram.com/favicon.ico" type="image/vnd.microsoft.icon" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.wolfram.com/feed/" />
+   <link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.wolfram.com/feed/rss/" />
+   <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://blog.wolfram.com/feed/atom/" />
+   <link rel="pingback" href="http://blog.wolfram.com/xmlrpc.php" />
+         <link rel="alternate" type="application/rss+xml" title="Wolfram Blog &raquo; Navigating the Blenheim Maze Comments Feed" href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/feed/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.wolfram.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.wolfram.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Wolfram Blog' href='http://blog.wolfram.com' />
+<link rel='start' title='Welcome to the Wolfram Blog' href='http://blog.wolfram.com/2007/05/01/welcome-to-the-wolfram-blog/' />
+<link rel='prev' title='How to Win at Coin Flipping' href='http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/' />
+<link rel='next' title='Automatic Physical Units in &lt;em&gt;Mathematica&lt;/em&gt;' href='http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/' />
+<meta name="generator" content="WordPress 2.8.4" />
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5677369-3']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!-- WP-SWFObject 2.3 by unijimpe -->
+<script src="/wp-content/plugins/wp-swfobject/2.0/swfobject.js" type="text/javascript"></script>
+</head>
+<body>
+   <div id="banner"><img src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/bannerandlogo_print.gif" border="0"></div>
+   <a id="logo_left" href="http://blog.wolfram.com" title="Wolfram Blog--News, views, &amp; ideas from the front lines at Wolfram Research"></a>
+   <a id="logo_right" href="http://www.wolfram.com/" title="Wolfram Research"></a>
+
+   <div id="content">
+   
+               <div id="banner_more_posts">
+      <a href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/">Previous</a> |       December 7, 2010       | <a href="http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/">Next</a>      </div>
+      <div class="post">
+         <img class="author" src="http://blog.wolfram.com/images/people/danl.jpg" alt="Daniel Lichtblau" title="Daniel Lichtblau" />
+         <div class="post_content">
+            <div class="post_title">
+               <a href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/" title="Permanent Link to Navigating the Blenheim Maze">Navigating the Blenheim Maze</a>
+            </div>
+            <div class="post_time">
+               December 7, 2010            </div>
+            <div class="author_info">
+               Daniel Lichtblau, Scientific Information Group            </div>
+            <p>I read Jon McLoone&#8217;s recent &#8220;<a href="http://blog.wolfram.com/2010/11/03/amazeing-image-processing-in-mathematica/">aMazeing Image Processing in <em>Mathematica</em></a>&#8221; post with some interest.</p>
+<p>It showed how to import an image of a maze, and then use image processing functions in <a href="http://www.wolfram.com/mathematica/"><em>Mathematica</em></a> (some new to <a href="http://www.wolfram.com/mathematica/new-in-8/comprehensive-image-processing-environment/">Version 8</a>) to draw paths through the maze. What fun! I then observed, to my dismay, that there was no way to determine a &#8220;good&#8221; path. Frankly, I was disappointed.</p>
+<p>I decided that there must be ways to do this in <em>Mathematica</em>. One approach would involve forming a graph. We would have vertices at points where the maze path forks, and we would make weighted edges from approximated distances between these vertices. New functionality in <em>Mathematica</em> supports these graph methods. Unfortunately I am not yet familiar with it.<br />
+<span id="more-4330"></span><br />
+Next I thought there might be a way to emulate an accretion of distances via cellular automata. There are people at Wolfram Research who program with cellular automata on a regular basis. But I&#8217;m not one of them. (Indeed, while it would seem an odd pursuit, I gather there are people here who even study them. Apparently this must be done late at night, presumably when the automata are dormant.)</p>
+<p>So I decided to use some <a href="http://library.wolfram.com/infocenter/Demos/4928/">old code</a> I&#8217;d prepared for a talk back in 2003. It is based on work by James Sethian and others, and is well described in Sethian&#8217;s book <a href="http://www.amazon.com/Level-Methods-Fast-Marching-Computational/dp/0521645573/wolframresearch-20" target="_blank"><em>Level Set Methods and Fast Marching Methods: Evolving Interfaces in Computational Geometry, Fluid Mechanics, Computer Vision, and Materials Science</em></a> (Cambridge University Press, 1996).</p>
+<p>The idea is to track what is called a &#8220;moving front&#8221;. In our case the front will consist of those points on the path we&#8217;ve not yet traversed that abut points we&#8217;ve just hit (that is to say, neighbors of those points that were last on the &#8220;front&#8221;). We traverse in order, based on the distance from where we began. In a sense we are oozing through the maze. Well, we are not ourselves oozing, but it seems a reasonable metaphor. The &#8220;tracking&#8221; will simply keep note of how far a point is from where we began. Naturally we&#8217;ll begin at the opening of the maze.</p>
+<p>I&#8217;ll just crib some of Jon&#8217;s code and the <a href="http://www.bing.com/maps/?v=2&#038;cp=51.83747003128648~-1.3497955352067947&#038;lvl=19&#038;sty=h&#038;eo=0&#038;where1=Blenheim%20Palace%2C%20United%20Kingdom" target="_blank">aerial photo</a> (data created by Intermap, NAVTEQ, and Getmapping plc) he got from <a href="http://www.bing.com/maps/" target="_blank">Bing Maps</a> for the next steps.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM1.png" alt="Aerial photo of Blenheim maze" title="Aerial photo of Blenheim maze" width="440" height="327" class="alignnone size-full wp-image-4337" /></p>
+<p>For the task at hand I prefer to reverse zeros and ones. I&#8217;ll then make the ones into a large value. This will be used later to demarcate maze boundaries, so we do not cheat and cross over hedges.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM2.png" width="299" height="19" class="alignnone size-full wp-image-4339" /></p>
+<p>Here is a picture of the maze. The white parts are the open spaces.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM3.png" alt="Blenheim maze with reversed ones and zeros" title="Blenheim maze with reversed ones and zeros" width="402" height="290" class="alignnone size-full wp-image-4341" /></p>
+<p>I want to clip away the outer regions, so as to obtain just the maze. I&#8217;ll especially want to trim the last rows (shown at the bottom of the picture), so that we&#8217;ll have a distinct entrance and exit (the entrance will be the path part right near the center, which leads to the wheel-with-spokes region).</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM4.png" alt="Trimmed photo of Blenheim maze" title="Trimmed photo of Blenheim maze" width="401" height="319" class="alignnone size-full wp-image-4342" /></p>
+<p>Here is where things (briefly) get technical. We want to have a &#8220;start&#8221; region with values of -1. We then move forward into spaces of zeros and mark them as occupied until we&#8217;ve permeated all the pathways that are reachable from the start. First I explicitly tack on a row that is impassable on two sides, with a slim region containing our start: think of it as a doormat leading into a big forest.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM5.png" width="461" height="94" class="alignnone size-full wp-image-4344" /></p>
+<p>We&#8217;ll run this to get our set of pathway distances.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM6.png" width="321" height="38" class="alignnone size-full wp-image-4346" /></p>
+<p>Let&#8217;s see how this looks graphically.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM7.png" alt="Pathways through the maze with distance indicated by color" title="Pathways through the maze with distance indicated by color" width="440" height="306" class="alignnone size-full wp-image-4348" /></p>
+<p>Of course we immediately observe that this picture gives no hint as to how to actually traverse the maze. At junctures it is not clear which way to turn, and there is nothing to stop us from traveling to a dead end. I first thought maybe I could modify this fast marching method so that we might discover when we hit dead ends or junctures reached by shorter traversals, and then wend our way backward. But I decided this was too hard. The notion that &#8220;I&#8217;ve no idea what I&#8217;m doing, and I don&#8217;t even understand my old code&#8221; crossed my mind. At this point I&#8217;ll remove a few expletives, and just observe that, frankly, I was disappointed.</p>
+<p>The next idea was to sneak in through the exit. After all, we can just as well ooze from there to the entrance. OK, but why do that? I wasn’t so sure myself; the Big Idea was on a slow route to my office that day.</p>
+<p>For this computation we simply use a new last row. This time we move the starting region for our flow to the base of the exit.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM8.png" width="426" height="141" class="alignnone size-full wp-image-4350" /></p>
+<p>We&#8217;ll take a peek.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM9.png" alt="Sneaking in through the exit" title="Sneaking in through the exit" width="458" height="307" class="alignnone size-full wp-image-4351" /></p>
+<p>No surprises. Now we overlay these, and things start to look better.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM10.png" alt="Overlay of two graphs" title="Overlay of two graphs" width="406" height="307" class="alignnone size-full wp-image-4352" /></p>
+<p>We see quite clearly the path we want. The slight shimmer is just luck of the color function; I&#8217;m not particularly adept with graphics.</p>
+<p>So here is the point. When we overlay these, we are in effect summing distances from entrance and exit to each pathway point. On the best path the sum will be approximately constant and equal to the length of that path (approximate because we use numerical approximations throughout the tracking code). Elsewhere the sum will be larger.</p>
+<p>The reader might wonder whether the author just pulled a rabbit out of his hat, knowing all along this would work. In actual fact I was not at all certain, and it was one of those ideas that happened to succeed. Had it not, then I&#8217;d have buried it. I do that often. (Sometimes I forget why the idea was so wretched, and exhume it later. I may have missed a career in politics.)</p>
+<p>To extract just that path, we&#8217;ll find it&#8217;s value and then only take points with distance sums close to that value.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM11.png" alt="Finding the best path" title="Finding the best path" width="434" height="323" class="alignnone size-full wp-image-4355" /></p>
+<p>Finally we overlay the shortest path on the maze.</p>
+<p><img src="http://blog.wolfram.com/data/uploads/2010/12/NTBM12.png" alt="Shortest path overlayed on the maze" title="Shortest path overlayed on the maze" width="407" height="293" class="alignnone size-full wp-image-4356" /></p>
+<p>For the morbidly curious, the code (in the download notebook below) we used for the distance tracking weighs in at approximately 160 lines. I thank Wolfram Research colleagues Joel Klein, Rob Knapp, and Michael Trott for helping me with some of the finer points of the <em>Mathematica</em> 8 <a href="http://reference.wolfram.com/mathematica/ref/Compile.html"><tt>Compile</tt></a> functionality.</p>
+<p>I think I now understand the early medieval injunction (Babylonian, circa 530 CE): &#8220;Ye pour ooze in two byways, before cruising through thy maze.&#8221;</p>
+<p><a href="http://blog.wolfram.com/data/uploads/2010/12/NavigatingtheBlenheimMaze.nb">Download notebook</a></p>
+            <div class="post_footer">
+               <div class="post_footer_left">
+                  <a href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/" title="Permanent Link to Navigating the Blenheim Maze">Permalink</a> 
+               </div>
+               <div class="post_footer_right">
+                  <a href="http://www.addthis.com/bookmark.php?pub=L4DJFTEHPAW2JE1G&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F07%2Fnavigating-the-blenheim-maze%2F&amp;title=Navigating+the+Blenheim+Maze" title="Bookmark using any bookmark manager">add this</a> 
+                  | <a href="http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F07%2Fnavigating-the-blenheim-maze%2F&amp;title=Navigating+the+Blenheim+Maze" title="Submit to del.icio.us">del.icio.us</a>
+                  | <a href="http://digg.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F07%2Fnavigating-the-blenheim-maze%2F&amp;title=Navigating+the+Blenheim+Maze" title="Submit to Digg">digg</a> 
+                  | <a href="http://reddit.com/submit?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F07%2Fnavigating-the-blenheim-maze%2F&amp;title=Navigating+the+Blenheim+Maze" title="Submit to Reddit">reddit</a> 
+                  | <a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Fblog.wolfram.com%2F2010%2F12%2F07%2Fnavigating-the-blenheim-maze%2F&amp;title=Navigating+the+Blenheim+Maze" title="Submit to Slashdot">slashdot</a>
+               </div>
+               <div class="single_post_separator"></div>
+            </div>            
+
+
+<div id="comments">
+
+<h2>Comments</h2>
+<ol class="commentlist">
+        <li class="alt" id="comment-4129"  >
+	<p>The actual quote &#8220;Ye pour booze in two byways before cruising through thy daze&#8221; is beside the point.  The last thing you want to do is get caught in a maze in the first place. I mean, why would you go there? All things (matrixes, dominatrixes, whatever)  being equal, of course.</p>
+	<cite><span class="comment_auth">Posted by Lucile Lichtblau</span><span class="comment_time"><a href="#comment-4129" title="">December 7, 2010 at 1:17 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-4136"  >
+	<p>Turning the input photo to a Graph object in some automated way would certainly be useful&#8230;</p>
+	<cite><span class="comment_auth">Posted by <a href='http://stanwagon.com' rel='external nofollow' class='url'>Stan Wagon</a></span><span class="comment_time"><a href="#comment-4136" title="">December 7, 2010 at 6:09 pm</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-4175"  >
+	<p>Great post, as always, from Dan Lichtblau.</p>
+<p>However, I wonder if this could be simplified. Tell me if I misunderstand something. The text makes clear the exit of the maze is known ahead of time. But then why don&#8217;t you just walk uphill from the exit until you reach the entrance? This should never get you trapped. The worst that can happen is two or more parallel lines, so you may not take the optimal path, but there is no notion of optimality in the presented solution either. In the presented solution you could also take the longer path, if two or more are feasible. If you always walk uphill, from the exit, then no dead-end could possibly keep taking you uphill. Thus, you must come out at the entrance. Again, this assumes the exit is known, but the presented solution also makes use of this knowledge.</p>
+	<cite><span class="comment_auth">Posted by <a href='http://www.lauschkeconsulting.com' rel='external nofollow' class='url'>Mooniac</a></span><span class="comment_time"><a href="#comment-4175" title="">December 8, 2010 at 5:59 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-4179"  >
+	<p>The problem with using only one-direction information is one of too much forking. When you encounter forks in the path you would need to take both to see which is shorter. Then you would need to figure out where the forks were (the oozing, more correctly called a diffusion process, does not explicitly do that). After which, you&#8217;d need to prune away all forks that get to the entrance but take longer than the optimal one.</p>
+<p>The oozing tactic does give an optimal path, by the way. We overlay (sum) two distances, one from entrance and one from exit. The way Fast Marching works will guarantee each is the shortest such distance (up to numerical fuzz from discretization). So points that give the minimum value of that sum are of necessity points on to the optimal path.</p>
+	<cite><span class="comment_auth">Posted by Daniel Lichtblau</span><span class="comment_time"><a href="#comment-4179" title="">December 8, 2010 at 6:17 pm</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-4259"  >
+	<p>Admitting to the reader your own limitations (regarding graph features of v8, cellular automata, etc.), adds a &#8216;human element&#8217; typically lacking from problem solving examples. </p>
+<p>Thank you for explaining the process, warts and all.</p>
+	<cite><span class="comment_auth">Posted by RG</span><span class="comment_time"><a href="#comment-4259" title="">December 10, 2010 at 1:21 am</a></span></cite>
+	</li>
+
+
+        <li id="comment-4337"  >
+	<p><a href="http://voofie.com/content/179/solving-unblock-me-recognizing-board-configuration-in-a-screenshot-using-mathematica/" rel="nofollow">http://voofie.com/content/179/solving-unblock-me-recognizing-board-configuration-in-a-screenshot-using-mathematica/</a></p>
+<p>This article talks about how to use image processing functions in Mathematica to input a game configuration(unblock me) into computer with a screenshot.</p>
+	<cite><span class="comment_auth">Posted by Ross</span><span class="comment_time"><a href="#comment-4337" title="">December 11, 2010 at 9:52 am</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-4400"  >
+	<p>The &#8220;oozing&#8221; solution is very neat!  I wonder how difficult it would be to get a measure of the distance of the path you have found (in meters say)? I suppose you would need a known reference distance in the image?</p>
+	<cite><span class="comment_auth">Posted by Mark D</span><span class="comment_time"><a href="#comment-4400" title="">December 13, 2010 at 6:47 am</a></span></cite>
+	</li>
+
+
+        <li id="comment-4427"  >
+	<p>You might like to start up Golly (<a href="http://golly.sourceforge.net/)" rel="nofollow">http://golly.sourceforge.net/)</a>, click on Help &gt; Online Archives &gt; Rule Table Repository, then download MazeSolver.zip using the link near the bottom of the page.  Golly will open the zip file and display its contents in the help window.  Click on the link to open Blenheim.rle.gz and hit return/enter.  The zip file contains other example mazes and a couple of Python scripts for creating random mazes.</p>
+	<cite><span class="comment_auth">Posted by <a href='http://golly.sourceforge.net/' rel='external nofollow' class='url'>Andrew Trevorrow</a></span><span class="comment_time"><a href="#comment-4427" title="">December 13, 2010 at 4:17 pm</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-4429"  >
+	<p>The various pictures of computed paths do not directly indicate the computed distances, but the color changes with a &#8220;distance&#8221; that is indeed computed in the Notebook code. This distance in units based on the image (so one unit corresponds to one element up/down or left/right in the matrix for the binarized image.</p>
+<p>To get a result in meters one would need to know the scale factor. Ths perhaps could be guestimated from looking at the picture.</p>
+	<cite><span class="comment_auth">Posted by Daniel Lichtblau</span><span class="comment_time"><a href="#comment-4429" title="">December 13, 2010 at 4:45 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-4513"  >
+	<p>@Stan Wagon<br />
+I had a go at converting the image to a Graph object and using the graph theory tools. I will show the result in a future blog item.</p>
+	<cite><span class="comment_auth">Posted by <a href='http://members.wolfram.com/jonm' rel='external nofollow' class='url'>Jon McLoone</a></span><span class="comment_time"><a href="#comment-4513" title="">December 15, 2010 at 7:56 am</a></span></cite>
+	</li>
+
+
+        <li class="alt" id="comment-4548"  >
+	<p>@Mooniac,</p>
+<p>It has taken me a while to understand what you have in mind, and I&#8217;m still not sure I have it right. But yes, it can be done (optimally, even) by only computing all distances from exit. The assumption is that you can perceive the gradient for a few units in all directions, so you always know if the path is getting shorter or not. In case of a fork with a tie, that is, both sides growing smaller as you proceed&#8211;and there is one in this maze, at least to approximation within the granularity of the image&#8211; you pick either prong. That sentence was probably more complicated than the idea warrants.</p>
+<p>An alternative is to compute distances from either entry or exit, then retract all the ones that are either going to dead ends or longer than necessary paths. It turns out this was relatively straigttforward to code.</p>
+	<cite><span class="comment_auth">Posted by Daniel Lichtblau</span><span class="comment_time"><a href="#comment-4548" title="">December 16, 2010 at 12:21 pm</a></span></cite>
+	</li>
+
+
+        <li id="comment-4586" style="border: none" >
+	<p>I tried the following..<br />
+mazeImage = original image used in this blog..</p>
+<p>croppedimage = ImageCrop[ImageRotate[mazeImage, 3 Degree], {350, 280}];</p>
+<p>thinMaze = Thinning[DeleteSmallComponents[Binarize[croppedimage]]];</p>
+<p>g = MorphologicalGraph[thinMaze, VertexLabels -&gt; "Name",<br />
+   VertexSize -&gt; 2];</p>
+<p>Show[{croppedimage, g}, ImageSize -&gt; 800]</p>
+<p>path = FindShortestPath[EdgeDelete[g, 156 \[UndirectedEdge] 157], 156,<br />
+    157];</p>
+<p>Show[{croppedimage,<br />
+  HighlightGraph[g, PathGraph[path], VertexLabels -&gt; None,<br />
+   GraphHighlightStyle -&gt; &#8220;DehighlightHide&#8221;]}, ImageSize -&gt; 800]</p>
+	<cite><span class="comment_auth">Posted by Jaebum Jung</span><span class="comment_time"><a href="#comment-4586" title="">December 21, 2010 at 8:28 am</a></span></cite>
+	</li>
+
+
+</ol>
+
+
+<h2 id="respond">Leave a Reply</h2>
+
+	
+<form action="http://blog.wolfram.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author">Name (required)</label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email">Mail (required, but will not be published)</label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url">Website</label></p>
+
+
+<p><textarea name="comment" id="comment" cols="50" rows="5" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit"  />
+<input type="hidden" name="comment_post_ID" value="4330" />
+</p>
+
+</form>
+
+
+</div>
+
+         </div>
+      </div>
+
+      <div id="single_footer_more_posts">
+      <a href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/">Previous</a> |       December 7, 2010       | <a href="http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/">Next</a>      </div>      
+      
+                
+      <div id="copyright">&copy; 2010 Wolfram Research, Inc.</div>
+   </div>
+   
+   <ul id="sidebar">
+   <li>
+      <div id="home_link">
+         <a href="http://blog.wolfram.com" title="Home">Home</a> 
+      </div>
+   </li>
+      <li id="search" class="widget wri_widget_search"><h2 class="widgettitle">Search This Blog</h2>
+<form method="get" action="http://blog.wolfram.com/" id="search_form">
+<input type="text" value="" name="s" id="search_text" />
+<input id="search_submit" type="image" src="http://blog.wolfram.com/wp-content/themes/WRI_2_0/images/form_button.gif" name="submit" />
+</form>
+</li>
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+				<li><a href="http://blog.wolfram.com/2010/12/27/fixing-bad-astrophotography-using-mathematica-8-and-advanced-image-deconvolution/" title="Fixing Bad Astrophotography Using &lt;em&gt;Mathematica&lt;/em&gt; 8 and Advanced Image Deconvolution">Fixing Bad Astrophotography Using <em>Mathematica</em> 8 and Advanced Image Deconvolution </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/21/the-battle-of-the-marlborough-maze-at-blenheim-palace-continues/" title="The Battle of the Marlborough Maze at Blenheim Palace Continues">The Battle of the Marlborough Maze at Blenheim Palace Continues </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/17/the-mathematica-one-liner-competition/" title="The &lt;em&gt;Mathematica&lt;/em&gt; One-Liner Competition">The <em>Mathematica</em> One-Liner Competition </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/14/the-legacy-of-tron/" title="The Legacy of &lt;em&gt;TRON&lt;/em&gt;">The Legacy of <em>TRON</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/09/automatic-physical-units-in-mathematica/" title="Automatic Physical Units in &lt;em&gt;Mathematica&lt;/em&gt;">Automatic Physical Units in <em>Mathematica</em> </a></li>
+				<li><a href="http://blog.wolfram.com/2010/12/07/navigating-the-blenheim-maze/" title="Navigating the Blenheim Maze">Navigating the Blenheim Maze </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/30/how-to-win-at-coin-flipping/" title="How to Win at Coin Flipping">How to Win at Coin Flipping </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/23/conrad-wolframs-ted-talk-stop-teaching-calculating-start-teaching-math/" title="Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221;">Conrad Wolfram&#8217;s TED Talk: &#8220;Stop Teaching Calculating, Start Teaching Math&#8221; </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/16/programming-with-natural-language-is-actually-going-to-work/" title="Programming with Natural Language Is Actually Going to Work">Programming with Natural Language Is Actually Going to Work </a></li>
+				<li><a href="http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/" title="The Free-Form Linguistics Revolution in &lt;em&gt;Mathematica&lt;/em&gt;">The Free-Form Linguistics Revolution in <em>Mathematica</em> </a></li>
+				</ul>
+		</li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<ul>
+			<li><a href='http://blog.wolfram.com/2010/12/' title='December 2010'>December 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/11/' title='November 2010'>November 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/08/' title='August 2010'>August 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/07/' title='July 2010'>July 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/06/' title='June 2010'>June 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/02/' title='February 2010'>February 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://blog.wolfram.com/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/11/' title='November 2009'>November 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/10/' title='October 2009'>October 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/09/' title='September 2009'>September 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/08/' title='August 2009'>August 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/07/' title='July 2009'>July 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/06/' title='June 2009'>June 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/05/' title='May 2009'>May 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/04/' title='April 2009'>April 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/03/' title='March 2009'>March 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/02/' title='February 2009'>February 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2009/01/' title='January 2009'>January 2009</a></li>
+	<li><a href='http://blog.wolfram.com/2008/12/' title='December 2008'>December 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/11/' title='November 2008'>November 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/10/' title='October 2008'>October 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/09/' title='September 2008'>September 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/08/' title='August 2008'>August 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/07/' title='July 2008'>July 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/06/' title='June 2008'>June 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/05/' title='May 2008'>May 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/04/' title='April 2008'>April 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/03/' title='March 2008'>March 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/02/' title='February 2008'>February 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2008/01/' title='January 2008'>January 2008</a></li>
+	<li><a href='http://blog.wolfram.com/2007/12/' title='December 2007'>December 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/11/' title='November 2007'>November 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/10/' title='October 2007'>October 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/09/' title='September 2007'>September 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/08/' title='August 2007'>August 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/07/' title='July 2007'>July 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/06/' title='June 2007'>June 2007</a></li>
+	<li><a href='http://blog.wolfram.com/2007/05/' title='May 2007'>May 2007</a></li>
+		</ul>
+</li>
+<li id="text-1" class="widget widget_text"><h2 class="widgettitle">Related Links</h2>
+			<div class="textwidget"><ul>
+<li><a href="http://www.wolfram.com">Wolfram Research</a></li>
+<li><a href="http://www.wolfram.com/products/mathematica"><i>Mathematica</i></a></li>
+<li><a href="http://demonstrations.wolfram.com">Demonstrations Project</a></li>
+<li><a href="http://mathworld.wolfram.com"><i>MathWorld</i></a></li>
+<li><a href="http://tones.wolfram.com">Wolfram<i>Tones</i></a></li>
+<li><a href="http://www.wolframscience.com">Wolfram Science</a></li>
+<li><a href="http://www.stephenwolfram.com">Stephen Wolfram</a></li>
+<li><a href="http://forums.wolfram.com/mathgroup/"><i>MathGroup</i></a></li>
+<li><a href="http://www.wolfram.com/webresources.html">More Wolfram sites...</a><br /><br /></li>
+<li><a href="/feed">Subscribe to this blog's feed</a></li>
+</ul></div>
+		</li>
+   </ul>
+
+</body>
+</html>

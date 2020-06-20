@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+<title>Prime number theorem - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.16wmf4" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Prime_number_theorem&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Prime_number_theorem&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283-17" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283-17" type="text/css" media="print" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="handheld" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" type="text/css" media="all" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" type="text/css" media="all" />
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Prime_number_theorem",
+wgTitle="Prime number theorem",
+wgAction="view",
+wgArticleId=23692,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=403605926,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["Analytic number theory", "Mathematical theorems", "Prime numbers"],
+wgDBname="enwiki",
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=null,
+wgRevContents={"error": "Unable to get content.", "waiting": "Waiting for content"},
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgArticleAssessmentJUIPath="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/js2stopgap/jui.combined.min.js",
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script><script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283-17" type="text/javascript"></script>
+<script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283-17"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/WikimediaMobile/MobileRedirect.js?2.2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283-17" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283-17" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;283-17" type="text/javascript"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283-17" type="text/javascript"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Prime_number_theorem skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Prime number theorem</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<div class="dablink">"PNT" redirects here. For other uses, see <a href="/wiki/PNT_(disambiguation)" title="PNT (disambiguation)">PNT (disambiguation)</a>.</div>
+<p>In <a href="/wiki/Number_theory" title="Number theory">number theory</a>, the <b>prime number theorem</b> (<b>PNT</b>) describes the <a href="/wiki/Asymptotic_analysis" title="Asymptotic analysis">asymptotic</a> distribution of the <a href="/wiki/Prime_number" title="Prime number">prime numbers</a>. The prime number theorem gives a rough description of how the primes are distributed.</p>
+<p>Roughly speaking, the prime number theorem states that if a <a href="/wiki/Randomness" title="Randomness">random</a> number nearby some large number <i>N</i> is selected, the <a href="/wiki/Probability" title="Probability">chance</a> of it being prime is about 1 / ln(<i>N</i>), where ln(<i>N</i>) denotes the <a href="/wiki/Natural_logarithm" title="Natural logarithm">natural logarithm</a> of <i>N</i>. For example, near <i>N</i> = 10,000, about one in nine numbers is prime, whereas near <i>N</i> = 1,000,000,000, only one in every 21 numbers is prime. In other words, the average gap between prime numbers near <i>N</i> is roughly ln(<i>N</i>).<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Statement_of_the_theorem"><span class="tocnumber">1</span> <span class="toctext">Statement of the theorem</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#History_of_the_asymptotic_law_of_distribution_of_prime_numbers_and_its_proof"><span class="tocnumber">2</span> <span class="toctext">History of the asymptotic law of distribution of prime numbers and its proof</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Proof_methodology"><span class="tocnumber">3</span> <span class="toctext">Proof methodology</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Proof_sketch"><span class="tocnumber">4</span> <span class="toctext">Proof sketch</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#The_prime-counting_function_in_terms_of_the_logarithmic_integral"><span class="tocnumber">5</span> <span class="toctext">The prime-counting function in terms of the logarithmic integral</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Elementary_proofs"><span class="tocnumber">6</span> <span class="toctext">Elementary proofs</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Computer_proofs"><span class="tocnumber">7</span> <span class="toctext">Computer proofs</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#The_prime_number_theorem_for_arithmetic_progressions"><span class="tocnumber">8</span> <span class="toctext">The prime number theorem for arithmetic progressions</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Bounds_on_the_prime-counting_function"><span class="tocnumber">9</span> <span class="toctext">Bounds on the prime-counting function</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Approximations_for_the_nth_prime_number"><span class="tocnumber">10</span> <span class="toctext">Approximations for the nth prime number</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Table_of_.CF.80.28x.29.2C_x_.2F_ln_x.2C_and_li.28x.29"><span class="tocnumber">11</span> <span class="toctext">Table of π(x), x / ln x, and li(x)</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Analogue_for_irreducible_polynomials_over_a_finite_field"><span class="tocnumber">12</span> <span class="toctext">Analogue for irreducible polynomials over a finite field</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">13</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Notes"><span class="tocnumber">14</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">15</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">16</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=1" title="Edit section: Statement of the theorem">edit</a>]</span> <span class="mw-headline" id="Statement_of_the_theorem">Statement of the theorem</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;"><a href="/wiki/File:PrimeNumberTheorem.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/97/PrimeNumberTheorem.png/250px-PrimeNumberTheorem.png" width="250" height="191" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:PrimeNumberTheorem.png" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Graph comparing π(<i>x</i>) (red), <i>x</i> / ln <i>x</i> (green) and Li(<i>x</i>) (blue)</div>
+</div>
+</div>
+<p>Let π(<i>x</i>) be the <a href="/wiki/Prime-counting_function" title="Prime-counting function">prime-counting function</a> that gives the number of primes less than or equal to <i>x</i>, for any real number <i>x</i>. For example, π(10)&#160;=&#160;4 because there are four prime numbers (2, 3, 5 and 7) less than or equal to 10. The prime number theorem then states that the <a href="/wiki/Limit_of_a_function" title="Limit of a function">limit</a> of the <i>quotient</i> of the two functions π(<i>x</i>) and <i>x</i> / ln(<i>x</i>) as <i>x</i> approaches infinity is 1, which is expressed by the formula</p>
+<dl>
+<dd><img class="tex" alt="\lim_{x\to\infty}\frac{\pi(x)}{x/\ln(x)}=1," src="http://upload.wikimedia.org/math/7/3/b/73bb71a5cafd5cce3a49bb5fcba0a241.png" /></dd>
+</dl>
+<p>known as <b>the asymptotic law of distribution of prime numbers</b>. Using <a href="/wiki/Asymptotic_notation" title="Asymptotic notation" class="mw-redirect">asymptotic notation</a> this result can be restated as</p>
+<dl>
+<dd><img class="tex" alt="\pi(x)\sim\frac{x}{\ln x}." src="http://upload.wikimedia.org/math/c/9/3/c93061b930d29877a2364a62e5ecc1a5.png" /></dd>
+</dl>
+<p>This notation (and the <a href="/wiki/Theorem" title="Theorem">theorem</a>) does <i>not</i> say anything about the limit of the <i>difference</i> of the two functions as <i>x</i> approaches infinity. (Indeed, the behavior of this difference is very complicated and related to the <a href="/wiki/Riemann_hypothesis" title="Riemann hypothesis">Riemann hypothesis</a>.) Instead, the theorem states that <i>x</i>/ln(<i>x</i>) approximates π(<i>x</i>) in the sense that the <a href="/wiki/Relative_error" title="Relative error" class="mw-redirect">relative error</a> of this approximation approaches 0 as <i>x</i> approaches infinity.</p>
+<p>The prime number theorem is equivalent to the statement that the <i>n</i>th prime number <i>p</i><sub><i>n</i></sub> is approximately equal to <i>n</i>&#160;ln(<i>n</i>), again with the relative error of this approximation approaching 0 as <i>n</i> approaches infinity.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=2" title="Edit section: History of the asymptotic law of distribution of prime numbers and its proof">edit</a>]</span> <span class="mw-headline" id="History_of_the_asymptotic_law_of_distribution_of_prime_numbers_and_its_proof">History of the asymptotic law of distribution of prime numbers and its proof</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:233px;"><a href="/wiki/File:Primes_-_distribution_-_up_to_19_primorial.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Primes_-_distribution_-_up_to_19_primorial.png/231px-Primes_-_distribution_-_up_to_19_primorial.png" width="231" height="840" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Primes_-_distribution_-_up_to_19_primorial.png" class="internal" title="Enlarge"><img src="http://bits.wikimedia.org/skins-1.5/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Distribution of primes up to <a href="/wiki/Primorial" title="Primorial">19#</a> (9699690).</div>
+</div>
+</div>
+<p>Based on the tables by <a href="/wiki/Anton_Felkel" title="Anton Felkel">Anton Felkel</a> and <a href="/wiki/Jurij_Vega" title="Jurij Vega">Jurij Vega</a>, <a href="/wiki/Adrien-Marie_Legendre" title="Adrien-Marie Legendre">Adrien-Marie Legendre</a> conjectured in 1796 that π(<i>x</i>) is approximated by the function <i>x</i>/(ln(<i>x</i>)-<i>B</i>), where <i>B</i>=1.08... is a constant close to 1. <a href="/wiki/Carl_Friedrich_Gauss" title="Carl Friedrich Gauss">Carl Friedrich Gauss</a> considered the same question and, based on the computational evidence available to him and on some heuristic reasoning, he came up with his own approximating function, the <a href="/wiki/Logarithmic_integral" title="Logarithmic integral" class="mw-redirect">logarithmic integral</a> li(<i>x</i>), although he did not publish his results. Both Legendre's and Gauss's formulas imply the same conjectured asymptotic equivalence of π(<i>x</i>) and <i>x</i> / ln(<i>x</i>) stated above, although it turned out that Gauss's approximation is considerably better if one considers the differences instead of quotients.</p>
+<p>In two papers from 1848 and 1850, the Russian mathematician <a href="/wiki/Pafnuty_Chebyshev" title="Pafnuty Chebyshev">Pafnuty L'vovich Chebyshev</a> attempted to prove the asymptotic law of distribution of prime numbers. His work is notable for the use of the zeta function ζ(<i>s</i>) predating Riemann's celebrated memoir of 1859, and he succeeded in proving a slightly weaker form of the asymptotic law, namely, that if the limit of π(<i>x</i>)/(<i>x</i>/ln(<i>x</i>)) as <i>x</i> goes to infinity exists at all, then it is necessarily equal to one.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>2<span>]</span></a></sup> He was able to prove unconditionally that this ratio is bounded above and below by two explicitly given constants near to 1 for all <i>x</i>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>3<span>]</span></a></sup> Although Chebyshev's paper did not prove the Prime Number Theorem, his estimates for π(<i>x</i>) were strong enough for him to prove <a href="/wiki/Bertrand%27s_postulate" title="Bertrand's postulate">Bertrand's postulate</a> that there exists a prime number between <i>n</i> and <i>2n</i> for any integer <i>n</i>&#160;≥&#160;2.</p>
+<p>Without doubt, the single most significant paper concerning the distribution of prime numbers was Riemann's 1859 memoir <i><a href="/wiki/On_the_Number_of_Primes_Less_Than_a_Given_Magnitude" title="On the Number of Primes Less Than a Given Magnitude">On the Number of Primes Less Than a Given Magnitude</a></i>, the only paper he ever wrote on the subject. Riemann introduced revolutionary ideas into the subject, the chief of them being that the distribution of prime numbers is intimately connected with the zeros of the analytically extended <a href="/wiki/Riemann_zeta_function" title="Riemann zeta function">Riemann zeta function</a> of a complex variable. In particular, it is in this paper of Riemann that the idea to apply methods of <a href="/wiki/Complex_analysis" title="Complex analysis">complex analysis</a> to the study of the real function π(<i>x</i>) originates. Extending these deep ideas of Riemann, two proofs of the asymptotic law of the distribution of prime numbers were obtained independently by <a href="/wiki/Jacques_Hadamard" title="Jacques Hadamard">Hadamard</a> and <a href="/wiki/Charles_de_la_Vall%C3%A9e-Poussin" title="Charles de la Vallée-Poussin" class="mw-redirect">de la Vallée Poussin</a> and appeared in the same year (1896). Both proofs used methods from complex analysis, establishing as a main step of the proof that the Riemann zeta function ζ(<i>s</i>) is non-zero for all complex values of the variable <i>s</i> that have the form <i>s</i>&#160;=&#160;1&#160;+&#160;<i>it</i> with <i>t</i>&#160;&gt;&#160;0.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>4<span>]</span></a></sup></p>
+<p>During the 20th century, the theorem of Hadamard and de la Vallée-Poussin also became known as the Prime Number Theorem. Several different proofs of it were found, including the "elementary" proofs of <a href="/wiki/Atle_Selberg" title="Atle Selberg">Atle Selberg</a> and <a href="/wiki/Paul_Erd%C5%91s" title="Paul Erdős">Paul Erdős</a> (1949). While the original proofs of Hadamard and de la Vallée-Poussin are long and elaborate, and later proofs have introduced various simplifications through the use of <a href="/wiki/Tauberian_theorems" title="Tauberian theorems" class="mw-redirect">Tauberian theorems</a> but remained difficult to digest, a surprisingly short proof <sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>6<span>]</span></a></sup> was discovered in 1980 by American mathematician <a href="/wiki/Donald_J._Newman" title="Donald J. Newman">Donald J. Newman</a>. Newman's proof is arguably the simplest known proof of the theorem, although it is non-elementary in the sense that it uses <a href="/wiki/Cauchy%27s_integral_theorem" title="Cauchy's integral theorem">Cauchy's integral theorem</a> from complex analysis.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=3" title="Edit section: Proof methodology">edit</a>]</span> <span class="mw-headline" id="Proof_methodology">Proof methodology</span></h2>
+<p>In a lecture on prime numbers for a general audience, <a href="/wiki/Fields_medal" title="Fields medal" class="mw-redirect">Fields medalist</a> <a href="/wiki/Terence_Tao" title="Terence Tao">Terence Tao</a> described one approach to proving the prime number theorem in poetic terms: listening to the "music" of the primes. We start with a "sound wave" that is "noisy" at the prime numbers and silent at other numbers; this is the <a href="/wiki/Von_Mangoldt_function" title="Von Mangoldt function">von Mangoldt function</a>. Then we analyze its notes or frequencies by subjecting it to a process akin to <a href="/wiki/Fourier_transform" title="Fourier transform">Fourier transform</a>; this is the <a href="/wiki/Mellin_transform" title="Mellin transform">Mellin transform</a>. Then we prove, and this is the hard part, that certain "notes" cannot occur in this music. This exclusion of certain notes leads to the statement of the prime number theorem. According to Tao, this proof yields much deeper insights into the distribution of the primes than the "elementary" proofs discussed below.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>7<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=4" title="Edit section: Proof sketch">edit</a>]</span> <span class="mw-headline" id="Proof_sketch">Proof sketch</span></h2>
+<p>Here is a sketch of the proof referred to in Tao's lecture mentioned above. Like most proofs of the PNT, it starts out by reformulating the problem in terms of a less intuitive, but better-behaved, prime-counting function. The idea is to count the primes (or a related set such as the set of prime powers) with <i>weights</i> to arrive at a function with smoother asymptotic behavior. The most common such generalized counting function is the <a href="/wiki/Chebyshev_function" title="Chebyshev function">Chebyshev function</a> <span class="texhtml">ψ(<i>x</i>)</span>, defined by</p>
+<dl>
+<dd><img class="tex" alt="\psi(x) = \sum_{p^k \le x} \log p." src="http://upload.wikimedia.org/math/8/e/5/8e52835ff46768b7963a43881547597d.png" /></dd>
+</dl>
+<p>Here the summation is over all prime powers up to <i>x</i>. This is sometimes written as <img class="tex" alt="\psi(x)=\sum_{n\le x} \Lambda(n)" src="http://upload.wikimedia.org/math/4/4/1/441464fec16cb5a935c6d9dbd1d1d476.png" />, where <span class="texhtml">Λ(<i>n</i>)</span> is the <a href="/wiki/Von_Mangoldt_function" title="Von Mangoldt function">von Mangoldt function</a>, namely</p>
+<dl>
+<dd><img class="tex" alt="\Lambda(n) = \begin{cases} \log p &amp; \mbox{if }n=p^k \mbox{ for some prime } p \mbox{ and integer } k \ge 1, \\ 0 &amp; \mbox{otherwise.} \end{cases}" src="http://upload.wikimedia.org/math/2/a/7/2a77632578254a11bcf533bd95f884c5.png" /></dd>
+</dl>
+<p>It is now relatively easy to check that the PNT is equivalent to the claim that <img class="tex" alt="\lim_{x\to\infty} \psi(x)/x=1" src="http://upload.wikimedia.org/math/6/5/2/652462d23cc46dc7c446f610da6fb407.png" />. Indeed, this follows from the easy estimates</p>
+<dl>
+<dd><img class="tex" alt="\psi(x) = \sum_{p\le x} \log p \left\lfloor \frac{\log x}{\log p} \right\rfloor \le \sum_{p\le x} \log x = \pi(x)\log x" src="http://upload.wikimedia.org/math/8/4/d/84d05bb2b5c5ca5e2f68d826aadb9043.png" /></dd>
+</dl>
+<p>and (using <a href="/wiki/Big_O_notation" title="Big O notation">big O notation</a>) for any ε &gt; 0,</p>
+<dl>
+<dd><img class="tex" alt="\psi(x) \ge \sum_{x^{1-\epsilon}\le p\le x} \log p\ge\sum_{x^{1-\epsilon}\le p\le x}(1-\epsilon)\log x=(1-\epsilon)(\pi(x)+O(x^{1-\epsilon}))\log x." src="http://upload.wikimedia.org/math/b/9/7/b97337abeb5df6da271a48f2dfa16e3e.png" /></dd>
+</dl>
+<p>The next step is to find a useful representation for <span class="texhtml">ψ(<i>x</i>)</span>. Let <span class="texhtml">ζ(<i>s</i>)</span> be the <a href="/wiki/Riemann_zeta_function" title="Riemann zeta function">Riemann zeta function</a>. It can be shown that <span class="texhtml">ζ(<i>s</i>)</span> is related to the von Mangoldt function <span class="texhtml">Λ(<i>n</i>)</span>, and hence to <span class="texhtml">ψ(<i>x</i>)</span>, via the relation</p>
+<dl>
+<dd><img class="tex" alt="-\frac{\zeta'(s)}{\zeta(s)} = \sum_{n = 1}^\infty \Lambda(n) n^{-s}. " src="http://upload.wikimedia.org/math/6/e/6/6e67367c19886a17205b124a454115fd.png" /></dd>
+</dl>
+<p>A delicate analysis of this equation and related properties of the zeta function, using the Mellin transform and <a href="/wiki/Perron%27s_formula" title="Perron's formula">Perron's formula</a>, shows that for non-integer <i>x</i> the equation</p>
+<dl>
+<dd><img class="tex" alt="\psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \log(2\pi)" src="http://upload.wikimedia.org/math/b/c/3/bc3025211d1805b6cf12c2b55cb67820.png" /></dd>
+</dl>
+<p>holds, where the sum is over all zeros (trivial and non-trivial) of the zeta function. This striking formula is one of the so-called <a href="/wiki/Explicit_formula" title="Explicit formula">explicit formulas of number theory</a>, and is already suggestive of the result we wish to prove, since the term <i>x</i> (claimed to be the correct asymptotic order of <span class="texhtml">ψ(<i>x</i>)</span>) appears on the right-hand side, followed by (presumably) lower-order asymptotic terms.</p>
+<p>The next step in the proof involves a study of the zeros of the zeta function. The trivial zeros −2, −4, −6, −8, ... can be handled separately:</p>
+<dl>
+<dd><img class="tex" alt="\sum_{n=1}^\infty \frac{1}{2n\,x^{2n}} = -\frac{1}{2}\ln\left(1-\frac{1}{x^2}\right)," src="http://upload.wikimedia.org/math/d/9/f/d9f6addc1a364e35938bd5dd12b3ebb2.png" /></dd>
+</dl>
+<p>which vanishes for a large <i>x</i>. The nontrivial zeros, namely those on the critical strip <img class="tex" alt="0\le \Re(s)\le 1" src="http://upload.wikimedia.org/math/4/d/8/4d8defe14997049985ef91e25c2e9c5d.png" />, can potentially be of an asymptotic order comparable to the main term <i>x</i> if <img class="tex" alt="\Re(\rho)=1" src="http://upload.wikimedia.org/math/c/a/4/ca49c99185268306de89e2f7581af83f.png" />, so a crucial fact that needs to be shown is that all zeros have real part strictly less than 1. See Zagier's paper in the references for a short proof of this fact.</p>
+<p>Finally, we can conclude that the PNT is "morally" true. To rigorously complete the proof there are still serious technicalities to overcome, due to the fact that the summation over zeta zeros in the explicit formula for <span class="texhtml">ψ(<i>x</i>)</span> does not converge absolutely but only conditionally and in a "principal value" sense. There are several ways around this problem but all of them require rather delicate complex-analytic estimates that are beyond the scope of this article. Edwards's book<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup> provides the details.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=5" title="Edit section: The prime-counting function in terms of the logarithmic integral">edit</a>]</span> <span class="mw-headline" id="The_prime-counting_function_in_terms_of_the_logarithmic_integral">The prime-counting function in terms of the logarithmic integral</span></h2>
+<p><a href="/wiki/Carl_Friedrich_Gauss" title="Carl Friedrich Gauss">Carl Friedrich Gauss</a> conjectured that an even better approximation to π(<i>x</i>) is given by the <a href="/wiki/Logarithmic_integral_function" title="Logarithmic integral function">offset logarithmic integral</a> function Li(<i>x</i>), defined by</p>
+<dl>
+<dd><img class="tex" alt=" \mbox{Li}(x) = \int_2^x \frac1{\ln t} \,\mbox{d}t = \mbox{li}(x) - \mbox{li}(2).  " src="http://upload.wikimedia.org/math/d/a/2/da2eac2940c25af0ea298373419979ef.png" /></dd>
+</dl>
+<p>Indeed, this integral is strongly suggestive of the notion that the 'density' of primes around <i>t</i> should be 1/ln<i>t</i>. This function is related to the logarithm by the <a href="/wiki/Asymptotic_expansion" title="Asymptotic expansion">asymptotic expansion</a></p>
+<dl>
+<dd><img class="tex" alt=" \mbox{Li}(x) \sim \frac{x}{\ln x} \sum_{k=0}^\infty \frac{k!}{(\ln x)^k}
+= \frac{x}{\ln x} + \frac{x}{(\ln x)^2} + \frac{2x}{(\ln x)^3} + \cdots. " src="http://upload.wikimedia.org/math/c/f/6/cf6ceee89cffc52f9b0f6de06e9a6778.png" /></dd>
+</dl>
+<p>So, the prime number theorem can also be written as π(<i>x</i>) ~ Li(<i>x</i>). In fact, it follows from the proof of Hadamard and de la Vallée Poussin that</p>
+<dl>
+<dd><img class="tex" alt=" \pi(x)={\rm Li} (x) + O \left(x \mathrm{e}^{-a\sqrt{\ln x}}\right) \quad\mbox{as } x \to \infty" src="http://upload.wikimedia.org/math/4/b/b/4bb3c275f66520dd2334163e0a8680f2.png" /></dd>
+</dl>
+<p>for some positive constant <i>a</i>, where <i>O</i>(…) is the <a href="/wiki/Big_O_notation" title="Big O notation">big O notation</a>. This has been improved to</p>
+<dl>
+<dd><img class="tex" alt="\pi(x)={\rm Li} (x) + O \left(x \, \exp \left( -\frac{A(\ln x)^{3/5}}{(\ln \ln x)^{1/5}} \right) \right)." src="http://upload.wikimedia.org/math/b/b/a/bba5a3c839c0d56913f342a42d84eb56.png" /></dd>
+</dl>
+<p>Because of the connection between the Riemann zeta function and π(<i>x</i>), the <a href="/wiki/Riemann_hypothesis" title="Riemann hypothesis">Riemann hypothesis</a> has considerable importance in <a href="/wiki/Number_theory" title="Number theory">number theory</a>: if established, it would yield a far better estimate of the error involved in the prime number theorem than is available today. More specifically, <a href="/wiki/Helge_von_Koch" title="Helge von Koch">Helge von Koch</a> showed in 1901<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup> that, <a href="/wiki/If_and_only_if" title="If and only if">if and only if</a> the Riemann hypothesis is true, the error term in the above relation can be improved to</p>
+<dl>
+<dd><img class="tex" alt=" \pi(x) = {\rm Li} (x) + O\left(\sqrt x \ln x\right). " src="http://upload.wikimedia.org/math/5/7/d/57dd90ffc6144a3a1ca3f0a520fb56a6.png" /></dd>
+</dl>
+<p>The constant involved in the big O notation was estimated in 1976 by <a href="/wiki/Lowell_Schoenfeld" title="Lowell Schoenfeld">Lowell Schoenfeld</a>:<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>10<span>]</span></a></sup> assuming the Riemann hypothesis,</p>
+<dl>
+<dd><img class="tex" alt="|\pi(x)-{\rm li}(x)|&lt;\frac{\sqrt x\,\ln x}{8\pi}" src="http://upload.wikimedia.org/math/a/6/7/a67d2f71778671ec02c88acb7cd453fc.png" /></dd>
+</dl>
+<p>for all <i>x</i> ≥ 2657. He also derived a similar bound for the <a href="/wiki/Chebyshev_function" title="Chebyshev function">Chebyshev prime-counting function</a> ψ:</p>
+<dl>
+<dd><img class="tex" alt="|\psi(x)-x|&lt;\frac{\sqrt x\,\ln^2 x}{8\pi}" src="http://upload.wikimedia.org/math/7/9/f/79f0101bf83d6ff567d721a73bd3319c.png" /></dd>
+</dl>
+<p>for all <i>x</i> ≥ 73.2.</p>
+<p>The logarithmic integral Li(<i>x</i>) is larger than π(<i>x</i>) for "small" values of <i>x</i>. This is because it is (in some sense) counting not primes, but prime powers, where a power <i>p</i><sup><i>n</i></sup> of a prime <i>p</i> is counted as 1/<i>n</i> of a prime. This suggests that Li(<i>x</i>) should usually be larger than π(<i>x</i>) by roughly Li(<i>x</i><sup>1/2</sup>)/2, and in particular should usually be larger than π(<i>x</i>). However, in 1914, <a href="/wiki/John_Edensor_Littlewood" title="John Edensor Littlewood">J. E. Littlewood</a> proved that this is not always the case. The first value of <i>x</i> where π(<i>x</i>) exceeds Li(<i>x</i>) is probably around <i>x</i> = 10<sup>316</sup>; see the article on <a href="/wiki/Skewes%27_number" title="Skewes' number">Skewes' number</a> for more details.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=6" title="Edit section: Elementary proofs">edit</a>]</span> <span class="mw-headline" id="Elementary_proofs">Elementary proofs</span></h2>
+<p>In the first half of the twentieth century, some mathematicians (notably <a href="/wiki/G._H._Hardy" title="G. H. Hardy">G. H. Hardy</a>) believed that there exists a hierarchy of proof methods in mathematics depending on what sorts of numbers (<a href="/wiki/Integer" title="Integer">integers</a>, <a href="/wiki/Real_number" title="Real number">reals</a>, <a href="/wiki/Complex_number" title="Complex number">complex</a>) a proof requires, and that the prime number theorem (PNT) is a "deep" theorem by virtue of requiring <a href="/wiki/Complex_analysis" title="Complex analysis">complex analysis</a>.<sup id="cite_ref-Goldfeld_Historical_Perspective_10-0" class="reference"><a href="#cite_note-Goldfeld_Historical_Perspective-10"><span>[</span>11<span>]</span></a></sup> This belief was somewhat shaken by a proof of the PNT based on <a href="/wiki/Wiener%27s_tauberian_theorem" title="Wiener's tauberian theorem">Wiener's tauberian theorem</a>, though this could be set aside if Wiener's theorem were deemed to have a "depth" equivalent to that of complex variable methods. There is no rigorous and widely accepted definition of the notion of <a href="/wiki/Elementary_proof" title="Elementary proof">elementary proof</a> in number theory. One definition is "a proof that can be carried out in first order <a href="/wiki/Peano_arithmetic" title="Peano arithmetic" class="mw-redirect">Peano arithmetic</a>." There are theorems of Peano arithmetic (for example, the <a href="/wiki/Paris-Harrington_theorem" title="Paris-Harrington theorem" class="mw-redirect">Paris-Harrington theorem</a>) provable using <a href="/wiki/Second_order_arithmetic" title="Second order arithmetic" class="mw-redirect">second order</a> but not <a href="/wiki/First_order_arithmetic" title="First order arithmetic" class="mw-redirect">first order</a> methods, but such theorems are rare to date.</p>
+<p>In 1949, <a href="/wiki/Atle_Selberg" title="Atle Selberg">Atle Selberg</a> proved the PNT using only standard number-theoretic techniques.<sup id="cite_ref-interview_11-0" class="reference"><a href="#cite_note-interview-11"><span>[</span>12<span>]</span></a></sup> At about the same time, <a href="/wiki/Paul_Erd%C5%91s" title="Paul Erdős">Paul Erdős</a> produced a slightly different elementary proof of the same theorem.<sup id="cite_ref-Goldfeld_Historical_Perspective_10-1" class="reference"><a href="#cite_note-Goldfeld_Historical_Perspective-10"><span>[</span>11<span>]</span></a></sup> These proofs effectively laid to rest the notion that the PNT was "deep," and showed that technically "elementary" methods (in other words Peano arithmetic) were more powerful than had been believed to be the case. In 1994, Charalambos Cornaros and Costas Dimitracopoulos proved the PNT using only <span class="texhtml"><i>I</i>Δ<sub>0</sub> + exp</span>,<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>13<span>]</span></a></sup> a formal system far weaker than Peano arithmetic. On the history of the elementary proofs of the PNT, including the Erdős–Selberg <a href="/wiki/Priority_dispute" title="Priority dispute" class="mw-redirect">priority dispute</a>, see <a href="/wiki/Dorian_Goldfeld" title="Dorian Goldfeld" class="mw-redirect">Dorian Goldfeld</a>.<sup id="cite_ref-Goldfeld_Historical_Perspective_10-2" class="reference"><a href="#cite_note-Goldfeld_Historical_Perspective-10"><span>[</span>11<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=7" title="Edit section: Computer proofs">edit</a>]</span> <span class="mw-headline" id="Computer_proofs">Computer proofs</span></h2>
+<p>In 2005, Avigad <i>et al.</i> employed the <a href="/wiki/Isabelle_theorem_prover" title="Isabelle theorem prover" class="mw-redirect">Isabelle theorem prover</a> to devise a computer-verified variant of Selberg's proof of the PNT.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>14<span>]</span></a></sup> This was the first machine-verified proof of the PNT. Avigad chose to formalize Selberg's proof rather than an analytic one because while Isabelle's library at the time could implement the notions of limit, derivative, and transcendental function, it had almost no theory of integration to speak of (Avigad et al. p.&#160;19).</p>
+<p>In 2009, John Harrison employed <a href="/wiki/HOL_Light" title="HOL Light">HOL Light</a> to formalize a proof employing <a href="/wiki/Complex_analysis" title="Complex analysis">complex analysis</a>.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>15<span>]</span></a></sup> By developing the necessary analytic machinery, including the <a href="/wiki/Cauchy_integral_formula" title="Cauchy integral formula" class="mw-redirect">Cauchy integral formula</a>, Harrison was able to formalize "a direct, modern and elegant proof instead of the more involved ‘elementary’ Erdös-Selberg argument."</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=8" title="Edit section: The prime number theorem for arithmetic progressions">edit</a>]</span> <span class="mw-headline" id="The_prime_number_theorem_for_arithmetic_progressions">The prime number theorem for arithmetic progressions</span></h2>
+<p>Let <span class="texhtml">π<sub><i>n</i>,<i>a</i></sub>(<i>x</i>)</span> denote the number of primes in the <a href="/wiki/Arithmetic_progression" title="Arithmetic progression">arithmetic progression</a> <i>a</i>, <i>a</i> + <i>n</i>, <i>a</i> + 2<i>n</i>, <i>a</i> + 3<i>n</i>, … less than <i>x</i>. <a href="/wiki/Dirichlet" title="Dirichlet" class="mw-redirect">Dirichlet</a> and <a href="/wiki/Adrien-Marie_Legendre" title="Adrien-Marie Legendre">Legendre</a> conjectured, and <a href="/wiki/Charles_Jean_de_la_Vall%C3%A9e-Poussin" title="Charles Jean de la Vallée-Poussin">Vallée-Poussin</a> proved, that, if <i>a</i> and <i>n</i> are <a href="/wiki/Coprime" title="Coprime">coprime</a>, then</p>
+<dl>
+<dd><img class="tex" alt="
+\pi_{n,a}(x) \sim \frac{1}{\phi(n)}\mathrm{Li}(x),
+" src="http://upload.wikimedia.org/math/1/d/9/1d9e3df2f354bda5b26016d1a57e9cee.png" /></dd>
+</dl>
+<p>where φ(·) is the <a href="/wiki/Euler%27s_totient_function" title="Euler's totient function">Euler's totient function</a>. In other words, the primes are distributed evenly among the residue classes [<i>a</i>] <a href="/wiki/Modular_arithmetic" title="Modular arithmetic">modulo</a> <i>n</i> with gcd(<i>a</i>, <i>n</i>) = 1. This can be proved using similar methods used by Newman for his proof of the prime number theorem.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>16<span>]</span></a></sup></p>
+<p>Although we have in particular</p>
+<dl>
+<dd><img class="tex" alt="
+\pi_{4,1}(x) \sim \pi_{4,3}(x), \,
+" src="http://upload.wikimedia.org/math/a/c/0/ac0ed8f2a8596754b13eb548fae36bc7.png" /></dd>
+</dl>
+<p>empirically the primes congruent to 3 are more numerous and are nearly always ahead in this "prime number race"; the first reversal occurs at <i>x</i> = 26,861.<sup id="cite_ref-Granville_Martin_MAA_16-0" class="reference"><a href="#cite_note-Granville_Martin_MAA-16"><span>[</span>17<span>]</span></a></sup> <sup class="reference" style="white-space:nowrap;">:1–2</sup> However Littlewood showed in 1914<sup id="cite_ref-Granville_Martin_MAA_16-1" class="reference"><a href="#cite_note-Granville_Martin_MAA-16"><span>[</span>17<span>]</span></a></sup><sup class="reference" style="white-space:nowrap;">:2</sup> that there are infinitely many sign changes for the function</p>
+<dl>
+<dd><img class="tex" alt="
+\pi_{4,1}(x) - \pi_{4,3}(x), \, " src="http://upload.wikimedia.org/math/8/c/1/8c124d763b161126a6eeacb71f148040.png" /></dd>
+</dl>
+<p>so the lead in the race switches back and forth infinitely many times. The prime number race generalizes to other moduli and is the subject of much research; Granville and Martin give a thorough exposition and survey.<sup id="cite_ref-Granville_Martin_MAA_16-2" class="reference"><a href="#cite_note-Granville_Martin_MAA-16"><span>[</span>17<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=9" title="Edit section: Bounds on the prime-counting function">edit</a>]</span> <span class="mw-headline" id="Bounds_on_the_prime-counting_function">Bounds on the prime-counting function</span></h2>
+<p>The prime number theorem is an <i>asymptotic</i> result. Hence, it cannot be used to <i>bound</i> π(<i>x</i>).</p>
+<p>However, some bounds on π(<i>x</i>) are known, for instance <a href="/wiki/Pierre_Dusart" title="Pierre Dusart">Pierre Dusart</a>'s</p>
+<dl>
+<dd><img class="tex" alt="  \frac{x}{\ln x}\left(1+\frac{1}{\ln x}\right) &lt; \pi(x) &lt; \frac{x}{\ln x}\left(1+\frac{1}{\ln x}+\frac{2.51}{(\ln x)^2}\right). " src="http://upload.wikimedia.org/math/9/b/a/9ba2ba55b52d2877b3e4ee771cb1e577.png" /></dd>
+</dl>
+<p>The first inequality holds for all <i>x</i> ≥ 599 and the second one for <i>x</i> ≥ 355991.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span>[</span>18<span>]</span></a></sup></p>
+<p>A weaker but sometimes useful bound is</p>
+<dl>
+<dd><img class="tex" alt=" \frac {x}{\ln x + 2} &lt; \pi(x) &lt; \frac {x}{\ln x - 4}" src="http://upload.wikimedia.org/math/2/5/2/25239910b52bda079c95c85920bf4ede.png" /></dd>
+</dl>
+<p>for <i>x</i> ≥ 55.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span>[</span>19<span>]</span></a></sup> In Dusart's thesis there are stronger versions of this type of inequality that are valid for larger <i>x</i>.</p>
+<p>The proof by de la Vallée-Poussin implies the following. For every ε &gt; 0, there is an <i>S</i> such that for all <i>x</i> &gt; <i>S</i>,</p>
+<dl>
+<dd><img class="tex" alt="\frac {x}{\ln x - (1-\varepsilon)} &lt; \pi(x) &lt; \frac {x}{\ln x - (1+\varepsilon)}." src="http://upload.wikimedia.org/math/4/9/d/49d8ee7e10fcb1b170b68a2a05cc4b3a.png" /></dd>
+</dl>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=10" title="Edit section: Approximations for the nth prime number">edit</a>]</span> <span class="mw-headline" id="Approximations_for_the_nth_prime_number">Approximations for the <i>n</i>th prime number</span></h2>
+<p>As a consequence of the prime number theorem, one gets an <a href="/wiki/Asymptotic_analysis" title="Asymptotic analysis">asymptotic</a> expression for the <i>n</i>th prime number, denoted by <i>p</i><sub><i>n</i></sub>:</p>
+<dl>
+<dd><img class="tex" alt="p_n \sim n \ln n." src="http://upload.wikimedia.org/math/e/5/9/e59d271e97fd04d2b40b4887a1e66f4c.png" /></dd>
+</dl>
+<p>A better approximation is</p>
+<dl>
+<dd><img class="tex" alt="{ p_n = n \ln n +  n \ln \ln n - n + \frac{n}{\ln n} \left(\ln \ln n - 2 \right) - \frac{n\ln\ln n}{2(\ln n)^2}\left(\ln\ln n-6\right) + O\left( \frac {n} {(\ln n)^2}\right).}" src="http://upload.wikimedia.org/math/4/4/f/44f6899498967ac8107fb3abe0d29f4e.png" /><sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span>[</span>20<span>]</span></a></sup></dd>
+</dl>
+<p><a href="/wiki/Rosser%27s_theorem" title="Rosser's theorem">Rosser's theorem</a> states that <i>p</i><sub><i>n</i></sub> is larger than <i>n</i> ln <i>n</i>. This can be improved by the following pair of bounds:<sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span>[</span>21<span>]</span></a></sup><sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span>[</span>22<span>]</span></a></sup></p>
+<dl>
+<dd><img class="tex" alt=" n \ln n + n(\ln\ln n - 1) &lt; p_n &lt;  n \ln n + n \ln \ln n \quad\mbox{for } n \ge 6. " src="http://upload.wikimedia.org/math/0/4/2/042861f2ddc5a68b88fc1d58a656cc4c.png" /></dd>
+</dl>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=11" title="Edit section: Table of π(x), x / ln x, and li(x)">edit</a>]</span> <span class="mw-headline" id="Table_of_.CF.80.28x.29.2C_x_.2F_ln_x.2C_and_li.28x.29">Table of π(<i>x</i>), <i>x</i> / ln <i>x</i>, and li(<i>x</i>)</span></h2>
+<p>The table compares exact values of π(<i>x</i>) to the two approximations <i>x</i> / ln <i>x</i> and li(<i>x</i>). The last column, <i>x</i> / π(<i>x</i>), is the average <a href="/wiki/Prime_gap" title="Prime gap">prime gap</a> below <i>x</i>.</p>
+<dl>
+<dd>
+<table class="wikitable" style="text-align: right">
+<tr>
+<th><i>x</i></th>
+<th>π(<i>x</i>)<sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span>[</span>23<span>]</span></a></sup></th>
+<th>π(<i>x</i>) − <i>x</i> / ln <i>x</i><sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span>[</span>24<span>]</span></a></sup></th>
+<th>π(<i>x</i>) / (<i>x</i> / ln <i>x</i>)</th>
+<th>li(<i>x</i>) − π(<i>x</i>)<sup id="cite_ref-24" class="reference"><a href="#cite_note-24"><span>[</span>25<span>]</span></a></sup></th>
+<th><i>x</i> / π(<i>x</i>)</th>
+</tr>
+<tr>
+<td>10</td>
+<td>4</td>
+<td>−0.3</td>
+<td>0.921</td>
+<td>2.2</td>
+<td>2.500</td>
+</tr>
+<tr>
+<td>10<sup>2</sup></td>
+<td>25</td>
+<td>3.3</td>
+<td>1.151</td>
+<td>5.1</td>
+<td>4.000</td>
+</tr>
+<tr>
+<td>10<sup>3</sup></td>
+<td>168</td>
+<td>23</td>
+<td>1.161</td>
+<td>10</td>
+<td>5.952</td>
+</tr>
+<tr>
+<td>10<sup>4</sup></td>
+<td>1,229</td>
+<td>143</td>
+<td>1.132</td>
+<td>17</td>
+<td>8.137</td>
+</tr>
+<tr>
+<td>10<sup>5</sup></td>
+<td>9,592</td>
+<td>906</td>
+<td>1.104</td>
+<td>38</td>
+<td>10.425</td>
+</tr>
+<tr>
+<td>10<sup>6</sup></td>
+<td>78,498</td>
+<td>6,116</td>
+<td>1.084</td>
+<td>130</td>
+<td>12.740</td>
+</tr>
+<tr>
+<td>10<sup>7</sup></td>
+<td>664,579</td>
+<td>44,158</td>
+<td>1.071</td>
+<td>339</td>
+<td>15.047</td>
+</tr>
+<tr>
+<td>10<sup>8</sup></td>
+<td>5,761,455</td>
+<td>332,774</td>
+<td>1.061</td>
+<td>754</td>
+<td>17.357</td>
+</tr>
+<tr>
+<td>10<sup>9</sup></td>
+<td>50,847,534</td>
+<td>2,592,592</td>
+<td>1.054</td>
+<td>1,701</td>
+<td>19.667</td>
+</tr>
+<tr>
+<td>10<sup>10</sup></td>
+<td>455,052,511</td>
+<td>20,758,029</td>
+<td>1.048</td>
+<td>3,104</td>
+<td>21.975</td>
+</tr>
+<tr>
+<td>10<sup>11</sup></td>
+<td>4,118,054,813</td>
+<td>169,923,159</td>
+<td>1.043</td>
+<td>11,588</td>
+<td>24.283</td>
+</tr>
+<tr>
+<td>10<sup>12</sup></td>
+<td>37,607,912,018</td>
+<td>1,416,705,193</td>
+<td>1.039</td>
+<td>38,263</td>
+<td>26.590</td>
+</tr>
+<tr>
+<td>10<sup>13</sup></td>
+<td>346,065,536,839</td>
+<td>11,992,858,452</td>
+<td>1.034</td>
+<td>108,971</td>
+<td>28.896</td>
+</tr>
+<tr>
+<td>10<sup>14</sup></td>
+<td>3,204,941,750,802</td>
+<td>102,838,308,636</td>
+<td>1.033</td>
+<td>314,890</td>
+<td>31.202</td>
+</tr>
+<tr>
+<td>10<sup>15</sup></td>
+<td>29,844,570,422,669</td>
+<td>891,604,962,452</td>
+<td>1.031</td>
+<td>1,052,619</td>
+<td>33.507</td>
+</tr>
+<tr>
+<td>10<sup>16</sup></td>
+<td>279,238,341,033,925</td>
+<td>7,804,289,844,393</td>
+<td>1.029</td>
+<td>3,214,632</td>
+<td>35.812</td>
+</tr>
+<tr>
+<td>10<sup>17</sup></td>
+<td>2,623,557,157,654,233</td>
+<td>68,883,734,693,281</td>
+<td>1.027</td>
+<td>7,956,589</td>
+<td>38.116</td>
+</tr>
+<tr>
+<td>10<sup>18</sup></td>
+<td>24,739,954,287,740,860</td>
+<td>612,483,070,893,536</td>
+<td>1.025</td>
+<td>21,949,555</td>
+<td>40.420</td>
+</tr>
+<tr>
+<td>10<sup>19</sup></td>
+<td>234,057,667,276,344,607</td>
+<td>5,481,624,169,369,960</td>
+<td>1.024</td>
+<td>99,877,775</td>
+<td>42.725</td>
+</tr>
+<tr>
+<td>10<sup>20</sup></td>
+<td>2,220,819,602,560,918,840</td>
+<td>49,347,193,044,659,701</td>
+<td>1.023</td>
+<td>222,744,644</td>
+<td>45.028</td>
+</tr>
+<tr>
+<td>10<sup>21</sup></td>
+<td>21,127,269,486,018,731,928</td>
+<td>446,579,871,578,168,707</td>
+<td>1.022</td>
+<td>597,394,254</td>
+<td>47.332</td>
+</tr>
+<tr>
+<td>10<sup>22</sup></td>
+<td>201,467,286,689,315,906,290</td>
+<td>4,060,704,006,019,620,994</td>
+<td>1.021</td>
+<td>1,932,355,208</td>
+<td>49.636</td>
+</tr>
+<tr>
+<td>10<sup>23</sup></td>
+<td>1,925,320,391,606,803,968,923</td>
+<td>37,083,513,766,578,631,309</td>
+<td>1.020</td>
+<td>7,250,186,216</td>
+<td>51.939</td>
+</tr>
+</table>
+</dd>
+</dl>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=12" title="Edit section: Analogue for irreducible polynomials over a finite field">edit</a>]</span> <span class="mw-headline" id="Analogue_for_irreducible_polynomials_over_a_finite_field">Analogue for irreducible polynomials over a finite field</span></h2>
+<p>There is an analogue of the prime number theorem that describes the "distribution" of <a href="/wiki/Irreducible_polynomial" title="Irreducible polynomial">irreducible polynomials</a> over a <a href="/wiki/Finite_field" title="Finite field">finite field</a>; the form it takes is strikingly similar to the case of the classical prime number theorem.</p>
+<p>To state it precisely, let <i>F</i> = GF(<i>q</i>) be the finite field with <i>q</i> elements, for some fixed <i>q</i>, and let <i>N</i><sub><i>n</i></sub> be the number of <a href="/wiki/Monic_polynomial" title="Monic polynomial" class="mw-redirect">monic</a> <i>irreducible</i> polynomials over <i>F</i> whose <a href="/wiki/Degree_of_a_polynomial" title="Degree of a polynomial">degree</a> is equal to <i>n</i>. That is, we are looking at polynomials with coefficients chosen from <i>F</i>, which cannot be written as products of polynomials of smaller degree. In this setting, these polynomials play the role of the prime numbers, since all other monic polynomials are built up of products of them. One can then prove that</p>
+<dl>
+<dd><img class="tex" alt="N_n \sim \frac{q^n}{n}." src="http://upload.wikimedia.org/math/e/5/c/e5c794ccc557e4bedcd972a618a4097d.png" /></dd>
+</dl>
+<p>If we make the substitution <i>x</i> = <i>q</i><sup><i>n</i></sup>, then the right hand side is just</p>
+<dl>
+<dd><img class="tex" alt="\frac{x}{\log_q x}," src="http://upload.wikimedia.org/math/1/5/9/159daf759d0d31f9a3d2f50a1ecb3789.png" /></dd>
+</dl>
+<p>which makes the analogy clearer. Since there are precisely <i>q</i><sup><i>n</i></sup> monic polynomials of degree <i>n</i> (including the reducible ones), this can be rephrased as follows: if a monic polynomial of degree <i>n</i> is selected randomly, then the probability of it being irreducible is about 1/<i>n</i>.</p>
+<p>One can even prove an analogue of the Riemann hypothesis, namely that</p>
+<dl>
+<dd><img class="tex" alt="N_n = \frac{q^n}n + O\left(\frac{q^{n/2}}{n}\right)." src="http://upload.wikimedia.org/math/6/c/5/6c5cbeea0d310b7b36617a04a691c977.png" /></dd>
+</dl>
+<p>The proofs of these statements are far simpler than in the classical case. It involves a short combinatorial argument, summarised as follows. Every element of the degree <i>n</i> extension of <i>F</i> is a root of some irreducible polynomial whose degree <i>d</i> divides <i>n</i>; by counting these roots in two different ways one establishes that</p>
+<dl>
+<dd><img class="tex" alt="q^n = \sum_{d\mid n} d N_d," src="http://upload.wikimedia.org/math/e/2/c/e2c51da0d8798e265272f5d96ac18ae8.png" /></dd>
+</dl>
+<p>where the sum is over all <a href="/wiki/Divisor" title="Divisor">divisors</a> <i>d</i> of <i>n</i>. <a href="/wiki/M%C3%B6bius_inversion" title="Möbius inversion" class="mw-redirect">Möbius inversion</a> then yields</p>
+<dl>
+<dd><img class="tex" alt="N_n = \frac1n \sum_{d\mid n} \mu(n/d) q^d," src="http://upload.wikimedia.org/math/2/8/a/28a8f75dd796bb0f73eebb88428cf519.png" /></dd>
+</dl>
+<p>where μ(k) is the <a href="/wiki/M%C3%B6bius_function" title="Möbius function">Möbius function</a>. (This formula was known to Gauss.) The main term occurs for <i>d</i> = <i>n</i>, and it is not difficult to bound the remaining terms. The "Riemann hypothesis" statement depends on the fact that the largest <a href="/wiki/Proper_divisor" title="Proper divisor" class="mw-redirect">proper divisor</a> of <i>n</i> can be no larger than <i>n</i>/2.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul>
+<li><a href="/wiki/Abstract_analytic_number_theory" title="Abstract analytic number theory">Abstract analytic number theory</a> for information about generalizations of the theorem.</li>
+<li><a href="/wiki/Landau_prime_ideal_theorem" title="Landau prime ideal theorem">Landau prime ideal theorem</a> for a generalization to prime ideals in algebraic number fields.</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=14" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h2>
+<div class="reflist references-small references-column-width" style="column-width: 30em; -moz-column-width: 30em; -webkit-column-width: 30em;">
+<div class="references">
+<ol>
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> <span class="citation book">Hoffman, Paul (1998). <i>The Man Who Loved Only Numbers</i>. Hyperion. p.&#160;227. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7868-8406-1" title="Special:BookSources/0-7868-8406-1">0-7868-8406-1</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Man+Who+Loved+Only+Numbers&amp;rft.aulast=Hoffman&amp;rft.aufirst=Paul&amp;rft.au=Hoffman%2C%26%2332%3BPaul&amp;rft.date=1998&amp;rft.pages=p.%26nbsp%3B227&amp;rft.pub=Hyperion&amp;rft.isbn=0-7868-8406-1&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> <span class="citation Journal">N. Costa Pereira (August-September 1985). <a href="http://www.jstor.org/stable/2322510" class="external text" rel="nofollow">"A Short Proof of Chebyshev's Theorem"</a>. <i>The American Mathematical Monthly</i> (The American Mathematical Monthly, Vol. 92, No. 7) <b>92</b> (7): 494–495. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.2307%2F2322510" class="external text" rel="nofollow">10.2307/2322510</a><span class="printonly">. <a href="http://www.jstor.org/stable/2322510" class="external free" rel="nofollow">http://www.jstor.org/stable/2322510</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+Short+Proof+of+Chebyshev%27s+Theorem&amp;rft.jtitle=The+American+Mathematical+Monthly&amp;rft.aulast=N.+Costa+Pereira&amp;rft.au=N.+Costa+Pereira&amp;rft.date=August-September+1985&amp;rft.volume=92&amp;rft.issue=7&amp;rft.pages=494%E2%80%93495&amp;rft.pub=The+American+Mathematical+Monthly%2C+Vol.+92%2C+No.+7&amp;rft_id=info:doi/10.2307%2F2322510&amp;rft_id=http%3A%2F%2Fwww.jstor.org%2Fstable%2F2322510&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> <span class="citation Journal">M. Nair (February 1982). <a href="http://www.jstor.org/stable/2320934" class="external text" rel="nofollow">"On Chebyshev-Type Inequalities for Primes"</a>. <i>The American Mathematical Monthly</i> (The American Mathematical Monthly, Vol. 89, No. 2) <b>89</b> (2): 126–129. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.2307%2F2320934" class="external text" rel="nofollow">10.2307/2320934</a><span class="printonly">. <a href="http://www.jstor.org/stable/2320934" class="external free" rel="nofollow">http://www.jstor.org/stable/2320934</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=On+Chebyshev-Type+Inequalities+for+Primes&amp;rft.jtitle=The+American+Mathematical+Monthly&amp;rft.aulast=M.+Nair&amp;rft.au=M.+Nair&amp;rft.date=February+1982&amp;rft.volume=89&amp;rft.issue=2&amp;rft.pages=126%E2%80%93129&amp;rft.pub=The+American+Mathematical+Monthly%2C+Vol.+89%2C+No.+2&amp;rft_id=info:doi/10.2307%2F2320934&amp;rft_id=http%3A%2F%2Fwww.jstor.org%2Fstable%2F2320934&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-3"><b><a href="#cite_ref-3">^</a></b> <span class="citation book">Ingham, A.E. (1990). <i>The Distribution of Prime Numbers</i>. Cambridge University Press. pp.&#160;2–5. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-39789-8" title="Special:BookSources/0-521-39789-8">0-521-39789-8</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Distribution+of+Prime+Numbers&amp;rft.aulast=Ingham&amp;rft.aufirst=A.E.&amp;rft.au=Ingham%2C%26%2332%3BA.E.&amp;rft.date=1990&amp;rft.pages=pp.%26nbsp%3B2%E2%80%935&amp;rft.pub=Cambridge+University+Press&amp;rft.isbn=0-521-39789-8&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <span class="citation Journal">D. J. Newman (1980). <a href="http://jstor.org/stable/2321853" class="external text" rel="nofollow">"Simple analytic proof of the prime number theorem"</a>. <i>Amer. Math. Monthly</i> (The American Mathematical Monthly, Vol. 87, No. 9) <b>87</b> (9): 693–696. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.2307%2F2321853" class="external text" rel="nofollow">10.2307/2321853</a><span class="printonly">. <a href="http://jstor.org/stable/2321853" class="external free" rel="nofollow">http://jstor.org/stable/2321853</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Simple+analytic+proof+of+the+prime+number+theorem&amp;rft.jtitle=Amer.+Math.+Monthly&amp;rft.aulast=D.+J.+Newman&amp;rft.au=D.+J.+Newman&amp;rft.date=1980&amp;rft.volume=87&amp;rft.issue=9&amp;rft.pages=693%E2%80%93696&amp;rft.pub=The+American+Mathematical+Monthly%2C+Vol.+87%2C+No.+9&amp;rft_id=info:doi/10.2307%2F2321853&amp;rft_id=http%3A%2F%2Fjstor.org%2Fstable%2F2321853&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-5"><b><a href="#cite_ref-5">^</a></b> <span class="citation Journal">D. Zagier (1997). <a href="http://mathdl.maa.org/images/upload_library/22/Chauvenet/Zagier.pdf" class="external text" rel="nofollow">"Newman's short proof of the prime number theorem"</a>. <i>Amer. Math. Monthly</i> (The American Mathematical Monthly, Vol. 104, No. 8) <b>104</b> (8): 705–708. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.2307%2F2975232" class="external text" rel="nofollow">10.2307/2975232</a><span class="printonly">. <a href="http://mathdl.maa.org/images/upload_library/22/Chauvenet/Zagier.pdf" class="external free" rel="nofollow">http://mathdl.maa.org/images/upload_library/22/Chauvenet/Zagier.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Newman%27s+short+proof+of+the+prime+number+theorem&amp;rft.jtitle=Amer.+Math.+Monthly&amp;rft.aulast=D.+Zagier&amp;rft.au=D.+Zagier&amp;rft.date=1997&amp;rft.volume=104&amp;rft.issue=8&amp;rft.pages=705%E2%80%93708&amp;rft.pub=The+American+Mathematical+Monthly%2C+Vol.+104%2C+No.+8&amp;rft_id=info:doi/10.2307%2F2975232&amp;rft_id=http%3A%2F%2Fmathdl.maa.org%2Fimages%2Fupload_library%2F22%2FChauvenet%2FZagier.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> <a href="http://164.67.141.39:8080/ramgen/specialevents/math/tao/tao-20070117.smil" class="external text" rel="nofollow">Video</a> and <a href="http://www.math.ucla.edu/~tao/preprints/Slides/primes.pdf" class="external text" rel="nofollow">slides</a> of Tao's lecture on primes, UCLA January 2007.</li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> <span class="citation book"><a href="/wiki/Harold_Edwards_(mathematician)" title="Harold Edwards (mathematician)">Edwards, Harold M.</a> (2001). <i>Riemann's zeta function</i>. Courier Dover Publications. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-4864-1740-9" title="Special:BookSources/0-4864-1740-9">0-4864-1740-9</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Riemann%27s+zeta+function&amp;rft.aulast=Edwards&amp;rft.aufirst=Harold+M.&amp;rft.au=Edwards%2C%26%2332%3BHarold+M.&amp;rft.date=2001&amp;rft.pub=Courier+Dover+Publications&amp;rft.isbn=0-4864-1740-9&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> <span class="citation Journal">Helge von Koch (December 1901). "Sur la distribution des nombres premiers". <i>Acta Mathematica</i> <b>24</b> (1): 159–182. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2FBF02403071" class="external text" rel="nofollow">10.1007/BF02403071</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Sur+la+distribution+des+nombres+premiers&amp;rft.jtitle=Acta+Mathematica&amp;rft.aulast=Helge+von+Koch&amp;rft.au=Helge+von+Koch&amp;rft.date=December+1901&amp;rft.volume=24&amp;rft.issue=1&amp;rft.pages=159%E2%80%93182&amp;rft_id=info:doi/10.1007%2FBF02403071&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span> <span class="languageicon" style="font-size:0.95em; font-weight:bold; color:#555;">(French)</span></li>
+<li id="cite_note-9"><b><a href="#cite_ref-9">^</a></b> <span class="citation Journal">Schoenfeld, Lowell (1976). <a href="http://jstor.org/stable/2005976" class="external text" rel="nofollow">"Sharper Bounds for the Chebyshev Functions θ(x) and ψ(x). II"</a>. <i>Mathematics of Computation</i> (Mathematics of Computation, Vol. 30, No. 134) <b>30</b> (134): 337–360. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.2307%2F2005976" class="external text" rel="nofollow">10.2307/2005976</a><span class="printonly">. <a href="http://jstor.org/stable/2005976" class="external free" rel="nofollow">http://jstor.org/stable/2005976</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Sharper+Bounds+for+the+Chebyshev+Functions+%CE%B8%28x%29+and+%CF%88%28x%29.+II&amp;rft.jtitle=Mathematics+of+Computation&amp;rft.aulast=Schoenfeld&amp;rft.aufirst=Lowell&amp;rft.au=Schoenfeld%2C%26%2332%3BLowell&amp;rft.date=1976&amp;rft.volume=30&amp;rft.issue=134&amp;rft.pages=337%E2%80%93360&amp;rft.pub=Mathematics+of+Computation%2C+Vol.+30%2C+No.+134&amp;rft_id=info:doi/10.2307%2F2005976&amp;rft_id=http%3A%2F%2Fjstor.org%2Fstable%2F2005976&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span>.</li>
+<li id="cite_note-Goldfeld_Historical_Perspective-10">^ <a href="#cite_ref-Goldfeld_Historical_Perspective_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Goldfeld_Historical_Perspective_10-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Goldfeld_Historical_Perspective_10-2"><sup><i><b>c</b></i></sup></a> D. Goldfeld <a href="http://www.math.columbia.edu/~goldfeld/ErdosSelbergDispute.pdf" class="external text" rel="nofollow">The elementary proof of the prime number theorem: an historical perspective</a>.</li>
+<li id="cite_note-interview-11"><b><a href="#cite_ref-interview_11-0">^</a></b> <span class="citation Journal">Baas, Nils A.; Skau, Christian F. (2008). <a href="http://www.ams.org/bull/2008-45-04/S0273-0979-08-01223-8/S0273-0979-08-01223-8.pdf" class="external text" rel="nofollow">"The lord of the numbers, Atle Selberg. On his life and mathematics"</a>. <i>Bull. Amer. Math. Soc.</i> <b>45</b>: 617–649. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1090%2FS0273-0979-08-01223-8" class="external text" rel="nofollow">10.1090/S0273-0979-08-01223-8</a><span class="printonly">. <a href="http://www.ams.org/bull/2008-45-04/S0273-0979-08-01223-8/S0273-0979-08-01223-8.pdf" class="external free" rel="nofollow">http://www.ams.org/bull/2008-45-04/S0273-0979-08-01223-8/S0273-0979-08-01223-8.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+lord+of+the+numbers%2C+Atle+Selberg.+On+his+life+and+mathematics&amp;rft.jtitle=Bull.+Amer.+Math.+Soc.&amp;rft.aulast=Baas&amp;rft.aufirst=Nils+A.&amp;rft.au=Baas%2C%26%2332%3BNils+A.&amp;rft.au=Skau%2C%26%2332%3BChristian+F.&amp;rft.date=2008&amp;rft.volume=45&amp;rft.pages=617%E2%80%93649&amp;rft_id=info:doi/10.1090%2FS0273-0979-08-01223-8&amp;rft_id=http%3A%2F%2Fwww.ams.org%2Fbull%2F2008-45-04%2FS0273-0979-08-01223-8%2FS0273-0979-08-01223-8.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-12"><b><a href="#cite_ref-12">^</a></b> <span class="citation Journal">Cornaros, Charalambos; Dimitracopoulos, Costas (1994). "The prime number theorem and fragments of <i>PA</i>". <i>Archive for Mathematical Logic</i> <b>33</b> (4): 265–281. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2FBF01270626" class="external text" rel="nofollow">10.1007/BF01270626</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+prime+number+theorem+and+fragments+of+%27%27PA%27%27&amp;rft.jtitle=Archive+for+Mathematical+Logic&amp;rft.aulast=Cornaros&amp;rft.aufirst=Charalambos&amp;rft.au=Cornaros%2C%26%2332%3BCharalambos&amp;rft.au=Dimitracopoulos%2C%26%2332%3BCostas&amp;rft.date=1994&amp;rft.volume=33&amp;rft.issue=4&amp;rft.pages=265%E2%80%93281&amp;rft_id=info:doi/10.1007%2FBF01270626&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-13"><b><a href="#cite_ref-13">^</a></b> <span class="citation Journal">Jeremy Avigad, Kevin Donnelly, David Gray, Paul Raff (2005). <a href="http://arxiv.org/abs/cs.AI/0509025" class="external text" rel="nofollow">"A formally verified proof of the prime number theorem"</a>. <i>E-print cs. AI/0509025 in the <a href="/wiki/ArXiv" title="ArXiv">ArXiv</a></i><span class="printonly">. <a href="http://arxiv.org/abs/cs.AI/0509025" class="external free" rel="nofollow">http://arxiv.org/abs/cs.AI/0509025</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+formally+verified+proof+of+the+prime+number+theorem&amp;rft.jtitle=E-print+cs.+AI%2F0509025+in+the+%5B%5BArXiv%5D%5D&amp;rft.aulast=Jeremy+Avigad%2C+Kevin+Donnelly%2C+David+Gray%2C+Paul+Raff&amp;rft.au=Jeremy+Avigad%2C+Kevin+Donnelly%2C+David+Gray%2C+Paul+Raff&amp;rft.date=2005&amp;rft_id=http%3A%2F%2Farxiv.org%2Fabs%2Fcs.AI%2F0509025&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-14"><b><a href="#cite_ref-14">^</a></b> <span class="citation Journal"><a href="http://www.cl.cam.ac.uk/~jrh13/papers/mikefest.html" class="external text" rel="nofollow">"Formalizing an analytic proof of the Prime Number Theorem"</a>. <i>Journal of Automated Reasoning</i>. 2009, volume = 43, pages = 243--261<span class="printonly">. <a href="http://www.cl.cam.ac.uk/~jrh13/papers/mikefest.html" class="external free" rel="nofollow">http://www.cl.cam.ac.uk/~jrh13/papers/mikefest.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Formalizing+an+analytic+proof+of+the+Prime+Number+Theorem&amp;rft.jtitle=Journal+of+Automated+Reasoning&amp;rft.date=2009%2C+volume+%3D+43%2C+pages+%3D+243--261&amp;rft_id=http%3A%2F%2Fwww.cl.cam.ac.uk%2F%7Ejrh13%2Fpapers%2Fmikefest.html&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-15"><b><a href="#cite_ref-15">^</a></b> <span class="citation Journal">Ivan Soprounov (1998). <a href="http://www.math.umass.edu/~isoprou/pdf/primes.pdf" class="external text" rel="nofollow"><i>A short proof of the Prime Number Theorem for arithmetic progressions</i></a><span class="printonly">. <a href="http://www.math.umass.edu/~isoprou/pdf/primes.pdf" class="external free" rel="nofollow">http://www.math.umass.edu/~isoprou/pdf/primes.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+short+proof+of+the+Prime+Number+Theorem+for+arithmetic+progressions&amp;rft.aulast=Ivan+Soprounov&amp;rft.au=Ivan+Soprounov&amp;rft.date=1998&amp;rft_id=http%3A%2F%2Fwww.math.umass.edu%2F%7Eisoprou%2Fpdf%2Fprimes.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-Granville_Martin_MAA-16">^ <a href="#cite_ref-Granville_Martin_MAA_16-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Granville_Martin_MAA_16-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Granville_Martin_MAA_16-2"><sup><i><b>c</b></i></sup></a> <span class="citation Journal"><a href="/wiki/Andrew_Granville" title="Andrew Granville">Granville, Andrew</a>; Martin, Greg (January 2006). <a href="http://www.dms.umontreal.ca/%7Eandrew/PDF/PrimeRace.pdf" class="external text" rel="nofollow">"Prime Number Races"</a>. <i>American Mathematical Monthly</i> (Washington, DC: Mathematical Association of American) <b>113</b> (1): 1–33. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.2307%2F27641834" class="external text" rel="nofollow">10.2307/27641834</a>. <a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a>&#160;<a href="http://www.worldcat.org/issn/0002-9890" class="external text" rel="nofollow">0002-9890</a><span class="printonly">. <a href="http://www.dms.umontreal.ca/%7Eandrew/PDF/PrimeRace.pdf" class="external free" rel="nofollow">http://www.dms.umontreal.ca/%7Eandrew/PDF/PrimeRace.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Prime+Number+Races&amp;rft.jtitle=American+Mathematical+Monthly&amp;rft.aulast=Granville&amp;rft.aufirst=Andrew&amp;rft.au=Granville%2C%26%2332%3BAndrew&amp;rft.au=Martin%2C%26%2332%3BGreg&amp;rft.date=January+2006&amp;rft.volume=113&amp;rft.issue=1&amp;rft.pages=1%E2%80%9333&amp;rft.place=Washington%2C+DC&amp;rft.pub=Mathematical+Association+of+American&amp;rft_id=info:doi/10.2307%2F27641834&amp;rft.issn=0002-9890&amp;rft_id=http%3A%2F%2Fwww.dms.umontreal.ca%2F%257Eandrew%2FPDF%2FPrimeRace.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-17"><b><a href="#cite_ref-17">^</a></b> <span class="citation book">Dusart, Pierre (1998). <a href="http://www.unilim.fr/laco/theses/1998/T1998_01.html" class="external text" rel="nofollow"><i>Autour de la fonction qui compte le nombre de nombres premiers</i></a>. doctoral thesis for l'Université de Limoges<span class="printonly">. <a href="http://www.unilim.fr/laco/theses/1998/T1998_01.html" class="external free" rel="nofollow">http://www.unilim.fr/laco/theses/1998/T1998_01.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Autour+de+la+fonction+qui+compte+le+nombre+de+nombres+premiers&amp;rft.aulast=Dusart&amp;rft.aufirst=Pierre&amp;rft.au=Dusart%2C%26%2332%3BPierre&amp;rft.date=1998&amp;rft.pub=doctoral+thesis+for+l%27Universit%C3%A9+de+Limoges&amp;rft_id=http%3A%2F%2Fwww.unilim.fr%2Flaco%2Ftheses%2F1998%2FT1998_01.html&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span> <span class="languageicon" style="font-size:0.95em; font-weight:bold; color:#555;">(French)</span></li>
+<li id="cite_note-18"><b><a href="#cite_ref-18">^</a></b> <span class="citation Journal">Barkley Rosser (January 1941). <a href="http://jstor.org/stable/2371291" class="external text" rel="nofollow">"Explicit Bounds for Some Functions of Prime Numbers"</a>. <i>American Journal of Mathematics</i> (American Journal of Mathematics, Vol. 63, No. 1) <b>63</b> (1): 211–232. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.2307%2F2371291" class="external text" rel="nofollow">10.2307/2371291</a><span class="printonly">. <a href="http://jstor.org/stable/2371291" class="external free" rel="nofollow">http://jstor.org/stable/2371291</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Explicit+Bounds+for+Some+Functions+of+Prime+Numbers&amp;rft.jtitle=American+Journal+of+Mathematics&amp;rft.aulast=Barkley+Rosser&amp;rft.au=Barkley+Rosser&amp;rft.date=January+1941&amp;rft.volume=63&amp;rft.issue=1&amp;rft.pages=211%E2%80%93232&amp;rft.pub=American+Journal+of+Mathematics%2C+Vol.+63%2C+No.+1&amp;rft_id=info:doi/10.2307%2F2371291&amp;rft_id=http%3A%2F%2Fjstor.org%2Fstable%2F2371291&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-19"><b><a href="#cite_ref-19">^</a></b> <span class="citation Journal"><a href="/wiki/Ernesto_Ces%C3%A0ro" title="Ernesto Cesàro">Ernest Cesàro</a> (1894). <a href="http://gallica.bnf.fr/ark:/12148/bpt6k30752" class="external text" rel="nofollow">"Sur une formule empirique de M. Pervouchine"</a>. <i>Comptes rendus hebdomadaires des séances de l'Académie des sciences</i> <b>119</b>: 848–849<span class="printonly">. <a href="http://gallica.bnf.fr/ark:/12148/bpt6k30752" class="external free" rel="nofollow">http://gallica.bnf.fr/ark:/12148/bpt6k30752</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Sur+une+formule+empirique+de+M.+Pervouchine&amp;rft.jtitle=Comptes+rendus+hebdomadaires+des+s%C3%A9ances+de+l%27Acad%C3%A9mie+des+sciences&amp;rft.aulast=%5B%5BErnesto+Ces%C3%A0ro%7CErnest+Ces%C3%A0ro%5D%5D&amp;rft.au=%5B%5BErnesto+Ces%C3%A0ro%7CErnest+Ces%C3%A0ro%5D%5D&amp;rft.date=1894&amp;rft.volume=119&amp;rft.pages=848%E2%80%93849&amp;rft_id=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k30752&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span> <span class="languageicon" style="font-size:0.95em; font-weight:bold; color:#555;">(French)</span></li>
+<li id="cite_note-20"><b><a href="#cite_ref-20">^</a></b> <span class="citation book"><a href="/wiki/Eric_Bach" title="Eric Bach">Eric Bach</a>, <a href="/wiki/Jeffrey_Shallit" title="Jeffrey Shallit">Jeffrey Shallit</a> (1996). <i>Algorithmic Number Theory</i>. <b>1</b>. MIT Press. p.&#160;233. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-262-02405-5" title="Special:BookSources/0-262-02405-5">0-262-02405-5</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Algorithmic+Number+Theory&amp;rft.aulast=%5B%5BEric+Bach%5D%5D%2C+%5B%5BJeffrey+Shallit%5D%5D&amp;rft.au=%5B%5BEric+Bach%5D%5D%2C+%5B%5BJeffrey+Shallit%5D%5D&amp;rft.date=1996&amp;rft.volume=1&amp;rft.pages=p.%26nbsp%3B233&amp;rft.pub=MIT+Press&amp;rft.isbn=0-262-02405-5&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-21"><b><a href="#cite_ref-21">^</a></b> <span class="citation Journal"><a href="/wiki/Pierre_Dusart" title="Pierre Dusart">Pierre Dusart</a> (1999). <a href="http://www.ams.org/mcom/1999-68-225/S0025-5718-99-01037-6/S0025-5718-99-01037-6.pdf" class="external text" rel="nofollow">"The <i>k</i>th prime is greater than <i>k(ln k + ln ln k-1)</i> for <i>k</i>&gt;=2"</a>. <i>Mathematics of Computation</i> <b>68</b>: 411–415<span class="printonly">. <a href="http://www.ams.org/mcom/1999-68-225/S0025-5718-99-01037-6/S0025-5718-99-01037-6.pdf" class="external free" rel="nofollow">http://www.ams.org/mcom/1999-68-225/S0025-5718-99-01037-6/S0025-5718-99-01037-6.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+%27%27k%27%27th+prime+is+greater+than+%27%27k%28ln+k+%2B+ln+ln+k-1%29%27%27+for+%27%27k%27%27%3E%3D2&amp;rft.jtitle=Mathematics+of+Computation&amp;rft.aulast=%5B%5BPierre+Dusart%5D%5D&amp;rft.au=%5B%5BPierre+Dusart%5D%5D&amp;rft.date=1999&amp;rft.volume=68&amp;rft.pages=411%E2%80%93415&amp;rft_id=http%3A%2F%2Fwww.ams.org%2Fmcom%2F1999-68-225%2FS0025-5718-99-01037-6%2FS0025-5718-99-01037-6.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-22"><b><a href="#cite_ref-22">^</a></b> <a href="http://oeis.org/A006880" class="external text" rel="nofollow">A006880</a></li>
+<li id="cite_note-23"><b><a href="#cite_ref-23">^</a></b> <a href="http://oeis.org/A057835" class="external text" rel="nofollow">A057835</a></li>
+<li id="cite_note-24"><b><a href="#cite_ref-24">^</a></b> <a href="http://oeis.org/A057752" class="external text" rel="nofollow">A057752</a></li>
+</ol>
+</div>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=15" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<ul>
+<li><span class="citation Journal">Hardy, G. H.; Littlewood, J. E. (1916). "Contributions to the Theory of the Riemann Zeta-Function and the Theory of the Distribution of Primes". <i>Acta Mathematica</i> <b>41</b>: 119–196. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2FBF02422942" class="external text" rel="nofollow">10.1007/BF02422942</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Contributions+to+the+Theory+of+the+Riemann+Zeta-Function+and+the+Theory+of+the+Distribution+of+Primes&amp;rft.jtitle=Acta+Mathematica&amp;rft.aulast=Hardy&amp;rft.aufirst=G.+H.&amp;rft.au=Hardy%2C%26%2332%3BG.+H.&amp;rft.au=Littlewood%2C%26%2332%3BJ.+E.&amp;rft.date=1916&amp;rft.volume=41&amp;rft.pages=119%E2%80%93196&amp;rft_id=info:doi/10.1007%2FBF02422942&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+<li><span class="citation Journal">Granville, Andrew (1995). <a href="http://www.dartmouth.edu/~chance/chance_news/for_chance_news/Riemann/cramer.pdf" class="external text" rel="nofollow">"Harald Cramér and the distribution of prime numbers"</a>. <i>Scandinavian Actuarial Journal</i> <b>1</b>: 12–28<span class="printonly">. <a href="http://www.dartmouth.edu/~chance/chance_news/for_chance_news/Riemann/cramer.pdf" class="external free" rel="nofollow">http://www.dartmouth.edu/~chance/chance_news/for_chance_news/Riemann/cramer.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Harald+Cram%C3%A9r+and+the+distribution+of+prime+numbers&amp;rft.jtitle=Scandinavian+Actuarial+Journal&amp;rft.aulast=Granville&amp;rft.aufirst=Andrew&amp;rft.au=Granville%2C%26%2332%3BAndrew&amp;rft.date=1995&amp;rft.volume=1&amp;rft.pages=12%E2%80%9328&amp;rft_id=http%3A%2F%2Fwww.dartmouth.edu%2F%7Echance%2Fchance_news%2Ffor_chance_news%2FRiemann%2Fcramer.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Prime_number_theorem"><span style="display: none;">&#160;</span></span></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Prime_number_theorem&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a href="http://www.scs.uiuc.edu/~mainzv/exhibitmath/exhibit/felkel.htm" class="external text" rel="nofollow">Table of Primes by Anton Felkel</a>.</li>
+<li><a href="http://mathworld.wolfram.com/PrimeFormulas.html" class="external text" rel="nofollow">Prime formulas</a> and <a href="http://mathworld.wolfram.com/PrimeNumberTheorem.html" class="external text" rel="nofollow">Prime number theorem</a> at <a href="/wiki/MathWorld" title="MathWorld">MathWorld</a>.</li>
+<li><a href="http://planetmath.org/?op=getobj&amp;from=objects&amp;id=199" class="external text" rel="nofollow">Prime number theorem</a> on <a href="/wiki/PlanetMath" title="PlanetMath">PlanetMath</a></li>
+<li><a href="http://primes.utm.edu/howmany.shtml" class="external text" rel="nofollow">How Many Primes Are There?</a> and <a href="http://primes.utm.edu/notes/gaps.html" class="external text" rel="nofollow">The Gaps between Primes</a> by Chris Caldwell, <a href="/wiki/University_of_Tennessee_at_Martin" title="University of Tennessee at Martin">University of Tennessee at Martin</a>.</li>
+<li><a href="http://www.ieeta.pt/~tos/primes.html" class="external text" rel="nofollow">Tables of prime-counting functions</a> by Tomás Oliveira e Silva</li>
+</ul>
+<p><span id="interwiki-sl-fa"></span></p>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 14028/1000000
+Post-expand include size: 103011/2048000 bytes
+Template argument size: 30705/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:23692-0!1!0!default!!en!4 and timestamp 20101221222437 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Prime_number_theorem">http://en.wikipedia.org/wiki/Prime_number_theorem</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="/wiki/Category:Analytic_number_theory" title="Category:Analytic number theory">Analytic number theory</a></span> | <span dir='ltr'><a href="/wiki/Category:Mathematical_theorems" title="Category:Mathematical theorems">Mathematical theorems</a></span> | <span dir='ltr'><a href="/wiki/Category:Prime_numbers" title="Category:Prime numbers">Prime numbers</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Prime_number_theorem" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/wiki/Prime_number_theorem"  title="View the content page [c]" accesskey="c"><span>Article</span></a></li>
+					<li  id="ca-talk"><a href="/wiki/Talk:Prime_number_theorem"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/Prime_number_theorem" ><span>Read</span></a></li>
+					<li id="ca-edit"><a href="/w/index.php?title=Prime_number_theorem&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=Prime_number_theorem&amp;action=history"  title="Past versions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search Wikipedia [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search Wikipedia for this text"><img src="http://bits.wikimedia.org/skins-1.5/vector/images/search-ltr.png?283-17" alt="Search" /></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA1&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB001" title="Support us">Donate to Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+					<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Prime_number_theorem" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Prime_number_theorem" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="/w/index.php?title=Prime_number_theorem&amp;oldid=403605926" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Prime_number_theorem&amp;id=403605926" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Prime+number+theorem" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Prime+number+theorem&amp;oldid=403605926&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Prime_number_theorem&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D9%85%D8%A8%D8%B1%D9%87%D9%86%D8%A9_%D8%A7%D9%84%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF_%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%8A%D8%A9" title="مبرهنة الأعداد الأولية">العربية</a></li>
+					<li class="interwiki-bn"><a href="http://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A7%8C%E0%A6%B2%E0%A6%BF%E0%A6%95_%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE_%E0%A6%89%E0%A6%AA%E0%A6%AA%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%AF" title="মৌলিক সংখ্যা উপপাদ্য">বাংলা</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Prvo%C4%8D%C3%ADseln%C3%A1_v%C4%9Bta" title="Prvočíselná věta">Česky</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Primzahlsatz" title="Primzahlsatz">Deutsch</a></li>
+					<li class="interwiki-el"><a href="http://el.wikipedia.org/wiki/%CE%98%CE%B5%CF%8E%CF%81%CE%B7%CE%BC%CE%B1_%CF%80%CF%81%CF%8E%CF%84%CF%89%CE%BD_%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CF%8E%CE%BD" title="Θεώρημα πρώτων αριθμών">Ελληνικά</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Teorema_de_los_n%C3%BAmeros_primos" title="Teorema de los números primos">Español</a></li>
+					<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Prima_teoremo" title="Prima teoremo">Esperanto</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_nombres_premiers" title="Théorème des nombres premiers">Français</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EC%86%8C%EC%88%98_%EC%A0%95%EB%A6%AC" title="소수 정리">한국어</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Teorema_dei_numeri_primi" title="Teorema dei numeri primi">Italiano</a></li>
+					<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%A4%D7%98_%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D_%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D" title="משפט המספרים הראשוניים">עברית</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Pr%C3%ADmsz%C3%A1mt%C3%A9tel" title="Prímszámtétel">Magyar</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Priemgetalstelling" title="Priemgetalstelling">Nederlands</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0%E5%AE%9A%E7%90%86" title="素数定理">日本語</a></li>
+					<li class="interwiki-pms"><a href="http://pms.wikipedia.org/wiki/Teorema_dij_n%C3%B9mer_prim" title="Teorema dij nùmer prim">Piemontèis</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Liczba_pierwsza#Twierdzenie_o_liczbach_pierwszych" title="Liczba pierwsza">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Teorema_do_n%C3%BAmero_primo" title="Teorema do número primo">Português</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Teorema_numerelor_prime" title="Teorema numerelor prime">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BE_%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D1%85_%D1%87%D0%B8%D1%81%D0%B5%D0%BB" title="Теорема о распределении простых чисел">Русский</a></li>
+					<li class="interwiki-scn"><a href="http://scn.wikipedia.org/wiki/Tiurema_d%C3%AE_n%C3%B9mmura_primi" title="Tiurema dî nùmmura primi">Sicilianu</a></li>
+					<li class="interwiki-sl"><a href="http://sl.wikipedia.org/wiki/Pra%C5%A1tevilski_izrek" title="Praštevilski izrek">Slovenščina</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Alkulukulause" title="Alkulukulause">Suomi</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Primtalssatsen" title="Primtalssatsen">Svenska</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BF%D1%80%D0%BE_%D1%80%D0%BE%D0%B7%D0%BF%D0%BE%D0%B4%D1%96%D0%BB_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B8%D1%85_%D1%87%D0%B8%D1%81%D0%B5%D0%BB" title="Теорема про розподіл простих чисел">Українська</a></li>
+					<li class="interwiki-vo"><a href="http://vo.wikipedia.org/wiki/Primanumaleset" title="Primanumaleset">Volapük</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B8%E5%AE%9A%E7%90%86" title="素數定理">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 21 December 2010 at 22:23.<br /></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.5/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- Served by srv280 in 2.268 secs. -->			</body>
+</html>

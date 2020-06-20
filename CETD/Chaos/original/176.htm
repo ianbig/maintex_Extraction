@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var a=window;function c(b){this.t={};this.tick=function(d,i,e){e=e?e:(new Date).getTime();this.t[d]=[e,i]};this.tick("start",null,b)}var f=new c;a.jstiming={Timer:c,load:f};try{var g=null;if(a.chrome&&a.chrome.csi)g=Math.floor(a.chrome.csi().pageT);if(g==null)if(a.gtbExternal)g=a.gtbExternal.pageT();if(g==null)if(a.external)g=a.external.pageT;if(g)a.jstiming.pt=g}catch(h){};a.tickAboveFold=function(b){b=b;var d=0;if(b.offsetParent){do d+=b.offsetTop;while(b=b.offsetParent)}b=d;b<=750&&a.jstiming.load.tick("aft")};var j=false;function k(){if(!j){j=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",k,false):a.attachEvent("onscroll",k);
+ })();</script>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='blogger' name='generator'/>
+<link href='http://www.blogger.com/favicon.ico' rel='icon' type='image/vnd.microsoft.icon'/>
+<link href='http://blog.chromium.org/2010/12/year-of-extensions.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Chromium Blog - Atom" href="http://blog.chromium.org/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Chromium Blog - RSS" href="http://blog.chromium.org/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Chromium Blog - Atom" href="http://www.blogger.com/feeds/2471378914199150966/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=2471378914199150966" />
+<link rel="alternate" type="application/atom+xml" title="Chromium Blog - Atom" href="http://blog.chromium.org/feeds/8862013149840248017/comments/default" />
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } })(); </script> <![endif]-->
+<title>Chromium Blog: A Year of Extensions</title>
+<link href='http://www.google.com/uds/css/gsearch.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/uds/css/gsearch_darkgrey.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/css/gooey.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/googleblogs/css/template_styles.css' rel='stylesheet' type='text/css'/>
+<link type='text/css' rel='stylesheet' href='http://www.blogger.com/static/v1/widgets/1743847221-widget_css_bundle.css' />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=2471378914199150966&zx=8391aceb-b60e-42c5-ab5a-80e55991a030"/>
+<style type="text/css">#navbar-iframe { display:block }
+</style>
+
+<style id='page-skin-1' type='text/css'><!--
+/*
+/* custom header */
+.template_white h2, .template_white .post h3 a {color:#182E5F;}
+.template_white .post h3 a:hover  {color:#182E5F;}
+#template_fixed #footer-graphic {text-align:center; align:center; width:750px; margin-left:auto; margin-right:auto;}
+.template_white #footer-graphic {background-color:#fff; border-color:#4F94EA;}
+.header_img {margin-bottom:2em; margin-top:0; padding-top:0;}
+
+--></style>
+<script src='http://www.google.com/uds/api?file=uds.js&v=1.0&key=ABQIAAAA_YJR13Pfd1DLDQs4kgKbQxTxAb0xtwQQCqJhhTH0tdrRSrWJ4RR2PabXite0o1TcEPO2djBsg9GdFg' type='text/javascript'></script>
+<script language='Javascript' type='text/javascript'>
+var blogURL='http://blog.chromium.org/2010/12/year-of-extensions.html';
+ //<![CDATA[
+	 var coreSearch;
+
+
+    function SolutionLoad() {
+     var controlRoot = document.getElementById("searchControl");
+
+    // create the search control
+    coreSearch = new GSearchControl();
+    coreSearch.setLinkTarget(GSearch.LINK_TARGET_SELF);
+    coreSearch.setResultSetSize(GSearch.LARGE_RESULTSET);
+
+    // prep for decoupled search form
+    var searchFormElement = document.getElementById("searchform");
+    var drawOptions = new GdrawOptions();
+    drawOptions.setSearchFormRoot(searchFormElement);
+    drawOptions.setDrawMode(GSearchControl.DRAW_MODE_TABBED);
+  
+    // populate - web, this blog, all blogs
+    searcher = new GblogSearch();
+    searcher.setSiteRestriction(blogURL);
+    searcher.setUserDefinedLabel('This Blog');
+    coreSearch.addSearcher(searcher);
+ 
+    var searcher = new GwebSearch();
+    searcher.setUserDefinedLabel('');
+    coreSearch.addSearcher(searcher);
+
+    searcher = new GblogSearch();
+    searcher.setUserDefinedLabel('All Blogs');
+    coreSearch.addSearcher(searcher);
+
+
+    coreSearch.draw(controlRoot, drawOptions);
+    var submitBtn = (document.getElementById('searchform').getElementsByTagName('input'))[1];
+    submitBtn.onclick = clearPosts;
+    }
+
+
+function clearPosts() {
+ var main = document.getElementById('main-wrapper');
+ var posts = document.getElementById('post-wrapper');
+ posts.style.display='none';
+}
+
+  function registerLoadHandler(handler) {
+      //var node = window;
+      alert(document.getElementById('searchform'));
+      var node = (window.document.getElementById('searchform').getElementsByTagName("input"))[2];
+
+      if (node.addEventListener) {
+        node.addEventListener("onClick", handler, false);
+      } else if (node.attachEvent) {
+        node.attachEvent("onClick", handler);
+      } else {
+        node['onClick'] = handler;
+      }
+      return true;
+    }
+
+    //]]>
+</script>
+<script type='text/javascript'>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1870203-59']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=2471378914199150966&amp;blogName=Chromium+Blog&amp;publishMode=PUBLISH_MODE_HOSTED&amp;navbarType=SILVER&amp;layoutType=LAYOUTS&amp;searchRoot=http%3A%2F%2Fblog.chromium.org%2Fsearch&amp;blogLocale=en&amp;homepageUrl=http%3A%2F%2Fblog.chromium.org%2F&amp;targetPostID=8862013149840248017" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe>
+<div></div></div></div>
+<div class='template_white' id='template_fixed'>
+<div id='main-wrapper'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<a href='http://blog.chromium.org/' style='text-decoration:none;'>
+<img class='header_img' src='http://google.com/googleblogs/images/headers/chromium_header_full.png'/>
+</a>
+<br style='clear:both;'/>
+<div id='content-wrapper'>
+<div id='sidebar'>
+<div class='sidebar section' id='sidebar'><div class='widget HTML' id='HTML2'>
+<h2 class='small'>Search our Blog</h2>
+<div class='widget-content'>
+<div id='searchform'></div>
+</div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2 class='small'>Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<select id='BlogArchive1_ArchiveMenu'>
+<option value='http://blog.chromium.org/2010_12_01_archive.html'>December (6)</option>
+<option value='http://blog.chromium.org/2010_11_01_archive.html'>November (2)</option>
+<option value='http://blog.chromium.org/2010_10_01_archive.html'>October (2)</option>
+<option value='http://blog.chromium.org/2010_09_01_archive.html'>September (9)</option>
+<option value='http://blog.chromium.org/2010_08_01_archive.html'>August (7)</option>
+<option value='http://blog.chromium.org/2010_07_01_archive.html'>July (3)</option>
+<option value='http://blog.chromium.org/2010_06_01_archive.html'>June (13)</option>
+<option value='http://blog.chromium.org/2010_05_01_archive.html'>May (10)</option>
+<option value='http://blog.chromium.org/2010_04_01_archive.html'>April (3)</option>
+<option value='http://blog.chromium.org/2010_03_01_archive.html'>March (7)</option>
+<option value='http://blog.chromium.org/2010_02_01_archive.html'>February (3)</option>
+<option value='http://blog.chromium.org/2010_01_01_archive.html'>January (5)</option>
+<option value='http://blog.chromium.org/2009_12_01_archive.html'>December (11)</option>
+<option value='http://blog.chromium.org/2009_11_01_archive.html'>November (4)</option>
+<option value='http://blog.chromium.org/2009_09_01_archive.html'>September (3)</option>
+<option value='http://blog.chromium.org/2009_08_01_archive.html'>August (3)</option>
+<option value='http://blog.chromium.org/2009_07_01_archive.html'>July (2)</option>
+<option value='http://blog.chromium.org/2009_06_01_archive.html'>June (7)</option>
+<option value='http://blog.chromium.org/2009_05_01_archive.html'>May (2)</option>
+<option value='http://blog.chromium.org/2009_04_01_archive.html'>April (2)</option>
+<option value='http://blog.chromium.org/2009_03_01_archive.html'>March (2)</option>
+<option value='http://blog.chromium.org/2009_02_01_archive.html'>February (3)</option>
+<option value='http://blog.chromium.org/2009_01_01_archive.html'>January (5)</option>
+<option value='http://blog.chromium.org/2008_12_01_archive.html'>December (4)</option>
+<option value='http://blog.chromium.org/2008_11_01_archive.html'>November (2)</option>
+<option value='http://blog.chromium.org/2008_10_01_archive.html'>October (7)</option>
+<option value='http://blog.chromium.org/2008_09_01_archive.html'>September (8)</option>
+</select>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2471378914199150966&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML1'>
+<h2 class='title'>Subscribe</h2>
+<div class='widget-content'>
+<p style="font-size:12px;"><a href="http://blog.chromium.org/feeds/posts/default" rel="alternate" type="application/rss+xml"><img alt="" style="vertical-align:middle;border:0; padding-right:5px;" src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png"/></a>&nbsp;<a href="http://blog.chromium.org/feeds/posts/default" rel="alternate" type="application/rss+xml">RSS Feed</a></p>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2471378914199150966&widgetType=HTML&widgetId=HTML1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML3'>
+<h2 class='title'>More Blogs from Google</h2>
+<div class='widget-content'>
+Visit our <a href="http://www.google.com/press/blogs/directory.html#tab0"> directory</a> for more information about Google blogs.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2471378914199150966&widgetType=HTML&widgetId=HTML3&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget LinkList' id='LinkList2'>
+<h2>Useful links</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://www.chromium.org/'>Chromium Homepage</a></li>
+<li><a href='http://www.google.com/chrome'>Google Chrome</a></li>
+<li><a href='http://googlechromereleases.blogspot.com/'>Google Chrome Release Notes</a></li>
+<li><a href='http://google-opensource.blogspot.com/'>Google Open Source Blog.</a></li>
+<li><a href='http://google-code-updates.blogspot.com/'>Google Code Blog</a></li>
+<li><a href='http://webkit.org/blog/'>WebKit Blog</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2471378914199150966&widgetType=LinkList&widgetId=LinkList2&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList2"));' target='configLinkList2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML7'>
+<div class='widget-content'>
+<a href='http://www.blogger.com'><img alt='Powered By Blogger' src='http://www.blogger.com/buttons/blogger-powerby-blue.gif'/></a>
+</div>
+</div></div>
+</div>
+<div id='main-content'>
+<div class='main section' id='main'><div class='widget HTML' id='HTML8'>
+<div id='searchControl'></div>
+</div><div class='widget Blog' id='Blog1'>
+<div id='post-wrapper'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start -->
+<div class='post'>
+<a name='8862013149840248017'></a>
+<h3>
+<a href='http://blog.chromium.org/2010/12/year-of-extensions.html'>A Year of Extensions</a>
+</h3>
+<p class='post-subhead'>
+Thursday, December 09, 2010
+</p>
+<p class='post-subhead'>
+Labels:
+<a href='http://blog.chromium.org/search/label/extensions' rel='tag'>extensions</a>
+</p>
+<div class='post-body'>
+<p>It&#8217;s hard to believe, but it&#8217;s already been a full year since we launched the Google Chrome extensions gallery.<br /><br />It&#8217;s been a busy twelve months:<br /><ul><li>The gallery has grown to over 8,500 extensions and 1,500 themes.</li><li>A third of Chrome users have at least one extension installed.</li><li>Over 70 million extensions and themes have been installed.</li></ul>On the client side, we added features like:<br /><ul><li>New APIs for things like <a href="http://code.google.com/chrome/extensions/contextMenus.html">context menus</a>, <a href="http://code.google.com/chrome/extensions/history.html">history</a>, and <a href="http://code.google.com/chrome/extensions/cookies.html">cookies</a>.</li><li>Integration between extensions and HTML5 features like <a href="http://code.google.com/chrome/extensions/notifications.html">notifications</a> and <a href="http://code.google.com/chrome/extensions/manifest.html#geolocation">geolocation</a>.</li><li>Extension sync, so your favorite extensions are always with you.</li><li>Native support for Greasemonkey <a href="http://blog.chromium.org/2010/02/40000-more-extensions.html">user scripts</a>.</li></ul>Looking forward, we&#8217;re very excited about the <a href="http://chrome.google.com/webstore">Chrome Web Store</a>, where developers will be able to easily sell their apps, extensions, and themes.<br /><br />And we&#8217;re not going to slow down on the features, either. The next Chrome release will add API support for the <a href="http://code.google.com/chrome/extensions/dev/omnibox.html">omnibox</a> and <a href="http://code.google.com/chrome/extensions/dev/tabs.html#type-Tab">pinned tabs</a>. Beyond that, we&#8217;re hard at work on popular requests like <a href="http://code.google.com/chrome/extensions/trunk/experimental.webRequest.html">network interception</a> and download management APIs, as well as new experimental APIs for <a href="http://code.google.com/chrome/extensions/trunk/experimental.sidebar.html">sidebars</a> and development tools.<br /><br />Thanks for all your support over the last year, from bug reports to testing new APIs. It&#8217;s been a bit frantic at times, but mostly it&#8217;s been fun.<br /><br /><font class="post-author">Posted by Aaron Boodman, Software Engineer </font>
+</p>
+</div>
+<div class='post-footer'>
+<p>
+<span class='post-footer-link'>
+</span>
+<span class='post-footer-link'>
+</span>
+<span class='post-footer-link'>
+</span>
+</p>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>
+6
+comments:
+        
+</h4>
+<dl id='comments-block'>
+<dt class='comment-author ' id='c407980830911938529'>
+<a name='c407980830911938529'></a>
+<p>
+<a href='http://www.blogger.com/profile/09341841046543121292' rel='nofollow'>Adi</a>
+said...</p>
+</dt>
+<dd class='comment-body'>
+<p>After today update of Chromium  browser  ( 9.0.597.15 ) I can`t mouse scroll up on any webpage , only down . Please fix it :) Thank you for your very fast browser !</p>
+</dd>
+<dd class='comment-footer'>
+<p class='comment-timestamp'>
+December 10, 2010 7:03 AM
+<span class='item-control blog-admin pid-1365181167'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=2471378914199150966&postID=407980830911938529' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</p>
+</dd>
+<dt class='comment-author ' id='c8449814357942917914'>
+<a name='c8449814357942917914'></a>
+<p>
+<a href='http://www.blogger.com/profile/03912480368462077491' rel='nofollow'>Dave</a>
+said...</p>
+</dt>
+<dd class='comment-body'>
+<p>The scroll issue is known: https://code.google.com/p/chromium/issues/detail?id=66079<br /><br />Last comment is: Thanks for the reports. You can star issue 66071 to be informed about updates - we certainly are aware of the problem and the issue will be fixed within 24 hours.</p>
+</dd>
+<dd class='comment-footer'>
+<p class='comment-timestamp'>
+December 10, 2010 8:46 AM
+<span class='item-control blog-admin pid-1829974645'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=2471378914199150966&postID=8449814357942917914' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</p>
+</dd>
+<dt class='comment-author ' id='c8213470211384174004'>
+<a name='c8213470211384174004'></a>
+<p>
+<a href='http://www.blogger.com/profile/06221630049444852084' rel='nofollow'>MichaelTheGeek</a>
+said...</p>
+</dt>
+<dd class='comment-body'>
+<p>Good news.</p>
+</dd>
+<dd class='comment-footer'>
+<p class='comment-timestamp'>
+December 10, 2010 1:03 PM
+<span class='item-control blog-admin pid-1808013515'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=2471378914199150966&postID=8213470211384174004' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</p>
+</dd>
+<dt class='comment-author ' id='c3310043102587773174'>
+<a name='c3310043102587773174'></a>
+<p>
+<a href='http://www.blogger.com/profile/03764678165451214432' rel='nofollow'>war59312</a>
+said...</p>
+</dt>
+<dd class='comment-body'>
+<p>Chrome web store link of http://www.blogger.com/chrome.google.com/webstore is bad.<br /><br />Should be just https://chrome.google.com/webstore</p>
+</dd>
+<dd class='comment-footer'>
+<p class='comment-timestamp'>
+December 10, 2010 11:01 PM
+<span class='item-control blog-admin pid-1793131606'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=2471378914199150966&postID=3310043102587773174' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</p>
+</dd>
+<dt class='comment-author ' id='c8290065426539977529'>
+<a name='c8290065426539977529'></a>
+<p>
+<a href='http://www.blogger.com/profile/18055153230818546496' rel='nofollow'>~Eve~</a>
+said...</p>
+</dt>
+<dd class='comment-body'>
+<p>Cool! Nice statistics</p>
+</dd>
+<dd class='comment-footer'>
+<p class='comment-timestamp'>
+December 12, 2010 1:48 PM
+<span class='item-control blog-admin pid-481406649'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=2471378914199150966&postID=8290065426539977529' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</p>
+</dd>
+<dt class='comment-author ' id='c2831408090918274383'>
+<a name='c2831408090918274383'></a>
+<p>
+<a href='http://www.blogger.com/profile/09114238735316391538' rel='nofollow'>Spindel</a>
+said...</p>
+</dt>
+<dd class='comment-body'>
+<p>I hope 2011 will be the year of hardware acceleration.</p>
+</dd>
+<dd class='comment-footer'>
+<p class='comment-timestamp'>
+December 13, 2010 3:07 AM
+<span class='item-control blog-admin pid-1479811879'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=2471378914199150966&postID=2831408090918274383' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</p>
+</dd>
+</dl>
+<p class='comment-footer'>
+<a href='https://www.blogger.com/comment.g?blogID=2471378914199150966&postID=8862013149840248017' onclick=''>Post a Comment</a>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'><p>
+<a class='blog-pager-newer-link' href='http://blog.chromium.org/2010/12/break-on-ui-and-network-events-in.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+<a class='blog-pager-older-link' href='http://blog.chromium.org/2010/12/new-crankshaft-for-v8.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+<a class='home-link' href='http://blog.chromium.org/'>Home</a>
+</p>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://blog.chromium.org/feeds/8862013149840248017/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<!-- end content-wrapper -->
+</div>
+<!-- end outer-wrapper -->
+<div id='footer-graphic'>
+<div class='footer section' id='footer'><div class='widget HTML' id='HTML5'>
+<p class='widget-content'>
+  &copy;2008 Google - <a href='http://google.com/intl/en/privacy.html'>Privacy Policy</a> - <a href='http://www.google.com/accounts/TOS?hl=en'>Terms of Service</a>
+</p>
+</div></div>
+</div>
+</div>
+<script language='Javascript' type='text/javascript'>SolutionLoad();</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="http://www.blogger.com/static/v1/widgets/512629240-widgets.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '2471378914199150966';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=2471378914199150966','http://blog.chromium.org/2010/12/year-of-extensions.html','2471378914199150966');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=2471378914199150966','FcQ27DXq4SHKjKz_sRtM1ymORXk:1293725358038','AOuZoY47Dtj8Dep1altVq4GTa1abYGSIQQ:1293725358038');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Chromium Blog', 'pageType': 'item', 'url': 'http://blog.chromium.org/2010/12/year-of-extensions.html', 'canonicalUrl': 'http://blog.chromium.org/2010/12/year-of-extensions.html', 'homepageUrl': 'http://blog.chromium.org/', 'enabledCommentProfileImages': true, 'searchLabel': '', 'searchQuery': '', 'pageName': 'A Year of Extensions', 'pageTitle': 'Chromium Blog: A Year of Extensions', 'encoding': 'UTF-8', 'locale': 'en', 'isPrivate': false, 'isMobile': false, 'mobileClass': '', 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Chromium Blog - Atom\42 href\75\42http://blog.chromium.org/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Chromium Blog - RSS\42 href\75\42http://blog.chromium.org/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Chromium Blog - Atom\42 href\75\42http://www.blogger.com/feeds/2471378914199150966/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\0752471378914199150966\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Chromium Blog - Atom\42 href\75\42http://blog.chromium.org/feeds/8862013149840248017/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function c(b){this.t\75{};this.tick\75function(d,i,e){e\75e?e:(new Date).getTime();this.t[d]\75[e,i]};this.tick(\42start\42,null,b)}var f\75new c;a.jstiming\75{Timer:c,load:f};try{var g\75null;if(a.chrome\46\46a.chrome.csi)g\75Math.floor(a.chrome.csi().pageT);if(g\75\75null)if(a.gtbExternal)g\75a.gtbExternal.pageT();if(g\75\75null)if(a.external)g\75a.external.pageT;if(g)a.jstiming.pt\75g}catch(h){};a.tickAboveFold\75function(b){b\75b;var d\0750;if(b.offsetParent){do d+\75b.offsetTop;while(b\75b.offsetParent)}b\75d;b\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var j\75false;function k(){if(!j){j\75true;a.jstiming.load.tick(\42firstScrollTime\42)}}a.addEventListener?a.addEventListener(\42scroll\42,k,false):a.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': ''}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'footer', null, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'sidebar', null, document.getElementById('LinkList2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML7', 'sidebar', null, document.getElementById('HTML7'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML8', 'main', null, document.getElementById('HTML8'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'commentInteractionIframeUrl': 'http://www.blogger.com/comment-interaction-iframe.g?blogId\0752471378914199150966', 'mobile': false}, 'displayModeFull'));
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+﻿
+Chloroplast
+
+
+The simplified internal structure of a chloroplast
+Chloroplasts are organelles found in plant cells and other eukaryotic organisms that conduct photosynthesis. Chloroplasts capture light energy to conserve free energy in the form of ATP and reduce NADP to NADPH through a complex set of processes called photosynthesis.[1]
+The word chloroplast (χλωροπλάσ69ς) is derived from the Greek words chloros (χλωρός), which means green, and plastis (πλάστης), which means "the one who forms". Chloroplasts are members of a class of organelles known as plastids.
+Contents [hide]
+1 Evolutionary origin
+2 Structure
+3 Transplastomic plants
+4 See also
+5 Notes
+6 References
+7 External links
+[edit]Evolutionary origin
+
+
+
+Chloroplasts visible in the cells of Plagiomnium affine — Many-fruited Thyme-moss
+
+
+A model chloroplast
+Chloroplasts are one of the many different types of organelles in the plant cell. In general, they are considered to have originated from cyanobacteria through endosymbiosis. This was first suggested by Mereschkowsky in 1905[2] after an observation by Schimper in 1883 that chloroplasts closely resemble cyanobacteria.[3] All chloroplasts are thought to derive directly or indirectly from a single endosymbiotic event (in the Archaeplastida), except for Paulinella chromatophora, which has recently acquired a photosynthetic cyanobacterial endosymbiont which is not closely related to chloroplasts of other eukaryotes.[4] In that they derive from an endosymbiotic event, chloroplasts are similar to mitochondria, but chloroplasts are found only in plants and protista. The chloroplast is surrounded by a double-layered composite membrane with an intermembrane space; further, it has reticulations, or many infoldings, filling the inner spaces. The chloroplast has its own DNA,[5] which codes for redox proteins involved in electron transport in photosynthesis; this is termed the plastome.[6]
+In green plants, chloroplasts are surrounded by two lipid-bilayer membranes. They are believed to correspond to the outer and inner membranes of the ancestral cyanobacterium.[7] Chloroplasts have their own genome, which is considerably reduced compared to that of free-living cyanobacteria, but the parts that are still present show clear similarities with the cyanobacterial genome. Plastids may contain 60-100 genes whereas cyanobacteria often contain more than 1500 genes.[8] Many of the missing genes are encoded in the nuclear genome of the host. The transfer of nuclear information has been estimated in tobacco plants at one gene for every 16000 pollen grains.[9]
+In some algae (such as the heterokonts and other protists such as Euglenozoa and Cercozoa), chloroplasts seem to have evolved through a secondary event of endosymbiosis, in which a eukaryotic cell engulfed a second eukaryotic cell containing chloroplasts, forming chloroplasts with three or four membrane layers. In some cases, such secondary endosymbionts may have themselves been engulfed by still other eukaryotes, thus forming tertiary endosymbionts. In the alga Chlorella, there is only one chloroplast, which is bell-shaped.
+In some groups of mixotrophic protists such as the dinoflagellates, chloroplasts are separated from a captured alga or diatom and used temporarily. These klepto chloroplasts may only have a lifetime of a few days and are then replaced.[10]
+[edit]Structure
+
+Chloroplasts are observable as flat discs usually 2 to 10 micrometers in diameter and 1 micrometer thick. In land plants, they are, in general, 5 μm in diameter and 2.3 μm thick. The chloroplast is contained by an envelope that consists of an inner and an outer phospholipid membrane. Between these two layers is the intermembrane space. A typical parenchyma cell contains about 10 to 100 chloroplasts.
+
+
+Chloroplast ultrastructure:
+1. outer membrane
+2. intermembrane space
+3. inner membrane (1+2+3: envelope)
+4. stroma (aqueous fluid)
+5. thylakoid lumen (inside of thylakoid)
+6. thylakoid membrane
+7. granum (stack of thylakoids)
+8. thylakoid (lamella)
+9. starch
+10. ribosome
+11. plastidial DNA
+12. plastoglobule (drop of lipids)
+The material within the chloroplast is called the stroma, corresponding to the cytosol of the original bacterium, and contains one or more molecules of small circular DNA. It also contains ribosomes; however most of its proteins are encoded by genes contained in the host cell nucleus, with the protein products transported to the chloroplast.
+
+
+TEM image of a chloroplast
+Within the stroma are stacks of thylakoids, the sub-organelles, which are the site of photosynthesis. The thylakoids are arranged in stacks called grana (singular: granum).[1] A thylakoid has a flattened disk shape. Inside it is an empty area called the thylakoid space or lumen. Photosynthesis takes place on the thylakoid membrane; as in mitochondrial oxidative phosphorylation, it involves the coupling of cross-membrane fluxes with biosynthesis via the dissipation of a proton electrochemical gradient.
+In the electron microscope, thylakoid membranes appear as alternating light-and-dark bands, each 0.01 μm thick. Embedded in the thylakoid membrane are antenna complexes, each of which consists of the light-absorbing pigments, including chlorophyll and carotenoids, as well as proteins that bind the pigments. This complex both increases the surface area for light capture, and allows capture of photons with a wider range of wavelengths. The energy of the incident photons is absorbed by the pigments and funneled to the reaction centre of this complex through resonance energy transfer. Two chlorophyll molecules are then ionised, producing an excited electron, which then passes onto the photochemical reaction centre.
+Recent studies have shown that chloroplasts can be interconnected by tubular bridges called stromules, formed as extensions of their outer membranes.[11][12] Chloroplasts appear to be able to exchange proteins via stromules,[13] and thus function as a network.
+[edit]Transplastomic plants
+
+Recently, chloroplasts have caught attention by developers of genetically modified plants. In most flowering plants, chloroplasts are not inherited from the male parent,[14][15] although in plants such as pines, chloroplasts are inherited from males.[16] Where chloroplasts are inherited only from the female, transgenes in these plastids cannot be disseminated by pollen. This makes plastid transformation a valuable tool for the creation and cultivation of genetically modified plants that are biologically contained, thus posing significantly lower environmental risks. This biological containment strategy is therefore suitable for establishing the coexistence of conventional and organic agriculture. While the reliability of this mechanism has not yet been studied for all relevant crop species, recent results in tobacco plants are promising, showing a failed containment rate of transplastomic plants at 3 in 1,000,000.[15]
+[edit]See also
+
+Chloroplast membrane
+Inner membrane
+Outer membrane
+Calvin cycle
+Light-dependent reaction
+Light-independent reactions
+Mitochondria
+Hydrogenosome
+CoRR Hypothesis
+[edit]Notes
+
+ This article incorporates public domain material from the NCBI document "Science Primer".
+
+[edit]References
+
+^ a b Campbell, Neil A.; Brad Williamson; Robin J. Heyden (2006). Biology: Exploring Life. Boston, Massachusetts: Pearson Prentice Hall. ISBN 978-0-13-250882-7. http://www.phschool.com/el_marketing.html.
+^ Mereschkowsky C (1905). "Über Natur und Ursprung der Chromatophoren im Pflanzenreiche". Biol Centralbl 25: 593–604.
+^ Schimper AFW (1883). "Über die Entwicklung der Chlorophyllkörner und Farbkörper". Bot. Zeitung 41: 105–14, 121–31, 137–46, 153–62.
+^ Patrick J. Keeling (2004). "Diversity and evolutionary history of plastids and their hosts". American Journal of Botany 91: 1481–1493. doi:10.3732/ajb.91.10.1481. http://www.amjbot.org/cgi/content/full/91/10/z1481.[dead link]
+^ C.Michael Hogan. 2010. Deoxyribonucleic acid. Encyclopedia of Earth. National Council for Science and the Environment. eds. S.Draggan and C.Cleveland. Washington DC
+^ Krause K (September 2008). "From chloroplasts to "cryptic" plastids: evolution of plastid genomes in parasitic plants". Curr. Genet. 54 (3): 111–21. doi:10.1007/s00294-008-0208-8. PMID 18696071.
+^ Joyard J Block MA, Douce R (1991). "Molecular aspects of plastid envelope biochemistry.". Eur J Biochem. 199 (3): 489–509. doi:10.1111/j.1432-1033.1991.tb16148.x. PMID 1868841.
+^ Martin W, Rujan T, Richly E (September 2002). "Evolutionary analysis of Arabidopsis, cyanobacterial, and chloroplast genomes reveals plastid phylogeny and thousands of cyanobacterial genes in the nucleus". Proc. Natl. Acad. Sci. U.S.A. 99 (19): 12246–51. doi:10.1073/pnas.182432999. PMID 12218172. PMC 129430. Archived from the original on 2010-11-18. http://www.webcitation.org/5uKjjsvvn.
+^ Huang CY, Ayliffe MA, Timmis JN (March 2003). "Direct measurement of the transfer rate of chloroplast DNA into the nucleus". Nature 422 (6927): 72–6. doi:10.1038/nature01435. PMID 12594458.
+^ Skovgaard A (1998). "Role of chloroplast retention in a marine dinoflagellate". Aquatic Microbial Ecology 15: 293–301. doi:10.3354/ame015293. Archived from the original on 2010-11-18. http://www.webcitation.org/5uKjjzB0M.
+^ Köhler RH, Hanson MR (1 January 2000). "Plastid tubules of higher plants are tissue-specific and developmentally regulated". J. Cell. Sci. 113 (Pt 1): 81–9. PMID 10591627. Archived from the original on 2010-11-18. http://www.webcitation.org/5uKjkRKBB.
+^ Gray JC, Sullivan JA, Hibberd JM, Hansen MR (2001). "Stromules: mobile protrusions and interconnections between plastids". Plant Biology 3: 223–33. doi:10.1055/s-2001-15204.
+^ Köhler RH, Cao J, Zipfel WR, Webb WW, Hanson MR (June 1997). "Exchange of protein molecules through connections between higher plant plastids". Science (journal) 276 (5321): 2039–42. PMID 9197266. Archived from the original on 2010-11-18. http://www.webcitation.org/5uKjlSNJo.
+^ Stegemann S, Hartmann S, Ruf S, Bock R (July 2003). "High-frequency gene transfer from the chloroplast genome to the nucleus". Proc. Natl. Acad. Sci. U.S.A. 100 (15): 8828–33. doi:10.1073/pnas.1430924100. PMID 12817081. PMC 166398. Archived from the original on 2010-11-18. http://www.webcitation.org/5uKjlpWlQ. "most angiosperm species inherit their chloroplasts maternally".
+^ a b Ruf S, Karcher D, Bock R (April 2007). "Determining the transgene containment level provided by chloroplast transformation". Proc. Natl. Acad. Sci. U.S.A. 104 (17): 6998–7002. doi:10.1073/pnas.0700008104. PMID 17420459. PMC 1849964. Archived from the original on 2010-11-18. http://www.webcitation.org/5uKjn7jeI.
+^ Powell W, Morgante M, McDevitt R, Vendramin GG, Rafalski JA (August 1995). "Polymorphic simple sequence repeat regions in chloroplast genomes: applications to the population genetics of pines". Proc. Natl. Acad. Sci. U.S.A. 92 (17): 7759–63. doi:10.1073/pnas.92.17.7759. PMID 7644491. "In the pines, the chloroplast genome is transmitted through pollen".
+[edit]External links
+
+	Wikimedia Commons has media related to: Chloroplasts
+Chloroplast - Cell Centered Database
+Chloroplasts and Photosynthesis: The Role of Light from Kimball's Biology Pages
+Clegg MT, Gaut BS, Learn GH, Morton BR (July 1994). "Rates and patterns of chloroplast DNA evolution". Proc. Natl. Acad. Sci. U.S.A. 91 (15): 6795–801. doi:10.1073/pnas.91.15.6795. PMID 8041699.
+3D structures of proteins associated with thylakoid membrane
+Co-Extra research on chloroplast transformation
+v • d • e
+Structures of the cell / organelles
+Endomembrane system	
+Cell membrane · Nucleus (and Nucleolus) · Endoplasmic reticulum · Golgi apparatus · Parenthesome · Autophagosome
+Vesicles (Exosome · Lysosome · Endosome · Phagosome · Vacuole)
+Cytoplasmic granules: Melanosome · Microbody (Glyoxysome, Peroxisome) · Weibel-Palade body
+Endosymbionts	
+Mitochondrion · Plastids (Chloroplast · Chromoplast · Leucoplast)
+Cytoskeleton	
+Microfilaments · Intermediate filaments · Microtubules · Prokaryotic cytoskeleton
+MTOCs	
+Centrosome/Centriole · Basal body · Spindle pole body
+Undulipodium	
+Cilium/Flagellum · Axoneme · Radial spoke
+Other external	
+Cell wall · Acrosome
+Other	
+Cytoplasm · Ribosome  · Vault · Proteasome
+B strc: perx, skel, epit, ctrs, cili, mito, nucl (chro)
+v • d • e
+Botany
+Subdisciplines of botany	
+Ethnobotany · Paleobotany · Plant anatomy · Plant ecology · Plant evo-devo · Plant morphology · Plant physiology
+
+Plants	
+Evolutionary history of plants · Algae · Bryophyte · Pteridophyte · Gymnosperm · Angiosperm
+Plant parts	
+Flower · Fruit · Leaf · Meristem · Root · Stem · Stoma · Vascular tissue · Wood
+Plant cells	
+Cell wall · Chlorophyll · Chloroplast · Photosynthesis · Plant hormone · Plastid · Transpiration
+Plant reproduction	
+Alternation of generations · Gametophyte · Plant sexuality · Pollen · Pollination · Seed · Spore · Sporophyte
+Plant taxonomy	
+Botanical name · Botanical nomenclature · Herbarium · IAPT · ICBN · Species Plantarum
+Glossaries	
+Glossary of botanical terms · Glossary of plant morphology terms
+Category · Portal
+Categories: Organelles | Photosynthesis

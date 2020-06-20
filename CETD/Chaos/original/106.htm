@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>SPGL1 and TV: Answers from SPGL1 Authors &laquo; Le Petit Chercheur Illustré</title>
+
+<link rel="stylesheet" href="http://s0.wp.com/wp-content/themes/default/style.css?m=1293559685g&amp;3" type="text/css" media="screen" />
+<!--[if lte IE 8]><link rel="stylesheet" href="http://s0.wp.com/wp-content/themes/default/ie.css?m=1273203575g" type="text/css" media="screen" /><![endif]-->
+<link rel="pingback" href="http://yetaspblog.wordpress.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Le Petit Chercheur Illustré &raquo; Feed" href="http://yetaspblog.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Le Petit Chercheur Illustré &raquo; Comments Feed" href="http://yetaspblog.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Le Petit Chercheur Illustré &raquo; SPGL1 and TV: Answers from SPGL1&nbsp;Authors Comments Feed" href="http://yetaspblog.wordpress.com/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" href="http://s0.wp.com/wp-content/themes/h4/global.css?m=1291749258g" type="text/css" />
+<script type='text/javascript' src='http://s2.wp.com/wp-includes/js/l10n.js?m=1290133841g&amp;ver=20101110'></script>
+<script type='text/javascript' src='http://s1.wp.com/wp-includes/js/jquery/jquery.js?m=1290133841g&amp;ver=1.4.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-includes/js/comment-reply.js?m=1264106841g&amp;ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://yetaspblog.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://yetaspblog.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Le Petit Chercheur Illustré' href='http://yetaspblog.wordpress.com/' />
+<link rel='prev' title='SPGL1 and TV minimization&nbsp;?' href='http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/' />
+<link rel='next' title='1000th visit and some Compressed Sensing&nbsp;&#8220;humour&#8221;' href='http://yetaspblog.wordpress.com/2008/11/23/1000th-visit-and-some-compressed-sensing-humour/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://yetaspblog.wordpress.com/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/' />
+<link rel='shortlink' href='http://wp.me/pfv70-O' />
+<link rel="shortcut icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon" href="http://s0.wp.com/wp-content/themes/h4/i/webclip.png?m=1264106848g" />
+	<style type="text/css">
+	/* <![CDATA[ */
+				div#likes { margin-top: 15px; }
+		.like-button { border: 1px solid #eee; padding: 2px 6px; font-size: 13px; font-family: arial, tahoma, sans-serif; }
+		#wpl-likebox { clear: left; font-size: 11px; font-family: arial, tahoma, verdana, sans-serif !important; min-height: 30px; margin: 10px 0 !important; padding: 5px 0 10px 0 !important; }
+		#wpl-button { float: left; background: url( /i/buttonbg.png ) top left repeat-x; margin-right: 7px; border: 1px solid #d4d4d4; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-button a { color: #666 !important; line-height: 130% !important; text-decoration: none !important; outline: none; float: left; padding: 3px 6px 2px 24px !important; font-size: 11px !important; background: url( /i/likestar.png ) 6px 49.8% no-repeat; }
+		#wpl-button.liked { background: #feffce; border: 1px solid #f3e389; }
+		#wpl-button.liked a { color: #ba871b !important; }
+		#wpl-likebox #wpl-count { min-height: 25px; line-height: 130% !important; float: left; padding-top: 4px; }
+		#wpl-likebox #wpl-avatars { clear: left; max-height: 98px; overflow: hidden; margin-top: 15px; line-height: 130% !important; }
+		#wpl-likebox #wpl-avatars img { border: none !important; }
+		#wpl-likebox #wpl-mustlogin { line-height: 14px !important; font-size: 11px; clear: left; margin-top: 5px; background: #f0f0f0; padding: 10px; width: 65%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-likebox #wpl-mustlogin a { color: #888; text-decoration: underline; }
+		#wpl-likebox #wpl-mustlogin p { margin: 5px 0; padding: 0 }
+		#wpl-likebox #wpl-mustlogin input.input { padding: 2px; background: #fff; font-size: 11px; font-family: inherit; border: 1px solid #ccc; -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin input#wp-submit { border: 1px solid #ccc; font-size: 11px; background: #fafafa; repeat-x; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 2px 4px !important; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin label { position: relative; cursor: text; }
+		#wpl-likebox #wpl-mustlogin label span { position: absolute; top: 0px; left: 5px; padding: 0 !important; }
+		#wpl-likebox #wpl-mustlogin label span { top /*\**/: -10px\9; }
+	/* ]]> */
+	</style>
+	<link rel='openid.server' href='http://yetaspblog.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://yetaspblog.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://yetaspblog.wordpress.com/osd.xml" title="Le Petit Chercheur Illustré" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+<style type="text/css">
+#header     { margin: 0 !important; margin: 0 0 0 1px; padding: 1px; height: 198px; width: 758px; }
+#headerimg  { margin: 7px 9px 0; height: 192px; width: 740px; }
+#headerimg { background: url(http://yetaspblog.files.wordpress.com/2008/05/cropped-00017-2.jpg) no-repeat top;}
+#header h1 a, #header h1 a:hover, #header .description {
+	color: #ffffff;
+}
+</style>
+<style type='text/css'><!--
+body { background: url("http://s0.wp.com/wp-content/themes/default/images/kubrickbgcolor.gif?m=1273203575g"); }
+#page { background: url("http://s0.wp.com/wp-content/themes/default/images/kubrickbgwide.gif?m=1273203575g") repeat-y top !important; border: none; }
+#header { background: url("http://s0.wp.com/wp-content/themes/default/images/kubrickheader.gif?m=1273203575g") no-repeat bottom center; }
+#footer { background: url("http://s0.wp.com/wp-content/themes/default/images/kubrickfooter.gif?m=1273203575g") no-repeat bottom; border: none;}
+#header { margin: 0 !important; margin: 0 0 0 1px; padding: 1px; height: 198px; width: 758px; }
+#headerimg { margin: 7px 9px 0; height: 192px; width: 740px; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: #DDDDFF; }
+#headerimg h1 a, #headerimg .description { display:  }
+
+	--></style><meta name="application-name" content="Le Petit Chercheur Illustré" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Yet Another Signal Processing (and Applied Math) blog" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://yetaspblog.wordpress.com/feed/;icon-uri=http://s1.wp.com/i/favicon-stacked.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /></head>
+<body>
+<div id="page">
+
+
+<div id="header">
+	<div id="headerimg" onclick=" location.href='http://yetaspblog.wordpress.com';" style="cursor: pointer;">
+		<h1><a href="http://yetaspblog.wordpress.com/">Le Petit Chercheur Illustré</a></h1>
+		<div class="description">Yet Another Signal Processing (and Applied Math) blog</div>
+	</div>
+</div>
+<hr />
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/" rel="prev">SPGL1 and TV minimization&nbsp;?</a></div>
+			<div class="alignright"><a href="http://yetaspblog.wordpress.com/2008/11/23/1000th-visit-and-some-compressed-sensing-humour/" rel="next">1000th visit and some Compressed Sensing&nbsp;&#8220;humour&#8221;</a> &raquo;</div>
+		</div>
+
+		<div class="post-50 post type-post status-publish format-standard hentry category-general clear" id="post-50">
+						<h2>SPGL1 and TV: Answers from SPGL1&nbsp;Authors</h2>
+			<small>By jackdurden</small>
+
+			<div class="entry">
+				<p>Following the writing of my previous post, which obtained various interesting <a href="http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/#comments">comments</a> (many thanks to <a href="http://www.ceremade.dauphine.fr/~peyre/">Gabriel Peyré</a>, <a href="http://igorcarron.googlepages.com/home">Igor Carron</a> and <a href="http://ltspc89.epfl.ch/~vandergh/">Pierre Vandergheynst</a>), I sent a mail to <a class="urllink" href="http://www.cs.ubc.ca/%7Empf">Michael P. Friedlander</a> and <a class="urllink" href="http://www.cs.ubc.ca/%7Eewout78">Ewout van den Berg</a> to point them this article and possibly obtain their point of views.</p>
+<p>Nicely, they sent me interesting answers (many thanks to them). Here they are (using the notations of the <a href="http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/">previous post</a>) :</p>
+<p>Michael&#8217;s answer is about the need of a TV Lasso solver :</p>
+<blockquote><p><em>&#8220;It&#8217;s an intriguing project that you describe.  I suppose in principle the theory behind <a href="http://www.cs.ubc.ca/labs/scl/spgl1/">spgl1</a> should readily extend to TV (though I haven&#8217;t thought how a semi-norm might change things).  But I&#8217;m not sure how easy it&#8217;ll be to solve the &#8220;TV-Lasso&#8221; subproblems.  Would be great if you can see a way to do it efficiently. &#8220;</em></p></blockquote>
+<p>Ewout on his side explained this :</p>
+<blockquote><p><em>&#8220;The idea you suggest may very well be feasible, as the approach taken in <a href="http://www.cs.ubc.ca/labs/scl/spgl1/">SPGL1</a> can be extended to other norms (i.e., not just the one-norm), as long as the dual norm is known and there is way to orthogonally project onto the ball induced by the primal norm. In fact, the newly released version of <a href="http://www.cs.ubc.ca/labs/scl/spgl1/">SPGL1</a> takes advantage of this and now supports two new formulations.</em></p>
+<p><em>I heard (I haven&#8217;t had time to read the paper) that Chambolle has described the dual to the<br />
+TV-norm. Since the derivate of <img src='http://l.wordpress.com/latex.php?latex=%5Cphi%28%5Ctau%29+%3D%5C%7Cy-Ax_%5Ctau%5C%7C_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\phi(\tau) =\|y-Ax_\tau\|_2' title='\phi(\tau) =\|y-Ax_\tau\|_2' class='latex' /> on the appropriate interval is given by the dual norm on <img src='http://l.wordpress.com/latex.php?latex=A%5ETy&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='A^Ty' title='A^Ty' class='latex' />, that part should be fine (for the one norm this gives the infinity norm).</em></p>
+<p><em>In SPGL1 we solve the Lasso problem using a spectrally projected gradient method, which<br />
+means we need to have an orthogonal projector for the one-norm ball of radius <img src='http://l.wordpress.com/latex.php?latex=tau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='tau' title='tau' class='latex' />. It is not immediately obvious how to (efficiently) solve the related problem (for a given <img src='http://l.wordpress.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='x' title='x' class='latex' />):</em></p>
+<p><em>minimize <img src='http://l.wordpress.com/latex.php?latex=%5C%7Cx+-+p%5C%7C_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|x - p\|_2' title='\|x - p\|_2' class='latex' /> subject to <img src='http://l.wordpress.com/latex.php?latex=%5C%7Cp%5C%7C_%7B%5Crm+TV%7D+%5Cleq+%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|p\|_{\rm TV} \leq \tau' title='\|p\|_{\rm TV} \leq \tau' class='latex' />.</em></p>
+<p><em>However, the general approach taken in SPGL1 does not really care about how the Lasso<br />
+subproblem is solved, so if there is any efficient way to solve</em></p>
+<p><em>minimize <img src='http://l.wordpress.com/latex.php?latex=%5C%7CAx-b%5C%7C_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|Ax-b\|_2' title='\|Ax-b\|_2' class='latex' /> subject to <img src='http://l.wordpress.com/latex.php?latex=%5C%7Cx%5C%7C_%7B%5Crm+TV%7D+%5Cleq+%5Ctau&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|x\|_{\rm TV} \leq \tau' title='\|x\|_{\rm TV} \leq \tau' class='latex' />,</em></p>
+<p><em>then that would be equally good. Unfortunately it seems the complexification trick (<a href="http://yetaspblog.wordpress.com/2008/08/17/spgl1-and-tv-minimization/">see the previous post</a>) works only from the image to the differences; when working with the differences themselves, additional constraints would be needed to ensure consistency in the image; i.e., that<br />
+summing up the difference of going right first and then down, be equal to the sum of<br />
+going down first and then right.&#8221;</em></p></blockquote>
+<p>In a second mail, Ewout added an explanation on this last remark :<em><br />
+</em></p>
+<blockquote><p><em>&#8220;I was thinking that perhaps, instead of minimizing over the signal it would be possible to minimize over the differences (expressed in complex numbers in the two-dimensional setting). The problem with that is that most complex vectors do not represent difference vectors (i.e., the differences would not add up properly). For such an approach to work, this consistency would have to be enforced by adding some constraints.&#8221;</em></p></blockquote>
+<p>Actually, I saw similar considerations in <a href="http://www.cmap.polytechnique.fr/~antonin/">A. Chambolle</a>&#8216;s paper: <a href="http://www.ceremade.dauphine.fr/preprints/CMD/2002-40.ps.gz">&#8220;﻿﻿﻿﻿</a><span class="l"><a href="http://www.ceremade.dauphine.fr/preprints/CMD/2002-40.ps.gz"><em>An Algorithm for Total Variation</em> Minimization and Applications&#8221;</a>.</span><span class="std nobr"> </span>It is even more clear in the paper he wrote with <a href="http://www.cmla.ens-cachan.fr/Membres/aujol.html">J.-F. Aujol</a>, <a href="ftp://ftp.inria.fr/INRIA/publication/publi-pdf/RR/RR-5130.pdf">&#8220;Dual Norms and Image Decomposition Models&#8221;</a>. They develop there the notions of TV (semi) norm for different exponent <img src='http://l.wordpress.com/latex.php?latex=p&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='p' title='p' class='latex' /> (i.e. in the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_p&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_p' title='\ell_p' class='latex' /> norm used on the <img src='http://l.wordpress.com/latex.php?latex=%5Cell_2&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\ell_2' title='\ell_2' class='latex' /> norm of the gradient components) and in particular they answer to the problem of finding and computing the corresponding dual norms. For the usual TV norm, this leads to the <em>G-norm</em> :</p>
+<p><img src='http://l.wordpress.com/latex.php?latex=%5C%7Cu%5C%7C_%7B%5Crm+G%7D+%3D+%7B%5Crm+inf%7D_g%5Cbig%5C%7B+%5C%7Cg%5C%7C_%5Cinfty%3D%5Cmax_%7Bkl%7D+%5C%7Cg_%7Bkl%7D%5C%7C_2%5C+%3A%5C+%7B%5Crm+div%7D%5C%2Cg+%3D+u%2C%5C+g_%7Bkl%7D%3D%28g%5E1_%7Bkl%7D%2Cg%5E2_%7Bkl%7D%29%5C%2C%5Cbig%5C%7D%2C&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\|u\|_{\rm G} = {\rm inf}_g\big\{ \|g\|_\infty=\max_{kl} \|g_{kl}\|_2\ :\ {\rm div}\,g = u,\ g_{kl}=(g^1_{kl},g^2_{kl})\,\big\},' title='\|u\|_{\rm G} = {\rm inf}_g\big\{ \|g\|_\infty=\max_{kl} \|g_{kl}\|_2\ :\ {\rm div}\,g = u,\ g_{kl}=(g^1_{kl},g^2_{kl})\,\big\},' class='latex' /></p>
+<p>where, as for the continuous setting, <img src='http://l.wordpress.com/latex.php?latex=%7B%5Crm+div%7D&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='{\rm div}' title='{\rm div}' class='latex' /> is the discrete divergence operator defined as the adjoint of the finite difference gradient operator <img src='http://l.wordpress.com/latex.php?latex=%5Cnabla&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\nabla' title='\nabla' class='latex' /> used to defined the TV norm. In other words, <img src='http://l.wordpress.com/latex.php?latex=%5Clangle+-%7B%5Crm+div%7D%5C%2Cg%2C+u%5Crangle_X+%3D+%5Clangle+g%2C+%5Cnabla+u%5Crangle_Y&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='\langle -{\rm div}\,g, u\rangle_X = \langle g, \nabla u\rangle_Y' title='\langle -{\rm div}\,g, u\rangle_X = \langle g, \nabla u\rangle_Y' class='latex' />, where <img src='http://l.wordpress.com/latex.php?latex=X%3D%5Cmathbb%7BR%7D%5EN&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='X=\mathbb{R}^N' title='X=\mathbb{R}^N' class='latex' /> and <img src='http://l.wordpress.com/latex.php?latex=Y%3DX%5Ctimes+X&#038;bg=ffffff&#038;fg=000000&#038;s=0' alt='Y=X\times X' title='Y=X\times X' class='latex' />.</p>
+<p>Unfortunately, the G norm computation seems not so obvious that the one of its dual counterpart and an optimization method must be used. I don&#8217;t know if this could lead to an efficient implementation of a TV spgl1.</p>
+
+								
+				<p class="postmetadata alt">
+					<small>
+												This entry was posted  on September 2, 2008 at 11:48 pm and is filed under <a href="http://en.wordpress.com/tag/general/" title="View all posts in General" rel="category tag">General</a>.						You can follow any responses to this entry through the <a href='http://yetaspblog.wordpress.com/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/feed/'>RSS 2.0</a> feed.
+													You can <a href="#respond">leave a response</a>, or <a href="http://yetaspblog.wordpress.com/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/trackback/" rel="trackback">trackback</a> from your own site.
+						
+					</small>
+				</p>
+
+			</div>
+					</div>
+
+	<div id="wpl-likebox"><div id="wpl-button"><a href='http://yetaspblog.wordpress.com/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/?like=1&amp;_wpnonce=251343adf9' title='I like this post' class='like needs-login'><span>Like</span></a></div><div id="wpl-count">Be the first to like this post.</div></div>
+<!-- You can start editing here. -->
+
+ 
+
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://yetaspblog.wordpress.com/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published.</p>							<p class="comment-form-author"><label for="author">Name</label> <input id="author" name="author" type="text" value="" size="30" /></p>
+<p class="comment-form-email"><label for="email">Email</label> <input id="email" name="email" type="text" value="" size="30" /></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;pre&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='50' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1293722766" />
+<p><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe">Notify me of follow-up comments via email.</label></p><p><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;" tabindex="7"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts via email.</label></p><input type="hidden" name="sub-type" value="comment-form-text0" /><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="b7eda7a9d3" /></p>					</form>
+							</div><!-- #respond -->
+						
+
+	
+	</div>
+
+
+<hr />
+<div id="footer">
+	<p>
+		Theme: <a href="http://theme.wordpress.com/themes/default/">Kubrick</a>. <a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>.
+		<br /><a href="http://yetaspblog.wordpress.com/feed/">Entries (RSS)</a> and <a href="http://yetaspblog.wordpress.com/comments/feed/">Comments (RSS)</a>.	</p>
+</div>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	/* <![CDATA[ */
+		jQuery( function() {
+			
+			jQuery('#wpl-button > a.like').click( function(e) {
+				e.preventDefault();
+				
+				jQuery('#wpl-mustlogin').remove();
+
+				jQuery.post( 'http://yetaspblog.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_like_click'
+				} );
+
+				var tenMins = new Date();
+				tenMins.setTime( tenMins.getTime() + 600000 );
+				document.cookie = 'wpl_rand=0e6c23819b; expires=' + tenMins.toGMTString() + '; domain=wordpress.com; path=/;';
+				
+				jQuery('#wpl-count').after( '\
+					<div id="wpl-mustlogin"> \
+						<form action="http://yetaspblog.wordpress.com/wp-login.php" method="post"> \
+							<p>Just one more step to like this post:</p> \
+							<label><span>Username</span> <input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="80" /></label> \
+							<label><span>Password</span> <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="81" /></label> \
+							<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="82" /> \
+							<input type="hidden" name="redirect_to" value="http://yetaspblog.wordpress.com/2008/09/02/spgl1-and-tv-answers-from-spgl1-authors/?like=1" /> \
+							<input type="hidden" name="wpl_rand" value="0e6c23819b" /> \
+							<p>Not a member yet? <a href="http://wordpress.com/signup/?ref=likebox" id="wpl-signup-link">Sign up with WordPress.com</a></p> \
+						</form> \
+					</div> \
+				');
+				
+				jQuery('#wpl-mustlogin').hide().slideDown('fast');
+			} );
+			
+			jQuery('#wpl-mustlogin input.input').live( 'focus', function() {
+				jQuery(this).prev().hide();
+			}).live( 'blur', function() {
+				if ( jQuery(this).val() == '' )
+					jQuery(this).prev().show();
+			});
+			
+			jQuery('#wpl-mustlogin input#wp-submit').live( 'click', function(e) {
+				e.preventDefault();
+				
+				jQuery.post( 'http://yetaspblog.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_login_submit'
+				}, function() {
+					jQuery('#wpl-mustlogin form').submit();
+				} );
+			});			
+			
+			jQuery('#wpl-mustlogin a#wpl-signup-link').live( 'click', function(e) {
+				e.preventDefault();
+				
+				var link = jQuery(this).attr('href');
+				
+				jQuery.post( 'http://yetaspblog.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_signup_click'
+				}, function() {
+					location.href = link;
+				} );
+			});					
+			
+		});
+	/* ]]> */
+	</script>
+<script type="text/javascript">_qoptions={qacct:'p-18-mFEk4J448M',labels:'language.en,type.wpcom'};</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript><p><img class="robots-nocontent" src="http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=language.en%2Ctype.wpcom" style="display:none" height="1" width="1" alt="" /></p></noscript>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?o&#038;ver=MU'></script>
+	<script type="text/javascript">	
+	// <![CDATA[
+	WPGroHo = {
+		data: {},
+		renderers: {},
+		syncProfileData: function( hash, id ) {
+			if ( !WPGroHo.data[hash] ) {
+				WPGroHo.data[hash] = {};
+				a = jQuery( 'div.grofile-hash-map-' + hash + ' span' ).each( function() {
+					WPGroHo.data[hash][this.className] = jQuery( this ).text();
+				} );
+			}
+
+			WPGroHo.appendProfileData( WPGroHo.data[hash], hash, id );
+		},
+		appendProfileData: function( data, hash, id ) {
+			for ( var key in data ) {
+				if ( jQuery.isFunction( WPGroHo.renderers[key] ) ) {
+					return WPGroHo.renderers[key]( data[key], hash, id, key );
+				}
+
+				jQuery( '#' + id ).find( 'h4' ).after( jQuery( '<p class="grav-extra ' + key + '" />' ).html( data[key] ) );
+			}
+		}
+	};
+	jQuery(document).ready(function($){
+		Gravatar.profile_cb = function( h, d ) {
+			WPGroHo.syncProfileData( h, d );
+		};
+		Gravatar.attach_profiles();
+	});
+	// ]]>
+	</script>
+	<div style="display:none">
+	</div>
+<script type="text/javascript" src="http://b.scorecardresearch.com/beacon.js"></script><script type="text/javascript">try{COMSCORE.beacon({c1:2,c2:7518284});}catch(e){}</script><noscript><p class="robots-nocontent"><img src="http://b.scorecardresearch.com/p?cj=1c1=2&#038;c2=7518284" alt="" style="display:none" width="1" height="1" /></p></noscript><script src="http://s.stats.wordpress.com/w.js?19" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'3694518','v':'wpcom','user_id':'0','post':'50','subd':'yetaspblog'});
+ex_go({'crypt':'RDZ8LFkxbXF5fD9hdXZVS01aKy1yNWFmX2xwan4sYzd+YWMvOWlMWnVtaiY1RHBDeENuX3hUWy0sZm8zdndvRVJNPTA0LXc4ckRLZltFV08/OHM2S1RIPXFHaXMuUUpbU01RbG1nMS0ldldbaWpXekdUfnVBZ0NsWDloc0N6Xz9xRDJsL0E4Z3dkbG0tNHZyclJdclFnRml0UXp8XTFMfkdsVml1c1d3WCVlWUJsU1lVQVF8UDV3PXFQYSxaNXBfW1g5P1hCM28zRHk='});
+addLoadEvent(function(){linktracker_init('3694518',50);});
+	</script>
+</body>
+</html>

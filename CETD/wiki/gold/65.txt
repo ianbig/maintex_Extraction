@@ -1,0 +1,174 @@
+﻿
+GNU
+This article is about the operating system. For the animal, see Wildebeest. For other uses, see GNU (disambiguation).
+
+This article needs references that appear in reliable third-party publications. Primary sources or sources affiliated with the subject are generally not sufficient for a Wikipedia article. Please add more appropriate citations from reliable sources. (July 2010)
+GNU
+
+OS family	Unix-like
+Working state	Under development, no stable releases
+Latest unstable release	0.2 [+/−]
+Available language(s)	Multilingual
+Supported platforms	x86
+Kernel type	Microkernel
+Default user interface	GNOME
+License	GNU General Public License and other free software licenses
+Official website	http://www.gnu.org/
+GNU (pronounced /ˈɡnuː/ ( listen)[1]) is a Unix-like computer operating system developed by the GNU project, ultimately aiming to be a "complete Unix-compatible software system"[2] composed wholly of free software. Development of GNU was initiated by Richard Stallman in 1983 and was the original focus of the Free Software Foundation (FSF), but no stable release of GNU yet exists as of September 2010.[3][4][5] The latest alpha release of the GNU system is GNU 0.2, released in 2004, featuring GNU Hurd as the system's kernel. Other (non-GNU) kernels can also presently be used with GNU; the FSF maintains that Linux, when used with GNU tools and utilities, should be considered a variant of GNU, and promotes the term GNU/Linux for such systems (leading to the GNU/Linux naming controversy).
+GNU is a recursive acronym for "GNU's Not Unix!", chosen because GNU's design is Unix-like, but differs from Unix by being free software and containing no Unix code.[6] Programs released under the auspices of the GNU Project are called GNU packages or GNU programs. The system's basic components include the GNU Compiler Collection (GCC), the GNU Binary Utilities (binutils), the bash shell, the GNU C library (glibc), and GNU Core Utilities (coreutils). GNU developers have contributed Linux ports of GNU applications and utilities, which are now also widely used on other operating systems such as BSD variants, Solaris and Mac OS X.
+The GNU General Public License (GPL), the GNU Lesser General Public License (LGPL), and the GNU Free Documentation License (GFDL) were written for GNU, but are also used by many unrelated projects.
+To paraphrase Richard Stallman, "the GNU system is a technical means to a social end."[7]
+Contents [hide]
+1 History
+2 Design and implementation
+3 Copyright, licenses, and stewardship
+4 GNU software
+5 GNU variants
+6 GNU logo
+7 See also
+8 References
+9 External links
+[edit]History
+
+The plan for the GNU operating system was publicly announced on September 27, 1983, on the net.unix-wizards and net.usoft newsgroups by Richard Stallman.[8] Software development began on January 5, 1984, when Stallman quit his job at the Massachusetts Institute of Technology (MIT) Artificial Intelligence Laboratory so that they could not claim ownership or interfere with distributing GNU as free software. Richard Stallman chose the name by using various plays on words, including the song The Gnu.[9]
+The goal was to bring a wholly free software operating system into existence. Stallman wanted computer users to be "free", as most were in the 1960s and 1970s – free to study the source code of the software they use, free to share the software with other people, free to modify the behaviour of the software, and free to publish their modified versions of the software. This philosophy was later published as the GNU Manifesto in March 1985.
+Richard Stallman's experience with the Incompatible Timesharing System (ITS), an early operating system written in assembly language that became obsolete due to discontinuation of PDP-10, the computer architecture for which ITS was written, led to a decision that a portable system was necessary.[10] It was thus decided that GNU would be mostly compatible with Unix. At the time, Unix was already a popular proprietary operating system. The design of Unix had proven to be solid, and it was modular, so it could be reimplemented piece by piece.
+Much of the needed software had to be written from scratch, but existing compatible free software components were also used such as the TeX typesetting system, and the X Window System. Most of GNU has been written by volunteers; some in their spare time, some paid by companies, educational institutions, and other non-profit organizations. In October 1985, Stallman set up the Free Software Foundation (FSF). In the late 1980s and 1990s, the FSF hired software developers to write the software needed for GNU.
+As GNU gained prominence, interested businesses began contributing to development or selling GNU software and technical support. The most prominent and successful of these was Cygnus Solutions, now part of Red Hat.
+[edit]Design and implementation
+
+The initial plan for GNU was to be mostly Unix-compatible, while adding enhancements where they were useful. By 1990, the GNU system had an extensible text editor (Emacs), a very successful optimizing compiler (GCC), and most of the core libraries and utilities of a standard Unix distribution. As the goal was to make a whole free operating system exist—rather than necessarily to write a whole free operating system—Stallman tried to use existing free software when possible. In the 1980s there was not much free software, but there was the X Window System for graphical display, the TeX typesetting system, and the Mach microkernel. These components were integrated into GNU .
+In the GNU Manifesto, Stallman had mentioned that "an initial kernel exists but many more features are needed to emulate Unix." He was referring to TRIX,[citation needed] a remote procedure call kernel developed at MIT Technology, whose authors had decided to distribute it as free software, and which was compatible with Version 7 Unix. In December 1986, work had started on modifying this kernel. However, the developers eventually decided it was unusable as a starting point, primarily because it only ran on "an obscure, expensive 68000 box" and would therefore have to be ported to other architectures before it could be used.
+The GNU Project's early plan was to adapt the BSD 4.4-Lite kernel for GNU. However, due to a lack of cooperation from the Berkeley programmers,[citation needed] by 1988 Stallman decided instead to use the Mach kernel being developed at Carnegie Mellon University, although its release as free software was delayed until 1990 while its developers worked to remove code copyrighted to AT&T.[citation needed] Thomas Bushnell, the initial Hurd architect, said in hindsight that the decision to start a new kernel rather than adapt the BSD work set the project back considerably, and that the project should have used the BSD kernel for this reason.[11]
+The design of the kernel was to be GNU's largest departure from "traditional" Unix. GNU's kernel was to be a set of programs called servers, forming a multi-server microkernel that would provide the same functionality as the traditional Unix kernel. Since the Mach microkernel, by design, provided just the low-level kernel functionality, the GNU Project had to develop the higher-level parts of the kernel, as a collection of user programs. Initially, this collection was to be called Alix, but developer Thomas Bushnell later preferred the name Hurd, so the Alix name was moved to a subsystem and eventually dropped completely.[12] Eventually, development progress of the Hurd became very slow due to ongoing technical issues.[13]
+In 1992, when the Linux kernel became usable and was switched to a free software license, it became the most common host for GNU software. The GNU project coined the term GNU/Linux for such systems. As of 2010 there are also projects working on porting the GNU system to the kernels of FreeBSD, NetBSD, and OpenSolaris.[citation needed]
+Despite an optimistic announcement by Stallman in 2002 predicting a release of GNU/Hurd,[14] further development and design are still required. However, its development remains slow, and Richard Stallman acknowledged that the availability of Linux makes completion of the Hurd not a "high priority task".[15]
+See also: GNU/Linux naming controversy
+[edit]Copyright, licenses, and stewardship
+
+The GNU Project suggests contributors assign the copyright for GNU packages to the Free Software Foundation,[16] although this is not required.[17]
+Copyright law grants the copyright-holder significant control over the copying and distributing of a work, but FSF wrote a license for the GNU software which grant recipients permission to copy and redistribute the software under highly permissive terms. For most of the 80s, each GNU package had its own license: the Emacs General Public License, the GCC General Public License, et cetera. In 1989, FSF published a single license they could use for all their software, and which could be used by non-GNU projects: the GNU General Public License (GPL).
+This license is now used by most GNU programs, as well as a large number of free software programs that are not part of the GNU project; it is the most commonly used free software license. It gives all recipients of a program the right to run, copy, modify and distribute it, while forbidding them from imposing further restrictions on any copies they distribute. This idea is often referred to as copyleft.
+In 1991, the GNU Lesser General Public License (LGPL), then known as the Library General Public License, was written for certain libraries. 1991 also saw the release of version 2 of the GNU GPL. The GNU Free Documentation License (FDL), for documentation, followed in 2000. The GPL and LGPL were revised to version 3 in 2007, improving their international applicability, and adding protection for users whose hardware restricts software changes.
+Most GNU software is distributed under the GPL. A minority is distributed under the LGPL, and a handful of packages are distributed under permissive free software licences.[18]
+[edit]GNU software
+
+Main article: List of GNU packages
+Prominent components of the GNU system include the GNU Compiler Collection (GCC), the GNU C Library (glibc), the GNU Emacs text editor, and the GNOME desktop environment.
+Many GNU programs have been ported to a multitude of other operating systems, including various proprietary platforms such as Microsoft Windows and Mac OS X. They are often installed on proprietary Unix systems as replacements for the proprietary utilities originally included. However, this practice is controversial: these GNU component programs were developed with the goal of replacing entire proprietary UNIX systems with free software, not enhancing these systems.
+Many GNU programs have been tested against their proprietary Unix counterparts and shown as being more reliable.[19]
+As of 2007, there are a total of 319 GNU packages hosted on the official GNU development site.[20]
+[edit]GNU variants
+
+
+
+gNewSense is an example of a GNU/Linux distribution
+Main article: GNU variants
+Usage with the Linux kernel is by far the most popular distribution vector for GNU software, though the Linux kernel itself is not part of the GNU Project.
+Other GNU variants which do not use the Hurd as a kernel include Nexenta OS (GNU plus the kernel of OpenSolaris) and GNU-Darwin. Debian GNU/kFreeBSD and Debian GNU/NetBSD from Debian bring the early plan of GNU on a BSD kernel full circle. GNU itself is distributed as Debian GNU/Hurd by the Debian project.
+[edit]GNU logo
+
+The logo for GNU is a gnu head. The well-known drawing was originally done by Etienne Suvasa. It appears in GNU software and in printed and electronic documentation for the GNU project, and is also used in Free Software Foundation materials.[21]
+[edit]See also
+
+	Free software portal
+Creative Commons
+Free software movement
+GNU Compiler for Java
+History of free software
+List of GNU packages
+List of Linux distributions endorsed by the Free Software Foundation
+[edit]References
+
+^ "What is GNU?". The GNU Operating System. Free Software Foundation. September 4, 2009. http://www.gnu.org/. Retrieved October 9, 2009. "The name "GNU" is a recursive acronym for "GNU's Not Unix!"; it is pronounced g-noo, as one syllable with no vowel sound between the g and the n."
+^ http://www.gnu.org/gnu/manifesto.html
+^ Vaughan-Nichols, Steven J. "Opinion: The top 10 operating system stinkers" in Computerworld, April 9, 2009: "But after more than 25 years in development, GNU remains incomplete: Its kernel, Hurd, has never really made it out of the starting blocks. ... Almost no one has actually been able to use the OS; it's really more a set of ideas than an operating system."
+^ >Hillesley, Richard. "GNU HURD: Altered visions and lost promise", June 30, 2010. See especially page 3: "Nearly twenty years later the HURD has still to reach maturity, and has never achieved production quality." ... "Some of us are still wishing and hoping for the real deal, a GNU operating system with a GNU kernel."
+^ Lessig, Lawrence. The Future of Ideas: The Fate of the Commons in a Connected World, p. 54. Random House, Inc., 2001. ISBN 9780375505782. Referring to Stallman, Lessig wrote, "He had mixed all of the ingredients needed for an operating system to function, but he was missing the core."
+^ "The GNU Operating system". http://www.gnu.org/. Retrieved 2008-08-18.
+^ Richard Stallman's speech in Stockholm, Sweden in 1986 www.gnu.org
+^ (27 September 1983). "new UNIX implementation". net.usoft. (Web link). Retrieved on 2008-08-18.
+^ "Stallman explaining why the name "GNU" was chosen". FSFE. http://fsfeurope.org/documents/rms-fs-2006-03-09.en.html#the-name-gnu. Retrieved 2007-02-20.
+^ "Stallman describing why a Unix-like design was chosen". FSFE. http://fsfeurope.org/documents/rms-fs-2006-03-09.en.html#choosing-the-unix-design. Retrieved 2007-02-20.
+^ Peter H. Salus. "The Hurd and BSDI". The Daemon, the GNU and the Penguin. http://www.groklaw.net/article.php?story=20050727225542530. Retrieved 2008-08-18. "It is now perfectly obvious to me that this would have succeeded splendidly and the world would be a very different place today."
+^ About the GNU Project - GNU Project - Free Software Foundation (FSF)
+^ "Stallman describing Hurd progress". http://fsfeurope.org/documents/rms-fs-2006-03-09.en.html#gnu-and-linux. "it took many many many years to get this kernel to run at all, and it still doesn't run well, and it looks like there may be fundamental problems with this design, which nobody knew about back in 1990."
+^ John Ribeiro (2002-03-11). "Free Software Sees Gnu Loose of Linux". PC World. http://www.pcworld.com/article/88464/free_software_sees_gnu_loose_of_linux.html. Retrieved 2006-08-08.
+^ "RMS Ask-Me-Anything, reddit.com". http://blog.reddit.com/2010/07/rms-ama.html.
+^ Copyright Papers - Information For Maintainers of GNU Software
+^ Why the FSF gets copyright assignments from contributors
+^ What the GPLv3 Means for MS-Novell Agreement
+^ Fuzz Revisited: A Re-examination of the Reliability of UNIX Utilities and Services - October 1995 - Computer Sciences Department,University of Wisconsin
+^ Statistics [Savannah]
+^ A GNU Head - Free Software Foundation (FSF)
+[edit]External links
+
+	Wikimedia Commons has media related to: GNU
+Official website
+Ports of GNU utilities for Microsoft Windows
+The daemon, the GNU and the penguin
+GNU User Groups
+#gnu IRC channel
+v • d • e
+Unix and Unix-like operating systems
+AIX · BSD · DragonFly BSD · FreeBSD · GNU · HP-UX · IRIX · Linux · LynxOS · Mac OS X · MINIX · NetBSD · OpenBSD · Plan 9 · QNX · Research Unix · SCO OpenServer · Solaris · System V · Tru64 · UnixWare · VxWorks · Xenix · more
+v • d • e
+GNU Project
+History	
+GNU Manifesto · Free Software Foundation (Europe · India · Latin America) · History of free software
+
+Licenses	
+GNU General Public License · GNU Lesser General Public License · Affero General Public License · GNU Free Documentation License · GPL linking exception
+Software	
+GNU (variants) · Hurd · GNOME · Bash · GCC · GNU Emacs · glibc · Coreutils · Build system · GNUnet · Gnuzilla (IceCat) · Gnash · more...
+Public speakers	
+Alexandre Oliva · Benjamin Mako Hill · Bradley M. Kuhn · Eben Moglen · Federico Heinz · Georg C. F. Greve · Loïc Dachary · Ricardo Galli · Richard Stallman · Robert J. Chassell · John Sullivan
+Other topics	
+GNU/Linux naming controversy · Revolution OS · BadVista · Defective by Design
+v • d • e
+Free and open source software
+General	
+Copyleft · Events and Awards · Free software · Free Software Definition · Gratis versus Libre · List of free and open source software packages · Open-source software
+Operating system families	
+AROS · BSD · Darwin · eCos · FreeDOS · GNU · Haiku · Inferno · Linux · Mach · MINIX · OpenSolaris · Plan 9 · ReactOS · Symbian
+Development	
+Eclipse · Free Pascal · GCC · Gambas · Java · LLVM · Lua · NetBeans · Open64 · Perl · PHP · Python · ROSE · Ruby · Tcl
+History	
+GNU · Haiku · Linux · Mozilla (Application Suite · Firefox · Thunderbird)
+Organizations	
+Apache Software Foundation · Blender Foundation · Eclipse Foundation · freedesktop.org · Free Software Foundation (Europe · India · Latin America) · FSMI · GNOME Foundation · GNU Project · Google Code · KDE e.V. · Linux Foundation · Mozilla Foundation · Open Source Geospatial Foundation · Open Source Initiative · SourceForge · Symbian Foundation · Xiph.Org Foundation · XMPP Standards Foundation · X.Org Foundation
+Licences	
+Apache · Artistic · BSD · GNU GPL · GNU LGPL · ISC · MIT · MPL · Ms-PL/RL · zlib · FSF approved licenses
+License standards	
+Open Source Definition · The Free Software Definition · Debian Free Software Guidelines
+Challenges	
+Binary blob · Digital rights management · Graphics hardware compatibility · License proliferation · Mozilla software rebranding · Proprietary software · SCO-Linux controversies · Security · Software patents · Hardware restrictions · Trusted Computing · Viral license
+Other topics	
+Alternative terms · Community · Linux distribution · Forking · Movement · Microsoft Open Specification Promise · Revolution OS · Comparison with closed source
+ Book:FOSS  ·   Category:Free software  ·   Portal:Free software
+v • d • e
+Operating system
+General	
+History · Timeline · List · Comparison · Usage share · Development · Advocacy
+Kernel	
+Architectures
+General
+Monolithic kernel · Microkernel
+Subtypes
+Exokernel · Nanokernel · Hybrid
+Components
+User/Kernel space · Server · Loadable kernel module · Device driver
+Process management	
+Concepts
+Process · Process control block · Interrupt · Thread · Context switch · Scheduling
+CPU modes
+Protected mode · Supervisor mode
+Scheduling algorithm
+Cooperative multitasking · Preemptive multitasking · Round-robin scheduling · Fixed priority pre-emptive scheduling · Multilevel feedback queue · Shortest job next
+Memory management	
+Memory protection · Segmentation · Paging · Segmentation fault · General protection fault · Bus error
+Examples	
+UNIX · OpenSolaris · GNU · Linux · BSD · Windows · Mac OS X · AmigaOS 4 · MorphOS · BeOS · IBM OS/2 · ReactOS · MS-DOS · more...
+Miscellaneous concepts	
+Boot loader · PXE · API · Virtual file system · Virtual tape library · Computer network · CLI · TUI · GUI · VUI · HAL
+Categories: Computing acronyms | GNU Project | GNU Project software | Unix variants | Free software operating systems | Microkernel-based operating systems

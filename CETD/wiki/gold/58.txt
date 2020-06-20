@@ -1,0 +1,499 @@
+﻿
+Scheme (programming language)
+This article is about the programming language. For other uses, see Scheme.
+Scheme
+
+Paradigm	multi-paradigm: functional, procedural, meta
+Appeared in	1975
+Designed by	Guy L. Steele and Gerald Jay Sussman
+Stable release	R6RS (ratified standard) (2007)
+Typing discipline	strong, dynamic
+Major implementations	Many. See Category:Scheme implementations
+Dialects	T
+Influenced by	Lisp, ALGOL, MDL
+Influenced	Common Lisp, EuLisp, JavaScript, R, Ruby, Dylan, Lua, Hop, Racket
+Usual file extensions	.scm, .ss
+Scheme is one of the two main dialects of the programming language Lisp. Unlike Common Lisp, the other main dialect, Scheme follows a minimalist design philosophy specifying a small standard core with powerful tools for language extension. Its compactness and elegance have made it popular with educators, language designers, programmers, implementors, and hobbyists, and this diverse appeal is seen as both a strength and, because of the diversity of its constituencies and the wide divergence between implementations, one of its weaknesses.[1]
+Scheme was developed at the MIT AI Lab by Guy L. Steele and Gerald Jay Sussman who introduced it to the academic world via a series of memos, now referred to as the Lambda Papers, over the period 1975-1980. The Scheme language is standardized in the official IEEE standard,[2] and a de facto standard called the Revisedn Report on the Algorithmic Language Scheme (RnRS). The most widely implemented standard is R5RS (1998),[3] and a new standard R6RS[4] was ratified in 2007.[5]
+Scheme was the first dialect of Lisp to choose lexical scope and the first to require implementations to perform tail-call optimization. It was also one of the first programming languages to support first-class continuations. It had a significant influence on the effort that led to the development of its sister, Common Lisp.[6]
+Contents [hide]
+1 Origin
+2 Distinguishing features
+2.1 Fundamental design features
+2.1.1 Minimalism
+2.1.2 Lexical scope
+2.1.3 Lambda calculus
+2.1.4 Block structure
+2.1.5 Proper tail recursion
+2.1.6 First-class continuations
+2.1.7 Shared namespace for procedures and variables
+2.2 Implementation standards
+2.2.1 Numerical tower
+2.2.2 Delayed evaluation
+2.2.3 Order of evaluation of procedure arguments
+2.2.4 Hygienic macros
+2.2.5 Environments and eval
+2.2.6 Treatment of non-boolean values in boolean expressions
+2.2.7 Disjointness of primitive datatypes
+2.2.8 Equivalence predicates
+2.2.9 Comments
+2.2.10 Input/output
+2.2.11 Redefinition of standard procedures
+2.3 Nomenclature and naming conventions
+3 Review of standard forms and procedures
+3.1 Standard forms
+3.2 Standard procedures
+4 Scheme Requests for Implementation - portable extensions to the standard
+5 Implementations
+6 R6RS
+7 R7RS
+8 Usage
+9 See also
+10 References
+11 Further reading
+12 External links
+[edit]Origin
+
+Main article: History of the Scheme programming language
+Scheme started as an attempt to understand Carl Hewitt's Actor model, for which purpose Steele and Sussman wrote a "tiny Lisp interpreter" using Maclisp and then "added mechanisms for creating actors and sending messages."[7] Scheme was originally called "Schemer", in the tradition of other Lisp-derived languages like Planner or Conniver. The current name resulted from the authors' use of the ITS operating system, which limited filenames to two components of at most six characters each. Currently, "Schemer" is commonly used to refer to a Scheme programmer.
+[edit]Distinguishing features
+
+See also: Lisp (programming language)
+Scheme is primarily a functional programming language. It shares many characteristics with other members of the Lisp programming language family. Scheme's very simple syntax is based on s-expressions, parenthesized lists in which a prefix operator is followed by its arguments. Scheme programs thus consist of sequences of nested lists. Lists are also the main data structure in Scheme, leading to a close equivalence between source code and data formats (homoiconicity). Scheme programs can easily create and evaluate pieces of Scheme code dynamically.
+The reliance on lists as data structures is shared by all Lisp dialects. Scheme inherits a rich set of list-processing primitives such as cons, car and cdr from its Lisp ancestors. Scheme uses strictly but dynamically typed variables and supports first-class functions. Thus, functions can be assigned as values to variables or passed as arguments to functions.
+This section concentrates mainly on innovative features of the language, including those features that distinguish Scheme from other Lisps. Unless stated otherwise, descriptions of features relate to the R5RS standard.
+In examples provided in this section, the notation "===> result" is used to indicate the result of evaluating the expression on the immediately preceding line. This is the same convention used in R5RS.
+[edit]Fundamental design features
+This subsection describes those features of Scheme that have distinguished it from other programming languages from its earliest days. These are the aspects of Scheme that most strongly influence any product of the Scheme language, and they are the aspects that all versions of the Scheme programming language, from 1973 onward, share.
+[edit]Minimalism
+Scheme is a very simple language, much easier to implement than any language of comparable expressive power.[8] This ease is attributable to the use of lambda calculus to derive much of the syntax of the language from more primitive forms. For instance of the 23 s-expression-based syntactic constructs defined in the R5RS Scheme standard, 11 are classed as derived or library forms, which can be written as macros involving more fundamental forms, principally lambda. As R5RS says (R5RS sec. 3.1): "The most fundamental of the variable binding constructs is the lambda expression, because all other variable binding constructs can be explained in terms of lambda expressions."[3]
+Fundamental forms: define, lambda, if, quote, unquote, unquote-splicing, quasiquote, define-syntax, let-syntax, letrec-syntax, syntax-rules, set!
+Library forms: do, let, let*, letrec, cond, case, and, or, begin, named let, delay
+Example: a macro to implement let as an expression using lambda to perform the variable bindings.
+(define-syntax let
+  (syntax-rules ()
+    ((let ((var expr) ...) body ...)
+      ((lambda (var ...) body ...) expr ...))))
+Thus using let as defined above a Scheme implementation would rewrite "(let ((a 1)(b 2)) (+ b a))" as "((lambda (a b) (+ b a)) 1 2)", which reduces implementation's task to that of coding procedure instantiations.
+In 1998 Sussman and Steele remarked that the minimalism of Scheme was not a conscious design goal, but rather the unintended outcome of the design process. "We were actually trying to build something complicated and discovered, serendipitously, that we had accidentally designed something that met all our goals but was much simpler than we had intended....we realized that the lambda calculus—a small, simple formalism—could serve as the core of a powerful and expressive programming language. "[7]
+[edit]Lexical scope
+See also: Scope (programming)
+Like most modern programming languages and unlike earlier Lisps such as Maclisp or Emacs Lisp, Scheme is lexically scoped: all possible variable bindings in a program unit can be analyzed by reading the text of the program unit without consideration of the contexts in which it may be called.
+This contrasts with dynamic scoping which was characteristic of early Lisp dialects because of the processing costs associated with the primitive textual substitution methods used to implement lexical scoping algorithms in compilers and interpreters of the day. In those Lisps, it was perfectly possible for a reference to a free variable inside a procedure to refer to quite distinct bindings external to the procedure depending on the context of the call.
+The impetus to incorporate what was, in the early 1970s, an unusual scoping model into their new version of Lisp came from Sussman's studies of ALGOL, He suggested that ALGOL-like lexical scoping mechanisms would help to realise their initial goal of implementing Hewitt's Actor model in Lisp.[7]
+The key insights on how to introduce lexical scoping into a Lisp dialect were popularized in Sussman and Steele's 1975 Lambda Paper, "Scheme: An Interpreter for Extended Lambda Calculus",[9] where they adopted the concept of the lexical closure, which had been described in an AI Memo in 1970 by Joel Moses, who attributed the idea to Peter J. Landin.[10]
+[edit]Lambda calculus
+See also: Lambda calculus
+Alonzo Church's mathematical notation, the lambda calculus, has inspired Lisp's use of "lambda" as a keyword for introducing a procedure, as well as influencing the development of functional programming techniques involving the use of higher-order functions in Lisp. But early Lisps were not suitable expressions of the lambda calculus because of their treatment of free variables.[7]
+The introduction of lexical scope resolved the problem by making an equivalence between some forms of lambda notation and their practical expression in a working programming language. Sussman and Steele showed that the new language could be used to elegantly derive all the imperative and declarative semantics of other programming languages including ALGOL and Fortran, and the dynamic scope of other Lisps, by using lambda expressions not as simple procedure instantiations but as "control structures and environment modifiers."[11] They introduced continuation-passing style along with their first description of Scheme in the first of the Lambda Papers, and in subsequent papers they proceeded to demonstrate the raw power of this practical use of lambda calculus.
+[edit]Block structure
+Scheme inherits its block structure from earlier block structured languages, particularly ALGOL. In Scheme blocks are implemented by three binding constructs: let, let* and letrec. For instance, the following construct creates a block in which a symbol called var is bound to the number 10:
+(define var "goose")
+;; Any reference to var here will be bound to "goose"
+(let ((var 10))
+  ;; statements go here.  Any reference to var here will be bound to 10.
+  )
+;; Any reference to var here will be bound to "goose"
+Blocks can be nested to create arbitrarily complex block structures according to the need of the programmer. The use of block structuring to create local bindings alleviates the risk of namespace collision that can otherwise occur.
+One variant of let, let*, permits bindings to refer to variables defined earlier in the same construct, thus:
+(let* ((var1 10)
+      (var2 (+ var1 12)))
+  ;; But the definition of var1 could not refer to var2
+  )
+The other variant, letrec, is designed to enable mutually recursive procedures to be bound to one another.
+;; Tabulation of Hofstadter's male and female sequences
+(letrec ((female (lambda(n)
+                   (if (= n 0) 1
+                       (- n (male (female (- n 1)))))))
+         (male (lambda(n)
+                 (if (= n 0) 0
+                     (- n (female (male (- n 1))))))))
+  (display "i male(i) female(i)")(newline)
+  (do ((i 0 (+ i 1)))
+      ((> i 8) #f)
+    (display i) (display "   ")(display (male i))(display "         ")(display (female i))
+    (newline)))
+(See Hofstadter's male and female sequences for the definitions used in this example)
+All procedures bound in a single letrec may refer to one another by name, as well as to values of variables defined earlier in the same letrec, but they may not refer to values defined later in the same letrec.
+A variant of let, the "named let" form, has an identifier after the let keyword. This binds the let variables to the argument of a procedure whose name is the given identifier and whose body is the body of the let form. The body may be repeated as desired by calling the procedure. The named let is widely used to implement iteration.
+Example: a simple counter
+(let loop ((n 1))
+  (if (<= n 10)
+    (begin
+      (display n)(newline)
+      (loop (+ n 1)))))
+Like any procedure in Scheme the procedure created in the named let is a first class object.
+[edit]Proper tail recursion
+For more details on this topic, see Tail recursion.
+Scheme has an iteration construct, do, but it is more idiomatic in Scheme to use tail recursion to express iteration. Standard-conforming Scheme implementations are required to optimize tail calls so as to support an unbounded number of active tail calls (R5RS sec. 3.5)[3]—a property the Scheme report describes as proper tail recursion—making it safe for Scheme programmers to write iterative algorithms using recursive language which is sometimes more intuitive. Tail recursive procedures and the named let form provide support for iteration using tail recursion.
+;; Tabulation of squares from 0 to 9:
+;; Note: loop is simply an arbitrary symbol used as a label. Any symbol will do.
+(let loop ((i 0))
+  (if (not (= i 10))
+     (begin
+        (display i)(display " squared = ")(display (* i i))(newline)
+        (loop (+ i 1)))))
+[edit]First-class continuations
+Main article: continuation
+Continuations in Scheme are first-class objects. Scheme provides the procedure call-with-current-continuation (also known as call/cc) to capture the current continuation by packing it up as an escape procedure bound to a formal argument in a procedure provided by the programmer. (R5RS sec. 6.4)[3] First-class continuations enable the programmer to create non-local control constructs such as iterators, coroutines, and backtracking.
+The following example, a traditional programmer's puzzle, shows that Scheme can handle continuations as first-class objects, binding them to variables and passing them as arguments to procedures.
+(let* ((yin
+         ((lambda (cc) (display "@") cc) (call-with-current-continuation (lambda (c) c))))
+       (yang
+         ((lambda (cc) (display "*") cc) (call-with-current-continuation (lambda (c) c)))) )
+    (yin yang))
+When executed this code displays a counting sequence: "@*@**@***@****@*****@******@*******@********..."
+[edit]Shared namespace for procedures and variables
+In contrast to Common Lisp, all data and procedures in Scheme share a common namespace, whereas in Common Lisp functions and data have separate namespaces making it possible for a function and a variable to have the same name, and requiring special notation for referring to a function as a value. This is sometimes known as the "Lisp-1/Lisp-2" distinction, referring to the unified namespace of Scheme and the separate namespaces of Common Lisp.[12]
+In Scheme, the same primitives that are used to manipulate and bind data can be used to bind procedures. There is no equivalent of Common Lisp's defun, setf and #' primitives.
+;; Variable bound to a number:
+(define f 10)
+f
+===> 10
+;; Mutation (altering the bound value)
+(set! f (+ f f 6))
+===> 26
+;; Assigning a procedure to the same variable:
+(set! f (lambda (n) (+ n 12)))
+(f 6)
+===> 18
+;; Assigning the result of an expression to the same variable:
+(set! f (f 1))
+f
+===> 13
+;; functional programming:
+(apply + '(1 2 3 4 5 6))
+===> 21
+(set! f (lambda(n) (+ n 100)))
+(map f '(1 2 3))
+===> (101 102 103)
+[edit]Implementation standards
+This subsection documents design decisions that have been taken over the years which have given Scheme a particular character, but are not the direct outcomes of the original design.
+[edit]Numerical tower
+Main article: Numerical tower
+Scheme specifies a comparatively full set of numerical datatypes including complex and rational types, which is known in Scheme as the numerical tower. (R5RS sec. 6.2[3]) The standard treats these as abstractions and does not commit the implementor to a particular internal representation.
+Numbers may have the quality of exactness. An exact number can only be produced by a sequence of exact operations involving other exact numbers—inexactness is thus contagious. The standard specifies that any two implementations must produce equivalent results for all operations resulting in exact numbers.
+The R5RS standard specifies procedures exact->inexact and inexact->exact which can be used to change the exactness of a number. inexact->exact produces "the exact number that is numerically closest to the argument." exact->inexact produces "the inexact number that is numerically closest to the argument." The R6RS standard omits these procedures from the main report but specifies them as R5RS compatibility procedures in the standard library (rnrs r5rs (6)).
+At R5RS standard. Scheme implementations are not required to implement the whole numerical tower but they must implement "a coherent subset consistent with both the purposes of the implementation and the spirit of the Scheme language." (R5RS sec. 6.2.3).[3] The new R6RS standard does require implementation of the whole tower and "exact integer objects and exact rational number objects of practically unlimited size and precision, and to implement certain procedures...so they always return exact results when given exact arguments" (R6RS sec. 3.4, sec. 11.7.1).[4]
+Example 1: exact arithmetic in an implementation that supports exact rational complex numbers.
+;; Sum of three rational real numbers and two rational complex numbers 
+(define x (+ 1/3 1/4 -1/5 -1/3i 405/50+2/3i))
+x
+===> 509/60+1/3i
+;; Check for exactness.
+(exact? x)
+===> #t
+Example 2: Same arithmetic in an implementation that supports neither exact rational numbers nor complex numbers but does accept real numbers in rational notation.
+;; Sum of four rational real numbers
+(define xr (+ 1/3 1/4 -1/5 405/50))
+;; Sum of two rational real numbers
+(define xi (+ -1/3 2/3))
+xr
+===> 8.48333333333333
+xi
+===> 0.333333333333333
+;; Check for exactness.
+(exact? xr)
+===> #f
+(exact? xi)
+===> #f
+Both implementations conform to the R5RS standard but the second does not conform to R6RS because it does not implement the full numerical tower.
+[edit]Delayed evaluation
+See also: Lazy evaluation
+Scheme supports delayed evaluation through the delay form and the procedure force.
+(define a 10)
+(define eval-aplus2 (delay (+ a 2)))
+(set! a 20)
+(force eval-aplus2)
+===> 22
+(define eval-aplus50 (delay (+ a 50)))
+(let ((a 8))
+  (force eval-aplus50))
+===> 70
+(set! a 100)
+(force eval-aplus2)
+===> 22
+The lexical context of the original definition of the promise is preserved, and its value is also preserved after the first use of force, The promise is only ever evaluated once.
+These primitives, which produce or handle values known as promises, can be used to implement advanced lazy evaluation constructs such as streams.[13]
+In the R6RS standard, these are no longer primitives but instead are provided as part of the R5RS compatibility library (rnrs r5rs (6)).
+In R5RS, a suggested implementation of delay and force is given, implementing the promise as a procedure with no arguments (a thunk) and using memoization to ensure that it is only ever evaluated once irrespective of the number of times force is called. (R5RS sec. 6.4)[3]
+SRFI 41 enables the expression of both finite and infinite sequences with extraordinary economy. For example this is a definition of the fibonacci sequence using the functions defined in SRFI 41:[13]
+;; Define the Fibonacci sequence:
+(define fibs
+  (stream-cons 0
+    (stream-cons 1
+      (stream-map +
+        fibs
+        (stream-cdr fibs)))))
+;; Compute the hundredth number in the sequence:
+(stream-ref fibs 99)
+===>  218922995834555169026
+[edit]Order of evaluation of procedure arguments
+Most Lisps specify an order of evaluation for procedure arguments. Scheme does not. Order of evaluation—including the order in which the expression in the operator position is evaluated—may be chosen by an implementation on a call-by-call basis, and the only constraint is that "the effect of any concurrent evaluation of the operator and operand expressions is constrained to be consistent with some sequential order of evaluation." (R5RS sec. 4.1.3)[3]
+(let ((ev (lambda(n) (display "Evaluating ")
+                     (display (if (procedure? n) "procedure" n))
+                     (newline) n)))
+  ((ev +) (ev 1) (ev 2)))
+===> 3
+ev is a procedure that describes the argument passed to it, then returns the value of the argument. In contrast with other Lisps, the appearance of an expression in the operator position (the first item) of a Scheme expression is quite legal, as long as the result of the expression in the operator position is a procedure.
+In calling the procedure "+" to add 1 and 2, the expressions (ev +), (ev 1) and (ev 2) may be evaluated in any order, as long as the effect is not as if they were evaluated in parallel. Thus the following three lines may be displayed in any order by standard Scheme when the above example code is executed, although the text of one line may not be interleaved with another because that would violate the sequential evaluation constraint.
+Evaluating 1
+Evaluating 2
+Evaluating procedure
+[edit]Hygienic macros
+Main article: hygienic macro
+The R5RS standard introduced a powerful hygienic macro system that allows the programmer to add new syntactic constructs to the language using a simple pattern matching sublanguage. (R5RS sec 4.3)[3] Prior to this the hygienic macro system had been relegated to an appendix of the R4RS standard, as a "high level" system alongside a "low level" macro system, both of which were treated as extensions to Scheme rather than an essential part of the language.[14]
+Implementations of the hygienic macro system, also called syntax-rules, are required to respect the lexical scoping of the rest of the language. This is assured by special naming and scoping rules for macro expansion and avoids common programming errors that can occur in the macro systems of other programming languages. R6RS specifies a more sophisticated transformation system, syntax-case, which has been available as a language extension to R5RS Scheme for some time.
+;; Define a macro to implement a variant of "if" with a multi-expression
+;; true branch and no false branch.
+(define-syntax when
+  (syntax-rules ()
+    ((when pred exp exps ...)
+      (if pred (begin exp exps ...)))))
+Thus the syntax of Scheme can easily be extended.
+Invocations of macros and procedures bear a close resemblance—both are s-expressions—but they are treated differently. When the compiler encounters an s-expression in the program it first checks to see if the symbol is defined as a syntactic keyword within the current lexical scope. If so it then attempts to expand the macro treating the items in the tail of the s-expression as arguments without compiling code to evaluate them, and this process is repeated recursively until no macro invocations remain. If it is not a syntactic keyword, the compiler compiles code to evaluate the arguments in the tail of the s-expression and then to evaluate the variable represented by the symbol at the head of the s-expression and call it as a procedure with the evaluated tail expressions passed as actual arguments to it.
+Most Scheme implementations also provide additional macro systems. Among popular ones are syntactic closures, explicit renaming macros and define-macro, a non-hygienic macro system similar to defmacro system provided in Common Lisp.
+[edit]Environments and eval
+Prior to R5RS, Scheme had no standard equivalent of the eval procedure which is ubiquitous in other Lisps, although the first Lambda Paper had described evaluate as "similar to the LISP function EVAL"[9] and the first Revised Report in 1978 replaced this with enclose, which took two arguments. The second, third and fourth revised reports omitted any equivalent of eval.
+The reason for this confusion is that in Scheme with its lexical scoping the result of evaluating an expression depends on where it is evaluated. For instance, it is not clear whether the result of evaluating the following expression should be 5 or 6:[15]
+(let ((name '+))
+  (let ((+ *))
+    (evaluate (list name 2 3))))
+If it is evaluated in the outer environment, where name is defined, the result is the sum of the operands. If it is evaluated in the inner environment, where the symbol "+" has been bound to the value of the procedure "*", the result is the product of the two operands.
+R5RS resolves this confusion by specifying three procedures that return environments, and providing a procedure eval that takes an s-expression and an environment and evaluates the expression in the environment provided. (R5RS sec. 6.5)[3] R6RS extends this by providing a procedure called environment by which the programmer can specify exactly which objects to import into the evaluation environment.
+[edit]Treatment of non-boolean values in boolean expressions
+In most dialects of Lisp including Common Lisp, by convention the value NIL evaluates to the value false in a boolean expression. In Scheme, since the IEEE standard in 1991,[2] all values except #f, including NIL's equivalent in Scheme which is written as '(), evaluate to the value true in a boolean expression. (R5RS sec. 6.3.1)[3]
+Where the constant representing the boolean value of true is T in most Lisps, in Scheme it is #t.
+[edit]Disjointness of primitive datatypes
+In Scheme the primitive datatypes are disjoint. Only one of the following predicates can be true of any Scheme object: boolean?, pair?, symbol?, number?, char?, string?, vector?, port?, procedure?. (R5RS sec 3.2)[3]
+Within the numerical datatype, by contrast, the numerical values overlap. For example, an integer value satisfies all of the integer?, rational?, real?, complex? and number? predicates at the same time. (R5RS sec 6.2)[3]
+[edit]Equivalence predicates
+See also: relational operator
+Scheme has three different types of equivalence between arbitrary objects denoted by three different equivalence predicates, relational operators for testing equality, eq?, eqv? and equal?:
+eq? evaluates to #f unless its parameters represent the same data object in memory;
+eqv? is generally the same as eq? but treats primitive objects (e.g. characters and numbers) specially so that numbers that represent the same value are eqv? even if they do not refer to the same object;
+equal? compares data structures such as lists, vectors and strings to determine if they have congruent structure and eqv? contents.(R5RS sec. 6.1)[3]
+Type dependent equivalence operations also exist in Scheme: string=? and string-ci=? compare two strings (the latter performs a case-independent comparison); char=? and char-ci=? compare characters; = compares numbers.[3]
+[edit]Comments
+See also: Comment (computer programming)
+Up to the R5RS standard, the standard comment in Scheme was a semicolon, which makes the rest of the line invisible to Scheme. Numerous implementations have supported alternative conventions permitting comments to extend for more than a single line, and the R6RS standard permits two of them: an entire s-expression may be turned into a comment (or "commented out") by preceding it with #; (introduced in SRFI 62[16]) and a multiline comment or "block comment" may be produced by surrounding text by #| and |#.
+[edit]Input/output
+Scheme's input and output is based on the port datatype. (R5RS sec 6.6)[3] R5RS defines two default ports, accessible with the procedures current-input-port and current-output-port, which correspond to the Unix notions of standard input and standard output. Most implementations also provide current-error-port. Redirection of input and standard output is supported in the standard, by standard procedures such as with-input-from-file and with-output-to-file. Most implementations provide string ports with similar redirection capabilities, enabling many normal input-output operations to be performed on string buffers instead of files, using procedures described in SRFI 6.[17] The R6RS standard specifies much more sophisticated and capable port procedures and many new types of port.
+The following examples are written in strict R5RS Scheme.
+Example 1: With output defaulting to (current-output-port):
+(let ((hello0 (lambda() (display "Hello world")(newline))))
+  (hello0))
+Example 2: As 1, but using optional port argument to output procedures
+(let ((hello1 (lambda (p) (display "Hello world" p)(newline p))))
+  (hello1 (current-output-port)))
+Example 3: As 1, but output is redirected to a newly created file
+;; NB: with-output-to-file is an optional procedure in R5RS
+(let ((hello0 (lambda () (display "Hello world")(newline))))
+  (with-output-to-file "helloworldoutputfile" hello0))
+Example 4: As 2, but with explicit file open and port close to send output to file
+(let ((hello1 (lambda (p) (display "Hello world" p)(newline p)))
+      (output-port (open-output-file "helloworldoutputfile")))
+  (hello1 output-port)
+  (close-output-port output-port))
+Example 5: As 2, but with using call-with-output-file to send output to a file.
+(let ((hello1 (lambda (p) (display "Hello world" p)(newline p))))
+  (call-with-output-file "helloworldoutputfile" hello1))
+Similar procedures are provided for input. R5RS Scheme provides the predicates input-port? and output-port?. For character input and output, write-char, read-char, peek-char, char-ready? are provided. For writing and reading Scheme expressions, Scheme provides read and write. On a read operation, the result returned is the end-of-file object if the input port has reached the end of the file, and this can be tested using the predicate eof-object?.
+In addition to the standard, SRFI 28 defines a basic formatting procedure resembling Common Lisp's format function, after which it is named.[18]
+[edit]Redefinition of standard procedures
+In Scheme procedures are bound to variables. At R5RS the language standard formally mandated that programs may change the variable bindings of built-in procedures, effectively redefining them. (R5RS "Language changes")[3] For example, one may extend + to accept strings as well as numbers by redefining it:
+(set! +
+      (let ((original+ +))
+        (lambda args
+          (if (and (not (null? args)) (string? (car args)))
+              (apply string-append args)
+              (apply original+ args)))))
+(+ 1 2 3)
+===> 6
+(+ "1" "2" "3")
+===> "123"
+In R6RS every binding, including the standard ones, belongs to some library, and all exported bindings are immutable. (R6RS sec 7.1)[4] Because of this, redefinition of standard procedures by mutation is forbidden. Instead, it is possible to import a different procedure under the name of a standard one, which in effect is similar to redefinition.
+[edit]Nomenclature and naming conventions
+In Standard Scheme, procedures that convert from one datatype to another contain the character string "->" in their name, predicates end with a "?", and procedures that change the value of already-allocated data end with a "!". These conventions are often followed by Scheme programmers.
+In formal contexts such as Scheme standards, the word "procedure" is used in preference to "function" to refer to a lambda expression or primitive procedure. In normal usage the words "procedure" and "function" are used interchangeably. Procedure application is sometimes referred to formally as combination.
+As in other Lisps, the term "thunk" is used in Scheme to refer to a procedure with no arguments. The term "proper tail recursion" refers to the property of all Scheme implementations, that they perform tail-call optimization so as to support an indefinite number of active tail calls.
+The form of the titles of the standards documents since R3RS, "Revisedn Report on the Algorithmic Language Scheme", is a reference to the title of the ALGOL 60 standard document, "Revised Report on the Algorithmic Language Algol 60," The Summary page of R3RS is closely modeled on the Summary page of the ALGOL 60 Report.[19][20]
+[edit]Review of standard forms and procedures
+
+The language is formally defined in the standards R5RS (1998) and R6RS (2007). They describe standard "forms": keywords and accompanying syntax, which provide the control structure of the language, and standard procedures which perform common tasks.
+[edit]Standard forms
+This table describes the standard forms in Scheme. Some forms appear in more than one row because they cannot easily be classified into a single function in the language.
+Forms marked "L" in this table are classed as derived "library" forms in the standard and are often implemented as macros using more fundamental forms in practice, making the task of implementation much easier than in other languages.
+Standard forms in the language R5RS Scheme
+Purpose	Forms
+Definition	define
+Binding constructs	lambda, do (L), let (L), let* (L), letrec (L)
+Conditional evaluation	if, cond (L), case (L), and (L), or (L)
+Sequential evaluation	begin (L)
+Iteration	lambda, do (L), named let (L)
+Syntactic extension	define-syntax, let-syntax, letrec-syntax, syntax-rules (R5RS), syntax-case (R6RS)
+Quoting	quote('), unquote(,), quasiquote(`), unquote-splicing(,@)
+Assignment	set!
+Delayed evaluation	delay (L)
+[edit]Standard procedures
+The following two tables describe the standard procedures in R5RS Scheme. R6RS is far more extensive and a summary of this type would not be practical.
+Some procedures appear in more than one row because they cannot easily be classified into a single function in the language.
+Standard procedures in the language R5RS Scheme
+Purpose	Procedures
+Construction	vector, make-vector, make-string, list
+Equivalence predicates	eq?, eqv?, equal?, string=?, string-ci=?, char=?, char-ci=?
+Type conversion	vector->list, list->vector, number->string, string->number, symbol->string, string->symbol, char->integer, integer->char, string->list, list->string
+Numbers	See separate table
+Strings	string?, make-string, string, string-length, string-ref, string-set!, string=?, string-ci=?, string<? string-ci<?, string<=? string-ci<=?, string>? string-ci>?, string>=? string-ci>=?, substring, string-append, string->list, list->string, string-copy, string-fill!
+Characters	char?, char=?, char-ci=?, char<? char-ci<?, char<=? char-ci<=?, char>? char-ci>?, char>=? char-ci>=?, char-alphabetic?, char-numeric?, char-whitespace?, char-upper-case?, char-lower-case?, char->integer, integer->char, char-upcase, char-downcase
+Vectors	make-vector, vector, vector?, vector-length, vector-ref, vector-set!, vector->list, list->vector, vector-fill!
+Symbols	symbol->string, string->symbol, symbol?
+Pairs and lists	pair?, cons, car, cdr, set-car!, set-cdr!, null?, list?, list, length, append, reverse, list-tail, list-ref, memq. memv. member, assq, assv, assoc, list->vector, vector->list, list->string, string->list
+Identity predicates	boolean?, pair?, symbol?, number?, char?, string?, vector?, port?, procedure?
+Continuations	call-with-current-continuation (call/cc), values, call-with-values, dynamic-wind
+Environments	eval, scheme-report-environment, null-environment, interaction-environment (optional)
+Input/output	display, newline, read, write, read-char, write-char, peek-char, char-ready?, eof-object? open-input-file, open-output-file, close-input-port, close-output-port, input-port?, output-port?, current-input-port, current-output-port, call-with-input-file, call-with-output-file, with-input-from-file(optional), with-output-to-file(optional)
+System interface	load (optional), transcript-on (optional), transcript-off (optional)
+Functional programming	procedure?, apply, map, for-each
+Booleans	boolean? not
+String and character procedures that contain "-ci" in their names perform case-independent comparisons between their arguments: upper case and lower case versions of the same character are taken to be equal.
+Standard numeric procedures in the language R5RS Scheme
+Purpose	Procedures
+Basic arithmetic operators	+, -, *, /, abs, quotient, remainder, modulo, gcd, lcm, expt, sqrt
+Rational numbers	numerator, denominator, rational?, rationalize
+Approximation	floor, ceiling, truncate, round
+Exactness	inexact->exact, exact->inexact, exact?, inexact?
+Inequalities	<, <=, >, >=
+Miscellaneous predicates	zero?, negative?, positive? odd? even?
+Maximum and minimum	max, min
+Trigonometry	sin, cos, tan, asin, acos, atan
+Exponentials	exp, log
+Complex numbers	make-rectangular, make-polar, real-part, imag-part, magnitude, angle, complex?
+Input-output	number->string, string->number
+Type predicates	integer?, rational?, real?, complex?, number?
+Implementations of - and / that take more than two arguments are defined but left optional at R5RS.
+[edit]Scheme Requests for Implementation - portable extensions to the standard
+
+Main article: Scheme Requests for Implementation
+Because of Scheme's minimalism, many common procedures and syntactic forms are not defined by the standard. In order to keep the core language small but facilitate standardization of extensions, the Scheme community has a "Scheme Request for Implementation" (SRFI) process by which extension libraries are defined through careful discussion of extension proposals. This promotes code portability. Many of the SRFIs are supported by all or most Scheme implementations.
+SRFIs with fairly wide support in different implementations include[21]:
+0: feature-based conditional expansion construct
+1: list library
+4: homogeneous numeric vector datatypes
+6: basic string ports
+8: receive, binding to multiple values
+9: defining record types
+13: string library
+14: character-set library
+16: syntax for procedures of variable arity
+17: generalized set!
+18: Multithreading support
+19: time data types and procedures
+25: multi-dimensional array primitives
+26: notation for specializing parameters without currying
+27: sources of random bits
+28: basic format strings
+29: localization
+30: nested multi-line comments
+31: a special form for recursive evaluation
+37: args-fold: a program argument processor
+39: parameter objects
+41: streams
+42: eager comprehensions
+43: vector library
+45: primitives for expressing iterative lazy algorithms
+60: integers as bits
+61: a more general cond clause
+66: octet vectors
+67: compare procedures
+A full list of accepted (finalized) SRFIs is available at http://srfi.schemers.org/final-srfis.html
+[edit]Implementations
+
+See Category:Scheme implementations for a list of major implementations
+The elegant, minimalist design has made Scheme a popular target for language designers, hobbyists, and educators, and because of the small size of a typical interpreter it is also a popular choice for embedded systems and scripting. This has resulted in scores of implementations,[22] most of which differ from each other so much that porting programs from one implementation to another is quite difficult and the small size of the standard language means that writing a useful program of any great complexity in standard, portable Scheme is almost impossible. The R6RS standard specifies a much broader language in an attempt to broaden its appeal to programmers.
+Almost all implementations provide a traditional Lisp-style read-eval-print loop for development and debugging. Many also compile Scheme programs to executable binary. Support for embedding Scheme code in programs written in other languages is also common, as the relative simplicity of Scheme implementations make Scheme a popular choice for adding scripting capabilities to larger systems developed in languages such as C. Gambit, Chicken and Bigloo work by compiling Scheme to C, which makes embedding particularly easy. In addition, Bigloo's compiler can be configured to generate JVM bytecode, and it also features an experimental bytecode generator for .Net.
+Some implementations support additional features. For example, Kawa and JScheme provide integration with Java classes, and the Scheme to C compilers often make it easy to use external libraries written in C, up to allowing the embedding of actual C code in the Scheme source. Another example is PVTS which offers a set of visual tools for supporting the learning of Scheme.
+[edit]R6RS
+
+A new language standardization process began at the 2003 Scheme workshop, with the goal of producing an R6RS standard in 2006. This process broke with the earlier RnRS approach of unanimity.
+R6RS features a standard module system, allowing a split between the core language and libraries. A number of drafts of the R6RS specification were released, the final version being R5.97RS. A successful vote resulted in the ratification of the new standard, announced on August 28, 2007.[4]
+Currently the newest releases of various Scheme implementations, e.g. Ikarus, Larceny, Racket and Ypsilon support the R6RS standard. There is a portable reference implementation of the proposed implicitly-phased libraries for R6RS, called psyntax, which loads and bootstraps itself properly on various older Scheme implementations.[23]
+R6RS introduces numerous significant changes to the language.[24] The source code is now specified in Unicode, and a large subset of Unicode characters may now appear in Scheme symbols and identifiers, and there are other minor changes to the lexical rules. Character data is also now specified in Unicode. Many standard procedures have been moved to the new standard libraries, which themselves form a large expansion of the standard, containing procedures and syntactic forms that were formerly not part of the standard. A new module system has been introduced, and systems for exception handling are now standardized. Syntax-rules has been replaced with a more expressive syntactic abstraction facility (syntax-case) which allows the use of all of Scheme at macro expansion time. Compliant implementations are now required to support Scheme's full numeric tower, and the semantics of numbers have been expanded, mainly in the direction of support for the IEEE 754 standard for floating point numerical representation.
+[edit]R7RS
+
+The R6RS standard has caused controversy because it is seen to have departed from the minimalist philosophy.[25][26] In August 2009, the Scheme Steering Committee which oversees the standardization process announced its intention to recommend splitting Scheme into two languages: a large modern programming language for programmers, and a subset of the large version retaining the minimalism prized by educators and casual implementors[1]; two working groups were created to work on these two new versions of Scheme. The [Scheme Reports Process] site has links to the working groups charters, public discussions and issue tracking system.
+[edit]Usage
+
+Scheme is widely used by a number[27] of schools; in particular, a number of introductory Computer Science courses use Scheme in conjunction with the textbook Structure and Interpretation of Computer Programs (SICP).[28] For the past 12 years, PLT has run the TeachScheme! project, which has exposed close to 600 high school teachers and thousands of high school students to rudimentary Scheme programming. MIT's old introductory programming class 6.001 was taught in Scheme,[29] Although 6.001 has been replaced by more modern courses, SICP continues to be taught at MIT.[30] The textbook How to Design Programs by Matthias Felleisen, currently at Northeastern University, is used by some institutes of higher education for their introductory computer science courses. Both Northeastern University and Worcester Polytechnic Institute use Scheme exclusively for their introductory courses Fundamentals of Computer Science (CS2500) and Introduction to Program Design (CS1101), respectively. [31] [32] Indiana University's introductory class, C211, is taught entirely in Scheme. The introductory class at UC Berkeley, CS 61A, is taught entirely in Scheme, save minor diversions into Logo to demonstrate dynamic scope; all course materials, including lecture webcasts, are available online free of charge.[33] The introductory computer science courses at Yale and Grinnell College are also taught in Scheme.[34] Several introductory Computer Science courses at Rice University are also taught in Scheme.[35] Programming Design Paradigms,[31] a mandatory course for the Computer science Graduate Students at Northeastern University, also extensively uses Scheme. The introduction Computer Science course at the University of Minnesota - Twin Cities, CSci 1901, also uses Scheme as its primary language, followed by a course that introduces students to the Java programming language.[36] LambdaBeans[37] is an open source Scheme editor, helping with syntax coloring, code completion, and other features typical to code editors.
+Although there are relatively few examples of Scheme in apparent usage[38] for non-pedagogical purposes, the Document Style Semantics and Specification Language (DSSSL), which provides a method of specifying SGML stylesheets, uses a Scheme subset.[39] In addition, the well-known open source raster graphics editor GIMP uses Scheme as a scripting language.[40] Guile has been adopted by GNU project as its official scripting language, and that implementation of Scheme is embedded in such applications as GNU LilyPond and GnuCash as a scripting language for extensions. Likewise, Guile used to be the scripting language for the desktop environment GNOME,[41] and GNOME still has a project that provides Guile bindings to its library stack.[42] Elk Scheme is used by Synopsys as a scripting language for its technology CAD (TCAD) tools.[43] Shiro Kawai, senior programmer on the movie Final Fantasy: The Spirits Within, used Scheme as a scripting language for managing the real-time rendering engine.[44] Google's App Inventor for Android uses Scheme, where Kawa is used to compile the Scheme code down to byte-codes for the Java Virtual Machine running on Android devices.[45]
+[edit]See also
+
+Structure and Interpretation of Computer Programs, a classic computer science textbook. (Accompanying videos on YouTube and on a homepage.)
+How to Design Programs, which intends to teach principles that go beyond Scheme and to address perceived incongruities in SICP.
+Call-with-current-continuation (call/cc)
+SXML - an illustrative representation for XML in Scheme that provides a straightforward approach to XML data processing in Scheme
+[edit]References
+
+^ a b Will Clinger, Marc Feeley, Chris Hanson, Jonathan Rees and Olin Shivers (2009-08-20). "Position Statement, draft". Scheme Steering Committee. http://scheme-reports.org/2009/position-statement.html. Retrieved 2009-10-20.
+^ a b 1178-1990 (Reaff 2008) IEEE Standard for the Scheme Programming Language. IEEE part number STDPD14209, unanimously reaffirmed at a meeting of the IEEE-SA Standards Board Standards Review Committee (RevCom), March 26, 2008 (item 6.3 on minutes), reaffirmation minutes accessed October 2009. NOTE: this document is only available for purchase from IEEE and is not available online at the time of writing (2009).
+^ a b c d e f g h i j k l m n o p q Richard Kelsey, William Clinger, Jonathan Rees et al. (August 1998). "Revised5 Report on the Algorithmic Language Scheme". Higher-Order and Symbolic Computation 11 (1): 7–105. doi:10.1023/A:1010051815785. http://www.schemers.org/Documents/Standards/R5RS/.
+^ a b c d Michael Sperber, R. Kent Dybvig, Matthew Flatt, Anton Van Straaten et al. (August 2007). "Revised6 Report on the Algorithmic Language Scheme (R6RS)". Scheme Steering Committee. http://www.r6rs.org/. Retrieved 2009-10-20.
+^ "R6RS ratification-voting results". Scheme Steering Committee. 2007-08-13. http://www.r6rs.org/ratification/results.html. Retrieved 2009-10-20.
+^ Common LISP: The Language, 2nd Ed., Guy L. Steele Jr. Digital Press; 1981. ISBN 978-1555580414. "Common Lisp is a new dialect of Lisp, a successor to MacLisp, influenced strongly by ZetaLisp and to some extent by Scheme and InterLisp."
+^ a b c d Gerald Jay Sussman and Guy L. Steele, Jr. (December 1998). "The First Report on Scheme Revisited" (PDF). Higher-Order and Symbolic Computation 11 (4): 399–404. doi:10.1023/A:1010079421970. ISSN 1388-3690. http://www.brics.dk/~hosc/local/HOSC-11-4-pp399-404.pdf. Retrieved 2006-06-19.
+^ Indeed, the Scheme 48 implementation is so-named because the interpreter was written by Richard Kelsey and Jonathan Rees in 48 hours on August 6th and 7th, 1986. See Richard Kelsey, Jonathan Rees, Mike Sperber (2008-01-10). "The Incomplete Scheme 48 Reference Manual for release 1.8". Jonathan Rees, s48.org. http://s48.org/1.8/manual/manual.html. Retrieved 2009-10-20.
+^ a b Gerald Jay Sussman and Guy Lewis Steele, Jr. (December 1975). "Scheme: An Interpreter for Extended Lambda Calculus" (postscript or PDF). AI Memos (MIT AI Lab) AIM-349. http://library.readscheme.org/page1.html. Retrieved 2009-10-20
+^ Joel Moses (June 1970) (pdf), The Function of FUNCTION in LISP, or Why the FUNARG Problem Should Be Called the Environment Problem, AI Memo 199, http://dspace.mit.edu/handle/1721.1/5854, retrieved 2009-10-27, "A useful metaphor for the difference between FUNCTION and QUOTE in LISP is to think of QUOTE as a porous or an open covering of the function since free variables escape to the current environment. FUNCTION acts as a closed or nonporous covering (hence the term "closure" used by Landin). Thus we talk of "open" Lambda expressions (functions in LISP are usually Lambda expressions) and "closed" Lambda expressions. [...] My interest in the environment problem began while Landin, who had a deep understanding of the problem, visited MIT during 1966-67. I then realized the correspondence between the FUNARG lists which are the results of the evaluation of "closed" Lambda expressions in LISP and ISWIM's Lambda Closures."
+^ Gerald Jay Sussman and Guy Lewis Steele, Jr. (March 1976). "Lambda: The Ultimate Imperative" (postscript or PDF). AI Memos (MIT AI Lab) AIM-353. http://library.readscheme.org/page1.html. Retrieved 2009-10-20
+^ Gabriel, Richard P.; Pitman, Kent (1988). "Technical Issues of Separation in Function Cells and Value Cells". Lisp and Symbolic Computation 1 (1): pp. 81–101. June 1988. doi:10.1007/BF01806178. http://www.nhplace.com/kent/Papers/Technical-Issues.html. Retrieved 2009-10-14
+^ a b Philip L. Bewig (2008-01-24). "SRFI 41: Streams". The SRFI Editors, schemers.org. http://srfi.schemers.org/srfi-41/srfi-41.html. Retrieved 2009-10-20.
+^ William Clinger and Jonathan Rees, editors (1991). "Revised4 Report on the Algorithmic Language Scheme". ACM Lisp Pointers 4 (3): 1–55. http://www.cs.indiana.edu/scheme-repository/R4RS/r4rs_toc.html. Retrieved 2009-10-20
+^ Jonathan Rees, The Scheme of Things The June 1992 Meeting (postscript), in Lisp Pointers, V(4), October-December 1992. retrieved 2009-10-20
+^ Taylor Campbell (2005-07-21). "SRFI 62: S-expression comments". The SRFI Editors, schemers.org. http://srfi.schemers.org/srfi-62/srfi-62.html. Retrieved 2009-10-20.
+^ William D Clinger (1999-07-01). "SRFI 6: Basic String Ports". The SRFI Editors, schemers.org. http://srfi.schemers.org/srfi-6/srfi-6.html. Retrieved 2009-10-20.
+^ Scott G. Miller (2002-06-25). "SRFI 28: Basic Format Strings". The SRFI Editors, schemers.org. http://srfi.schemers.org/srfi-28/srfi-28.html. Retrieved 2009-10-20.
+^ J.W. Backus, F.L. Bauer, J.Green, C. Katz, J. McCarthy P. Naur, et al (January-April, 1960). "Revised Report on the Algorithmic Language Algol 60". Numerische Mathematik, Communications of the ACM, and Journal of the British Computer Society. http://www.masswerk.at/algol60/report.htm. Retrieved 2009-10-20
+^ Jonathan Rees and William Clinger (Editors), Hal Abelson, R. K. Dybvig et al. (December 1986). "Revised(3) Report on the Algorithmic Language Scheme, (Dedicated to the Memory of ALGOL 60)". ACM SIGPLAN Notices 21 (12): 37–79. http://groups.csail.mit.edu/mac/ftpdir/scheme-reports/r3rs-html/r3rs_toc.html. Retrieved 2009-10-20
+^ "Scheme Systems Supporting SRFIs". The SRFI Editors, schemers.org. 2009-08-30. http://srfi.schemers.org/srfi-implementers.html. Retrieved 2009-10-20.
+^ 75 known implementations of Scheme are listed by "scheme-faq-standards". Community Scheme Wiki. 2009-06-25. http://community.schemewiki.org/?scheme-faq-standards#implementations. Retrieved 2009-10-20.
+^ Abdulaziz Ghuloum (2007-10-27). "R6RS Libraries and syntax-case system (psyntax)". Ikarus Scheme. https://www.cs.indiana.edu/~aghuloum/r6rs-libraries/. Retrieved 2009-10-20.
+^ "Revised^6 Report on the Algorithmic Language Scheme, Appendix E: language changes". Scheme Steering Committee. 2007-09-26. http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-19.html#node_chap_E. Retrieved 2009-10-20.
+^ "R6RS Electorate". Scheme Steering Committee. 2007. http://www.r6rs.org/ratification/electorate.html. Retrieved 2009-10-20.
+^ Marc Feeley (compilation) (2007-10-26). "Implementors' intentions concerning R6RS". Scheme Steering Committee, r6rs-discuss mailing list. http://lists.r6rs.org/pipermail/r6rs-discuss/2007-October/003351.html. Retrieved 2009-10-20.
+^ Ed Martin (2009-07-20). "List of Scheme-using schools". Schemers Inc.. http://www.schemers.com/schools.html. Retrieved 2009-10-20.
+^ "List of SICP-using schools". MIT Press. 1999-01-26. http://mitpress.mit.edu/sicp/adopt-list.html. Retrieved 2009-10-20.
+^ Eric Grimson (Spring, 2005). "6.001 Structure and Interpretation of Computer Programs". MIT Open Courseware. http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-001Spring-2005/CourseHome/index.htm. Retrieved 2009-10-20.
+^ Alex Vandiver, Nelson Elhage, et al (January 2009). "6.184 - Zombies drink caffeinated 6.001". MIT CSAIL. http://web.mit.edu/alexmv/6.001/. Retrieved 2009-10-20.
+^ a b CS 2500: Fundamentals of Computer Science I, Northeastern University
+^ CS 1101: Introduction to Program Design (A05): course software, Worcester Polytechnic Institute
+^ Brian Harvey (Fall 2009). "Computer Science 61A, Berkeley". Department of Electrical Engineering and Computer Sciences, Berkeley. http://inst.eecs.berkeley.edu/~cs61a/. Retrieved 2009-10-20.
+^ Dana Angluin (Fall 2009). "Introduction to Computer Science (CPSC 201)". The Zoo, Yale University Computer Science Department. http://zoo.cs.yale.edu/classes/cs201/. Retrieved 2009-10-20.
+^ "Computer Science Courses 100-400, Rice University". Rice University Computer Science Department. Fall 2009. http://cohesion.rice.edu//engineering/computerscience/about.cfm?doc_id=8045. Retrieved 2009-10-20.
+^ University of Minnesota Computer Science Department http://www-users.itlabs.umn.edu/classes/Spring-2010/csci1901/ Structure of Computer Programming I, University of Minnesota Spring 2010 2010-1-30
+^ Geertjan Wieleng (2009-04-13). "Scheme Editor on the NetBeans Platform". DZone, Inc.. http://netbeans.dzone.com/news/scheme-editor-netbeans. Retrieved 2009-10-20.
+^ See What is Scheme used for? at "scheme-faq-general". Community Scheme Wiki. 2009-03-21. http://community.schemewiki.org/?scheme-faq-general. Retrieved 2009-10-20.
+^ Robin Cover (2002-02-25). "DSSSL - Document Style Semantics and Specification Language. ISO/IEC 10179:1996". Cover Pages. http://xml.coverpages.org/dsssl.html. Retrieved 2009-10-20.
+^ "The major scripting language for the GIMP that has been attached to it today is Scheme." From Dov Grobgeld (2002). "The GIMP Basic Scheme Tutorial". The GIMP Team. http://www.gimp.org/tutorials/Basic_Scheme/. Retrieved 2009-10-20.
+^ Todd Graham Lewis, David Zoll, Julian Missig (2002). "GNOME FAQ from Internet Archive". The Gnome Team, gnome.org. Archived from the original on 2000-05-22. http://web.archive.org/web/20000522010523/http://www.gnome.org/gnomefaq/html/x930.html. Retrieved 2009-10-20.
+^ "guile-gnome". Free Software Foundation. http://www.gnu.org/software/guile-gnome/. Retrieved 2009-10-20.
+^ Laurence Brevard (2006-11-09). "Synopsys MAP-inSM Program Update: EDA Interoperability Developers’ Forum" (pdf). Synopsis Inc. http://www.synopsys.com/community/interoperability/documents/devforum_pres/2006nov/milkywaysession_mapin_overview.pdf. Retrieved 2009-10-20.
+^ Kawai, Shiro (October 2002). "Gluing Things Together - Scheme in the Real-time CG Content Production". Proceedings of the First International Lisp Conference, San Francisco: 342–348. http://practical-scheme.net/docs/ILC2002.html. Retrieved 2009-10-20
+^ Bill Magnuson, Hal Abelson, and Mark Friedman (2009-08-11). "Under the Hood of App Inventor for Android". Google Inc, Official Google Research blog. http://googleresearch.blogspot.com/2009/08/under-hood-of-app-inventor-for-android.html. Retrieved 2009-10-20.
+[edit]Further reading
+
+An Introduction to Scheme and its Implementation (alternative link)
+Christopher T. Haynes (1999-06-22). "The Scheme Programming Language Standardization Experience". http://acm.org/tsc/sstd.html.
+Guy L. Steele, Jr., Richard P. Gabriel. "The Evolution of Lisp" (pdf). http://www.dreamsongs.com/NewFiles/HOPL2-Uncut.pdf.
+Gerald Sussman and Guy Steele. SCHEME: An Interpreter for Extended Lambda Calculus AI Memo 349, MIT Artificial Intelligence Laboratory, Cambridge, Massachusetts, December 1975.
+[edit]External links
+
+	Wikibooks has a book on the topic of
+Write Yourself a Scheme in 48 Hours
+The latest version of the Scheme standard: R6RS
+A tutorial for new Scheme programmers, the text of Teach Yourself Scheme in Fixnum Days by Dorai Sitaram
+Scheme at the Open Directory Project
+Scheme Requests for Implementation (SRFI)
+Schemers.org
+A Tour of Scheme in Gambit, introduction on how to do software development in Gambit Scheme for people with experiences in general programming languages.
+Bibliography of Scheme-related research
+Categories: Scheme programming language | Articles with example Scheme code

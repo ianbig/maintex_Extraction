@@ -1,0 +1,370 @@
+﻿
+Richard Feynman
+  (Redirected from Richard P. Feynman)
+"Feynman" redirects here. For other uses, see Feynman (disambiguation).
+Richard Feynman
+
+Feynman, c. 1943–1945
+Born	May 11, 1918
+Far Rockaway, Queens, New York, USA
+Died	February 15, 1988 (aged 69)
+Los Angeles, California, USA
+Residence	United States
+Nationality	American
+Fields	Physics
+Institutions	Manhattan Project
+Cornell University
+California Institute of Technology
+Alma mater	Massachusetts Institute of Technology (B.S.),
+Princeton University (Ph.D.)
+Doctoral advisor	John Archibald Wheeler
+Other academic advisors	Manuel Sandoval Vallarta
+Doctoral students	
+F. L. Vernon, Jr.[1]
+Willard H. Wells[1]
+Al Hibbs[1]
+George Zweig[1]
+Giovanni Rossi Lomanitz[1]
+
+Thomas Curtright[1]
+Other notable students	Douglas D. Osheroff
+Robert Barro
+Known for	Feynman diagrams
+Feynman point
+Feynman–Kac formula
+Wheeler–Feynman absorber theory
+Feynman sprinkler
+Feynman Long Division Puzzles
+Hellmann–Feynman theorem
+Feynman slash notation
+Feynman parametrization
+Sticky bead argument
+One-electron universe
+Quantum cellular automata
+Influences	Paul Dirac
+Notable awards	Albert Einstein Award (1954)
+E. O. Lawrence Award (1962)
+Nobel Prize in Physics (1965)
+Oersted Medal (1972)
+National Medal of Science (1979)
+Signature
+
+Notes
+He was the father of Carl Feynman and Michelle Feynman. He was the brother of Joan Feynman.
+Richard Phillips Feynman (pronounced /ˈfaɪnmən/, May 11, 1918 – February 15, 1988) was an American physicist known for his work in the path integral formulation of quantum mechanics, the theory of quantum electrodynamics and the physics of the superfluidity of supercooled liquid helium, as well as in particle physics (he proposed the parton model). For his contributions to the development of quantum electrodynamics, Feynman, jointly with Julian Schwinger and Sin-Itiro Tomonaga, received the Nobel Prize in Physics in 1965. He developed a widely used pictorial representation scheme for the mathematical expressions governing the behavior of subatomic particles, which later became known as Feynman diagrams. During his lifetime, Feynman became one of the best-known scientists in the world.
+He assisted in the development of the atomic bomb and was a member of the panel that investigated the Space Shuttle Challenger disaster. In addition to his work in theoretical physics, Feynman has been credited with pioneering the field of quantum computing,[2] and introducing the concept of nanotechnology.[3] He held the Richard Chace Tolman professorship in theoretical physics at the California Institute of Technology.
+Feynman was a keen popularizer of physics through both books and lectures, notably a 1959 talk on top-down nanotechnology called There's Plenty of Room at the Bottom and The Feynman Lectures on Physics. Feynman also became known through his semi-autobiographical books (Surely You're Joking, Mr. Feynman! and What Do You Care What Other People Think?) and books written about him, such as Tuva or Bust!
+Feynman also had a deep interest in biology, and was a friend of the geneticist and microbiologist Esther Lederberg, who developed replica plating and discovered bacteriophage lambda.[4] They had several mutual physicist friends who, after beginning their careers in nuclear research, moved for moral reasons into genetics, among them Leó Szilárd, Guido Pontecorvo, and Aaron Novick.
+Contents [hide]
+1 Biography
+1.1 Early life
+1.2 Education
+1.3 The Manhattan Project
+1.4 Early academic career
+1.5 Caltech years
+1.6 Challenger disaster
+1.7 Personal life
+2 Popular legacy
+3 Bibliography
+3.1 Selected scientific works
+3.2 Textbooks and lecture notes
+3.3 Popular works
+3.4 Audio and video recordings
+4 See also
+5 Notes
+6 References
+7 Further reading
+7.1 Articles
+7.2 Books
+7.3 Films and plays
+8 External links
+[edit]Biography
+
+[edit]Early life
+Richard Phillips Feynman was born on May 11, 1918,[5] in Far Rockaway, Queens, New York.[6] His family originated from Russia and Poland; both of his parents were Jewish,[7] but they were not devout. In fact, by his early youth, Feynman described himself as an "avowed atheist".[8] Feynman (in common with the famous physicists Edward Teller and Albert Einstein) was a late talker; by his third birthday he had yet to utter a single word. The young Feynman was heavily influenced by his father, Melville, who encouraged him to ask questions to challenge orthodox thinking. From his mother, Lucille, he gained the sense of humor that he had throughout his life. As a child, he delighted in repairing radios and had a talent for engineering. His younger sister Joan also became a professional physicist.[9][10]
+[edit]Education
+In high school, his IQ was determined to be 125 (on an unspecified test, making this statement dubious): high, but "merely respectable" according to biographer Gleick.[11] Feynman later scoffed at psychometric testing. By 15, he had learned differential and integral calculus. Before entering college, he was experimenting with and re-creating mathematical topics, such as the half-derivative, utilizing his own notation. In high school, he was developing the mathematical intuition behind his Taylor series of mathematical operators.[12]
+His habit of direct characterization sometimes rattled more conventional thinkers; for example, one of his questions when learning feline anatomy was "Do you have a map of the cat?" (referring to an anatomical chart).
+Feynman attended Far Rockaway High School, a school that also produced fellow laureates Burton Richter and Baruch Samuel Blumberg.[13] A member of the Arista Honor Society, in his last year in high school, Feynman won the New York University Math Championship; the large difference between his score and those of his closest competitors shocked the judges.[14]
+He applied to Columbia University, but was not accepted, because of the "Jewish quota" (a discriminatory practice of limiting the number of places available to students of Jewish background).[15][16] Instead he attended the Massachusetts Institute of Technology, where he received a bachelor's degree in 1939, and in the same year was named a Putnam Fellow. While there, Feynman took every physics course offered, including a graduate course on theoretical physics while only in his second year.
+He obtained a perfect score on the graduate school entrance exams to Princeton University in mathematics and physics — an unprecedented feat — but did rather poorly on the history and English portions.[14] Attendees at Feynman's first seminar included Albert Einstein, Wolfgang Pauli, and John von Neumann. He received a Ph.D. from Princeton in 1942; his thesis advisor was John Archibald Wheeler. Feynman's thesis applied the principle of stationary action to problems of quantum mechanics, laying the groundwork for the "path integral" approach and Feynman diagrams, and was entitled "The Principle of Least Action in Quantum Mechanics".
+This was Richard Feynman nearing the crest of his powers. At twenty-three ... there was no physicist on earth who could match his exuberant command over the native materials of theoretical science. It was not just a facility at mathematics (though it had become clear ... that the mathematical machinery emerging from the Wheeler-Feynman collaboration was beyond Wheeler's own ability). Feynman seemed to possess a frightening ease with the substance behind the equations, like Albert Einstein at the same age, like the Soviet physicist Lev Landau—but few others.
+
+– James Gleick, Genius: The Life and Science of Richard Feynman
+
+[edit]The Manhattan Project
+
+This section does not cite any references or sources.
+Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (October 2008)
+
+
+Feynman (center) with Robert Oppenheimer (right) relaxing at a Los Alamos social function during the Manhattan Project.
+At Princeton, the physicist Robert R. Wilson encouraged Feynman to participate in the Manhattan Project—the wartime U.S. Army project at Los Alamos developing the atomic bomb. Feynman said he was persuaded to join this effort to build it before Nazi Germany developed their own bomb.
+He was assigned to Hans Bethe's theoretical division, and impressed Bethe enough to be made a group leader. He and Bethe developed the Bethe-Feynman formula (which might still be classified[17]) for calculating the yield of a fission bomb, which built upon previous work by Robert Serber.
+He immersed himself in work on the project, and was present at the Trinity bomb test. Feynman claimed to be the only person to see the explosion without the very dark glasses or welder's lenses provided, reasoning that it was safe to look through a truck windshield, as it would screen out the harmful ultraviolet radiation.
+As a junior physicist, he was not central to the project. The greater part of his work was administering the computation group of human computers in the Theoretical division (one of his students there, John G. Kemeny, later went on to co-write the computer language BASIC). Later, with Nicholas Metropolis, he assisted in establishing the system for using IBM punched cards for computation. Feynman succeeded in solving one of the equations for the project that were posted on the blackboards. However, they did not "do the physics right" and Feynman's solution was not used.
+Feynman's other work at Los Alamos included calculating neutron equations for the Los Alamos "Water Boiler", a small nuclear reactor, to measure how close an assembly of fissile material was to criticality. On completing this work he was transferred to the Oak Ridge facility, where he aided engineers in devising safety procedures for material storage so that criticality accidents (for example, due to sub-critical amounts of fissile material inadvertently stored in proximity on opposite sides of a wall) could be avoided. He also did theoretical work and calculations on the proposed uranium-hydride bomb, which later proved not to be feasible.
+Feynman was sought out by physicist Niels Bohr for one-on-one discussions. He later discovered the reason: most physicists were too in awe of Bohr to argue with him. Feynman had no such inhibitions, vigorously pointing out anything he considered to be flawed in Bohr's thinking. Feynman said he felt as much respect for Bohr as anyone else, but once anyone got him talking about physics, he would become so focused he forgot about social niceties.
+Due to the top secret nature of the work, Los Alamos was isolated. In Feynman's own words, "There wasn't anything to do there". Bored, he indulged his curiosity by learning to pick the combination locks on cabinets and desks used to secure papers. Feynman played many jokes on colleagues. In one case he found the combination to a locked filing cabinet by trying the numbers a physicist would use (it proved to be 27–18–28 after the base of natural logarithms, e = 2.71828...), and found that the three filing cabinets where a colleague kept a set of atomic bomb research notes all had the same combination. He left a series of notes as a prank, which initially spooked his colleague, Frederic de Hoffman, into thinking a spy or saboteur had gained access to atomic bomb secrets. On several occasions, Feynman drove to Albuquerque to see his ailing wife in a car borrowed from Klaus Fuchs, who was later discovered to be a real spy for the Soviets, transporting nuclear secrets in his car to Santa Fe.
+On occasion, Feynman would find an isolated section of the mesa to drum in the style of American natives; "and maybe I would dance and chant, a little". These antics did not go unnoticed, and rumors spread about a mysterious Indian drummer called "Injun Joe". He also became a friend of laboratory head J. Robert Oppenheimer, who unsuccessfully tried to court him away from his other commitments after the war to work at the University of California, Berkeley.
+Feynman alludes to his thoughts on the justification for getting involved in the Manhattan project in The Pleasure of Finding Things Out. As mentioned earlier, he felt the possibility of Nazi Germany developing the bomb before the Allies was a compelling reason to help with its development for the US. However, he goes on to say that it was an error on his part not to reconsider the situation when Germany was defeated. In the same publication, Feynman also talks about his worries in the atomic bomb age, feeling for some considerable time that there was a high risk that the bomb would be used again soon so that it was pointless to build for the future. Later he describes this period as a "depression."
+[edit]Early academic career
+Following the completion of his Ph.D. in 1942, Feynman held an appointment at the University of Wisconsin-Madison (UW) as an assistant professor of physics. The appointment was spent on leave for his involvement in the Manhattan project. In 1945, he received a letter from Dean Mark Ingraham of the College of Letters and Science requesting his return to UW to teach in the coming academic year. His appointment was not extended when he did not commit to return. In a talk given several years later at UW, Feynman quipped, "It's great to be back at the only university that ever had the good sense to fire me".[18]
+After the war, Feynman declined an offer from the Institute for Advanced Study in Princeton, New Jersey, despite the presence there of such distinguished faculty members as Albert Einstein, Kurt Gödel, and John von Neumann. Feynman followed Hans Bethe, instead, to Cornell University, where Feynman taught theoretical physics from 1945 to 1950.[12] During a temporary depression following the destruction of Hiroshima by the bomb produced by the Manhattan Project, he focused on complex physics problems, not for utility, but for self-satisfaction. One of these was analyzing the physics of a twirling, nutating dish as it is moving through the air. His work during this period, which used equations of rotation to express various spinning speeds, soon proved important to his Nobel Prize-winning work. Yet because he felt burned out, and had turned his attention to less immediately practical but more entertaining problems, he felt surprised by the offers of professorships from renowned universities.[12]
+Despite yet another offer from the Institute for Advanced Study, which would have included teaching duties (which was not included in the Institute's initial offer, a factor in his rejection of it), Feynman opted for the California Institute of Technology (Caltech) — as he says in his book Surely You're Joking Mr. Feynman! — because a desire to live in a mild climate had firmly fixed itself in his mind while installing tire chains on his car in the middle of a snowstorm in Ithaca.
+
+
+Feynman the "Great Explainer": The Feynman Lectures on Physics found an appreciative audience beyond the undergraduate community
+Feynman has been called the "Great Explainer".[19] He gained a reputation for taking great care when giving explanations to his students and for making it a moral duty to make the topic accessible. His guiding principle was that if a topic could not be explained in a freshman lecture, it was not yet fully understood. Feynman gained great pleasure[20] from coming up with such a "freshman-level" explanation, for example, of the connection between spin and statistics. What he said was that groups of particles with spin 1/2 "repel", whereas groups with integer spin "clump". This was a brilliantly simplified way of demonstrating how Fermi-Dirac statistics and Bose-Einstein statistics evolved as a consequence of studying how fermions and bosons behave under a rotation of 360°. This was also a question he pondered in his more advanced lectures and to which he demonstrated the solution in the 1986 Dirac memorial lecture.[21] In the same lecture, he further explained that antiparticles must exist, for if particles only had positive energies, they would not be restricted to a so-called "light cone".
+He opposed rote learning or unthinking memorization and other teaching methods that emphasized form over function. He put these opinions into action whenever he could, from a conference on education in Brazil to a State Commission on school textbook selection. Clear thinking and clear presentation were fundamental prerequisites for his attention. It could be perilous even to approach him when unprepared, and he did not forget the fools or pretenders.[22]
+During one sabbatical year, he returned to Newton's Principia Mathematica to study it anew; what he learned from Newton, he passed along to his students, such as Newton's attempted explanation of diffraction.[citation needed]
+[edit]Caltech years
+
+
+The Feynman section at the Caltech bookstore
+Feynman did significant work while at Caltech, including research in:
+Quantum electrodynamics. The theory for which Feynman won his Nobel Prize is known for its accurate predictions.[23][24] This theory was developed in the earlier years during Feynman's work at Cornell. He helped develop a functional integral formulation of quantum mechanics, in which every possible path from one state to the next is considered, the final path being a sum over the possibilities (also referred to as sum-over-paths or sum over histories).[25]
+Physics of the superfluidity of supercooled liquid helium, where helium seems to display a complete lack of viscosity when flowing. Applying the Schrödinger equation to the question showed that the superfluid was displaying quantum mechanical behavior observable on a macroscopic scale. This helped with the problem of superconductivity; however, the solution eluded Feynman.[26] It was solved with the BCS theory of superconductivity, proposed by John Bardeen, Leon Neil Cooper, and John Robert Schrieffer.
+A model of weak decay, which showed that the current coupling in the process is a combination of vector and axial (an example of weak decay is the decay of a neutron into an electron, a proton, and an anti-neutrino). Although E. C. George Sudarshan and Robert Marshak developed the theory nearly simultaneously, Feynman's collaboration with Murray Gell-Mann was seen as seminal because the weak interaction was neatly described by the vector and axial currents. It thus combined the 1933 beta decay theory of Enrico Fermi with an explanation of parity violation.
+He also developed Feynman diagrams, a bookkeeping device which helps in conceptualizing and calculating interactions between particles in spacetime, notably the interactions between electrons and their antimatter counterparts, positrons. This device allowed him, and later others, to approach time reversibility and other fundamental processes. Feynman's mental picture for these diagrams started with the hard sphere approximation, and the interactions could be thought of as collisions at first. It was not until decades later that physicists thought of analyzing the nodes of the Feynman diagrams more closely. Feynman famously painted Feynman diagrams on the exterior of his van.[27]
+From his diagrams of a small number of particles interacting in spacetime, Feynman could then model all of physics in terms of those particles' spins and the range of coupling of the fundamental forces.[28] Feynman attempted an explanation of the strong interactions governing nucleons scattering called the parton model. The parton model emerged as a complement to the quark model developed by his Caltech colleague Murray Gell-Mann. The relationship between the two models was murky; Gell-Mann referred to Feynman's partons derisively as "put-ons". In the mid 1960s, physicists believed that quarks were just a bookkeeping device for symmetry numbers, not real particles, as the statistics of the Omega-minus particle, if it were interpreted as three identical strange quarks bound together, seemed impossible if quarks were real. The Stanford linear accelerator deep inelastic scattering experiments of the late 1960s showed, analogously to Ernest Rutherford's experiment of scattering alpha particles on gold nuclei in 1911, that nucleons (protons and neutrons) contained point-like particles which scattered electrons. It was natural to identify these with quarks, but Feynman's parton model attempted to interpret the experimental data in a way which did not introduce additional hypotheses. For example, the data showed that some 45% of the energy momentum was carried by electrically neutral particles in the nucleon. These electrically neutral particles are now seen to be the gluons which carry the forces between the quarks and carry also the three-valued color quantum number which solves the Omega-minus problem. Feynman did not dispute the quark model; for example, when the fifth quark was discovered in 1977, Feynman immediately pointed out to his students that the discovery implied the existence of a sixth quark, which was duly discovered in the decade after his death.
+After the success of quantum electrodynamics, Feynman turned to quantum gravity. By analogy with the photon, which has spin 1, he investigated the consequences of a free massless spin 2 field, and was able to derive the Einstein field equation of general relativity, but little more.[29] However, the computational device that Feynman discovered then for gravity, "ghosts", which are "particles" in the interior of his diagrams which have the "wrong" connection between spin and statistics, have proved invaluable in explaining the quantum particle behavior of the Yang-Mills theories, for example QCD and the electro-weak theory.
+
+
+Mention of Feynman's prize on the monument at the American Museum of Natural History in New York City. Because the monument is dedicated to American Laureates, Tomonaga is not mentioned.
+In 1965, Feynman was appointed a foreign member of the Royal Society.[30] At this time in the early 1960s, Feynman exhausted himself by working on multiple major projects at the same time, including a request, while at Caltech, to "spruce up" the teaching of undergraduates. After three years devoted to the task, he produced a series of lectures that eventually became the Feynman Lectures on Physics, one reason that Feynman is still regarded as one of the greatest teachers of physics. He wanted a picture of a drumhead sprinkled with powder to show the modes of vibration at the beginning of the book. Outraged by many rock and roll and drug connections that could be made from the image, the publishers changed the cover to plain red, though they included a picture of him playing drums in the foreword. Feynman later won the Oersted Medal for teaching, of which he seemed especially proud.[31]
+His students competed keenly for his attention; he was once awakened when a student solved a problem and dropped it in his mailbox; glimpsing the student sneaking across his lawn, he could not go back to sleep, and he read the student's solution. The next morning his breakfast was interrupted by another triumphant student, but Feynman informed him that he was too late.
+Partly as a way to bring publicity to progress in physics, Feynman offered $1000 prizes for two of his challenges in nanotechnology, claimed by William McLellan and Tom Newman, respectively.[32] He was also one of the first scientists to conceive the possibility of quantum computers.
+Many of his lectures and other miscellaneous talks were turned into books, including The Character of Physical Law and QED: The Strange Theory of Light and Matter. He gave lectures which his students annotated into books, such as Statistical Mechanics and Lectures on Gravity. The Feynman Lectures on Physics[33] occupied two physicists, Robert B. Leighton and Matthew Sands as part-time co-authors for several years. Even though they were not adopted by most universities as textbooks, the books continue to be bestsellers because they provide a deep understanding of physics. As of 2005, The Feynman Lectures on Physics has sold over 1.5 million copies in English, an estimated 1 million copies in Russian, and an estimated half million copies in other languages.[citation needed]
+In 1974, Feynman delivered the Caltech commencement address on the topic of cargo cult science, which has the semblance of science but is only pseudoscience due to a lack of "a kind of scientific integrity, a principle of scientific thought that corresponds to a kind of utter honesty" on the part of the scientist. He instructed the graduating class that "The first principle is that you must not fool yourself—and you are the easiest person to fool. So you have to be very careful about that. After you've not fooled yourself, it's easy not to fool other scientists. You just have to be honest in a conventional way after that."[34]
+In 1984–86, he developed a variational method for the approximate calculation of path integrals which has led to a powerful method of converting divergent perturbation expansions into convergent strong-coupling expansions (variational perturbation theory) and, as a consequence, to the most accurate determination[35] of critical exponents measured in satellite experiments.[36]
+In the late 1980s, according to "Richard Feynman and the Connection Machine", Feynman played a crucial role in developing the first massively parallel computer, and in finding innovative uses for it in numerical computations, in building neural networks, as well as physical simulations using cellular automata (such as turbulent fluid flow), working with Stephen Wolfram at Caltech.[37] His son Carl also played a role in the development of the original Connection Machine engineering; Feynman influencing the interconnects while his son worked on the software.
+Feynman diagrams are now fundamental for string theory and M-theory, and have even been extended topologically.[citation needed] The world-lines of the diagrams have developed to become tubes to allow better modeling of more complicated objects such as strings and membranes. However, shortly before his death, Feynman criticized string theory in an interview: "I don't like that they're not calculating anything," he said. "I don't like that they don't check their ideas. I don't like that for anything that disagrees with an experiment, they cook up an explanation—a fix-up to say, 'Well, it still might be true.'" These words have since been much-quoted by opponents of the string-theoretic direction for particle physics.[38]
+[edit]Challenger disaster
+
+
+The 1986 Space Shuttle Challenger disaster.
+Feynman played an important role on the Presidential Rogers Commission, which investigated the Challenger disaster. Feynman devoted the latter half of his book What Do You Care What Other People Think? to his experience on the Rogers Commission, straying from his usual convention of brief, light-hearted anecdotes to deliver an extended and sober narrative. Feynman's account reveals a disconnect between NASA's engineers and executives that was far more striking than he expected. His interviews of NASA's high-ranking managers revealed startling misunderstandings of elementary concepts. He concluded that the NASA management's space shuttle reliability estimate was fantastically unrealistic. He warned in his appendix to the commission's report, "For a successful technology, reality must take precedence over public relations, for Nature cannot be fooled."[39]
+[edit]Personal life
+While researching for his Ph.D., Feynman married his first wife, Arline Greenbaum (often spelled Arlene). She was diagnosed with tuberculosis, but she and Feynman were careful, and he never contracted it. She succumbed to the disease in 1945. This portion of Feynman's life was portrayed in the 1996 film Infinity, which featured Feynman's daughter Michelle in a cameo role.
+He was married a second time in June 1952, to Mary Louise Bell of Neodesha, Kansas; this marriage was brief and unsuccessful. He later married Gweneth Howarth from Ripponden, Yorkshire, who shared his enthusiasm for life and spirited adventure.[40] Besides their home in Altadena, California, they had a beach house in Baja California, purchased with the prize money from Feynman's Nobel Prize, his one third share of $55,000. They remained married until Feynman's death. They had a son, Carl, in 1962, and adopted a daughter, Michelle, in 1968.[40]
+Feynman had a great deal of success teaching Carl, using discussions about ants and Martians as a device for gaining perspective on problems and issues; he was surprised to learn that the same teaching devices were not useful with Michelle.[41] Mathematics was a common interest for father and son; they both entered the computer field as consultants and were involved in advancing a new method of using multiple computers to solve complex problems—later known as parallel computing. The Jet Propulsion Laboratory retained Feynman as a computational consultant during critical missions. One co-worker characterized Feynman as akin to Don Quixote at his desk, rather than at a computer workstation, ready to do battle with the windmills.
+Feynman traveled a great deal, notably to Brazil, and near the end of his life schemed to visit the Russian land of Tuva, a dream that, because of Cold War bureaucratic problems, never became reality.[42] The day after he died, a letter arrived for him from the Soviet government giving him authorization to travel to Tuva. Out of his enthusiastic interest in reaching Tuva came the phrase "Tuva or Bust" (also the title of a book about his efforts to get there), which was tossed about frequently amongst his circle of friends in hope that they, one day, could see it firsthand. The documentary movie Genghis Blues mentions some of his attempts to communicate with Tuva, and chronicles the successful journey there by his friends.
+Responding to Hubert Humphrey's congratulation for his Nobel Prize, Feynman admitted to a long admiration for the then vice president.[43] In a letter to an MIT professor dated December 6, 1966, Feynman expressed interest in running for the governor of California.[44]
+Feynman took up drawing at one time and enjoyed some success under the pseudonym "Ofey", culminating in an exhibition dedicated to his work. He learned to play a metal percussion instrument (frigideira) in a samba style in Brazil, and participated in a samba school.
+In addition, he had some degree of synesthesia for equations, explaining that the letters in certain mathematical functions appeared in color for him, even though invariably printed in standard black-and-white.[45]
+According to Genius, the James Gleick-authored biography, Feynman experimented with LSD during his professorship at Caltech.[14] Somewhat embarrassed by his actions, Feynman largely sidestepped the issue when dictating his anecdotes; he mentions it in passing in the "O Americano, Outra Vez" section, while the "Altered States" chapter in Surely You're Joking, Mr. Feynman! describes only marijuana and ketamine experiences at John Lilly's famed sensory deprivation tanks, as a way of studying consciousness.[12] Feynman gave up alcohol when he began to show early signs of alcoholism, as he did not want to do anything that could damage his brain—the same reason given in "O Americano, Outra Vez" for his reluctance to experiment with LSD.[12]
+In Surely You're Joking, Mr. Feynman!, he gives advice on the best way to pick up a girl in a hostess bar. At Caltech, he used a nude/topless bar as an office away from his usual office, making sketches or writing physics equations on paper placemats. When the county officials tried to close the place, all visitors except Feynman refused to testify in favor of the bar, fearing that their families or patrons would learn about their visits. Only Feynman accepted, and in court, he affirmed that the bar was a public need, stating that craftsmen, technicians, engineers, common workers "and a physics professor" frequented the establishment. While the bar lost the court case, it was allowed to remain open as a similar case was pending appeal.[12]
+Feynman developed two rare forms of cancer, Liposarcoma and Waldenström's macroglobulinemia, dying shortly after a final attempt at surgery for the former on February 15, 1988, aged 69.[14] His last recorded words are noted as "I'd hate to die twice. It's so boring."[14][46]
+[edit]Popular legacy
+
+On May 4, 2005, the United States Postal Service issued the American Scientists commemorative set of four 37-cent self-adhesive stamps in several configurations. The scientists depicted were Richard Feynman, John von Neumann, Barbara McClintock and Josiah Willard Gibbs. Feynman's stamp, sepia-toned, features a photograph of a 30-something Feynman and eight small Feynman diagrams. The stamps were designed by artist Victor Stabin under the direction of U.S. Postal Service art director Carl T. Herrman.
+The main building for the Computing Division at Fermilab is named the "Feynman Computing Center" in his honor.[47]
+Real Time Opera premiered its opera Feynman at the Norfolk (CT) Chamber Music Festival in June 2005.[48]
+In the television series Star Trek: The Next Generation, the shuttlecraft Feynman is named after him.
+On the 20th anniversary of Feynman's death, composer Edward Manukyan dedicated a piece for solo clarinet to his memory.[49] It was premiered by Doug Storey, the principal clarinetist of the Amarillo Symphony.
+In 2009 and 2010, respectively, clips of an interview with Feynman were used by composer John Boswell as part of the Symphony of Science project in his second science education video, We Are All Connected, and in his fifth installment called The Poetry of Reality.[50]
+[edit]Bibliography
+
+[edit]Selected scientific works
+Feynman, Richard P. (2000). Laurie M. Brown. ed. Selected Papers of Richard Feynman: With Commentary. 20th Century Physics. World Scientific. ISBN 978-9810241315.
+Feynman, Richard P. (1942). Laurie M. Brown. ed. The Principle of Least Action in Quantum Mechanics. Ph.D. Dissertation, Princeton University. World Scientific (with title Feynman's Thesis: a New Approach to Quantum Theory). 2005. ISBN 978-9812563804.
+Wheeler, John A.; Feynman, Richard P. (1945). "Interaction with the Absorber as the Mechanism of Radiation". Rev. Mod. Phys. 17: 157–181. doi:10.1103/RevModPhys.17.157.
+Feynman, Richard P. (1946). A Theorem and its Application to Finite Tampers. Los Alamos Scientific Laboratory, Atomic Energy Commission. http://www.osti.gov/cgi-bin/rd_accomplishments/display_biblio.cgi?id=ACC0105&numPages=32&fp=N.
+Feynman, Richard P.; Welton, T. A. (1946). Neutron Diffusion in a Space Lattice of Fissionable and Absorbing Materials. Los Alamos Scientific Laboratory, Atomic Energy Commission. http://www.osti.gov/cgi-bin/rd_accomplishments/display_biblio.cgi?id=ACC0106&numPages=18&fp=N.
+Feynman, Richard P.; Metropolis, N.; Teller, E. (1947). Equations of State of Elements Based on the Generalized Fermi-Thomas Theory. Los Alamos Scientific Laboratory, Atomic Energy Commission. http://www.osti.gov/cgi-bin/rd_accomplishments/display_biblio.cgi?id=ACC0107&numPages=45&fp=N.
+Feynman, Richard P. (1948a). "Space-time approach to non-relativistic quantum mechanics". Rev. Mod. Phys. 20: 367–387. doi:10.1103/RevModPhys.20.367.
+Feynman, Richard P. (1948b). "Relativistic Cut-Off for Quantum Electrodynamics". Physical Review 74: 1430–1438. doi:10.1103/PhysRev.74.1430.
+Wheeler, John A.; Feynman, Richard P. (1949). "Classical Electrodynamics in Terms of Direct Interparticle Action". Rev. Mod. Phys. 21: 425–433. doi:10.1103/RevModPhys.21.425.
+Feynman, Richard P. (1949). "The theory of positrons". Phys. Rev. 76: 749–759. doi:10.1103/PhysRev.76.749.
+Feynman, Richard P. (1949b). "Space-Time Approach to Quantum Electrodynamic". Phys. Rev. 76: 769–789. doi:10.1103/PhysRev.76.769.
+Feynman, Richard P. (1950). "Mathematical formulation of the quantum theory of electromagnetic interaction". Phys. Rev. 80: 440–457. doi:10.1103/PhysRev.80.440.
+Feynman, Richard P. (1951). "An Operator Calculus Having Applications in Quantum Electrodynamics". Phys. Rev. 84: 108–128. doi:10.1103/PhysRev.84.108.
+Feynman, Richard P. (1953). "The λ-Transition in Liquid Helium". Phys. Rev. 90: 1116–1117. doi:10.1103/PhysRev.90.1116.2.
+Feynman, Richard P.; de Hoffmann, F.; Serber, R. (1955). Dispersion of the Neutron Emission in U235 Fission. Los Alamos Scientific Laboratory, Atomic Energy Commission. http://www.osti.gov/cgi-bin/rd_accomplishments/display_biblio.cgi?id=ACC0108&numPages=18&fp=N.
+Feynman, Richard P. (1956). "Science and the Open Channel.". Science 123 (3191): 307. February 24, 1956. doi:10.1126/science.123.3191.307. PMID 17774518.
+Cohen, M.; Feynman, Richard P. (1957). "Theory of Inelastic Scattering of Cold Neutrons from Liquid Helium". Phys. Rev. 107: 13–24. doi:10.1103/PhysRev.107.13.
+Feynman, Richard P.; Vernon, F. L.; Hellwarth, R.W. (1957). "Geometric representation of the Schrödinger equation for solving maser equations". J. Appl. Phys 28: 49. doi:10.1063/1.1722572.
+Feynman, Richard P. (1959). "Plenty of Room at the Bottom". Presentation to American Physical Society. http://www.its.caltech.edu/~feynman/plenty.html.
+Edgar, R. S.; Feynman, Richard P.; Klein, S.; Lielausis, I.; Steinberg, CM (1962). "Mapping experiments with r mutants of bacteriophage T4D.". Genetics 47: 179–86. February 1962. PMID 13889186.
+Feynman, Richard P. (1966). "The Development of the Space-Time View of Quantum Electrodynamics.". Science 153 (3737): 699–708. August 12, 1966. doi:10.1126/science.153.3737.699. PMID 17791121.
+Feynman, Richard P. (1974a). "Structure of the proton". Science 183 (4125): 601–610. February 15, 1974. doi:10.1126/science.183.4125.601. PMID 17778830.
+Feynman, Richard P. (1974). "Cargo Cult Science" (PDF). Engineering and Science 37 (7). http://calteches.library.caltech.edu/51/02/CargoCult.pdf.
+Feynman, Richard P.; Kleinert, Hagen (1986). "Effective classical partition functions". Phys. Rev., A 34 (6): 5080–5084. December 1986. doi:10.1103/PhysRevA.34.5080. PMID 9897894.
+[edit]Textbooks and lecture notes
+The Feynman Lectures on Physics is perhaps his most accessible work for anyone with an interest in physics, compiled from lectures to Caltech undergraduates in 1961–64. As news of the lectures' lucidity grew, a number of professional physicists and graduate students began to drop in to listen. Co-authors Robert B. Leighton and Matthew Sands, colleagues of Feynman, edited and illustrated them into book form. The work has endured, and is useful to this day. They were edited and supplemented in 2005 with "Feynman's Tips on Physics: A Problem-Solving Supplement to the Feynman Lectures on Physics" by Michael Gottlieb and Ralph Leighton (Robert Leighton's son), with support from Kip Thorne and other physicists.
+Feynman, Richard P. (1970). The Feynman Lectures on Physics: The Definitive and Extended Edition. 3 volumes (2nd ed.). Addison Wesley (published 2005, originally published as separate volumes in 1964 and 1966). ISBN 0-8053-9045-6. Includes Feynman’s Tips on Physics (with Michael Gottlieb and Ralph Leighton), which includes four previously unreleased lectures on problem solving, exercises by Robert Leighton and Rochus Vogt, and a historical essay by Matthew Sands.
+Feynman, Richard P. (1961). Theory of Fundamental Processes. Addison Wesley. ISBN 0-8053-2507-7.
+Feynman, Richard P. (1962). Quantum Electrodynamics. Addison Wesley. ISBN 978-0805325010.
+Feynman, Richard P.; Hibbs, Albert (1965). Quantum Mechanics and Path Integrals. McGraw Hill. ISBN 0-07-020650-3.
+Feynman, Richard P. (1967). The Character of Physical Law: The 1964 Messenger Lectures. MIT Press. ISBN 0-262-56003-8.
+Feynman, Richard P. (1981). Statistical Mechanics: A Set of Lectures. Addison Wesley. ISBN 0-8053-2509-3.
+Feynman, Richard P. (1985b). QED: The Strange Theory of Light and Matter. Princeton University Press. ISBN 0691024170.
+Feynman, Richard P. (1987). Elementary Particles and the Laws of Physics: The 1986 Dirac Memorial Lectures. Cambridge University Press. ISBN 0-521-34000-4.
+Feynman, Richard P. (1995). Brian Hatfield. ed. Lectures on Gravitation. Addison Wesley Longman. ISBN 0-201-62734-5.
+Feynman, Richard P. (1997). Feynman's Lost Lecture: The Motion of Planets Around the Sun (Vintage Press ed.). London: Vintage. ISBN 0099736217.
+Feynman, Richard P. (2000). Tony Hey and Robin W. Allen. ed. Feynman Lectures on Computation. Perseus Books Group. ISBN 0738202967.
+[edit]Popular works
+Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character, with contributions by Ralph Leighton, W. W. Norton & Co, 1985, ISBN 0-393-01921-7.
+What Do You Care What Other People Think?: Further Adventures of a Curious Character, with contributions by Ralph Leighton, W. W. Norton & Co, 1988, ISBN 0-393-02659-0.
+No Ordinary Genius: The Illustrated Richard Feynman, with Christopher Sykes, W. W. Norton & Co, 1996, ISBN 039331393X.
+Six Easy Pieces: Essentials of Physics Explained by Its Most Brilliant Teacher, Perseus Books, 1994, ISBN 0-201-40955-0.
+Six Not So Easy Pieces: Einstein’s Relativity, Symmetry and Space-Time, Addison Wesley, 1997, ISBN 0-201-15026-3.
+The Meaning of It All: Thoughts of a Citizen Scientist, Perseus Publishing, 1999, ISBN 0738201669.
+The Pleasure of Finding Things Out: The Best Short Works of Richard P. Feynman, edited by Jeffrey Robbins, Perseus Books, 1999, ISBN 0738201081.
+Classic Feynman: All the Adventures of a Curious Character, edited by Ralph Leighton, W. W. Norton & Co, 2005, ISBN 0-393-06132-9. Chronologically reordered omnibus volume of Surely You're Joking, Mr. Feynman! and What Do You Care What Other People Think?, with a bundled CD containing one of Feynman’s signature lectures.
+[edit]Audio and video recordings
+Safecracker Suite (a collection of drum pieces interspersed with Feynman telling anecdotes)
+Los Alamos From Below (talk given by Feynman at Santa Barbara on February 6, 1975)
+Six Easy Pieces (original lectures upon which the book is based)
+Six Not So Easy Pieces (original lectures upon which the book is based)
+The Feynman Lectures on Physics: The Complete Audio Collection
+Samples of Feynman's drumming, chanting and speech are included in the songs "Tuva Groove (Bolur Daa-Bol, Bolbas Daa-Bol)" and "Kargyraa Rap (Dürgen Chugaa)" on the album Back Tuva Future, The Adventure Continues by Kongar-ool Ondar. The hidden track on this album also includes excerpts from lectures without musical background.
+The Messenger Lectures, given at Cornell in 1964, in which he explains basic topics in physics. Available on Project Tuva for free (See also the book The Character of Physical Law)
+Take the world from another point of view [videorecording] / with Richard Feynman; Films for the Hu (1972)
+The Douglas Robb Memorial Lectures Four public lectures of which the four chapters of the book QED: The Strange Theory of Light and Matter are transcripts. (1979)
+The Pleasure of Finding Things Out at Google Video (Adobe Flash video) (1981) (not to be confused with the later published book of same title)
+Richard Feynman: Fun to Imagine Collection, BBC Archive of 6 short films of Feynman talking in an accessible to all about the physics behind common to all experiences. (1983)
+Elementary Particles and the Laws of Physics (1986)
+The Last journey of a genius, a BBC TV production in association with WGBH Boston (1989)
+[edit]See also
+
+Feynman checkerboard
+Flexagon
+Foresight Nanotech Institute Feynman Prize
+List of physicists
+List of theoretical physicists
+Negative probability
+One-electron universe
+Stückelberg–Feynman interpretation
+Wheeler–Feynman absorber theory
+[edit]Notes
+
+^ a b c d e f "Richard Phillips Feynman". Mathematics Genealogy Project (North Dakota State University). http://genealogy.math.ndsu.nodak.edu/id.php?id=91222. Retrieved 2010-03-18.
+^ West, Jacob (2003-06). "The Quantum Computer". http://www.xootic.nl/magazine/jul-2003/west.pdf. Retrieved 2009-09-20.
+^ Edwards 2006, pp. 15–17.
+^ "Esther M. Zimmer Lederberg Memorial Web Site". http://www.estherlederberg.com.
+^ Nobel Foundation 1972.
+^ J. J. O'Connor and E. F. Robertson (2002-08). "Richard Phillips Feynman". University of St. Andrews. http://turnbull.mcs.st-and.ac.uk/~history/Biographies/Feynman.html. Retrieved 2006-11-09.
+^ "Nobel-Winners.com". June 2009. http://www.nobel-winners.com/Physics/richard_phillips_feynman.html.
+^ What Do You Care What Other People Think by Richard Feynman (p. 25)
+^ Feynman 1985, Feynman 1988
+^ Charles Hirshberg (2002-04-18). "My Mother, the Scientist". Popular Science. http://www.popsci.com/scitech/article/2002-04/my-mother-scientist. Retrieved 2008-03-05. An account on Joan Feynman by her son.
+^ Gleick 1992, p. 30
+^ a b c d e f Feynman 1985
+^ Schwach, Howard. "Museum Tracks Down FRHS Nobel Laureates", The Wave (newspaper), April 15, 2005. Accessed October 2, 2007.
+^ a b c d e Gleick 1992
+^ Mehra, Jagdish; Milton, Kimball A. (2003). Climbing the Mountain: The Scientific Biography of Julian Schwinger. Oxford University Press. p. 218. ISBN 0-198-52745-4. http://books.google.com/?id=M_ONmDLmGO4C., Chapter 7, A note on Richard Feynman, page 218
+^ Richard Phillips Feynman
+^ Hans Bethe: How I met Feynman at Los Alamos
+^ Robert H. March. "Physics at the University of Wisconsin: A History". Physics in Perspective 5 (2): 130–149. doi:10.1007/s00016-003-0142-6.
+^ LeVine 2009
+^ Hey & Walters 1987.
+^ Feynman 1987.
+^ Bethe 1991, p. 241
+^ Background information on the 1999 Nobel Prize in Physics, Cecilia Jarlskog, the Royal Swedish Academy of Sciences
+^ Schwinger 1958.
+^ Feynman & Hibbs 1965.
+^ Pines, David (1989). "Richard Feynman and Condensed Matter Physics". Physics Today 42: 61. doi:10.1063/1.881194.
+^ Feynman 2005 and Sykes 1996.
+^ Feynman 1961.
+^ Feynman 1995
+^ "Richard P. Feynman". Nobelprize.org. http://nobelprize.org/nobel_prizes/physics/laureates/1965/feynman-bio.html. Retrieved 2010-02-19.
+^ "The Oersted Medal". American Association of Physics Teachers. http://www.aapt.org/Grants/oersted.cfm. Retrieved 2007-07-08.
+^ Gribbin & Gribbin 1997, p. 170.
+^ Feynman 1970 Lectures on Physics.
+^ Feynman 1974b
+^ Kleinert, Hagen (1999). "Specific heat of liquid helium in zero gravity very near the lambda point". Physical Review D 60: 085001. doi:10.1103/PhysRevD.60.085001.
+^ Lipa J.A.; Nissen, J.; Stricker, D.; Swanson, D.; Chui, T. (2003). "Specific heat of liquid helium in zero gravity very near the lambda point". Physical Review B 68: 174518. doi:10.1103/PhysRevB.68.174518.
+^ Hillis 1989.
+^ Gleick 1992, interview by Robert Crease, Feb. 1985.
+^ R. P. Feynman. "Appendix F — Personal observations on the reliability of the Shuttle". Kennedy Space Center. http://science.ksc.nasa.gov/shuttle/missions/51-l/docs/rogers-commission/Appendix-F.txt.
+^ a b Feynman 2005.
+^ Sykes 1996.
+^ Leighton 2000.
+^ Perfectly Reasonable Deviations, p.173
+^ Perfectly Reasonable Deviations, p.228
+^ Feynman 1988
+^ "Richard Feynman at Find a Grave". http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=2562. Retrieved 2008-10-04.
+^ "Fermilab Open House: Computing Division". fnal.gov. http://www.fnal.gov/openhouse/computing/computing.html.
+^ "Real Time Opera". rtopera.org. http://www.rtopera.org/index.html.
+^ "Musical Tribute to Scientists". edwardmanukyan.com. http://www.edwardmanukyan.com/musical_tribute_to_scientists.html.
+^ "Spreading scientific knowledge and philosophy through music". The Symphony of Science. http://www.symphonyofscience.com. Retrieved 2010.
+[edit]References
+
+Bethe, Hans A. (1991). The Road from Los Alamos. Masters of Modern Physics. 2. New York: Simon and Schuster. ISBN 0-671-74012-1. OCLC 24734608.
+Edwards, Steven Alan (2006). The Nanotech Pioneers. Wiley. ISBN 978-3527312900. OCLC 64304124.
+Feynman, Richard P. (1985). Ralph Leighton. ed. Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character. W. W. Norton & Co. ISBN 0-393-01921-7. OCLC 10925248.
+Feynman, Richard P. (1986). Rogers Commission Report, Volume 2 Appendix F- Personal Observations on Reliability of Shuttle. NASA. http://history.nasa.gov/rogersrep/v2appf.htm.
+Feynman, Richard P. (1987). Ralph Leighton. ed. "Mr. Feynman Goes to Washington". Engineering and Science (Caltech) 50 (1): 6–22. http://calteches.library.caltech.edu/48/2/1987Feynman.pdf.[dead link]
+Feynman, Richard P. (1988). Ralph Leighton. ed. What Do You Care What Other People Think?: Further Adventures of a Curious Character. W. W. Norton & Co. ISBN 0-393-02659-0.
+Feynman, Michelle, ed (2005). Perfectly Reasonable Deviations from the Beaten Track: The Letters of Richard P. Feynman. Basic Books. ISBN 0-7382-0636-9. http://books.google.com/?id=HpgNSVS6fUYC&pg=PA350&dq=feynman+atheist., foreword by Timothy Ferris. (Published in the UK under the title: Don't You Have Time to Think?, with additional commentary by Michelle Feynman, Allen Lane, 2005, ISBN 0-7139-9847-4.)
+Gribbin, John; Gribbin, Mary (1997). Richard Feynman: A Life in Science. Dutton. ISBN 0-525-94124-X.
+Nobel Foundation (1972). "Richard P. Feynman, The Nobel Prize in Physics 1965: Biography". Nobel Lectures, Physics: 1963–1970. Amsterdam: Elsevier. ISBN 978-0444409935. http://nobelprize.org/nobel_prizes/physics/laureates/1965/feynman-bio.html.
+Gleick, James (1992). Genius: The Life and Science of Richard Feynman. Pantheon. ISBN 0-679-40836-3.
+Hey, Tony; Walters, Patrick (1987). The quantum universe. Cambridge University Press. ISBN 978-0521318457.
+Hillis, W. Daniel (1989). "Richard Feynman and The Connection Machine". Physics Today (Institute of Physics) 42 (2): 78. doi:10.1063/1.881196. http://www.kurzweilai.net/articles/art0504.html?printable=1.
+Leighton, Ralph (2000). Tuva Or Bust!:Richard Feynman's last journey. W. W. Norton & Company. ISBN 0-393-32069-3.
+Schwinger, Julian (ed.) (1958). Selected Papers on Quantum Electrodynamics (Bethe, Bloch, Dirac, Dyson, Feynman, Fermi, Heisenberg, Jordan, Klein, Lamb, Oppenheimer, Pauli, Rutherford, Schwinger, Tomonaga, Weisskopf, Wigner, and many others). Dover. ISBN 0-486-60444-6.
+Sykes, Christopher (1996). No ordinary genius : the illustrated Richard Feynman. New York: W.W. Norton. ISBN 0-393-03621-9.
+[edit]Further reading
+
+[edit]Articles
+Physics Today, American Institute of Physics magazine, February 1989 Issue. (Vol.42, No.2.) Special Feynman memorial issue containing non-technical articles on Feynman's life and work in physics.
+[edit]Books
+Brown, Laurie M. and Rigden, John S. (editors) (1993) Most of the Good Stuff: Memories of Richard Feynman Simon and Schuster, New York, ISBN 0883188708. Commentary by Joan Feynman, John Wheeler, Hans Bethe, Julian Schwinger, Murray Gell-Mann, Daniel Hillis, David Goodstein, Freeman Dyson, and Laurie Brown
+Dyson, Freeman (1979) Disturbing the Universe. Harper and Row. ISBN 0-06-011108-9. Dyson’s autobiography. The chapters "A Scientific Apprenticeship" and "A Ride to Albuquerque" describe his impressions of Feynman in the period 1947–48 when Dyson was a graduate student at Cornell
+Gleick, James (1992) Genius: The Life and Science of Richard Feynman. Pantheon. ISBN 0679747044
+Levine, Harry, III (2009) The Great Explainer: The Story of Richard Feynman (Profiles in Science series) Morgan Reynolds, Greensboro, North Carolina, ISBN 978-1-59935-113-1; for high school readers
+Mehra, Jagdish (1994) The Beat of a Different Drum: The Life and Science of Richard Feynman. Oxford University Press. ISBN 0-19-853948-7
+Gribbin, John and Gribbin, Mary (1997) Richard Feynman: A Life in Science. Dutton, New York, ISBN 052594124X
+Milburn, Gerard J. (1998) The Feynman Processor: Quantum Entanglement and the Computing Revolution Perseus Books, ISBN 0-7382-0173-1
+Mlodinow, Leonard (2003) Feynman's Rainbow: A Search For Beauty In Physics And In Life Warner Books. ISBN 0-446-69251-4 Published in the United Kingdom as Some Time With Feynman
+Schweber, Silvan S. (1994) "Chapter 8: Richard Feynman and the Visualization of Space-Time Processes" QED and the Men Who Made It: Dyson, Feynman, Schwinger, and Tomonaga (Princeton Series in Physics) Princeton University Press, Princeton, New Jersey, pp. 373–473, ISBN 0691036853
+Sykes, Christopher, ed., (1994) No Ordinary Genius: The Illustrated Richard Feynman. W W Norton & Co. Inc. ISBN 0393036219
+[edit]Films and plays
+Infinity, a movie directed by Matthew Broderick and starring Matthew Broderick as Feynman, depicting Feynman's love affair with his first wife and ending with the Trinity test. 1996.
+Parnell, Peter (2002) "QED" Applause Books, ISBN 978-1557835925, (play).
+Whittell, Crispin (2006) "Clever Dick" Oberon Books, (play)
+"The Pleasure of Finding Things Out" A film documentary autobiography of Richard Feynman, Nobel laureate and theoretical physicist extraordinary. 1982, BBC TV 'Horizon' and PBS 'Nova' (50 mins film). See Christopher Sykes Productions http://www.sykes.easynet.co.uk/
+"The Quest for Tannu Tuva", with Richard Feynman and Ralph Leighton. 1987, BBC TV 'Horizon' and PBS 'Nova' (under the title "Last Journey of a Genius") (50 mins film)
+"No Ordinary Genius" A two-part documentary about Feynman's life and work, with contributions from colleagues, friends and family. 1993, BBC TV 'Horizon' and PBS 'Nova' (a one-hour version, under the title "The Best Mind Since Einstein") (2 x 50 mins films)
+[edit]External links
+
+
+This article's use of external links may not follow Wikipedia's policies or guidelines. Please improve this article by removing excessive and inappropriate external links. (June 2009)
+	Wikimedia Commons has media related to: Richard Feynman
+	Wikiquote has a collection of quotations related to: Richard Feynman
+Annotated Bibliography for Richard Feynman from the Alsos Digital Library for Nuclear Issues
+Seven free lectures presented by Feynman, and filmed by the BBC, in 1964 at Cornell University. —Based on some of Feynman's 1961–62 freshman physics lectures at Caltech, which formed the basis of The Feynman Lectures on Physics, Volume I
+Guide to the Papers of Richard Phillips Feynman, 1933–1988
+Feynman at The Caltech Institute Archives
+The Feynman Lectures Website
+About Richard Feynman
+Feynman's Scientific Publications
+A Biography of R. P. Feynman as a mathematician
+Gallery of Drawings by Richard P. Feynman
+Photos of Richard Feynman at the Emilio Segrè Visual Archives, American Institute of Physics
+The Pleasure of Finding Things Out: A 49-minute BBC Horizon TV programme from the 1980s in which Feynman reminisces about his life and work.
+Edge-video: Murray Gell-mann reminisces about Feynman's personal eccentricities
+Vega Trust Series videos Feynman gives his Auckland, NZ lectures that ended up the basis for his book, QED.
+Biography and Bibliographic Resources, from the Office of Scientific and Technical Information, United States Department of Energy
+Feynman discussing determining the rules of chess as an analogy for determining laws of physics.
+Feynman talks about confusion
+Feynman's BBC interview on uncertainty
+Feynman on disrespect of authority
+Works by Richard Feynman on Open Library at the Internet Archive
+v • d • e
+Nobel Laureates in Physics
+1901–1925	
+Röntgen (1901) · Lorentz / Zeeman (1902) · Becquerel / P. Curie / M. Curie (1903) · Rayleigh (1904) · Lenard (1905) · Thomson (1906) · Michelson (1907) · Lippmann (1908) · Marconi / Braun (1909) · van der Waals (1910) · Wien (1911) · Dalén (1912) · Kamerlingh Onnes (1913) · Laue (1914) · W. L. Bragg / W. H. Bragg (1915) · Barkla (1917) · Planck (1918) · Stark (1919) · Guillaume (1920) · Einstein (1921) · N. Bohr (1922) · Millikan (1923) · M. Siegbahn (1924) · Franck / Hertz (1925)
+1926–1950	
+Perrin (1926) · Compton / C. Wilson (1927) · O. Richardson (1928) · De Broglie (1929) · Raman (1930) · Heisenberg (1932) · Schrödinger / Dirac (1933) · Chadwick (1935) · Hess / C. D. Anderson (1936) · Davisson / Thomson (1937) · Fermi (1938) · Lawrence (1939) · Stern (1943) · Rabi (1944) · Pauli (1945) · Bridgman (1946) · Appleton (1947) · Blackett (1948) · Yukawa (1949) · Powell (1950)
+1951–1975	
+Cockcroft / Walton (1951) · Bloch / Purcell (1952) · Zernike (1953) · Born / Bothe (1954) · Lamb / Kusch (1955) · Shockley / Bardeen / Brattain (1956) · Yang / T. D. Lee (1957) · Cherenkov / Frank / Tamm (1958) · Segrè / Chamberlain (1959) · Glaser (1960) · Hofstadter / Mössbauer (1961) · Landau (1962) · Wigner / Goeppert-Mayer / Jensen (1963) · Townes / Basov / Prokhorov (1964) · Tomonaga / Schwinger / Feynman (1965) · Kastler (1966) · Bethe (1967) · Alvarez (1968) · Gell-Mann (1969) · Alfvén / Néel (1970) · Gabor (1971) · Bardeen / Cooper / Schrieffer (1972) · Esaki / Giaever / Josephson (1973) · Ryle / Hewish (1974) · A. Bohr / Mottelson / Rainwater (1975)
+1976–2000	
+Richter / Ting (1976) · P. W. Anderson / Mott / Van Vleck (1977) · Kapitsa / Penzias / R. Wilson (1978) · Glashow / Salam / Weinberg (1979) · Cronin / Fitch (1980) · Bloembergen / Schawlow / K. Siegbahn (1981) · K. Wilson (1982) · Chandrasekhar / Fowler (1983) · Rubbia / van der Meer (1984) · von Klitzing (1985) · Ruska / Binnig / Rohrer (1986) · Bednorz / Müller (1987) · Lederman / Schwartz / Steinberger (1988) · Ramsey / Dehmelt / Paul (1989) · Friedman / Kendall / R. Taylor (1990) · de Gennes (1991) · Charpak (1992) · Hulse / J. Taylor (1993) · Brockhouse / Shull (1994) · Perl / Reines (1995) · D. Lee / Osheroff / R. Richardson (1996) · Chu / Cohen-Tannoudji / Phillips (1997) · Laughlin / Störmer / Tsui (1998) · 't Hooft / Veltman (1999) · Alferov / Kroemer / Kilby (2000)
+2001–present	
+Cornell / Ketterle / Wieman (2001) · Davis / Koshiba / Giacconi (2002) · Abrikosov / Ginzburg / Leggett (2003) · Gross / Politzer / Wilczek (2004) · Glauber / Hall / Hänsch (2005) · Mather / Smoot (2006) · Fert / Grünberg (2007) · Nambu / Kobayashi / Maskawa (2008) · Kao / Boyle / Smith (2009) · Geim / Novoselov (2010)
+ Book:Nobel Prize in Physics ·   Category:Nobel laureates in Physics ·   Portal:Physics ·   Nobel Prize in Physics
+Categories: Richard Feynman | American atheists | American Nobel laureates | American physicists | California Institute of Technology faculty | Cancer deaths in California | Cellular automatists | Cornell University faculty | Deaths from liposarcoma | Experimental physicists | Far Rockaway High School alumni | Jewish atheists | Jewish American scientists | Manhattan Project people | Massachusetts Institute of Technology alumni | Nanotechnologists | National Medal of Science laureates | Nobel laureates in Physics | Particle physicists | People from Far Rockaway, Queens | People with synesthesia | Princeton University alumni | Putnam Fellows | Quantum physicists | Sloan Research Fellowships | Theoretical physicists | Weapons scientists and engineers | 1918 births | 1988 deaths | Jewish inventors | Foreign Members of the Royal Society | Bongo players
